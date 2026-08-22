@@ -1,0 +1,47 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "learning",
+  "id": "socratic-study-plan",
+  "version": "1.0.0",
+  "category": "learning",
+  "tags": [
+    "artifact:study_plan",
+    "category:learning",
+    "constraint:adaptive",
+    "job:learn",
+    "modality:text"
+  ],
+  "capabilities": [
+    "interactive_learning",
+    "text"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Socratic study plan",
+      "summary": "Design a verifiable and adaptive question-led learning path from the learner's current level",
+      "usage": "Use for self-study, tutoring, and staged skill development"
+    },
+    "zh-CN": {
+      "title": "苏格拉底式学习计划",
+      "summary": "基于当前水平设计可验证、可调整的提问式学习路径",
+      "usage": "适合自学、辅导和阶段性能力提升",
+      "aliases": [
+        "学习计划"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/learning/socratic-study-plan/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/learning/socratic-study-plan/prompts/main.zh-CN.md"
+    }
+  ]
+}

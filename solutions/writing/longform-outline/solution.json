@@ -1,0 +1,47 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "writing",
+  "id": "longform-outline",
+  "version": "1.0.0",
+  "category": "writing",
+  "tags": [
+    "artifact:outline",
+    "category:writing",
+    "constraint:source_grounded",
+    "job:plan",
+    "modality:text"
+  ],
+  "capabilities": [
+    "long_context",
+    "text"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Long-form outline",
+      "summary": "Turn a topic and source material into a writing-ready hierarchical outline",
+      "usage": "Use for articles, reports, and long-form planning"
+    },
+    "zh-CN": {
+      "title": "长文结构大纲",
+      "summary": "把主题和素材转换为可直接写作的分层大纲",
+      "usage": "适合文章、报告和长内容策划",
+      "aliases": [
+        "文章大纲"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/writing/longform-outline/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/writing/longform-outline/prompts/main.zh-CN.md"
+    }
+  ]
+}

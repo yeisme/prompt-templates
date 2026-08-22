@@ -1,0 +1,48 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "research",
+  "id": "evidence-research-brief",
+  "version": "1.0.0",
+  "category": "research",
+  "tags": [
+    "artifact:research_brief",
+    "category:research",
+    "constraint:source_citation",
+    "job:analyze",
+    "modality:text"
+  ],
+  "capabilities": [
+    "citations",
+    "evidence_synthesis",
+    "text"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Evidence-based research brief",
+      "summary": "Create a research brief that separates facts, inference, counterevidence, and limitations",
+      "usage": "Use for market, competitor, policy, and decision research"
+    },
+    "zh-CN": {
+      "title": "证据型研究简报",
+      "summary": "基于来源生成区分事实、推断、反证和限制的研究简报",
+      "usage": "适合竞品、市场、政策和决策研究",
+      "aliases": [
+        "研究报告"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/research/evidence-research-brief/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/research/evidence-research-brief/prompts/main.zh-CN.md"
+    }
+  ]
+}

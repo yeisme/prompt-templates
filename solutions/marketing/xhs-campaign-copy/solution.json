@@ -1,0 +1,48 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "marketing",
+  "id": "xhs-campaign-copy",
+  "version": "1.0.0",
+  "category": "marketing",
+  "tags": [
+    "artifact:social_post",
+    "category:marketing",
+    "constraint:claim_verification",
+    "job:write",
+    "modality:text",
+    "platform:xiaohongshu"
+  ],
+  "capabilities": [
+    "marketing_copy",
+    "text"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Xiaohongshu campaign copy",
+      "summary": "Create natural, compliant Xiaohongshu campaign content from verified benefits",
+      "usage": "Use for product campaigns and content marketing"
+    },
+    "zh-CN": {
+      "title": "小红书活动文案",
+      "summary": "基于真实卖点生成自然、合规且可复核的小红书活动内容",
+      "usage": "适合品牌种草、产品活动和内容营销",
+      "aliases": [
+        "小红书文案"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/marketing/xhs-campaign-copy/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/marketing/xhs-campaign-copy/prompts/main.zh-CN.md"
+    }
+  ]
+}

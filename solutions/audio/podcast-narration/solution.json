@@ -1,0 +1,50 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "audio",
+  "id": "podcast-narration",
+  "version": "1.0.0",
+  "category": "audio",
+  "tags": [
+    "artifact:voiceover",
+    "category:audio",
+    "constraint:pronunciation_accuracy",
+    "job:generate",
+    "modality:audio",
+    "scenario:podcast"
+  ],
+  "capabilities": [
+    "audio",
+    "tts",
+    "voice"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Chinese podcast narration",
+      "summary": "Convert Chinese scripts into podcast narration with pacing, pauses, emphasis, and pronunciation guidance",
+      "usage": "Use for TTS and human podcast voice preparation"
+    },
+    "zh-CN": {
+      "title": "中文播客旁白",
+      "summary": "把中文稿件转换成带节奏、停顿、重音和发音表的播客旁白方案",
+      "usage": "适合 TTS 和真人播客配音准备",
+      "aliases": [
+        "中文旁白",
+        "播客配音"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/audio/podcast-narration/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/audio/podcast-narration/prompts/main.zh-CN.md"
+    }
+  ]
+}

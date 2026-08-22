@@ -1,0 +1,49 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "short-drama-character-consistency",
+  "version": "1.0.0",
+  "category": "video",
+  "tags": [
+    "artifact:shot_video",
+    "category:video",
+    "constraint:character_consistency",
+    "job:generate",
+    "modality:video",
+    "scenario:short_drama"
+  ],
+  "capabilities": [
+    "reference_image",
+    "timeline",
+    "video"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Short-drama character-consistent shot",
+      "summary": "Generate short-drama shot prompts with locked identity, costume, direction, and continuity",
+      "usage": "Use for storyboard-to-video generation and repair"
+    },
+    "zh-CN": {
+      "title": "短剧人物一致性镜头",
+      "summary": "锁定人物身份、服装、方向和镜头连续性的短剧视频提示",
+      "usage": "适合短剧分镜到视频生成与修复",
+      "aliases": [
+        "短剧人物一致性"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/video/short-drama-character-consistency/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md"
+    }
+  ]
+}

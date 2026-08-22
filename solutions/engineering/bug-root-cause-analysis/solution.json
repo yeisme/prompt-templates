@@ -1,0 +1,48 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "engineering",
+  "id": "bug-root-cause-analysis",
+  "version": "1.0.0",
+  "category": "engineering",
+  "tags": [
+    "artifact:root_cause_report",
+    "category:engineering",
+    "constraint:evidence_first",
+    "job:debug",
+    "modality:code"
+  ],
+  "capabilities": [
+    "code",
+    "diagnostics",
+    "testing"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Bug root-cause analysis",
+      "summary": "Rank hypotheses from reproduction evidence, identify root cause, and design minimal fix verification",
+      "usage": "Use for code, service, and integration failures"
+    },
+    "zh-CN": {
+      "title": "Bug 根因分析",
+      "summary": "基于复现和证据排序假设、定位根因并设计最小修复验证",
+      "usage": "适合代码、服务和集成故障诊断",
+      "aliases": [
+        "故障根因"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/engineering/bug-root-cause-analysis/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/engineering/bug-root-cause-analysis/prompts/main.zh-CN.md"
+    }
+  ]
+}

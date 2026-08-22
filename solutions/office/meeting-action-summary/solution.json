@@ -1,0 +1,47 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "office",
+  "id": "meeting-action-summary",
+  "version": "1.0.0",
+  "category": "office",
+  "tags": [
+    "artifact:meeting_minutes",
+    "category:office",
+    "constraint:actionable",
+    "job:summarize",
+    "modality:text"
+  ],
+  "capabilities": [
+    "structured_output",
+    "text"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Meeting action summary",
+      "summary": "Extract decisions, actions, owners, dates, and risks from meeting records",
+      "usage": "Use for project meetings, standups, and cross-team updates"
+    },
+    "zh-CN": {
+      "title": "会议行动纪要",
+      "summary": "从会议记录中提取决定、行动项、责任人、日期和风险",
+      "usage": "适合项目会议、周会和跨团队同步",
+      "aliases": [
+        "会议纪要"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/office/meeting-action-summary/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/office/meeting-action-summary/prompts/main.zh-CN.md"
+    }
+  ]
+}

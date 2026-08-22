@@ -1,0 +1,49 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "xhs-product-cover",
+  "version": "1.0.0",
+  "category": "image",
+  "tags": [
+    "artifact:cover_image",
+    "category:image",
+    "constraint:text_legibility",
+    "job:generate",
+    "modality:image",
+    "platform:xiaohongshu"
+  ],
+  "capabilities": [
+    "image",
+    "visual_composition"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Xiaohongshu product cover",
+      "summary": "Create a product-cover prompt with composition, lighting, safe text layout, and negative constraints",
+      "usage": "Use for Xiaohongshu product and campaign covers"
+    },
+    "zh-CN": {
+      "title": "小红书产品封面",
+      "summary": "生成包含构图、光线、排版安全区和负面约束的产品封面提示",
+      "usage": "适合小红书产品种草与活动封面",
+      "aliases": [
+        "XHS 产品封面",
+        "小红书封面"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/xhs-product-cover/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/image/xhs-product-cover/prompts/main.zh-CN.md"
+    }
+  ]
+}

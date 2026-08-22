@@ -1,0 +1,612 @@
+{
+  "schema_version": "promptrepo.catalog.v0.1",
+  "repository": {
+    "id": "official",
+    "name": "Yeisme Official Prompt Solutions",
+    "default_locale": "zh-CN",
+    "taxonomy_version": "v1"
+  },
+  "generated_at": "1970-01-01T00:00:00Z",
+  "digest": "sha256:d252148bb4e4f6be95f99848dd49bad43b6414f4b7ccd520fe71b3616ad37b2f",
+  "solutions": [
+    {
+      "package_id": "agent",
+      "id": "tool-use-handoff",
+      "version": "1.0.0",
+      "digest": "sha256:0825829527750e49e12b7c9606c48e7be881a2d0a0059e890fa4638aaafb275a",
+      "category": "agent",
+      "tags": [
+        "artifact:handoff_packet",
+        "category:agent",
+        "constraint:permission_gated",
+        "job:orchestrate",
+        "modality:text"
+      ],
+      "capabilities": [
+        "agent",
+        "audit",
+        "tool_use"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Agent tool use and handoff",
+          "summary": "Design permission-aware, evidence-backed, reversible agent execution and handoff",
+          "usage": "Use for complex automation, tool orchestration, and staged delivery"
+        },
+        "zh-CN": {
+          "title": "Agent 工具调用与交接",
+          "summary": "设计权限清晰、证据完整、可回滚的 Agent 工具执行和交接方案",
+          "usage": "适合复杂自动化、工具编排和多阶段交付",
+          "aliases": [
+            "Agent 交接"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/agent/tool-use-handoff/prompts/main.en.md",
+          "digest": "sha256:a900e7523341e5d018296ac37765a986acdc25561da2a555edfd8c95e96be8f1"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/agent/tool-use-handoff/prompts/main.zh-CN.md",
+          "digest": "sha256:d1d5a8f5f975c158c5b0ff7b6db4cb6eafbb25fced63da9ae484c1ca86f51d93"
+        }
+      ]
+    },
+    {
+      "package_id": "audio",
+      "id": "podcast-narration",
+      "version": "1.0.0",
+      "digest": "sha256:dc0d832ac8c98d144d0ba4510e42926789284860843a5321664d7565f340b42e",
+      "category": "audio",
+      "tags": [
+        "artifact:voiceover",
+        "category:audio",
+        "constraint:pronunciation_accuracy",
+        "job:generate",
+        "modality:audio",
+        "scenario:podcast"
+      ],
+      "capabilities": [
+        "audio",
+        "tts",
+        "voice"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Chinese podcast narration",
+          "summary": "Convert Chinese scripts into podcast narration with pacing, pauses, emphasis, and pronunciation guidance",
+          "usage": "Use for TTS and human podcast voice preparation"
+        },
+        "zh-CN": {
+          "title": "中文播客旁白",
+          "summary": "把中文稿件转换成带节奏、停顿、重音和发音表的播客旁白方案",
+          "usage": "适合 TTS 和真人播客配音准备",
+          "aliases": [
+            "中文旁白",
+            "播客配音"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/audio/podcast-narration/prompts/main.en.md",
+          "digest": "sha256:5cbd2160706f59e7f945fde3c02cf44ee71b43c5da3d0ac75785fb16648aae77"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/audio/podcast-narration/prompts/main.zh-CN.md",
+          "digest": "sha256:78b8ff6d38de8151fce85d980c65a8fb46c54a9e69fd47e88b3f5229ed04648e"
+        }
+      ]
+    },
+    {
+      "package_id": "engineering",
+      "id": "bug-root-cause-analysis",
+      "version": "1.0.0",
+      "digest": "sha256:06df2f142a2401dd777f5ca731b20e2da7b8b0488c4ab05a914bb9eb3fccc43d",
+      "category": "engineering",
+      "tags": [
+        "artifact:root_cause_report",
+        "category:engineering",
+        "constraint:evidence_first",
+        "job:debug",
+        "modality:code"
+      ],
+      "capabilities": [
+        "code",
+        "diagnostics",
+        "testing"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Bug root-cause analysis",
+          "summary": "Rank hypotheses from reproduction evidence, identify root cause, and design minimal fix verification",
+          "usage": "Use for code, service, and integration failures"
+        },
+        "zh-CN": {
+          "title": "Bug 根因分析",
+          "summary": "基于复现和证据排序假设、定位根因并设计最小修复验证",
+          "usage": "适合代码、服务和集成故障诊断",
+          "aliases": [
+            "故障根因"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/engineering/bug-root-cause-analysis/prompts/main.en.md",
+          "digest": "sha256:7e34a32e86f8fe917ac12974ab094f5a75a3c09a8c4612acdc431a68b040978c"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/engineering/bug-root-cause-analysis/prompts/main.zh-CN.md",
+          "digest": "sha256:461ca782e7efc36af02fd7e572fb836d2929bb740a2ea00ce9a2762a22aea47b"
+        }
+      ]
+    },
+    {
+      "package_id": "general",
+      "id": "structured-summary",
+      "version": "1.0.0",
+      "digest": "sha256:efc159e390154a9e4ea32f06da3f4c6785894419971543f7bcd5b43e1a3cd83a",
+      "category": "general",
+      "tags": [
+        "artifact:structured_summary",
+        "category:general",
+        "constraint:evidence_grounded",
+        "job:summarize",
+        "modality:text"
+      ],
+      "capabilities": [
+        "structured_output",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Structured summary",
+          "summary": "Extract verifiable conclusions, facts, actions, and risks from long-form material",
+          "usage": "Use for meeting records, reports, and source synthesis"
+        },
+        "zh-CN": {
+          "title": "结构化总结",
+          "summary": "从长文本中提取可核查结论、事实、行动和风险",
+          "usage": "适合会议记录、报告和资料整理",
+          "aliases": [
+            "内容总结"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/general/structured-summary/prompts/main.en.md",
+          "digest": "sha256:2bbad07bd5d54228e3797a8f1ecf9404d5dda86c0698d572e6af8cb36993711e"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/general/structured-summary/prompts/main.zh-CN.md",
+          "digest": "sha256:3942036b2dbbcdcffae1f9b10de01242d55631fda4e296ac04add0c7560cdbce"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "xhs-product-cover",
+      "version": "1.0.0",
+      "digest": "sha256:ba8cab020f5e942857ef0f9b790f4f29ade0c5eeac322e1bc42db32a64632f70",
+      "category": "image",
+      "tags": [
+        "artifact:cover_image",
+        "category:image",
+        "constraint:text_legibility",
+        "job:generate",
+        "modality:image",
+        "platform:xiaohongshu"
+      ],
+      "capabilities": [
+        "image",
+        "visual_composition"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Xiaohongshu product cover",
+          "summary": "Create a product-cover prompt with composition, lighting, safe text layout, and negative constraints",
+          "usage": "Use for Xiaohongshu product and campaign covers"
+        },
+        "zh-CN": {
+          "title": "小红书产品封面",
+          "summary": "生成包含构图、光线、排版安全区和负面约束的产品封面提示",
+          "usage": "适合小红书产品种草与活动封面",
+          "aliases": [
+            "XHS 产品封面",
+            "小红书封面"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/xhs-product-cover/prompts/main.en.md",
+          "digest": "sha256:42f25e270ecbd044b45f7979fe92826f35e9c7f0de4d824cad50323500b4a39e"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/image/xhs-product-cover/prompts/main.zh-CN.md",
+          "digest": "sha256:c081e1c618861899fb522e284eef137faa30b3abb1837fc2ac0d11a84204ec1d"
+        }
+      ]
+    },
+    {
+      "package_id": "learning",
+      "id": "socratic-study-plan",
+      "version": "1.0.0",
+      "digest": "sha256:058d8d277794fc9f5f7c67c15c36ffb7014002516b2f7c6557c5cc692d49fafb",
+      "category": "learning",
+      "tags": [
+        "artifact:study_plan",
+        "category:learning",
+        "constraint:adaptive",
+        "job:learn",
+        "modality:text"
+      ],
+      "capabilities": [
+        "interactive_learning",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Socratic study plan",
+          "summary": "Design a verifiable and adaptive question-led learning path from the learner's current level",
+          "usage": "Use for self-study, tutoring, and staged skill development"
+        },
+        "zh-CN": {
+          "title": "苏格拉底式学习计划",
+          "summary": "基于当前水平设计可验证、可调整的提问式学习路径",
+          "usage": "适合自学、辅导和阶段性能力提升",
+          "aliases": [
+            "学习计划"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/learning/socratic-study-plan/prompts/main.en.md",
+          "digest": "sha256:8c92525d448426d17d9c1e2b43e767f56047ae7f10e2c903d59d2b7478f3d3c1"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/learning/socratic-study-plan/prompts/main.zh-CN.md",
+          "digest": "sha256:264da5b1a7a581341bbb72641c18e105fd5b1d81f8d02ef5116d06433800631c"
+        }
+      ]
+    },
+    {
+      "package_id": "marketing",
+      "id": "xhs-campaign-copy",
+      "version": "1.0.0",
+      "digest": "sha256:e850d6cf9e26e920ac2485d187d44c30e80b92b0283bb9b51ef5b57bbaff2712",
+      "category": "marketing",
+      "tags": [
+        "artifact:social_post",
+        "category:marketing",
+        "constraint:claim_verification",
+        "job:write",
+        "modality:text",
+        "platform:xiaohongshu"
+      ],
+      "capabilities": [
+        "marketing_copy",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Xiaohongshu campaign copy",
+          "summary": "Create natural, compliant Xiaohongshu campaign content from verified benefits",
+          "usage": "Use for product campaigns and content marketing"
+        },
+        "zh-CN": {
+          "title": "小红书活动文案",
+          "summary": "基于真实卖点生成自然、合规且可复核的小红书活动内容",
+          "usage": "适合品牌种草、产品活动和内容营销",
+          "aliases": [
+            "小红书文案"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/marketing/xhs-campaign-copy/prompts/main.en.md",
+          "digest": "sha256:ad739aee0cf2edac20752a2939298839af8e75eeed129b1d8d866c221f9bb97e"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/marketing/xhs-campaign-copy/prompts/main.zh-CN.md",
+          "digest": "sha256:1cd6eb93321511f32d045686b67983a7b869dd0e92f7adb60db3d22cbb44eb81"
+        }
+      ]
+    },
+    {
+      "package_id": "office",
+      "id": "meeting-action-summary",
+      "version": "1.0.0",
+      "digest": "sha256:5b7096a284fc8a1a8183c129c63820a14b5d93d816016b7d720836b2fd1a9b1e",
+      "category": "office",
+      "tags": [
+        "artifact:meeting_minutes",
+        "category:office",
+        "constraint:actionable",
+        "job:summarize",
+        "modality:text"
+      ],
+      "capabilities": [
+        "structured_output",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Meeting action summary",
+          "summary": "Extract decisions, actions, owners, dates, and risks from meeting records",
+          "usage": "Use for project meetings, standups, and cross-team updates"
+        },
+        "zh-CN": {
+          "title": "会议行动纪要",
+          "summary": "从会议记录中提取决定、行动项、责任人、日期和风险",
+          "usage": "适合项目会议、周会和跨团队同步",
+          "aliases": [
+            "会议纪要"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/office/meeting-action-summary/prompts/main.en.md",
+          "digest": "sha256:204a7f96577ce23ed006f7a2bf7484e4d0b6fb4e27406dd1a0929ef4027e3d54"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/office/meeting-action-summary/prompts/main.zh-CN.md",
+          "digest": "sha256:29d952442e24ead5c93b00560547ddf54354f24814cb30396d26e03222ded856"
+        }
+      ]
+    },
+    {
+      "package_id": "product",
+      "id": "prd-acceptance-criteria",
+      "version": "1.0.0",
+      "digest": "sha256:b27a5cf7c353e4dacdcd8acc4a27cb22df9d2abf95b76e9fe96e1e2ba3f495e1",
+      "category": "product",
+      "tags": [
+        "artifact:prd",
+        "category:product",
+        "constraint:testable_acceptance",
+        "job:design",
+        "modality:text"
+      ],
+      "capabilities": [
+        "structured_output",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "PRD and acceptance criteria",
+          "summary": "Turn a product idea into a capability ledger, workflow, requirements, and testable acceptance criteria",
+          "usage": "Use for platform, CLI, and agent product planning"
+        },
+        "zh-CN": {
+          "title": "PRD 与验收标准",
+          "summary": "将产品想法转换为能力账本、流程、需求和可测试验收标准",
+          "usage": "适合平台能力、CLI 和 Agent 产品规划",
+          "aliases": [
+            "产品需求文档"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/product/prd-acceptance-criteria/prompts/main.en.md",
+          "digest": "sha256:0470e09832303a2268fc224bccc03b07e7796c5cbdba1208b93408f827bfbade"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/product/prd-acceptance-criteria/prompts/main.zh-CN.md",
+          "digest": "sha256:c82fcd414272976a0e3379a05372a1635b39cf449e103588b25caf89df975362"
+        }
+      ]
+    },
+    {
+      "package_id": "research",
+      "id": "evidence-research-brief",
+      "version": "1.0.0",
+      "digest": "sha256:c165aeadd1397231620df9880355ff35e0186571b58adead370dcd471ff88102",
+      "category": "research",
+      "tags": [
+        "artifact:research_brief",
+        "category:research",
+        "constraint:source_citation",
+        "job:analyze",
+        "modality:text"
+      ],
+      "capabilities": [
+        "citations",
+        "evidence_synthesis",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Evidence-based research brief",
+          "summary": "Create a research brief that separates facts, inference, counterevidence, and limitations",
+          "usage": "Use for market, competitor, policy, and decision research"
+        },
+        "zh-CN": {
+          "title": "证据型研究简报",
+          "summary": "基于来源生成区分事实、推断、反证和限制的研究简报",
+          "usage": "适合竞品、市场、政策和决策研究",
+          "aliases": [
+            "研究报告"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/research/evidence-research-brief/prompts/main.en.md",
+          "digest": "sha256:3ade9a1d72e4fa45f98daf637310f487fcacc7df17d26da4eedbcb531f2d9ab5"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/research/evidence-research-brief/prompts/main.zh-CN.md",
+          "digest": "sha256:0d20f596dda4e843c765311162bdc8601c8bbf83c45c306c14cde405c60e1dae"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "short-drama-character-consistency",
+      "version": "1.0.0",
+      "digest": "sha256:a5a83f9af4038d585526794fbeb68769692a2ddea56c4d604be606884870f514",
+      "category": "video",
+      "tags": [
+        "artifact:shot_video",
+        "category:video",
+        "constraint:character_consistency",
+        "job:generate",
+        "modality:video",
+        "scenario:short_drama"
+      ],
+      "capabilities": [
+        "reference_image",
+        "timeline",
+        "video"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Short-drama character-consistent shot",
+          "summary": "Generate short-drama shot prompts with locked identity, costume, direction, and continuity",
+          "usage": "Use for storyboard-to-video generation and repair"
+        },
+        "zh-CN": {
+          "title": "短剧人物一致性镜头",
+          "summary": "锁定人物身份、服装、方向和镜头连续性的短剧视频提示",
+          "usage": "适合短剧分镜到视频生成与修复",
+          "aliases": [
+            "短剧人物一致性"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/video/short-drama-character-consistency/prompts/main.en.md",
+          "digest": "sha256:701a89ef76fe3e025ad5c977cbe536cd75edb179db4c0496d0fdc411a3dca4dd"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md",
+          "digest": "sha256:14b16b88ec78e094b54375b81741479e4822e6e48506c0ef055c2a1eb998c2d7"
+        }
+      ]
+    },
+    {
+      "package_id": "writing",
+      "id": "longform-outline",
+      "version": "1.0.0",
+      "digest": "sha256:a253d0afe63d029bbf70b95cea8de841035bdf2a803e060f27d0de48f7d1d959",
+      "category": "writing",
+      "tags": [
+        "artifact:outline",
+        "category:writing",
+        "constraint:source_grounded",
+        "job:plan",
+        "modality:text"
+      ],
+      "capabilities": [
+        "long_context",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Long-form outline",
+          "summary": "Turn a topic and source material into a writing-ready hierarchical outline",
+          "usage": "Use for articles, reports, and long-form planning"
+        },
+        "zh-CN": {
+          "title": "长文结构大纲",
+          "summary": "把主题和素材转换为可直接写作的分层大纲",
+          "usage": "适合文章、报告和长内容策划",
+          "aliases": [
+            "文章大纲"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/writing/longform-outline/prompts/main.en.md",
+          "digest": "sha256:fd72af160435b52996fb149b56e31aaa1b685efdcd0d9ea3ad3f4a8436f8741a"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/writing/longform-outline/prompts/main.zh-CN.md",
+          "digest": "sha256:930e8cd45c610adce71695523e6d20ad17a700c3ba216ca46678ecdb577c5bc1"
+        }
+      ]
+    }
+  ]
+}

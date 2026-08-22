@@ -1,0 +1,7 @@
+{
+  "schema_version": "promptrepo.repository.v0.1",
+  "id": "official",
+  "name": "Yeisme Official Prompt Solutions",
+  "default_locale": "zh-CN",
+  "taxonomy_version": "v1"
+}

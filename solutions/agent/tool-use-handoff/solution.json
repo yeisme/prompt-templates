@@ -1,0 +1,48 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "agent",
+  "id": "tool-use-handoff",
+  "version": "1.0.0",
+  "category": "agent",
+  "tags": [
+    "artifact:handoff_packet",
+    "category:agent",
+    "constraint:permission_gated",
+    "job:orchestrate",
+    "modality:text"
+  ],
+  "capabilities": [
+    "agent",
+    "audit",
+    "tool_use"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Agent tool use and handoff",
+      "summary": "Design permission-aware, evidence-backed, reversible agent execution and handoff",
+      "usage": "Use for complex automation, tool orchestration, and staged delivery"
+    },
+    "zh-CN": {
+      "title": "Agent 工具调用与交接",
+      "summary": "设计权限清晰、证据完整、可回滚的 Agent 工具执行和交接方案",
+      "usage": "适合复杂自动化、工具编排和多阶段交付",
+      "aliases": [
+        "Agent 交接"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/agent/tool-use-handoff/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/agent/tool-use-handoff/prompts/main.zh-CN.md"
+    }
+  ]
+}

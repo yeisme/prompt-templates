@@ -1,0 +1,47 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "product",
+  "id": "prd-acceptance-criteria",
+  "version": "1.0.0",
+  "category": "product",
+  "tags": [
+    "artifact:prd",
+    "category:product",
+    "constraint:testable_acceptance",
+    "job:design",
+    "modality:text"
+  ],
+  "capabilities": [
+    "structured_output",
+    "text"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "PRD and acceptance criteria",
+      "summary": "Turn a product idea into a capability ledger, workflow, requirements, and testable acceptance criteria",
+      "usage": "Use for platform, CLI, and agent product planning"
+    },
+    "zh-CN": {
+      "title": "PRD 与验收标准",
+      "summary": "将产品想法转换为能力账本、流程、需求和可测试验收标准",
+      "usage": "适合平台能力、CLI 和 Agent 产品规划",
+      "aliases": [
+        "产品需求文档"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/product/prd-acceptance-criteria/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/product/prd-acceptance-criteria/prompts/main.zh-CN.md"
+    }
+  ]
+}
