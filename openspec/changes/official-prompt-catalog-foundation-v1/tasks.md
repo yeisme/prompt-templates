@@ -20,3 +20,4 @@
 - Catalog：12 solutions、24 locale Prompt Markdown，catalog digest `sha256:d252148bb4e4f6be95f99848dd49bad43b6414f4b7ccd520fe71b3616ad37b2f`。
 - Determinism：连续两次 build 的 `catalog.json` SHA-256 均为 `f78319451fdfdc62eac569ea3884823faed5080d189267b4ad496ed1b1c33e95`。
 - Validation：`template-registry catalog validate --repository . --json`、`openspec validate --all --strict` 与 secret/path audit passed。
+- Public SDK cutover canary：Template Registry 消费 `github.com/yeisme/promptrepo@v0.2.0-rc.1` 后重新 validate/build；catalog digest 与文件 SHA-256 均保持不变。
