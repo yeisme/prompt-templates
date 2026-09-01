@@ -1,0 +1,8 @@
+schema_version: wardrobe.module.v1
+module_id: wardrobe/wuxia-hanfu-moonwhite-v1
+wardrobe:
+  coverage: 胸背与腰部由不透明内层完整覆盖
+  inner_layer: 月白色不透明丝绸交领内衫
+  outer_layer: 浅烟紫半透明薄纱外衫
+  shoes: 米白色低帮帆布鞋
+  waist: 烟紫色窄腰封

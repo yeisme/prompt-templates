@@ -1,0 +1,60 @@
+schema_version: task.module.v1
+module_id: task/character-turnaround-independent-artifacts-v2
+asset_profile_id: turnaround-three-view-v1
+production:
+  execution_mode: independent_artifacts
+  provider_artifact_count_per_job: 1
+  review_layout: turnaround_contact_sheet_1x3
+  quick_preview_allowed: true
+  quick_preview_must_be_non_production: true
+stage_gates:
+  face_master:
+    stage_id: face-master-front
+    requires: []
+    output: one_adult_neutral_front_bust
+  body_master:
+    stage_id: body-master-front
+    requires:
+      - accepted-face-master
+    output: one_neutral_full_body_front
+  base_wardrobe_front:
+    stage_id: base-wardrobe-front
+    requires:
+      - accepted-face-master
+      - accepted-body-master
+    output: one_full_body_front_in_base_wardrobe
+  turnaround_left_profile:
+    stage_id: turnaround-left-profile
+    requires:
+      - accepted-face-master
+      - accepted-body-master
+      - accepted-base-wardrobe-front
+    output: one_full_body_left_profile
+  turnaround_back:
+    stage_id: turnaround-back
+    requires:
+      - accepted-face-master
+      - accepted-body-master
+      - accepted-base-wardrobe-front
+    output: one_full_body_back
+job_constraints:
+  subject_count: 1
+  view_count: 1
+  expected_image_artifact_count: 1
+  provider_generated_grid_forbidden: true
+  contact_sheet_is_review_projection: true
+camera_and_continuity:
+  background: neutral-light-gray
+  marker_policy: viewer-left-is-character-right
+  seed_policy: fixed
+  full_body_required_for_body_and_turnaround: true
+  derived_views_inherit:
+    - identity_geometry
+    - body_ratio
+    - base_wardrobe_silhouette
+    - footwear
+  derived_views_forbid:
+    - face_replacement
+    - marker_mirroring
+    - wardrobe_layer_reorder
+    - provider_grid_layout

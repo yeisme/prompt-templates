@@ -1,0 +1,33 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets",
+  "version": "1.0.0",
+  "role": "wuxia-female-turnaround-modular",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-drama-character-assets/templates/plans/wuxia-female-turnaround-modular.zh-CN.yaml",
+  "source_digest": "sha256:d89fc11493384b98419041ef0049080e6678a36e0476b7e104ced7844bbaefe3",
+  "format": "yaml",
+  "media_type": "application/yaml",
+  "canonicalization": "rfc8785",
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/schemas/eikona.character_asset_prompt_authoring.v1.schema.json",
+    "digest": "sha256:fe950819b2d2264df382358f6a0b4578437476fcd3f0c319497c7ab32ebe9323"
+  },
+  "compiler_profile": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/compilers/eikona.character-asset.authoring.v1.json",
+    "digest": "sha256:3af23973ee58184d03dcdbba296ce04bdb241abc3544bae6b71edc34352602a5"
+  },
+  "required_capabilities": [
+    "character_asset",
+    "structured_document"
+  ],
+  "selector_kinds": [
+    "yaml-pointer"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:947dd384b266eca2370688db67b401abd95124daff2860a11b973805cc43aca9"
+}

@@ -1,0 +1,211 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-storyboard-breakdown",
+  "version": "1.0.0",
+  "role": "repair",
+  "locale": "en",
+  "template_path": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.en.md",
+  "template_digest": "sha256:55b4abf62e956b13cfb87ce5ed8f8c695c1ba964db7d58eeb83a94f4295f1434",
+  "digest": "sha256:e7189df29890b3098ac73029ba65dc66a6bab17f7794d86180afc22a481cef29",
+  "license": "internal",
+  "permissions": [
+    "inspect",
+    "preview",
+    "storyboard_handoff"
+  ],
+  "inputs": [
+    {
+      "name": "accepted_story_context_refs_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Accepted story context refs"
+      },
+      "descriptions": {
+        "en": "Human-accepted story context references allowed for this run, serialized as JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "continuity_facts_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "en": "Continuity facts"
+      },
+      "descriptions": {
+        "en": "Continuity facts that shots may reference, serialized as JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "direction_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Directorial constraints"
+      },
+      "descriptions": {
+        "en": "Directorial objectives and hard constraints validated and serialized by Scaena"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "episode_ref",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "episode:01"
+      ],
+      "regex": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "min_length": 1,
+      "max_length": 256,
+      "labels": {
+        "en": "Episode ref"
+      },
+      "descriptions": {
+        "en": "Stable reference for the current and only allowed episode"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "known_entities_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "en": "Known entities"
+      },
+      "descriptions": {
+        "en": "Controlled character, location, and prop entities serialized as JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "locale",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "en"
+      ],
+      "labels": {
+        "en": "Locale"
+      },
+      "descriptions": {
+        "en": "Locale used by the template body and output text"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "storyboard.semantic_plan.v1"
+      ],
+      "labels": {
+        "en": "Output schema version"
+      },
+      "descriptions": {
+        "en": "Directorial semantic plan schema version the model must return"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "profile_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "vertical-short-drama-v1",
+        "dialogue-dense-v1",
+        "manga-panel-v1",
+        "ad-microdrama-v1"
+      ],
+      "labels": {
+        "en": "Storyboard profile"
+      },
+      "descriptions": {
+        "en": "Controls shot rhythm and expression constraints"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "repair_findings_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "en": "Repair findings"
+      },
+      "descriptions": {
+        "en": "Stable finding codes and targets allowed for this repair, serialized as JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "scaena.storyboard_prompt_input.v1"
+      ],
+      "labels": {
+        "en": "Input schema version"
+      },
+      "descriptions": {
+        "en": "Scaena input envelope version passed to the template"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "semantic_plan_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 1048576,
+      "labels": {
+        "en": "Semantic plan to repair"
+      },
+      "descriptions": {
+        "en": "Semantic plan parsed by Scaena that now requires bounded repair, serialized as JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "source_segments_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 1048576,
+      "labels": {
+        "en": "Script segments"
+      },
+      "descriptions": {
+        "en": "Current-episode script segments with stable segment_ref values, serialized as JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "style_lens_summary",
+      "type": "string",
+      "required": true,
+      "max_length": 8192,
+      "labels": {
+        "en": "Style lens summary"
+      },
+      "descriptions": {
+        "en": "Style-constraint summary without executable instructions"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

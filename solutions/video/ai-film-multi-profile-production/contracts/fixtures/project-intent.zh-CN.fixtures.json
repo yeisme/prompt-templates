@@ -1,0 +1,80 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-film-multi-profile-production/project-intent/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-film-multi-profile-production",
+  "version": "1.0.0",
+  "role": "project-intent",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-film-multi-profile-production/prompts/project-intent.zh-CN.md",
+    "digest": "sha256:f4ea4e5c2fe01eb0befba6da7d9e1eb97a0d39f9379608d58991124e9fc2e5ac"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/project-intent.zh-CN.json",
+    "digest": "sha256:b18d47605beb674b7f14a3c1e9a42da0a1cd377ebe18909ac096391d4f309a7d"
+  },
+  "document": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/documents/project-intent.zh-CN.document.json",
+    "digest": "sha256:e54b891ba8791dd3d6c452305057927dd87a5a6dae247da16ed00c551f68a0a1"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/schemas/ai-film-project-intent-semantic-output-v1.schema.json",
+    "digest": "sha256:cf5d1e4ba031e7e1a6726d8ba0273568044fd4d1be43691c8892211d0a3cb4f7"
+  },
+  "semantic_schema_version": "ai-film-project-intent-semantic-output-v1",
+  "cases": [
+    {
+      "case_id": "invalid-invented-product-claim",
+      "kind": "invalid",
+      "profile_id": "brand_film",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/project-intent.zh-CN/invalid-invented-product-claim.input.json",
+        "digest": "sha256:26a31efd0b34a02afde6e2ef67d90af2459049358193aeac9be38fbe75bb1bb4",
+        "bytes": 579
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/project-intent.zh-CN/invalid-invented-product-claim.output.json",
+        "digest": "sha256:185fbe3960a8181832035b295d25074ce435891e6e0323907e90ebb23a821ca1",
+        "bytes": 121
+      },
+      "expected_codes": [
+        "INVENTED_PRODUCT_CLAIM"
+      ]
+    },
+    {
+      "case_id": "invalid-no-emotional-protagonist",
+      "kind": "invalid",
+      "profile_id": "cinematic_live_action",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/project-intent.zh-CN/invalid-no-emotional-protagonist.input.json",
+        "digest": "sha256:1c10ead2f42e4c7e63f43a03b1491b36d8a3c53d8d05898b04c1fa1a19a0e74e",
+        "bytes": 618
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/project-intent.zh-CN/invalid-no-emotional-protagonist.output.json",
+        "digest": "sha256:bda3da5f9b3c7b8efcdcec052cc2347b0cda7e5d5cb77d1e71aa49c75b192e22",
+        "bytes": 123
+      },
+      "expected_codes": [
+        "NO_EMOTIONAL_PROTAGONIST"
+      ]
+    },
+    {
+      "case_id": "valid-live-action-two-hander",
+      "kind": "valid",
+      "profile_id": "cinematic_live_action",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/project-intent.zh-CN/valid-live-action-two-hander.input.json",
+        "digest": "sha256:d4e475fcb2106ac4840eab14f1baa37696baa8394f33cb5dffb192d0ee26ac7e",
+        "bytes": 798
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/project-intent.zh-CN/valid-live-action-two-hander.output.json",
+        "digest": "sha256:d29f4eff52d7e5d001750014f3ffa41cc3ddddb04adde4b2c5425de4040fca11",
+        "bytes": 720
+      }
+    }
+  ],
+  "digest": "sha256:d4799a6359bad518bada81694ff8431aa1d5bc6dbf157df03a448402a6b1633a"
+}

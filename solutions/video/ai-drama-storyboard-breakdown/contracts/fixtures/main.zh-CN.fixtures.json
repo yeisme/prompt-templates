@@ -1,0 +1,304 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-drama-storyboard-breakdown/main/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-drama-storyboard-breakdown",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-drama-storyboard-breakdown/prompts/main.zh-CN.md",
+    "digest": "sha256:6817dc387a99f04a0ea81c66f2713ec41be63576052f50cbd47199e61adec4d9"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-drama-storyboard-breakdown/contracts/main.zh-CN.json",
+    "digest": "sha256:f9e95e9f716e4752e82418feb6b15d6ebe4dc1ce5d83fbf5671139a9001d772b"
+  },
+  "document": {
+    "ref": "solutions/video/ai-drama-storyboard-breakdown/contracts/documents/main.zh-CN.document.json",
+    "digest": "sha256:783ee27028983d21e364b8a78035ca9c3296f43acd091777e298c1de1e152457"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-drama-storyboard-breakdown/contracts/schemas/storyboard.semantic-plan.v1.schema.json",
+    "digest": "sha256:372dbe848d2961538f4efc8a69b6fc380805cfca9181007af79f03cb9da81e04"
+  },
+  "compiler_profile": {
+    "ref": "solutions/video/ai-drama-storyboard-breakdown/contracts/compilers/scaena.storyboard.semantic-plan.v1.json",
+    "digest": "sha256:c45c33ccb12f6fbb0c023ad73a724aba3794f503ac4aac416d58725264171625"
+  },
+  "semantic_schema_version": "storyboard.semantic_plan.v1",
+  "validator_command_ref": "scaena.storyboard.semantic-plan.v1",
+  "cases": [
+    {
+      "case_id": "ad-product-truth",
+      "kind": "valid",
+      "profile_id": "ad-microdrama-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.input.json",
+        "digest": "sha256:8747d0aec738a52738f601cd3fcca7d984a15112a0833533768b619082a7b2f9",
+        "bytes": 1587
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.output.json",
+        "digest": "sha256:3a9405710902780cd6eca04501601e1a487b2159e96f1bf0e2af8a9733d2baec",
+        "bytes": 4143
+      }
+    },
+    {
+      "case_id": "dialogue-outside-shot-source",
+      "kind": "invalid",
+      "profile_id": "dialogue-dense-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.input.json",
+        "digest": "sha256:e7ac3e4d0a0b5e2e82124e2a5b4f05d9f17816975346205a6bf1d37d9ac258fd",
+        "bytes": 724
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.output.json",
+        "digest": "sha256:edb2803ce4765e2f463a14866003c34e28357ab0b7732bcc648c2722ede0424a",
+        "bytes": 1543
+      },
+      "expected_codes": [
+        "DIALOGUE_SEGMENT_OUTSIDE_SHOT"
+      ]
+    },
+    {
+      "case_id": "dialogue-two-hander",
+      "kind": "valid",
+      "profile_id": "dialogue-dense-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.input.json",
+        "digest": "sha256:734bf81aed34fba0daae1110189fac4f632642bb516653ec1219c08f6aa9c372",
+        "bytes": 1496
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.output.json",
+        "digest": "sha256:cf88298bb9510a4c9f3df8f69e35df934f5c1eb50ba20e60e0b1609905178b96",
+        "bytes": 4754
+      }
+    },
+    {
+      "case_id": "duplicate-shot-key",
+      "kind": "invalid",
+      "profile_id": "vertical-short-drama-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.input.json",
+        "digest": "sha256:481849f338cb07b82d5f4d08eaa11a77f8ee0264c27c37d2d07acd6ac6027e89",
+        "bytes": 681
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.output.json",
+        "digest": "sha256:15b37f87cbf054009b4a8bd7e250b9e41e13470df0f7a4a8017e3dfaba62fe27",
+        "bytes": 1408
+      },
+      "expected_codes": [
+        "DUPLICATE_LOCAL_KEY"
+      ]
+    },
+    {
+      "case_id": "duration-out-of-direction-bounds",
+      "kind": "invalid",
+      "profile_id": "ad-microdrama-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.input.json",
+        "digest": "sha256:9bf59b72aa392423cf2ee74566b45d92f37c6ff9e09b84a53ef2fcfd152d0873",
+        "bytes": 579
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.output.json",
+        "digest": "sha256:5d35f308470b7804a95c0d8f5828f40dd81cbcb833004497a7fac4e35b47ad17",
+        "bytes": 902
+      },
+      "expected_codes": [
+        "DURATION_INVALID"
+      ]
+    },
+    {
+      "case_id": "hidden-provider-payload",
+      "kind": "invalid",
+      "profile_id": "manga-panel-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.input.json",
+        "digest": "sha256:3c8c074586dff617886f34f240bc5712c41802764a57dfde9be905125c6d712f",
+        "bytes": 595
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.output.json",
+        "digest": "sha256:de0ed71c5fc949cce8247d2ddf6a777e05d911ab6886d1e939e6287f6efd56b1",
+        "bytes": 983
+      },
+      "expected_codes": [
+        "SEMANTIC_PLAN_FORBIDDEN_FIELD"
+      ]
+    },
+    {
+      "case_id": "manga-action-beat",
+      "kind": "valid",
+      "profile_id": "manga-panel-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.input.json",
+        "digest": "sha256:d5f733e80fa1c072f2f5bbf89b8da57a52d009ab109d699e689c5888f0e70ec4",
+        "bytes": 1371
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.output.json",
+        "digest": "sha256:ab94555dbccbb1b7e0151c9a3cccd027f35dc606f410b873f4771d7ef14d7b06",
+        "bytes": 4514
+      }
+    },
+    {
+      "case_id": "missing-dramatic-purpose",
+      "kind": "invalid",
+      "profile_id": "dialogue-dense-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.input.json",
+        "digest": "sha256:eadc164af1fff52209f6b4fb26ce463c09b73e24977ec6cf2edb8a5cc52d4e8c",
+        "bytes": 608
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.output.json",
+        "digest": "sha256:ae12c279d03298b60f11012beafa7ca8a47ed52e65c874c10c2eed558d998ede",
+        "bytes": 933
+      },
+      "expected_codes": [
+        "SEMANTIC_PLAN_SCHEMA_INVALID"
+      ]
+    },
+    {
+      "case_id": "noncontiguous-source-range",
+      "kind": "invalid",
+      "profile_id": "manga-panel-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.input.json",
+        "digest": "sha256:82fa82e336e7200dfcb61ded1a65778b145e28752e0480e3db72cffda1849401",
+        "bytes": 749
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.output.json",
+        "digest": "sha256:d39fb7752b725817a7352db533df8c0b4a3d69e38053c68d0740169ff551b1a4",
+        "bytes": 1008
+      },
+      "expected_codes": [
+        "SOURCE_SEGMENT_RANGE_NONCONTIGUOUS"
+      ]
+    },
+    {
+      "case_id": "revision-preserve-shot-refs",
+      "kind": "valid",
+      "profile_id": "vertical-short-drama-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.input.json",
+        "digest": "sha256:2d75e5aaa7a49278bf7f46fbf0e0667d409061fb974c4871a3077804596d48da",
+        "bytes": 2473
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.output.json",
+        "digest": "sha256:2060fc49c523c719ee7ad5e57f07b98401b20bf404c0d35b116333356da67562",
+        "bytes": 9243
+      }
+    },
+    {
+      "case_id": "silent-unmapped-segment",
+      "kind": "invalid",
+      "profile_id": "vertical-short-drama-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.input.json",
+        "digest": "sha256:e091ba8ff22e52a2af00899b3c9439b0a421a8a8a610c1da53ad069f81a6d942",
+        "bytes": 687
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.output.json",
+        "digest": "sha256:e162275627d4ddd66b7fb44a63e3ca287bf9cc395d76c334c43464654965ee55",
+        "bytes": 931
+      },
+      "expected_codes": [
+        "UNMAPPED_SOURCE_SEGMENTS"
+      ]
+    },
+    {
+      "case_id": "source-injection-canary",
+      "kind": "valid",
+      "profile_id": "vertical-short-drama-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.input.json",
+        "digest": "sha256:141bd911671998154fbb769401d98de137b7e6a643be9afebc8bbe25bb7ec46b",
+        "bytes": 2451
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.output.json",
+        "digest": "sha256:2060fc49c523c719ee7ad5e57f07b98401b20bf404c0d35b116333356da67562",
+        "bytes": 9243
+      }
+    },
+    {
+      "case_id": "source-injection-forbidden-field",
+      "kind": "invalid",
+      "profile_id": "vertical-short-drama-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.input.json",
+        "digest": "sha256:8beef120d948c18fd0dbb2e14ac5a47b190e5920a8d0cf8c800d2b78d01ae9dc",
+        "bytes": 665
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.output.json",
+        "digest": "sha256:26844d603a0c1e1639f7cbf148c42c15a79a187bda88668fcea9d08b7ea2bb2f",
+        "bytes": 977
+      },
+      "expected_codes": [
+        "SEMANTIC_PLAN_FORBIDDEN_FIELD"
+      ]
+    },
+    {
+      "case_id": "unknown-fact",
+      "kind": "invalid",
+      "profile_id": "ad-microdrama-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.input.json",
+        "digest": "sha256:8a318b2e4f0c1993a3f29a6589645344e882e912bc3d23010519072562c0fe23",
+        "bytes": 590
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.output.json",
+        "digest": "sha256:53415a062d313687b3d5a103c494d17766a8edc22abf0544dc09de712643a5e3",
+        "bytes": 980
+      },
+      "expected_codes": [
+        "CLAIM_EVIDENCE_MISSING"
+      ]
+    },
+    {
+      "case_id": "unknown-segment",
+      "kind": "invalid",
+      "profile_id": "vertical-short-drama-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.input.json",
+        "digest": "sha256:d958e6846302671561586842d49a30ca87e02c8da29d925fb6595c347e0d1126",
+        "bytes": 597
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.output.json",
+        "digest": "sha256:a4f3ed0d422ebe617254c516031858af335607db0b81c0628df1d39c74d40deb",
+        "bytes": 943
+      },
+      "expected_codes": [
+        "SOURCE_SEGMENT_UNKNOWN"
+      ]
+    },
+    {
+      "case_id": "vertical-conflict-75s",
+      "kind": "valid",
+      "profile_id": "vertical-short-drama-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.input.json",
+        "digest": "sha256:65fb88be9a1d17478b7f16811ae2be33434b93133de458a5168f2cbb9e4d2a16",
+        "bytes": 2445
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.output.json",
+        "digest": "sha256:2060fc49c523c719ee7ad5e57f07b98401b20bf404c0d35b116333356da67562",
+        "bytes": 9243
+      }
+    }
+  ],
+  "digest": "sha256:a08b321e9ec374bd81c4338c5870a85e2e317800bd9ece73dc888ef33918dff3"
+}

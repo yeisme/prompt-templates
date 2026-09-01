@@ -1,0 +1,65 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-film-multi-profile-production/continuity-review/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-film-multi-profile-production",
+  "version": "1.0.0",
+  "role": "continuity-review",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-film-multi-profile-production/prompts/continuity-review.zh-CN.md",
+    "digest": "sha256:4adb3f5e0c3f4f3e6fd383cce592533841ddd6cffbcc5059b63e98acf7665453"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/continuity-review.zh-CN.json",
+    "digest": "sha256:7de7b8c542200c0503d7098df4dacfdeecaf7e536f9a371f0b766ac50043d44b"
+  },
+  "document": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/documents/continuity-review.zh-CN.document.json",
+    "digest": "sha256:60546ed60ab03cf8802de739a42987f20f4da5371220b65c6a8b17e602bf6bc4"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/schemas/ai-film-continuity-review-semantic-output-v1.schema.json",
+    "digest": "sha256:0453a964c12ee288772e1b5e8104c03573d1b1eaa5a8ff9ff9c60e7e144ee1fd"
+  },
+  "semantic_schema_version": "ai-film-continuity-review-semantic-output-v1",
+  "cases": [
+    {
+      "case_id": "invalid-forbidden-provider-payload",
+      "kind": "invalid",
+      "profile_id": "cinematic_live_action",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/continuity-review.zh-CN/invalid-forbidden-provider-payload.input.json",
+        "digest": "sha256:b48060f1490e3206f5266bade6e4d503addca774ea33641112bc618cdee27ed5",
+        "bytes": 629
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/continuity-review.zh-CN/invalid-forbidden-provider-payload.output.json",
+        "digest": "sha256:473e13c4cdc11c2d87495aa29efc4d07e16e2f90dfb3d7417e8893a54eb119d5",
+        "bytes": 125
+      },
+      "expected_codes": [
+        "FORBIDDEN_PROVIDER_PAYLOAD"
+      ]
+    },
+    {
+      "case_id": "invalid-forbidden-terminal-field",
+      "kind": "invalid",
+      "profile_id": "brand_film",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/continuity-review.zh-CN/invalid-forbidden-terminal-field.input.json",
+        "digest": "sha256:1504796cea4bd3ddb4150cb9ae07366ff5536e9f5ab45567adb0b4439e051dad",
+        "bytes": 585
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/continuity-review.zh-CN/invalid-forbidden-terminal-field.output.json",
+        "digest": "sha256:071b258a9abf50fce35c68ffe05acea3ff01dd1d8a1eeeb3765ac280f8a00f4e",
+        "bytes": 129
+      },
+      "expected_codes": [
+        "FORBIDDEN_OWNER_TERMINAL_FIELD"
+      ]
+    }
+  ],
+  "digest": "sha256:a0c2b2ce31ae149be73eb0b655a5c08692b3e9de1606eca8601882f7577cff86"
+}

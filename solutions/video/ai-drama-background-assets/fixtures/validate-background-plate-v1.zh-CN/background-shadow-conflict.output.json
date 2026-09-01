@@ -1,0 +1,1 @@
+{"findings":[{"blocking":true,"code":"BACKGROUND_HUMAN_TRACE_FORBIDDEN","evidence_refs":["requested_elements"],"message":"背景资产不能包含人物投影或人影。","repair_hint":"移除墙面人形阴影并保持空场景。","severity":"error"}],"profile_id":"clean-background-plate-v1","ready":false,"schema_version":"background_asset.validation.v1"}

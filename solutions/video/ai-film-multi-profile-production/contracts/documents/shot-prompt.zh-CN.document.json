@@ -1,0 +1,29 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-film-multi-profile-production",
+  "version": "1.0.0",
+  "role": "shot-prompt",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-film-multi-profile-production/prompts/shot-prompt.zh-CN.md",
+  "source_digest": "sha256:a95842c57297aac6fa618d0ff17e73e175750255fa099cff57acba5ffb6cc595",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/schemas/ai-film-shot-prompt-semantic-output-v1.schema.json",
+    "digest": "sha256:17b8e77e6e6bd0938bc1f65328ffb8e4de55c056da1ac15bf154d573e2e1c26e"
+  },
+  "required_capabilities": [
+    "film_production",
+    "semantic_compilation"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:d445aaea7a288476210c955a43effe4d213a3ef14946de337790b3f5d8b6ce9a"
+}

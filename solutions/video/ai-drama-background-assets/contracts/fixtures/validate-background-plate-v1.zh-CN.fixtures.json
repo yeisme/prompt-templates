@@ -1,0 +1,121 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-drama-background-assets/validate-background-plate-v1/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-drama-background-assets",
+  "version": "1.0.0",
+  "role": "validate-background-plate-v1",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.zh-CN.md",
+    "digest": "sha256:99084dd2c5cdee1dc520a92915029d84a0f3d4ae5ff114f9f8763439ec1ad20b"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-drama-background-assets/contracts/validate-background-plate-v1.zh-CN.json",
+    "digest": "sha256:0f29baaaab72e3f912dec111f24796f8a9772bfb39669d6d67a864b0b46c7f7c"
+  },
+  "document": {
+    "ref": "solutions/video/ai-drama-background-assets/contracts/documents/validate-background-plate-v1.zh-CN.document.json",
+    "digest": "sha256:93f4cb63487a42129378e9a84a7481da67e263495b1f9ab90f14917efef84e3e"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-drama-background-assets/contracts/schemas/background_asset.validation.v1.schema.json",
+    "digest": "sha256:ee996fdebd8f382de804a18b1f0baf00dcb6484a138b71cb1feafc3d34d044cc"
+  },
+  "compiler_profile": {
+    "ref": "solutions/video/ai-drama-background-assets/contracts/compilers/eikona.background-asset-validation.v1.json",
+    "digest": "sha256:b3f87bbb8bba2b33b0610f32c3bfe5380f7a19ea824090b0af28267d8fa2d41e"
+  },
+  "semantic_schema_version": "background_asset.validation.v1",
+  "validator_command_ref": "eikona.background-asset-validation.v1",
+  "cases": [
+    {
+      "case_id": "background-person-conflict",
+      "kind": "invalid",
+      "profile_id": "clean-background-plate-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets/fixtures/validate-background-plate-v1.zh-CN/background-person-conflict.input.json",
+        "digest": "sha256:d18d7b0a0ff5e12920ff65949b46bbd123974739c48a7a73a1b149a2654372c6",
+        "bytes": 249
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets/fixtures/validate-background-plate-v1.zh-CN/background-person-conflict.output.json",
+        "digest": "sha256:24b46e62fa9e4c09ed875ec5e7c0810338e228b0f8d6842ba2b368919cb7ec21",
+        "bytes": 345
+      },
+      "expected_codes": [
+        "BACKGROUND_HUMAN_TRACE_FORBIDDEN"
+      ]
+    },
+    {
+      "case_id": "background-reflection-conflict",
+      "kind": "invalid",
+      "profile_id": "clean-background-plate-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets/fixtures/validate-background-plate-v1.zh-CN/background-reflection-conflict.input.json",
+        "digest": "sha256:987582ffcffb58c27c6cf24e5f1cd230465fe569943666d6d0522ee86c0cc08b",
+        "bytes": 273
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets/fixtures/validate-background-plate-v1.zh-CN/background-reflection-conflict.output.json",
+        "digest": "sha256:d3ee735082c83cd6f6c44daaef85985e306d53b8a10d86ac5c5596ae9e4277aa",
+        "bytes": 354
+      },
+      "expected_codes": [
+        "BACKGROUND_HUMAN_TRACE_FORBIDDEN"
+      ]
+    },
+    {
+      "case_id": "background-shadow-conflict",
+      "kind": "invalid",
+      "profile_id": "clean-background-plate-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets/fixtures/validate-background-plate-v1.zh-CN/background-shadow-conflict.input.json",
+        "digest": "sha256:3164d33a970ff93e7376a922482aae11e3ef4fb64641b794ee9a1109889494ce",
+        "bytes": 255
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets/fixtures/validate-background-plate-v1.zh-CN/background-shadow-conflict.output.json",
+        "digest": "sha256:6bdff58d68a12718d738bfdd9968fb870c084c2ec3323213997970caa1b66e1b",
+        "bytes": 360
+      },
+      "expected_codes": [
+        "BACKGROUND_HUMAN_TRACE_FORBIDDEN"
+      ]
+    },
+    {
+      "case_id": "background-statue-conflict",
+      "kind": "invalid",
+      "profile_id": "clean-background-plate-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets/fixtures/validate-background-plate-v1.zh-CN/background-statue-conflict.input.json",
+        "digest": "sha256:da4b3cbc60aef8f20e8e15a1da13940b75cb6c0357df30f4ba906b238021c27c",
+        "bytes": 270
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets/fixtures/validate-background-plate-v1.zh-CN/background-statue-conflict.output.json",
+        "digest": "sha256:40a8f0f6ce1f8bf49ac03d16256e09a7749fbc5bb099259bc6792e34e157f4ce",
+        "bytes": 372
+      },
+      "expected_codes": [
+        "BACKGROUND_HUMAN_TRACE_FORBIDDEN"
+      ]
+    },
+    {
+      "case_id": "clean-background-valid",
+      "kind": "valid",
+      "profile_id": "clean-background-plate-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets/fixtures/validate-background-plate-v1.zh-CN/clean-background-valid.input.json",
+        "digest": "sha256:d1404ba10c7876e9bb2c20e8198b2399aa3c827f9f8d220eb4e13a627a25d72a",
+        "bytes": 476
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets/fixtures/validate-background-plate-v1.zh-CN/clean-background-valid.output.json",
+        "digest": "sha256:fe6e9a6f116c8047604a22b80395d15c26a91191d582912ba2d403ba2847aa36",
+        "bytes": 119
+      }
+    }
+  ],
+  "digest": "sha256:890c4af16c66e3ccd299552564b921afe8d454689603c8ddbf3ced4749253edb"
+}

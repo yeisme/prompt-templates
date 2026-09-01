@@ -1,0 +1,99 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "ai-drama-character-assets",
+  "version": "1.0.0",
+  "category": "video",
+  "tags": [
+    "domain:video"
+  ],
+  "capabilities": [
+    "character_asset",
+    "subject_continuity"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "AI Drama Character Visual Assets",
+      "summary": "Compile character, wardrobe, reference, and continuity constraints into a reviewable image Prompt Bundle",
+      "usage": "Use for face and body masters, turnarounds, wardrobe sheets, expression and action sheets, props, scenes, shot keyframes, and bounded repair",
+      "aliases": [
+        "character image prompt bundle",
+        "character turnaround template"
+      ]
+    },
+    "zh-CN": {
+      "title": "AI 做剧角色资产",
+      "summary": "分阶段编译角色、服装、场景与镜头关键帧资产",
+      "usage": "由视觉生产 Owner 渲染单视图任务并进行人工审查"
+    }
+  },
+  "templates": [
+    {
+      "role": "character-wuxia-female-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/templates/characters/wuxia-female-v1.zh-CN.yaml"
+    },
+    {
+      "role": "isolated-character-assets-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/prompts/isolated-character-assets-v1.zh-CN.md"
+    },
+    {
+      "role": "layout-turnaround-three-view-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/templates/layouts/turnaround-three-view-v1.zh-CN.yaml"
+    },
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-character-assets/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/prompts/main.zh-CN.md"
+    },
+    {
+      "role": "qc-character-turnaround-production-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/templates/qc/character-turnaround-production-v1.zh-CN.yaml"
+    },
+    {
+      "role": "staged-character-production-v2",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/prompts/staged-character-production-v2.zh-CN.md"
+    },
+    {
+      "role": "task-character-turnaround-independent-artifacts-v2",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/templates/tasks/character-turnaround-independent-artifacts-v2.zh-CN.yaml"
+    },
+    {
+      "role": "task-character-turnaround-three-view-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/templates/tasks/character-turnaround-three-view-v1.zh-CN.yaml"
+    },
+    {
+      "role": "wardrobe-wuxia-hanfu-moonwhite-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/templates/wardrobes/wuxia-hanfu-moonwhite-v1.zh-CN.yaml"
+    },
+    {
+      "role": "wuxia-female-turnaround-modular",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/templates/plans/wuxia-female-turnaround-modular.zh-CN.yaml"
+    },
+    {
+      "role": "wuxia-female-turnaround-staged-v2",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/templates/plans/wuxia-female-turnaround-staged-v2.zh-CN.yaml"
+    },
+    {
+      "role": "wuxia-female-turnaround-yaml",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/templates/tasks/wuxia-female-turnaround.zh-CN.yaml"
+    }
+  ]
+}

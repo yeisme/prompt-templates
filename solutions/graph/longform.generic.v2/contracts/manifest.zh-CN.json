@@ -1,0 +1,15 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "graph",
+  "solution_id": "longform.generic.v2",
+  "version": "1.0.0",
+  "role": "manifest",
+  "locale": "zh-CN",
+  "template_path": "solutions/graph/longform.generic.v2/prompts/manifest.zh-CN.yaml",
+  "template_digest": "sha256:aabdfdea9c66943699263daf4a598ccb36582e3c1487ec6dc0d395f7756aad6a",
+  "digest": "sha256:f816ebf8e48726676fde73c639771ff7ef1cb45af905fc61293235bbf2ddcb17",
+  "license": "internal",
+  "permissions": [
+    "review"
+  ]
+}

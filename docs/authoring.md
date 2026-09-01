@@ -18,3 +18,13 @@
 - `mature`：有真实脱敏使用证据和稳定修复记录。
 
 Prompt Markdown 可人工编辑。完成正文后运行 `template-registry solution add ...` 生成或更新 `solution.json`，再运行 catalog build/validate。
+
+需要让 inspect 告诉用户“填什么”时，为实际占位符生成 companion contract。不得手写 JSON；先初始化，再逐字段维护：
+
+```bash
+template-registry contract init --repository . --package image --id xhs-product-cover --role main --locale zh-CN --license internal --permission preview --permission execute_requires_review --json
+template-registry contract input set --repository . --package image --id xhs-product-cover --role main --locale zh-CN --name product --type string --required --example '便携咖啡杯' --label-zh-CN '产品' --label-en 'Product' --description-zh-CN '需要展示的真实产品' --description-en 'The real product to feature' --json
+template-registry contract validate --repository . --package image --id xhs-product-cover --role main --locale zh-CN --json
+```
+
+contract input 必须与正文中的 `{{name}}` 一致。example 只能使用公开、虚构、非敏感内容；敏感字段不能声明 default、example 或 enum。

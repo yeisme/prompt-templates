@@ -1,0 +1,4582 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "yeisme-prompt-templates",
+    "languages": [
+      "json",
+      "markdown",
+      "yaml"
+    ],
+    "frameworks": [],
+    "description": "Yeisme 官方提示词方案库",
+    "analyzedAt": "2026-08-25T16:05:05.610Z",
+    "gitCommitHash": "2783578f7bf7070c5a4c22a75b0f6550461c27ed"
+  },
+  "nodes": [
+    {
+      "id": "module:project",
+      "type": "module",
+      "name": "yeisme-prompt-templates",
+      "summary": "项目级根模块，连接目录、入口、实现、测试与文档。",
+      "tags": [
+        "project",
+        "module"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "module:docs",
+      "type": "module",
+      "name": "docs",
+      "filePath": "docs",
+      "summary": "目录模块 docs，包含 5 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:openspec",
+      "type": "module",
+      "name": "openspec",
+      "filePath": "openspec",
+      "summary": "目录模块 openspec，包含 17 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:openspec/changes",
+      "type": "module",
+      "name": "openspec/changes",
+      "filePath": "openspec/changes",
+      "summary": "目录模块 openspec/changes，包含 12 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:openspec/specs",
+      "type": "module",
+      "name": "openspec/specs",
+      "filePath": "openspec/specs",
+      "summary": "目录模块 openspec/specs，包含 4 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:solutions",
+      "type": "module",
+      "name": "solutions",
+      "filePath": "solutions",
+      "summary": "目录模块 solutions，包含 143 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "module:solutions/agent",
+      "type": "module",
+      "name": "solutions/agent",
+      "filePath": "solutions/agent",
+      "summary": "目录模块 solutions/agent，包含 3 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:solutions/audio",
+      "type": "module",
+      "name": "solutions/audio",
+      "filePath": "solutions/audio",
+      "summary": "目录模块 solutions/audio，包含 5 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:solutions/engineering",
+      "type": "module",
+      "name": "solutions/engineering",
+      "filePath": "solutions/engineering",
+      "summary": "目录模块 solutions/engineering，包含 3 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:solutions/general",
+      "type": "module",
+      "name": "solutions/general",
+      "filePath": "solutions/general",
+      "summary": "目录模块 solutions/general，包含 3 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:solutions/image",
+      "type": "module",
+      "name": "solutions/image",
+      "filePath": "solutions/image",
+      "summary": "目录模块 solutions/image，包含 5 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:solutions/learning",
+      "type": "module",
+      "name": "solutions/learning",
+      "filePath": "solutions/learning",
+      "summary": "目录模块 solutions/learning，包含 3 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:solutions/marketing",
+      "type": "module",
+      "name": "solutions/marketing",
+      "filePath": "solutions/marketing",
+      "summary": "目录模块 solutions/marketing，包含 3 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:solutions/office",
+      "type": "module",
+      "name": "solutions/office",
+      "filePath": "solutions/office",
+      "summary": "目录模块 solutions/office，包含 3 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:solutions/product",
+      "type": "module",
+      "name": "solutions/product",
+      "filePath": "solutions/product",
+      "summary": "目录模块 solutions/product，包含 3 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:solutions/research",
+      "type": "module",
+      "name": "solutions/research",
+      "filePath": "solutions/research",
+      "summary": "目录模块 solutions/research，包含 3 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "module:solutions/video",
+      "type": "module",
+      "name": "solutions/video",
+      "filePath": "solutions/video",
+      "summary": "目录模块 solutions/video，包含 106 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "module:solutions/writing",
+      "type": "module",
+      "name": "solutions/writing",
+      "filePath": "solutions/writing",
+      "summary": "目录模块 solutions/writing，包含 3 个已分析文件。",
+      "tags": [
+        "directory",
+        "module"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:AGENTS.md",
+      "type": "document",
+      "name": "AGENTS.md",
+      "filePath": "AGENTS.md",
+      "lineRange": [
+        1,
+        58
+      ],
+      "summary": "文档：AGENTS.md（markdown，58 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:catalog.json",
+      "type": "config",
+      "name": "catalog.json",
+      "filePath": "catalog.json",
+      "lineRange": [
+        1,
+        705
+      ],
+      "summary": "配置：catalog.json（json，705 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "CLAUDE.md",
+      "lineRange": [
+        1,
+        3
+      ],
+      "summary": "文档：CLAUDE.md（markdown，3 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:docs/authoring.md",
+      "type": "document",
+      "name": "authoring.md",
+      "filePath": "docs/authoring.md",
+      "lineRange": [
+        1,
+        30
+      ],
+      "summary": "文档：docs/authoring.md（markdown，30 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:docs/i18n.md",
+      "type": "document",
+      "name": "i18n.md",
+      "filePath": "docs/i18n.md",
+      "lineRange": [
+        1,
+        9
+      ],
+      "summary": "文档：docs/i18n.md（markdown，9 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:docs/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "docs/README.md",
+      "lineRange": [
+        1,
+        8
+      ],
+      "summary": "文档：docs/README.md（markdown，8 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:docs/release.md",
+      "type": "document",
+      "name": "release.md",
+      "filePath": "docs/release.md",
+      "lineRange": [
+        1,
+        25
+      ],
+      "summary": "文档：docs/release.md（markdown，25 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:docs/taxonomy.md",
+      "type": "document",
+      "name": "taxonomy.md",
+      "filePath": "docs/taxonomy.md",
+      "lineRange": [
+        1,
+        24
+      ],
+      "summary": "文档：docs/taxonomy.md（markdown，24 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/changes/official-ai-drama-character-asset-templates-v1/.openspec.yaml",
+      "type": "config",
+      "name": ".openspec.yaml",
+      "filePath": "openspec/changes/official-ai-drama-character-asset-templates-v1/.openspec.yaml",
+      "lineRange": [
+        1,
+        2
+      ],
+      "summary": "配置：openspec/changes/official-ai-drama-character-asset-templates-v1/.openspec.yaml（yaml，2 行）。",
+      "tags": [
+        "yaml",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/changes/official-ai-drama-character-asset-templates-v1/design.md",
+      "type": "document",
+      "name": "design.md",
+      "filePath": "openspec/changes/official-ai-drama-character-asset-templates-v1/design.md",
+      "lineRange": [
+        1,
+        111
+      ],
+      "summary": "文档：openspec/changes/official-ai-drama-character-asset-templates-v1/design.md（markdown，111 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/changes/official-ai-drama-character-asset-templates-v1/proposal.md",
+      "type": "document",
+      "name": "proposal.md",
+      "filePath": "openspec/changes/official-ai-drama-character-asset-templates-v1/proposal.md",
+      "lineRange": [
+        1,
+        30
+      ],
+      "summary": "文档：openspec/changes/official-ai-drama-character-asset-templates-v1/proposal.md（markdown，30 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/changes/official-ai-drama-character-asset-templates-v1/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "openspec/changes/official-ai-drama-character-asset-templates-v1/README.md",
+      "lineRange": [
+        1,
+        3
+      ],
+      "summary": "文档：openspec/changes/official-ai-drama-character-asset-templates-v1/README.md（markdown，3 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/changes/official-ai-drama-character-asset-templates-v1/specs/official-ai-drama-character-asset-templates/spec.md",
+      "type": "document",
+      "name": "spec.md",
+      "filePath": "openspec/changes/official-ai-drama-character-asset-templates-v1/specs/official-ai-drama-character-asset-templates/spec.md",
+      "lineRange": [
+        1,
+        43
+      ],
+      "summary": "文档：openspec/changes/official-ai-drama-character-asset-templates-v1/specs/official-ai-drama-character-asset-templates/spec.md（markdown，43 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/changes/official-ai-drama-character-asset-templates-v1/tasks.md",
+      "type": "document",
+      "name": "tasks.md",
+      "filePath": "openspec/changes/official-ai-drama-character-asset-templates-v1/tasks.md",
+      "lineRange": [
+        1,
+        30
+      ],
+      "summary": "文档：openspec/changes/official-ai-drama-character-asset-templates-v1/tasks.md（markdown，30 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/.openspec.yaml",
+      "type": "config",
+      "name": ".openspec.yaml",
+      "filePath": "openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/.openspec.yaml",
+      "lineRange": [
+        1,
+        3
+      ],
+      "summary": "配置：openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/.openspec.yaml（yaml，3 行）。",
+      "tags": [
+        "yaml",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/design.md",
+      "type": "document",
+      "name": "design.md",
+      "filePath": "openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/design.md",
+      "lineRange": [
+        1,
+        328
+      ],
+      "summary": "文档：openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/design.md（markdown，328 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/proposal.md",
+      "type": "document",
+      "name": "proposal.md",
+      "filePath": "openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/proposal.md",
+      "lineRange": [
+        1,
+        45
+      ],
+      "summary": "文档：openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/proposal.md（markdown，45 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/README.md",
+      "lineRange": [
+        1,
+        3
+      ],
+      "summary": "文档：openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/README.md（markdown，3 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/specs/official-ai-drama-storyboard-breakdown-templates/spec.md",
+      "type": "document",
+      "name": "spec.md",
+      "filePath": "openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/specs/official-ai-drama-storyboard-breakdown-templates/spec.md",
+      "lineRange": [
+        1,
+        191
+      ],
+      "summary": "文档：openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/specs/official-ai-drama-storyboard-breakdown-templates/spec.md（markdown，191 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/tasks.md",
+      "type": "document",
+      "name": "tasks.md",
+      "filePath": "openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/tasks.md",
+      "lineRange": [
+        1,
+        31
+      ],
+      "summary": "文档：openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/tasks.md（markdown，31 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/config.yaml",
+      "type": "config",
+      "name": "config.yaml",
+      "filePath": "openspec/config.yaml",
+      "lineRange": [
+        1,
+        20
+      ],
+      "summary": "配置：openspec/config.yaml（yaml，20 行）。",
+      "tags": [
+        "yaml",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/specs/official-prompt-i18n/spec.md",
+      "type": "document",
+      "name": "spec.md",
+      "filePath": "openspec/specs/official-prompt-i18n/spec.md",
+      "lineRange": [
+        1,
+        25
+      ],
+      "summary": "文档：openspec/specs/official-prompt-i18n/spec.md（markdown，25 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/specs/official-prompt-release/spec.md",
+      "type": "document",
+      "name": "spec.md",
+      "filePath": "openspec/specs/official-prompt-release/spec.md",
+      "lineRange": [
+        1,
+        25
+      ],
+      "summary": "文档：openspec/specs/official-prompt-release/spec.md（markdown，25 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/specs/official-prompt-solutions/spec.md",
+      "type": "document",
+      "name": "spec.md",
+      "filePath": "openspec/specs/official-prompt-solutions/spec.md",
+      "lineRange": [
+        1,
+        25
+      ],
+      "summary": "文档：openspec/specs/official-prompt-solutions/spec.md（markdown，25 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:openspec/specs/official-template-contract-pilot/spec.md",
+      "type": "document",
+      "name": "spec.md",
+      "filePath": "openspec/specs/official-template-contract-pilot/spec.md",
+      "lineRange": [
+        1,
+        41
+      ],
+      "summary": "文档：openspec/specs/official-template-contract-pilot/spec.md（markdown，41 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:README.en.md",
+      "type": "document",
+      "name": "README.en.md",
+      "filePath": "README.en.md",
+      "lineRange": [
+        1,
+        9
+      ],
+      "summary": "文档：README.en.md（markdown，9 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "lineRange": [
+        1,
+        64
+      ],
+      "summary": "文档：README.md（markdown，64 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:repository.json",
+      "type": "config",
+      "name": "repository.json",
+      "filePath": "repository.json",
+      "lineRange": [
+        1,
+        7
+      ],
+      "summary": "配置：repository.json（json，7 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/agent/tool-use-handoff/prompts/main.en.md",
+      "type": "document",
+      "name": "main.en.md",
+      "filePath": "solutions/agent/tool-use-handoff/prompts/main.en.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/agent/tool-use-handoff/prompts/main.en.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/agent/tool-use-handoff/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/agent/tool-use-handoff/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/agent/tool-use-handoff/prompts/main.zh-CN.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/agent/tool-use-handoff/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/agent/tool-use-handoff/solution.json",
+      "lineRange": [
+        1,
+        48
+      ],
+      "summary": "配置：solutions/agent/tool-use-handoff/solution.json（json，48 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/audio/podcast-narration/contracts/main.en.json",
+      "type": "config",
+      "name": "main.en.json",
+      "filePath": "solutions/audio/podcast-narration/contracts/main.en.json",
+      "lineRange": [
+        1,
+        99
+      ],
+      "summary": "配置：solutions/audio/podcast-narration/contracts/main.en.json（json，99 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/audio/podcast-narration/contracts/main.zh-CN.json",
+      "type": "config",
+      "name": "main.zh-CN.json",
+      "filePath": "solutions/audio/podcast-narration/contracts/main.zh-CN.json",
+      "lineRange": [
+        1,
+        99
+      ],
+      "summary": "配置：solutions/audio/podcast-narration/contracts/main.zh-CN.json（json，99 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/audio/podcast-narration/prompts/main.en.md",
+      "type": "document",
+      "name": "main.en.md",
+      "filePath": "solutions/audio/podcast-narration/prompts/main.en.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/audio/podcast-narration/prompts/main.en.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/audio/podcast-narration/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/audio/podcast-narration/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/audio/podcast-narration/prompts/main.zh-CN.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/audio/podcast-narration/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/audio/podcast-narration/solution.json",
+      "lineRange": [
+        1,
+        50
+      ],
+      "summary": "配置：solutions/audio/podcast-narration/solution.json（json，50 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/engineering/bug-root-cause-analysis/prompts/main.en.md",
+      "type": "document",
+      "name": "main.en.md",
+      "filePath": "solutions/engineering/bug-root-cause-analysis/prompts/main.en.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/engineering/bug-root-cause-analysis/prompts/main.en.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/engineering/bug-root-cause-analysis/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/engineering/bug-root-cause-analysis/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/engineering/bug-root-cause-analysis/prompts/main.zh-CN.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/engineering/bug-root-cause-analysis/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/engineering/bug-root-cause-analysis/solution.json",
+      "lineRange": [
+        1,
+        48
+      ],
+      "summary": "配置：solutions/engineering/bug-root-cause-analysis/solution.json（json，48 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/general/structured-summary/prompts/main.en.md",
+      "type": "document",
+      "name": "main.en.md",
+      "filePath": "solutions/general/structured-summary/prompts/main.en.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/general/structured-summary/prompts/main.en.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/general/structured-summary/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/general/structured-summary/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/general/structured-summary/prompts/main.zh-CN.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/general/structured-summary/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/general/structured-summary/solution.json",
+      "lineRange": [
+        1,
+        47
+      ],
+      "summary": "配置：solutions/general/structured-summary/solution.json（json，47 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/image/xhs-product-cover/contracts/main.en.json",
+      "type": "config",
+      "name": "main.en.json",
+      "filePath": "solutions/image/xhs-product-cover/contracts/main.en.json",
+      "lineRange": [
+        1,
+        102
+      ],
+      "summary": "配置：solutions/image/xhs-product-cover/contracts/main.en.json（json，102 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/image/xhs-product-cover/contracts/main.zh-CN.json",
+      "type": "config",
+      "name": "main.zh-CN.json",
+      "filePath": "solutions/image/xhs-product-cover/contracts/main.zh-CN.json",
+      "lineRange": [
+        1,
+        102
+      ],
+      "summary": "配置：solutions/image/xhs-product-cover/contracts/main.zh-CN.json（json，102 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/image/xhs-product-cover/prompts/main.en.md",
+      "type": "document",
+      "name": "main.en.md",
+      "filePath": "solutions/image/xhs-product-cover/prompts/main.en.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/image/xhs-product-cover/prompts/main.en.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/image/xhs-product-cover/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/image/xhs-product-cover/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/image/xhs-product-cover/prompts/main.zh-CN.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/image/xhs-product-cover/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/image/xhs-product-cover/solution.json",
+      "lineRange": [
+        1,
+        49
+      ],
+      "summary": "配置：solutions/image/xhs-product-cover/solution.json（json，49 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/learning/socratic-study-plan/prompts/main.en.md",
+      "type": "document",
+      "name": "main.en.md",
+      "filePath": "solutions/learning/socratic-study-plan/prompts/main.en.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/learning/socratic-study-plan/prompts/main.en.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/learning/socratic-study-plan/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/learning/socratic-study-plan/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/learning/socratic-study-plan/prompts/main.zh-CN.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/learning/socratic-study-plan/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/learning/socratic-study-plan/solution.json",
+      "lineRange": [
+        1,
+        47
+      ],
+      "summary": "配置：solutions/learning/socratic-study-plan/solution.json（json，47 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/marketing/xhs-campaign-copy/prompts/main.en.md",
+      "type": "document",
+      "name": "main.en.md",
+      "filePath": "solutions/marketing/xhs-campaign-copy/prompts/main.en.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/marketing/xhs-campaign-copy/prompts/main.en.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/marketing/xhs-campaign-copy/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/marketing/xhs-campaign-copy/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/marketing/xhs-campaign-copy/prompts/main.zh-CN.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/marketing/xhs-campaign-copy/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/marketing/xhs-campaign-copy/solution.json",
+      "lineRange": [
+        1,
+        48
+      ],
+      "summary": "配置：solutions/marketing/xhs-campaign-copy/solution.json（json，48 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/office/meeting-action-summary/prompts/main.en.md",
+      "type": "document",
+      "name": "main.en.md",
+      "filePath": "solutions/office/meeting-action-summary/prompts/main.en.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/office/meeting-action-summary/prompts/main.en.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/office/meeting-action-summary/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/office/meeting-action-summary/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/office/meeting-action-summary/prompts/main.zh-CN.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/office/meeting-action-summary/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/office/meeting-action-summary/solution.json",
+      "lineRange": [
+        1,
+        47
+      ],
+      "summary": "配置：solutions/office/meeting-action-summary/solution.json（json，47 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/product/prd-acceptance-criteria/prompts/main.en.md",
+      "type": "document",
+      "name": "main.en.md",
+      "filePath": "solutions/product/prd-acceptance-criteria/prompts/main.en.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/product/prd-acceptance-criteria/prompts/main.en.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/product/prd-acceptance-criteria/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/product/prd-acceptance-criteria/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/product/prd-acceptance-criteria/prompts/main.zh-CN.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/product/prd-acceptance-criteria/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/product/prd-acceptance-criteria/solution.json",
+      "lineRange": [
+        1,
+        47
+      ],
+      "summary": "配置：solutions/product/prd-acceptance-criteria/solution.json（json，47 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/research/evidence-research-brief/prompts/main.en.md",
+      "type": "document",
+      "name": "main.en.md",
+      "filePath": "solutions/research/evidence-research-brief/prompts/main.en.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/research/evidence-research-brief/prompts/main.en.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/research/evidence-research-brief/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/research/evidence-research-brief/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/research/evidence-research-brief/prompts/main.zh-CN.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/research/evidence-research-brief/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/research/evidence-research-brief/solution.json",
+      "lineRange": [
+        1,
+        48
+      ],
+      "summary": "配置：solutions/research/evidence-research-brief/solution.json（json，48 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/contracts/compilers/eikona.character-asset.prompt-bundle.v1.json",
+      "type": "config",
+      "name": "eikona.character-asset.prompt-bundle.v1.json",
+      "filePath": "solutions/video/ai-drama-character-assets/contracts/compilers/eikona.character-asset.prompt-bundle.v1.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/contracts/compilers/eikona.character-asset.prompt-bundle.v1.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/contracts/documents/main.zh-CN.document.json",
+      "type": "config",
+      "name": "main.zh-CN.document.json",
+      "filePath": "solutions/video/ai-drama-character-assets/contracts/documents/main.zh-CN.document.json",
+      "lineRange": [
+        1,
+        34
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/contracts/documents/main.zh-CN.document.json（json，34 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/contracts/fixtures/main.zh-CN.fixtures.json",
+      "type": "config",
+      "name": "main.zh-CN.fixtures.json",
+      "filePath": "solutions/video/ai-drama-character-assets/contracts/fixtures/main.zh-CN.fixtures.json",
+      "lineRange": [
+        1,
+        226
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/contracts/fixtures/main.zh-CN.fixtures.json（json，226 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/contracts/main.zh-CN.json",
+      "type": "config",
+      "name": "main.zh-CN.json",
+      "filePath": "solutions/video/ai-drama-character-assets/contracts/main.zh-CN.json",
+      "lineRange": [
+        1,
+        189
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/contracts/main.zh-CN.json（json，189 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.prompt_bundle.v1.schema.json",
+      "type": "config",
+      "name": "character_asset.prompt_bundle.v1.schema.json",
+      "filePath": "solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.prompt_bundle.v1.schema.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.prompt_bundle.v1.schema.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/docs/failure-modes.zh-CN.md",
+      "type": "document",
+      "name": "failure-modes.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/docs/failure-modes.zh-CN.md",
+      "lineRange": [
+        1,
+        16
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/docs/failure-modes.zh-CN.md（markdown，16 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/docs/i18n.md",
+      "type": "document",
+      "name": "i18n.md",
+      "filePath": "solutions/video/ai-drama-character-assets/docs/i18n.md",
+      "lineRange": [
+        1,
+        6
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/docs/i18n.md（markdown，6 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/docs/preset-matrix.zh-CN.md",
+      "type": "document",
+      "name": "preset-matrix.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/docs/preset-matrix.zh-CN.md",
+      "lineRange": [
+        1,
+        15
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/docs/preset-matrix.zh-CN.md（markdown，15 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/docs/review-checklist.zh-CN.md",
+      "type": "document",
+      "name": "review-checklist.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/docs/review-checklist.zh-CN.md",
+      "lineRange": [
+        1,
+        27
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/docs/review-checklist.zh-CN.md（markdown，27 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/docs/usage.zh-CN.md",
+      "type": "document",
+      "name": "usage.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/docs/usage.zh-CN.md",
+      "lineRange": [
+        1,
+        14
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/docs/usage.zh-CN.md（markdown，14 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/examples/wuxia-turnaround.zh-CN.md",
+      "type": "document",
+      "name": "wuxia-turnaround.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/examples/wuxia-turnaround.zh-CN.md",
+      "lineRange": [
+        1,
+        29
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/examples/wuxia-turnaround.zh-CN.md（markdown，29 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/adult-subject-required.input.json",
+      "type": "config",
+      "name": "adult-subject-required.input.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/adult-subject-required.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/adult-subject-required.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/adult-subject-required.output.json",
+      "type": "config",
+      "name": "adult-subject-required.output.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/adult-subject-required.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/adult-subject-required.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/back-view-conflict.input.json",
+      "type": "config",
+      "name": "back-view-conflict.input.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/back-view-conflict.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/back-view-conflict.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/back-view-conflict.output.json",
+      "type": "config",
+      "name": "back-view-conflict.output.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/back-view-conflict.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/back-view-conflict.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/fixed-seed-missing.input.json",
+      "type": "config",
+      "name": "fixed-seed-missing.input.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/fixed-seed-missing.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/fixed-seed-missing.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/fixed-seed-missing.output.json",
+      "type": "config",
+      "name": "fixed-seed-missing.output.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/fixed-seed-missing.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/fixed-seed-missing.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/manga-shot-keyframe.input.json",
+      "type": "config",
+      "name": "manga-shot-keyframe.input.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/manga-shot-keyframe.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/manga-shot-keyframe.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/manga-shot-keyframe.output.json",
+      "type": "config",
+      "name": "manga-shot-keyframe.output.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/manga-shot-keyframe.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/manga-shot-keyframe.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/marker-mirror-conflict.input.json",
+      "type": "config",
+      "name": "marker-mirror-conflict.input.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/marker-mirror-conflict.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/marker-mirror-conflict.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/marker-mirror-conflict.output.json",
+      "type": "config",
+      "name": "marker-mirror-conflict.output.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/marker-mirror-conflict.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/marker-mirror-conflict.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/material-coverage-invalid.input.json",
+      "type": "config",
+      "name": "material-coverage-invalid.input.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/material-coverage-invalid.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/material-coverage-invalid.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/material-coverage-invalid.output.json",
+      "type": "config",
+      "name": "material-coverage-invalid.output.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/material-coverage-invalid.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/material-coverage-invalid.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/production-replace-override.input.json",
+      "type": "config",
+      "name": "production-replace-override.input.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/production-replace-override.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/production-replace-override.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/production-replace-override.output.json",
+      "type": "config",
+      "name": "production-replace-override.output.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/production-replace-override.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/production-replace-override.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/prompt-bundle-forbidden-field.input.json",
+      "type": "config",
+      "name": "prompt-bundle-forbidden-field.input.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/prompt-bundle-forbidden-field.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/prompt-bundle-forbidden-field.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/prompt-bundle-forbidden-field.output.json",
+      "type": "config",
+      "name": "prompt-bundle-forbidden-field.output.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/prompt-bundle-forbidden-field.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/prompt-bundle-forbidden-field.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/reference-not-production-ready.input.json",
+      "type": "config",
+      "name": "reference-not-production-ready.input.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/reference-not-production-ready.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/reference-not-production-ready.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/reference-not-production-ready.output.json",
+      "type": "config",
+      "name": "reference-not-production-ready.output.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/reference-not-production-ready.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/reference-not-production-ready.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wardrobe-continuity-drift.input.json",
+      "type": "config",
+      "name": "wardrobe-continuity-drift.input.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wardrobe-continuity-drift.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wardrobe-continuity-drift.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wardrobe-continuity-drift.output.json",
+      "type": "config",
+      "name": "wardrobe-continuity-drift.output.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wardrobe-continuity-drift.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wardrobe-continuity-drift.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.input.json",
+      "type": "config",
+      "name": "wuxia-female-turnaround.input.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.output.json",
+      "type": "config",
+      "name": "wuxia-female-turnaround.output.json",
+      "filePath": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/profiles/face-body-master.zh-CN.md",
+      "type": "document",
+      "name": "face-body-master.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/profiles/face-body-master.zh-CN.md",
+      "lineRange": [
+        1,
+        15
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/profiles/face-body-master.zh-CN.md（markdown，15 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/profiles/prop-scene.zh-CN.md",
+      "type": "document",
+      "name": "prop-scene.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/profiles/prop-scene.zh-CN.md",
+      "lineRange": [
+        1,
+        15
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/profiles/prop-scene.zh-CN.md（markdown，15 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/profiles/shot-keyframe-continuity.zh-CN.md",
+      "type": "document",
+      "name": "shot-keyframe-continuity.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/profiles/shot-keyframe-continuity.zh-CN.md",
+      "lineRange": [
+        1,
+        15
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/profiles/shot-keyframe-continuity.zh-CN.md（markdown，15 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/profiles/turnaround-three-view.zh-CN.md",
+      "type": "document",
+      "name": "turnaround-three-view.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/profiles/turnaround-three-view.zh-CN.md",
+      "lineRange": [
+        1,
+        12
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/profiles/turnaround-three-view.zh-CN.md（markdown，12 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/profiles/wardrobe-expression-action.zh-CN.md",
+      "type": "document",
+      "name": "wardrobe-expression-action.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/profiles/wardrobe-expression-action.zh-CN.md",
+      "lineRange": [
+        1,
+        20
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/profiles/wardrobe-expression-action.zh-CN.md（markdown，20 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        100
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/prompts/main.zh-CN.md（markdown，100 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/prompts/sections/identity.zh-CN.md",
+      "type": "document",
+      "name": "identity.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/prompts/sections/identity.zh-CN.md",
+      "lineRange": [
+        1,
+        5
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/prompts/sections/identity.zh-CN.md（markdown，5 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/prompts/sections/material-layout.zh-CN.md",
+      "type": "document",
+      "name": "material-layout.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/prompts/sections/material-layout.zh-CN.md",
+      "lineRange": [
+        1,
+        5
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/prompts/sections/material-layout.zh-CN.md（markdown，5 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/prompts/sections/reference-continuity.zh-CN.md",
+      "type": "document",
+      "name": "reference-continuity.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-character-assets/prompts/sections/reference-continuity.zh-CN.md",
+      "lineRange": [
+        1,
+        5
+      ],
+      "summary": "文档：solutions/video/ai-drama-character-assets/prompts/sections/reference-continuity.zh-CN.md（markdown，5 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-character-assets/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/video/ai-drama-character-assets/solution.json",
+      "lineRange": [
+        1,
+        45
+      ],
+      "summary": "配置：solutions/video/ai-drama-character-assets/solution.json（json，45 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/compilers/scaena.storyboard.semantic-plan.v1.json",
+      "type": "config",
+      "name": "scaena.storyboard.semantic-plan.v1.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/contracts/compilers/scaena.storyboard.semantic-plan.v1.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/contracts/compilers/scaena.storyboard.semantic-plan.v1.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/documents/main.zh-CN.document.json",
+      "type": "config",
+      "name": "main.zh-CN.document.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/contracts/documents/main.zh-CN.document.json",
+      "lineRange": [
+        1,
+        34
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/contracts/documents/main.zh-CN.document.json（json，34 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/documents/repair.zh-CN.document.json",
+      "type": "config",
+      "name": "repair.zh-CN.document.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/contracts/documents/repair.zh-CN.document.json",
+      "lineRange": [
+        1,
+        34
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/contracts/documents/repair.zh-CN.document.json（json，34 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/fixtures/main.zh-CN.fixtures.json",
+      "type": "config",
+      "name": "main.zh-CN.fixtures.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/contracts/fixtures/main.zh-CN.fixtures.json",
+      "lineRange": [
+        1,
+        304
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/contracts/fixtures/main.zh-CN.fixtures.json（json，304 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/fixtures/repair.zh-CN.fixtures.json",
+      "type": "config",
+      "name": "repair.zh-CN.fixtures.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/contracts/fixtures/repair.zh-CN.fixtures.json",
+      "lineRange": [
+        1,
+        82
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/contracts/fixtures/repair.zh-CN.fixtures.json（json，82 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/main.zh-CN.json",
+      "type": "config",
+      "name": "main.zh-CN.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/contracts/main.zh-CN.json",
+      "lineRange": [
+        1,
+        197
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/contracts/main.zh-CN.json（json，197 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/repair.zh-CN.json",
+      "type": "config",
+      "name": "repair.zh-CN.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/contracts/repair.zh-CN.json",
+      "lineRange": [
+        1,
+        211
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/contracts/repair.zh-CN.json（json，211 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/schemas/storyboard.semantic-plan.v1.schema.json",
+      "type": "config",
+      "name": "storyboard.semantic-plan.v1.schema.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/contracts/schemas/storyboard.semantic-plan.v1.schema.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/contracts/schemas/storyboard.semantic-plan.v1.schema.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/docs/failure-modes.zh-CN.md",
+      "type": "document",
+      "name": "failure-modes.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/docs/failure-modes.zh-CN.md",
+      "lineRange": [
+        1,
+        15
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/docs/failure-modes.zh-CN.md（markdown，15 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/docs/i18n.md",
+      "type": "document",
+      "name": "i18n.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/docs/i18n.md",
+      "lineRange": [
+        1,
+        6
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/docs/i18n.md（markdown，6 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/docs/preset-matrix.zh-CN.md",
+      "type": "document",
+      "name": "preset-matrix.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/docs/preset-matrix.zh-CN.md",
+      "lineRange": [
+        1,
+        10
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/docs/preset-matrix.zh-CN.md（markdown，10 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/docs/review-checklist.zh-CN.md",
+      "type": "document",
+      "name": "review-checklist.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/docs/review-checklist.zh-CN.md",
+      "lineRange": [
+        1,
+        33
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/docs/review-checklist.zh-CN.md（markdown，33 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/docs/usage.zh-CN.md",
+      "type": "document",
+      "name": "usage.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/docs/usage.zh-CN.md",
+      "lineRange": [
+        1,
+        18
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/docs/usage.zh-CN.md（markdown，18 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/examples/direction-and-segments.zh-CN.md",
+      "type": "document",
+      "name": "direction-and-segments.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/examples/direction-and-segments.zh-CN.md",
+      "lineRange": [
+        1,
+        42
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/examples/direction-and-segments.zh-CN.md（markdown，42 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/examples/semantic-plan.zh-CN.md",
+      "type": "document",
+      "name": "semantic-plan.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/examples/semantic-plan.zh-CN.md",
+      "lineRange": [
+        1,
+        65
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/examples/semantic-plan.zh-CN.md（markdown，65 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.input.json",
+      "type": "config",
+      "name": "ad-product-truth.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.output.json",
+      "type": "config",
+      "name": "ad-product-truth.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.input.json",
+      "type": "config",
+      "name": "dialogue-outside-shot-source.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.output.json",
+      "type": "config",
+      "name": "dialogue-outside-shot-source.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.input.json",
+      "type": "config",
+      "name": "dialogue-two-hander.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.output.json",
+      "type": "config",
+      "name": "dialogue-two-hander.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.input.json",
+      "type": "config",
+      "name": "duplicate-shot-key.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.output.json",
+      "type": "config",
+      "name": "duplicate-shot-key.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.input.json",
+      "type": "config",
+      "name": "duration-out-of-direction-bounds.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.output.json",
+      "type": "config",
+      "name": "duration-out-of-direction-bounds.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.input.json",
+      "type": "config",
+      "name": "hidden-provider-payload.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.output.json",
+      "type": "config",
+      "name": "hidden-provider-payload.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.input.json",
+      "type": "config",
+      "name": "manga-action-beat.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.output.json",
+      "type": "config",
+      "name": "manga-action-beat.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.input.json",
+      "type": "config",
+      "name": "missing-dramatic-purpose.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.output.json",
+      "type": "config",
+      "name": "missing-dramatic-purpose.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.input.json",
+      "type": "config",
+      "name": "noncontiguous-source-range.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.output.json",
+      "type": "config",
+      "name": "noncontiguous-source-range.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.input.json",
+      "type": "config",
+      "name": "revision-preserve-shot-refs.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.output.json",
+      "type": "config",
+      "name": "revision-preserve-shot-refs.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.input.json",
+      "type": "config",
+      "name": "silent-unmapped-segment.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.output.json",
+      "type": "config",
+      "name": "silent-unmapped-segment.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.input.json",
+      "type": "config",
+      "name": "source-injection-canary.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.output.json",
+      "type": "config",
+      "name": "source-injection-canary.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.input.json",
+      "type": "config",
+      "name": "source-injection-forbidden-field.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.output.json",
+      "type": "config",
+      "name": "source-injection-forbidden-field.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.input.json",
+      "type": "config",
+      "name": "unknown-fact.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.output.json",
+      "type": "config",
+      "name": "unknown-fact.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.input.json",
+      "type": "config",
+      "name": "unknown-segment.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.output.json",
+      "type": "config",
+      "name": "unknown-segment.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.input.json",
+      "type": "config",
+      "name": "vertical-conflict-75s.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.output.json",
+      "type": "config",
+      "name": "vertical-conflict-75s.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/bounded-duration-repair.input.json",
+      "type": "config",
+      "name": "bounded-duration-repair.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/bounded-duration-repair.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/bounded-duration-repair.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/bounded-duration-repair.output.json",
+      "type": "config",
+      "name": "bounded-duration-repair.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/bounded-duration-repair.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/bounded-duration-repair.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/repair-unknown-segment.input.json",
+      "type": "config",
+      "name": "repair-unknown-segment.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/repair-unknown-segment.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/repair-unknown-segment.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/repair-unknown-segment.output.json",
+      "type": "config",
+      "name": "repair-unknown-segment.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/repair-unknown-segment.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/repair-unknown-segment.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/revision-preserves-unaffected-shots.input.json",
+      "type": "config",
+      "name": "revision-preserves-unaffected-shots.input.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/revision-preserves-unaffected-shots.input.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/revision-preserves-unaffected-shots.input.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/revision-preserves-unaffected-shots.output.json",
+      "type": "config",
+      "name": "revision-preserves-unaffected-shots.output.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/revision-preserves-unaffected-shots.output.json",
+      "lineRange": [
+        1,
+        1
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/revision-preserves-unaffected-shots.output.json（json，0 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/profiles/ad-microdrama.zh-CN.md",
+      "type": "document",
+      "name": "ad-microdrama.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/profiles/ad-microdrama.zh-CN.md",
+      "lineRange": [
+        1,
+        11
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/profiles/ad-microdrama.zh-CN.md（markdown，11 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/profiles/dialogue-dense.zh-CN.md",
+      "type": "document",
+      "name": "dialogue-dense.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/profiles/dialogue-dense.zh-CN.md",
+      "lineRange": [
+        1,
+        12
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/profiles/dialogue-dense.zh-CN.md（markdown，12 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/profiles/manga-panel.zh-CN.md",
+      "type": "document",
+      "name": "manga-panel.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/profiles/manga-panel.zh-CN.md",
+      "lineRange": [
+        1,
+        11
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/profiles/manga-panel.zh-CN.md（markdown，11 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/profiles/vertical-short-drama.zh-CN.md",
+      "type": "document",
+      "name": "vertical-short-drama.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/profiles/vertical-short-drama.zh-CN.md",
+      "lineRange": [
+        1,
+        12
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/profiles/vertical-short-drama.zh-CN.md（markdown，12 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        134
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/prompts/main.zh-CN.md（markdown，134 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md",
+      "type": "document",
+      "name": "repair.zh-CN.md",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md",
+      "lineRange": [
+        1,
+        66
+      ],
+      "summary": "文档：solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md（markdown，66 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/ai-drama-storyboard-breakdown/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/video/ai-drama-storyboard-breakdown/solution.json",
+      "lineRange": [
+        1,
+        45
+      ],
+      "summary": "配置：solutions/video/ai-drama-storyboard-breakdown/solution.json（json，45 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/short-drama-character-consistency/prompts/main.en.md",
+      "type": "document",
+      "name": "main.en.md",
+      "filePath": "solutions/video/short-drama-character-consistency/prompts/main.en.md",
+      "lineRange": [
+        1,
+        12
+      ],
+      "summary": "文档：solutions/video/short-drama-character-consistency/prompts/main.en.md（markdown，12 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        12
+      ],
+      "summary": "文档：solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md（markdown，12 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/video/short-drama-character-consistency/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/video/short-drama-character-consistency/solution.json",
+      "lineRange": [
+        1,
+        49
+      ],
+      "summary": "配置：solutions/video/short-drama-character-consistency/solution.json（json，49 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/writing/longform-outline/prompts/main.en.md",
+      "type": "document",
+      "name": "main.en.md",
+      "filePath": "solutions/writing/longform-outline/prompts/main.en.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/writing/longform-outline/prompts/main.en.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/writing/longform-outline/prompts/main.zh-CN.md",
+      "type": "document",
+      "name": "main.zh-CN.md",
+      "filePath": "solutions/writing/longform-outline/prompts/main.zh-CN.md",
+      "lineRange": [
+        1,
+        13
+      ],
+      "summary": "文档：solutions/writing/longform-outline/prompts/main.zh-CN.md（markdown，13 行）。",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:solutions/writing/longform-outline/solution.json",
+      "type": "config",
+      "name": "solution.json",
+      "filePath": "solutions/writing/longform-outline/solution.json",
+      "lineRange": [
+        1,
+        47
+      ],
+      "summary": "配置：solutions/writing/longform-outline/solution.json（json，47 行）。",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module:project",
+      "target": "module:docs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:project",
+      "target": "module:openspec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec",
+      "target": "module:openspec/changes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec",
+      "target": "module:openspec/specs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:project",
+      "target": "module:solutions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions",
+      "target": "module:solutions/agent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions",
+      "target": "module:solutions/audio",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions",
+      "target": "module:solutions/engineering",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions",
+      "target": "module:solutions/general",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions",
+      "target": "module:solutions/image",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions",
+      "target": "module:solutions/learning",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions",
+      "target": "module:solutions/marketing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions",
+      "target": "module:solutions/office",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions",
+      "target": "module:solutions/product",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions",
+      "target": "module:solutions/research",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions",
+      "target": "module:solutions/video",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions",
+      "target": "module:solutions/writing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:project",
+      "target": "file:AGENTS.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:project",
+      "target": "file:catalog.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:project",
+      "target": "file:CLAUDE.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:docs",
+      "target": "file:docs/authoring.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:docs",
+      "target": "file:docs/i18n.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:docs",
+      "target": "file:docs/README.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:docs",
+      "target": "file:docs/release.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:docs",
+      "target": "file:docs/taxonomy.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/changes",
+      "target": "file:openspec/changes/official-ai-drama-character-asset-templates-v1/.openspec.yaml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/changes",
+      "target": "file:openspec/changes/official-ai-drama-character-asset-templates-v1/design.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/changes",
+      "target": "file:openspec/changes/official-ai-drama-character-asset-templates-v1/proposal.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/changes",
+      "target": "file:openspec/changes/official-ai-drama-character-asset-templates-v1/README.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/changes",
+      "target": "file:openspec/changes/official-ai-drama-character-asset-templates-v1/specs/official-ai-drama-character-asset-templates/spec.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/changes",
+      "target": "file:openspec/changes/official-ai-drama-character-asset-templates-v1/tasks.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/changes",
+      "target": "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/.openspec.yaml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/changes",
+      "target": "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/design.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/changes",
+      "target": "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/proposal.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/changes",
+      "target": "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/README.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/changes",
+      "target": "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/specs/official-ai-drama-storyboard-breakdown-templates/spec.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/changes",
+      "target": "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/tasks.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec",
+      "target": "file:openspec/config.yaml",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/specs",
+      "target": "file:openspec/specs/official-prompt-i18n/spec.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/specs",
+      "target": "file:openspec/specs/official-prompt-release/spec.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/specs",
+      "target": "file:openspec/specs/official-prompt-solutions/spec.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:openspec/specs",
+      "target": "file:openspec/specs/official-template-contract-pilot/spec.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:project",
+      "target": "file:README.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:project",
+      "target": "file:README.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:project",
+      "target": "file:repository.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/agent",
+      "target": "file:solutions/agent/tool-use-handoff/prompts/main.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/agent",
+      "target": "file:solutions/agent/tool-use-handoff/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/agent",
+      "target": "file:solutions/agent/tool-use-handoff/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/audio",
+      "target": "file:solutions/audio/podcast-narration/contracts/main.en.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/audio",
+      "target": "file:solutions/audio/podcast-narration/contracts/main.zh-CN.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/audio",
+      "target": "file:solutions/audio/podcast-narration/prompts/main.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/audio",
+      "target": "file:solutions/audio/podcast-narration/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/audio",
+      "target": "file:solutions/audio/podcast-narration/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/engineering",
+      "target": "file:solutions/engineering/bug-root-cause-analysis/prompts/main.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/engineering",
+      "target": "file:solutions/engineering/bug-root-cause-analysis/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/engineering",
+      "target": "file:solutions/engineering/bug-root-cause-analysis/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/general",
+      "target": "file:solutions/general/structured-summary/prompts/main.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/general",
+      "target": "file:solutions/general/structured-summary/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/general",
+      "target": "file:solutions/general/structured-summary/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/image",
+      "target": "file:solutions/image/xhs-product-cover/contracts/main.en.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/image",
+      "target": "file:solutions/image/xhs-product-cover/contracts/main.zh-CN.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/image",
+      "target": "file:solutions/image/xhs-product-cover/prompts/main.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/image",
+      "target": "file:solutions/image/xhs-product-cover/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/image",
+      "target": "file:solutions/image/xhs-product-cover/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/learning",
+      "target": "file:solutions/learning/socratic-study-plan/prompts/main.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/learning",
+      "target": "file:solutions/learning/socratic-study-plan/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/learning",
+      "target": "file:solutions/learning/socratic-study-plan/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/marketing",
+      "target": "file:solutions/marketing/xhs-campaign-copy/prompts/main.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/marketing",
+      "target": "file:solutions/marketing/xhs-campaign-copy/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/marketing",
+      "target": "file:solutions/marketing/xhs-campaign-copy/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/office",
+      "target": "file:solutions/office/meeting-action-summary/prompts/main.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/office",
+      "target": "file:solutions/office/meeting-action-summary/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/office",
+      "target": "file:solutions/office/meeting-action-summary/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/product",
+      "target": "file:solutions/product/prd-acceptance-criteria/prompts/main.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/product",
+      "target": "file:solutions/product/prd-acceptance-criteria/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/product",
+      "target": "file:solutions/product/prd-acceptance-criteria/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/research",
+      "target": "file:solutions/research/evidence-research-brief/prompts/main.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/research",
+      "target": "file:solutions/research/evidence-research-brief/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/research",
+      "target": "file:solutions/research/evidence-research-brief/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/contracts/compilers/eikona.character-asset.prompt-bundle.v1.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/contracts/documents/main.zh-CN.document.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/contracts/fixtures/main.zh-CN.fixtures.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/contracts/main.zh-CN.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.prompt_bundle.v1.schema.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/docs/failure-modes.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/docs/i18n.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/docs/preset-matrix.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/docs/review-checklist.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/docs/usage.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/examples/wuxia-turnaround.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/adult-subject-required.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/adult-subject-required.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/back-view-conflict.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/back-view-conflict.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/fixed-seed-missing.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/fixed-seed-missing.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/manga-shot-keyframe.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/manga-shot-keyframe.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/marker-mirror-conflict.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/marker-mirror-conflict.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/material-coverage-invalid.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/material-coverage-invalid.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/production-replace-override.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/production-replace-override.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/prompt-bundle-forbidden-field.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/prompt-bundle-forbidden-field.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/reference-not-production-ready.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/reference-not-production-ready.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wardrobe-continuity-drift.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wardrobe-continuity-drift.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/profiles/face-body-master.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/profiles/prop-scene.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/profiles/shot-keyframe-continuity.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/profiles/turnaround-three-view.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/profiles/wardrobe-expression-action.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/prompts/sections/identity.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/prompts/sections/material-layout.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/prompts/sections/reference-continuity.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-character-assets/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/compilers/scaena.storyboard.semantic-plan.v1.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/documents/main.zh-CN.document.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/documents/repair.zh-CN.document.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/fixtures/main.zh-CN.fixtures.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/fixtures/repair.zh-CN.fixtures.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/main.zh-CN.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/repair.zh-CN.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/contracts/schemas/storyboard.semantic-plan.v1.schema.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/docs/failure-modes.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/docs/i18n.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/docs/preset-matrix.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/docs/review-checklist.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/docs/usage.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/examples/direction-and-segments.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/examples/semantic-plan.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/bounded-duration-repair.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/bounded-duration-repair.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/repair-unknown-segment.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/repair-unknown-segment.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/revision-preserves-unaffected-shots.input.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/revision-preserves-unaffected-shots.output.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/profiles/ad-microdrama.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/profiles/dialogue-dense.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/profiles/manga-panel.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/profiles/vertical-short-drama.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/ai-drama-storyboard-breakdown/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/short-drama-character-consistency/prompts/main.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/video",
+      "target": "file:solutions/video/short-drama-character-consistency/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/writing",
+      "target": "file:solutions/writing/longform-outline/prompts/main.en.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/writing",
+      "target": "file:solutions/writing/longform-outline/prompts/main.zh-CN.md",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "module:solutions/writing",
+      "target": "file:solutions/writing/longform-outline/solution.json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:project",
+      "name": "项目总览",
+      "description": "项目根模块与高层目录关系。",
+      "nodeIds": [
+        "module:project"
+      ]
+    },
+    {
+      "id": "layer:domain",
+      "name": "领域与契约层",
+      "description": "领域模型、SDK、协议与稳定契约。",
+      "nodeIds": [
+        "file:solutions/audio/podcast-narration/contracts/main.en.json",
+        "file:solutions/audio/podcast-narration/contracts/main.zh-CN.json",
+        "file:solutions/image/xhs-product-cover/contracts/main.en.json",
+        "file:solutions/image/xhs-product-cover/contracts/main.zh-CN.json",
+        "file:solutions/video/ai-drama-character-assets/contracts/compilers/eikona.character-asset.prompt-bundle.v1.json",
+        "file:solutions/video/ai-drama-character-assets/contracts/documents/main.zh-CN.document.json",
+        "file:solutions/video/ai-drama-character-assets/contracts/fixtures/main.zh-CN.fixtures.json",
+        "file:solutions/video/ai-drama-character-assets/contracts/main.zh-CN.json",
+        "file:solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.prompt_bundle.v1.schema.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/contracts/compilers/scaena.storyboard.semantic-plan.v1.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/contracts/documents/main.zh-CN.document.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/contracts/documents/repair.zh-CN.document.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/contracts/fixtures/main.zh-CN.fixtures.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/contracts/fixtures/repair.zh-CN.fixtures.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/contracts/main.zh-CN.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/contracts/repair.zh-CN.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/contracts/schemas/storyboard.semantic-plan.v1.schema.json"
+      ]
+    },
+    {
+      "id": "layer:core",
+      "name": "核心实现层",
+      "description": "未归入专门边界的主要实现模块。",
+      "nodeIds": [
+        "module:solutions",
+        "module:solutions/agent",
+        "module:solutions/audio",
+        "module:solutions/engineering",
+        "module:solutions/general",
+        "module:solutions/image",
+        "module:solutions/learning",
+        "module:solutions/marketing",
+        "module:solutions/office",
+        "module:solutions/product",
+        "module:solutions/research",
+        "module:solutions/video",
+        "module:solutions/writing",
+        "file:README.en.md",
+        "file:solutions/agent/tool-use-handoff/prompts/main.en.md",
+        "file:solutions/agent/tool-use-handoff/prompts/main.zh-CN.md",
+        "file:solutions/audio/podcast-narration/prompts/main.en.md",
+        "file:solutions/audio/podcast-narration/prompts/main.zh-CN.md",
+        "file:solutions/engineering/bug-root-cause-analysis/prompts/main.en.md",
+        "file:solutions/engineering/bug-root-cause-analysis/prompts/main.zh-CN.md",
+        "file:solutions/general/structured-summary/prompts/main.en.md",
+        "file:solutions/general/structured-summary/prompts/main.zh-CN.md",
+        "file:solutions/image/xhs-product-cover/prompts/main.en.md",
+        "file:solutions/image/xhs-product-cover/prompts/main.zh-CN.md",
+        "file:solutions/learning/socratic-study-plan/prompts/main.en.md",
+        "file:solutions/learning/socratic-study-plan/prompts/main.zh-CN.md",
+        "file:solutions/marketing/xhs-campaign-copy/prompts/main.en.md",
+        "file:solutions/marketing/xhs-campaign-copy/prompts/main.zh-CN.md",
+        "file:solutions/office/meeting-action-summary/prompts/main.en.md",
+        "file:solutions/office/meeting-action-summary/prompts/main.zh-CN.md",
+        "file:solutions/product/prd-acceptance-criteria/prompts/main.en.md",
+        "file:solutions/product/prd-acceptance-criteria/prompts/main.zh-CN.md",
+        "file:solutions/research/evidence-research-brief/prompts/main.en.md",
+        "file:solutions/research/evidence-research-brief/prompts/main.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/examples/wuxia-turnaround.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/profiles/face-body-master.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/profiles/prop-scene.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/profiles/shot-keyframe-continuity.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/profiles/turnaround-three-view.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/profiles/wardrobe-expression-action.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/prompts/main.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/prompts/sections/identity.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/prompts/sections/material-layout.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/prompts/sections/reference-continuity.zh-CN.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/examples/direction-and-segments.zh-CN.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/examples/semantic-plan.zh-CN.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/profiles/ad-microdrama.zh-CN.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/profiles/dialogue-dense.zh-CN.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/profiles/manga-panel.zh-CN.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/profiles/vertical-short-drama.zh-CN.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/prompts/main.zh-CN.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md",
+        "file:solutions/video/short-drama-character-consistency/prompts/main.en.md",
+        "file:solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md",
+        "file:solutions/writing/longform-outline/prompts/main.en.md",
+        "file:solutions/writing/longform-outline/prompts/main.zh-CN.md"
+      ]
+    },
+    {
+      "id": "layer:docs",
+      "name": "文档与规格层",
+      "description": "README、架构、OpenSpec 与维护说明。",
+      "nodeIds": [
+        "module:docs",
+        "module:openspec",
+        "module:openspec/changes",
+        "module:openspec/specs",
+        "file:AGENTS.md",
+        "file:CLAUDE.md",
+        "file:docs/authoring.md",
+        "file:docs/i18n.md",
+        "file:docs/README.md",
+        "file:docs/release.md",
+        "file:docs/taxonomy.md",
+        "file:openspec/changes/official-ai-drama-character-asset-templates-v1/.openspec.yaml",
+        "file:openspec/changes/official-ai-drama-character-asset-templates-v1/design.md",
+        "file:openspec/changes/official-ai-drama-character-asset-templates-v1/proposal.md",
+        "file:openspec/changes/official-ai-drama-character-asset-templates-v1/README.md",
+        "file:openspec/changes/official-ai-drama-character-asset-templates-v1/specs/official-ai-drama-character-asset-templates/spec.md",
+        "file:openspec/changes/official-ai-drama-character-asset-templates-v1/tasks.md",
+        "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/.openspec.yaml",
+        "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/design.md",
+        "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/proposal.md",
+        "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/README.md",
+        "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/specs/official-ai-drama-storyboard-breakdown-templates/spec.md",
+        "file:openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/tasks.md",
+        "file:openspec/config.yaml",
+        "file:openspec/specs/official-prompt-i18n/spec.md",
+        "file:openspec/specs/official-prompt-release/spec.md",
+        "file:openspec/specs/official-prompt-solutions/spec.md",
+        "file:openspec/specs/official-template-contract-pilot/spec.md",
+        "file:README.md",
+        "file:solutions/video/ai-drama-character-assets/docs/failure-modes.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/docs/i18n.md",
+        "file:solutions/video/ai-drama-character-assets/docs/preset-matrix.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/docs/review-checklist.zh-CN.md",
+        "file:solutions/video/ai-drama-character-assets/docs/usage.zh-CN.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/docs/failure-modes.zh-CN.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/docs/i18n.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/docs/preset-matrix.zh-CN.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/docs/review-checklist.zh-CN.md",
+        "file:solutions/video/ai-drama-storyboard-breakdown/docs/usage.zh-CN.md"
+      ]
+    },
+    {
+      "id": "layer:tooling",
+      "name": "工具与配置层",
+      "description": "脚本、构建、CI、部署和项目配置。",
+      "nodeIds": [
+        "file:catalog.json",
+        "file:repository.json",
+        "file:solutions/agent/tool-use-handoff/solution.json",
+        "file:solutions/audio/podcast-narration/solution.json",
+        "file:solutions/engineering/bug-root-cause-analysis/solution.json",
+        "file:solutions/general/structured-summary/solution.json",
+        "file:solutions/image/xhs-product-cover/solution.json",
+        "file:solutions/learning/socratic-study-plan/solution.json",
+        "file:solutions/marketing/xhs-campaign-copy/solution.json",
+        "file:solutions/office/meeting-action-summary/solution.json",
+        "file:solutions/product/prd-acceptance-criteria/solution.json",
+        "file:solutions/research/evidence-research-brief/solution.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/adult-subject-required.input.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/adult-subject-required.output.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/back-view-conflict.input.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/back-view-conflict.output.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/fixed-seed-missing.input.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/fixed-seed-missing.output.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/manga-shot-keyframe.input.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/manga-shot-keyframe.output.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/marker-mirror-conflict.input.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/marker-mirror-conflict.output.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/material-coverage-invalid.input.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/material-coverage-invalid.output.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/production-replace-override.input.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/production-replace-override.output.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/prompt-bundle-forbidden-field.input.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/prompt-bundle-forbidden-field.output.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/reference-not-production-ready.input.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/reference-not-production-ready.output.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wardrobe-continuity-drift.input.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wardrobe-continuity-drift.output.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.input.json",
+        "file:solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.output.json",
+        "file:solutions/video/ai-drama-character-assets/solution.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/bounded-duration-repair.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/bounded-duration-repair.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/repair-unknown-segment.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/repair-unknown-segment.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/revision-preserves-unaffected-shots.input.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/revision-preserves-unaffected-shots.output.json",
+        "file:solutions/video/ai-drama-storyboard-breakdown/solution.json",
+        "file:solutions/video/short-drama-character-consistency/solution.json",
+        "file:solutions/writing/longform-outline/solution.json"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "项目总览",
+      "description": "项目根模块与高层目录关系。",
+      "nodeIds": [
+        "module:project"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "领域与契约层",
+      "description": "领域模型、SDK、协议与稳定契约。",
+      "nodeIds": [
+        "file:solutions/audio/podcast-narration/contracts/main.en.json",
+        "file:solutions/audio/podcast-narration/contracts/main.zh-CN.json",
+        "file:solutions/image/xhs-product-cover/contracts/main.en.json",
+        "file:solutions/image/xhs-product-cover/contracts/main.zh-CN.json",
+        "file:solutions/video/ai-drama-character-assets/contracts/compilers/eikona.character-asset.prompt-bundle.v1.json",
+        "file:solutions/video/ai-drama-character-assets/contracts/documents/main.zh-CN.document.json",
+        "file:solutions/video/ai-drama-character-assets/contracts/fixtures/main.zh-CN.fixtures.json",
+        "file:solutions/video/ai-drama-character-assets/contracts/main.zh-CN.json"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "核心实现层",
+      "description": "未归入专门边界的主要实现模块。",
+      "nodeIds": [
+        "module:solutions",
+        "module:solutions/agent",
+        "module:solutions/audio",
+        "module:solutions/engineering",
+        "module:solutions/general",
+        "module:solutions/image",
+        "module:solutions/learning",
+        "module:solutions/marketing"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "文档与规格层",
+      "description": "README、架构、OpenSpec 与维护说明。",
+      "nodeIds": [
+        "module:docs",
+        "module:openspec",
+        "module:openspec/changes",
+        "module:openspec/specs",
+        "file:AGENTS.md",
+        "file:CLAUDE.md",
+        "file:docs/authoring.md",
+        "file:docs/i18n.md"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "工具与配置层",
+      "description": "脚本、构建、CI、部署和项目配置。",
+      "nodeIds": [
+        "file:catalog.json",
+        "file:repository.json",
+        "file:solutions/agent/tool-use-handoff/solution.json",
+        "file:solutions/audio/podcast-narration/solution.json",
+        "file:solutions/engineering/bug-root-cause-analysis/solution.json",
+        "file:solutions/general/structured-summary/solution.json",
+        "file:solutions/image/xhs-product-cover/solution.json",
+        "file:solutions/learning/socratic-study-plan/solution.json"
+      ]
+    }
+  ]
+}

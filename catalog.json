@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:d252148bb4e4f6be95f99848dd49bad43b6414f4b7ccd520fe71b3616ad37b2f",
+  "digest": "sha256:8e1f25d75c25342b1bcf33e1641428e39234d21b02b366beb6279f31d9b1c56d",
   "solutions": [
     {
       "package_id": "agent",
@@ -207,6 +207,63 @@
           "locale": "zh-CN",
           "path": "solutions/general/structured-summary/prompts/main.zh-CN.md",
           "digest": "sha256:3942036b2dbbcdcffae1f9b10de01242d55631fda4e296ac04add0c7560cdbce"
+        }
+      ]
+    },
+    {
+      "package_id": "graph",
+      "id": "longform.generic.v2",
+      "version": "1.0.0",
+      "digest": "sha256:979d9eaf00dba4626eb90a07c4e19e4f56efbac9fbd20e28657ea0e1ce691361",
+      "category": "graph",
+      "tags": [
+        "artifact:graph_kit",
+        "category:graph",
+        "scenario:longform_novel"
+      ],
+      "capabilities": [
+        "graph_kit_v2",
+        "structured_document"
+      ],
+      "rights": "internal",
+      "maturity": "first-support",
+      "locales": {
+        "zh-CN": {
+          "title": "Auctra 通用长篇知识图谱套件",
+          "summary": "面向长篇小说分支规划的五角色精确闭包，覆盖十个知识图谱面板、校验、动态更新与回滚",
+          "usage": "通过 Auctra Graph Kit 精确引用安装；先 preview/apply，再经 review accept 切换"
+        }
+      },
+      "templates": [
+        {
+          "role": "lens",
+          "locale": "zh-CN",
+          "path": "solutions/graph/longform.generic.v2/prompts/lens.zh-CN.yaml",
+          "digest": "sha256:8567615ec9eb6556ae3301e9f721e91ef9a7d4a418cc5b5fe544e9a86a140950"
+        },
+        {
+          "role": "manifest",
+          "locale": "zh-CN",
+          "path": "solutions/graph/longform.generic.v2/prompts/manifest.zh-CN.yaml",
+          "digest": "sha256:aabdfdea9c66943699263daf4a598ccb36582e3c1487ec6dc0d395f7756aad6a"
+        },
+        {
+          "role": "source_adapter",
+          "locale": "zh-CN",
+          "path": "solutions/graph/longform.generic.v2/prompts/source_adapter.zh-CN.yaml",
+          "digest": "sha256:7fd5b11deedce014573c96dc17347e8fc8fa1a4a7d4fb67dff4ed486f71eb49d"
+        },
+        {
+          "role": "validator",
+          "locale": "zh-CN",
+          "path": "solutions/graph/longform.generic.v2/prompts/validator.zh-CN.yaml",
+          "digest": "sha256:97c828c08cba4144bcb2db9e256f3e375599e26f3de92eaf4acac3b3ace3e877"
+        },
+        {
+          "role": "view",
+          "locale": "zh-CN",
+          "path": "solutions/graph/longform.generic.v2/prompts/view.zh-CN.yaml",
+          "digest": "sha256:f5a1a8d07c4eab8f31899d150ef7f9b5c76a257b38cb1fe53547ec6f6d3af73d"
         }
       ]
     },
@@ -505,6 +562,293 @@
           "locale": "zh-CN",
           "path": "solutions/research/evidence-research-brief/prompts/main.zh-CN.md",
           "digest": "sha256:0d20f596dda4e843c765311162bdc8601c8bbf83c45c306c14cde405c60e1dae"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "ai-drama-background-assets",
+      "version": "1.0.0",
+      "digest": "sha256:d8ae077d2c974082b2f57fb36c3874f1286acac6ba4815ebfe8098fe3ed12358",
+      "category": "video",
+      "tags": [
+        "domain:video"
+      ],
+      "capabilities": [
+        "background_asset",
+        "environment_plate"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "zh-CN": {
+          "title": "AI 做剧空场景背景资产",
+          "summary": "生成零人物、完整不透明的可复用场景背景板",
+          "usage": "人物与背景分开生成和审阅，基础资产阶段不合成"
+        }
+      },
+      "templates": [
+        {
+          "role": "clean-background-plate-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-background-assets/prompts/clean-background-plate-v1.zh-CN.md",
+          "digest": "sha256:e1132d35d06f669fe15052e28ae06918c6768e246f8d2c767250206bf3e8c9a4"
+        },
+        {
+          "role": "validate-background-plate-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.zh-CN.md",
+          "digest": "sha256:99084dd2c5cdee1dc520a92915029d84a0f3d4ae5ff114f9f8763439ec1ad20b"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "ai-drama-character-assets",
+      "version": "1.0.0",
+      "digest": "sha256:8be8118f712b51c06c0372eb7102ee87c0c1f3a0938176023a76e35b5bbce773",
+      "category": "video",
+      "tags": [
+        "domain:video"
+      ],
+      "capabilities": [
+        "character_asset",
+        "subject_continuity"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "AI Drama Character Visual Assets",
+          "summary": "Compile character, wardrobe, reference, and continuity constraints into a reviewable image Prompt Bundle",
+          "usage": "Use for face and body masters, turnarounds, wardrobe sheets, expression and action sheets, props, scenes, shot keyframes, and bounded repair",
+          "aliases": [
+            "character image prompt bundle",
+            "character turnaround template"
+          ]
+        },
+        "zh-CN": {
+          "title": "AI 做剧角色资产",
+          "summary": "分阶段编译角色、服装、场景与镜头关键帧资产",
+          "usage": "由视觉生产 Owner 渲染单视图任务并进行人工审查"
+        }
+      },
+      "templates": [
+        {
+          "role": "character-wuxia-female-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets/templates/characters/wuxia-female-v1.zh-CN.yaml",
+          "digest": "sha256:74dad5e697bdaf6b27fed94d39956752e41c5d137c14be9230323ad070a9fd74"
+        },
+        {
+          "role": "isolated-character-assets-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets/prompts/isolated-character-assets-v1.zh-CN.md",
+          "digest": "sha256:17ee871568b5dc48ef74a7fdf6930e9028e9876ef64bb61001c1023f4e270895"
+        },
+        {
+          "role": "layout-turnaround-three-view-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets/templates/layouts/turnaround-three-view-v1.zh-CN.yaml",
+          "digest": "sha256:3f647fc4ed3cf422d0ec717859572291593de31631658f507a35aa474a418e86"
+        },
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-character-assets/prompts/main.en.md",
+          "digest": "sha256:15980850c877b6b93dcdf52b4214f7280d1b1056ef865e90ecc1459602f1964c"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets/prompts/main.zh-CN.md",
+          "digest": "sha256:8585320f1bfab00de5a9840aea6b0bcf5d4fbdc19d1ec178b235a42c5706c6af"
+        },
+        {
+          "role": "qc-character-turnaround-production-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets/templates/qc/character-turnaround-production-v1.zh-CN.yaml",
+          "digest": "sha256:eb5270e2ba3603477120d1ce84fc8d2e210a8377bda0f818f10558dd6b31b7fb"
+        },
+        {
+          "role": "staged-character-production-v2",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets/prompts/staged-character-production-v2.zh-CN.md",
+          "digest": "sha256:64df23bb8e6a019cb263af9f19b7ce05a8acbaf4558cb242eb93a11a9fb4f661"
+        },
+        {
+          "role": "task-character-turnaround-independent-artifacts-v2",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets/templates/tasks/character-turnaround-independent-artifacts-v2.zh-CN.yaml",
+          "digest": "sha256:2a783d543a9de6e6a1a78f774be55ad5ed961f75257641e091f26f4bff298d1c"
+        },
+        {
+          "role": "task-character-turnaround-three-view-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets/templates/tasks/character-turnaround-three-view-v1.zh-CN.yaml",
+          "digest": "sha256:f72bd21150000292f7c6565732ca4c27c0de887f6b0f096fa6af5172ec6c8fe3"
+        },
+        {
+          "role": "wardrobe-wuxia-hanfu-moonwhite-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets/templates/wardrobes/wuxia-hanfu-moonwhite-v1.zh-CN.yaml",
+          "digest": "sha256:01661875a5a0b4d00e9ad5fbfae707d495a70468600b63f1602b86e201337228"
+        },
+        {
+          "role": "wuxia-female-turnaround-modular",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets/templates/plans/wuxia-female-turnaround-modular.zh-CN.yaml",
+          "digest": "sha256:d89fc11493384b98419041ef0049080e6678a36e0476b7e104ced7844bbaefe3"
+        },
+        {
+          "role": "wuxia-female-turnaround-staged-v2",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets/templates/plans/wuxia-female-turnaround-staged-v2.zh-CN.yaml",
+          "digest": "sha256:83fcecf2889a13d64e09a763812b4b131130464ca6bff2c5d29ff9720da10ac1"
+        },
+        {
+          "role": "wuxia-female-turnaround-yaml",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets/templates/tasks/wuxia-female-turnaround.zh-CN.yaml",
+          "digest": "sha256:1966faa83285ab72ba1874bf84a74b59d1bdf12ee132ce454c7db460c0cacf33"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "ai-drama-storyboard-breakdown",
+      "version": "1.0.0",
+      "digest": "sha256:6df746589a97946768e413ecc431947a1ad056f972ce7820986ba2a5a650412e",
+      "category": "video",
+      "tags": [
+        "artifact:storyboard_candidate",
+        "category:video",
+        "job:shot_planning",
+        "modality:text",
+        "scenario:ai_drama",
+        "stage:director_plan"
+      ],
+      "capabilities": [
+        "shot_planning",
+        "source_mapping",
+        "storyboard"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "AI Drama Storyboard Breakdown",
+          "summary": "Turn one episode of script segments into a reviewable directorial semantic storyboard plan",
+          "usage": "Use for Scaena script-to-storyboard main generation and bounded repair",
+          "aliases": [
+            "AI drama storyboard breakdown",
+            "script to storyboard"
+          ]
+        },
+        "zh-CN": {
+          "title": "AI 短剧分镜拆解",
+          "summary": "把单集剧本 segments 转成可审查的导演语义分镜计划",
+          "usage": "用于 Scaena 剧本到分镜候选的主生成与有界修复",
+          "aliases": [
+            "剧本转分镜",
+            "短剧分镜拆解"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/main.en.md",
+          "digest": "sha256:4ac12800275c376a907e8ce852e59601eeba72077729a8cff12faa85050de379"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/main.zh-CN.md",
+          "digest": "sha256:6817dc387a99f04a0ea81c66f2713ec41be63576052f50cbd47199e61adec4d9"
+        },
+        {
+          "role": "repair",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.en.md",
+          "digest": "sha256:55b4abf62e956b13cfb87ce5ed8f8c695c1ba964db7d58eeb83a94f4295f1434"
+        },
+        {
+          "role": "repair",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md",
+          "digest": "sha256:e985526d747415fce8163d69d0a187c966c4f3b6ff85e3fdf9d5ae5f47dcaddd"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "ai-film-multi-profile-production",
+      "version": "1.0.0",
+      "digest": "sha256:a6eb84862728f0062f50c92d8bbfdd922961884483a849f10d3d05a159b0ddf0",
+      "category": "video",
+      "tags": [
+        "domain:video",
+        "maturity:exploratory",
+        "workflow:film-production"
+      ],
+      "capabilities": [
+        "film_production",
+        "provider_neutral",
+        "semantic_compilation"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "zh-CN": {
+          "title": "AI 电影多 Profile 生产编译",
+          "summary": "将剧作、资产、场景、镜头、声音和连续性编译为可审查语义提案",
+          "usage": "由 Auctra、Scaena、Eikona、Sonora 消费安全投影；不执行 Provider 或接受 canonical state"
+        }
+      },
+      "templates": [
+        {
+          "role": "asset-dependency",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/asset-dependency.zh-CN.md",
+          "digest": "sha256:a95a6cbd8708dae1b0a6fe9ebefd47df8c1694a29830b1472d504981272f9593"
+        },
+        {
+          "role": "continuity-review",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/continuity-review.zh-CN.md",
+          "digest": "sha256:4adb3f5e0c3f4f3e6fd383cce592533841ddd6cffbcc5059b63e98acf7665453"
+        },
+        {
+          "role": "failure-restructure",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.zh-CN.md",
+          "digest": "sha256:9b997d8dc5d7fa1ba03dd53bffff2c1171e38ca1317085140af1de6f812f5c42"
+        },
+        {
+          "role": "project-intent",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/project-intent.zh-CN.md",
+          "digest": "sha256:f4ea4e5c2fe01eb0befba6da7d9e1eb97a0d39f9379608d58991124e9fc2e5ac"
+        },
+        {
+          "role": "scene-package",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.zh-CN.md",
+          "digest": "sha256:5ae339e960deb40e5ef78e9f6a4ebec53739e5d88d57fe0c9a540e593b235e92"
+        },
+        {
+          "role": "shot-audio-intent",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-audio-intent.zh-CN.md",
+          "digest": "sha256:4f5763c70d6643d72f42178306027269c7a32db60a0a359d5cd9660c31b1140f"
+        },
+        {
+          "role": "shot-prompt",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-prompt.zh-CN.md",
+          "digest": "sha256:a95842c57297aac6fa618d0ff17e73e175750255fa099cff57acba5ffb6cc595"
         }
       ]
     },

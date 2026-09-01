@@ -1,0 +1,181 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets",
+  "version": "1.0.0",
+  "role": "isolated-character-assets-v1",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-drama-character-assets/prompts/isolated-character-assets-v1.zh-CN.md",
+  "template_digest": "sha256:17ee871568b5dc48ef74a7fdf6930e9028e9876ef64bb61001c1023f4e270895",
+  "digest": "sha256:d4e9729d4c6f469c05af2a86df5b0012cb1b9549561fda356864a61552a3a2a2",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "inspect",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "asset_profile_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "face-mask-front-v1"
+      ],
+      "labels": {
+        "zh-CN": "资产预设"
+      },
+      "descriptions": {
+        "zh-CN": "隔离人物资产预设"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "continuity_constraints_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "zh-CN": "连续性约束"
+      },
+      "descriptions": {
+        "zh-CN": "需要保持的身份事实JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "isolation_mode",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "transparent_subject",
+        "studio_neutral",
+        "environment_only"
+      ],
+      "labels": {
+        "zh-CN": "隔离模式"
+      },
+      "descriptions": {
+        "zh-CN": "人物透明隔离或路由模式"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "locale",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "zh-CN"
+      ],
+      "labels": {
+        "zh-CN": "语言区域"
+      },
+      "descriptions": {
+        "zh-CN": "Prompt正文与输出文本语言"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "character_asset.prompt_bundle.v1"
+      ],
+      "labels": {
+        "zh-CN": "输出结构版本"
+      },
+      "descriptions": {
+        "zh-CN": "PromptBundle输出结构版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "reference_bindings_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 524288,
+      "labels": {
+        "zh-CN": "参考绑定"
+      },
+      "descriptions": {
+        "zh-CN": "带角色版本状态权限的参考绑定JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "eikona.character_asset_prompt_input.v1"
+      ],
+      "labels": {
+        "zh-CN": "输入结构版本"
+      },
+      "descriptions": {
+        "zh-CN": "视觉资产Prompt输入信封版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "style_lens_summary",
+      "type": "string",
+      "required": true,
+      "min_length": 0,
+      "max_length": 8192,
+      "labels": {
+        "zh-CN": "风格镜片摘要"
+      },
+      "descriptions": {
+        "zh-CN": "原创维度化视觉约束"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "subject_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "zh-CN": "主体数据"
+      },
+      "descriptions": {
+        "zh-CN": "已校验身份与稳定特征JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "subject_version_ref",
+      "type": "string",
+      "required": true,
+      "regex": "^[A-Za-z0-9][A-Za-z0-9:._/@-]{0,255}$",
+      "min_length": 1,
+      "max_length": 256,
+      "labels": {
+        "zh-CN": "主体版本引用"
+      },
+      "descriptions": {
+        "zh-CN": "exact主体版本引用"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "task_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "zh-CN": "生成任务"
+      },
+      "descriptions": {
+        "zh-CN": "隔离模式构图输出和质量门JSON"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

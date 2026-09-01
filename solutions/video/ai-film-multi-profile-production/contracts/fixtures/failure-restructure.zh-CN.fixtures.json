@@ -1,0 +1,80 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-film-multi-profile-production/failure-restructure/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-film-multi-profile-production",
+  "version": "1.0.0",
+  "role": "failure-restructure",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.zh-CN.md",
+    "digest": "sha256:9b997d8dc5d7fa1ba03dd53bffff2c1171e38ca1317085140af1de6f812f5c42"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/failure-restructure.zh-CN.json",
+    "digest": "sha256:9205acbba5ee4befc22e13de2fd8016d8ca11cc9cc0d8de64573f7db6819299d"
+  },
+  "document": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/documents/failure-restructure.zh-CN.document.json",
+    "digest": "sha256:3500f2d087fb90e4ef6f7c7c5dcc1bd5ea6cbbe4972e5c4cc5948d75006fadfe"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/schemas/ai-film-failure-restructure-semantic-output-v1.schema.json",
+    "digest": "sha256:5b5cc824e50b257c78dddabbd3aa17a653a98d6f4743f7da040fd15ddfcd626a"
+  },
+  "semantic_schema_version": "ai-film-failure-restructure-semantic-output-v1",
+  "cases": [
+    {
+      "case_id": "invalid-reroll-scope-too-broad",
+      "kind": "invalid",
+      "profile_id": "stylized_animation",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/failure-restructure.zh-CN/invalid-reroll-scope-too-broad.input.json",
+        "digest": "sha256:701b74f41004915f3c62d60601fb5b19f43566b9845112278cc838dad14f16d4",
+        "bytes": 636
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/failure-restructure.zh-CN/invalid-reroll-scope-too-broad.output.json",
+        "digest": "sha256:9597ddd01f8fb592b03192888f453da00c364139242660130f9d4a44e6b1d3cb",
+        "bytes": 121
+      },
+      "expected_codes": [
+        "REROLL_SCOPE_TOO_BROAD"
+      ]
+    },
+    {
+      "case_id": "invalid-unbounded-repair",
+      "kind": "invalid",
+      "profile_id": "cinematic_live_action",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/failure-restructure.zh-CN/invalid-unbounded-repair.input.json",
+        "digest": "sha256:274727a5d133848ab1193547544fc4ab5866a96080f73e6a77ce099aa8182740",
+        "bytes": 641
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/failure-restructure.zh-CN/invalid-unbounded-repair.output.json",
+        "digest": "sha256:ceb0428021f7701dac4607d3953a23fbfecb88e459a86348c9758fe08ac11a6b",
+        "bytes": 122
+      },
+      "expected_codes": [
+        "RETRY_THRESHOLD_REACHED"
+      ]
+    },
+    {
+      "case_id": "valid-red-risk-restructure",
+      "kind": "valid",
+      "profile_id": "stylized_animation",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/failure-restructure.zh-CN/valid-red-risk-restructure.input.json",
+        "digest": "sha256:73a2ef1aa2db8ce412044ab5abf70cc246c5957d64f36080f398597d70b3196d",
+        "bytes": 800
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/failure-restructure.zh-CN/valid-red-risk-restructure.output.json",
+        "digest": "sha256:bf70678aab8a1d9a3ae453520dd89c0fcf6781526a17d66eb0306ce051797c0d",
+        "bytes": 466
+      }
+    }
+  ],
+  "digest": "sha256:5bd861298b2daf0e42e014eb29fb3dcd79cbddd8894628cf47b73b39a74e75bb"
+}

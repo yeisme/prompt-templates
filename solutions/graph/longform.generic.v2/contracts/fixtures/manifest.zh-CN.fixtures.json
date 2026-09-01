@@ -1,0 +1,193 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "graph/longform.generic.v2/manifest/zh-CN",
+  "package_id": "graph",
+  "solution_id": "longform.generic.v2",
+  "version": "1.0.0",
+  "role": "manifest",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/graph/longform.generic.v2/prompts/manifest.zh-CN.yaml",
+    "digest": "sha256:aabdfdea9c66943699263daf4a598ccb36582e3c1487ec6dc0d395f7756aad6a"
+  },
+  "contract": {
+    "ref": "solutions/graph/longform.generic.v2/contracts/manifest.zh-CN.json",
+    "digest": "sha256:f816ebf8e48726676fde73c639771ff7ef1cb45af905fc61293235bbf2ddcb17"
+  },
+  "document": {
+    "ref": "solutions/graph/longform.generic.v2/contracts/documents/manifest.zh-CN.document.json",
+    "digest": "sha256:dee730eca2386f1bf8ee403605d22074115f75a3491308520dfdde5831e8cff2"
+  },
+  "schema": {
+    "ref": "solutions/graph/longform.generic.v2/contracts/schemas/auctra.graph-kit.v2.schema.json",
+    "digest": "sha256:e9c9a42a9078d07d6ec35ce567109d991bdef409f811b9d824ff40ee8ec1c70a"
+  },
+  "compiler_profile": {
+    "ref": "solutions/graph/longform.generic.v2/contracts/compilers/auctra.graph-kit.v2.json",
+    "digest": "sha256:26f8d51936875e0f373f14177fc220b87d555153001d2631d220458ee0cc83a8"
+  },
+  "semantic_schema_version": "auctra.graph_kit.v2",
+  "validator_command_ref": "auctra.graph.validate.v2",
+  "cases": [
+    {
+      "case_id": "dangling-relation",
+      "kind": "invalid",
+      "profile_id": "auctra-longform-v2",
+      "input": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/dangling-relation.input.json",
+        "digest": "sha256:173e4b907c93c2005504ca282e85a60d5c38560431d3493d2f1494aa02c49d0e",
+        "bytes": 51
+      },
+      "output": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/dangling-relation.output.json",
+        "digest": "sha256:0cebb158bf3df8dbc491ad5ddb6024d04fb818d43dc466c6ca39dec3505099cb",
+        "bytes": 53
+      },
+      "expected_codes": [
+        "GRAPH_DANGLING_RELATION"
+      ]
+    },
+    {
+      "case_id": "digest-drift",
+      "kind": "invalid",
+      "profile_id": "auctra-longform-v2",
+      "input": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/digest-drift.input.json",
+        "digest": "sha256:5fa1bcfab302d2b34d2986032f0bd78e9231d65d6ec8ed39030792027a3b805f",
+        "bytes": 68
+      },
+      "output": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/digest-drift.output.json",
+        "digest": "sha256:cf0b8f0a949d158c4d1366b5706c55510a14d1215b8c2c15530dd0479a71dc1e",
+        "bytes": 52
+      },
+      "expected_codes": [
+        "GRAPH_KIT_DIGEST_DRIFT"
+      ]
+    },
+    {
+      "case_id": "duplicate-identity",
+      "kind": "invalid",
+      "profile_id": "auctra-longform-v2",
+      "input": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/duplicate-identity.input.json",
+        "digest": "sha256:8e27653247906aa2d07ebf01f66490ef31d7388c5d69b961e6b6a0df21775a0c",
+        "bytes": 44
+      },
+      "output": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/duplicate-identity.output.json",
+        "digest": "sha256:1b2a3a32123f85bc7a3abee43f23d0ee83583915da7b6a293e313ea9a0957db0",
+        "bytes": 54
+      },
+      "expected_codes": [
+        "GRAPH_DUPLICATE_IDENTITY"
+      ]
+    },
+    {
+      "case_id": "html-sentinel",
+      "kind": "invalid",
+      "profile_id": "auctra-longform-v2",
+      "input": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/html-sentinel.input.json",
+        "digest": "sha256:f14549ced582ba7b9e682d2740a33b394b3559d62a8afe8f5440c89104772272",
+        "bytes": 80
+      },
+      "output": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/html-sentinel.output.json",
+        "digest": "sha256:ff6fcefe4f7ce231d4a4730b6634ea5a72e58e8cb27d80570dd1983c9741deff",
+        "bytes": 49
+      },
+      "expected_codes": [
+        "HTML_UNSAFE_CONTENT"
+      ]
+    },
+    {
+      "case_id": "minimal-valid-closure",
+      "kind": "valid",
+      "profile_id": "auctra-longform-v2",
+      "input": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/minimal-valid-closure.input.json",
+        "digest": "sha256:e5a14b4c30ab298e3ca2d59beadf043f87514bf1721e084bf458237d422b495e",
+        "bytes": 94
+      },
+      "output": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/minimal-valid-closure.output.json",
+        "digest": "sha256:040eb7bb32833695e4977a9682ceb6048173853f909fa3d4c5db7969b6683a04",
+        "bytes": 1459
+      }
+    },
+    {
+      "case_id": "missing-child",
+      "kind": "invalid",
+      "profile_id": "auctra-longform-v2",
+      "input": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/missing-child.input.json",
+        "digest": "sha256:ab435683c914723686a86b3382c378bf0343f4d9e0e5d9df8565833c6b4d02e7",
+        "bytes": 63
+      },
+      "output": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/missing-child.output.json",
+        "digest": "sha256:a21971625edd05122ea79140bd8e785e9296a4851e7ba6004dbec5462f77173b",
+        "bytes": 58
+      },
+      "expected_codes": [
+        "PACKAGE_SNAPSHOT_UNAVAILABLE"
+      ]
+    },
+    {
+      "case_id": "missing-id",
+      "kind": "invalid",
+      "profile_id": "auctra-longform-v2",
+      "input": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/missing-id.input.json",
+        "digest": "sha256:6ccfe0ee58c2ad4705d167cc0b97ba3a34d38c27f52b57998a65d4a47a2106bf",
+        "bytes": 47
+      },
+      "output": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/missing-id.output.json",
+        "digest": "sha256:d695c787ca5fe2e2ebbc20b440211be5351ca113f95884ab03023b4a6b611214",
+        "bytes": 47
+      },
+      "expected_codes": [
+        "GRAPH_ID_REQUIRED"
+      ]
+    },
+    {
+      "case_id": "source-drift",
+      "kind": "invalid",
+      "profile_id": "auctra-longform-v2",
+      "input": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/source-drift.input.json",
+        "digest": "sha256:d653e7d3224315d37f98b9aa956e814eaccb6895161705b9f890fd1fd2f173cc",
+        "bytes": 58
+      },
+      "output": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/source-drift.output.json",
+        "digest": "sha256:d90fdb8fd9000396dcc2e493ac7605847925182fe92b64099c00956b7de5204e",
+        "bytes": 49
+      },
+      "expected_codes": [
+        "SOURCE_DIGEST_DRIFT"
+      ]
+    },
+    {
+      "case_id": "state-conflict",
+      "kind": "invalid",
+      "profile_id": "auctra-longform-v2",
+      "input": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/state-conflict.input.json",
+        "digest": "sha256:a78b0208dd6430803ea70e72a56dc48c00fdd8a4ca06757d22e1539534d077ed",
+        "bytes": 51
+      },
+      "output": {
+        "ref": "solutions/graph/longform.generic.v2/fixtures/manifest.zh-CN/state-conflict.output.json",
+        "digest": "sha256:3c34f560a3e4298c8b10170f5dc3e778c8197e2c9006bb30a8ad5c93a4b854e7",
+        "bytes": 50
+      },
+      "expected_codes": [
+        "GRAPH_STATE_CONFLICT"
+      ]
+    }
+  ],
+  "digest": "sha256:389ab57badb1fc7bbcf1c8c15cba231b3292948c106b3c23be4a657a58c39749"
+}

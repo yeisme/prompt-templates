@@ -1,0 +1,63 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "ai-film-multi-profile-production",
+  "version": "1.0.0",
+  "category": "video",
+  "tags": [
+    "domain:video",
+    "maturity:exploratory",
+    "workflow:film-production"
+  ],
+  "capabilities": [
+    "film_production",
+    "provider_neutral",
+    "semantic_compilation"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "zh-CN": {
+      "title": "AI 电影多 Profile 生产编译",
+      "summary": "将剧作、资产、场景、镜头、声音和连续性编译为可审查语义提案",
+      "usage": "由 Auctra、Scaena、Eikona、Sonora 消费安全投影；不执行 Provider 或接受 canonical state"
+    }
+  },
+  "templates": [
+    {
+      "role": "asset-dependency",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/asset-dependency.zh-CN.md"
+    },
+    {
+      "role": "continuity-review",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/continuity-review.zh-CN.md"
+    },
+    {
+      "role": "failure-restructure",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.zh-CN.md"
+    },
+    {
+      "role": "project-intent",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/project-intent.zh-CN.md"
+    },
+    {
+      "role": "scene-package",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.zh-CN.md"
+    },
+    {
+      "role": "shot-audio-intent",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-audio-intent.zh-CN.md"
+    },
+    {
+      "role": "shot-prompt",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-prompt.zh-CN.md"
+    }
+  ]
+}

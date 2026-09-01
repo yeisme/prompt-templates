@@ -1,0 +1,21 @@
+api_version: auctra.graph_view.v2
+id: longform.dashboard.v2
+title: Longform ten-panel dashboard
+panels:
+  - cast.relationship
+  - volume.architecture
+  - power.resource_backlash
+  - faction.cohort
+  - regret.accountability
+  - foreshadow.payoff
+  - knowledge.boundary
+  - continuity.state
+  - rule.obligation
+  - source.coverage_gap
+output:
+  json: true
+  html: true
+html_policy:
+  escape_untrusted_text: true
+  allow_raw_html: false
+

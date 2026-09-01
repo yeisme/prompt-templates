@@ -1,0 +1,10 @@
+schema_version: layout.module.v1
+module_id: layout/turnaround-three-view-v1
+layout:
+  alignment: same-horizon-same-scale
+  columns: 3
+  order:
+    - front
+    - left_profile
+    - back
+  rotation_policy: typed-marker-no-mirror

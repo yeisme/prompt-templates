@@ -1,0 +1,35 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "ai-drama-background-assets",
+  "version": "1.0.0",
+  "category": "video",
+  "tags": [
+    "domain:video"
+  ],
+  "capabilities": [
+    "background_asset",
+    "environment_plate"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "zh-CN": {
+      "title": "AI 做剧空场景背景资产",
+      "summary": "生成零人物、完整不透明的可复用场景背景板",
+      "usage": "人物与背景分开生成和审阅，基础资产阶段不合成"
+    }
+  },
+  "templates": [
+    {
+      "role": "clean-background-plate-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-background-assets/prompts/clean-background-plate-v1.zh-CN.md"
+    },
+    {
+      "role": "validate-background-plate-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.zh-CN.md"
+    }
+  ]
+}

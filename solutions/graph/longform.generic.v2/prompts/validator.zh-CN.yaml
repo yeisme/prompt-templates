@@ -1,0 +1,14 @@
+api_version: auctra.graph_validator.v2
+id: longform.panels.v2
+title: Longform graph integrity validator
+checks:
+  - stable_id
+  - duplicate_identity
+  - dangling_relation
+  - planning_canon_state_separation
+  - source_digest_drift
+  - branch_scope
+  - evidence_lineage
+  - html_escape
+failure_mode: fail_closed
+

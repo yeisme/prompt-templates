@@ -1,0 +1,24 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "graph",
+  "solution_id": "longform.generic.v2",
+  "version": "1.0.0",
+  "role": "lens",
+  "locale": "zh-CN",
+  "template_path": "solutions/graph/longform.generic.v2/prompts/lens.zh-CN.yaml",
+  "source_digest": "sha256:8567615ec9eb6556ae3301e9f721e91ef9a7d4a418cc5b5fe544e9a86a140950",
+  "format": "yaml",
+  "media_type": "application/yaml",
+  "canonicalization": "rfc8785",
+  "required_capabilities": [
+    "graph_kit_v2"
+  ],
+  "selector_kinds": [
+    "yaml-pointer"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:f766e2f947e10e0ca4445a65b66c0c4ade5d2ce0ee02baa64a7484c697454067"
+}

@@ -1,0 +1,13 @@
+api_version: auctra.graph_source_adapter.v2
+id: longform.json.v2
+title: Longform JSON source adapter
+formats:
+  - json
+canonicalization: jcs
+max_bytes: 2097152
+fail_closed:
+  - duplicate_identity
+  - dangling_relation
+  - state_conflict
+  - source_digest_drift
+

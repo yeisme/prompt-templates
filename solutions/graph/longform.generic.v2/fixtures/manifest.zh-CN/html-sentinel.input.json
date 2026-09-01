@@ -1,0 +1,1 @@
+{"mutation":"insert <script>alert('sentinel')</script> into an untrusted label"}

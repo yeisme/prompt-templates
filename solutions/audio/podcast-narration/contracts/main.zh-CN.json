@@ -1,0 +1,99 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "audio",
+  "solution_id": "podcast-narration",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "zh-CN",
+  "template_path": "solutions/audio/podcast-narration/prompts/main.zh-CN.md",
+  "template_digest": "sha256:78b8ff6d38de8151fce85d980c65a8fb46c54a9e69fd47e88b3f5229ed04648e",
+  "digest": "sha256:7bfa796fa3131687e09cf0d3c59aa2a532a566c293f73ba569f43331187ac395",
+  "license": "internal",
+  "permissions": [
+    "inspect",
+    "preview",
+    "tts_handoff"
+  ],
+  "inputs": [
+    {
+      "name": "audience",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 500,
+      "labels": {
+        "en": "Audience",
+        "zh-CN": "听众"
+      },
+      "descriptions": {
+        "en": "Target audience and expected knowledge level",
+        "zh-CN": "目标听众及其理解水平"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "duration",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 100,
+      "labels": {
+        "en": "Duration",
+        "zh-CN": "期望时长"
+      },
+      "descriptions": {
+        "en": "Target audio duration or script length",
+        "zh-CN": "目标音频时长或字数范围"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "script",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 20000,
+      "labels": {
+        "en": "Script",
+        "zh-CN": "原始稿件"
+      },
+      "descriptions": {
+        "en": "Source text to convert into podcast narration",
+        "zh-CN": "需要转换为播客旁白的原始文本"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "show_positioning",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 500,
+      "labels": {
+        "en": "Show positioning",
+        "zh-CN": "节目定位"
+      },
+      "descriptions": {
+        "en": "Topic, style, and value proposition of the show",
+        "zh-CN": "节目的主题、风格和价值定位"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "tone",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 100,
+      "labels": {
+        "en": "Tone",
+        "zh-CN": "语气"
+      },
+      "descriptions": {
+        "en": "Delivery tone for the narration",
+        "zh-CN": "旁白需要呈现的表达语气"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}

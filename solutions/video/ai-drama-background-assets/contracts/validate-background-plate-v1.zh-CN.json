@@ -1,0 +1,32 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-background-assets",
+  "version": "1.0.0",
+  "role": "validate-background-plate-v1",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.zh-CN.md",
+  "template_digest": "sha256:99084dd2c5cdee1dc520a92915029d84a0f3d4ae5ff114f9f8763439ec1ad20b",
+  "digest": "sha256:0f29baaaab72e3f912dec111f24796f8a9772bfb39669d6d67a864b0b46c7f7c",
+  "license": "internal",
+  "permissions": [
+    "inspect",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "authoring_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "zh-CN": "背景输入 JSON"
+      },
+      "descriptions": {
+        "zh-CN": "待校验的地点、机位、时间天气、光线、画幅、活动区和禁止项"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

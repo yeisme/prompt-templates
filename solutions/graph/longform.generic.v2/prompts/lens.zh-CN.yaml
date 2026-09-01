@@ -1,0 +1,176 @@
+api_version: auctra.graph_lens.v2
+id: longform.generic.v2
+title: 通用长篇分支知识图谱透镜
+source_slots:
+  - name: shared
+    kinds: [json]
+    selector_types: [json_pointer]
+    required: true
+  - name: planning
+    kinds: [json]
+    selector_types: [json_pointer]
+    required: true
+collections:
+  - name: characters
+    slot: planning
+    dataset: entity
+    selector: {type: json_pointer, path: /characters}
+    id_field: id
+    label_field: name
+    kind: cast.character
+    fields:
+      - {name: id, from: id}
+      - {name: name, from: name}
+    extensions: [role, age, alias]
+  - name: shared_characters
+    slot: shared
+    dataset: entity
+    selector: {type: json_pointer, path: /characters}
+    id_field: id
+    label_field: name
+    kind: cast.character
+    fields:
+      - {name: id, from: id}
+      - {name: name, from: name}
+    extensions: [role, age, alias]
+  - name: relations
+    slot: planning
+    dataset: assertion
+    selector: {type: json_pointer, path: /relations}
+    id_field: id
+    kind: cast.relationship
+    fields:
+      - {name: id, from: id}
+      - {name: subject, from: from}
+      - {name: object, from: to}
+      - {name: relation, from: kind}
+      - {name: secret, from: secret}
+      - {name: phase, from: phase}
+  - name: shared_relations
+    slot: shared
+    dataset: assertion
+    selector: {type: json_pointer, path: /relations}
+    id_field: id
+    kind: cast.relationship
+    fields:
+      - {name: id, from: id}
+      - {name: subject, from: from}
+      - {name: object, from: to}
+      - {name: relation, from: kind}
+      - {name: secret, from: secret}
+      - {name: phase, from: phase}
+  - name: volumes
+    slot: planning
+    dataset: table
+    selector: {type: json_pointer, path: /volumes}
+    id_field: id
+    kind: volume.architecture
+    fields:
+      - {name: id, from: id}
+      - {name: volume, from: volume}
+      - {name: name, from: name}
+    extensions: [arc, theme]
+  - name: powers
+    slot: planning
+    dataset: assertion
+    selector: {type: json_pointer, path: /powers}
+    id_field: id
+    kind: power.resource_backlash
+    fields:
+      - {name: id, from: id}
+      - {name: subject, from: from}
+      - {name: object, from: to}
+      - {name: relation, from: kind}
+      - {name: magnitude, from: magnitude}
+  - name: factions
+    slot: planning
+    dataset: series
+    selector: {type: json_pointer, path: /factions}
+    id_field: id
+    kind: faction.cohort
+    fields:
+      - {name: id, from: id}
+      - {name: name, from: name}
+      - {name: total, from: total}
+      - {name: points, from: points, transform: split_csv}
+  - name: regrets
+    slot: planning
+    dataset: assertion
+    selector: {type: json_pointer, path: /regrets}
+    id_field: id
+    kind: regret.accountability
+    fields:
+      - {name: id, from: id}
+      - {name: subject, from: from}
+      - {name: object, from: to}
+      - {name: relation, from: kind}
+      - {name: responsible, from: responsible}
+  - name: foreshadow
+    slot: planning
+    dataset: assertion
+    selector: {type: json_pointer, path: /foreshadow}
+    id_field: id
+    kind: foreshadow.payoff
+    fields:
+      - {name: id, from: id}
+      - {name: subject, from: from}
+      - {name: object, from: to}
+      - {name: relation, from: kind}
+      - {name: seed, from: seed}
+      - {name: role, from: role}
+      - {name: chapter, from: chapter}
+  - name: knowledge
+    slot: planning
+    dataset: assertion
+    selector: {type: json_pointer, path: /knowledge}
+    id_field: id
+    kind: knowledge.boundary
+    fields:
+      - {name: id, from: id}
+      - {name: subject, from: from}
+      - {name: object, from: to}
+      - {name: relation, from: kind}
+      - {name: seed, from: seed}
+      - {name: chapter, from: chapter}
+  - name: continuity
+    slot: planning
+    dataset: series
+    selector: {type: json_pointer, path: /continuity}
+    id_field: id
+    kind: continuity.state
+    fields:
+      - {name: id, from: id}
+      - {name: subject, from: subject}
+      - {name: span, from: span}
+      - {name: state, from: state}
+  - name: obligations
+    slot: planning
+    dataset: assertion
+    selector: {type: json_pointer, path: /obligations}
+    id_field: id
+    kind: rule.obligation
+    fields:
+      - {name: id, from: id}
+      - {name: subject, from: from}
+      - {name: object, from: to}
+      - {name: relation, from: kind}
+      - {name: status, from: status}
+  - name: shared_obligations
+    slot: shared
+    dataset: assertion
+    selector: {type: json_pointer, path: /obligations}
+    id_field: id
+    kind: rule.obligation
+    fields:
+      - {name: id, from: id}
+      - {name: subject, from: from}
+      - {name: object, from: to}
+      - {name: relation, from: kind}
+      - {name: status, from: status}
+validators:
+  - stable-refs
+  - dual-state
+  - branch-scope
+  - evidence-lineage
+maturity: first-support
+

@@ -1,0 +1,41 @@
+api_version: auctra.graph_kit.v2
+id: longform.generic.v2
+title: Official generic longform graph kit
+source_adapter_refs:
+  - registry://adapter/longform.json.v2@sha256:7fd5b11deedce014573c96dc17347e8fc8fa1a4a7d4fb67dff4ed486f71eb49d
+lens_refs:
+  - registry://lens/longform.generic.v2@sha256:8567615ec9eb6556ae3301e9f721e91ef9a7d4a418cc5b5fe544e9a86a140950
+view_refs:
+  - registry://view/longform.dashboard.v2@sha256:f5a1a8d07c4eab8f31899d150ef7f9b5c76a257b38cb1fe53547ec6f6d3af73d
+validator_refs:
+  - registry://validator/longform.panels.v2@sha256:97c828c08cba4144bcb2db9e256f3e375599e26f3de92eaf4acac3b3ace3e877
+panels:
+  - panel: cast.relationship
+    required: true
+    views: [longform.dashboard.v2]
+  - panel: volume.architecture
+    required: true
+    views: [longform.dashboard.v2]
+  - panel: power.resource_backlash
+    required: true
+    views: [longform.dashboard.v2]
+  - panel: faction.cohort
+    views: [longform.dashboard.v2]
+  - panel: regret.accountability
+    views: [longform.dashboard.v2]
+  - panel: foreshadow.payoff
+    required: true
+    views: [longform.dashboard.v2]
+  - panel: knowledge.boundary
+    views: [longform.dashboard.v2]
+  - panel: continuity.state
+    required: true
+    views: [longform.dashboard.v2]
+  - panel: rule.obligation
+    required: true
+    views: [longform.dashboard.v2]
+  - panel: source.coverage_gap
+    required: true
+    views: [longform.dashboard.v2]
+compatibility: ">=0.4.0 <1.0.0"
+maturity: first-support

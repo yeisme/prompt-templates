@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-film-multi-profile-production/asset-dependency/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-film-multi-profile-production",
+  "version": "1.0.0",
+  "role": "asset-dependency",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-film-multi-profile-production/prompts/asset-dependency.zh-CN.md",
+    "digest": "sha256:a95a6cbd8708dae1b0a6fe9ebefd47df8c1694a29830b1472d504981272f9593"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/asset-dependency.zh-CN.json",
+    "digest": "sha256:c452f0fbb4d8ba1fd000ee9b5cdac6e6b2be8fa182712bd71ee3ad92319bc0d0"
+  },
+  "document": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/documents/asset-dependency.zh-CN.document.json",
+    "digest": "sha256:0d84c836acb520d72662b1c899e9dd54a422fdedd53bd1b9983b2557e5febfa4"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/schemas/ai-film-asset-dependency-semantic-output-v1.schema.json",
+    "digest": "sha256:68abfa7b618d19470e519dce346810ab4350b3a37b72afbf0c9db5c38191fcf9"
+  },
+  "semantic_schema_version": "ai-film-asset-dependency-semantic-output-v1",
+  "cases": [
+    {
+      "case_id": "invalid-asset-without-dramatic-function",
+      "kind": "invalid",
+      "profile_id": "cinematic_live_action",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/asset-dependency.zh-CN/invalid-asset-without-dramatic-function.input.json",
+        "digest": "sha256:1393ad1d502b7d97cbc7a001749adcd68daa3ef77cef680285d637be8adde2ac",
+        "bytes": 626
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/asset-dependency.zh-CN/invalid-asset-without-dramatic-function.output.json",
+        "digest": "sha256:f454a21cab40073874a879b933de18d7b6b7bde975209999261e8b14a62b1bba",
+        "bytes": 130
+      },
+      "expected_codes": [
+        "ASSET_WITHOUT_DRAMATIC_FUNCTION"
+      ]
+    },
+    {
+      "case_id": "valid-asset-dramatic-function",
+      "kind": "valid",
+      "profile_id": "cinematic_live_action",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/asset-dependency.zh-CN/valid-asset-dramatic-function.input.json",
+        "digest": "sha256:42bb3a54b990e9b870c4be1c784ebbf1685c6baecab639de5f88a76297908289",
+        "bytes": 800
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/asset-dependency.zh-CN/valid-asset-dramatic-function.output.json",
+        "digest": "sha256:73c9c804349a417e8eeba20565019c1585de94988cb6425f712a0c175133cee6",
+        "bytes": 598
+      }
+    }
+  ],
+  "digest": "sha256:e5ad2cdc1c01b71025d171c55eeed5bc97d712d0188eb80380ddcbd7b7d60ef6"
+}

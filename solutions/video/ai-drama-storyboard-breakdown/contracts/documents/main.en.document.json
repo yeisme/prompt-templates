@@ -1,0 +1,34 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-storyboard-breakdown",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/video/ai-drama-storyboard-breakdown/prompts/main.en.md",
+  "source_digest": "sha256:4ac12800275c376a907e8ce852e59601eeba72077729a8cff12faa85050de379",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/video/ai-drama-storyboard-breakdown/contracts/schemas/storyboard.semantic-plan.v1.schema.json",
+    "digest": "sha256:372dbe848d2961538f4efc8a69b6fc380805cfca9181007af79f03cb9da81e04"
+  },
+  "compiler_profile": {
+    "ref": "solutions/video/ai-drama-storyboard-breakdown/contracts/compilers/scaena.storyboard.semantic-plan.v1.json",
+    "digest": "sha256:c45c33ccb12f6fbb0c023ad73a724aba3794f503ac4aac416d58725264171625"
+  },
+  "required_capabilities": [
+    "shot_planning",
+    "source_mapping",
+    "storyboard"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 262144,
+    "max_depth": 64
+  },
+  "digest": "sha256:6f93cc98c6fca5e2d7515e245690b7f47b2b5f2cd5c257c314a62baa42f7f079"
+}

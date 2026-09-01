@@ -1,0 +1,102 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "xhs-product-cover",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "zh-CN",
+  "template_path": "solutions/image/xhs-product-cover/prompts/main.zh-CN.md",
+  "template_digest": "sha256:c081e1c618861899fb522e284eef137faa30b3abb1837fc2ac0d11a84204ec1d",
+  "digest": "sha256:61d6a31afa393095e8eff2e4af068d0f7a9b3420cd6ea9efb71fc1b501d2c43a",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "aspect_ratio",
+      "type": "enum",
+      "default": "3:4",
+      "enum": [
+        "3:4",
+        "1:1"
+      ],
+      "labels": {
+        "en": "Aspect ratio",
+        "zh-CN": "画面比例"
+      },
+      "descriptions": {
+        "en": "The target cover aspect ratio",
+        "zh-CN": "小红书封面的目标画幅"
+      }
+    },
+    {
+      "name": "audience",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "都市通勤人群"
+      ],
+      "labels": {
+        "en": "Audience",
+        "zh-CN": "目标受众"
+      },
+      "descriptions": {
+        "en": "The primary audience for the cover",
+        "zh-CN": "封面希望吸引的核心人群"
+      }
+    },
+    {
+      "name": "product",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "便携咖啡杯"
+      ],
+      "labels": {
+        "en": "Product",
+        "zh-CN": "产品"
+      },
+      "descriptions": {
+        "en": "The real product to feature",
+        "zh-CN": "需要展示的真实产品"
+      }
+    },
+    {
+      "name": "selling_point",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "轻量防漏"
+      ],
+      "labels": {
+        "en": "Key benefit",
+        "zh-CN": "核心卖点"
+      },
+      "descriptions": {
+        "en": "A verifiable product benefit without exaggeration",
+        "zh-CN": "可核实且不得夸大的产品卖点"
+      }
+    },
+    {
+      "name": "visual_style",
+      "type": "enum",
+      "default": "clean_commercial",
+      "enum": [
+        "clean_commercial",
+        "lifestyle",
+        "editorial",
+        "illustration"
+      ],
+      "labels": {
+        "en": "Visual style",
+        "zh-CN": "视觉风格"
+      },
+      "descriptions": {
+        "en": "The overall visual direction",
+        "zh-CN": "封面的整体视觉方向"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "graph",
+  "solution_id": "longform.generic.v2",
+  "version": "1.0.0",
+  "role": "manifest",
+  "locale": "zh-CN",
+  "template_path": "solutions/graph/longform.generic.v2/prompts/manifest.zh-CN.yaml",
+  "source_digest": "sha256:aabdfdea9c66943699263daf4a598ccb36582e3c1487ec6dc0d395f7756aad6a",
+  "format": "yaml",
+  "media_type": "application/yaml",
+  "canonicalization": "rfc8785",
+  "schema": {
+    "ref": "solutions/graph/longform.generic.v2/contracts/schemas/auctra.graph-kit.v2.schema.json",
+    "digest": "sha256:e9c9a42a9078d07d6ec35ce567109d991bdef409f811b9d824ff40ee8ec1c70a"
+  },
+  "compiler_profile": {
+    "ref": "solutions/graph/longform.generic.v2/contracts/compilers/auctra.graph-kit.v2.json",
+    "digest": "sha256:26f8d51936875e0f373f14177fc220b87d555153001d2631d220458ee0cc83a8"
+  },
+  "required_capabilities": [
+    "graph_kit_v2"
+  ],
+  "selector_kinds": [
+    "yaml-pointer"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:dee730eca2386f1bf8ee403605d22074115f75a3491308520dfdde5831e8cff2"
+}

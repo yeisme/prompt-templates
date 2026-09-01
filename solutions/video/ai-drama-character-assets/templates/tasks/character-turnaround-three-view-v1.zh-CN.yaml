@@ -1,0 +1,14 @@
+schema_version: task.module.v1
+module_id: task/character-turnaround-three-view-v1
+asset_profile_id: turnaround-three-view-v1
+task:
+  aspect_ratio: "3:2"
+  background: neutral-light-gray
+  fixed_seed: 42017
+  full_body_required: true
+  marker_policy: viewer-left-is-character-right
+  seed_policy: fixed
+  views:
+    - front
+    - left_profile
+    - back

@@ -1,0 +1,33 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-background-assets",
+  "version": "1.0.0",
+  "role": "validate-background-plate-v1",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.zh-CN.md",
+  "source_digest": "sha256:99084dd2c5cdee1dc520a92915029d84a0f3d4ae5ff114f9f8763439ec1ad20b",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/video/ai-drama-background-assets/contracts/schemas/background_asset.validation.v1.schema.json",
+    "digest": "sha256:ee996fdebd8f382de804a18b1f0baf00dcb6484a138b71cb1feafc3d34d044cc"
+  },
+  "compiler_profile": {
+    "ref": "solutions/video/ai-drama-background-assets/contracts/compilers/eikona.background-asset-validation.v1.json",
+    "digest": "sha256:b3f87bbb8bba2b33b0610f32c3bfe5380f7a19ea824090b0af28267d8fa2d41e"
+  },
+  "required_capabilities": [
+    "background_asset",
+    "environment_plate"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:93f4cb63487a42129378e9a84a7481da67e263495b1f9ab90f14917efef84e3e"
+}

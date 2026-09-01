@@ -1,0 +1,34 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets",
+  "version": "1.0.0",
+  "role": "isolated-character-assets-v1",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-drama-character-assets/prompts/isolated-character-assets-v1.zh-CN.md",
+  "source_digest": "sha256:17ee871568b5dc48ef74a7fdf6930e9028e9876ef64bb61001c1023f4e270895",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.prompt_bundle.isolated.v1.schema.json",
+    "digest": "sha256:2e5f755bd61a9736929b9a10a1345e509c338dfc0f4c56e48d279325abe8b6f9"
+  },
+  "compiler_profile": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/compilers/eikona.character-asset.prompt-bundle.isolated.v1.json",
+    "digest": "sha256:597ff899258b5b90ab55f3083075b9b2779daeae873d6e800098c0ce105b3cb3"
+  },
+  "required_capabilities": [
+    "character_asset",
+    "image_prompting",
+    "subject_continuity"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:b96235131bc287d2b40f3cee340d204d9e40d8c305a3f18e8bc693e5ebe6626f"
+}

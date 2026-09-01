@@ -1,0 +1,52 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "graph",
+  "id": "longform.generic.v2",
+  "version": "1.0.0",
+  "category": "graph",
+  "tags": [
+    "artifact:graph_kit",
+    "category:graph",
+    "scenario:longform_novel"
+  ],
+  "capabilities": [
+    "graph_kit_v2",
+    "structured_document"
+  ],
+  "rights": "internal",
+  "maturity": "first-support",
+  "locales": {
+    "zh-CN": {
+      "title": "Auctra 通用长篇知识图谱套件",
+      "summary": "面向长篇小说分支规划的五角色精确闭包，覆盖十个知识图谱面板、校验、动态更新与回滚",
+      "usage": "通过 Auctra Graph Kit 精确引用安装；先 preview/apply，再经 review accept 切换"
+    }
+  },
+  "templates": [
+    {
+      "role": "lens",
+      "locale": "zh-CN",
+      "path": "solutions/graph/longform.generic.v2/prompts/lens.zh-CN.yaml"
+    },
+    {
+      "role": "manifest",
+      "locale": "zh-CN",
+      "path": "solutions/graph/longform.generic.v2/prompts/manifest.zh-CN.yaml"
+    },
+    {
+      "role": "source_adapter",
+      "locale": "zh-CN",
+      "path": "solutions/graph/longform.generic.v2/prompts/source_adapter.zh-CN.yaml"
+    },
+    {
+      "role": "validator",
+      "locale": "zh-CN",
+      "path": "solutions/graph/longform.generic.v2/prompts/validator.zh-CN.yaml"
+    },
+    {
+      "role": "view",
+      "locale": "zh-CN",
+      "path": "solutions/graph/longform.generic.v2/prompts/view.zh-CN.yaml"
+    }
+  ]
+}

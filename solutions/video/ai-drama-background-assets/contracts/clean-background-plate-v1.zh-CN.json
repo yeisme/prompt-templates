@@ -1,0 +1,103 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-background-assets",
+  "version": "1.0.0",
+  "role": "clean-background-plate-v1",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-drama-background-assets/prompts/clean-background-plate-v1.zh-CN.md",
+  "template_digest": "sha256:e1132d35d06f669fe15052e28ae06918c6768e246f8d2c767250206bf3e8c9a4",
+  "digest": "sha256:b27d767397d1d98fb54de5e3de690f953c9d13eafcfa03a27496ec3f9c4e7e2e",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "inspect",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "activity_zone",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "zh-CN": "人物活动预留区"
+      },
+      "descriptions": {
+        "zh-CN": "后续人物可进入的无遮挡空间区域"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "aspect_ratio",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "zh-CN": "画幅"
+      },
+      "descriptions": {
+        "zh-CN": "输出画幅，例如16:9或9:16"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "camera",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "zh-CN": "机位"
+      },
+      "descriptions": {
+        "zh-CN": "镜头高度、方向、焦段感和透视关系"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "lighting",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "zh-CN": "光线逻辑"
+      },
+      "descriptions": {
+        "zh-CN": "主光源方向、强度、色温和环境光"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "location_anchor",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "zh-CN": "地点锚点"
+      },
+      "descriptions": {
+        "zh-CN": "建筑、空间结构、入口、主要表面与可复用锚点"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "time_weather",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "zh-CN": "时间天气"
+      },
+      "descriptions": {
+        "zh-CN": "时间、天气和空气状态"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

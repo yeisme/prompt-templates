@@ -1,0 +1,64 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "ai-drama-storyboard-breakdown",
+  "version": "1.0.0",
+  "category": "video",
+  "tags": [
+    "artifact:storyboard_candidate",
+    "category:video",
+    "job:shot_planning",
+    "modality:text",
+    "scenario:ai_drama",
+    "stage:director_plan"
+  ],
+  "capabilities": [
+    "shot_planning",
+    "source_mapping",
+    "storyboard"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "AI Drama Storyboard Breakdown",
+      "summary": "Turn one episode of script segments into a reviewable directorial semantic storyboard plan",
+      "usage": "Use for Scaena script-to-storyboard main generation and bounded repair",
+      "aliases": [
+        "AI drama storyboard breakdown",
+        "script to storyboard"
+      ]
+    },
+    "zh-CN": {
+      "title": "AI 短剧分镜拆解",
+      "summary": "把单集剧本 segments 转成可审查的导演语义分镜计划",
+      "usage": "用于 Scaena 剧本到分镜候选的主生成与有界修复",
+      "aliases": [
+        "剧本转分镜",
+        "短剧分镜拆解"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/main.zh-CN.md"
+    },
+    {
+      "role": "repair",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.en.md"
+    },
+    {
+      "role": "repair",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md"
+    }
+  ]
+}

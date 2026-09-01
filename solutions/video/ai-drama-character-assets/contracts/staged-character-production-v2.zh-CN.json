@@ -1,0 +1,16 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets",
+  "version": "1.0.0",
+  "role": "staged-character-production-v2",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-drama-character-assets/prompts/staged-character-production-v2.zh-CN.md",
+  "template_digest": "sha256:63306cf5035386b4f8722cbf00b9d93f4bcda251be59c716d21d6cdd18d44d26",
+  "digest": "sha256:09ca71dd498b2a21b7fb7b0c410abc276588ed9eff71ee1a04b0f039171936c5",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-film-multi-profile-production",
+  "version": "1.0.0",
+  "role": "continuity-review",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-film-multi-profile-production/prompts/continuity-review.zh-CN.md",
+  "template_digest": "sha256:4adb3f5e0c3f4f3e6fd383cce592533841ddd6cffbcc5059b63e98acf7665453",
+  "digest": "sha256:7de7b8c542200c0503d7098df4dacfdeecaf7e536f9a371f0b766ac50043d44b",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "accepted_source_projection_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "zh-CN": "已接受安全投影"
+      },
+      "descriptions": {
+        "zh-CN": "Owner筛选后的有界事实JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "active_reference_bindings_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "zh-CN": "活动参考绑定"
+      },
+      "descriptions": {
+        "zh-CN": "带inherit和forbid的安全绑定JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "continuity_constraints_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "zh-CN": "连续性约束"
+      },
+      "descriptions": {
+        "zh-CN": "Owner筛选的连续性规则JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "ai-film-continuity-review-semantic-output-v1"
+      ],
+      "labels": {
+        "zh-CN": "语义输出版本"
+      },
+      "descriptions": {
+        "zh-CN": "已绑定角色语义输出版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "profile_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "cinematic_live_action",
+        "motion_comic",
+        "stylized_animation",
+        "brand_film"
+      ],
+      "labels": {
+        "zh-CN": "Profile"
+      },
+      "descriptions": {
+        "zh-CN": "固定生产Profile"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "retry_policy_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 32768,
+      "labels": {
+        "zh-CN": "重试策略"
+      },
+      "descriptions": {
+        "zh-CN": "有界修复和升级策略JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "task_delta_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "zh-CN": "本轮任务增量"
+      },
+      "descriptions": {
+        "zh-CN": "仅本次允许变化的有界JSON"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-film-multi-profile-production/scene-package/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-film-multi-profile-production",
+  "version": "1.0.0",
+  "role": "scene-package",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.zh-CN.md",
+    "digest": "sha256:5ae339e960deb40e5ef78e9f6a4ebec53739e5d88d57fe0c9a540e593b235e92"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/scene-package.zh-CN.json",
+    "digest": "sha256:5f9a2f8b7e6f0b998470608c759085b57a53a147985de333e796e78321e23441"
+  },
+  "document": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/documents/scene-package.zh-CN.document.json",
+    "digest": "sha256:6104262cde672518a75d97c6d9932383e0cc0b2d964633c3435b2ba977b05872"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/schemas/ai-film-scene-package-semantic-output-v1.schema.json",
+    "digest": "sha256:f2a0cbe80e3b4853275649315d26e28de2f7349bbcf65e358bb906a8feb75d0c"
+  },
+  "semantic_schema_version": "ai-film-scene-package-semantic-output-v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-scene-geo",
+      "kind": "invalid",
+      "profile_id": "cinematic_live_action",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/scene-package.zh-CN/invalid-missing-scene-geo.input.json",
+        "digest": "sha256:6541147913cad8d30200e382f589aa03dd46835edd2c9dca7799541cf295e0c0",
+        "bytes": 598
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/scene-package.zh-CN/invalid-missing-scene-geo.output.json",
+        "digest": "sha256:4fbeed258fd83798f9d83a768944bc571dbd07e8d28361b144ff34e06a851766",
+        "bytes": 116
+      },
+      "expected_codes": [
+        "MISSING_SCENE_GEO"
+      ]
+    },
+    {
+      "case_id": "invalid-no-scene-state-change",
+      "kind": "invalid",
+      "profile_id": "motion_comic",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/scene-package.zh-CN/invalid-no-scene-state-change.input.json",
+        "digest": "sha256:aa6bc9c2018ed7095a0163a36d90498454f4711441c19f8b35df044896cbb270",
+        "bytes": 609
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/scene-package.zh-CN/invalid-no-scene-state-change.output.json",
+        "digest": "sha256:00dc19f24e7dadef4994ebfa8f74605c88248eb592ab7ab245754fc978783cf0",
+        "bytes": 120
+      },
+      "expected_codes": [
+        "NO_SCENE_STATE_CHANGE"
+      ]
+    },
+    {
+      "case_id": "valid-motion-comic-dialogue",
+      "kind": "valid",
+      "profile_id": "motion_comic",
+      "input": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/scene-package.zh-CN/valid-motion-comic-dialogue.input.json",
+        "digest": "sha256:f477df75a47d43f19c7cbc1f0a5d96624b8f84ca2850751c7a545cf232e1ad6e",
+        "bytes": 788
+      },
+      "output": {
+        "ref": "solutions/video/ai-film-multi-profile-production/fixtures/scene-package.zh-CN/valid-motion-comic-dialogue.output.json",
+        "digest": "sha256:7ef5931196fe621649b4af267286531d506c49356f403d481451aa28b54a5717",
+        "bytes": 731
+      }
+    }
+  ],
+  "digest": "sha256:146771cb9767556cc415293087ea4a108ed9ce6f4b33e918e77910c390b1bbae"
+}

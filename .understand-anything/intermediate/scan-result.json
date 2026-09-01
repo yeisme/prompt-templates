@@ -1,0 +1,1046 @@
+{
+  "scriptCompleted": true,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "catalog.json",
+      "language": "json",
+      "sizeLines": 705,
+      "fileCategory": "config"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/authoring.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/i18n.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/README.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/release.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/taxonomy.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/changes/official-ai-drama-character-asset-templates-v1/.openspec.yaml",
+      "language": "yaml",
+      "sizeLines": 2,
+      "fileCategory": "config"
+    },
+    {
+      "path": "openspec/changes/official-ai-drama-character-asset-templates-v1/design.md",
+      "language": "markdown",
+      "sizeLines": 111,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/changes/official-ai-drama-character-asset-templates-v1/proposal.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/changes/official-ai-drama-character-asset-templates-v1/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/changes/official-ai-drama-character-asset-templates-v1/specs/official-ai-drama-character-asset-templates/spec.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/changes/official-ai-drama-character-asset-templates-v1/tasks.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/.openspec.yaml",
+      "language": "yaml",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": "openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/design.md",
+      "language": "markdown",
+      "sizeLines": 328,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/proposal.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/specs/official-ai-drama-storyboard-breakdown-templates/spec.md",
+      "language": "markdown",
+      "sizeLines": 191,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/changes/official-ai-drama-storyboard-breakdown-templates-v1/tasks.md",
+      "language": "markdown",
+      "sizeLines": 31,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/config.yaml",
+      "language": "yaml",
+      "sizeLines": 20,
+      "fileCategory": "config"
+    },
+    {
+      "path": "openspec/specs/official-prompt-i18n/spec.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/specs/official-prompt-release/spec.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/specs/official-prompt-solutions/spec.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "openspec/specs/official-template-contract-pilot/spec.md",
+      "language": "markdown",
+      "sizeLines": 41,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.en.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "repository.json",
+      "language": "json",
+      "sizeLines": 7,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/agent/tool-use-handoff/prompts/main.en.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/agent/tool-use-handoff/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/agent/tool-use-handoff/solution.json",
+      "language": "json",
+      "sizeLines": 48,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/audio/podcast-narration/contracts/main.en.json",
+      "language": "json",
+      "sizeLines": 99,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/audio/podcast-narration/contracts/main.zh-CN.json",
+      "language": "json",
+      "sizeLines": 99,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/audio/podcast-narration/prompts/main.en.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/audio/podcast-narration/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/audio/podcast-narration/solution.json",
+      "language": "json",
+      "sizeLines": 50,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/engineering/bug-root-cause-analysis/prompts/main.en.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/engineering/bug-root-cause-analysis/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/engineering/bug-root-cause-analysis/solution.json",
+      "language": "json",
+      "sizeLines": 48,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/general/structured-summary/prompts/main.en.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/general/structured-summary/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/general/structured-summary/solution.json",
+      "language": "json",
+      "sizeLines": 47,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/image/xhs-product-cover/contracts/main.en.json",
+      "language": "json",
+      "sizeLines": 102,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/image/xhs-product-cover/contracts/main.zh-CN.json",
+      "language": "json",
+      "sizeLines": 102,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/image/xhs-product-cover/prompts/main.en.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/image/xhs-product-cover/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/image/xhs-product-cover/solution.json",
+      "language": "json",
+      "sizeLines": 49,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/learning/socratic-study-plan/prompts/main.en.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/learning/socratic-study-plan/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/learning/socratic-study-plan/solution.json",
+      "language": "json",
+      "sizeLines": 47,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/marketing/xhs-campaign-copy/prompts/main.en.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/marketing/xhs-campaign-copy/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/marketing/xhs-campaign-copy/solution.json",
+      "language": "json",
+      "sizeLines": 48,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/office/meeting-action-summary/prompts/main.en.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/office/meeting-action-summary/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/office/meeting-action-summary/solution.json",
+      "language": "json",
+      "sizeLines": 47,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/product/prd-acceptance-criteria/prompts/main.en.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/product/prd-acceptance-criteria/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/product/prd-acceptance-criteria/solution.json",
+      "language": "json",
+      "sizeLines": 47,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/research/evidence-research-brief/prompts/main.en.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/research/evidence-research-brief/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/research/evidence-research-brief/solution.json",
+      "language": "json",
+      "sizeLines": 48,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/contracts/compilers/eikona.character-asset.prompt-bundle.v1.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/contracts/documents/main.zh-CN.document.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/contracts/fixtures/main.zh-CN.fixtures.json",
+      "language": "json",
+      "sizeLines": 226,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/contracts/main.zh-CN.json",
+      "language": "json",
+      "sizeLines": 189,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.prompt_bundle.v1.schema.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/docs/failure-modes.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/docs/i18n.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/docs/preset-matrix.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/docs/review-checklist.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/docs/usage.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/examples/wuxia-turnaround.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/adult-subject-required.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/adult-subject-required.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/back-view-conflict.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/back-view-conflict.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/fixed-seed-missing.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/fixed-seed-missing.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/manga-shot-keyframe.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/manga-shot-keyframe.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/marker-mirror-conflict.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/marker-mirror-conflict.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/material-coverage-invalid.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/material-coverage-invalid.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/production-replace-override.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/production-replace-override.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/prompt-bundle-forbidden-field.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/prompt-bundle-forbidden-field.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/reference-not-production-ready.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/reference-not-production-ready.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wardrobe-continuity-drift.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wardrobe-continuity-drift.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/profiles/face-body-master.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/profiles/prop-scene.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/profiles/shot-keyframe-continuity.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/profiles/turnaround-three-view.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/profiles/wardrobe-expression-action.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 100,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/prompts/sections/identity.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/prompts/sections/material-layout.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/prompts/sections/reference-continuity.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-character-assets/solution.json",
+      "language": "json",
+      "sizeLines": 45,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/contracts/compilers/scaena.storyboard.semantic-plan.v1.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/contracts/documents/main.zh-CN.document.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/contracts/documents/repair.zh-CN.document.json",
+      "language": "json",
+      "sizeLines": 34,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/contracts/fixtures/main.zh-CN.fixtures.json",
+      "language": "json",
+      "sizeLines": 304,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/contracts/fixtures/repair.zh-CN.fixtures.json",
+      "language": "json",
+      "sizeLines": 82,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/contracts/main.zh-CN.json",
+      "language": "json",
+      "sizeLines": 197,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/contracts/repair.zh-CN.json",
+      "language": "json",
+      "sizeLines": 211,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/contracts/schemas/storyboard.semantic-plan.v1.schema.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/docs/failure-modes.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/docs/i18n.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/docs/preset-matrix.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 10,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/docs/review-checklist.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/docs/usage.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/examples/direction-and-segments.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 42,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/examples/semantic-plan.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 65,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/ad-product-truth.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-outside-shot-source.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/dialogue-two-hander.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duplicate-shot-key.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/duration-out-of-direction-bounds.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/hidden-provider-payload.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/manga-action-beat.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/missing-dramatic-purpose.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/noncontiguous-source-range.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/revision-preserve-shot-refs.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/silent-unmapped-segment.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-canary.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/source-injection-forbidden-field.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-fact.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/unknown-segment.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/main.zh-CN/vertical-conflict-75s.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/bounded-duration-repair.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/bounded-duration-repair.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/repair-unknown-segment.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/repair-unknown-segment.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/revision-preserves-unaffected-shots.input.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/fixtures/repair.zh-CN/revision-preserves-unaffected-shots.output.json",
+      "language": "json",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/profiles/ad-microdrama.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/profiles/dialogue-dense.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/profiles/manga-panel.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/profiles/vertical-short-drama.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 134,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 66,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/ai-drama-storyboard-breakdown/solution.json",
+      "language": "json",
+      "sizeLines": 45,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/video/short-drama-character-consistency/prompts/main.en.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/video/short-drama-character-consistency/solution.json",
+      "language": "json",
+      "sizeLines": 49,
+      "fileCategory": "config"
+    },
+    {
+      "path": "solutions/writing/longform-outline/prompts/main.en.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/writing/longform-outline/prompts/main.zh-CN.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "solutions/writing/longform-outline/solution.json",
+      "language": "json",
+      "sizeLines": 47,
+      "fileCategory": "config"
+    }
+  ],
+  "totalFiles": 171,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "large",
+  "stats": {
+    "filesScanned": 171,
+    "byCategory": {
+      "docs": 75,
+      "config": 96
+    },
+    "byLanguage": {
+      "markdown": 75,
+      "json": 93,
+      "yaml": 3
+    }
+  }
+}

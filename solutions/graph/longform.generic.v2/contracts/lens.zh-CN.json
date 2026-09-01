@@ -1,0 +1,15 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "graph",
+  "solution_id": "longform.generic.v2",
+  "version": "1.0.0",
+  "role": "lens",
+  "locale": "zh-CN",
+  "template_path": "solutions/graph/longform.generic.v2/prompts/lens.zh-CN.yaml",
+  "template_digest": "sha256:8567615ec9eb6556ae3301e9f721e91ef9a7d4a418cc5b5fe544e9a86a140950",
+  "digest": "sha256:f724ce1aa4441fad178cf74757252b2711b9e0acff7eeefa2c1a0476163eccfa",
+  "license": "internal",
+  "permissions": [
+    "review"
+  ]
+}

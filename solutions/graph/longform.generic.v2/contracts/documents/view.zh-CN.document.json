@@ -1,0 +1,24 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "graph",
+  "solution_id": "longform.generic.v2",
+  "version": "1.0.0",
+  "role": "view",
+  "locale": "zh-CN",
+  "template_path": "solutions/graph/longform.generic.v2/prompts/view.zh-CN.yaml",
+  "source_digest": "sha256:f5a1a8d07c4eab8f31899d150ef7f9b5c76a257b38cb1fe53547ec6f6d3af73d",
+  "format": "yaml",
+  "media_type": "application/yaml",
+  "canonicalization": "rfc8785",
+  "required_capabilities": [
+    "graph_kit_v2"
+  ],
+  "selector_kinds": [
+    "yaml-pointer"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:cb118d74650ec0f6d5f4fb70783921bd1b9b6a105922bfa577d949df42696f09"
+}

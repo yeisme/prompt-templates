@@ -1,0 +1,211 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-storyboard-breakdown",
+  "version": "1.0.0",
+  "role": "repair",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md",
+  "template_digest": "sha256:e985526d747415fce8163d69d0a187c966c4f3b6ff85e3fdf9d5ae5f47dcaddd",
+  "digest": "sha256:10c1125c3de694e4f2be390654c2372fd14ae015b4f194e889ba80a7224397da",
+  "license": "internal",
+  "permissions": [
+    "inspect",
+    "preview",
+    "storyboard_handoff"
+  ],
+  "inputs": [
+    {
+      "name": "accepted_story_context_refs_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "zh-CN": "已接受上下文引用"
+      },
+      "descriptions": {
+        "zh-CN": "已人工接受且允许本轮使用的故事上下文引用 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "continuity_facts_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "zh-CN": "连续性事实"
+      },
+      "descriptions": {
+        "zh-CN": "可被镜头事实引用的连续性事实 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "direction_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "zh-CN": "导演约束"
+      },
+      "descriptions": {
+        "zh-CN": "由 Scaena 校验并序列化的导演目标和硬约束 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "episode_ref",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "episode:01"
+      ],
+      "regex": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "min_length": 1,
+      "max_length": 256,
+      "labels": {
+        "zh-CN": "单集引用"
+      },
+      "descriptions": {
+        "zh-CN": "当前且唯一允许处理的单集稳定引用"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "known_entities_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "zh-CN": "已知实体"
+      },
+      "descriptions": {
+        "zh-CN": "角色地点道具等已知实体的受控 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "locale",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "zh-CN"
+      ],
+      "labels": {
+        "zh-CN": "语言区域"
+      },
+      "descriptions": {
+        "zh-CN": "模板正文与输出文本使用的语言区域"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "storyboard.semantic_plan.v1"
+      ],
+      "labels": {
+        "zh-CN": "输出结构版本"
+      },
+      "descriptions": {
+        "zh-CN": "要求模型返回的导演语义计划结构版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "profile_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "vertical-short-drama-v1",
+        "dialogue-dense-v1",
+        "manga-panel-v1",
+        "ad-microdrama-v1"
+      ],
+      "labels": {
+        "zh-CN": "分镜配置"
+      },
+      "descriptions": {
+        "zh-CN": "控制镜头节奏与表达约束的分镜配置"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "repair_findings_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "zh-CN": "修复发现"
+      },
+      "descriptions": {
+        "zh-CN": "允许本次修复处理的稳定 finding code 与定位 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "scaena.storyboard_prompt_input.v1"
+      ],
+      "labels": {
+        "zh-CN": "输入结构版本"
+      },
+      "descriptions": {
+        "zh-CN": "Scaena 传入模板的输入信封版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "semantic_plan_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 1048576,
+      "labels": {
+        "zh-CN": "待修复语义计划"
+      },
+      "descriptions": {
+        "zh-CN": "已经过 Scaena 结构解析但需要有界修复的语义计划 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "source_segments_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 1048576,
+      "labels": {
+        "zh-CN": "剧本片段"
+      },
+      "descriptions": {
+        "zh-CN": "带稳定 segment_ref 的当前单集剧本片段 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "style_lens_summary",
+      "type": "string",
+      "required": true,
+      "max_length": 8192,
+      "labels": {
+        "zh-CN": "风格镜片摘要"
+      },
+      "descriptions": {
+        "zh-CN": "不含可执行指令的风格约束摘要"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}
