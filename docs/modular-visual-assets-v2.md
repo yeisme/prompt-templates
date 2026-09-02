@@ -90,3 +90,58 @@ layer preview 用于检查对齐、穿插和遮挡；harmonized preview 用于�
 `ai-drama-character-assets@1.x`、`ai-drama-background-assets@1.x`、`face-master-v1` 和 `face-mask-front-v1` 保持不可变。新 canonical 头部入口为 `head-core-bald-v1`；旧消费者不会自动跳转到 2.0.0。
 
 结构化 catalog、contract 和 fixture 索引由 Template Registry CLI 生成。当前文档只说明 planned contract，不代表模板已经发布或 Provider 已通过实拍验证。
+
+## 共享词汇（stable vocabulary）
+
+以下 machine ID 是两个 v2 solution family 的稳定词汇，不翻译、不随 profile 改名；模板正文、contract input enum、fixture 与 preview 输出必须使用同一组值。
+
+### Slot（资产槽位）
+
+| Slot ID | 职责 | 输出画布 |
+| --- | --- | --- |
+| `head_core` | 无头发头部核心身份与几何 | 透明 RGBA |
+| `body_core` | 身体比例、肢体与 topology | 透明 RGBA |
+| `surface_coat` | 头发、毛发、鳞片等可替换表面层 | 透明 RGBA |
+| `wearable` | 单件服装、鞋、盔甲 | 透明 RGBA |
+| `accessory` | 单件装饰（首饰、腰封、胸针等） | 透明 RGBA |
+| `extension_part` | 角、尾、翼等扩展部件 | 透明 RGBA |
+| `semantic_object` | 独立可交互物件 | 默认透明 RGBA |
+| `environment_shell` | 无人物无物件的空场景壳 | 完整不透明 |
+| `preview` | 分层/harmonized 检查图 | `canonical=false` |
+
+### DesignSpec（设计规格）
+
+一个 slot 的一份可审阅设计声明，至少包含：`attachment_interface`/`fit_interface`（与核心或其他层的连接/贴合接口）、`layer_order`、`silhouette`、`material`、`color_regions`、`occlusion_rules`、`collision_risks`、`inherit[]`、`forbid[]`、`view_plan`、`required_evidence`。DesignSpec 是设计事实的集合，不是一次生成结果；模型输出不得伪造 DesignSpec 已被接受。
+
+### RenderRevision（单视图渲染修订）
+
+对一个 slot 的一个视图、依据当前 DesignSpec 与 active bindings 的一次可追溯渲染建议。每次 RenderRevision 只允许一个 `change_scope` 变量类（identity preservation、capture lock、camera motion、action timing、lighting、material state、layer state）；同一 DesignSpec 的多视图是多个独立 RenderRevision，禁止用一张网格图代替。
+
+### View plan（视图计划）
+
+- 角色核心与贴合型资产使用六视图合同：`detail_front`（严格正脸 detail，第一视图）、`front_left_three_quarter`、`left_profile`、`back`、`right_profile`、`front_right_three_quarter`。
+- 物件使用 geometry-adaptive view plan：由物件几何（长条、扁平、对称、封闭容器等）选择最少充分视图，并在输出中声明选择原因。
+- contact sheet 只能由消费方在本地用独立 artifacts 合成。
+
+### Isolation（隔离）
+
+每个模板只生成自己 slot 的内容；其他 slot、人物、背景、文字、水印、边框、棋盘格与伪透明边缘都是污染。人物类 slot 输出透明 RGBA 与干净抗锯齿边缘；`environment_shell` 输出完整不透明画布。
+
+### Inherit / forbid（继承与禁止继承）
+
+每个 reference binding 必须显式声明允许继承与禁止继承的字段；未声明即禁止。核心规则：`identity_source` 不得继承表情、妆容、首饰、服装、背景；`wardrobe_source` 不得继承脸、发际线、表情、身体身份；`style_source` 只提供原创维度化视觉约束，不复刻在世创作者或受保护作品。
+
+### Preview（预览）
+
+`preview` slot 的输出必须携带 exact `source_refs[]`（含各 source 的版本与 digest 引用）并标记 `canonical=false`；preview 不得作为任何 source slot 的替代 ref，不得宣称 subject frozen 或 production ready。
+
+### 共享输出合同
+
+两个 family 的模板共用同一输出 schema `character_asset.modular_slot_bundle.v1`（canonical 文件：`solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json`，由 Registry `document artifact add` 生成与校验）。它承载 slot/view/RenderRevision/policy_echo 词汇的机器面；character 与 environment 模板的 document descriptor 都绑定该 exact 文件与 digest，不允许各自复制漂移。
+
+## 版本、locale、rights 与 maturity 规则
+
+- 版本：`ai-drama-character-assets-v2@2.0.0` 与 `ai-drama-background-assets-v2@2.0.0` 是并行新 major；1.x 目录、template ID、正文与 fixture 不修改、不重定向。Registry authoring CLI 以 solution id 定位目录，因此 2.0.0 family 使用版本后缀目录；其 catalog 稳定地址为 `promptrepo://official/video/ai-drama-character-assets-v2@2.0.0` 与 `promptrepo://official/video/ai-drama-background-assets-v2@2.0.0`。2.x 内的加法演进递增 patch/minor，不原地覆盖已发布版本。
+- Source digest：`zh-CN` 是 source locale；每个 role 的 template digest 即该 role 的 source digest。`en` 适配逐 role 绑定 source digest（同 `ai-film-multi-profile-production/docs/i18n.md` 的做法），source 变化后对应 en 适配立即 stale，必须重新评审 placeholder/约束等价并重跑 contract validate 后才能继续标注 reviewed；machine ID、slot/view enum、schema 字段与失败码不翻译。
+- Rights：默认 `internal`；示例与 fixture 只使用原创虚构角色与非品牌材料，不含真人肖像、受保护角色复刻、品牌 claim、credential 或 provider payload。
+- Maturity：2.0.0 内容初始一律 `exploratory`；`first-support` 需要 fixture 执行、人工评审、rights 结论与已知失败记录齐全；`mature` 另需真实脱敏使用证据。任何模板不得因正文完成而自称 first-support。

@@ -1,0 +1,41 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "ai-drama-background-assets-v2",
+  "version": "2.0.0",
+  "category": "video",
+  "tags": [
+    "domain:video",
+    "maturity:exploratory",
+    "workflow:modular-visual-assets"
+  ],
+  "capabilities": [
+    "background_asset",
+    "environment_isolation",
+    "modular_asset_slots"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "zh-CN": {
+      "title": "AI 做剧模块化环境资产 v2",
+      "summary": "独立语义物件与无人物空场景壳的模块化环境资产",
+      "usage": "由 Eikona 按 slot 渲染；空场景壳必须零人物零物件且完整不透明",
+      "aliases": [
+        "modular environment asset template"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "empty-scene-shell-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.zh-CN.md"
+    },
+    {
+      "role": "semantic-object-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.zh-CN.md"
+    }
+  ]
+}

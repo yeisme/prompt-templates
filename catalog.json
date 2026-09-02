@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:01195cc686ea75ea0f900000f388e7e106493f284d4fb002c98f065ac170daf2",
+  "digest": "sha256:d53090b6bd3dbd847ceb5130a4d45149a247722f540843a2444cb5159d9047e4",
   "solutions": [
     {
       "package_id": "agent",
@@ -567,6 +567,49 @@
     },
     {
       "package_id": "video",
+      "id": "ai-drama-background-assets-v2",
+      "version": "2.0.0",
+      "digest": "sha256:7fe5ea56bc74bc6343b0621f2b1dda42d461fd9de763da915cbe2d69bdbc44aa",
+      "category": "video",
+      "tags": [
+        "domain:video",
+        "maturity:exploratory",
+        "workflow:modular-visual-assets"
+      ],
+      "capabilities": [
+        "background_asset",
+        "environment_isolation",
+        "modular_asset_slots"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "zh-CN": {
+          "title": "AI 做剧模块化环境资产 v2",
+          "summary": "独立语义物件与无人物空场景壳的模块化环境资产",
+          "usage": "由 Eikona 按 slot 渲染；空场景壳必须零人物零物件且完整不透明",
+          "aliases": [
+            "modular environment asset template"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "empty-scene-shell-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.zh-CN.md",
+          "digest": "sha256:025d88b0809bc1b4b927b1f6c432350a5f20f4f66b721a8e6c365c4eb3ad558a"
+        },
+        {
+          "role": "semantic-object-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.zh-CN.md",
+          "digest": "sha256:0c019f6c3b639eca4f55d8543e09a097d3672ea1ec5967c74010d043bd9ab135"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
       "id": "ai-drama-background-assets",
       "version": "1.0.0",
       "digest": "sha256:d8ae077d2c974082b2f57fb36c3874f1286acac6ba4815ebfe8098fe3ed12358",
@@ -599,6 +642,49 @@
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.zh-CN.md",
           "digest": "sha256:99084dd2c5cdee1dc520a92915029d84a0f3d4ae5ff114f9f8763439ec1ad20b"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "ai-drama-character-assets-v2",
+      "version": "2.0.0",
+      "digest": "sha256:0e7f1b76290af02e2a0a408c3b7f3a7f0e0a8844246646411b07a2deb9af92dd",
+      "category": "video",
+      "tags": [
+        "domain:video",
+        "maturity:exploratory",
+        "workflow:modular-visual-assets"
+      ],
+      "capabilities": [
+        "character_asset",
+        "modular_asset_slots",
+        "subject_continuity"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "zh-CN": {
+          "title": "AI 做剧模块化角色资产 v2",
+          "summary": "无头发头模、中性身体核心与可替换表面/穿戴层的模块化角色资产",
+          "usage": "由 Eikona 按 slot 渲染单视图；Scaena 只消费安全 refs；preview 不是 canonical 资产",
+          "aliases": [
+            "modular character asset template"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "body-core-neutral-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets-v2/prompts/body-core-neutral-v1.zh-CN.md",
+          "digest": "sha256:b5d75fe5d2ad9de60eba69fc7111ab5b819409d63e630d2a3a2fc5bd6206bc0c"
+        },
+        {
+          "role": "head-core-bald-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets-v2/prompts/head-core-bald-v1.zh-CN.md",
+          "digest": "sha256:cfed338c19dd5cec8891b4979e983c7d6d5f371a1a4c03de320b12130947fd00"
         }
       ]
     },

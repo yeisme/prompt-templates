@@ -1,0 +1,134 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-background-assets-v2",
+  "version": "2.0.0",
+  "role": "semantic-object-v1",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.zh-CN.md",
+  "template_digest": "sha256:0c019f6c3b639eca4f55d8543e09a097d3672ea1ec5967c74010d043bd9ab135",
+  "digest": "sha256:80fe544f8595db97c9b2325109e493f4898d0d2c5ba7c11b1052ea2b260739e0",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "inspect",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "design_spec_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "zh-CN": "DesignSpec"
+      },
+      "descriptions": {
+        "zh-CN": "该 slot 的设计规格 JSON（定义、接口、继承/禁止）"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "character_asset.modular_slot_bundle.v1"
+      ],
+      "labels": {
+        "zh-CN": "输出合同版本"
+      },
+      "descriptions": {
+        "zh-CN": "Prompt Bundle 输出 schema 版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "reference_bindings_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "zh-CN": "参考绑定"
+      },
+      "descriptions": {
+        "zh-CN": "带 inherit/forbid 的安全绑定 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "render_policy_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 32768,
+      "labels": {
+        "zh-CN": "渲染策略"
+      },
+      "descriptions": {
+        "zh-CN": "画幅、画布语义与单视图渲染策略 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "eikona.background_asset_prompt_input.v2"
+      ],
+      "labels": {
+        "zh-CN": "输入合同版本"
+      },
+      "descriptions": {
+        "zh-CN": "消费方输入合同版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "slot_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "semantic_object"
+      ],
+      "labels": {
+        "zh-CN": "资产槽位"
+      },
+      "descriptions": {
+        "zh-CN": "本模板锁定的 slot"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "style_profile_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "zh-CN": "风格画像"
+      },
+      "descriptions": {
+        "zh-CN": "原创维度化视觉约束 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "view_plan_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "zh-CN": "视图计划"
+      },
+      "descriptions": {
+        "zh-CN": "geometry-adaptive 视图计划与选择原因 JSON"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

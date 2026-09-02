@@ -1,0 +1,176 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets-v2",
+  "version": "2.0.0",
+  "role": "head-core-bald-v1",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-drama-character-assets-v2/prompts/head-core-bald-v1.zh-CN.md",
+  "template_digest": "sha256:cfed338c19dd5cec8891b4979e983c7d6d5f371a1a4c03de320b12130947fd00",
+  "digest": "sha256:62b8f001b042f825802b648a3a1879d534720253ad6f895f83810751d67a6e38",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "inspect",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "age_band",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "adult",
+        "minor",
+        "unknown"
+      ],
+      "labels": {
+        "zh-CN": "年龄段"
+      },
+      "descriptions": {
+        "zh-CN": "minor/unknown 触发最保守覆盖与安全门"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "design_spec_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "zh-CN": "DesignSpec"
+      },
+      "descriptions": {
+        "zh-CN": "该 slot 的设计规格 JSON（锚点、接口、继承/禁止）"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "character_asset.modular_slot_bundle.v1"
+      ],
+      "labels": {
+        "zh-CN": "输出合同版本"
+      },
+      "descriptions": {
+        "zh-CN": "Prompt Bundle 输出 schema 版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "reference_bindings_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "zh-CN": "参考绑定"
+      },
+      "descriptions": {
+        "zh-CN": "带 inherit/forbid 的安全绑定 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "render_policy_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 32768,
+      "labels": {
+        "zh-CN": "渲染策略"
+      },
+      "descriptions": {
+        "zh-CN": "画幅、透明输出与单视图渲染策略 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "eikona.character_asset_prompt_input.v2"
+      ],
+      "labels": {
+        "zh-CN": "输入合同版本"
+      },
+      "descriptions": {
+        "zh-CN": "消费方输入合同版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "slot_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "head_core"
+      ],
+      "labels": {
+        "zh-CN": "资产槽位"
+      },
+      "descriptions": {
+        "zh-CN": "本模板锁定的 slot"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "style_profile_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "zh-CN": "风格画像"
+      },
+      "descriptions": {
+        "zh-CN": "原创维度化视觉约束 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "topology_family",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "humanoid",
+        "quadruped",
+        "winged",
+        "serpentine",
+        "mechanical"
+      ],
+      "labels": {
+        "zh-CN": "拓扑族"
+      },
+      "descriptions": {
+        "zh-CN": "角色身体/头部结构族"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "view_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "detail_front",
+        "front_left_three_quarter",
+        "left_profile",
+        "back",
+        "right_profile",
+        "front_right_three_quarter"
+      ],
+      "labels": {
+        "zh-CN": "渲染视图"
+      },
+      "descriptions": {
+        "zh-CN": "本轮唯一生产视图（六视图合同）"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}

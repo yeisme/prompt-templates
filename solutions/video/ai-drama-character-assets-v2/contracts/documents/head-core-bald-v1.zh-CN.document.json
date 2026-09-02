@@ -1,0 +1,30 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets-v2",
+  "version": "2.0.0",
+  "role": "head-core-bald-v1",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-drama-character-assets-v2/prompts/head-core-bald-v1.zh-CN.md",
+  "source_digest": "sha256:cfed338c19dd5cec8891b4979e983c7d6d5f371a1a4c03de320b12130947fd00",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:747b7aa8cf1df8de70b46a9eecfeb4d2fa1055c69eb018da577d107e06020cf6"
+  },
+  "required_capabilities": [
+    "character_asset",
+    "image_prompting",
+    "subject_continuity"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 262144,
+    "max_depth": 32
+  },
+  "digest": "sha256:8eddb99b5928239f75f0a6e58806c6f7de21ae0507c15cfad12bae1fe9515896"
+}
