@@ -1,6 +1,6 @@
 # Owner Handoff Guide（provider-free）
 
-本指南只描述安全 handoff。当前 solution `video/ai-film-multi-profile-production@1.0.0` 为 internal / exploratory；它没有发布、没有人类审阅的英文版本，且 dependency release gate 尚未满足。每个 Owner 在 gate 未满足时必须停止在 provider 调用之前。
+本指南只描述安全 handoff。当前 solution `video/ai-film-multi-profile-production@1.0.0` 为 internal / exploratory；它没有发布，英文 locale 已有 reviewed 适配（逐 role 绑定 `docs/i18n.md` 中的 zh-CN source digest），但 dependency release gate 尚未满足。每个 Owner 在 gate 未满足时必须停止在 provider 调用之前。
 
 ## 当前 checkpoint 的精确模板/合同 digest
 
@@ -14,7 +14,7 @@
 | `continuity-review` | `sha256:4adb3f5e0c3f4f3e6fd383cce592533841ddd6cffbcc5059b63e98acf7665453` | `sha256:7de7b8c542200c0503d7098df4dacfdeecaf7e536f9a371f0b766ac50043d44b` |
 | `failure-restructure` | `sha256:9b997d8dc5d7fa1ba03dd53bffff2c1171e38ca1317085140af1de6f812f5c42` | `sha256:9205acbba5ee4befc22e13de2fd8016d8ca11cc9cc0d8de64573f7db6819299d` |
 
-这些是未发布 checkpoint 的校验值，不是 immutable release address；每次 source/contract 更新都必须重新读取 catalog 与 contract，而非复用本表。
+这些是未发布 checkpoint 的校验值，不是 immutable release address；每次 source/contract 更新都必须重新读取 catalog 与 contract，而非复用本表。英文 locale 的 template/contract digest 见 `docs/i18n.md` 与 `contracts/<role>.en.json`；en 与 zh-CN 的约束（type、required、enum、length、sensitivity）逐项等价。
 
 ## Auctra
 

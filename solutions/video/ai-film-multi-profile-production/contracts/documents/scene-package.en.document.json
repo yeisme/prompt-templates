@@ -1,0 +1,29 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-film-multi-profile-production",
+  "version": "1.0.0",
+  "role": "scene-package",
+  "locale": "en",
+  "template_path": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.en.md",
+  "source_digest": "sha256:bd274df3b8ccad4120b44c9a9a726271a166d2b5824c63d050f17cae09ca6c42",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/schemas/ai-film-scene-package-semantic-output-v1.schema.json",
+    "digest": "sha256:f2a0cbe80e3b4853275649315d26e28de2f7349bbcf65e358bb906a8feb75d0c"
+  },
+  "required_capabilities": [
+    "film_production",
+    "semantic_compilation"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:7538a14953fc04b99f8d0a2cdf3f9906abc2b44f02ce4948be5e1f3acc354d23"
+}

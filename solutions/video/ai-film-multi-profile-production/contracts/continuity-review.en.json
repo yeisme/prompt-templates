@@ -1,0 +1,135 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-film-multi-profile-production",
+  "version": "1.0.0",
+  "role": "continuity-review",
+  "locale": "en",
+  "template_path": "solutions/video/ai-film-multi-profile-production/prompts/continuity-review.en.md",
+  "template_digest": "sha256:6c471df5d510851714de7c61eb3f4c08d48faffba2654abe918e756b8399f8c6",
+  "digest": "sha256:d86a8a0346bbd516cf10eb9e745230bc1c053769b37097f2241ccfae1476f1dc",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "accepted_source_projection_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Accepted safe projection",
+        "zh-CN": "已接受安全投影"
+      },
+      "descriptions": {
+        "en": "Bounded fact JSON screened by the owner",
+        "zh-CN": "Owner筛选后的有界事实JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "active_reference_bindings_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Active reference bindings",
+        "zh-CN": "活动参考绑定"
+      },
+      "descriptions": {
+        "en": "Safe bindings with inherit and forbid, as JSON",
+        "zh-CN": "带inherit和forbid的安全绑定JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "continuity_constraints_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Continuity constraints",
+        "zh-CN": "连续性约束"
+      },
+      "descriptions": {
+        "en": "Continuity rules screened by the owner, as JSON",
+        "zh-CN": "Owner筛选的连续性规则JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "ai-film-continuity-review-semantic-output-v1"
+      ],
+      "labels": {
+        "en": "Semantic output version",
+        "zh-CN": "语义输出版本"
+      },
+      "descriptions": {
+        "en": "Bound semantic output version for this role",
+        "zh-CN": "已绑定角色语义输出版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "profile_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "cinematic_live_action",
+        "motion_comic",
+        "stylized_animation",
+        "brand_film"
+      ],
+      "labels": {
+        "en": "Profile",
+        "zh-CN": "Profile"
+      },
+      "descriptions": {
+        "en": "Locked production profile",
+        "zh-CN": "固定生产Profile"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "retry_policy_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 32768,
+      "labels": {
+        "en": "Retry policy",
+        "zh-CN": "重试策略"
+      },
+      "descriptions": {
+        "en": "Bounded repair and escalation policy, as JSON",
+        "zh-CN": "有界修复和升级策略JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "task_delta_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Task delta",
+        "zh-CN": "本轮任务增量"
+      },
+      "descriptions": {
+        "en": "Bounded JSON allowing only this round's changes",
+        "zh-CN": "仅本次允许变化的有界JSON"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

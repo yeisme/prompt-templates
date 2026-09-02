@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:8e1f25d75c25342b1bcf33e1641428e39234d21b02b366beb6279f31d9b1c56d",
+  "digest": "sha256:01195cc686ea75ea0f900000f388e7e106493f284d4fb002c98f065ac170daf2",
   "solutions": [
     {
       "package_id": "agent",
@@ -786,7 +786,7 @@
       "package_id": "video",
       "id": "ai-film-multi-profile-production",
       "version": "1.0.0",
-      "digest": "sha256:a6eb84862728f0062f50c92d8bbfdd922961884483a849f10d3d05a159b0ddf0",
+      "digest": "sha256:c2fa8c6c88f4d5031faa219e5bdb779f581958766419054f642fbbeb86ef1b04",
       "category": "video",
       "tags": [
         "domain:video",
@@ -801,6 +801,15 @@
       "rights": "internal",
       "maturity": "exploratory",
       "locales": {
+        "en": {
+          "title": "AI Film Multi-Profile Production",
+          "summary": "Compile dramatic intent, assets, scenes, shots, audio, and continuity into reviewable semantic proposals",
+          "usage": "Consumed by Auctra, Scaena, Eikona, and Sonora from safe projections; never executes providers or accepts canonical state",
+          "aliases": [
+            "film production prompt bundle",
+            "multi-profile film template"
+          ]
+        },
         "zh-CN": {
           "title": "AI 电影多 Profile 生产编译",
           "summary": "将剧作、资产、场景、镜头、声音和连续性编译为可审查语义提案",
@@ -810,9 +819,21 @@
       "templates": [
         {
           "role": "asset-dependency",
+          "locale": "en",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/asset-dependency.en.md",
+          "digest": "sha256:d1cc740158c776fa566306b3152bafc13571f1b02ee56eb24d44f06ce3f5a04e"
+        },
+        {
+          "role": "asset-dependency",
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/asset-dependency.zh-CN.md",
           "digest": "sha256:a95a6cbd8708dae1b0a6fe9ebefd47df8c1694a29830b1472d504981272f9593"
+        },
+        {
+          "role": "continuity-review",
+          "locale": "en",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/continuity-review.en.md",
+          "digest": "sha256:6c471df5d510851714de7c61eb3f4c08d48faffba2654abe918e756b8399f8c6"
         },
         {
           "role": "continuity-review",
@@ -822,9 +843,21 @@
         },
         {
           "role": "failure-restructure",
+          "locale": "en",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.en.md",
+          "digest": "sha256:e26cc241cbd2a01b62f9c8fccb3ed88bb2fbb7a3b2b6c2fbd97cea99dabdc688"
+        },
+        {
+          "role": "failure-restructure",
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.zh-CN.md",
           "digest": "sha256:9b997d8dc5d7fa1ba03dd53bffff2c1171e38ca1317085140af1de6f812f5c42"
+        },
+        {
+          "role": "project-intent",
+          "locale": "en",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/project-intent.en.md",
+          "digest": "sha256:4e733bf242a85abd0cba34bc5d4cb5256a49c41bd4db08ea2c65c5054557d527"
         },
         {
           "role": "project-intent",
@@ -834,15 +867,33 @@
         },
         {
           "role": "scene-package",
+          "locale": "en",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.en.md",
+          "digest": "sha256:bd274df3b8ccad4120b44c9a9a726271a166d2b5824c63d050f17cae09ca6c42"
+        },
+        {
+          "role": "scene-package",
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.zh-CN.md",
           "digest": "sha256:5ae339e960deb40e5ef78e9f6a4ebec53739e5d88d57fe0c9a540e593b235e92"
         },
         {
           "role": "shot-audio-intent",
+          "locale": "en",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-audio-intent.en.md",
+          "digest": "sha256:69f56d635272829a6359aa9d503024dcb38abd21c4df3194702bd8a60856ec82"
+        },
+        {
+          "role": "shot-audio-intent",
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-audio-intent.zh-CN.md",
           "digest": "sha256:4f5763c70d6643d72f42178306027269c7a32db60a0a359d5cd9660c31b1140f"
+        },
+        {
+          "role": "shot-prompt",
+          "locale": "en",
+          "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-prompt.en.md",
+          "digest": "sha256:7116147631c2914cf9a1cfd3842268b2195eb843c81a7ed8e41a07cb38a1924c"
         },
         {
           "role": "shot-prompt",

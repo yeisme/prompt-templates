@@ -17,6 +17,15 @@
   "rights": "internal",
   "maturity": "exploratory",
   "locales": {
+    "en": {
+      "title": "AI Film Multi-Profile Production",
+      "summary": "Compile dramatic intent, assets, scenes, shots, audio, and continuity into reviewable semantic proposals",
+      "usage": "Consumed by Auctra, Scaena, Eikona, and Sonora from safe projections; never executes providers or accepts canonical state",
+      "aliases": [
+        "film production prompt bundle",
+        "multi-profile film template"
+      ]
+    },
     "zh-CN": {
       "title": "AI 电影多 Profile 生产编译",
       "summary": "将剧作、资产、场景、镜头、声音和连续性编译为可审查语义提案",
@@ -26,8 +35,18 @@
   "templates": [
     {
       "role": "asset-dependency",
+      "locale": "en",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/asset-dependency.en.md"
+    },
+    {
+      "role": "asset-dependency",
       "locale": "zh-CN",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/asset-dependency.zh-CN.md"
+    },
+    {
+      "role": "continuity-review",
+      "locale": "en",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/continuity-review.en.md"
     },
     {
       "role": "continuity-review",
@@ -36,8 +55,18 @@
     },
     {
       "role": "failure-restructure",
+      "locale": "en",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.en.md"
+    },
+    {
+      "role": "failure-restructure",
       "locale": "zh-CN",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.zh-CN.md"
+    },
+    {
+      "role": "project-intent",
+      "locale": "en",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/project-intent.en.md"
     },
     {
       "role": "project-intent",
@@ -46,13 +75,28 @@
     },
     {
       "role": "scene-package",
+      "locale": "en",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.en.md"
+    },
+    {
+      "role": "scene-package",
       "locale": "zh-CN",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.zh-CN.md"
     },
     {
       "role": "shot-audio-intent",
+      "locale": "en",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-audio-intent.en.md"
+    },
+    {
+      "role": "shot-audio-intent",
       "locale": "zh-CN",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-audio-intent.zh-CN.md"
+    },
+    {
+      "role": "shot-prompt",
+      "locale": "en",
+      "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-prompt.en.md"
     },
     {
       "role": "shot-prompt",

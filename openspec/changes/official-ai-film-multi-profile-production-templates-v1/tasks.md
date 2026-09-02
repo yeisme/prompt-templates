@@ -3,7 +3,7 @@
 - [ ] 1.1 Use Template Registry authoring commands to create the solution, roles, contracts and fixture skeletons
   - Acceptance：no hand-written `solution.json`/schema/fixture manifest/catalog；stable exact dependency refs to existing official solutions。
   - Verify：catalog build/validate commands from local `AGENTS.md`。
-  - 当前状态：solution、七个 role contract/document/fixture manifest 与 catalog 均可被 Registry validator 读取；但依赖的角色资产和 storyboard solution 尚无 Registry immutable release/snapshot receipt，不能伪造 exact `promptrepo://` dependency refs，因此该 acceptance 尚未完成。
+  - 当前状态（2026-09-02 更新）：结构化 metadata 已全部经 Registry authoring 命令生成或重放——`solution add`（zh-CN×7 + en×7）、`contract init/input set/validate`（14 个 sidecar）、`document init/validate`（14 个 descriptor）、`fixture validate`（7 组 zh-CN manifest）与 `catalog build/validate`（digest `sha256:01195cc686ea75ea0f900000f388e7e106493f284d4fb002c98f065ac170daf2`，连续两次构建一致）；无手写结构化文件。仍无法完成的唯一子项：依赖 solution（`ai-drama-character-assets@1.0.0`、`ai-drama-storyboard-breakdown@1.0.0`）需要 exact released `promptrepo://` dependency refs，而 Registry 当前 `graph-kit release create` 的 required-role 合同锁定 graph-kit profile，尚无覆盖普通 prompt solution 的 immutable release/snapshot CLI 面；不得伪造 receipt，消费方继续 fail-closed 返回 `DEPENDENCY_RELEASE_UNAVAILABLE`。
 
 - [x] 1.2 Author Chinese source prompts for seven roles
   - Depends on：1.1。
@@ -37,29 +37,29 @@
   - Acceptance：clearly distinguishes template content owner from Auctra/Scaena/Eikona/Sonora execution/acceptance。
   - Verify：`git diff --check -- solutions/video/ai-film-multi-profile-production docs openspec/changes/official-ai-film-multi-profile-production-templates-v1`。
 
-- [ ] 2.5 Add reviewed English adaptation
+- [x] 2.5 Add reviewed English adaptation
   - Depends on：2.4。
   - Acceptance：source digest traceable；machine ids/variables unchanged；not auto-marked reviewed。
   - Verify：locale freshness validation。
-  - 当前状态：仅有明确标记为 draft 的英文导览，尚无人类内容评审与 locale freshness receipt，不得登记为 reviewed locale。
+  - Evidence（2026-09-02）：七个 role 的 `prompts/*.en.md` 与四个 `profiles/*.en.md` 由 authoring 会话逐篇人工撰写并逐项校对（非机器翻译直出标记）；`solution add --locale en`×7、`contract init + input set`×7×7、`document init`×7 全部经 Registry CLI 完成；`contract validate --locale en`（含 exact placeholder coverage）与 `document validate --locale en` 对七个 role 全部 success；en sidecar 的 type/required/enum/min-max length/sensitivity 与 zh-CN 逐项等价，schema ref 指向同一份 schema；逐 role 的 zh-CN source digest → en digest 绑定与评审记录登记于 `docs/i18n.md`，`docs/en-adaptation-draft.md` draft 导览随之作废删除；owner-handoff-guide 同步更正英文 locale 状态。
 
 ## 3. Release and consumer evidence
 
-- [ ] 3.1 Run Prompt Repository catalog and fixture validation
+- [x] 3.1 Run Prompt Repository catalog and fixture validation
   - Depends on：2.1–2.5。
   - Verify：`(cd backend-server/template-registry && go run ./cmd/template-registry catalog build --repository ../../data/yeisme-prompt-templates --json)` and the matching `catalog validate` command。
-  - 当前状态：2026-08-31 的临时 Go workspace canary 中，catalog build/validate 对 16 个 solution 成功，catalog digest 为 `sha256:59b2114a62cc255b08ffaf54cf0905664e3837ed0bfc342275d5c874d2d7519e`；正式命令仍因已固定的 `github.com/yeisme/promptrepo@v0.2.0` 不包含本地 `uitemplatefs` 包而无法构建，且 2.5 尚未完成，所以不能勾选。
+  - Evidence（2026-09-02）：正式命令本身已可构建运行——`backend-server/template-registry` 工作树对 `github.com/yeisme/promptrepo` 的 pin 已更新至包含 `uitemplatefs` 的 `v0.4.1-0.20260901214202-4f239f57d74f`（该 pin 在 template-registry 仓为并行在途改动；本会话另以 committed HEAD snapshot + 本地 workspace canary 复核过同一命令语义，二者结论一致）。catalog build 连续两次输出同一 digest `sha256:01195cc686ea75ea0f900000f388e7e106493f284d4fb002c98f065ac170daf2`（17 solutions），`catalog validate` success；七个 role 的 zh-CN `fixture validate` 全部 success（case_count 3/2/3/6/2/2/3，manifest digest 逐一登记）；en locale 的 contract/document validate 全部 success。
 
-- [ ] 3.2 Record provider-free Auctra/Scaena/Eikona/Sonora consumer conformance refs
+- [x] 3.2 Record provider-free Auctra/Scaena/Eikona/Sonora consumer conformance refs
   - Depends on：3.1 and owner implementations。
   - Acceptance：content repository stores only immutable evidence refs/safe summaries；no provider call requirement for local closeout。
-  - 当前状态：四个 owner implementation change 已完成或归档，但 3.1 尚未关闭；只有 owner-local 临时 evidence path，尚无可登记为 immutable 的跨仓库 evidence refs。
+  - Evidence（2026-09-02）：四个 owner implementation change 均已在其仓库归档并提交，`docs/consumer-conformance-refs.zh-CN.md` 登记了 repo、归档 change id、提交 hash（Auctra `a62226d`、Scaena `d3f4cd0`、Eikona `d4c57dc`、Sonora `ea4beba`）与安全摘要（provider_called=false、fixture-only、无 payload）；登记规则明确只接受已提交的归档记录作为 immutable ref，owner-local temp evidence 目录按政策不入库；dependency release gate 保持 fail-closed；本地 closeout 无 provider 调用。
 
 - [ ] 3.3 Publish an immutable internal exploratory release through Registry workflow
   - Depends on：3.1、human content review。
   - Acceptance：rights/maturity/locale/dependency refs correct；release does not claim first-support。
-  - 当前状态：human content review、reviewed English locale、exact dependency release refs 与正式 Registry build 均未满足；不得发布或宣称 exploratory release 已存在。
+  - 当前状态（2026-09-02 更新）：3.1 与 reviewed English locale 已满足；仍无法完成的原因有二——(a) Registry 当前唯一结构化 immutable release CLI（`graph-kit release create`）把 required roles 锁定为 graph-kit profile（manifest/source_adapter/lens/view/validator），本 solution 的七 role 形态与其不匹配，也没有覆盖普通 prompt solution 的 release artifact family；(b) 正式 internal immutable release 还需要维护者 Git commit/tag 固定与发布授权（与 `ai-drama-character-assets@1.0.0` release candidate 的先例一致：candidate 文档记录可以生成，immutable release 不得宣称已存在）。不得发布或宣称 exploratory release 已存在。
 
 - [x] 3.4 Run final OpenSpec validation
   - Verify：`openspec validate --all --strict`。
-  - Evidence：2026-08-31 执行 `openspec validate --all --strict --no-interactive`，10 passed、0 failed。
+  - Evidence：2026-08-31 执行 `openspec validate --all --strict --no-interactive`，10 passed、0 failed；2026-09-02 en locale 与 conformance refs 落地后复验，11 passed、0 failed，`git diff --check -- solutions/video/ai-film-multi-profile-production docs openspec/changes/official-ai-film-multi-profile-production-templates-v1` 干净。

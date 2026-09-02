@@ -1,0 +1,29 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-film-multi-profile-production",
+  "version": "1.0.0",
+  "role": "failure-restructure",
+  "locale": "en",
+  "template_path": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.en.md",
+  "source_digest": "sha256:e26cc241cbd2a01b62f9c8fccb3ed88bb2fbb7a3b2b6c2fbd97cea99dabdc688",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/video/ai-film-multi-profile-production/contracts/schemas/ai-film-failure-restructure-semantic-output-v1.schema.json",
+    "digest": "sha256:5b5cc824e50b257c78dddabbd3aa17a653a98d6f4743f7da040fd15ddfcd626a"
+  },
+  "required_capabilities": [
+    "film_production",
+    "semantic_compilation"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:17adcc8d5eace9841647028bab59f0f6826aea9beac378ed6586dbd362d75a10"
+}
