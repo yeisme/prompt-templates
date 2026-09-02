@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-drama-background-assets-v2/environment-layer-preview-v1/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-drama-background-assets-v2",
+  "version": "2.0.0",
+  "role": "environment-layer-preview-v1",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-drama-background-assets-v2/prompts/environment-layer-preview-v1.zh-CN.md",
+    "digest": "sha256:dcaccd98851f4c5b847908b821f36b32fff43316262103c0d406fa8adceef823"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-drama-background-assets-v2/contracts/environment-layer-preview-v1.zh-CN.json",
+    "digest": "sha256:8845dc62d87cb499a772275866e8afe0cebc4867c1133b74f754a609f76336d3"
+  },
+  "document": {
+    "ref": "solutions/video/ai-drama-background-assets-v2/contracts/documents/environment-layer-preview-v1.zh-CN.document.json",
+    "digest": "sha256:022de47be1e1dd16e34810ef74b7f92903d4a0921ac0eef856d795946ffc9e48"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:aa06ba9aeed92c7fb11c0e1d152375c1da58360ccb84276b6473c70251d217f5"
+  },
+  "semantic_schema_version": "character_asset.modular_slot_bundle.v1",
+  "cases": [
+    {
+      "case_id": "env-layer-lineage",
+      "kind": "valid",
+      "profile_id": "environment-layer-preview-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/environment-layer-preview-v1.zh-CN/env-layer-lineage.input.json",
+        "digest": "sha256:cdb056eb6df39ce669021587a90e5abb7db449d1db28d9dbf3b95dea425e7a09",
+        "bytes": 1106
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/environment-layer-preview-v1.zh-CN/env-layer-lineage.output.json",
+        "digest": "sha256:b9c3c613a06d5b9251de85e9a4231318297af8d57315c1db09d9c0b38c34daf8",
+        "bytes": 2993
+      }
+    },
+    {
+      "case_id": "lineage-missing",
+      "kind": "invalid",
+      "profile_id": "environment-layer-preview-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/environment-layer-preview-v1.zh-CN/lineage-missing.input.json",
+        "digest": "sha256:f97d21acd31b5ad5670f1cdc949d065319cec2cf8ce7f3e130ccd067e2dada35",
+        "bytes": 681
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/environment-layer-preview-v1.zh-CN/lineage-missing.output.json",
+        "digest": "sha256:d0a7fed52a3e26bc7b69ce68529e5f44f11d8b47536e6e6fe6dc1416693a8f51",
+        "bytes": 3217
+      },
+      "expected_codes": [
+        "PREVIEW_SOURCE_LINEAGE_MISSING"
+      ]
+    }
+  ],
+  "digest": "sha256:082aafc9259a4c979ce7e381eb18fbe943034d5e5c4c7eff5ae6b8da8cb3ed0a"
+}

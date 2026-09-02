@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-drama-background-assets-v2/environment-harmonized-preview-v1/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-drama-background-assets-v2",
+  "version": "2.0.0",
+  "role": "environment-harmonized-preview-v1",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-drama-background-assets-v2/prompts/environment-harmonized-preview-v1.zh-CN.md",
+    "digest": "sha256:2d3dcf5ef27d45d8fb8ac58e7ade44db75142e831f88bd5f9c8c0c3e02018d2b"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-drama-background-assets-v2/contracts/environment-harmonized-preview-v1.zh-CN.json",
+    "digest": "sha256:13fb8f5985b8deb0cf5d084e8ef1937e9556251dc66721948d4c18e1cd85d3bf"
+  },
+  "document": {
+    "ref": "solutions/video/ai-drama-background-assets-v2/contracts/documents/environment-harmonized-preview-v1.zh-CN.document.json",
+    "digest": "sha256:83ca93944e08e12a0dd8e52bd528f7dea8a193a6edff799339b0c1f069d67690"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:aa06ba9aeed92c7fb11c0e1d152375c1da58360ccb84276b6473c70251d217f5"
+  },
+  "semantic_schema_version": "character_asset.modular_slot_bundle.v1",
+  "cases": [
+    {
+      "case_id": "env-harmonized-lineage",
+      "kind": "valid",
+      "profile_id": "environment-harmonized-read-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/environment-harmonized-preview-v1.zh-CN/env-harmonized-lineage.input.json",
+        "digest": "sha256:85ba61577a1e409f4f4d84b758555a0eb7aa7b99873fb005a1b40189c175a8ac",
+        "bytes": 1168
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/environment-harmonized-preview-v1.zh-CN/env-harmonized-lineage.output.json",
+        "digest": "sha256:c3df6baf6de6cf0550e9ca7a943c840f67f9f7bb35af5e254d8672dedfc9dcbd",
+        "bytes": 3020
+      }
+    },
+    {
+      "case_id": "human-trace-in-preview",
+      "kind": "invalid",
+      "profile_id": "environment-harmonized-read-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/environment-harmonized-preview-v1.zh-CN/human-trace-in-preview.input.json",
+        "digest": "sha256:90af295aada81e7a5053bf3a246f926685321f7aeeb5cf88694fb19d28c02291",
+        "bytes": 1175
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/environment-harmonized-preview-v1.zh-CN/human-trace-in-preview.output.json",
+        "digest": "sha256:00b8a04cf8f7d56853a2d87aab5f2312fc6dd81f237c3d87cdb817899ad6cd43",
+        "bytes": 3258
+      },
+      "expected_codes": [
+        "PREVIEW_ENVIRONMENT_HUMAN_TRACE_DETECTED"
+      ]
+    }
+  ],
+  "digest": "sha256:fb7efd20c1bf792c58a22643c68144eba6ab900e11747a34b8256c6e4b76015c"
+}

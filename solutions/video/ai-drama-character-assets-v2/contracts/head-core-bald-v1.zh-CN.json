@@ -6,8 +6,8 @@
   "role": "head-core-bald-v1",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-character-assets-v2/prompts/head-core-bald-v1.zh-CN.md",
-  "template_digest": "sha256:cfed338c19dd5cec8891b4979e983c7d6d5f371a1a4c03de320b12130947fd00",
-  "digest": "sha256:62b8f001b042f825802b648a3a1879d534720253ad6f895f83810751d67a6e38",
+  "template_digest": "sha256:678c89234d0652ba96df45a70e246d573effd3c20fe895b6a6fcc244aab0fb03",
+  "digest": "sha256:2ebade208356d1716898bbdfd001f530f042a2df6e8dcc2a974fba88e6cde310",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

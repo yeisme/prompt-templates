@@ -28,3 +28,15 @@ template-registry contract validate --repository . --package image --id xhs-prod
 ```
 
 contract input 必须与正文中的 `{{name}}` 一致。example 只能使用公开、虚构、非敏感内容；敏感字段不能声明 default、example 或 enum。
+
+## 模块化视觉资产 v2 的 authoring 循环
+
+`ai-drama-*-assets-v2` 的每个模板角色都走同一条 CLI 链（preset matrix 见 `docs/modular-visual-assets-v2.md` 模板矩阵；差异只进 contract input，不复制模板 ID）：
+
+1. 手写 `prompts/<role>.zh-CN.md`（slot 职责、编译顺序、blocking negatives、稳定失败码）。
+2. `solution add` 注册角色——同 solution 追加模板时必须原样重复该 locale 的 title/summary/usage，否则会整块覆盖 locale 文案。
+3. `contract init` + 逐个 `contract input set`（enum 只收稳定 machine ID）+ `contract validate`。
+4. 共享输出 schema 只落一份 artifact（`document artifact add --kind schema --stdin`，JCS 落盘）；每个角色的 `document init --schema-path` 绑定同一文件，改 schema 用 `document artifact replace --expected-digest` + 全角色 `document schema rebind`，不允许复制漂移。
+5. `fixture set init` + `fixture case add --stdin`（envelope 为 `{"input":…,"output":…}`，按 case_id 升序添加）+ `fixture validate`。
+
+fixture 命名规则：valid fixture 输出中禁止出现任何以 `ref` 结尾（归一化后）或 `digest/timestamp/provider` 等键——因此 v2 共享 schema 的回显字段命名为 `subject_version`、lineage 项命名为 `source_version` + `artifact_digest`；invalid 输出不受此限但仍须通过 schema。`version suffix` 目录（如 `ai-drama-character-assets-v2`）是 Registry 同 id 不允许双版本的既定决策，1.x 目录保持零改动。

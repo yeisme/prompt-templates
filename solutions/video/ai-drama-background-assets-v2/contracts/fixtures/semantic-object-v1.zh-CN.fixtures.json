@@ -1,0 +1,80 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-drama-background-assets-v2/semantic-object-v1/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-drama-background-assets-v2",
+  "version": "2.0.0",
+  "role": "semantic-object-v1",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.zh-CN.md",
+    "digest": "sha256:757fb8e469e65f37d130f4913cbb9d3d3a6e49b4e26e7cb7b95effe73177bff9"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-drama-background-assets-v2/contracts/semantic-object-v1.zh-CN.json",
+    "digest": "sha256:b97e51d83575c4d192d396164fbe4aa07d27b06ddb047d1faf42a2149197cccd"
+  },
+  "document": {
+    "ref": "solutions/video/ai-drama-background-assets-v2/contracts/documents/semantic-object-v1.zh-CN.document.json",
+    "digest": "sha256:e495384ae1eec887cbd1b167623aa361822e94277693e42445733542def997c9"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:aa06ba9aeed92c7fb11c0e1d152375c1da58360ccb84276b6473c70251d217f5"
+  },
+  "semantic_schema_version": "character_asset.modular_slot_bundle.v1",
+  "cases": [
+    {
+      "case_id": "adaptive-view-plan-reasoned",
+      "kind": "valid",
+      "profile_id": "object-adaptive-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/semantic-object-v1.zh-CN/adaptive-view-plan-reasoned.input.json",
+        "digest": "sha256:9c88bf86cf1834ca11ec93fb210a397f40b66a9da58ba5fc17349a77f233587a",
+        "bytes": 1457
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/semantic-object-v1.zh-CN/adaptive-view-plan-reasoned.output.json",
+        "digest": "sha256:b55682bd6df10ccc4789fadd563d856ad8fa09c2abedd330f3ca6a0226120268",
+        "bytes": 2239
+      }
+    },
+    {
+      "case_id": "human-holder-contamination",
+      "kind": "invalid",
+      "profile_id": "object-adaptive-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/semantic-object-v1.zh-CN/human-holder-contamination.input.json",
+        "digest": "sha256:7d779238e71a595d5be1c8cc088048ca83299109371a530de73adb7a03616a38",
+        "bytes": 1194
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/semantic-object-v1.zh-CN/human-holder-contamination.output.json",
+        "digest": "sha256:986f239a073fe2e87f20999a3cfabf082c4d6724cf0984b8dfbc1a65481963be",
+        "bytes": 1609
+      },
+      "expected_codes": [
+        "OBJECT_HUMAN_CONTAMINATION"
+      ]
+    },
+    {
+      "case_id": "missing-view-plan-reason",
+      "kind": "invalid",
+      "profile_id": "object-adaptive-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/semantic-object-v1.zh-CN/missing-view-plan-reason.input.json",
+        "digest": "sha256:d9c96cd3856586ddd8c37347d8af667248426669bb6094bbc2f65fe17e8ba947",
+        "bytes": 1360
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/semantic-object-v1.zh-CN/missing-view-plan-reason.output.json",
+        "digest": "sha256:0207ff01026bf2b485bcc60a8503b74feed8510572e637b8ead1f567fa5dcfa0",
+        "bytes": 1528
+      },
+      "expected_codes": [
+        "MISSING_VIEW_PLAN_REASON"
+      ]
+    }
+  ],
+  "digest": "sha256:3c4337741fb9b52b525f7f3879d8a89a0a6107d98899e3c722e28910b6b3bf47"
+}

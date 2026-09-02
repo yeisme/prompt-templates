@@ -44,7 +44,7 @@
 - `schema_version`：等于 `{{output_schema_version}}`。
 - `template_id`：`head-core-bald-v1`。
 - `slot_id`：等于 `{{slot_id}}`。
-- `subject_version_ref`：回显输入中的主体版本引用。
+- `subject_version`：回显输入中的主体版本引用。
 - `reference_policy`：逐 ref 列出允许继承与禁止继承的字段，不得只列文件名。
 - `prompt_sections`：`identity_topology`、`slot_design`、`view_camera_lock`、`isolation_output_contract`、`material_light_behavior`、`preserve_interfaces`、`forbidden_inheritance`。
 - `views`：恰好一个 view，`view_key` 形如 `view-<view_id>`，`view_role` 等于 `{{view_id}}`，含 `instruction` 与 `negative_constraints`，并声明本轮唯一 `change_scope`。

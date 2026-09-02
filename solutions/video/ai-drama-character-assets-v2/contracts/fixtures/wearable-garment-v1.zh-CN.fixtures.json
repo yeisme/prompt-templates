@@ -1,0 +1,80 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-drama-character-assets-v2/wearable-garment-v1/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets-v2",
+  "version": "2.0.0",
+  "role": "wearable-garment-v1",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/prompts/wearable-garment-v1.zh-CN.md",
+    "digest": "sha256:4d6b0368ab85fa61be2f04c48a860f83c7c958fa35fc6fdbe0af6bab3ed2550f"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/wearable-garment-v1.zh-CN.json",
+    "digest": "sha256:a779609ab33201edf3574096d59f4e43400f8cc6e68e4e3a058caaf02859b82a"
+  },
+  "document": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/documents/wearable-garment-v1.zh-CN.document.json",
+    "digest": "sha256:e288d10e03b34188e4e0ae899f821b263e37cf8635dd7a0da172f6f31e622c23"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:aa06ba9aeed92c7fb11c0e1d152375c1da58360ccb84276b6473c70251d217f5"
+  },
+  "semantic_schema_version": "character_asset.modular_slot_bundle.v1",
+  "cases": [
+    {
+      "case_id": "adult-single-garment-front",
+      "kind": "valid",
+      "profile_id": "garment-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/wearable-garment-v1.zh-CN/adult-single-garment-front.input.json",
+        "digest": "sha256:079a96a9be4a0b0d9bcf9a7575bed7a3b71d730efefe94eba21081dab0ca2d03",
+        "bytes": 1691
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/wearable-garment-v1.zh-CN/adult-single-garment-front.output.json",
+        "digest": "sha256:6eb0be6293ff25fb31fe94e31af492bf8b6b6901fb909b39cf6d9401d4b379d6",
+        "bytes": 2546
+      }
+    },
+    {
+      "case_id": "identity-face-inherit",
+      "kind": "invalid",
+      "profile_id": "garment-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/wearable-garment-v1.zh-CN/identity-face-inherit.input.json",
+        "digest": "sha256:ab9ee2c35b39af604da4d44c7f0b824cea90ed3a9798de620cf4c99b7cd301c3",
+        "bytes": 1585
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/wearable-garment-v1.zh-CN/identity-face-inherit.output.json",
+        "digest": "sha256:9fb7d1b933bf0698dd486e3efd59ae92693a0a4a4b7b85a0321f896c872676dc",
+        "bytes": 1677
+      },
+      "expected_codes": [
+        "WEARABLE_IDENTITY_CONTAMINATION"
+      ]
+    },
+    {
+      "case_id": "outfit-bundle-request",
+      "kind": "invalid",
+      "profile_id": "garment-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/wearable-garment-v1.zh-CN/outfit-bundle-request.input.json",
+        "digest": "sha256:cc84dfeae4fd648a5eb06306075fe278ae2a12e3a11e2c224c60b0158c99412c",
+        "bytes": 1333
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/wearable-garment-v1.zh-CN/outfit-bundle-request.output.json",
+        "digest": "sha256:d59eea2850cf8f92fd157b164113be4d2a2e375081c7e472b3b5f9a037db5473",
+        "bytes": 1666
+      },
+      "expected_codes": [
+        "WEARABLE_SINGLE_ITEM_VIOLATION"
+      ]
+    }
+  ],
+  "digest": "sha256:ed9d29b1f7b00c6da33bf42c60b1e9f3c2c1fccb6a1814c5452f781587b4b2b9"
+}

@@ -6,8 +6,8 @@
   "role": "body-core-neutral-v1",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-character-assets-v2/prompts/body-core-neutral-v1.zh-CN.md",
-  "template_digest": "sha256:b5d75fe5d2ad9de60eba69fc7111ab5b819409d63e630d2a3a2fc5bd6206bc0c",
-  "digest": "sha256:1a45139218c56ff44de29bf21759d077a508d3b0b8b3a69ea967bb652bcfc8e0",
+  "template_digest": "sha256:72f2cbfc497b9ae70c19c21552d1934bd05bfc1e025ba330ac37a2f8bad368cf",
+  "digest": "sha256:6d4b651e10c00f1f3c4400229a06866fa736a801061070187aec4b2c21c7795d",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

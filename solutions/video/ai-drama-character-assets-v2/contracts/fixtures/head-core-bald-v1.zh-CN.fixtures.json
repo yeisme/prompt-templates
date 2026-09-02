@@ -1,0 +1,191 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-drama-character-assets-v2/head-core-bald-v1/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets-v2",
+  "version": "2.0.0",
+  "role": "head-core-bald-v1",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/prompts/head-core-bald-v1.zh-CN.md",
+    "digest": "sha256:678c89234d0652ba96df45a70e246d573effd3c20fe895b6a6fcc244aab0fb03"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/head-core-bald-v1.zh-CN.json",
+    "digest": "sha256:2ebade208356d1716898bbdfd001f530f042a2df6e8dcc2a974fba88e6cde310"
+  },
+  "document": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/documents/head-core-bald-v1.zh-CN.document.json",
+    "digest": "sha256:6aae9fc1bc6386da55fbfc060e505fa542c2a2292c09d3dba8d3faf7858fdbb2"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:aa06ba9aeed92c7fb11c0e1d152375c1da58360ccb84276b6473c70251d217f5"
+  },
+  "semantic_schema_version": "character_asset.modular_slot_bundle.v1",
+  "cases": [
+    {
+      "case_id": "hair-ornament-contamination",
+      "kind": "invalid",
+      "profile_id": "head-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/hair-ornament-contamination.input.json",
+        "digest": "sha256:c4b72c2a033c71f7bab50a8f8f89f9b128972ba663caf7fab16a5107d5a751a2",
+        "bytes": 1131
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/hair-ornament-contamination.output.json",
+        "digest": "sha256:624d5744b25b20f7a34f41c9c7c7563b7322fed48377865ebad16f7a531c016e",
+        "bytes": 1631
+      },
+      "expected_codes": [
+        "HEAD_CORE_HAIR_CONTAMINATION"
+      ]
+    },
+    {
+      "case_id": "jewelry-neck-shoulder-contamination",
+      "kind": "invalid",
+      "profile_id": "head-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/jewelry-neck-shoulder-contamination.input.json",
+        "digest": "sha256:b4f306005b2cdd01924ff9dd7339bd9d951c5063f833098e52f587160aaacc20",
+        "bytes": 1519
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/jewelry-neck-shoulder-contamination.output.json",
+        "digest": "sha256:3d482b55c2213c2bb47104a0d196d9a2099297a77bde48756d595f3898236852",
+        "bytes": 1712
+      },
+      "expected_codes": [
+        "HEAD_CORE_ISOLATION_CONTAMINATION"
+      ]
+    },
+    {
+      "case_id": "minor-adult-makeup",
+      "kind": "invalid",
+      "profile_id": "head-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/minor-adult-makeup.input.json",
+        "digest": "sha256:c44e8a01b3ca489264bec73d4a4b8962b76017a8455dc611d96013d69c6e3177",
+        "bytes": 1128
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/minor-adult-makeup.output.json",
+        "digest": "sha256:d5a9c718f7b2f5d70fc9aef4a90bde18f679432063fc8b7d2cb20d605bd5f707",
+        "bytes": 1609
+      },
+      "expected_codes": [
+        "MINOR_ADULTIFICATION_RISK"
+      ]
+    },
+    {
+      "case_id": "studio-background-request",
+      "kind": "invalid",
+      "profile_id": "head-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/studio-background-request.input.json",
+        "digest": "sha256:6747cedec5e228c2d5b45d19fd462af541ca54cc5bb96e7aaade646c015bd50b",
+        "bytes": 1631
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/studio-background-request.output.json",
+        "digest": "sha256:48b8f041467f5cf59e30dfe9bb572021f3c7f362c75cc798a03d0ac949c1a3e4",
+        "bytes": 1591
+      },
+      "expected_codes": [
+        "TRANSPARENCY_CONTRACT_VIOLATION"
+      ]
+    },
+    {
+      "case_id": "view-back",
+      "kind": "valid",
+      "profile_id": "head-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/view-back.input.json",
+        "digest": "sha256:b61681b8d53cf5b2f0943bce741e6797737c0675f098d7ce9435e542674db751",
+        "bytes": 1608
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/view-back.output.json",
+        "digest": "sha256:a1a629ee8d127d614694affe3a4408d5dd425f6bb8920f19633ec18c0c3bd7c8",
+        "bytes": 2678
+      }
+    },
+    {
+      "case_id": "view-detail-front",
+      "kind": "valid",
+      "profile_id": "head-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/view-detail-front.input.json",
+        "digest": "sha256:c50d8cee538ffa76fb6aa16fd6f92e87612b13e96c856ef4028b30ddb33b3e0e",
+        "bytes": 1616
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/view-detail-front.output.json",
+        "digest": "sha256:c62483e3c60920a19dc9d070d30f50f620a548ca0e7aa57a0e3889276c2e5621",
+        "bytes": 2786
+      }
+    },
+    {
+      "case_id": "view-front-left-three-quarter",
+      "kind": "valid",
+      "profile_id": "head-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/view-front-left-three-quarter.input.json",
+        "digest": "sha256:fbce6c5296be96ef8ca93e61b399420650f1faba651f8747adfff8fe7dd36061",
+        "bytes": 1628
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/view-front-left-three-quarter.output.json",
+        "digest": "sha256:7f2a2ac7fd76216f87cd9391ed2cec3cf0596eefb35836fbc36d6af9eaf882a0",
+        "bytes": 2764
+      }
+    },
+    {
+      "case_id": "view-front-right-three-quarter",
+      "kind": "valid",
+      "profile_id": "head-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/view-front-right-three-quarter.input.json",
+        "digest": "sha256:c07069a60d4742257a9fba80fdfdb788a885595173dc15cd4b461b67193f0038",
+        "bytes": 1629
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/view-front-right-three-quarter.output.json",
+        "digest": "sha256:a1608b78ada59ed610ae485a5436c49f6a124b107c3a94f643b0ff8c8956ea50",
+        "bytes": 2743
+      }
+    },
+    {
+      "case_id": "view-left-profile",
+      "kind": "valid",
+      "profile_id": "head-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/view-left-profile.input.json",
+        "digest": "sha256:3b65f61217a468871312af3d865024b548a6477df961eceb305f7689def18d1b",
+        "bytes": 1616
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/view-left-profile.output.json",
+        "digest": "sha256:a1c858dd7561dfcc6400ef65018d46d6dd9200a2c6404a05660132c7964b43be",
+        "bytes": 2711
+      }
+    },
+    {
+      "case_id": "view-right-profile",
+      "kind": "valid",
+      "profile_id": "head-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/view-right-profile.input.json",
+        "digest": "sha256:b3af7fb230024af37a8251c162bae6610f4fdc926c191830f827c7c71fd95c48",
+        "bytes": 1617
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/head-core-bald-v1.zh-CN/view-right-profile.output.json",
+        "digest": "sha256:56ec9e283793c086828a18756a55c7c0b18276e8d607c4d3d0f7a896901b9c87",
+        "bytes": 2708
+      }
+    }
+  ],
+  "digest": "sha256:8015c3ad112a089cd4ecef5d9276f526fa09a610bf31301044715b2fee54f4b6"
+}

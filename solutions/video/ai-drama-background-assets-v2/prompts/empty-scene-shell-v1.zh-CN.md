@@ -50,7 +50,7 @@
 - `schema_version`：等于 `{{output_schema_version}}`。
 - `template_id`：`empty-scene-shell-v1`。
 - `slot_id`：等于 `{{slot_id}}`。
-- `subject_version_ref`：回显输入中的场景版本引用。
+- `subject_version`：回显输入中的场景版本引用。
 - `reference_policy`：逐 ref 列出允许继承与禁止继承的字段。
 - `prompt_sections`：`identity_topology`、`slot_design`、`view_camera_lock`、`isolation_output_contract`、`material_light_behavior`、`preserve_interfaces`、`forbidden_inheritance`。
 - `views`：恰好一个 view，`view_role=adaptive`，`view_key` 按 `{{view_plan_json}}` 命名，含 `instruction`、`negative_constraints`、`adaptive_view_reason` 与本轮唯一 `change_scope`。

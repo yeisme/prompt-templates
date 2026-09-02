@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:d53090b6bd3dbd847ceb5130a4d45149a247722f540843a2444cb5159d9047e4",
+  "digest": "sha256:cb1dda68199eed2150f7bcd4c6128ab19322f693a980b5f59d003fdcffb35582",
   "solutions": [
     {
       "package_id": "agent",
@@ -569,7 +569,7 @@
       "package_id": "video",
       "id": "ai-drama-background-assets-v2",
       "version": "2.0.0",
-      "digest": "sha256:7fe5ea56bc74bc6343b0621f2b1dda42d461fd9de763da915cbe2d69bdbc44aa",
+      "digest": "sha256:2e8ab09b2d4d058f15e912de2980735235e2fca0f80a2fea6d0a29299fc8bad6",
       "category": "video",
       "tags": [
         "domain:video",
@@ -598,13 +598,25 @@
           "role": "empty-scene-shell-v1",
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.zh-CN.md",
-          "digest": "sha256:025d88b0809bc1b4b927b1f6c432350a5f20f4f66b721a8e6c365c4eb3ad558a"
+          "digest": "sha256:3c97a3dd9efc029caea0567fe5c297a085bbdb2d609432bb2e5c6ac62b10e587"
+        },
+        {
+          "role": "environment-harmonized-preview-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-harmonized-preview-v1.zh-CN.md",
+          "digest": "sha256:2d3dcf5ef27d45d8fb8ac58e7ade44db75142e831f88bd5f9c8c0c3e02018d2b"
+        },
+        {
+          "role": "environment-layer-preview-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-layer-preview-v1.zh-CN.md",
+          "digest": "sha256:dcaccd98851f4c5b847908b821f36b32fff43316262103c0d406fa8adceef823"
         },
         {
           "role": "semantic-object-v1",
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.zh-CN.md",
-          "digest": "sha256:0c019f6c3b639eca4f55d8543e09a097d3672ea1ec5967c74010d043bd9ab135"
+          "digest": "sha256:757fb8e469e65f37d130f4913cbb9d3d3a6e49b4e26e7cb7b95effe73177bff9"
         }
       ]
     },
@@ -649,7 +661,7 @@
       "package_id": "video",
       "id": "ai-drama-character-assets-v2",
       "version": "2.0.0",
-      "digest": "sha256:0e7f1b76290af02e2a0a408c3b7f3a7f0e0a8844246646411b07a2deb9af92dd",
+      "digest": "sha256:7483e54a831c744e70dde286ac7b1fcfe70b0657aaf26a71ddb84fede94ceb1b",
       "category": "video",
       "tags": [
         "domain:video",
@@ -678,13 +690,43 @@
           "role": "body-core-neutral-v1",
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-character-assets-v2/prompts/body-core-neutral-v1.zh-CN.md",
-          "digest": "sha256:b5d75fe5d2ad9de60eba69fc7111ab5b819409d63e630d2a3a2fc5bd6206bc0c"
+          "digest": "sha256:72f2cbfc497b9ae70c19c21552d1934bd05bfc1e025ba330ac37a2f8bad368cf"
+        },
+        {
+          "role": "character-harmonized-preview-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets-v2/prompts/character-harmonized-preview-v1.zh-CN.md",
+          "digest": "sha256:cc955848ad31a20aed3219f72c1a7cb9124453a362e6fb044ee58f9fdb5e7658"
+        },
+        {
+          "role": "character-layer-preview-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets-v2/prompts/character-layer-preview-v1.zh-CN.md",
+          "digest": "sha256:1ec8f913339f998a133b4c284e72d4975edc9188cfbf541e5a8fdb53d10c57b2"
         },
         {
           "role": "head-core-bald-v1",
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-character-assets-v2/prompts/head-core-bald-v1.zh-CN.md",
-          "digest": "sha256:cfed338c19dd5cec8891b4979e983c7d6d5f371a1a4c03de320b12130947fd00"
+          "digest": "sha256:678c89234d0652ba96df45a70e246d573effd3c20fe895b6a6fcc244aab0fb03"
+        },
+        {
+          "role": "surface-coat-hair-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets-v2/prompts/surface-coat-hair-v1.zh-CN.md",
+          "digest": "sha256:8e6b39da89fe07a1a7f1b2ccf78ea41ba89d41c18baea583d07c107b6220372e"
+        },
+        {
+          "role": "wearable-accessory-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets-v2/prompts/wearable-accessory-v1.zh-CN.md",
+          "digest": "sha256:6264c1060888198268c130f90160422b492f4f7c2bd8fb990491eb48fa143d3b"
+        },
+        {
+          "role": "wearable-garment-v1",
+          "locale": "zh-CN",
+          "path": "solutions/video/ai-drama-character-assets-v2/prompts/wearable-garment-v1.zh-CN.md",
+          "digest": "sha256:4d6b0368ab85fa61be2f04c48a860f83c7c958fa35fc6fdbe0af6bab3ed2550f"
         }
       ]
     },

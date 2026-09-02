@@ -1,0 +1,80 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-drama-character-assets-v2/wearable-accessory-v1/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets-v2",
+  "version": "2.0.0",
+  "role": "wearable-accessory-v1",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/prompts/wearable-accessory-v1.zh-CN.md",
+    "digest": "sha256:6264c1060888198268c130f90160422b492f4f7c2bd8fb990491eb48fa143d3b"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/wearable-accessory-v1.zh-CN.json",
+    "digest": "sha256:e8d872ad16148294da2f1067079ed42085b1114a41b5e00c7fee6fe9fe90a7b7"
+  },
+  "document": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/documents/wearable-accessory-v1.zh-CN.document.json",
+    "digest": "sha256:4ce6a1809f63250d98b66b0b7c62807078e62900d24ea1a172588714c7458eaa"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:aa06ba9aeed92c7fb11c0e1d152375c1da58360ccb84276b6473c70251d217f5"
+  },
+  "semantic_schema_version": "character_asset.modular_slot_bundle.v1",
+  "cases": [
+    {
+      "case_id": "accessory-bundle-request",
+      "kind": "invalid",
+      "profile_id": "accessory-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/wearable-accessory-v1.zh-CN/accessory-bundle-request.input.json",
+        "digest": "sha256:dd5fb13de920357fe47eb3b4b0c2c997abcab7e5d67ec71b3fedc7f025ad075a",
+        "bytes": 1326
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/wearable-accessory-v1.zh-CN/accessory-bundle-request.output.json",
+        "digest": "sha256:58e7dc0034fe003b183ad9807a6ae04d51ba28d08394a01ddb946628d85f8063",
+        "bytes": 1670
+      },
+      "expected_codes": [
+        "ACCESSORY_SINGLE_ITEM_VIOLATION"
+      ]
+    },
+    {
+      "case_id": "body-scene-contamination",
+      "kind": "invalid",
+      "profile_id": "accessory-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/wearable-accessory-v1.zh-CN/body-scene-contamination.input.json",
+        "digest": "sha256:fe602b5213394ffd08899fac466c6d0be570945258432ff588a56745497a3d88",
+        "bytes": 1363
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/wearable-accessory-v1.zh-CN/body-scene-contamination.output.json",
+        "digest": "sha256:e0a635e44b9c31187ffcfa8e9db07cf2135ddfd181a4fc2a91dd97badc907789",
+        "bytes": 1661
+      },
+      "expected_codes": [
+        "ACCESSORY_ISOLATION_CONTAMINATION"
+      ]
+    },
+    {
+      "case_id": "extension-part-horn",
+      "kind": "valid",
+      "profile_id": "accessory-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/wearable-accessory-v1.zh-CN/extension-part-horn.input.json",
+        "digest": "sha256:127a4725a72c4c64c17230647bebf7a79b0add092b791fac274226d417a9e651",
+        "bytes": 1612
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets-v2/fixtures/wearable-accessory-v1.zh-CN/extension-part-horn.output.json",
+        "digest": "sha256:dc4a86ac44b52b5ae45e98acc8f48b52bd10fdb4cc39c4fcf054f024a9b5db14",
+        "bytes": 2381
+      }
+    }
+  ],
+  "digest": "sha256:edb313dfa10827ab97dfaadf92d44809ae813a34478a5807db24f540f1a3b90f"
+}

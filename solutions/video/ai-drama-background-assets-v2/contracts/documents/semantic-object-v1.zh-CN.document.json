@@ -6,13 +6,13 @@
   "role": "semantic-object-v1",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.zh-CN.md",
-  "source_digest": "sha256:0c019f6c3b639eca4f55d8543e09a097d3672ea1ec5967c74010d043bd9ab135",
+  "source_digest": "sha256:757fb8e469e65f37d130f4913cbb9d3d3a6e49b4e26e7cb7b95effe73177bff9",
   "format": "markdown",
   "media_type": "text/markdown",
   "canonicalization": "raw_utf8",
   "schema": {
     "ref": "solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
-    "digest": "sha256:747b7aa8cf1df8de70b46a9eecfeb4d2fa1055c69eb018da577d107e06020cf6"
+    "digest": "sha256:aa06ba9aeed92c7fb11c0e1d152375c1da58360ccb84276b6473c70251d217f5"
   },
   "required_capabilities": [
     "background_asset",
@@ -26,5 +26,5 @@
     "max_bytes": 262144,
     "max_depth": 32
   },
-  "digest": "sha256:1b081bc8f25a8c2b0fac2223ce2f890b2048bb2aee5c226c132a47a512e63a78"
+  "digest": "sha256:e495384ae1eec887cbd1b167623aa361822e94277693e42445733542def997c9"
 }

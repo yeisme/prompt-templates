@@ -33,6 +33,16 @@
       "path": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.zh-CN.md"
     },
     {
+      "role": "environment-harmonized-preview-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-harmonized-preview-v1.zh-CN.md"
+    },
+    {
+      "role": "environment-layer-preview-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-layer-preview-v1.zh-CN.md"
+    },
+    {
       "role": "semantic-object-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.zh-CN.md"

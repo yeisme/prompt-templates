@@ -1,6 +1,6 @@
 # AI 做剧模块化视觉资产模板 v2
 
-状态：`active proposal`  
+状态：`active change（内容已实现，provider-free 验证通过；maturity=exploratory，未发布 release）`  
 OpenSpec：[`official-ai-drama-modular-visual-assets-v2`](../openspec/changes/official-ai-drama-modular-visual-assets-v2/proposal.md)
 
 ## 设计目标
@@ -16,17 +16,17 @@ Prompt Repository 只提供 Prompt 正文、输入变量、输出要求、失败
 
 ## 模板矩阵
 
-| Template ID | 主要职责 | Canonical output |
+| Template ID | 状态 | 主要职责 | Canonical output |
 | --- | --- | --- |
-| `head-core-bald-v1` | 完整无头发头部身份 | 透明 RGBA，独立视图 |
-| `body-core-neutral-v1` | 身体比例与 topology | 透明 RGBA，完整中性覆盖 |
-| `surface-coat-hair-v1` | 头发、毛发、鳞片等表面层 | 透明 RGBA，独立设计/贴合渲染 |
-| `wearable-garment-v1` | 单件衣服、鞋、盔甲 | 透明 RGBA，单件/贴合渲染 |
-| `wearable-accessory-v1` | 首饰、腰封、胸针、角、尾等 | 透明 RGBA，单件/贴合渲染 |
-| `semantic-object-v1` | 独立可交互物件 | 默认透明 RGBA |
-| `empty-scene-shell-v1` | 无人物无物件的空间壳 | 完整不透明画布 |
-| `*-layer-preview-v1` | 检查层级、贴合、遮挡 | 非 canonical preview |
-| `*-harmonized-preview-v1` | 检查整体色彩、材质、光线 | 非 canonical preview |
+| `head-core-bald-v1` | 已实现 | 完整无头发头部身份 | 透明 RGBA，独立视图 |
+| `body-core-neutral-v1` | 已实现 | 身体比例与 topology | 透明 RGBA，完整中性覆盖 |
+| `surface-coat-hair-v1` | 已实现 | 头发、毛发、鳞片等表面层 | 透明 RGBA，独立设计/贴合渲染 |
+| `wearable-garment-v1` | 已实现 | 单件衣服、鞋、盔甲 | 透明 RGBA，单件/贴合渲染 |
+| `wearable-accessory-v1` | 已实现 | 首饰、腰封、胸针、角、尾等 | 透明 RGBA，单件/贴合渲染 |
+| `semantic-object-v1` | 已实现 | 独立可交互物件 | 默认透明 RGBA |
+| `empty-scene-shell-v1` | 已实现 | 无人物无物件的空间壳 | 完整不透明画布 |
+| `*-layer-preview-v1` | 已实现 | 检查层级、贴合、遮挡 | 非 canonical preview |
+| `*-harmonized-preview-v1` | 已实现 | 检查整体色彩、材质、光线 | 非 canonical preview |
 
 ## 无头发完整头模
 
@@ -89,7 +89,7 @@ layer preview 用于检查对齐、穿插和遮挡；harmonized preview 用于�
 
 `ai-drama-character-assets@1.x`、`ai-drama-background-assets@1.x`、`face-master-v1` 和 `face-mask-front-v1` 保持不可变。新 canonical 头部入口为 `head-core-bald-v1`；旧消费者不会自动跳转到 2.0.0。
 
-结构化 catalog、contract 和 fixture 索引由 Template Registry CLI 生成。当前文档只说明 planned contract，不代表模板已经发布或 Provider 已通过实拍验证。
+结构化 catalog、contract 和 fixture 索引由 Template Registry CLI 生成。2026-09-02 起两个 family 的全部 11 个模板（7 角色/环境 + 4 预览）已由 CLI 完成正文、contract、document、共享 schema 绑定与 fixture 集（42 cases）并全部通过 `contract/document/fixture/catalog validate`；但这不代表 Provider 实拍验证或 release 已发布。
 
 ## 共享词汇（stable vocabulary）
 
@@ -133,11 +133,11 @@ layer preview 用于检查对齐、穿插和遮挡；harmonized preview 用于�
 
 ### Preview（预览）
 
-`preview` slot 的输出必须携带 exact `source_refs[]`（含各 source 的版本与 digest 引用）并标记 `canonical=false`；preview 不得作为任何 source slot 的替代 ref，不得宣称 subject frozen 或 production ready。
+`preview` slot 的输出必须携带 `preview_lineage`（`canonical=false`、`purpose` 与 `source_refs[]`；每项含 `slot_id`、`source_version`、`artifact_digest`、`view_id`，按 slot 稳定排序）并精确回显消费方输入；preview 不得作为任何 source slot 的替代 ref，不得宣称 subject frozen 或 production ready。字段命名说明：共享 schema 顶层回显字段为 `subject_version`（而非 1.x 的 `subject_version_ref`），source lineage 项使用 `source_version`——Registry fixture 校验禁止 valid fixture 输出出现任何 `*ref` 键，该命名使预览 lineage 与 fixture 门共存；lineage 之外的 durable ref 仍一律禁止。
 
 ### 共享输出合同
 
-两个 family 的模板共用同一输出 schema `character_asset.modular_slot_bundle.v1`（canonical 文件：`solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json`，由 Registry `document artifact add` 生成与校验）。它承载 slot/view/RenderRevision/policy_echo 词汇的机器面；character 与 environment 模板的 document descriptor 都绑定该 exact 文件与 digest，不允许各自复制漂移。
+两个 family 的模板共用同一输出 schema `character_asset.modular_slot_bundle.v1`（canonical 文件：`solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json`，由 Registry `document artifact add` 生成与校验）。它承载 slot/view/RenderRevision/policy_echo 词汇的机器面，并包含预览专用面：`preview_lineage`（仅 `slot_id=preview` 的 bundle 必填、其他 slot 禁用，经 `allOf` if/then 表达）与 `policy_echo.preview_purpose`；character 与 environment 模板的 document descriptor 都绑定该 exact 文件与 digest，不允许各自复制漂移。
 
 ## 版本、locale、rights 与 maturity 规则
 

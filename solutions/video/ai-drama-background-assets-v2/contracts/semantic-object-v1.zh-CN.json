@@ -6,8 +6,8 @@
   "role": "semantic-object-v1",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.zh-CN.md",
-  "template_digest": "sha256:0c019f6c3b639eca4f55d8543e09a097d3672ea1ec5967c74010d043bd9ab135",
-  "digest": "sha256:80fe544f8595db97c9b2325109e493f4898d0d2c5ba7c11b1052ea2b260739e0",
+  "template_digest": "sha256:757fb8e469e65f37d130f4913cbb9d3d3a6e49b4e26e7cb7b95effe73177bff9",
+  "digest": "sha256:b97e51d83575c4d192d396164fbe4aa07d27b06ddb047d1faf42a2149197cccd",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

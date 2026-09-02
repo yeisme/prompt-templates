@@ -1,0 +1,98 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-drama-background-assets-v2/empty-scene-shell-v1/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-drama-background-assets-v2",
+  "version": "2.0.0",
+  "role": "empty-scene-shell-v1",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.zh-CN.md",
+    "digest": "sha256:3c97a3dd9efc029caea0567fe5c297a085bbdb2d609432bb2e5c6ac62b10e587"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-drama-background-assets-v2/contracts/empty-scene-shell-v1.zh-CN.json",
+    "digest": "sha256:58dc18f3d621e71270534400acb7000912dd4a98c322d41fe1633000f74f4b9b"
+  },
+  "document": {
+    "ref": "solutions/video/ai-drama-background-assets-v2/contracts/documents/empty-scene-shell-v1.zh-CN.document.json",
+    "digest": "sha256:19b670a0c2d37bd011baed0245fc204aca90cb592643ed8fab6a2e8b15c61a42"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:aa06ba9aeed92c7fb11c0e1d152375c1da58360ccb84276b6473c70251d217f5"
+  },
+  "semantic_schema_version": "character_asset.modular_slot_bundle.v1",
+  "cases": [
+    {
+      "case_id": "empty-interior-anchors",
+      "kind": "valid",
+      "profile_id": "scene-shell-anchors-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/empty-scene-shell-v1.zh-CN/empty-interior-anchors.input.json",
+        "digest": "sha256:8ed0180bf1f05274f4e28f1e0948b858b65115a395974da89ed86494b32fa422",
+        "bytes": 1411
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/empty-scene-shell-v1.zh-CN/empty-interior-anchors.output.json",
+        "digest": "sha256:a724a16e5b423df23f6b4cfcf4e410bb0b079d0c5b57ada19e56707e87b6ff37",
+        "bytes": 2441
+      }
+    },
+    {
+      "case_id": "human-trace-poster-statue",
+      "kind": "invalid",
+      "profile_id": "scene-shell-anchors-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/empty-scene-shell-v1.zh-CN/human-trace-poster-statue.input.json",
+        "digest": "sha256:b2ef02ab254bbcb688de6f1be7ffca6b239da91791bbdb2695ac7b57d16ef0fa",
+        "bytes": 1202
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/empty-scene-shell-v1.zh-CN/human-trace-poster-statue.output.json",
+        "digest": "sha256:6233445241541e3374f7cb19c67f81064913a09a701141d219ec5feada5dd959",
+        "bytes": 1743
+      },
+      "expected_codes": [
+        "SCENE_HUMAN_TRACE_DETECTED"
+      ]
+    },
+    {
+      "case_id": "loose-object-cup",
+      "kind": "invalid",
+      "profile_id": "scene-shell-anchors-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/empty-scene-shell-v1.zh-CN/loose-object-cup.input.json",
+        "digest": "sha256:f043bc07f75e26734bb4c6dbbf068c8b238b378181652f47e43dc81ef7c50255",
+        "bytes": 1219
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/empty-scene-shell-v1.zh-CN/loose-object-cup.output.json",
+        "digest": "sha256:2ce8d81f8ac74b8082b814e51cc5ebfd649ad465b895719ad89a2c37c878f3b3",
+        "bytes": 1762
+      },
+      "expected_codes": [
+        "SCENE_LOOSE_OBJECT_DETECTED"
+      ]
+    },
+    {
+      "case_id": "transparent-canvas-request",
+      "kind": "invalid",
+      "profile_id": "scene-shell-anchors-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/empty-scene-shell-v1.zh-CN/transparent-canvas-request.input.json",
+        "digest": "sha256:9cf93f2e7afa31bd6174ec0c322d5407ba10e2e3bca04d08680603187d4aef26",
+        "bytes": 1409
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-background-assets-v2/fixtures/empty-scene-shell-v1.zh-CN/transparent-canvas-request.output.json",
+        "digest": "sha256:6f9447b9b55a41103ebaf6334a918ad5b4d0a61364e2bcfe033e29ddd577e27b",
+        "bytes": 1721
+      },
+      "expected_codes": [
+        "OPAQUE_CANVAS_VIOLATION"
+      ]
+    }
+  ],
+  "digest": "sha256:92e767b29c40011b2663fbd4c5dde7f069bf42e5e0800665180d45b0fcecefc3"
+}

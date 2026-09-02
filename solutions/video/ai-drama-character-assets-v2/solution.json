@@ -33,9 +33,34 @@
       "path": "solutions/video/ai-drama-character-assets-v2/prompts/body-core-neutral-v1.zh-CN.md"
     },
     {
+      "role": "character-harmonized-preview-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets-v2/prompts/character-harmonized-preview-v1.zh-CN.md"
+    },
+    {
+      "role": "character-layer-preview-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets-v2/prompts/character-layer-preview-v1.zh-CN.md"
+    },
+    {
       "role": "head-core-bald-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-character-assets-v2/prompts/head-core-bald-v1.zh-CN.md"
+    },
+    {
+      "role": "surface-coat-hair-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets-v2/prompts/surface-coat-hair-v1.zh-CN.md"
+    },
+    {
+      "role": "wearable-accessory-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets-v2/prompts/wearable-accessory-v1.zh-CN.md"
+    },
+    {
+      "role": "wearable-garment-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets-v2/prompts/wearable-garment-v1.zh-CN.md"
     }
   ]
 }
