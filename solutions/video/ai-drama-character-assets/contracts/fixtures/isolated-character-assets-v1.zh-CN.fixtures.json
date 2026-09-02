@@ -66,6 +66,24 @@
       ]
     },
     {
+      "case_id": "face-mask-environment-only-handoff",
+      "kind": "invalid",
+      "profile_id": "face-mask-front-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/isolated-character-assets-v1.zh-CN/face-mask-environment-only-handoff.input.json",
+        "digest": "sha256:4ade9060486d2a80652888e1b29013d6ecd95173d8efed5a48efc6d6e1fc5d2a",
+        "bytes": 536
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/isolated-character-assets-v1.zh-CN/face-mask-environment-only-handoff.output.json",
+        "digest": "sha256:dec0e8333949abe1f312d6130efb830c883268cb45144218d57c2fbe84d7047e",
+        "bytes": 1333
+      },
+      "expected_codes": [
+        "ENVIRONMENT_ONLY_REQUIRES_BACKGROUND_TEMPLATE"
+      ]
+    },
+    {
       "case_id": "face-mask-front-valid",
       "kind": "valid",
       "profile_id": "face-mask-front-v1",
@@ -117,5 +135,5 @@
       ]
     }
   ],
-  "digest": "sha256:1ee5db2917959210a01b5a12dcba604e02f351c920ae83c1e869212101b36cb8"
+  "digest": "sha256:f52d9c4843149ad18c9e6fb96d099ee4f6174084e9010a326549fe56b1df0b77"
 }
