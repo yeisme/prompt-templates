@@ -1,7 +1,7 @@
 # AI 做剧模块化视觉资产模板 v2
 
-状态：`active change（内容已实现，provider-free 验证通过；maturity=exploratory，未发布 release）`  
-OpenSpec：[`official-ai-drama-modular-visual-assets-v2`](../openspec/changes/official-ai-drama-modular-visual-assets-v2/proposal.md)
+状态：`archived 2026-09-02（内容已实现，provider-free 验证通过；maturity=exploratory，未发布 release）`  
+OpenSpec：[`official-ai-drama-modular-visual-assets-v2`](../openspec/changes/archive/2026-09-02-official-ai-drama-modular-visual-assets-v2/proposal.md)
 
 ## 设计目标
 
