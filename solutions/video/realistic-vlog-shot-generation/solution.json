@@ -1,0 +1,56 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "realistic-vlog-shot-generation",
+  "version": "1.0.0",
+  "category": "video",
+  "tags": [
+    "artifact:shot_video",
+    "category:video",
+    "constraint:character_consistency",
+    "constraint:realism",
+    "job:generate",
+    "modality:video",
+    "scenario:realistic_vlog",
+    "stage:shot_generation"
+  ],
+  "capabilities": [
+    "character_consistency_lock",
+    "negative_prompt_governance",
+    "shot_video_generation"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Realistic Vlog Shot Generation",
+      "summary": "Compile subject, setting, handheld camera texture, timeline beats, and realism/audio constraints into a realistic vlog prompt for direct video-model delivery",
+      "usage": "Use for friend-captured realism-first shot generation and human review; anti-AI-slop by construction",
+      "aliases": [
+        "home video realism",
+        "realistic vlog prompt"
+      ]
+    },
+    "zh-CN": {
+      "title": "写实生活记录视频生成",
+      "summary": "把人物、场景、手持拍摄质感、时间线序列与写实/声音约束编译为可直接投递视频生成模型的写实 Vlog Prompt",
+      "usage": "用于「朋友随手拍」气质的写实生活记录镜头生成与人工审查； realism 优先，反 AI 感",
+      "aliases": [
+        "写实vlog",
+        "真实感生活记录"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/video/realistic-vlog-shot-generation/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/video/realistic-vlog-shot-generation/prompts/main.zh-CN.md"
+    }
+  ]
+}

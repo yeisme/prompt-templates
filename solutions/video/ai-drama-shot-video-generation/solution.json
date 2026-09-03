@@ -1,0 +1,43 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "ai-drama-shot-video-generation",
+  "version": "1.0.0",
+  "category": "video",
+  "tags": [
+    "artifact:shot_video",
+    "category:video",
+    "constraint:character_consistency",
+    "constraint:source_grounded",
+    "job:generate",
+    "modality:video",
+    "scenario:ai_drama",
+    "stage:shot_generation",
+    "workflow:film-production"
+  ],
+  "capabilities": [
+    "asset_reference_binding",
+    "negative_prompt_governance",
+    "shot_video_generation"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "zh-CN": {
+      "title": "AI 短剧镜头级视频生成",
+      "summary": "把角色、技能、敌方、场景、运镜与逐秒分镜编译为可直接投递视频生成模型的镜头级 Prompt",
+      "usage": "用于 AI 短剧/漫剧蓄力-爆发型大招镜头的视频生成 Prompt 渲染与人工审查，由 Scaena 等领域 Owner 消费",
+      "aliases": [
+        "大招镜头提示词",
+        "镜头级视频生成"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-shot-video-generation/prompts/main.zh-CN.md"
+    }
+  ]
+}
