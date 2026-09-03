@@ -11,3 +11,7 @@
 - [AI 做剧视觉资产预设 v2（角色）](../solutions/video/ai-drama-character-assets-v2/docs/preset-matrix.zh-CN.md)：头/身核心、表面层、单件穿戴、预览的槽位矩阵与稳定失败码。
 - [AI 做剧视觉资产预设 v2（环境）](../solutions/video/ai-drama-background-assets-v2/docs/preset-matrix.zh-CN.md)：语义物件、空场景壳、环境预览的槽位矩阵与稳定失败码。
 - [AI 做剧模块化视觉资产模板 v2](modular-visual-assets-v2.md)：共享词汇、版本/locale/rights/maturity 规则与已实现状态（provider-free 验证通过）。
+
+## CI/CD
+
+- [模块化、分级 CI/CD](delivery/ci-cd.md)：quick、full、integration、release 的触发场景、真实命令和权限边界。
