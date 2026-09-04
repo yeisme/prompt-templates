@@ -1,12 +1,15 @@
+{{provider_banner}}
+
 # 写实生活记录视频生成 Prompt（写实 Vlog 镜头）
 
 本模板是一条可直接渲染后投递给视频生成模型的镜头级 Prompt，用于生成「朋友随手拍下的真实片段」气质的写实生活记录视频。消费方在渲染前完成全部变量绑定；渲染结果是最终视频生成 Prompt 正文，不经过二次改写。
 
 ## 使用方式
 
-1. 按 companion contract 填写全部 required 变量；有人物资产时填写 `character_ref`。
-2. `sequence_beats` 按「时间线序列」一节的结构编写，连续覆盖 0-`{{duration_s}}` 秒。
-3. 渲染后先人工核对「自检清单」，再投递视频生成模型。
+1. 按 companion contract 填写全部 required 变量；有人物资产时填写 `character_ref`（支持 `@uuid` 与 `@image1` 等位置引用）。
+2. 可选：填写 `provider_banner` 保留投递平台标识行（如 `Made with Seedance 2.5`），留空则渲染结果不含该行。
+3. `sequence_beats` 按「时间线序列」一节的结构编写，连续覆盖 0-`{{duration_s}}` 秒。
+4. 渲染后先人工核对「自检清单」，再投递视频生成模型。
 
 ## 影像规格与风格
 

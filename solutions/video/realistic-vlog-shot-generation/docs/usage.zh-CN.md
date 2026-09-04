@@ -12,7 +12,7 @@
 ## 渲染流程
 
 1. 准备人物资产（可选）：有人物参考资产时先登记并取得 `@` 引用填入 `character_ref`；无资产时靠 `subject_identity` + `wardrobe_and_accessories` + `consistency_lock` 文字锁定。
-2. 按 contract 填写 21 个输入；`scenario_summary`、`subject_identity`、`setting_desc`、`sequence_beats` 为 sensitive 创作内容。
+2. 按 contract 填写 22 个输入；`scenario_summary`、`subject_identity`、`setting_desc`、`sequence_beats` 为 sensitive 创作内容。
 3. 用 promptrepo render 渲染 `main.zh-CN.md`（中文投递）或 `main.en.md`（英文投递，多数视频模型对英文响应更稳定）。
 4. 按 `review-checklist.zh-CN.md` 人工审查后投递；权限为 `execute_requires_review`。
 
@@ -25,7 +25,16 @@
 
 ## 双 locale 说明
 
-zh-CN 为 source locale；en 为同步适配（自动翻译级别，进入 reviewed 前需人工校对）。两个 locale 的 contract 输入完全一致，渲染结果可按目标模型语言偏好选择。
+zh-CN 为 source locale；en 为同步适配，当前按 draft 管理。只有完成基于 zh-CN source digest 的人工等价校对后，en 才可标记为 reviewed。两个 locale 的 contract 输入完全一致，渲染结果可按目标模型语言偏好选择。
+
+## Provider 兼容
+
+Provider 与模型名只作为兼容信息，不进入 tags 与一级分类。已知兼容：
+
+- **Seedance 2.5**：用 `provider_banner` 保留 `Made with Seedance 2.5` 标识行；人物参考图使用位置引用（`character_ref=@image1`），投递时图像槽位需绑定同一参考图。完整绑定示例见 `examples/seedance-late-summer-evening.zh-CN.md`。
+- 其他视频模型：`provider_banner` 留空即可；资产引用风格按目标平台调整为 `@uuid` 或位置引用，contract regex 两者都接受。
+
+新增 Provider 兼容只改 examples 与本文档，不复制 solution，也不新建带 Provider 名的模板 ID。
 
 ## 成熟度说明
 

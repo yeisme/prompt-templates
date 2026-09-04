@@ -1,12 +1,15 @@
+{{provider_banner}}
+
 # Realistic Vlog Shot Video Generation Prompt
 
 This template renders into a shot-level prompt that is delivered directly to a video generation model, for ultra-realistic "captured by a friend" home-video footage. The consumer binds every variable before rendering; the rendered result is the final prompt body and must not be rewritten afterwards.
 
 ## How to use
 
-1. Fill all required inputs per the companion contract; provide `character_ref` when a character asset exists.
-2. Write `sequence_beats` per the structure in "Timeline sequence", covering 0-`{{duration_s}}`s without gaps.
-3. Review the rendered prompt against the self-check list before submitting it to a video model.
+1. Fill all required inputs per the companion contract; provide `character_ref` when a character asset exists (`@uuid` and positional refs like `@image1` are both accepted).
+2. Optional: set `provider_banner` to keep a delivery-platform banner line (e.g. `Made with Seedance 2.5`); leave empty to omit it.
+3. Write `sequence_beats` per the structure in "Timeline sequence", covering 0-`{{duration_s}}`s without gaps.
+4. Review the rendered prompt against the self-check list before submitting it to a video model.
 
 ## Footage specification and style
 

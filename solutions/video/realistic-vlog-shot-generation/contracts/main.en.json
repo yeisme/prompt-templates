@@ -6,8 +6,8 @@
   "role": "main",
   "locale": "en",
   "template_path": "solutions/video/realistic-vlog-shot-generation/prompts/main.en.md",
-  "template_digest": "sha256:b28e5f8062d13966ab0f21182c3f99da1ae44ef8d2c035e7a3735a989cb7c465",
-  "digest": "sha256:53e3e5898e9bd427dd0df8ce5cf64558d154c96e1a9ed892f1550eb9187a4fb6",
+  "template_digest": "sha256:26a7d85091ef3b12a9224ae03d5cc27b678dc298cef9c8f5f6972985e53f9b90",
+  "digest": "sha256:8f496a3d4d5a035b75b6686e22c5c4333fdd4016ae1c73658975932461b5fc2a",
   "license": "internal",
   "permissions": [
     "execute_requires_review",
@@ -140,8 +140,8 @@
         "zh-CN": "人物资产引用"
       },
       "descriptions": {
-        "en": "Registered character asset @-reference; required when an asset exists",
-        "zh-CN": "已登记人物资产的 @ 引用；有资产时必填"
+        "en": "Registered character asset @-reference; @uuid and positional refs like @image1 accepted; required when an asset exists",
+        "zh-CN": "已登记人物资产的 @ 引用，支持 @uuid 与 @image1 等位置引用；有资产时必填"
       },
       "sensitivity": "public"
     },
@@ -253,6 +253,24 @@
       "descriptions": {
         "en": "Negative constraint list; template defaults are merged",
         "zh-CN": "负面约束清单；模板内置默认负面项会并入"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "provider_banner",
+      "type": "string",
+      "examples": [
+        "Made with Seedance 2.5"
+      ],
+      "min_length": 0,
+      "max_length": 256,
+      "labels": {
+        "en": "Provider banner",
+        "zh-CN": "平台标识行"
+      },
+      "descriptions": {
+        "en": "Optional delivery-platform banner line rendered at the top; omitted when empty",
+        "zh-CN": "可选的投递平台标识行，渲染在 Prompt 顶部；留空则省略"
       },
       "sensitivity": "public"
     },
