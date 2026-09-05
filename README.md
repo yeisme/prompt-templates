@@ -6,6 +6,8 @@
 
 ## 使用
 
+独立 Agent 用户可使用 [Template Registry](https://github.com/yeisme/template-registry)，通过 CLI 或本地 MCP 导入资料、确认输入、编译和导出提示包，无需安装其他 Yeisme 产品。首批兼容模板及多步骤示例见 [Agent 编译用基础模板 v2](docs/agent-consumption-v2.md)。
+
 在 Sonora 中添加并搜索官方仓库：
 
 ```bash
