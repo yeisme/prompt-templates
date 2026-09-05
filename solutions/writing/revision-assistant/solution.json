@@ -34,11 +34,6 @@
       "role": "main",
       "locale": "en",
       "path": "solutions/writing/revision-assistant/prompts/main.en.md"
-    },
-    {
-      "role": "main",
-      "locale": "zh-CN",
-      "path": "solutions/writing/revision-assistant/prompts/main.zh-CN.md"
     }
   ]
 }

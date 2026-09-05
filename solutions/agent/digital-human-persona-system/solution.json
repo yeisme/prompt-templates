@@ -35,11 +35,6 @@
       "role": "main",
       "locale": "en",
       "path": "solutions/agent/digital-human-persona-system/prompts/main.en.md"
-    },
-    {
-      "role": "main",
-      "locale": "zh-CN",
-      "path": "solutions/agent/digital-human-persona-system/prompts/main.zh-CN.md"
     }
   ]
 }

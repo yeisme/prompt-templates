@@ -1,21 +1,22 @@
 # Yeisme Prompt Templates 仓库指令
 
-本仓库是 Yeisme 官方中文优先 Prompt 解决方案内容源。它拥有经过评审的 Prompt 正文、示例、分类、tags、i18n 适配和内容成熟度，不拥有模型执行、用户仓库状态、Provider credential 或领域资产生命周期。
+本仓库是 Yeisme 官方 Prompt 解决方案内容源：英文模板面向 Agent 编译，中文文档面向人类审阅。它拥有经过评审的 Prompt 正文、示例、分类、tags、i18n 适配和内容成熟度，不拥有模型执行、用户仓库状态、Provider credential 或领域资产生命周期。
 
 Active skills 由根目录 `.skills/profiles/targets/data/yeisme-prompt-templates.txt` 声明，并同步到本仓库 `.agents/skills/` 与 `.claude/skills/`。
 
 <!-- runtime-skills:start -->
-- `yeisme-prompt-repository-router`
-- `natural-writing-editor`
-- `yeisme-evolutionary-change-policy`
 - `ai-native-cli-output-contract`
+- `natural-writing-editor`
 - `review`
+- `template-registry-template-author`
+- `yeisme-evolutionary-change-policy`
+- `yeisme-prompt-repository-router`
 <!-- runtime-skills:end -->
 
 ## 内容与语言
 
-- Locale 政策见 `docs/locale-policy.md`：solution 默认单语言，locale 可为任意 BCP 47 语言；`zh-CN` 是仓库 `default_locale` 与文档默认语言，不再强制 zh-CN 源 + en 适配配对。
-- Agent 编译约定（2026-09-05 起，image 包先行，scaena 项目统一遵循）：进入编译器/投递给模型的模板正文一律为 `main.en.md`；`main.zh-CN.md` 只作人工审阅译文，不进入编译。包内中文译文须在头部标注该身份。
+- Locale 政策见 `docs/locale-policy.md`：仓库 `default_locale` 为 `en`。所有新建且可由 Agent 编译的 solution 只注册英文模板和英文 contract。
+- 中文用于人类阅读：与英文模板对应的译文放在 `docs/template-zh-CN.md`，头部必须标注人工审阅身份；不得注册为 template、不得建立可编译 contract、不得进入 catalog template 列表或内容 digest。已发布双语 exact ref 仅保留兼容性，不作为新建规范。
 - Prompt、指南和示例可以人工编辑；`repository.json`、`solution.json`、`catalog.json`、release manifest 和 lock 必须由 Template Registry CLI 生成（含 `solution locale remove` 的 locale 移除）。
 - machine IDs、目录名、schema keys、tags、capabilities、rights 和 maturity 使用稳定英文。
 - 版本命名（2026-09-05 起）：正式版本用无后缀 solution id，从 `1.0.0` 起版；非正式（未转正）版本的目录名或版本号必须带 `beta` 或 `alpha` 标识（如 `xxx-assets-beta`、`2.0.0-beta.1`）。转正时去后缀目录、版本重置 `1.0.0`，内容整体晋升并经 Registry CLI 重放 metadata；禁止再用裸 `-v2` 目录表达"并行未转正 major"（`ai-drama-background-assets-v2` 为存量豁免，转正时一并收敛）。

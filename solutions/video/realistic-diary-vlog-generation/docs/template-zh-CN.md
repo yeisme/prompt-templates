@@ -2,6 +2,8 @@
 
 > 本文档是 `prompts/main.en.md` 的中文阅读版，仅供人工审阅，**未注册为模板 locale，不进入 catalog 编译**。渲染与投递一律以英文模板为准；变量名与英文模板一一对应。
 
+`{{provider_banner}}`
+
 本模板渲染后可直接投递视频生成模型，用于生成「主人公亲自对镜头说话」的写实日记 Vlog：出镜台词、唇形同步、空间声学连续性。消费方在渲染前完成全部变量绑定；渲染结果是最终 Prompt 正文，不经过二次改写。
 
 与家族内其他模板的边界：无旁白纯环境音抓拍用 `realistic-vlog-shot-generation`；画外 VO 自述用 `realistic-docu-vlog-generation`；人物对镜头直接说话、需要唇形同步的日记记录用本模板。

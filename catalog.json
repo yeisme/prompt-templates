@@ -3,17 +3,17 @@
   "repository": {
     "id": "official",
     "name": "Yeisme Official Prompt Solutions",
-    "default_locale": "zh-CN",
+    "default_locale": "en",
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:558f15ff8f409f5c89bba95b27c1e72576cab18061bb8852ee1fd48710dbe133",
+  "digest": "sha256:cbe5804573eb428f717ff0a52df7e8df5c1f1b645c4e6de40f2bd34cdccc49a8",
   "solutions": [
     {
       "package_id": "agent",
       "id": "digital-human-persona-system",
       "version": "1.0.0",
-      "digest": "sha256:c424b8d4cf6f963a8a365906de77d5fb38202ae90e8ce6bd709394a351d55dfe",
+      "digest": "sha256:74952ba57dbd174722c12f174a700c465188a598e81592de26eb2f4f2075bdf1",
       "category": "agent",
       "tags": [
         "artifact:system_prompt",
@@ -47,12 +47,6 @@
           "locale": "en",
           "path": "solutions/agent/digital-human-persona-system/prompts/main.en.md",
           "digest": "sha256:36f29a364af83567dc237e4133aac25db427783f5a3870118a6ba0874ecb40e1"
-        },
-        {
-          "role": "main",
-          "locale": "zh-CN",
-          "path": "solutions/agent/digital-human-persona-system/prompts/main.zh-CN.md",
-          "digest": "sha256:4962f21915fb451f95d8f66bf429ff90b92f68dd70155234ccf69e0645f36e8c"
         }
       ]
     },
@@ -212,7 +206,7 @@
       "package_id": "general",
       "id": "structured-summary-beta",
       "version": "2.0.0-beta.1",
-      "digest": "sha256:2ebc188d5e3f11640aaaaddf17af1ded269d0a460e990397e33816429ef0eba0",
+      "digest": "sha256:67bf660b9d5f9fd5f9ca6006a42e8464b538e8fa007438e97d8d998290b04502",
       "category": "general",
       "tags": [
         "artifact:structured_summary",
@@ -245,12 +239,6 @@
           "locale": "en",
           "path": "solutions/general/structured-summary-beta/prompts/main.en.md",
           "digest": "sha256:1edbbde3305a62b864bf1f5d5e30bd582acf5ea4be292e26e7c5de624dbf95da"
-        },
-        {
-          "role": "main",
-          "locale": "zh-CN",
-          "path": "solutions/general/structured-summary-beta/prompts/main.zh-CN.md",
-          "digest": "sha256:0a8a426d854053ba4922436d7f93523b40ddb1851496c372ebe8094839d1dda9"
         }
       ]
     },
@@ -364,7 +352,7 @@
       "package_id": "image",
       "id": "candid-portrait-matrix",
       "version": "1.0.0",
-      "digest": "sha256:a4430007a41ffad4245cec956a17899c38e048e4e8a6e5c2263103d25ade09d0",
+      "digest": "sha256:c957d94e7e811c9d06f7c66dc7602a4d540586101f10023dc44e8c7d8aa47c9a",
       "category": "image",
       "tags": [
         "artifact:candid_portrait",
@@ -406,12 +394,6 @@
           "locale": "en",
           "path": "solutions/image/candid-portrait-matrix/prompts/main.en.md",
           "digest": "sha256:652a718a9d10636ecb2d72737171fba8bf08a3199beea07333a3e9c988356555"
-        },
-        {
-          "role": "main",
-          "locale": "zh-CN",
-          "path": "solutions/image/candid-portrait-matrix/prompts/main.zh-CN.md",
-          "digest": "sha256:a628f8e0546a8e08c17e9f6d369f850bf6f99725313c9fd168ffc45bfcec2fdb"
         }
       ]
     },
@@ -419,7 +401,7 @@
       "package_id": "image",
       "id": "iconic-landmark-poster",
       "version": "1.0.0",
-      "digest": "sha256:e00d21067ae1499c10a68143cccbad2a767c81ecee0b36583c8821bf72e102c9",
+      "digest": "sha256:48599f645399f5228bcb5329e99df30da69ab5a19c0a8fcd60d314fa4694b094",
       "category": "image",
       "tags": [
         "artifact:poster",
@@ -463,12 +445,6 @@
           "locale": "en",
           "path": "solutions/image/iconic-landmark-poster/prompts/main.en.md",
           "digest": "sha256:d5cf6e7303bf9a4e5f3cab103bcf149e6cee78b2dc70b86429156dabc1070419"
-        },
-        {
-          "role": "main",
-          "locale": "zh-CN",
-          "path": "solutions/image/iconic-landmark-poster/prompts/main.zh-CN.md",
-          "digest": "sha256:0f1323cba503deb30d524211996172465b4bd070ba5af704a06494d12a4e089d"
         }
       ]
     },
@@ -476,7 +452,7 @@
       "package_id": "image",
       "id": "precision-candid-shot",
       "version": "1.0.0",
-      "digest": "sha256:a3037552f594fac37d7166a3ef61950dd0707cc9afc0d0b19bd04edd3765a28e",
+      "digest": "sha256:a5deac5cffae3abfb71b200f243df2d0e8919364ea4f41e575f65afceeec348e",
       "category": "image",
       "tags": [
         "artifact:candid_photo",
@@ -518,12 +494,6 @@
           "locale": "en",
           "path": "solutions/image/precision-candid-shot/prompts/main.en.md",
           "digest": "sha256:dd3967ca1376f6f6ff0dfc5056eaf9d7e10e8eca54e89d0fe3555d2b52dcbcc3"
-        },
-        {
-          "role": "main",
-          "locale": "zh-CN",
-          "path": "solutions/image/precision-candid-shot/prompts/main.zh-CN.md",
-          "digest": "sha256:bb4dc393b63b8b733b50ee180d1312a312fc5a1e0df6a46edf9fa14bcc1355c5"
         }
       ]
     },
@@ -531,7 +501,7 @@
       "package_id": "image",
       "id": "xhs-product-cover-v2",
       "version": "2.0.0",
-      "digest": "sha256:542b8d190d1bde0b0ce9d3faef27f60631c3ca2772730ef8a8defdcf47da98a6",
+      "digest": "sha256:3f71226ae5e3766aab8e93a9d30992fdcea30a596eef7ae023d843edd688c9cd",
       "category": "image",
       "tags": [
         "artifact:cover_image",
@@ -571,12 +541,6 @@
           "locale": "en",
           "path": "solutions/image/xhs-product-cover-v2/prompts/main.en.md",
           "digest": "sha256:42f25e270ecbd044b45f7979fe92826f35e9c7f0de4d824cad50323500b4a39e"
-        },
-        {
-          "role": "main",
-          "locale": "zh-CN",
-          "path": "solutions/image/xhs-product-cover-v2/prompts/main.zh-CN.md",
-          "digest": "sha256:c081e1c618861899fb522e284eef137faa30b3abb1837fc2ac0d11a84204ec1d"
         }
       ]
     },
@@ -734,7 +698,7 @@
       "package_id": "office",
       "id": "meeting-action-summary-beta",
       "version": "2.0.0-beta.1",
-      "digest": "sha256:0b1b574e905007aaec7dea6222cd7a1f5a0352b1ccaf3822e302615225f02936",
+      "digest": "sha256:6e75dd36ef4b5fa25d1787454cb48460fa6e45439f9a96542d78f8bf7438b8d2",
       "category": "office",
       "tags": [
         "artifact:meeting_minutes",
@@ -767,12 +731,6 @@
           "locale": "en",
           "path": "solutions/office/meeting-action-summary-beta/prompts/main.en.md",
           "digest": "sha256:f3a050a6aa86586a7ae9d0f6e24cb10418ac99d41f0117b8742c2e65f23ebe4b"
-        },
-        {
-          "role": "main",
-          "locale": "zh-CN",
-          "path": "solutions/office/meeting-action-summary-beta/prompts/main.zh-CN.md",
-          "digest": "sha256:1c7e8f2ec2f6d54a1c2c6dd912a8d78a5b2e771937915f37d432612ac106c16a"
         }
       ]
     },
@@ -878,7 +836,7 @@
       "package_id": "research",
       "id": "evidence-research-brief-beta",
       "version": "2.0.0-beta.1",
-      "digest": "sha256:055113497bdb4bb1f4d6deebf4093cdcde0eae437f651e349f242b687698268a",
+      "digest": "sha256:1846e6cf00bb503bab041e013b914aa6cfa22c7c7c6f79b01f012a3e6d0dc961",
       "category": "research",
       "tags": [
         "artifact:research_brief",
@@ -912,12 +870,6 @@
           "locale": "en",
           "path": "solutions/research/evidence-research-brief-beta/prompts/main.en.md",
           "digest": "sha256:a55e4f485321d94d4b5d7d798fc32ec475b5455ee23fa4964d7dddb20df0f4fd"
-        },
-        {
-          "role": "main",
-          "locale": "zh-CN",
-          "path": "solutions/research/evidence-research-brief-beta/prompts/main.zh-CN.md",
-          "digest": "sha256:5c32d90bb29d78861a25a9933a9e84f0faf9a7cf3223426398401b219ed8fd5f"
         }
       ]
     },
@@ -1744,7 +1696,7 @@
       "package_id": "writing",
       "id": "revision-assistant",
       "version": "1.0.0",
-      "digest": "sha256:2632bc06c09b94eba852cb5d7edbbc10884e956845719d9775fd8808e4a709b4",
+      "digest": "sha256:309a0772fcd80c995d5ef6c24faa3c64abe17802733c6957355c46f4d15f5821",
       "category": "writing",
       "tags": [
         "artifact:revised_text",
@@ -1777,12 +1729,6 @@
           "locale": "en",
           "path": "solutions/writing/revision-assistant/prompts/main.en.md",
           "digest": "sha256:3cb11c26fd335bbfca19a7f6b605ea9f7fdbae6be68df4ac82518b07fc531978"
-        },
-        {
-          "role": "main",
-          "locale": "zh-CN",
-          "path": "solutions/writing/revision-assistant/prompts/main.zh-CN.md",
-          "digest": "sha256:98d55cc491f6a9864adce6607df54e9ab8f5871e4fc26247130420534bd80991"
         }
       ]
     }

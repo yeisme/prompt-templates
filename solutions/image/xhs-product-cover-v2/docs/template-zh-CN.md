@@ -1,3 +1,5 @@
+> 人工审阅译文。编译与 Agent 投递以 `../prompts/main.en.md` 为准；本文件不注册为模板、不进入 catalog，也不参与编译。
+
 # 小红书产品封面视觉提示
 
 为产品 `{{product}}` 设计一张小红书封面图的生成提示。目标受众是 `{{audience}}`，核心卖点是 `{{selling_point}}`，视觉风格为 `{{visual_style}}`。

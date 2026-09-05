@@ -43,11 +43,6 @@
       "role": "main",
       "locale": "en",
       "path": "solutions/image/precision-candid-shot/prompts/main.en.md"
-    },
-    {
-      "role": "main",
-      "locale": "zh-CN",
-      "path": "solutions/image/precision-candid-shot/prompts/main.zh-CN.md"
     }
   ]
 }

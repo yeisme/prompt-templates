@@ -41,11 +41,6 @@
       "role": "main",
       "locale": "en",
       "path": "solutions/image/xhs-product-cover-v2/prompts/main.en.md"
-    },
-    {
-      "role": "main",
-      "locale": "zh-CN",
-      "path": "solutions/image/xhs-product-cover-v2/prompts/main.zh-CN.md"
     }
   ]
 }

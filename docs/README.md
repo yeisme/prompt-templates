@@ -2,7 +2,7 @@
 
 - [分类与标签](taxonomy.md)：十二类导航、namespace tags 和稳定 ID。
 - [内容编写](authoring.md)：solution 最小结构、Prompt 变量与质量门。
-- [国际化](i18n.md)：`zh-CN` source、`en` 适配和 freshness。
+- [国际化](i18n.md)：`en` Agent 模板、中文人工审阅译文和旧引用兼容性。
 - [发布与验证](release.md)：catalog build、validate、版本与回滚。
 - [AI 做剧官方模板测试与今日状态（2026-08-31）](ai-drama-templates-test-guide-2026-08-31.md)：离线验收、实际 preview/inspect、今日证据与已知缺口。
 - [AI 做剧官方模板测试与今日状态（2026-09-02）](ai-drama-templates-test-guide-2026-09-02.md)：模块化视觉资产 v2 全量实现的 provider-free 证据与成熟度边界。

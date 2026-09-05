@@ -1,3 +1,5 @@
+> 人工审阅译文。编译与 Agent 投递以 `../prompts/main.en.md` 为准；本文件不注册为模板、不进入 catalog，也不参与编译。
+
 # ICONIC LANDMARK SERIES 城市地标海报
 
 > 本文档是人工审阅译文，不进入编译。编译与投递只使用 `main.en.md`。

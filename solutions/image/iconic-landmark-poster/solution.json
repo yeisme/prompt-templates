@@ -45,11 +45,6 @@
       "role": "main",
       "locale": "en",
       "path": "solutions/image/iconic-landmark-poster/prompts/main.en.md"
-    },
-    {
-      "role": "main",
-      "locale": "zh-CN",
-      "path": "solutions/image/iconic-landmark-poster/prompts/main.zh-CN.md"
     }
   ]
 }

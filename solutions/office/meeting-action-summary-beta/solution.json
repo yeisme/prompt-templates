@@ -34,11 +34,6 @@
       "role": "main",
       "locale": "en",
       "path": "solutions/office/meeting-action-summary-beta/prompts/main.en.md"
-    },
-    {
-      "role": "main",
-      "locale": "zh-CN",
-      "path": "solutions/office/meeting-action-summary-beta/prompts/main.zh-CN.md"
     }
   ]
 }

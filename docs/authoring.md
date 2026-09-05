@@ -11,7 +11,7 @@
 
 变量使用 `{{variable_name}}`。不要要求模型输出隐藏思维过程；需要解释时，只要求结论、关键证据、风险、权衡和下一步。
 
-Locale 数量与语言选择遵循 `docs/locale-policy.md`：solution 默认单语言，可为任意 BCP 47 语言；第二 locale 只在有真实消费方且能维护等价性时添加。
+Locale 遵循 `docs/locale-policy.md`：Agent 可编译 solution 只注册 `en` 模板和 `en` contract。中文翻译放在 `docs/template-zh-CN.md`，只供人类审阅。
 
 成熟度：
 
@@ -24,9 +24,11 @@ Prompt Markdown 可人工编辑。完成正文后运行 `template-registry solut
 需要让 inspect 告诉用户“填什么”时，为实际占位符生成 companion contract。不得手写 JSON；先初始化，再逐字段维护：
 
 ```bash
-template-registry contract init --repository . --package image --id xhs-product-cover --role main --locale zh-CN --license internal --permission preview --permission execute_requires_review --json
-template-registry contract input set --repository . --package image --id xhs-product-cover --role main --locale zh-CN --name product --type string --required --example '便携咖啡杯' --label-zh-CN '产品' --label-en 'Product' --description-zh-CN '需要展示的真实产品' --description-en 'The real product to feature' --json
-template-registry contract validate --repository . --package image --id xhs-product-cover --role main --locale zh-CN --json
+template-registry solution add --repository . --package image --id product-cover --version 1.0.0 --category image --locale en --title 'Product Cover' --summary 'Generate a product-cover prompt' --prompt-path solutions/image/product-cover/prompts/main.en.md --role main --json
+template-registry solution locale describe --repository . --package image --id product-cover --locale zh-CN --title '产品封面' --summary '生成产品封面提示词' --usage '中文说明仅供人工审阅' --json
+template-registry contract init --repository . --package image --id product-cover --role main --locale en --license internal --permission preview --permission execute_requires_review --json
+template-registry contract input set --repository . --package image --id product-cover --role main --locale en --name product --type string --required --example 'portable coffee cup' --label-zh-CN '产品' --label-en 'Product' --description-zh-CN '需要展示的真实产品' --description-en 'The real product to feature' --json
+template-registry contract validate --repository . --package image --id product-cover --role main --locale en --json
 ```
 
 contract input 必须与正文中的 `{{name}}` 一致。example 只能使用公开、虚构、非敏感内容；敏感字段不能声明 default、example 或 enum。
@@ -35,7 +37,7 @@ contract input 必须与正文中的 `{{name}}` 一致。example 只能使用公
 
 `ai-drama-*-assets-v2` 的每个模板角色都走同一条 CLI 链（preset matrix 见 `docs/modular-visual-assets-v2.md` 模板矩阵；差异只进 contract input，不复制模板 ID）：
 
-1. 手写 `prompts/<role>.zh-CN.md`（slot 职责、编译顺序、blocking negatives、稳定失败码）。
+1. 手写 `prompts/<role>.en.md`（slot 职责、编译顺序、blocking negatives、稳定失败码），中文审阅译文写入 `docs/template-zh-CN.md`。
 2. `solution add` 注册角色——同 solution 追加模板时必须原样重复该 locale 的 title/summary/usage，否则会整块覆盖 locale 文案。
 3. `contract init` + 逐个 `contract input set`（enum 只收稳定 machine ID）+ `contract validate`。
 4. 共享输出 schema 只落一份 artifact（`document artifact add --kind schema --stdin`，JCS 落盘）；每个角色的 `document init --schema-path` 绑定同一文件，改 schema 用 `document artifact replace --expected-digest` + 全角色 `document schema rebind`，不允许复制漂移。

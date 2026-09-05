@@ -12,7 +12,6 @@ template-registry catalog validate --repository . --json
 ```bash
 template-registry contract validate --repository . --package image --id xhs-product-cover --role main --locale zh-CN --json
 template-registry contract validate --repository . --package image --id xhs-product-cover --role main --locale en --json
-template-registry contract validate --repository . --package image --id xhs-product-cover-v2 --role main --locale zh-CN --json
 template-registry contract validate --repository . --package image --id xhs-product-cover-v2 --role main --locale en --json
 template-registry contract validate --repository . --package audio --id podcast-narration --role main --locale zh-CN --json
 template-registry contract validate --repository . --package audio --id podcast-narration --role main --locale en --json
