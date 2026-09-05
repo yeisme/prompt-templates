@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:d6e2a1bed26229a36fac62e9f836f941625b45b88dfdadcc13d906d54c99a8f7",
+  "digest": "sha256:93ff691e990c822892cff431a2e85c30c19136f382f1d76b2261f67c3328646a",
   "solutions": [
     {
       "package_id": "agent",
@@ -204,6 +204,52 @@
           "locale": "zh-CN",
           "path": "solutions/general/structured-summary-beta/prompts/main.zh-CN.md",
           "digest": "sha256:0a8a426d854053ba4922436d7f93523b40ddb1851496c372ebe8094839d1dda9"
+        }
+      ]
+    },
+    {
+      "package_id": "general",
+      "id": "structured-summary-v2",
+      "version": "2.0.0",
+      "digest": "sha256:bdaf00ff4d8822640c34b10e2c56bb1f5127e40b2a8f6e2f1510beca74c084fc",
+      "category": "general",
+      "tags": [
+        "artifact:structured_summary",
+        "category:general",
+        "constraint:evidence_grounded",
+        "job:summarize",
+        "modality:text"
+      ],
+      "capabilities": [
+        "structured_output",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Structured summary for agents",
+          "summary": "A successor with explicit source boundaries and confirmable inputs",
+          "usage": "Compile and explicitly export through Template Registry without executing a model"
+        },
+        "zh-CN": {
+          "title": "结构化总结（Agent 编译版）",
+          "summary": "资料绑定、来源边界与可确认字段齐全的兼容后继版本",
+          "usage": "供 Template Registry 编译与显式导出；不执行模型"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/general/structured-summary-v2/prompts/main.en.md",
+          "digest": "sha256:1edbbde3305a62b864bf1f5d5e30bd582acf5ea4be292e26e7c5de624dbf95da"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/general/structured-summary-v2/prompts/main.zh-CN.md",
+          "digest": "sha256:80fdb31f12e7fb3e49a10ad0b8c9cd1f226c5f63957ad0d0b89e584c21459142"
         }
       ]
     },
@@ -678,6 +724,52 @@
     },
     {
       "package_id": "office",
+      "id": "meeting-action-summary-v2",
+      "version": "2.0.0",
+      "digest": "sha256:4bd3f0e0f5f37d1356e28e54f9d275a011d2207d2df6e0f48eacdbfdcce3440e",
+      "category": "office",
+      "tags": [
+        "artifact:meeting_minutes",
+        "category:office",
+        "constraint:actionable",
+        "job:summarize",
+        "modality:text"
+      ],
+      "capabilities": [
+        "structured_output",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Meeting action summary for agents",
+          "summary": "A successor with explicit source boundaries and confirmable inputs",
+          "usage": "Compile and explicitly export through Template Registry without executing a model"
+        },
+        "zh-CN": {
+          "title": "会议行动纪要（Agent 编译版）",
+          "summary": "资料绑定、来源边界与可确认字段齐全的兼容后继版本",
+          "usage": "供 Template Registry 编译与显式导出；不执行模型"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/office/meeting-action-summary-v2/prompts/main.en.md",
+          "digest": "sha256:f3a050a6aa86586a7ae9d0f6e24cb10418ac99d41f0117b8742c2e65f23ebe4b"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/office/meeting-action-summary-v2/prompts/main.zh-CN.md",
+          "digest": "sha256:4ced409da405119ebb6832f4774c7bc00c34d03e5f04e0208b6be2870c6d00b1"
+        }
+      ]
+    },
+    {
+      "package_id": "office",
       "id": "meeting-action-summary",
       "version": "1.0.0",
       "digest": "sha256:18e4e7f427a0fb19a5fef0a39db7435c13c83dd95bf2e67d8d4bc62b43e5aa44",
@@ -818,6 +910,53 @@
           "locale": "zh-CN",
           "path": "solutions/research/evidence-research-brief-beta/prompts/main.zh-CN.md",
           "digest": "sha256:5c32d90bb29d78861a25a9933a9e84f0faf9a7cf3223426398401b219ed8fd5f"
+        }
+      ]
+    },
+    {
+      "package_id": "research",
+      "id": "evidence-research-brief-v2",
+      "version": "2.0.0",
+      "digest": "sha256:6b81274b8fd658b6ecd26db808217be0eda86d17f814389a722dec57c05cf2ba",
+      "category": "research",
+      "tags": [
+        "artifact:research_brief",
+        "category:research",
+        "constraint:source_citation",
+        "job:analyze",
+        "modality:text"
+      ],
+      "capabilities": [
+        "citations",
+        "evidence_synthesis",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Evidence research brief for agents",
+          "summary": "A successor with explicit source boundaries and confirmable inputs",
+          "usage": "Compile and explicitly export through Template Registry without executing a model"
+        },
+        "zh-CN": {
+          "title": "证据研究简报（Agent 编译版）",
+          "summary": "资料绑定、来源边界与可确认字段齐全的兼容后继版本",
+          "usage": "供 Template Registry 编译与显式导出；不执行模型"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/research/evidence-research-brief-v2/prompts/main.en.md",
+          "digest": "sha256:a55e4f485321d94d4b5d7d798fc32ec475b5455ee23fa4964d7dddb20df0f4fd"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/research/evidence-research-brief-v2/prompts/main.zh-CN.md",
+          "digest": "sha256:b743309a1cd3525954bf5beec6842a49f57ba3c93ba874394b92a038e545aa49"
         }
       ]
     },

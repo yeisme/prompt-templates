@@ -1,0 +1,37 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "general",
+  "solution_id": "structured-summary-v2",
+  "version": "2.0.0",
+  "role": "main",
+  "locale": "zh-CN",
+  "template_path": "solutions/general/structured-summary-v2/prompts/main.zh-CN.md",
+  "template_digest": "sha256:80fdb31f12e7fb3e49a10ad0b8c9cd1f226c5f63957ad0d0b89e584c21459142",
+  "digest": "sha256:1ee3b09307624cce0439acfde40b7a4de4b14db363dc2b95d60bb4e539533e2e",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "source_text",
+      "type": "string",
+      "required": true,
+      "labels": {
+        "en": "Source Text",
+        "zh-CN": "资料"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "target_audience",
+      "type": "string",
+      "default": "一般读者",
+      "labels": {
+        "en": "Target Audience",
+        "zh-CN": "目标读者"
+      }
+    }
+  ]
+}
