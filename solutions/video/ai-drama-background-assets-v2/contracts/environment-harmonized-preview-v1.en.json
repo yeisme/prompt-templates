@@ -1,0 +1,157 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-background-assets-v2",
+  "version": "2.0.0",
+  "role": "environment-harmonized-preview-v1",
+  "locale": "en",
+  "template_path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-harmonized-preview-v1.en.md",
+  "template_digest": "sha256:dbd83ca2dc736ee6312620e6ce8fcee0e6721f7bc9249957edf6e744d50bafd5",
+  "digest": "sha256:53033d122e91250d6df9c38d66a77a9a3f63cffb15bef6cfcb1725728d66e71a",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "character_asset.modular_slot_bundle.v1"
+      ],
+      "labels": {
+        "en": "Output schema version",
+        "zh-CN": "输出合同版本"
+      },
+      "descriptions": {
+        "en": "Output schema version (see zh-CN description)",
+        "zh-CN": "Prompt Bundle 输出 schema 版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "preview_kind",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "harmonized_read"
+      ],
+      "labels": {
+        "en": "Preview kind",
+        "zh-CN": "预览类型"
+      },
+      "descriptions": {
+        "en": "Preview kind (see zh-CN description)",
+        "zh-CN": "本模板锁定的预览用途"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "reference_bindings_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "en": "Reference bindings JSON",
+        "zh-CN": "参考绑定"
+      },
+      "descriptions": {
+        "en": "Reference bindings JSON (see zh-CN description)",
+        "zh-CN": "带 inherit/forbid 的安全绑定 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "render_policy_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 32768,
+      "labels": {
+        "en": "Render policy JSON",
+        "zh-CN": "渲染策略"
+      },
+      "descriptions": {
+        "en": "Render policy JSON (see zh-CN description)",
+        "zh-CN": "画幅、画布策略与协调选项 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "eikona.background_asset_prompt_input.v2"
+      ],
+      "labels": {
+        "en": "Schema version",
+        "zh-CN": "输入合同版本"
+      },
+      "descriptions": {
+        "en": "Schema version (see zh-CN description)",
+        "zh-CN": "消费方输入合同版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "slot_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "preview"
+      ],
+      "labels": {
+        "en": "Slot ID",
+        "zh-CN": "资产槽位"
+      },
+      "descriptions": {
+        "en": "Slot ID (see zh-CN description)",
+        "zh-CN": "本模板锁定的 slot"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "source_refs_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "en": "Source refs JSON",
+        "zh-CN": "source lineage"
+      },
+      "descriptions": {
+        "en": "Source refs JSON (see zh-CN description)",
+        "zh-CN": "分层 source 的精确 refs（slot/version/digest/view）JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "view_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "detail_front",
+        "front_left_three_quarter",
+        "left_profile",
+        "back",
+        "right_profile",
+        "front_right_three_quarter",
+        "adaptive"
+      ],
+      "labels": {
+        "en": "View ID",
+        "zh-CN": "合成视图"
+      },
+      "descriptions": {
+        "en": "View ID (see zh-CN description)",
+        "zh-CN": "本轮唯一合成视图（六视图或 adaptive）"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}

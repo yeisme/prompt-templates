@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "realistic-diary-vlog-generation",
+  "version": "1.0.0",
+  "category": "video",
+  "tags": [
+    "artifact:shot_video",
+    "category:video",
+    "constraint:character_consistency",
+    "constraint:lip_sync",
+    "constraint:realism",
+    "job:generate",
+    "modality:video",
+    "scenario:realistic_vlog",
+    "stage:shot_generation"
+  ],
+  "capabilities": [
+    "character_consistency_lock",
+    "dialogue_lip_sync",
+    "negative_prompt_governance",
+    "shot_video_generation"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Realistic Diary Vlog Generation",
+      "summary": "Compile subject, selfie/follow camera formats, on-camera dialogue with lip sync, acoustic-space continuity, and realism constraints into a diary vlog prompt for direct video-model delivery",
+      "usage": "Use for on-camera-dialogue day-diary realistic video generation and human review; complements the VO-driven realistic-docu-vlog-generation and ambience-only realistic-vlog-shot-generation",
+      "aliases": [
+        "diary vlog prompt",
+        "on-camera dialogue vlog"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/video/realistic-diary-vlog-generation/prompts/main.en.md"
+    }
+  ]
+}

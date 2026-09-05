@@ -6,8 +6,8 @@
   "role": "clean-background-plate-v1",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-background-assets/prompts/clean-background-plate-v1.zh-CN.md",
-  "template_digest": "sha256:e1132d35d06f669fe15052e28ae06918c6768e246f8d2c767250206bf3e8c9a4",
-  "digest": "sha256:b27d767397d1d98fb54de5e3de690f953c9d13eafcfa03a27496ec3f9c4e7e2e",
+  "template_digest": "sha256:4072ed99055c22b1fc8224d7f2c943d3392b6ce25d05b6e5d33e71afe2a08df3",
+  "digest": "sha256:d2a5e94ba3388b4dfe2fe7916bea1aaa172bfb4db7f21dbb7861aa4c1ce2cd1b",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

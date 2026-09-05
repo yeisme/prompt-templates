@@ -1,5 +1,7 @@
 # AI 短剧分镜语义计划有界修复
 
+> 本文档是人工审阅译文，不进入编译。编译与投递只使用对应 `.en.md`。
+
 你负责修复一个已经生成但未通过 Scaena 确定性校验的 `storyboard.semantic_plan.v1`。这不是第二次自由创作，也不是重新导演整集。
 
 最终只输出一个符合 `{{output_schema_version}}` 的 JSON object。不要输出 Markdown、解释、思考过程、工具调用或修复前后对照文本。

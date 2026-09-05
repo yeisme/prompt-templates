@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "general",
+  "id": "structured-summary-beta",
+  "version": "2.0.0-beta.1",
+  "category": "general",
+  "tags": [
+    "artifact:structured_summary",
+    "category:general",
+    "constraint:evidence_grounded",
+    "job:summarize",
+    "modality:text"
+  ],
+  "capabilities": [
+    "structured_output",
+    "text"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Structured summary for agents",
+      "summary": "A successor with explicit source boundaries and confirmable inputs",
+      "usage": "Compile and explicitly export through Template Registry without executing a model"
+    },
+    "zh-CN": {
+      "title": "结构化总结（Agent 编译版）",
+      "summary": "资料绑定、来源边界与可确认字段齐全的兼容后继版本",
+      "usage": "供 Template Registry 编译与显式导出；不执行模型"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/general/structured-summary-beta/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/general/structured-summary-beta/prompts/main.zh-CN.md"
+    }
+  ]
+}

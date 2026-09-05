@@ -6,7 +6,7 @@
   "role": "clean-background-plate-v1",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-background-assets/prompts/clean-background-plate-v1.zh-CN.md",
-  "source_digest": "sha256:e1132d35d06f669fe15052e28ae06918c6768e246f8d2c767250206bf3e8c9a4",
+  "source_digest": "sha256:4072ed99055c22b1fc8224d7f2c943d3392b6ce25d05b6e5d33e71afe2a08df3",
   "format": "markdown",
   "media_type": "text/markdown",
   "canonicalization": "raw_utf8",
@@ -25,5 +25,5 @@
     "max_bytes": 2097152,
     "max_depth": 64
   },
-  "digest": "sha256:97b4a0253b06599251a01cc170d16beb14a33a22da638b1d5a6028db82764a6d"
+  "digest": "sha256:161ed1fbdc69f0b1c8e84980c7efe6df8befc32927162aa7a654c772d42a0771"
 }

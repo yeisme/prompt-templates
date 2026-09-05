@@ -6,8 +6,8 @@
   "role": "empty-scene-shell-v1",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.zh-CN.md",
-  "template_digest": "sha256:3c97a3dd9efc029caea0567fe5c297a085bbdb2d609432bb2e5c6ac62b10e587",
-  "digest": "sha256:58dc18f3d621e71270534400acb7000912dd4a98c322d41fe1633000f74f4b9b",
+  "template_digest": "sha256:ef18aa11fbd824af076ffe6643745114a10e5f507f862a3c76e04a870b262247",
+  "digest": "sha256:a7c0054f39f4ebe2f1bafa0f0d17d627948ec589b75469238274a8951c426811",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

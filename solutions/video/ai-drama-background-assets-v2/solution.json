@@ -17,6 +17,11 @@
   "rights": "internal",
   "maturity": "exploratory",
   "locales": {
+    "en": {
+      "title": "AI drama modular environment assets v2",
+      "summary": "Modular environment assets: standalone semantic objects and people-free empty scene shells",
+      "usage": "Rendered per slot by Eikona; empty scene shells must contain zero people and zero objects and stay fully opaque"
+    },
     "zh-CN": {
       "title": "AI 做剧模块化环境资产 v2",
       "summary": "独立语义物件与无人物空场景壳的模块化环境资产",
@@ -29,8 +34,18 @@
   "templates": [
     {
       "role": "empty-scene-shell-v1",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.en.md"
+    },
+    {
+      "role": "empty-scene-shell-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.zh-CN.md"
+    },
+    {
+      "role": "environment-harmonized-preview-v1",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-harmonized-preview-v1.en.md"
     },
     {
       "role": "environment-harmonized-preview-v1",
@@ -39,8 +54,18 @@
     },
     {
       "role": "environment-layer-preview-v1",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-layer-preview-v1.en.md"
+    },
+    {
+      "role": "environment-layer-preview-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-layer-preview-v1.zh-CN.md"
+    },
+    {
+      "role": "semantic-object-v1",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.en.md"
     },
     {
       "role": "semantic-object-v1",

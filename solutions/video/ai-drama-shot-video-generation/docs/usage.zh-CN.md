@@ -13,7 +13,7 @@
 
 1. 准备资产：角色、武器、敌方、场景资产需先在消费方资产库登记，取得稳定的 `@` 引用。
 2. 按 contract 填写 28 个输入；其中 `character_core`、`ultimate_skill_visual`、`enemy_desc`、`enemy_counterattack`、`scene_desc`、`shot_list` 为 sensitive 创作内容，不进入日志与证据。
-3. 用 promptrepo render 渲染 `main.zh-CN.md`，确认无残留占位符。
+3. 用 promptrepo render 渲染 `main.en.md`，确认无残留占位符（本 solution 为单语言 `en` 模板；中文阅读版见 `docs/template-zh-CN.md`，仅供人工审阅不进编译）。
 4. 按 `review-checklist.zh-CN.md` 人工审查渲染结果。
 5. 投递视频生成模型；权限为 `execute_requires_review`，未经人工审查不得直接执行。
 

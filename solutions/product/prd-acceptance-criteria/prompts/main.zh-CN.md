@@ -1,5 +1,7 @@
 # PRD 与验收标准
 
+> 本文档是人工审阅译文，不进入编译。编译与投递只使用对应 `.en.md`。
+
 把产品想法 `{{idea}}` 转换为面向 `{{target_user}}` 的可执行 PRD。当前工作流和痛点是 `{{current_workflow}}`，约束是 `{{constraints}}`。
 
 要求：

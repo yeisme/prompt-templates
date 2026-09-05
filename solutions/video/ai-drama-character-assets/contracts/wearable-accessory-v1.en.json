@@ -1,0 +1,196 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets",
+  "version": "1.0.0",
+  "role": "wearable-accessory-v1",
+  "locale": "en",
+  "template_path": "solutions/video/ai-drama-character-assets/prompts/wearable-accessory-v1.en.md",
+  "template_digest": "sha256:2d1c58bedf5317af16bd8e598f4742f114844b1531f584da2e889cc22c2ef4e0",
+  "digest": "sha256:9198d8b7a40177d694af2c6ecdae4947406c8d3fed729fe4ede4bf1fbf750d68",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "age_band",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "adult",
+        "minor",
+        "unknown"
+      ],
+      "labels": {
+        "en": "Age band",
+        "zh-CN": "年龄段"
+      },
+      "descriptions": {
+        "en": "Age band (see zh-CN description)",
+        "zh-CN": "minor/unknown 触发非成人化佩戴与最保守策略"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "design_spec_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Design spec JSON",
+        "zh-CN": "DesignSpec"
+      },
+      "descriptions": {
+        "en": "Design spec JSON (see zh-CN description)",
+        "zh-CN": "该 slot 的设计规格 JSON（贴合接口、单件边界、层级、遮挡/碰撞、继承/禁止）"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "character_asset.modular_slot_bundle.v1"
+      ],
+      "labels": {
+        "en": "Output schema version",
+        "zh-CN": "输出合同版本"
+      },
+      "descriptions": {
+        "en": "Output schema version (see zh-CN description)",
+        "zh-CN": "Prompt Bundle 输出 schema 版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "reference_bindings_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "en": "Reference bindings JSON",
+        "zh-CN": "参考绑定"
+      },
+      "descriptions": {
+        "en": "Reference bindings JSON (see zh-CN description)",
+        "zh-CN": "带 inherit/forbid 的安全绑定 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "render_policy_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 32768,
+      "labels": {
+        "en": "Render policy JSON",
+        "zh-CN": "渲染策略"
+      },
+      "descriptions": {
+        "en": "Render policy JSON (see zh-CN description)",
+        "zh-CN": "画幅、透明输出与单视图渲染策略 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "eikona.character_asset_prompt_input.v2"
+      ],
+      "labels": {
+        "en": "Schema version",
+        "zh-CN": "输入合同版本"
+      },
+      "descriptions": {
+        "en": "Schema version (see zh-CN description)",
+        "zh-CN": "消费方输入合同版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "slot_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "accessory",
+        "extension_part"
+      ],
+      "labels": {
+        "en": "Slot ID",
+        "zh-CN": "资产槽位"
+      },
+      "descriptions": {
+        "en": "Slot ID (see zh-CN description)",
+        "zh-CN": "本模板锁定的 slot（装饰或扩展部件）"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "style_profile_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Style profile JSON",
+        "zh-CN": "风格画像"
+      },
+      "descriptions": {
+        "en": "Style profile JSON (see zh-CN description)",
+        "zh-CN": "原创维度化视觉约束 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "topology_family",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "humanoid",
+        "quadruped",
+        "winged",
+        "serpentine",
+        "mechanical"
+      ],
+      "labels": {
+        "en": "Topology family",
+        "zh-CN": "拓扑族"
+      },
+      "descriptions": {
+        "en": "Topology family (see zh-CN description)",
+        "zh-CN": "角色身体/头部结构族"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "view_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "detail_front",
+        "front_left_three_quarter",
+        "left_profile",
+        "back",
+        "right_profile",
+        "front_right_three_quarter"
+      ],
+      "labels": {
+        "en": "View ID",
+        "zh-CN": "渲染视图"
+      },
+      "descriptions": {
+        "en": "View ID (see zh-CN description)",
+        "zh-CN": "本轮唯一生产视图（六视图合同）"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}

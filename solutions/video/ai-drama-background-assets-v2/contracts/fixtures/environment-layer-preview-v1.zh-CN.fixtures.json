@@ -8,19 +8,19 @@
   "locale": "zh-CN",
   "template": {
     "ref": "solutions/video/ai-drama-background-assets-v2/prompts/environment-layer-preview-v1.zh-CN.md",
-    "digest": "sha256:dcaccd98851f4c5b847908b821f36b32fff43316262103c0d406fa8adceef823"
+    "digest": "sha256:8a75b25b244a47168873fc5529f28f5d51fa764e32ba3ae898407775fb0c831f"
   },
   "contract": {
     "ref": "solutions/video/ai-drama-background-assets-v2/contracts/environment-layer-preview-v1.zh-CN.json",
-    "digest": "sha256:8845dc62d87cb499a772275866e8afe0cebc4867c1133b74f754a609f76336d3"
+    "digest": "sha256:83b354656f6da9f031af78d5edf8d385ea1047aa46cb975c61298ead932c4c11"
   },
   "document": {
     "ref": "solutions/video/ai-drama-background-assets-v2/contracts/documents/environment-layer-preview-v1.zh-CN.document.json",
-    "digest": "sha256:022de47be1e1dd16e34810ef74b7f92903d4a0921ac0eef856d795946ffc9e48"
+    "digest": "sha256:f7a0de42851c0862f0903447ece1fe8f098b71c3657bc10079fa5fb0ea03f211"
   },
   "schema": {
-    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
-    "digest": "sha256:aa06ba9aeed92c7fb11c0e1d152375c1da58360ccb84276b6473c70251d217f5"
+    "ref": "solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:f37d007c23f0ee6c9a5e6d99d6e2838386ab94be96a505244bbb1c4f708296f9"
   },
   "semantic_schema_version": "character_asset.modular_slot_bundle.v1",
   "cases": [
@@ -58,5 +58,5 @@
       ]
     }
   ],
-  "digest": "sha256:082aafc9259a4c979ce7e381eb18fbe943034d5e5c4c7eff5ae6b8da8cb3ed0a"
+  "digest": "sha256:7f334956ea04c90981f61cc68a8e630882a50f6a7403741314c97bddbb1adb93"
 }

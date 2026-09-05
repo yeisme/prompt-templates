@@ -25,7 +25,7 @@
 - **共享 schema 扩展预览面**：`character_asset.modular_slot_bundle.v1` 经 `document artifact replace` 增补 `preview_lineage`（仅 `slot_id=preview` 必填、其他 slot 禁用）与 `policy_echo.preview_purpose`，11 个 document 全部 rebind 到同一文件，无复制漂移。
 - **回显字段命名**：Registry fixture 门禁止 valid fixture 输出出现任何归一化后以 `ref` 结尾的键，因此 v2 共享 schema 用 `subject_version`（1.x 为 `subject_version_ref`）与 lineage 项 `source_version` + `artifact_digest`；lineage 之外的 durable ref 仍一律禁止。
 - **fixture 侧补充稳定码**：`HEAD_CORE_ISOLATION_CONTAMINATION` 覆盖首饰/脖肩类污染（prompt 声明的失败码为"至少"集，fixture 可在其上扩展并已在 preset matrix 登记）。
-- **1.x 兼容 fixture**：`surface-coat-hair-v1` 的 `legacy-hairstyle-compat` case 以 `promptrepo://official/video/ai-drama-character-assets@1.0.0#hairstyle-sheet-v1` 作 compat-only 参考，断言不重定向、不升格 canonical。
+- **1.x 兼容 fixture**：`surface-coat-hair-v1` 的 `legacy-hairstyle-compat` case 以旧 1.x 遗留 ref `promptrepo://official/video/ai-drama-character-assets@1.0.0#hairstyle-sheet-v1`（指向晋升前的 1.x hairstyle sheet）作 compat-only 参考，断言不重定向、不升格 canonical。
 
 ## 已知缺口（阻塞 first-support/release）
 
@@ -35,6 +35,6 @@
 
 ## 标准证据目录
 
-- 共享 schema：`solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json`；
-- fixture manifests：`solutions/video/ai-drama-character-assets-v2/contracts/fixtures/*.fixtures.json`、`solutions/video/ai-drama-background-assets-v2/contracts/fixtures/*.fixtures.json`；
-- preset matrix：`solutions/video/ai-drama-character-assets-v2/docs/preset-matrix.zh-CN.md`、`solutions/video/ai-drama-background-assets-v2/docs/preset-matrix.zh-CN.md`。
+- 共享 schema：`solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json`；
+- fixture manifests：`solutions/video/ai-drama-character-assets/contracts/fixtures/*.fixtures.json`、`solutions/video/ai-drama-background-assets-v2/contracts/fixtures/*.fixtures.json`；
+- preset matrix：`solutions/video/ai-drama-character-assets/docs/preset-matrix.zh-CN.md`、`solutions/video/ai-drama-background-assets-v2/docs/preset-matrix.zh-CN.md`。

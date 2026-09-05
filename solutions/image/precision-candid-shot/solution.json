@@ -1,0 +1,53 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "precision-candid-shot",
+  "version": "1.0.0",
+  "category": "image",
+  "tags": [
+    "artifact:candid_photo",
+    "category:image",
+    "constraint:quantified_parameters",
+    "constraint:realism",
+    "job:generate",
+    "modality:image",
+    "scenario:precision_candid",
+    "stage:prompt_generation"
+  ],
+  "capabilities": [
+    "image",
+    "negative_prompt_governance",
+    "quantized_camera_parameters"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Precision-Parameterized Candid Shot",
+      "summary": "Single-shot fully quantified candid prompt: camera height/lens/framing/foreground/palette/lighting all parameterized and bound exactly from a shot spec",
+      "usage": "Use with the consumer-side renderer and shot specs (JSON); optional clauses bind to empty string to omit the whole clause"
+    },
+    "zh-CN": {
+      "title": "精调参数化抓拍镜头",
+      "summary": "单镜头全量化精调抓拍 Prompt：机位高度/焦段/占幅比/前景遮挡/色块百分比/双光源全部参数化，由 shot spec 精确绑定",
+      "usage": "配合消费侧渲染器按 shot spec（JSON）绑定变量；可选子句绑定为空字符串即整段省略",
+      "aliases": [
+        "precision candid shot",
+        "参数化写真",
+        "精调抓拍"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/precision-candid-shot/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/image/precision-candid-shot/prompts/main.zh-CN.md"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   "role": "scene-package",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.zh-CN.md",
-  "source_digest": "sha256:5ae339e960deb40e5ef78e9f6a4ebec53739e5d88d57fe0c9a540e593b235e92",
+  "source_digest": "sha256:8bfd5c0ab4934f227c85540356d65eb9b68350b3a5cab534afe526cefe98636e",
   "format": "markdown",
   "media_type": "text/markdown",
   "canonicalization": "raw_utf8",
@@ -25,5 +25,5 @@
     "max_bytes": 2097152,
     "max_depth": 64
   },
-  "digest": "sha256:6104262cde672518a75d97c6d9932383e0cc0b2d964633c3435b2ba977b05872"
+  "digest": "sha256:0b5f557d44c8943bacd99fe7cad57e61c816f2bd00be64e1c6076101bafc2c0c"
 }

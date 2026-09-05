@@ -6,8 +6,8 @@
   "role": "scene-package",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.zh-CN.md",
-  "template_digest": "sha256:5ae339e960deb40e5ef78e9f6a4ebec53739e5d88d57fe0c9a540e593b235e92",
-  "digest": "sha256:5f9a2f8b7e6f0b998470608c759085b57a53a147985de333e796e78321e23441",
+  "template_digest": "sha256:8bfd5c0ab4934f227c85540356d65eb9b68350b3a5cab534afe526cefe98636e",
+  "digest": "sha256:24edc693fc0657a1d374170828fed8fa8ddc594eb036c24659a1f59be4a925cd",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

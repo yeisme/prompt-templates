@@ -1,8 +1,0 @@
-schema_version: character.module.v1
-module_id: character/wuxia-female-v1
-subject_version_ref: subject:wuxia-lan-01@v1
-subject:
-  adult: true
-  body_ratio: 7.2 heads
-  identity_anchor: 年轻成年女性，椭圆脸，黑色长发低束，眉眼清晰
-  left_marker: left-ear-small-silver-stud

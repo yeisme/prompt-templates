@@ -8,15 +8,15 @@
   "locale": "zh-CN",
   "template": {
     "ref": "solutions/video/ai-film-multi-profile-production/prompts/shot-audio-intent.zh-CN.md",
-    "digest": "sha256:4f5763c70d6643d72f42178306027269c7a32db60a0a359d5cd9660c31b1140f"
+    "digest": "sha256:97e422cb037d9b6edef568b8a32ea38b1d7c2319c7ef674f1e440740b1534357"
   },
   "contract": {
     "ref": "solutions/video/ai-film-multi-profile-production/contracts/shot-audio-intent.zh-CN.json",
-    "digest": "sha256:27c1e001a6cd687711213f786793dd31017d8d427fb310eb0400aa8b7ca28c5a"
+    "digest": "sha256:0f0529bab980c1dd757451589ebb90953ba117f74a81dd8e5c15cfe08996c8a6"
   },
   "document": {
     "ref": "solutions/video/ai-film-multi-profile-production/contracts/documents/shot-audio-intent.zh-CN.document.json",
-    "digest": "sha256:401790b67cf8420a795057089442ebb5715eeb885f0ddedd15e840f5134dc6de"
+    "digest": "sha256:bb11a77d3d183162e128b63f6bce38d43e788377d2061f7f4f633e96fde69203"
   },
   "schema": {
     "ref": "solutions/video/ai-film-multi-profile-production/contracts/schemas/ai-film-shot-audio-intent-semantic-output-v1.schema.json",
@@ -55,5 +55,5 @@
       }
     }
   ],
-  "digest": "sha256:581ffe723dc33d66c81fc79cfe62bb2cc7b8b66420389d1411ea0d03f56ac9ca"
+  "digest": "sha256:85c1deb77f7933143cc6664fdeeeafa1ac2def04b06ae4d1470b03b7e8d543a6"
 }

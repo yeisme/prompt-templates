@@ -6,8 +6,8 @@
   "role": "project-intent",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-film-multi-profile-production/prompts/project-intent.zh-CN.md",
-  "template_digest": "sha256:f4ea4e5c2fe01eb0befba6da7d9e1eb97a0d39f9379608d58991124e9fc2e5ac",
-  "digest": "sha256:b18d47605beb674b7f14a3c1e9a42da0a1cd377ebe18909ac096391d4f309a7d",
+  "template_digest": "sha256:5a19edd334a89fdf1512fbe7c638703ba968f9fb8f7a8806ca5193dbbbe17f73",
+  "digest": "sha256:98d689f6857c0980360aa3bae70fe8d6c4477528290b0663b7e85f2b2736f73d",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

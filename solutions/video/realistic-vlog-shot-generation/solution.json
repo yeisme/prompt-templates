@@ -30,15 +30,6 @@
         "home video realism",
         "realistic vlog prompt"
       ]
-    },
-    "zh-CN": {
-      "title": "写实生活记录视频生成",
-      "summary": "把人物、场景、手持拍摄质感、时间线序列与写实/声音约束编译为可直接投递视频生成模型的写实 Vlog Prompt",
-      "usage": "用于「朋友随手拍」气质的写实生活记录镜头生成与人工审查； realism 优先，反 AI 感",
-      "aliases": [
-        "写实vlog",
-        "真实感生活记录"
-      ]
     }
   },
   "templates": [
@@ -46,11 +37,6 @@
       "role": "main",
       "locale": "en",
       "path": "solutions/video/realistic-vlog-shot-generation/prompts/main.en.md"
-    },
-    {
-      "role": "main",
-      "locale": "zh-CN",
-      "path": "solutions/video/realistic-vlog-shot-generation/prompts/main.zh-CN.md"
     }
   ]
 }

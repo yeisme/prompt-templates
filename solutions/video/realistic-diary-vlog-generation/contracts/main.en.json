@@ -1,0 +1,410 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "realistic-diary-vlog-generation",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/video/realistic-diary-vlog-generation/prompts/main.en.md",
+  "template_digest": "sha256:88734793d67fff5d4379e14ff1f33fa300b51182382deeed325c5ed680087369",
+  "digest": "sha256:98b35b5320cea981065d46901a4ae262dc1c4ffe2ba1bd31db83d1f6a0126de9",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "inspect",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "ambience_design",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "卧室近距安静、街道开阔混响、排练室反射声；room tone 全程存在"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Ambience and acoustic spaces",
+        "zh-CN": "现场声与声学空间"
+      },
+      "descriptions": {
+        "en": "Location sound and room tone; acoustic space changes with each location",
+        "zh-CN": "各地点的现场声与 room tone；声学空间随地点真实变化"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "aspect_ratio",
+      "type": "enum",
+      "default": "16:9",
+      "enum": [
+        "16:9",
+        "9:16",
+        "1:1"
+      ],
+      "labels": {
+        "en": "Aspect ratio",
+        "zh-CN": "画幅比例"
+      },
+      "descriptions": {
+        "en": "Output aspect ratio",
+        "zh-CN": "输出视频画幅"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "audio_exclusions",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "无配乐、无音效堆砌、无字幕配音"
+      ],
+      "min_length": 4,
+      "max_length": 2048,
+      "labels": {
+        "en": "Audio prohibitions",
+        "zh-CN": "声音禁止项"
+      },
+      "descriptions": {
+        "en": "Banned audio elements",
+        "zh-CN": "禁止的声音元素"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "camera_exclusions",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "无商业摆拍、glamour 广告打光、稳定器与不可能的机位"
+      ],
+      "min_length": 4,
+      "max_length": 2048,
+      "labels": {
+        "en": "Camera prohibitions",
+        "zh-CN": "拍摄禁止项"
+      },
+      "descriptions": {
+        "en": "Banned camera techniques",
+        "zh-CN": "禁止的拍摄手法"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "camera_formats",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "手持自拍 + 亲密朋友手持跟拍 + 自然固定机位"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Camera formats",
+        "zh-CN": "拍摄格式声明"
+      },
+      "descriptions": {
+        "en": "Allowed capture format set, e.g. selfie, friend handheld, locked-off",
+        "zh-CN": "全片允许的拍摄格式集合，如自拍、朋友手持跟拍、固定机位"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "camera_imperfections",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "手持晃动、小幅失焦、普通室内光、自然停顿"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Camera imperfections",
+        "zh-CN": "不完美质感"
+      },
+      "descriptions": {
+        "en": "Authentic capture flaws that must be preserved",
+        "zh-CN": "必须保留的真实拍摄瑕疵"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "character_ref",
+      "type": "string",
+      "regex": "^@[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "min_length": 0,
+      "max_length": 256,
+      "labels": {
+        "en": "Character asset ref",
+        "zh-CN": "人物资产引用"
+      },
+      "descriptions": {
+        "en": "Registered character asset @-reference; @uuid and positional refs accepted",
+        "zh-CN": "已登记人物资产的 @ 引用，支持 @uuid 与 @image1 位置引用；有资产时必填"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "consistency_lock",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "全片保持完全一致的面部、发型、体型与性格气质"
+      ],
+      "min_length": 10,
+      "max_length": 2048,
+      "labels": {
+        "en": "Consistency lock",
+        "zh-CN": "一致性锁定"
+      },
+      "descriptions": {
+        "en": "Non-negotiable face/hairstyle/body/personality lock",
+        "zh-CN": "全片不可放宽的面部/发型/体型/性格锁定声明"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "dialogue_language",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "自然日语口语"
+      ],
+      "min_length": 2,
+      "max_length": 128,
+      "labels": {
+        "en": "Dialogue language",
+        "zh-CN": "台词语言"
+      },
+      "descriptions": {
+        "en": "Natural language and register of the dialogue",
+        "zh-CN": "台词使用的自然语言与语感要求"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "dialogue_script",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 16384,
+      "labels": {
+        "en": "Dialogue script",
+        "zh-CN": "出镜台词脚本"
+      },
+      "descriptions": {
+        "en": "On-camera lines with beat binding keys; preserved verbatim after render",
+        "zh-CN": "逐句出镜台词与节拍绑定键；渲染后逐字保留"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "duration_s",
+      "type": "integer",
+      "required": true,
+      "default": 60,
+      "examples": [
+        60
+      ],
+      "min": 5,
+      "max": 120,
+      "labels": {
+        "en": "Duration (s)",
+        "zh-CN": "总时长（秒）"
+      },
+      "descriptions": {
+        "en": "Total duration; the timeline must cover it continuously",
+        "zh-CN": "视频总时长，时间线必须连续覆盖"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "ending_directive",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "安静的夜间道别，录制自然结束"
+      ],
+      "min_length": 4,
+      "max_length": 2048,
+      "labels": {
+        "en": "Ending directive",
+        "zh-CN": "结尾指令"
+      },
+      "descriptions": {
+        "en": "How the video ends",
+        "zh-CN": "结尾执行方式"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "final_feel",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 2048,
+      "labels": {
+        "en": "Final feel",
+        "zh-CN": "最终气质"
+      },
+      "descriptions": {
+        "en": "Overall feel declaration of the final footage",
+        "zh-CN": "成片整体气质声明"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "footage_style",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "photorealistic personal vlog"
+      ],
+      "min_length": 4,
+      "max_length": 2048,
+      "labels": {
+        "en": "Footage style",
+        "zh-CN": "影像风格声明"
+      },
+      "descriptions": {
+        "en": "Overall footage style declaration",
+        "zh-CN": "整体影像气质声明"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "negative_prompts",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 8192,
+      "labels": {
+        "en": "Negative prompts",
+        "zh-CN": "负面提示词"
+      },
+      "descriptions": {
+        "en": "Negative constraint list; template defaults are merged",
+        "zh-CN": "负面约束清单；模板内置默认负面项会并入"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "provider_banner",
+      "type": "string",
+      "examples": [
+        "Made with Seedance 2.5"
+      ],
+      "min_length": 0,
+      "max_length": 256,
+      "labels": {
+        "en": "Provider banner",
+        "zh-CN": "平台标识行"
+      },
+      "descriptions": {
+        "en": "Optional delivery-platform banner line rendered at the top; omitted when empty",
+        "zh-CN": "可选的投递平台标识行，渲染在 Prompt 顶部；留空则省略"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "realism_rules",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Realism rules",
+        "zh-CN": "写实约束"
+      },
+      "descriptions": {
+        "en": "Anatomy, lip sync, physics and lighting realism requirements",
+        "zh-CN": "解剖、唇形同步、物理、光影等写实要求"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "resolution",
+      "type": "enum",
+      "default": "1080p",
+      "enum": [
+        "720p",
+        "1080p",
+        "4K"
+      ],
+      "labels": {
+        "en": "Resolution",
+        "zh-CN": "分辨率"
+      },
+      "descriptions": {
+        "en": "Output video resolution",
+        "zh-CN": "输出视频分辨率"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "scenario_summary",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 2048,
+      "labels": {
+        "en": "Diary summary",
+        "zh-CN": "日记梗概"
+      },
+      "descriptions": {
+        "en": "One-line summary of whose day diary this is",
+        "zh-CN": "一句话说明谁记录怎样的一天"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "story_beats",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 65536,
+      "labels": {
+        "en": "Diary beats",
+        "zh-CN": "日记时间线"
+      },
+      "descriptions": {
+        "en": "Beat timeline with location/acoustic space, capture format and dialogue binding key",
+        "zh-CN": "按节拍结构编写的时间线，每拍含地点/声学空间、机位与台词绑定键"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "subject_identity",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Subject identity",
+        "zh-CN": "人物身份特征"
+      },
+      "descriptions": {
+        "en": "Face, hair, age impression and personality traits",
+        "zh-CN": "面部、发型、年龄感、性格气质等特征"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "wardrobe_and_accessories",
+      "type": "string",
+      "required": true,
+      "min_length": 4,
+      "max_length": 4096,
+      "labels": {
+        "en": "Wardrobe logic",
+        "zh-CN": "服装逻辑"
+      },
+      "descriptions": {
+        "en": "Believable outfit-change chain and accessories; changes need diary motivation",
+        "zh-CN": "一天内合理的换装链条与配饰清单；换装须有日记事件支撑"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}

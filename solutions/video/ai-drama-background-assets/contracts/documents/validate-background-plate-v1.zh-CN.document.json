@@ -6,7 +6,7 @@
   "role": "validate-background-plate-v1",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.zh-CN.md",
-  "source_digest": "sha256:99084dd2c5cdee1dc520a92915029d84a0f3d4ae5ff114f9f8763439ec1ad20b",
+  "source_digest": "sha256:7c50244f61bee54a44d0723143bb4ffa9cd71cc399bb130aed9225d22674efbd",
   "format": "markdown",
   "media_type": "text/markdown",
   "canonicalization": "raw_utf8",
@@ -29,5 +29,5 @@
     "max_bytes": 2097152,
     "max_depth": 64
   },
-  "digest": "sha256:93f4cb63487a42129378e9a84a7481da67e263495b1f9ab90f14917efef84e3e"
+  "digest": "sha256:f9c9b1ce2bf2bea79afd20bb178ecdc08af1f6fe7a918c8ae72e16307d3db2c8"
 }

@@ -1,0 +1,543 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "iconic-landmark-poster",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/iconic-landmark-poster/prompts/main.en.md",
+  "template_digest": "sha256:d5cf6e7303bf9a4e5f3cab103bcf149e6cee78b2dc70b86429156dabc1070419",
+  "digest": "sha256:c96bf04fe691a97087f7f9fb676c9479e190bbe708f0c3359dfe570b50a1976d",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "aspect",
+      "type": "string",
+      "default": "2:3",
+      "examples": [
+        "2:3"
+      ],
+      "labels": {
+        "en": "Aspect ratio",
+        "zh-CN": "画幅"
+      },
+      "descriptions": {
+        "en": "Aspect ratio, injected from the city spec, in English",
+        "zh-CN": "画幅，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "background",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Modern London buildings may appear faintly in the distance, but must be de-emphasized"
+      ],
+      "labels": {
+        "en": "Weakened background",
+        "zh-CN": "远景弱化"
+      },
+      "descriptions": {
+        "en": "Weakened background, injected from the city spec, in English",
+        "zh-CN": "远景弱化，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "city_name",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "LONDON"
+      ],
+      "labels": {
+        "en": "City name",
+        "zh-CN": "城市名"
+      },
+      "descriptions": {
+        "en": "City name, injected from the city spec, in English",
+        "zh-CN": "城市名，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "clouds",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "A few characteristically British stratus layers and soft cumulus, a slightly overcast feel, but never gloomy"
+      ],
+      "labels": {
+        "en": "Clouds",
+        "zh-CN": "云量"
+      },
+      "descriptions": {
+        "en": "Clouds, injected from the city spec, in English",
+        "zh-CN": "云量，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "coordinates",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "51.5007° N\n0.1246° W"
+      ],
+      "labels": {
+        "en": "Coordinates",
+        "zh-CN": "经纬度"
+      },
+      "descriptions": {
+        "en": "Coordinates, injected from the city spec, in English",
+        "zh-CN": "经纬度，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "easter_egg",
+      "type": "string",
+      "examples": [
+        "Optionally hide one tiny minimalist red London double-decker bus silhouette as an easter egg, no larger than 1% of the frame"
+      ],
+      "labels": {
+        "en": "City easter egg",
+        "zh-CN": "城市彩蛋"
+      },
+      "descriptions": {
+        "en": "City easter egg, injected from the city spec, in English",
+        "zh-CN": "城市彩蛋，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "est",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "1859"
+      ],
+      "labels": {
+        "en": "EST year",
+        "zh-CN": "EST 年份"
+      },
+      "descriptions": {
+        "en": "EST year, injected from the city spec, in English",
+        "zh-CN": "EST 年份，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "feel",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Keep the feel of an architectural design archive; never drift into tourist cartoon illustration"
+      ],
+      "labels": {
+        "en": "Overall feel",
+        "zh-CN": "整体气质"
+      },
+      "descriptions": {
+        "en": "Overall feel, injected from the city spec, in English",
+        "zh-CN": "整体气质，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "footer",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "PALACE OF WESTMINSTER"
+      ],
+      "labels": {
+        "en": "Footer",
+        "zh-CN": "底部脚注"
+      },
+      "descriptions": {
+        "en": "Footer, injected from the city spec, in English",
+        "zh-CN": "底部脚注，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "hero_features",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "the gilded clock dial, the Gothic Revival spire, the finely detailed stone facade, the vertical window tracery, the crowning pinnacle"
+      ],
+      "labels": {
+        "en": "Hero photo features",
+        "zh-CN": "hero 摄影特征"
+      },
+      "descriptions": {
+        "en": "Hero photo features, injected from the city spec, in English",
+        "zh-CN": "hero 摄影特征，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "hero_identity",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "the tall rectangular tower shaft, the four large clock faces, the gilded clock-face ornament, the Gothic window tracery, the spire structure, the slender pinnacle"
+      ],
+      "labels": {
+        "en": "Hero identity elements",
+        "zh-CN": "hero 识别元素"
+      },
+      "descriptions": {
+        "en": "Hero identity elements, injected from the city spec, in English",
+        "zh-CN": "hero 识别元素，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "hero_palette",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "light sandstone, warm beige, grayish brown, low-saturation gold, deep gray-blue"
+      ],
+      "labels": {
+        "en": "Hero palette",
+        "zh-CN": "hero 配色"
+      },
+      "descriptions": {
+        "en": "Hero palette, injected from the city spec, in English",
+        "zh-CN": "hero 配色，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "hero_placement",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Big Ben / Elizabeth Tower sits right of the visual center, the full tower clearly visible from its base to the spire tip, uncropped, with strictly true architectural proportions"
+      ],
+      "labels": {
+        "en": "Hero placement",
+        "zh-CN": "hero 位置与比例"
+      },
+      "descriptions": {
+        "en": "Hero placement, injected from the city spec, in English",
+        "zh-CN": "hero 位置与比例，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "hero_simplification",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Simplify the complex Gothic structure into rectangles + thin vertical lines + triangles + pointed arches + ultra-fine geometric lines; render each clock face as a single restrained pale-gold circle; no thick black outlines"
+      ],
+      "labels": {
+        "en": "Hero simplification",
+        "zh-CN": "hero 解构规则"
+      },
+      "descriptions": {
+        "en": "Hero simplification, injected from the city spec, in English",
+        "zh-CN": "hero 解构规则，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "landmarks_line",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Big Ben / Elizabeth Tower + Palace of Westminster + River Thames"
+      ],
+      "labels": {
+        "en": "Core landmarks line",
+        "zh-CN": "核心地标组合"
+      },
+      "descriptions": {
+        "en": "Core landmarks line, injected from the city spec, in English",
+        "zh-CN": "核心地标组合，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "lens",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "50-85mm architectural photography, medium-telephoto compression, building verticals kept perfectly straight, no fisheye, no exaggerated wide-angle distortion"
+      ],
+      "labels": {
+        "en": "Lens spec",
+        "zh-CN": "镜头参数"
+      },
+      "descriptions": {
+        "en": "Lens spec, injected from the city spec, in English",
+        "zh-CN": "镜头参数，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "negative_extra",
+      "type": "string",
+      "examples": [
+        "cartoon Big Ben, chibi London, children's book illustration, neon London, wrong Big Ben proportions, bent clock tower, missing clock face, incorrect Gothic structure, duplicated clock tower, London Eye stealing the subject, cheap tourist postcard style"
+      ],
+      "labels": {
+        "en": "City-specific negatives",
+        "zh-CN": "城市专属负面词"
+      },
+      "descriptions": {
+        "en": "City-specific negatives, injected from the city spec, in English",
+        "zh-CN": "城市专属负面词，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "quality",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "authentic London travel photography, premium architectural photography, cinematic golden hour, real stone texture, natural HDR, high dynamic range, 4K"
+      ],
+      "labels": {
+        "en": "Quality tail",
+        "zh-CN": "质感尾词"
+      },
+      "descriptions": {
+        "en": "Quality tail, injected from the city spec, in English",
+        "zh-CN": "质感尾词，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "rim_light",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Sunlight passes through the clouds from behind the side, tracing a delicate golden rim light along Big Ben's edges"
+      ],
+      "labels": {
+        "en": "Rim light",
+        "zh-CN": "轮廓光"
+      },
+      "descriptions": {
+        "en": "Rim light, injected from the city spec, in English",
+        "zh-CN": "轮廓光，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "river",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "The broad River Thames fills the foreground, occupying about 20-25% of the photography area; the water is low-saturation blue-gray with fine natural ripples and slight building reflections"
+      ],
+      "labels": {
+        "en": "Foreground river",
+        "zh-CN": "前景水体"
+      },
+      "descriptions": {
+        "en": "Foreground river, injected from the city spec, in English",
+        "zh-CN": "前景水体，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "river_lines",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "A single ultra-fine deep gray-blue horizontal line beneath the buildings sets the baseline, with 5-7 ultra-thin horizontal lines of varying lengths below it in mist blue, gray-blue, and light navy, abstracting the Thames water surface"
+      ],
+      "labels": {
+        "en": "Abstract river lines",
+        "zh-CN": "水体抽象线条"
+      },
+      "descriptions": {
+        "en": "Abstract river lines, injected from the city spec, in English",
+        "zh-CN": "水体抽象线条，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "scale_reference",
+      "type": "string",
+      "examples": [
+        "A single very small London tour boat may appear as a scale reference, but must not steal the subject"
+      ],
+      "labels": {
+        "en": "Scale reference",
+        "zh-CN": "比例参照物"
+      },
+      "descriptions": {
+        "en": "Scale reference, injected from the city spec, in English",
+        "zh-CN": "比例参照物，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "series_no",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "001"
+      ],
+      "labels": {
+        "en": "Series number",
+        "zh-CN": "系列编号"
+      },
+      "descriptions": {
+        "en": "Series number, injected from the city spec, in English",
+        "zh-CN": "系列编号，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "sky_gradient",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "a natural gradient from pale gray-blue to soft misty violet to light peach pink to faint warm gold"
+      ],
+      "labels": {
+        "en": "Sky gradient",
+        "zh-CN": "天空渐变"
+      },
+      "descriptions": {
+        "en": "Sky gradient, injected from the city spec, in English",
+        "zh-CN": "天空渐变，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "skyline",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "The Palace of Westminster stretches horizontally beside Big Ben, forming the classic London skyline; the buildings use real warm beige stone, with soft golden highlights where the setting sun strikes"
+      ],
+      "labels": {
+        "en": "Skyline and stone",
+        "zh-CN": "天际线与石材"
+      },
+      "descriptions": {
+        "en": "Skyline and stone, injected from the city spec, in English",
+        "zh-CN": "天际线与石材，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "LONDON, UNITED KINGDOM"
+      ],
+      "labels": {
+        "en": "Subtitle",
+        "zh-CN": "副标题"
+      },
+      "descriptions": {
+        "en": "Subtitle, injected from the city spec, in English",
+        "zh-CN": "副标题，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "sun",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "A huge translucent geometric circle sun sits behind and slightly left of Big Ben, in very soft British mist pink / Dusty Rose / Pale Peach; the circle is partially occluded by Big Ben and the Palace; no realistic sun texture"
+      ],
+      "labels": {
+        "en": "Geometric sun",
+        "zh-CN": "几何太阳"
+      },
+      "descriptions": {
+        "en": "Geometric sun, injected from the city spec, in English",
+        "zh-CN": "几何太阳，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "supporting",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "A simplified Palace of Westminster extends horizontally to the left of Big Ben; the complex Gothic facade is highly geometricized, keeping only the row of spires, the rectangular main body, the towers, the pointed-arch windows, and the horizontal base; the building must be clearly lower than Big Ben"
+      ],
+      "labels": {
+        "en": "Supporting deconstruction",
+        "zh-CN": "配景建筑解构"
+      },
+      "descriptions": {
+        "en": "Supporting deconstruction, injected from the city spec, in English",
+        "zh-CN": "配景建筑解构，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "supporting_palette",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "beige-gray, sand, light brown, gray-blue, pale gold"
+      ],
+      "labels": {
+        "en": "Supporting palette",
+        "zh-CN": "配景配色"
+      },
+      "descriptions": {
+        "en": "Supporting palette, injected from the city spec, in English",
+        "zh-CN": "配景配色，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "time",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "London evening, golden hour transitioning into blue hour"
+      ],
+      "labels": {
+        "en": "Time of day",
+        "zh-CN": "时间设定"
+      },
+      "descriptions": {
+        "en": "Time of day, injected from the city spec, in English",
+        "zh-CN": "时间设定，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "title_line1",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "LONDON"
+      ],
+      "labels": {
+        "en": "Title line 1",
+        "zh-CN": "主标题第一行"
+      },
+      "descriptions": {
+        "en": "Title line 1, injected from the city spec, in English",
+        "zh-CN": "主标题第一行，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "title_line2",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "BIG BEN"
+      ],
+      "labels": {
+        "en": "Title line 2",
+        "zh-CN": "主标题第二行"
+      },
+      "descriptions": {
+        "en": "Title line 2, injected from the city spec, in English",
+        "zh-CN": "主标题第二行，城市 spec 注入，英文"
+      }
+    },
+    {
+      "name": "viewpoint",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Viewing the Palace of Westminster from near the south bank of the River Thames"
+      ],
+      "labels": {
+        "en": "Photo viewpoint",
+        "zh-CN": "摄影视点"
+      },
+      "descriptions": {
+        "en": "Photo viewpoint, injected from the city spec, in English",
+        "zh-CN": "摄影视点，城市 spec 注入，英文"
+      }
+    }
+  ]
+}

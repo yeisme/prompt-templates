@@ -1,5 +1,7 @@
 # 小红书活动文案
 
+> 本文档是人工审阅译文，不进入编译。编译与投递只使用对应 `.en.md`。
+
 为 `{{product_or_campaign}}` 生成面向 `{{audience}}` 的小红书活动内容，真实卖点来自 `{{verified_benefits}}`，品牌语气为 `{{brand_voice}}`。
 
 要求：

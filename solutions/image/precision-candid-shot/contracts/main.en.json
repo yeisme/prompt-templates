@@ -1,0 +1,347 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "precision-candid-shot",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/precision-candid-shot/prompts/main.en.md",
+  "template_digest": "sha256:dd3967ca1376f6f6ff0dfc5056eaf9d7e10e8eca54e89d0fe3555d2b52dcbcc3",
+  "digest": "sha256:202983310a4552f68b21d48debb51aac2ac491f00bf5491f8b92e96b1e07573f",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "aspect",
+      "type": "string",
+      "default": "9:16",
+      "examples": [
+        "9:16"
+      ],
+      "labels": {
+        "en": "Aspect ratio",
+        "zh-CN": "画幅"
+      },
+      "descriptions": {
+        "en": "Aspect ratio",
+        "zh-CN": "Aspect ratio"
+      }
+    },
+    {
+      "name": "atmosphere",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "giving a spontaneous intimate snapshot feeling"
+      ],
+      "labels": {
+        "en": "Atmosphere",
+        "zh-CN": "氛围"
+      },
+      "descriptions": {
+        "en": "Atmosphere",
+        "zh-CN": "Atmosphere"
+      }
+    },
+    {
+      "name": "background_sentence",
+      "type": "string",
+      "examples": [
+        " Dim ordinary apartment background, dark wooden floor, slightly underexposed surroundings."
+      ],
+      "labels": {
+        "en": "Background sentence",
+        "zh-CN": "背景整句"
+      },
+      "descriptions": {
+        "en": "Background sentence",
+        "zh-CN": "Background sentence"
+      }
+    },
+    {
+      "name": "camera_position_clause",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Camera positioned slightly above eye level and extremely close to her face"
+      ],
+      "labels": {
+        "en": "Camera position clause",
+        "zh-CN": "机位子句"
+      },
+      "descriptions": {
+        "en": "Camera position clause",
+        "zh-CN": "Camera position clause"
+      }
+    },
+    {
+      "name": "expression",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "large moist eyes looking directly into the camera"
+      ],
+      "labels": {
+        "en": "Expression",
+        "zh-CN": "表情"
+      },
+      "descriptions": {
+        "en": "Expression",
+        "zh-CN": "Expression"
+      }
+    },
+    {
+      "name": "fingerprints_sentence",
+      "type": "string",
+      "examples": [
+        " Scene fingerprints: city lights outside the large window, photo collage on the wall."
+      ],
+      "labels": {
+        "en": "Fingerprints sentence",
+        "zh-CN": "场景指纹整句"
+      },
+      "descriptions": {
+        "en": "Fingerprints sentence",
+        "zh-CN": "Fingerprints sentence"
+      }
+    },
+    {
+      "name": "foreground_sentence",
+      "type": "string",
+      "examples": [
+        " A blurred notebook and laptop cover about 15% of the lower foreground."
+      ],
+      "labels": {
+        "en": "Foreground sentence",
+        "zh-CN": "前景整句"
+      },
+      "descriptions": {
+        "en": "Foreground sentence",
+        "zh-CN": "Foreground sentence"
+      }
+    },
+    {
+      "name": "framing",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "her face large in the upper center of the frame while her body recedes downward"
+      ],
+      "labels": {
+        "en": "Framing",
+        "zh-CN": "取景"
+      },
+      "descriptions": {
+        "en": "Framing",
+        "zh-CN": "Framing"
+      }
+    },
+    {
+      "name": "lens",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "20mm wide angle"
+      ],
+      "labels": {
+        "en": "Lens",
+        "zh-CN": "焦段"
+      },
+      "descriptions": {
+        "en": "Lens",
+        "zh-CN": "Lens"
+      }
+    },
+    {
+      "name": "light_fill_clause",
+      "type": "string",
+      "examples": [
+        ", cool city window light from frame right"
+      ],
+      "labels": {
+        "en": "Fill light clause",
+        "zh-CN": "辅光子句"
+      },
+      "descriptions": {
+        "en": "Fill light clause",
+        "zh-CN": "Fill light clause"
+      }
+    },
+    {
+      "name": "light_key",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Direct on camera flash, bright pale skin highlights, hard compact shadows"
+      ],
+      "labels": {
+        "en": "Key light",
+        "zh-CN": "主光"
+      },
+      "descriptions": {
+        "en": "Key light",
+        "zh-CN": "Key light"
+      }
+    },
+    {
+      "name": "negatives",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "no studio lighting, no beauty filter"
+      ],
+      "labels": {
+        "en": "Negatives",
+        "zh-CN": "负向词"
+      },
+      "descriptions": {
+        "en": "Negatives",
+        "zh-CN": "Negatives"
+      }
+    },
+    {
+      "name": "orientation",
+      "type": "string",
+      "default": "Vertical",
+      "examples": [
+        "Vertical"
+      ],
+      "labels": {
+        "en": "Orientation",
+        "zh-CN": "画幅方向"
+      },
+      "descriptions": {
+        "en": "Orientation",
+        "zh-CN": "Orientation"
+      }
+    },
+    {
+      "name": "palette_sentence",
+      "type": "string",
+      "examples": [
+        " Main colors: 40% warm cream, 25% dark brown-black, 20% cool blue-gray, 15% skin tone."
+      ],
+      "labels": {
+        "en": "Palette sentence",
+        "zh-CN": "色板整句"
+      },
+      "descriptions": {
+        "en": "Palette sentence",
+        "zh-CN": "Palette sentence"
+      }
+    },
+    {
+      "name": "perspective_clause",
+      "type": "string",
+      "examples": [
+        ", strong perspective distortion"
+      ],
+      "labels": {
+        "en": "Perspective clause",
+        "zh-CN": "透视子句"
+      },
+      "descriptions": {
+        "en": "Perspective clause",
+        "zh-CN": "Perspective clause"
+      }
+    },
+    {
+      "name": "pose",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "bending forward toward the camera, upper body leaning close to the lens"
+      ],
+      "labels": {
+        "en": "Pose",
+        "zh-CN": "姿势"
+      },
+      "descriptions": {
+        "en": "Pose",
+        "zh-CN": "Pose"
+      }
+    },
+    {
+      "name": "pronoun",
+      "type": "string",
+      "default": "She",
+      "examples": [
+        "She"
+      ],
+      "labels": {
+        "en": "Pronoun",
+        "zh-CN": "代词"
+      },
+      "descriptions": {
+        "en": "Pronoun",
+        "zh-CN": "Pronoun"
+      }
+    },
+    {
+      "name": "quality",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Real smartphone flash photography, natural skin texture, slight grain"
+      ],
+      "labels": {
+        "en": "Quality tail",
+        "zh-CN": "质感尾词"
+      },
+      "descriptions": {
+        "en": "Quality tail",
+        "zh-CN": "Quality tail"
+      }
+    },
+    {
+      "name": "subject_description",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "an adult East Asian woman indoors at night, long messy dark hair with wispy bangs, soft pink makeup, slightly flushed cheeks, glossy natural lips"
+      ],
+      "labels": {
+        "en": "Subject description",
+        "zh-CN": "主体描述"
+      },
+      "descriptions": {
+        "en": "Subject description",
+        "zh-CN": "Subject description"
+      }
+    },
+    {
+      "name": "tail_clause",
+      "type": "string",
+      "examples": [
+        ", photorealistic"
+      ],
+      "labels": {
+        "en": "Tail clause",
+        "zh-CN": "收尾子句"
+      },
+      "descriptions": {
+        "en": "Tail clause",
+        "zh-CN": "Tail clause"
+      }
+    },
+    {
+      "name": "wardrobe",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "a light gray white lace camisole with thin straps and white mid calf socks"
+      ],
+      "labels": {
+        "en": "Wardrobe",
+        "zh-CN": "服装"
+      },
+      "descriptions": {
+        "en": "Wardrobe",
+        "zh-CN": "Wardrobe"
+      }
+    }
+  ]
+}

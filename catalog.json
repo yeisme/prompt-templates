@@ -7,13 +7,13 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:ff6dc25ec7873033c6739d74b3d5cad8fc7f0c32859fb637fde37cb356cc4ebc",
+  "digest": "sha256:d6e2a1bed26229a36fac62e9f836f941625b45b88dfdadcc13d906d54c99a8f7",
   "solutions": [
     {
       "package_id": "agent",
       "id": "tool-use-handoff",
       "version": "1.0.0",
-      "digest": "sha256:0825829527750e49e12b7c9606c48e7be881a2d0a0059e890fa4638aaafb275a",
+      "digest": "sha256:c8349c28f2e1da3e3c2e088ab4f74b040cfafbcce6830605966672f4c865d9ab",
       "category": "agent",
       "tags": [
         "artifact:handoff_packet",
@@ -55,7 +55,7 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/agent/tool-use-handoff/prompts/main.zh-CN.md",
-          "digest": "sha256:d1d5a8f5f975c158c5b0ff7b6db4cb6eafbb25fced63da9ae484c1ca86f51d93"
+          "digest": "sha256:d8f3e4bb83262db7a7a67345bc747da41daefaabea7428137f8f97939140135b"
         }
       ]
     },
@@ -63,7 +63,7 @@
       "package_id": "audio",
       "id": "podcast-narration",
       "version": "1.0.0",
-      "digest": "sha256:dc0d832ac8c98d144d0ba4510e42926789284860843a5321664d7565f340b42e",
+      "digest": "sha256:ec3c47eaacc743003e504981f96e2d398f785742dbbcb0b1dba822fd7e8ec117",
       "category": "audio",
       "tags": [
         "artifact:voiceover",
@@ -107,7 +107,7 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/audio/podcast-narration/prompts/main.zh-CN.md",
-          "digest": "sha256:78b8ff6d38de8151fce85d980c65a8fb46c54a9e69fd47e88b3f5229ed04648e"
+          "digest": "sha256:0b3cf2ccf51774d6c33309aba45598ef88a46edcd86db2d3da7c5e81480e8ea0"
         }
       ]
     },
@@ -115,7 +115,7 @@
       "package_id": "engineering",
       "id": "bug-root-cause-analysis",
       "version": "1.0.0",
-      "digest": "sha256:06df2f142a2401dd777f5ca731b20e2da7b8b0488c4ab05a914bb9eb3fccc43d",
+      "digest": "sha256:cf0f9cb91ad3acfe509f033e63bd718e480f299f0779201b01fe75d1e3d70c32",
       "category": "engineering",
       "tags": [
         "artifact:root_cause_report",
@@ -157,7 +157,53 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/engineering/bug-root-cause-analysis/prompts/main.zh-CN.md",
-          "digest": "sha256:461ca782e7efc36af02fd7e572fb836d2929bb740a2ea00ce9a2762a22aea47b"
+          "digest": "sha256:a2125d911ea7c244de456118c95eab4cc10fbfc6bd945ba4f161c2d42a98fe93"
+        }
+      ]
+    },
+    {
+      "package_id": "general",
+      "id": "structured-summary-beta",
+      "version": "2.0.0-beta.1",
+      "digest": "sha256:2ebc188d5e3f11640aaaaddf17af1ded269d0a460e990397e33816429ef0eba0",
+      "category": "general",
+      "tags": [
+        "artifact:structured_summary",
+        "category:general",
+        "constraint:evidence_grounded",
+        "job:summarize",
+        "modality:text"
+      ],
+      "capabilities": [
+        "structured_output",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Structured summary for agents",
+          "summary": "A successor with explicit source boundaries and confirmable inputs",
+          "usage": "Compile and explicitly export through Template Registry without executing a model"
+        },
+        "zh-CN": {
+          "title": "结构化总结（Agent 编译版）",
+          "summary": "资料绑定、来源边界与可确认字段齐全的兼容后继版本",
+          "usage": "供 Template Registry 编译与显式导出；不执行模型"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/general/structured-summary-beta/prompts/main.en.md",
+          "digest": "sha256:1edbbde3305a62b864bf1f5d5e30bd582acf5ea4be292e26e7c5de624dbf95da"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/general/structured-summary-beta/prompts/main.zh-CN.md",
+          "digest": "sha256:0a8a426d854053ba4922436d7f93523b40ddb1851496c372ebe8094839d1dda9"
         }
       ]
     },
@@ -165,7 +211,7 @@
       "package_id": "general",
       "id": "structured-summary",
       "version": "1.0.0",
-      "digest": "sha256:efc159e390154a9e4ea32f06da3f4c6785894419971543f7bcd5b43e1a3cd83a",
+      "digest": "sha256:8156c96b7e1c863c575e46933829a747f835cbc0baabf8179575c0d32c414c26",
       "category": "general",
       "tags": [
         "artifact:structured_summary",
@@ -206,7 +252,7 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/general/structured-summary/prompts/main.zh-CN.md",
-          "digest": "sha256:3942036b2dbbcdcffae1f9b10de01242d55631fda4e296ac04add0c7560cdbce"
+          "digest": "sha256:032ead0d534bb067eba73f08de4c7cc401c474b7359f4672ec06becb6c354f8c"
         }
       ]
     },
@@ -269,9 +315,176 @@
     },
     {
       "package_id": "image",
+      "id": "candid-portrait-matrix",
+      "version": "1.0.0",
+      "digest": "sha256:a4430007a41ffad4245cec956a17899c38e048e4e8a6e5c2263103d25ade09d0",
+      "category": "image",
+      "tags": [
+        "artifact:candid_portrait",
+        "category:image",
+        "constraint:batch_dedup",
+        "constraint:realism",
+        "job:generate",
+        "modality:image",
+        "scenario:summer_candid",
+        "stage:prompt_generation"
+      ],
+      "capabilities": [
+        "image",
+        "negative_prompt_governance",
+        "random_matrix_sampling"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Candid Lifestyle Portrait (Random Matrix)",
+          "summary": "Compile a subject plus 12 picture dimensions into a candid summer portrait prompt ready for image-model delivery",
+          "usage": "Use with the consumer-side sampler for batched candidates and in-batch dedup; bind all variables manually for single shots"
+        },
+        "zh-CN": {
+          "title": "真实生活摄影抓拍写真（随机矩阵）",
+          "summary": "把主体与 12 个画面维度（表情/服装/场景/瞬间/景别/焦段/机位/构图/前景/光线/色彩/摄影状态）编译为可直接投递图像模型的抓拍写真 Prompt",
+          "usage": "配合消费侧采样器做批量候选生成与批内去重；单图使用时手工绑定全部变量",
+          "aliases": [
+            "candid portrait matrix",
+            "夏日写真",
+            "抓拍写真"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/candid-portrait-matrix/prompts/main.en.md",
+          "digest": "sha256:652a718a9d10636ecb2d72737171fba8bf08a3199beea07333a3e9c988356555"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/image/candid-portrait-matrix/prompts/main.zh-CN.md",
+          "digest": "sha256:a628f8e0546a8e08c17e9f6d369f850bf6f99725313c9fd168ffc45bfcec2fdb"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "iconic-landmark-poster",
+      "version": "1.0.0",
+      "digest": "sha256:e00d21067ae1499c10a68143cccbad2a767c81ecee0b36583c8821bf72e102c9",
+      "category": "image",
+      "tags": [
+        "artifact:poster",
+        "category:image",
+        "constraint:series_consistency",
+        "constraint:visual_system_lock",
+        "job:generate",
+        "modality:image",
+        "scenario:city_landmark",
+        "stage:prompt_generation",
+        "use:cover"
+      ],
+      "capabilities": [
+        "archival_typography",
+        "image",
+        "negative_prompt_governance",
+        "series_visual_system"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "ICONIC LANDMARK SERIES City Landmark Poster",
+          "summary": "Fixed visual system (photo upper + vector lower + archival typography) city landmark poster prompt with fully parameterized city content",
+          "usage": "Use with the consumer-side renderer and city specs; supports per-city variants and a series index"
+        },
+        "zh-CN": {
+          "title": "ICONIC LANDMARK SERIES 城市地标海报",
+          "summary": "固定视觉系统（上半真实摄影 + 下半矢量解构 + 建筑档案排版）的城市地标海报 Prompt，城市差异全部变量化",
+          "usage": "配合消费侧渲染器按城市 spec 绑定变量；支持同城多变体与系列索引",
+          "aliases": [
+            "iconic landmark poster",
+            "地标海报",
+            "城市海报"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/iconic-landmark-poster/prompts/main.en.md",
+          "digest": "sha256:d5cf6e7303bf9a4e5f3cab103bcf149e6cee78b2dc70b86429156dabc1070419"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/image/iconic-landmark-poster/prompts/main.zh-CN.md",
+          "digest": "sha256:0f1323cba503deb30d524211996172465b4bd070ba5af704a06494d12a4e089d"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "precision-candid-shot",
+      "version": "1.0.0",
+      "digest": "sha256:a3037552f594fac37d7166a3ef61950dd0707cc9afc0d0b19bd04edd3765a28e",
+      "category": "image",
+      "tags": [
+        "artifact:candid_photo",
+        "category:image",
+        "constraint:quantified_parameters",
+        "constraint:realism",
+        "job:generate",
+        "modality:image",
+        "scenario:precision_candid",
+        "stage:prompt_generation"
+      ],
+      "capabilities": [
+        "image",
+        "negative_prompt_governance",
+        "quantized_camera_parameters"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Precision-Parameterized Candid Shot",
+          "summary": "Single-shot fully quantified candid prompt: camera height/lens/framing/foreground/palette/lighting all parameterized and bound exactly from a shot spec",
+          "usage": "Use with the consumer-side renderer and shot specs (JSON); optional clauses bind to empty string to omit the whole clause"
+        },
+        "zh-CN": {
+          "title": "精调参数化抓拍镜头",
+          "summary": "单镜头全量化精调抓拍 Prompt：机位高度/焦段/占幅比/前景遮挡/色块百分比/双光源全部参数化，由 shot spec 精确绑定",
+          "usage": "配合消费侧渲染器按 shot spec（JSON）绑定变量；可选子句绑定为空字符串即整段省略",
+          "aliases": [
+            "precision candid shot",
+            "参数化写真",
+            "精调抓拍"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/precision-candid-shot/prompts/main.en.md",
+          "digest": "sha256:dd3967ca1376f6f6ff0dfc5056eaf9d7e10e8eca54e89d0fe3555d2b52dcbcc3"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/image/precision-candid-shot/prompts/main.zh-CN.md",
+          "digest": "sha256:bb4dc393b63b8b733b50ee180d1312a312fc5a1e0df6a46edf9fa14bcc1355c5"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
       "id": "xhs-product-cover",
       "version": "1.0.0",
-      "digest": "sha256:ba8cab020f5e942857ef0f9b790f4f29ade0c5eeac322e1bc42db32a64632f70",
+      "digest": "sha256:13cbe5fda23a06bccde2d0cd883205bb7a532381adf1204227ce83422de20451",
       "category": "image",
       "tags": [
         "artifact:cover_image",
@@ -314,7 +527,7 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/image/xhs-product-cover/prompts/main.zh-CN.md",
-          "digest": "sha256:c081e1c618861899fb522e284eef137faa30b3abb1837fc2ac0d11a84204ec1d"
+          "digest": "sha256:c731bfe27a14c7c741284c2ce9c5abab7a9111af2fe5d8dbc4fef481b8ae263c"
         }
       ]
     },
@@ -322,7 +535,7 @@
       "package_id": "learning",
       "id": "socratic-study-plan",
       "version": "1.0.0",
-      "digest": "sha256:058d8d277794fc9f5f7c67c15c36ffb7014002516b2f7c6557c5cc692d49fafb",
+      "digest": "sha256:10b268573202fa75e2b255e75e5e2b38a565572f34e9fc1567493f48fd34d302",
       "category": "learning",
       "tags": [
         "artifact:study_plan",
@@ -363,7 +576,7 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/learning/socratic-study-plan/prompts/main.zh-CN.md",
-          "digest": "sha256:264da5b1a7a581341bbb72641c18e105fd5b1d81f8d02ef5116d06433800631c"
+          "digest": "sha256:fbcdb2544de55ffa554ef9363a23e075861bb8daa7b903ea6670808e54747b14"
         }
       ]
     },
@@ -371,7 +584,7 @@
       "package_id": "marketing",
       "id": "xhs-campaign-copy",
       "version": "1.0.0",
-      "digest": "sha256:e850d6cf9e26e920ac2485d187d44c30e80b92b0283bb9b51ef5b57bbaff2712",
+      "digest": "sha256:d3e315aa5b9689648cea6515ced830b429e5656d5545feb9605285df0a0f4d5c",
       "category": "marketing",
       "tags": [
         "artifact:social_post",
@@ -413,7 +626,53 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/marketing/xhs-campaign-copy/prompts/main.zh-CN.md",
-          "digest": "sha256:1cd6eb93321511f32d045686b67983a7b869dd0e92f7adb60db3d22cbb44eb81"
+          "digest": "sha256:f42b8e6baaab4f394420c78d134f7af3a85d83228f6d3a8db67930192f565020"
+        }
+      ]
+    },
+    {
+      "package_id": "office",
+      "id": "meeting-action-summary-beta",
+      "version": "2.0.0-beta.1",
+      "digest": "sha256:0b1b574e905007aaec7dea6222cd7a1f5a0352b1ccaf3822e302615225f02936",
+      "category": "office",
+      "tags": [
+        "artifact:meeting_minutes",
+        "category:office",
+        "constraint:actionable",
+        "job:summarize",
+        "modality:text"
+      ],
+      "capabilities": [
+        "structured_output",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Meeting action summary for agents",
+          "summary": "A successor with explicit source boundaries and confirmable inputs",
+          "usage": "Compile and explicitly export through Template Registry without executing a model"
+        },
+        "zh-CN": {
+          "title": "会议行动纪要（Agent 编译版）",
+          "summary": "资料绑定、来源边界与可确认字段齐全的兼容后继版本",
+          "usage": "供 Template Registry 编译与显式导出；不执行模型"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/office/meeting-action-summary-beta/prompts/main.en.md",
+          "digest": "sha256:f3a050a6aa86586a7ae9d0f6e24cb10418ac99d41f0117b8742c2e65f23ebe4b"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/office/meeting-action-summary-beta/prompts/main.zh-CN.md",
+          "digest": "sha256:1c7e8f2ec2f6d54a1c2c6dd912a8d78a5b2e771937915f37d432612ac106c16a"
         }
       ]
     },
@@ -421,7 +680,7 @@
       "package_id": "office",
       "id": "meeting-action-summary",
       "version": "1.0.0",
-      "digest": "sha256:5b7096a284fc8a1a8183c129c63820a14b5d93d816016b7d720836b2fd1a9b1e",
+      "digest": "sha256:18e4e7f427a0fb19a5fef0a39db7435c13c83dd95bf2e67d8d4bc62b43e5aa44",
       "category": "office",
       "tags": [
         "artifact:meeting_minutes",
@@ -462,7 +721,7 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/office/meeting-action-summary/prompts/main.zh-CN.md",
-          "digest": "sha256:29d952442e24ead5c93b00560547ddf54354f24814cb30396d26e03222ded856"
+          "digest": "sha256:660c51b1260efac9196055b93c1f23e595632a6c85b8f6b21a429592f1ccc379"
         }
       ]
     },
@@ -470,7 +729,7 @@
       "package_id": "product",
       "id": "prd-acceptance-criteria",
       "version": "1.0.0",
-      "digest": "sha256:b27a5cf7c353e4dacdcd8acc4a27cb22df9d2abf95b76e9fe96e1e2ba3f495e1",
+      "digest": "sha256:354f98693ef9067ff091bb048e1038be593e87da579ed7ad6acf0775b229217a",
       "category": "product",
       "tags": [
         "artifact:prd",
@@ -511,7 +770,54 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/product/prd-acceptance-criteria/prompts/main.zh-CN.md",
-          "digest": "sha256:c82fcd414272976a0e3379a05372a1635b39cf449e103588b25caf89df975362"
+          "digest": "sha256:7c7b0a200292edcd0666b93983fcd545f3ce7c957e73da35d90355e094e236d4"
+        }
+      ]
+    },
+    {
+      "package_id": "research",
+      "id": "evidence-research-brief-beta",
+      "version": "2.0.0-beta.1",
+      "digest": "sha256:055113497bdb4bb1f4d6deebf4093cdcde0eae437f651e349f242b687698268a",
+      "category": "research",
+      "tags": [
+        "artifact:research_brief",
+        "category:research",
+        "constraint:source_citation",
+        "job:analyze",
+        "modality:text"
+      ],
+      "capabilities": [
+        "citations",
+        "evidence_synthesis",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Evidence research brief for agents",
+          "summary": "A successor with explicit source boundaries and confirmable inputs",
+          "usage": "Compile and explicitly export through Template Registry without executing a model"
+        },
+        "zh-CN": {
+          "title": "证据研究简报（Agent 编译版）",
+          "summary": "资料绑定、来源边界与可确认字段齐全的兼容后继版本",
+          "usage": "供 Template Registry 编译与显式导出；不执行模型"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/research/evidence-research-brief-beta/prompts/main.en.md",
+          "digest": "sha256:a55e4f485321d94d4b5d7d798fc32ec475b5455ee23fa4964d7dddb20df0f4fd"
+        },
+        {
+          "role": "main",
+          "locale": "zh-CN",
+          "path": "solutions/research/evidence-research-brief-beta/prompts/main.zh-CN.md",
+          "digest": "sha256:5c32d90bb29d78861a25a9933a9e84f0faf9a7cf3223426398401b219ed8fd5f"
         }
       ]
     },
@@ -519,7 +825,7 @@
       "package_id": "research",
       "id": "evidence-research-brief",
       "version": "1.0.0",
-      "digest": "sha256:c165aeadd1397231620df9880355ff35e0186571b58adead370dcd471ff88102",
+      "digest": "sha256:0ea92f44ee3a75fc3ce89d15690c23709e8f9555d2ce7c2c02754210736ec048",
       "category": "research",
       "tags": [
         "artifact:research_brief",
@@ -561,7 +867,7 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/research/evidence-research-brief/prompts/main.zh-CN.md",
-          "digest": "sha256:0d20f596dda4e843c765311162bdc8601c8bbf83c45c306c14cde405c60e1dae"
+          "digest": "sha256:10457424dbab8b8426dd2c33cb499af50575053f901e91d9f14b3de9985f0e4b"
         }
       ]
     },
@@ -569,7 +875,7 @@
       "package_id": "video",
       "id": "ai-drama-background-assets-v2",
       "version": "2.0.0",
-      "digest": "sha256:2e8ab09b2d4d058f15e912de2980735235e2fca0f80a2fea6d0a29299fc8bad6",
+      "digest": "sha256:e7d3d7a07b09a75f211a53b213ac1e3bdc6f12f9d89a3a8917acc27f181c9fe9",
       "category": "video",
       "tags": [
         "domain:video",
@@ -584,6 +890,11 @@
       "rights": "internal",
       "maturity": "exploratory",
       "locales": {
+        "en": {
+          "title": "AI drama modular environment assets v2",
+          "summary": "Modular environment assets: standalone semantic objects and people-free empty scene shells",
+          "usage": "Rendered per slot by Eikona; empty scene shells must contain zero people and zero objects and stay fully opaque"
+        },
         "zh-CN": {
           "title": "AI 做剧模块化环境资产 v2",
           "summary": "独立语义物件与无人物空场景壳的模块化环境资产",
@@ -596,27 +907,51 @@
       "templates": [
         {
           "role": "empty-scene-shell-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.en.md",
+          "digest": "sha256:955255d51d335fb6d37ae1d6d467c302565de21f84c626dde34f55b3a023feff"
+        },
+        {
+          "role": "empty-scene-shell-v1",
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.zh-CN.md",
-          "digest": "sha256:3c97a3dd9efc029caea0567fe5c297a085bbdb2d609432bb2e5c6ac62b10e587"
+          "digest": "sha256:ef18aa11fbd824af076ffe6643745114a10e5f507f862a3c76e04a870b262247"
+        },
+        {
+          "role": "environment-harmonized-preview-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-harmonized-preview-v1.en.md",
+          "digest": "sha256:dbd83ca2dc736ee6312620e6ce8fcee0e6721f7bc9249957edf6e744d50bafd5"
         },
         {
           "role": "environment-harmonized-preview-v1",
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-harmonized-preview-v1.zh-CN.md",
-          "digest": "sha256:2d3dcf5ef27d45d8fb8ac58e7ade44db75142e831f88bd5f9c8c0c3e02018d2b"
+          "digest": "sha256:d8efe1e6df8b71e28d9a1e24f5746f87181721a096155264a9c8bc7f89cbc3cd"
+        },
+        {
+          "role": "environment-layer-preview-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-layer-preview-v1.en.md",
+          "digest": "sha256:046fabc94d4cf5c877fe45c66ef10929546410ab165c6c6c99b7a73973151635"
         },
         {
           "role": "environment-layer-preview-v1",
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-layer-preview-v1.zh-CN.md",
-          "digest": "sha256:dcaccd98851f4c5b847908b821f36b32fff43316262103c0d406fa8adceef823"
+          "digest": "sha256:8a75b25b244a47168873fc5529f28f5d51fa764e32ba3ae898407775fb0c831f"
+        },
+        {
+          "role": "semantic-object-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.en.md",
+          "digest": "sha256:58ab7067e03c1ef08aa06281b96f7524abbedc0cee63031e8dd5f1ecce71f441"
         },
         {
           "role": "semantic-object-v1",
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.zh-CN.md",
-          "digest": "sha256:757fb8e469e65f37d130f4913cbb9d3d3a6e49b4e26e7cb7b95effe73177bff9"
+          "digest": "sha256:877c1b0e7e8a30ed83bef5bf1dfbae9e398fd7b5016a67f2d561b13c3706963e"
         }
       ]
     },
@@ -624,7 +959,7 @@
       "package_id": "video",
       "id": "ai-drama-background-assets",
       "version": "1.0.0",
-      "digest": "sha256:d8ae077d2c974082b2f57fb36c3874f1286acac6ba4815ebfe8098fe3ed12358",
+      "digest": "sha256:ca06eadba4a64a338367071270901e0c402ff159695c3d7552ce4b23da9220bf",
       "category": "video",
       "tags": [
         "domain:video"
@@ -636,6 +971,11 @@
       "rights": "internal",
       "maturity": "exploratory",
       "locales": {
+        "en": {
+          "title": "AI drama empty-scene background assets",
+          "summary": "Generate reusable scene background plates with zero people, fully opaque",
+          "usage": "Characters and backgrounds are generated and reviewed separately; no compositing at the base-asset stage"
+        },
         "zh-CN": {
           "title": "AI 做剧空场景背景资产",
           "summary": "生成零人物、完整不透明的可复用场景背景板",
@@ -645,23 +985,35 @@
       "templates": [
         {
           "role": "clean-background-plate-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-background-assets/prompts/clean-background-plate-v1.en.md",
+          "digest": "sha256:8ebdd13d6c01b6d04d5be0ad671adf5e7682cc3eb01afbc34ed91e819d10d3b8"
+        },
+        {
+          "role": "clean-background-plate-v1",
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-background-assets/prompts/clean-background-plate-v1.zh-CN.md",
-          "digest": "sha256:e1132d35d06f669fe15052e28ae06918c6768e246f8d2c767250206bf3e8c9a4"
+          "digest": "sha256:4072ed99055c22b1fc8224d7f2c943d3392b6ce25d05b6e5d33e71afe2a08df3"
+        },
+        {
+          "role": "validate-background-plate-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.en.md",
+          "digest": "sha256:97b8e01fbae5a7bb74e4d1ed5ececcdb195bc9d6565cce75f2241de63bb7e825"
         },
         {
           "role": "validate-background-plate-v1",
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.zh-CN.md",
-          "digest": "sha256:99084dd2c5cdee1dc520a92915029d84a0f3d4ae5ff114f9f8763439ec1ad20b"
+          "digest": "sha256:7c50244f61bee54a44d0723143bb4ffa9cd71cc399bb130aed9225d22674efbd"
         }
       ]
     },
     {
       "package_id": "video",
-      "id": "ai-drama-character-assets-v2",
-      "version": "2.0.0",
-      "digest": "sha256:7483e54a831c744e70dde286ac7b1fcfe70b0657aaf26a71ddb84fede94ceb1b",
+      "id": "ai-drama-character-assets",
+      "version": "1.0.0",
+      "digest": "sha256:b226faf229c0b82376611488ad17ff32c43ac962b9f2ea399995a0a965a38f80",
       "category": "video",
       "tags": [
         "domain:video",
@@ -676,8 +1028,13 @@
       "rights": "internal",
       "maturity": "exploratory",
       "locales": {
+        "en": {
+          "title": "AI drama modular character assets",
+          "summary": "Modular character assets: hairless head model, neutral body core, and replaceable surface/wearable layers",
+          "usage": "Single views rendered per slot by Eikona; Scaena consumes safe refs only; previews are not canonical assets"
+        },
         "zh-CN": {
-          "title": "AI 做剧模块化角色资产 v2",
+          "title": "AI 做剧模块化角色资产",
           "summary": "无头发头模、中性身体核心与可替换表面/穿戴层的模块化角色资产",
           "usage": "由 Eikona 按 slot 渲染单视图；Scaena 只消费安全 refs；preview 不是 canonical 资产",
           "aliases": [
@@ -688,157 +1045,87 @@
       "templates": [
         {
           "role": "body-core-neutral-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-character-assets/prompts/body-core-neutral-v1.en.md",
+          "digest": "sha256:2b4fac6c5db5a33f795e290e9e6eda6ad386650dd494be3ba5c932b95157c2a5"
+        },
+        {
+          "role": "body-core-neutral-v1",
           "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets-v2/prompts/body-core-neutral-v1.zh-CN.md",
-          "digest": "sha256:72f2cbfc497b9ae70c19c21552d1934bd05bfc1e025ba330ac37a2f8bad368cf"
+          "path": "solutions/video/ai-drama-character-assets/prompts/body-core-neutral-v1.zh-CN.md",
+          "digest": "sha256:54113ca980c4d384471978abea3e058e139ddeabd24e2f44fc728b732242a724"
+        },
+        {
+          "role": "character-harmonized-preview-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-character-assets/prompts/character-harmonized-preview-v1.en.md",
+          "digest": "sha256:422c5519650ea303916aa4e18fcb68051769f5e5e2e78cb0791635cf921eb69f"
         },
         {
           "role": "character-harmonized-preview-v1",
           "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets-v2/prompts/character-harmonized-preview-v1.zh-CN.md",
-          "digest": "sha256:cc955848ad31a20aed3219f72c1a7cb9124453a362e6fb044ee58f9fdb5e7658"
+          "path": "solutions/video/ai-drama-character-assets/prompts/character-harmonized-preview-v1.zh-CN.md",
+          "digest": "sha256:78d68289982e8e0a3d4cb25df09cf05427b19edc69e11619a7c469982b876665"
+        },
+        {
+          "role": "character-layer-preview-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-character-assets/prompts/character-layer-preview-v1.en.md",
+          "digest": "sha256:9869b4f784394e8b57e83f86e3440f56ad5c3d7e6bc84c5e4b87f03bea438fce"
         },
         {
           "role": "character-layer-preview-v1",
           "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets-v2/prompts/character-layer-preview-v1.zh-CN.md",
-          "digest": "sha256:1ec8f913339f998a133b4c284e72d4975edc9188cfbf541e5a8fdb53d10c57b2"
+          "path": "solutions/video/ai-drama-character-assets/prompts/character-layer-preview-v1.zh-CN.md",
+          "digest": "sha256:cc27539f64a59d4dd31d7679d6279bf414156a16a1ccddff0ae153afc67a9dfc"
+        },
+        {
+          "role": "head-core-bald-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-character-assets/prompts/head-core-bald-v1.en.md",
+          "digest": "sha256:3a7df748a26e3e8196d8ef57a876adaf9b00b50194369c38ecea29a48eaeb1a6"
         },
         {
           "role": "head-core-bald-v1",
           "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets-v2/prompts/head-core-bald-v1.zh-CN.md",
-          "digest": "sha256:678c89234d0652ba96df45a70e246d573effd3c20fe895b6a6fcc244aab0fb03"
+          "path": "solutions/video/ai-drama-character-assets/prompts/head-core-bald-v1.zh-CN.md",
+          "digest": "sha256:c2da81e2ce90fe8b7841cc84e7f802f74d7e75c713c35a0c0b7501d5317f9787"
+        },
+        {
+          "role": "surface-coat-hair-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-character-assets/prompts/surface-coat-hair-v1.en.md",
+          "digest": "sha256:9ee1d66745d05835c05ff37c5dc1af6ad7fe844107784540abc5057bad3df20c"
         },
         {
           "role": "surface-coat-hair-v1",
           "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets-v2/prompts/surface-coat-hair-v1.zh-CN.md",
-          "digest": "sha256:8e6b39da89fe07a1a7f1b2ccf78ea41ba89d41c18baea583d07c107b6220372e"
+          "path": "solutions/video/ai-drama-character-assets/prompts/surface-coat-hair-v1.zh-CN.md",
+          "digest": "sha256:a46353f1d3519aab03933c23df93a8cc5054714075ee854b5c16d2a8f5b0b75d"
+        },
+        {
+          "role": "wearable-accessory-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-character-assets/prompts/wearable-accessory-v1.en.md",
+          "digest": "sha256:2d1c58bedf5317af16bd8e598f4742f114844b1531f584da2e889cc22c2ef4e0"
         },
         {
           "role": "wearable-accessory-v1",
           "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets-v2/prompts/wearable-accessory-v1.zh-CN.md",
-          "digest": "sha256:6264c1060888198268c130f90160422b492f4f7c2bd8fb990491eb48fa143d3b"
+          "path": "solutions/video/ai-drama-character-assets/prompts/wearable-accessory-v1.zh-CN.md",
+          "digest": "sha256:495008f9e752eec79ff16552a394713283fd566f9f59bb74f8124def537339dd"
+        },
+        {
+          "role": "wearable-garment-v1",
+          "locale": "en",
+          "path": "solutions/video/ai-drama-character-assets/prompts/wearable-garment-v1.en.md",
+          "digest": "sha256:89d5fae203cbeaa040edb0cab89651d0b0462004be870a741f8d39ca6f2b8e9e"
         },
         {
           "role": "wearable-garment-v1",
           "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets-v2/prompts/wearable-garment-v1.zh-CN.md",
-          "digest": "sha256:4d6b0368ab85fa61be2f04c48a860f83c7c958fa35fc6fdbe0af6bab3ed2550f"
-        }
-      ]
-    },
-    {
-      "package_id": "video",
-      "id": "ai-drama-character-assets",
-      "version": "1.0.0",
-      "digest": "sha256:8be8118f712b51c06c0372eb7102ee87c0c1f3a0938176023a76e35b5bbce773",
-      "category": "video",
-      "tags": [
-        "domain:video"
-      ],
-      "capabilities": [
-        "character_asset",
-        "subject_continuity"
-      ],
-      "rights": "internal",
-      "maturity": "exploratory",
-      "locales": {
-        "en": {
-          "title": "AI Drama Character Visual Assets",
-          "summary": "Compile character, wardrobe, reference, and continuity constraints into a reviewable image Prompt Bundle",
-          "usage": "Use for face and body masters, turnarounds, wardrobe sheets, expression and action sheets, props, scenes, shot keyframes, and bounded repair",
-          "aliases": [
-            "character image prompt bundle",
-            "character turnaround template"
-          ]
-        },
-        "zh-CN": {
-          "title": "AI 做剧角色资产",
-          "summary": "分阶段编译角色、服装、场景与镜头关键帧资产",
-          "usage": "由视觉生产 Owner 渲染单视图任务并进行人工审查"
-        }
-      },
-      "templates": [
-        {
-          "role": "character-wuxia-female-v1",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets/templates/characters/wuxia-female-v1.zh-CN.yaml",
-          "digest": "sha256:74dad5e697bdaf6b27fed94d39956752e41c5d137c14be9230323ad070a9fd74"
-        },
-        {
-          "role": "isolated-character-assets-v1",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets/prompts/isolated-character-assets-v1.zh-CN.md",
-          "digest": "sha256:17ee871568b5dc48ef74a7fdf6930e9028e9876ef64bb61001c1023f4e270895"
-        },
-        {
-          "role": "layout-turnaround-three-view-v1",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets/templates/layouts/turnaround-three-view-v1.zh-CN.yaml",
-          "digest": "sha256:3f647fc4ed3cf422d0ec717859572291593de31631658f507a35aa474a418e86"
-        },
-        {
-          "role": "main",
-          "locale": "en",
-          "path": "solutions/video/ai-drama-character-assets/prompts/main.en.md",
-          "digest": "sha256:15980850c877b6b93dcdf52b4214f7280d1b1056ef865e90ecc1459602f1964c"
-        },
-        {
-          "role": "main",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets/prompts/main.zh-CN.md",
-          "digest": "sha256:8585320f1bfab00de5a9840aea6b0bcf5d4fbdc19d1ec178b235a42c5706c6af"
-        },
-        {
-          "role": "qc-character-turnaround-production-v1",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets/templates/qc/character-turnaround-production-v1.zh-CN.yaml",
-          "digest": "sha256:eb5270e2ba3603477120d1ce84fc8d2e210a8377bda0f818f10558dd6b31b7fb"
-        },
-        {
-          "role": "staged-character-production-v2",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets/prompts/staged-character-production-v2.zh-CN.md",
-          "digest": "sha256:64df23bb8e6a019cb263af9f19b7ce05a8acbaf4558cb242eb93a11a9fb4f661"
-        },
-        {
-          "role": "task-character-turnaround-independent-artifacts-v2",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets/templates/tasks/character-turnaround-independent-artifacts-v2.zh-CN.yaml",
-          "digest": "sha256:2a783d543a9de6e6a1a78f774be55ad5ed961f75257641e091f26f4bff298d1c"
-        },
-        {
-          "role": "task-character-turnaround-three-view-v1",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets/templates/tasks/character-turnaround-three-view-v1.zh-CN.yaml",
-          "digest": "sha256:f72bd21150000292f7c6565732ca4c27c0de887f6b0f096fa6af5172ec6c8fe3"
-        },
-        {
-          "role": "wardrobe-wuxia-hanfu-moonwhite-v1",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets/templates/wardrobes/wuxia-hanfu-moonwhite-v1.zh-CN.yaml",
-          "digest": "sha256:01661875a5a0b4d00e9ad5fbfae707d495a70468600b63f1602b86e201337228"
-        },
-        {
-          "role": "wuxia-female-turnaround-modular",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets/templates/plans/wuxia-female-turnaround-modular.zh-CN.yaml",
-          "digest": "sha256:d89fc11493384b98419041ef0049080e6678a36e0476b7e104ced7844bbaefe3"
-        },
-        {
-          "role": "wuxia-female-turnaround-staged-v2",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets/templates/plans/wuxia-female-turnaround-staged-v2.zh-CN.yaml",
-          "digest": "sha256:83fcecf2889a13d64e09a763812b4b131130464ca6bff2c5d29ff9720da10ac1"
-        },
-        {
-          "role": "wuxia-female-turnaround-yaml",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-character-assets/templates/tasks/wuxia-female-turnaround.zh-CN.yaml",
-          "digest": "sha256:1966faa83285ab72ba1874bf84a74b59d1bdf12ee132ce454c7db460c0cacf33"
+          "path": "solutions/video/ai-drama-character-assets/prompts/wearable-garment-v1.zh-CN.md",
+          "digest": "sha256:59eda9958bb013d53a268a8dbb315624daaeb7defb3589088e47b6e0116e710d"
         }
       ]
     },
@@ -846,7 +1133,7 @@
       "package_id": "video",
       "id": "ai-drama-shot-video-generation",
       "version": "1.0.0",
-      "digest": "sha256:de5e89cb704a1f821c5cb0f3134e26352a62aa2c9df0a69ba7c23d1cd33e10cc",
+      "digest": "sha256:b2b570d349d85dcf760333cee64e512f4ddfaa00003cdff1b50dc213843024a8",
       "category": "video",
       "tags": [
         "artifact:shot_video",
@@ -867,22 +1154,22 @@
       "rights": "internal",
       "maturity": "exploratory",
       "locales": {
-        "zh-CN": {
-          "title": "AI 短剧镜头级视频生成",
-          "summary": "把角色、技能、敌方、场景、运镜与逐秒分镜编译为可直接投递视频生成模型的镜头级 Prompt",
-          "usage": "用于 AI 短剧/漫剧蓄力-爆发型大招镜头的视频生成 Prompt 渲染与人工审查，由 Scaena 等领域 Owner 消费",
+        "en": {
+          "title": "AI Drama Shot Video Generation",
+          "summary": "Compile character, ultimate skill, enemies, scene, camera, and per-second storyboard into a shot-level prompt for direct video-model delivery",
+          "usage": "Use for AI drama charge-up ultimate-skill shot generation and human review; consumed by domain owners such as Scaena",
           "aliases": [
-            "大招镜头提示词",
-            "镜头级视频生成"
+            "shot-level video generation",
+            "ultimate skill shot prompt"
           ]
         }
       },
       "templates": [
         {
           "role": "main",
-          "locale": "zh-CN",
-          "path": "solutions/video/ai-drama-shot-video-generation/prompts/main.zh-CN.md",
-          "digest": "sha256:10f7a558ae308e21a3d0d2f2bbd56f5d8aed32d5f85aaddd2ee1fad6a4e19a72"
+          "locale": "en",
+          "path": "solutions/video/ai-drama-shot-video-generation/prompts/main.en.md",
+          "digest": "sha256:409707a917987bceb952de011a8d1b91c6acf7a99f65f55a7bfdb75e8250a04f"
         }
       ]
     },
@@ -890,7 +1177,7 @@
       "package_id": "video",
       "id": "ai-drama-storyboard-breakdown",
       "version": "1.0.0",
-      "digest": "sha256:6df746589a97946768e413ecc431947a1ad056f972ce7820986ba2a5a650412e",
+      "digest": "sha256:9ce622a89cfdd290e555336797fa2e8a31cb7e9373e19755481f88f54807c35c",
       "category": "video",
       "tags": [
         "artifact:storyboard_candidate",
@@ -938,7 +1225,7 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/main.zh-CN.md",
-          "digest": "sha256:6817dc387a99f04a0ea81c66f2713ec41be63576052f50cbd47199e61adec4d9"
+          "digest": "sha256:4d6b29ac7f52564d1bd4b9afa8aa236a0543637c786b52b3f44de90e2a2f6b74"
         },
         {
           "role": "repair",
@@ -950,7 +1237,7 @@
           "role": "repair",
           "locale": "zh-CN",
           "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md",
-          "digest": "sha256:e985526d747415fce8163d69d0a187c966c4f3b6ff85e3fdf9d5ae5f47dcaddd"
+          "digest": "sha256:61def1458a712741b43861c350ba4e2fd7976dc078cb19527aabf6476c5da3b7"
         }
       ]
     },
@@ -958,7 +1245,7 @@
       "package_id": "video",
       "id": "ai-film-multi-profile-production",
       "version": "1.0.0",
-      "digest": "sha256:c2fa8c6c88f4d5031faa219e5bdb779f581958766419054f642fbbeb86ef1b04",
+      "digest": "sha256:e1f1c405b578875329ac6333918f811cf3bce7ea55f98cf266b0d73cc8d8b097",
       "category": "video",
       "tags": [
         "domain:video",
@@ -999,7 +1286,7 @@
           "role": "asset-dependency",
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/asset-dependency.zh-CN.md",
-          "digest": "sha256:a95a6cbd8708dae1b0a6fe9ebefd47df8c1694a29830b1472d504981272f9593"
+          "digest": "sha256:0826139dfcba54e15328c40173bbf0fa33760896123d88dcb0daa2bdc729f16b"
         },
         {
           "role": "continuity-review",
@@ -1011,7 +1298,7 @@
           "role": "continuity-review",
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/continuity-review.zh-CN.md",
-          "digest": "sha256:4adb3f5e0c3f4f3e6fd383cce592533841ddd6cffbcc5059b63e98acf7665453"
+          "digest": "sha256:b6c04e61eae57abe5e4a863df6c4f20d6b8e4e2631e6a9580c463aa4915ea5ca"
         },
         {
           "role": "failure-restructure",
@@ -1023,7 +1310,7 @@
           "role": "failure-restructure",
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.zh-CN.md",
-          "digest": "sha256:9b997d8dc5d7fa1ba03dd53bffff2c1171e38ca1317085140af1de6f812f5c42"
+          "digest": "sha256:45e8379b0bf8cfb9a9141e5564b1bfca44a7f973a82fb7ce376ed3770c7b943a"
         },
         {
           "role": "project-intent",
@@ -1035,7 +1322,7 @@
           "role": "project-intent",
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/project-intent.zh-CN.md",
-          "digest": "sha256:f4ea4e5c2fe01eb0befba6da7d9e1eb97a0d39f9379608d58991124e9fc2e5ac"
+          "digest": "sha256:5a19edd334a89fdf1512fbe7c638703ba968f9fb8f7a8806ca5193dbbbe17f73"
         },
         {
           "role": "scene-package",
@@ -1047,7 +1334,7 @@
           "role": "scene-package",
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.zh-CN.md",
-          "digest": "sha256:5ae339e960deb40e5ef78e9f6a4ebec53739e5d88d57fe0c9a540e593b235e92"
+          "digest": "sha256:8bfd5c0ab4934f227c85540356d65eb9b68350b3a5cab534afe526cefe98636e"
         },
         {
           "role": "shot-audio-intent",
@@ -1059,7 +1346,7 @@
           "role": "shot-audio-intent",
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-audio-intent.zh-CN.md",
-          "digest": "sha256:4f5763c70d6643d72f42178306027269c7a32db60a0a359d5cd9660c31b1140f"
+          "digest": "sha256:97e422cb037d9b6edef568b8a32ea38b1d7c2319c7ef674f1e440740b1534357"
         },
         {
           "role": "shot-prompt",
@@ -1071,7 +1358,142 @@
           "role": "shot-prompt",
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-prompt.zh-CN.md",
-          "digest": "sha256:a95842c57297aac6fa618d0ff17e73e175750255fa099cff57acba5ffb6cc595"
+          "digest": "sha256:cd88d83948d78250494b5fff36997c97cab1de67f5dfcdec3cfce14bba0172ce"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "realistic-diary-vlog-generation",
+      "version": "1.0.0",
+      "digest": "sha256:99103e562510d1303ef9eb85f7da7cad089da8dd6c1034f3da141bee156441eb",
+      "category": "video",
+      "tags": [
+        "artifact:shot_video",
+        "category:video",
+        "constraint:character_consistency",
+        "constraint:lip_sync",
+        "constraint:realism",
+        "job:generate",
+        "modality:video",
+        "scenario:realistic_vlog",
+        "stage:shot_generation"
+      ],
+      "capabilities": [
+        "character_consistency_lock",
+        "dialogue_lip_sync",
+        "negative_prompt_governance",
+        "shot_video_generation"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Realistic Diary Vlog Generation",
+          "summary": "Compile subject, selfie/follow camera formats, on-camera dialogue with lip sync, acoustic-space continuity, and realism constraints into a diary vlog prompt for direct video-model delivery",
+          "usage": "Use for on-camera-dialogue day-diary realistic video generation and human review; complements the VO-driven realistic-docu-vlog-generation and ambience-only realistic-vlog-shot-generation",
+          "aliases": [
+            "diary vlog prompt",
+            "on-camera dialogue vlog"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/video/realistic-diary-vlog-generation/prompts/main.en.md",
+          "digest": "sha256:88734793d67fff5d4379e14ff1f33fa300b51182382deeed325c5ed680087369"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "realistic-docu-vlog-generation",
+      "version": "1.0.0",
+      "digest": "sha256:20a610bd2d8f979639ce39afd09966b0edce19f44933166f21f46aac24c84926",
+      "category": "video",
+      "tags": [
+        "artifact:shot_video",
+        "category:video",
+        "constraint:character_consistency",
+        "constraint:realism",
+        "job:generate",
+        "modality:video",
+        "scenario:realistic_vlog",
+        "stage:shot_generation"
+      ],
+      "capabilities": [
+        "character_consistency_lock",
+        "negative_prompt_governance",
+        "shot_video_generation",
+        "voiceover_script"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Realistic Docu-Vlog Generation",
+          "summary": "Compile subject, mixed camera formats, per-beat voiceover, music arc, and realism constraints into a documentary vlog prompt for direct video-model delivery",
+          "usage": "Use for self-narrated day-in-the-life realistic video generation and human review; complements the ambience-only realistic-vlog-shot-generation",
+          "aliases": [
+            "documentary vlog prompt",
+            "voiceover day vlog"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/video/realistic-docu-vlog-generation/prompts/main.en.md",
+          "digest": "sha256:cf861d1747c61a5604efc645d7b3b440f0cc140859b7f3c92d012d6939e6f013"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "realistic-fight-scene-generation",
+      "version": "1.0.0",
+      "digest": "sha256:3dd813b3764abf320a638fd0f91ade349fd15c8be127ed9d48e21983bd7a5cbb",
+      "category": "video",
+      "tags": [
+        "artifact:shot_video",
+        "category:video",
+        "constraint:character_consistency",
+        "constraint:realism",
+        "constraint:spatial_continuity",
+        "job:generate",
+        "modality:video",
+        "scenario:action_scene",
+        "stage:shot_generation"
+      ],
+      "capabilities": [
+        "dual_character_lock",
+        "fight_choreography",
+        "negative_prompt_governance",
+        "shot_video_generation",
+        "spatial_continuity"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Realistic Fight Scene Generation",
+          "summary": "Compile dual-character identity lock, fight physics, axis of action, ACT follow camera, and per-beat choreography into a fight-scene prompt for direct video-model delivery",
+          "usage": "Use for VFX-free physics-first two-person fight scenes with human review; complements the VFX-driven ai-drama-shot-video-generation",
+          "aliases": [
+            "close combat video",
+            "fight scene prompt"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/video/realistic-fight-scene-generation/prompts/main.en.md",
+          "digest": "sha256:be3474fc01eea432acca5620ee03960843985a771706ad68578ba81b03ebe392"
         }
       ]
     },
@@ -1079,7 +1501,7 @@
       "package_id": "video",
       "id": "realistic-vlog-shot-generation",
       "version": "1.0.0",
-      "digest": "sha256:e58162fcc2cfb82a4e1632b2a7fa56d05e7734a3ef70e979598423f745c59588",
+      "digest": "sha256:ef315733cc3b1a36f03509acf1fdadfd7ac16dd79a98dc111a16fe3228da4895",
       "category": "video",
       "tags": [
         "artifact:shot_video",
@@ -1107,15 +1529,6 @@
             "home video realism",
             "realistic vlog prompt"
           ]
-        },
-        "zh-CN": {
-          "title": "写实生活记录视频生成",
-          "summary": "把人物、场景、手持拍摄质感、时间线序列与写实/声音约束编译为可直接投递视频生成模型的写实 Vlog Prompt",
-          "usage": "用于「朋友随手拍」气质的写实生活记录镜头生成与人工审查； realism 优先，反 AI 感",
-          "aliases": [
-            "写实vlog",
-            "真实感生活记录"
-          ]
         }
       },
       "templates": [
@@ -1124,12 +1537,6 @@
           "locale": "en",
           "path": "solutions/video/realistic-vlog-shot-generation/prompts/main.en.md",
           "digest": "sha256:26a7d85091ef3b12a9224ae03d5cc27b678dc298cef9c8f5f6972985e53f9b90"
-        },
-        {
-          "role": "main",
-          "locale": "zh-CN",
-          "path": "solutions/video/realistic-vlog-shot-generation/prompts/main.zh-CN.md",
-          "digest": "sha256:14a7007b5969d1580f26a5a3f22711e8081ee4d47251572e679beecf2927845e"
         }
       ]
     },
@@ -1137,7 +1544,7 @@
       "package_id": "video",
       "id": "short-drama-character-consistency",
       "version": "1.0.0",
-      "digest": "sha256:a5a83f9af4038d585526794fbeb68769692a2ddea56c4d604be606884870f514",
+      "digest": "sha256:fc974d705434c99318b484c29070ebb5b83d9c6862885df6be31fefcacba0a64",
       "category": "video",
       "tags": [
         "artifact:shot_video",
@@ -1180,7 +1587,7 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md",
-          "digest": "sha256:14b16b88ec78e094b54375b81741479e4822e6e48506c0ef055c2a1eb998c2d7"
+          "digest": "sha256:615d426e93b1c89ea5876079247a41b3376ecd34290ef62a0766e3f31168065f"
         }
       ]
     },
@@ -1188,7 +1595,7 @@
       "package_id": "writing",
       "id": "longform-outline",
       "version": "1.0.0",
-      "digest": "sha256:a253d0afe63d029bbf70b95cea8de841035bdf2a803e060f27d0de48f7d1d959",
+      "digest": "sha256:a8440a0b009ac5538b392261257ec5ea4d45f391c93715994d6941bf74c364b5",
       "category": "writing",
       "tags": [
         "artifact:outline",
@@ -1229,7 +1636,7 @@
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/writing/longform-outline/prompts/main.zh-CN.md",
-          "digest": "sha256:930e8cd45c610adce71695523e6d20ad17a700c3ba216ca46678ecdb577c5bc1"
+          "digest": "sha256:b2a7e8b2f809ed5d3ec5732e10aab4bbea1045b8f45ba2b95b83524388a6f5ea"
         }
       ]
     }

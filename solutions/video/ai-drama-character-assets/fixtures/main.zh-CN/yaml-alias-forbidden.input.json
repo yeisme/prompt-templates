@@ -1,1 +1,0 @@
-{"format":"yaml","source_text":"task: &shared\n  id: A\ncopy: *shared\n"}

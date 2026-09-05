@@ -1,0 +1,542 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "realistic-fight-scene-generation",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/video/realistic-fight-scene-generation/prompts/main.en.md",
+  "template_digest": "sha256:be3474fc01eea432acca5620ee03960843985a771706ad68578ba81b03ebe392",
+  "digest": "sha256:4683af325e6beea520be0210399b5eacd302dddec76d0e580a3ef8662660a699",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "inspect",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "action_principles",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "现代实战拳法、肘击、膝撞、低位踢击、近身控制、擒拿拆解和短距离摔法"
+      ],
+      "min_length": 10,
+      "max_length": 8192,
+      "labels": {
+        "en": "Action principles",
+        "zh-CN": "动作原则"
+      },
+      "descriptions": {
+        "en": "Technique vocabulary (strikes, clinch, takedowns, etc.)",
+        "zh-CN": "动作组成与技术库（拳肘膝踢、擒拿、摔法等）"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "antagonist_identity",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Antagonist identity",
+        "zh-CN": "敌人身份特征"
+      },
+      "descriptions": {
+        "en": "Antagonist face, age, hair, build, wardrobe, and temperament",
+        "zh-CN": "敌人的面部、年龄、发型、体型、服装、气质描述"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "antagonist_ref",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "@image2"
+      ],
+      "regex": "^@[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "min_length": 2,
+      "max_length": 256,
+      "labels": {
+        "en": "Antagonist ref",
+        "zh-CN": "敌人参考图引用"
+      },
+      "descriptions": {
+        "en": "Antagonist reference image @-ref; must differ from the protagonist ref",
+        "zh-CN": "敌人参考图资产的 @ 引用，不得与主角引用相同"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "aspect_ratio",
+      "type": "enum",
+      "default": "16:9",
+      "enum": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "2.39:1"
+      ],
+      "labels": {
+        "en": "Aspect ratio",
+        "zh-CN": "画幅比例"
+      },
+      "descriptions": {
+        "en": "Output aspect ratio",
+        "zh-CN": "输出视频画幅"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "audio_design",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Audio design",
+        "zh-CN": "声音设计"
+      },
+      "descriptions": {
+        "en": "Picture-synced location sound list; no dialogue and only restrained low-frequency music by default",
+        "zh-CN": "严格同步画面的现场声清单；默认无对白、音乐仅极克制低频脉冲"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "camera_follow_spec",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "肩后、腰后、侧后第三人称跟随；关键格挡和重击短暂切入侧面中景或近景"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Follow camera spec",
+        "zh-CN": "跟随机位"
+      },
+      "descriptions": {
+        "en": "Protagonist-centered camera set and key-hit shot-size rules",
+        "zh-CN": "主角中心机位集合与关键命中景别规则"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "camera_motion_rules",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Camera motion rules",
+        "zh-CN": "摄影机运动规则"
+      },
+      "descriptions": {
+        "en": "Camera weight, impact shake, and key-moment clarity rules",
+        "zh-CN": "摄影机重量感、撞击震动与关键清晰度规则"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "character_dynamics",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "主角冷静精准动作幅度小、格挡后即反击；敌人力量更大、连续压迫与贴身撞击"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Fighting-style contrast",
+        "zh-CN": "格斗风格对比"
+      },
+      "descriptions": {
+        "en": "Fighting-style and temperament contrast between the two",
+        "zh-CN": "双方的格斗风格与性格差异"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "cut_rules",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Invisible cuts and continuity",
+        "zh-CN": "隐形切镜与连续性"
+      },
+      "descriptions": {
+        "en": "Invisible-cut whitelist and state that must survive each cut",
+        "zh-CN": "切镜手段白名单与切镜后必须延续的状态"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "dual_consistency_lock",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "严格继承参考图两人的面部、体型、服装与气质，全程不得交换身份"
+      ],
+      "min_length": 10,
+      "max_length": 2048,
+      "labels": {
+        "en": "Dual consistency lock",
+        "zh-CN": "双人物一致性锁定"
+      },
+      "descriptions": {
+        "en": "No identity swap / face drift / wardrobe-body change / third combatant lock",
+        "zh-CN": "不交换身份/不变脸/不改服装体型/无第三者的锁定声明"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "duration_s",
+      "type": "integer",
+      "required": true,
+      "default": 30,
+      "examples": [
+        30
+      ],
+      "min": 5,
+      "max": 120,
+      "labels": {
+        "en": "Duration (s)",
+        "zh-CN": "总时长（秒）"
+      },
+      "descriptions": {
+        "en": "Total duration; the fight timeline must cover it continuously",
+        "zh-CN": "视频总时长，格斗时间线必须连续覆盖"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "ending_directive",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "最后一帧保持双方继续互相锁定的危险状态，为下一段战斗留下衔接"
+      ],
+      "min_length": 4,
+      "max_length": 2048,
+      "labels": {
+        "en": "Ending directive",
+        "zh-CN": "结尾指令"
+      },
+      "descriptions": {
+        "en": "How the video ends",
+        "zh-CN": "结尾执行方式"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "environment_interaction",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "立柱、闸机、玻璃护栏、积水参与战斗；闸机挡板可撞开弯曲但不脱离，玻璃震颤不碎，立柱不碎裂"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Environment participation",
+        "zh-CN": "环境参与"
+      },
+      "descriptions": {
+        "en": "How environment objects join the fight and their damage limits",
+        "zh-CN": "环境物件参与战斗的方式与损毁边界"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "fight_arc",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "敌人抢攻→主角反击→绕柱追击→主角失势→危险拆解→夺回主动→环境摔投→最终反制；主角必须经历一次明显失势和一次危险化解"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Structural arc",
+        "zh-CN": "结构弧线"
+      },
+      "descriptions": {
+        "en": "Phase arc of the fight and offense/defense balance",
+        "zh-CN": "整场格斗的阶段弧线与双方攻守平衡要求"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "fight_beats",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 131072,
+      "labels": {
+        "en": "Fight beats",
+        "zh-CN": "格斗时间线"
+      },
+      "descriptions": {
+        "en": "Per-beat choreography: time range, camera, origin/path/contact/result, invisible cut, momentum handoff",
+        "zh-CN": "逐拍攻防编排：时间区间、机位、起点/路径/接触点/结果、隐形切点、惯性延续"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "final_feel",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "刺激而不混乱，凶狠但遵守人体力学，摄影机始终以主角为核心"
+      ],
+      "min_length": 10,
+      "max_length": 2048,
+      "labels": {
+        "en": "Final feel",
+        "zh-CN": "最终气质"
+      },
+      "descriptions": {
+        "en": "Overall feel declaration of the final footage",
+        "zh-CN": "成片整体气质声明"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "footage_style",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "写实电影级实拍质感"
+      ],
+      "min_length": 4,
+      "max_length": 2048,
+      "labels": {
+        "en": "Footage style",
+        "zh-CN": "影像风格声明"
+      },
+      "descriptions": {
+        "en": "Overall footage style declaration",
+        "zh-CN": "整体影像气质声明"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "frame_rate",
+      "type": "enum",
+      "default": "24fps",
+      "enum": [
+        "24fps",
+        "25fps",
+        "30fps",
+        "50fps",
+        "60fps"
+      ],
+      "labels": {
+        "en": "Frame rate",
+        "zh-CN": "帧率"
+      },
+      "descriptions": {
+        "en": "Output frame rate",
+        "zh-CN": "输出视频帧率"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "lighting_palette",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "冷白顶灯主光（两盏偶尔闪烁），红色警示灯局部轮廓光，冷蓝灰主色"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Lighting and materials",
+        "zh-CN": "光影与材质"
+      },
+      "descriptions": {
+        "en": "Key light, rim light, palette, and material requirements",
+        "zh-CN": "主光、轮廓光、主色调与材质要求"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "negative_prompts",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 8192,
+      "labels": {
+        "en": "Negative prompts",
+        "zh-CN": "负面提示词"
+      },
+      "descriptions": {
+        "en": "Negative constraint list; template defaults are merged",
+        "zh-CN": "负面约束清单；模板内置默认负面项会并入"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "protagonist_identity",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Protagonist identity",
+        "zh-CN": "主角身份特征"
+      },
+      "descriptions": {
+        "en": "Protagonist face, age, hair, build, wardrobe, and temperament",
+        "zh-CN": "主角的面部、年龄、发型、体型、服装、气质描述"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "protagonist_ref",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "@image1"
+      ],
+      "regex": "^@[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "min_length": 2,
+      "max_length": 256,
+      "labels": {
+        "en": "Protagonist ref",
+        "zh-CN": "主角参考图引用"
+      },
+      "descriptions": {
+        "en": "Protagonist reference image @-ref; must differ from the antagonist ref",
+        "zh-CN": "主角参考图资产的 @ 引用，不得与敌人引用相同"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "provider_banner",
+      "type": "string",
+      "examples": [
+        "Made with Seedance 2.5"
+      ],
+      "min_length": 0,
+      "max_length": 256,
+      "labels": {
+        "en": "Provider banner",
+        "zh-CN": "平台标识行"
+      },
+      "descriptions": {
+        "en": "Optional delivery-platform banner line rendered at the top; omitted when empty",
+        "zh-CN": "可选的投递平台标识行，渲染在 Prompt 顶部；留空则省略"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "realism_rules",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Realism rules",
+        "zh-CN": "写实约束"
+      },
+      "descriptions": {
+        "en": "Skin, muscle, fabric, material, and lighting realism requirements",
+        "zh-CN": "皮肤、肌肉、衣料、材质、光影等写实要求"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "resolution",
+      "type": "enum",
+      "default": "1080p",
+      "enum": [
+        "720p",
+        "1080p",
+        "4K"
+      ],
+      "labels": {
+        "en": "Resolution",
+        "zh-CN": "分辨率"
+      },
+      "descriptions": {
+        "en": "Output video resolution",
+        "zh-CN": "输出视频分辨率"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "scenario_summary",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 2048,
+      "labels": {
+        "en": "Scenario summary",
+        "zh-CN": "场景梗概"
+      },
+      "descriptions": {
+        "en": "One-line summary of who fights whom and where",
+        "zh-CN": "一句话说明谁与谁在何处对战"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "scene_desc",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 8192,
+      "labels": {
+        "en": "Scene description",
+        "zh-CN": "场景描述"
+      },
+      "descriptions": {
+        "en": "Fight scene environment, materials, and atmosphere",
+        "zh-CN": "格斗场景的环境、材质与氛围细节"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "scene_layout",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 8192,
+      "labels": {
+        "en": "Layout and axis of action",
+        "zh-CN": "空间布局与行动轴线"
+      },
+      "descriptions": {
+        "en": "Opening positions, movement path, landmark placement, and axis rules",
+        "zh-CN": "开场站位、战斗移动路径、关键地物位置与行动轴线规则"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "style_reference",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "现代硬派武术电影气质 + ACT 动作游戏第三人称战斗镜头"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Style reference",
+        "zh-CN": "风格参照"
+      },
+      "descriptions": {
+        "en": "Temperament/lens-language reference; never copies characters, locations, or shots",
+        "zh-CN": "只继承气质与镜头语言的参照描述，不得照搬人物/场景/镜头"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}

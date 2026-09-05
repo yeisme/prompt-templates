@@ -6,8 +6,8 @@
   "role": "validate-background-plate-v1",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.zh-CN.md",
-  "template_digest": "sha256:99084dd2c5cdee1dc520a92915029d84a0f3d4ae5ff114f9f8763439ec1ad20b",
-  "digest": "sha256:0f29baaaab72e3f912dec111f24796f8a9772bfb39669d6d67a864b0b46c7f7c",
+  "template_digest": "sha256:7c50244f61bee54a44d0723143bb4ffa9cd71cc399bb130aed9225d22674efbd",
+  "digest": "sha256:c9c27fb0c48f7e206db79bdbd9f4e77f8a50baaa388eb0edd46d978e101e0c48",
   "license": "internal",
   "permissions": [
     "inspect",

@@ -8,15 +8,15 @@
   "locale": "zh-CN",
   "template": {
     "ref": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md",
-    "digest": "sha256:e985526d747415fce8163d69d0a187c966c4f3b6ff85e3fdf9d5ae5f47dcaddd"
+    "digest": "sha256:61def1458a712741b43861c350ba4e2fd7976dc078cb19527aabf6476c5da3b7"
   },
   "contract": {
     "ref": "solutions/video/ai-drama-storyboard-breakdown/contracts/repair.zh-CN.json",
-    "digest": "sha256:10c1125c3de694e4f2be390654c2372fd14ae015b4f194e889ba80a7224397da"
+    "digest": "sha256:467beb719a7db2bf773666d512ffced025abe52dcd6ced77e86106ea98bcd638"
   },
   "document": {
     "ref": "solutions/video/ai-drama-storyboard-breakdown/contracts/documents/repair.zh-CN.document.json",
-    "digest": "sha256:1ae5074d4db0294a56a778a7b55744e6b9bdfa09178a0d30f392cd6f8adf801d"
+    "digest": "sha256:65719e1c0204b1a12b4e3c441c95d9ea12c12f37e41dbe58912169b54e1f90cc"
   },
   "schema": {
     "ref": "solutions/video/ai-drama-storyboard-breakdown/contracts/schemas/storyboard.semantic-plan.v1.schema.json",
@@ -78,5 +78,5 @@
       }
     }
   ],
-  "digest": "sha256:325609cb8726894d313d637b7f8cd524a3c7cdd74be5c5ce9674aecc48690254"
+  "digest": "sha256:984de189f1a2fe442a0e92ab4706b134ebe61dcf9dfe75d6b8358c6275b9235d"
 }

@@ -11,6 +11,8 @@
 
 变量使用 `{{variable_name}}`。不要要求模型输出隐藏思维过程；需要解释时，只要求结论、关键证据、风险、权衡和下一步。
 
+Locale 数量与语言选择遵循 `docs/locale-policy.md`：solution 默认单语言，可为任意 BCP 47 语言；第二 locale 只在有真实消费方且能维护等价性时添加。
+
 成熟度：
 
 - `exploratory`：结构完整但验证有限；
@@ -39,4 +41,4 @@ contract input 必须与正文中的 `{{name}}` 一致。example 只能使用公
 4. 共享输出 schema 只落一份 artifact（`document artifact add --kind schema --stdin`，JCS 落盘）；每个角色的 `document init --schema-path` 绑定同一文件，改 schema 用 `document artifact replace --expected-digest` + 全角色 `document schema rebind`，不允许复制漂移。
 5. `fixture set init` + `fixture case add --stdin`（envelope 为 `{"input":…,"output":…}`，按 case_id 升序添加）+ `fixture validate`。
 
-fixture 命名规则：valid fixture 输出中禁止出现任何以 `ref` 结尾（归一化后）或 `digest/timestamp/provider` 等键——因此 v2 共享 schema 的回显字段命名为 `subject_version`、lineage 项命名为 `source_version` + `artifact_digest`；invalid 输出不受此限但仍须通过 schema。`version suffix` 目录（如 `ai-drama-character-assets-v2`）是 Registry 同 id 不允许双版本的既定决策，1.x 目录保持零改动。
+fixture 命名规则：valid fixture 输出中禁止出现任何以 `ref` 结尾（归一化后）或 `digest/timestamp/provider` 等键——因此 v2 共享 schema 的回显字段命名为 `subject_version`、lineage 项命名为 `source_version` + `artifact_digest`；invalid 输出不受此限但仍须通过 schema。版本后缀目录（如 `ai-drama-background-assets-v2`）用于并行演进期（Registry 同 id 不允许双版本）；2026-09-05 起 `ai-drama-character-assets-v2` 已晋升为正式 `ai-drama-character-assets@1.0.0`，旧 1.x 目录移除。此后非正式版本的目录名或版本号必须带 `beta`/`alpha` 标识，正式版本用无后缀 id 从 1.0.0 起版。

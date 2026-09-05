@@ -1,0 +1,80 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-drama-character-assets/character-layer-preview-v1/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets",
+  "version": "1.0.0",
+  "role": "character-layer-preview-v1",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-drama-character-assets/prompts/character-layer-preview-v1.zh-CN.md",
+    "digest": "sha256:cc27539f64a59d4dd31d7679d6279bf414156a16a1ccddff0ae153afc67a9dfc"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/character-layer-preview-v1.zh-CN.json",
+    "digest": "sha256:20ea15c2af15555584229de096e3cd158a8a9f5396a4e0eaa7a927098debdb2e"
+  },
+  "document": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/documents/character-layer-preview-v1.zh-CN.document.json",
+    "digest": "sha256:bfedaf32438a265f36d9c2b9659d53614189de625e0213756160b05b7e5317f7"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:f37d007c23f0ee6c9a5e6d99d6e2838386ab94be96a505244bbb1c4f708296f9"
+  },
+  "semantic_schema_version": "character_asset.modular_slot_bundle.v1",
+  "cases": [
+    {
+      "case_id": "canonical-claim",
+      "kind": "invalid",
+      "profile_id": "layer-preview-stack-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/character-layer-preview-v1.zh-CN/canonical-claim.input.json",
+        "digest": "sha256:6dba71c939483f1307e0bc1cedc020596f667f2825caa1f17ae937baa85cd16c",
+        "bytes": 1798
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/character-layer-preview-v1.zh-CN/canonical-claim.output.json",
+        "digest": "sha256:de05908d8e5b5d5a670a4f4ea82b91ba08ceb57b532cb952726bd9b44eed1815",
+        "bytes": 3618
+      },
+      "expected_codes": [
+        "PREVIEW_CANONICAL_CLAIM_FORBIDDEN"
+      ]
+    },
+    {
+      "case_id": "lineage-exact-composite",
+      "kind": "valid",
+      "profile_id": "layer-preview-stack-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/character-layer-preview-v1.zh-CN/lineage-exact-composite.input.json",
+        "digest": "sha256:f4509b5b825a61e75ef48c9bbfdee8dad63ba064b2a798dcc1b429d962cdaf4a",
+        "bytes": 1773
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/character-layer-preview-v1.zh-CN/lineage-exact-composite.output.json",
+        "digest": "sha256:5b85c346a2e57c2b46aa1980dfe59f3cfcaf86c226b1f359f7e20730360cad1e",
+        "bytes": 3370
+      }
+    },
+    {
+      "case_id": "lineage-missing",
+      "kind": "invalid",
+      "profile_id": "layer-preview-stack-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/character-layer-preview-v1.zh-CN/lineage-missing.input.json",
+        "digest": "sha256:a1650fd8a2fa55f4c00d73c34e260579936d971097133dbf7ef4822137cbd4f6",
+        "bytes": 932
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/character-layer-preview-v1.zh-CN/lineage-missing.output.json",
+        "digest": "sha256:940ff723d3ccd68eeaed72c1987c5b9bb9028eebba0b638f68cbb83408a677ed",
+        "bytes": 3600
+      },
+      "expected_codes": [
+        "PREVIEW_SOURCE_LINEAGE_MISSING"
+      ]
+    }
+  ],
+  "digest": "sha256:65fc6a0b938a5b47eff13f5fd29fa8a2c645fe2cf69eaa13b568a3eaa0017e15"
+}

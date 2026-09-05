@@ -13,7 +13,7 @@
 
 1. 准备人物资产（可选）：有人物参考资产时先登记并取得 `@` 引用填入 `character_ref`；无资产时靠 `subject_identity` + `wardrobe_and_accessories` + `consistency_lock` 文字锁定。
 2. 按 contract 填写 22 个输入；`scenario_summary`、`subject_identity`、`setting_desc`、`sequence_beats` 为 sensitive 创作内容。
-3. 用 promptrepo render 渲染 `main.zh-CN.md`（中文投递）或 `main.en.md`（英文投递，多数视频模型对英文响应更稳定）。
+3. 用 promptrepo render 渲染 `main.en.md`（中文阅读版见 `docs/template-zh-CN.md`，仅供人工审阅不进编译）。
 4. 按 `review-checklist.zh-CN.md` 人工审查后投递；权限为 `execute_requires_review`。
 
 ## 时间线节拍编写要点
@@ -23,9 +23,9 @@
 - 写实镜头的「不完美」是特征不是错误：对焦犹豫、曝光漂移、自然晃动写进 `camera_imperfections`，不要在分镜里把它们修掉。
 - 结尾指令（如 `29.5s 硬切黑场`）必须与 `duration_s` 协调。
 
-## 双 locale 说明
+## Locale 说明
 
-zh-CN 为 source locale；en 为同步适配，当前按 draft 管理。只有完成基于 zh-CN source digest 的人工等价校对后，en 才可标记为 reviewed。两个 locale 的 contract 输入完全一致，渲染结果可按目标模型语言偏好选择。
+本 solution 为单语言 `en` 模板（locale 政策见仓库 `docs/locale-policy.md`）：视频生成模型对英文响应更稳，原始素材均为英文。变量内容语言与骨架 locale 独立，可填中文值。docs 与 examples 保持 zh-CN。
 
 ## Provider 兼容
 
@@ -35,6 +35,8 @@ Provider 与模型名只作为兼容信息，不进入 tags 与一级分类。�
 - 其他视频模型：`provider_banner` 留空即可；资产引用风格按目标平台调整为 `@uuid` 或位置引用，contract regex 两者都接受。
 
 新增 Provider 兼容只改 examples 与本文档，不复制 solution，也不新建带 Provider 名的模板 ID。
+
+更多绑定实例：`examples/friend-travel-day.zh-CN.md`（朋友手持一日旅行，含光线递进与群像处理）。
 
 ## 成熟度说明
 

@@ -5,95 +5,102 @@
   "version": "1.0.0",
   "category": "video",
   "tags": [
-    "domain:video"
+    "domain:video",
+    "maturity:exploratory",
+    "workflow:modular-visual-assets"
   ],
   "capabilities": [
     "character_asset",
+    "modular_asset_slots",
     "subject_continuity"
   ],
   "rights": "internal",
   "maturity": "exploratory",
   "locales": {
     "en": {
-      "title": "AI Drama Character Visual Assets",
-      "summary": "Compile character, wardrobe, reference, and continuity constraints into a reviewable image Prompt Bundle",
-      "usage": "Use for face and body masters, turnarounds, wardrobe sheets, expression and action sheets, props, scenes, shot keyframes, and bounded repair",
-      "aliases": [
-        "character image prompt bundle",
-        "character turnaround template"
-      ]
+      "title": "AI drama modular character assets",
+      "summary": "Modular character assets: hairless head model, neutral body core, and replaceable surface/wearable layers",
+      "usage": "Single views rendered per slot by Eikona; Scaena consumes safe refs only; previews are not canonical assets"
     },
     "zh-CN": {
-      "title": "AI 做剧角色资产",
-      "summary": "分阶段编译角色、服装、场景与镜头关键帧资产",
-      "usage": "由视觉生产 Owner 渲染单视图任务并进行人工审查"
+      "title": "AI 做剧模块化角色资产",
+      "summary": "无头发头模、中性身体核心与可替换表面/穿戴层的模块化角色资产",
+      "usage": "由 Eikona 按 slot 渲染单视图；Scaena 只消费安全 refs；preview 不是 canonical 资产",
+      "aliases": [
+        "modular character asset template"
+      ]
     }
   },
   "templates": [
     {
-      "role": "character-wuxia-female-v1",
-      "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-character-assets/templates/characters/wuxia-female-v1.zh-CN.yaml"
-    },
-    {
-      "role": "isolated-character-assets-v1",
-      "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-character-assets/prompts/isolated-character-assets-v1.zh-CN.md"
-    },
-    {
-      "role": "layout-turnaround-three-view-v1",
-      "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-character-assets/templates/layouts/turnaround-three-view-v1.zh-CN.yaml"
-    },
-    {
-      "role": "main",
+      "role": "body-core-neutral-v1",
       "locale": "en",
-      "path": "solutions/video/ai-drama-character-assets/prompts/main.en.md"
+      "path": "solutions/video/ai-drama-character-assets/prompts/body-core-neutral-v1.en.md"
     },
     {
-      "role": "main",
+      "role": "body-core-neutral-v1",
       "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-character-assets/prompts/main.zh-CN.md"
+      "path": "solutions/video/ai-drama-character-assets/prompts/body-core-neutral-v1.zh-CN.md"
     },
     {
-      "role": "qc-character-turnaround-production-v1",
-      "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-character-assets/templates/qc/character-turnaround-production-v1.zh-CN.yaml"
+      "role": "character-harmonized-preview-v1",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-character-assets/prompts/character-harmonized-preview-v1.en.md"
     },
     {
-      "role": "staged-character-production-v2",
+      "role": "character-harmonized-preview-v1",
       "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-character-assets/prompts/staged-character-production-v2.zh-CN.md"
+      "path": "solutions/video/ai-drama-character-assets/prompts/character-harmonized-preview-v1.zh-CN.md"
     },
     {
-      "role": "task-character-turnaround-independent-artifacts-v2",
-      "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-character-assets/templates/tasks/character-turnaround-independent-artifacts-v2.zh-CN.yaml"
+      "role": "character-layer-preview-v1",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-character-assets/prompts/character-layer-preview-v1.en.md"
     },
     {
-      "role": "task-character-turnaround-three-view-v1",
+      "role": "character-layer-preview-v1",
       "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-character-assets/templates/tasks/character-turnaround-three-view-v1.zh-CN.yaml"
+      "path": "solutions/video/ai-drama-character-assets/prompts/character-layer-preview-v1.zh-CN.md"
     },
     {
-      "role": "wardrobe-wuxia-hanfu-moonwhite-v1",
-      "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-character-assets/templates/wardrobes/wuxia-hanfu-moonwhite-v1.zh-CN.yaml"
+      "role": "head-core-bald-v1",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-character-assets/prompts/head-core-bald-v1.en.md"
     },
     {
-      "role": "wuxia-female-turnaround-modular",
+      "role": "head-core-bald-v1",
       "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-character-assets/templates/plans/wuxia-female-turnaround-modular.zh-CN.yaml"
+      "path": "solutions/video/ai-drama-character-assets/prompts/head-core-bald-v1.zh-CN.md"
     },
     {
-      "role": "wuxia-female-turnaround-staged-v2",
-      "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-character-assets/templates/plans/wuxia-female-turnaround-staged-v2.zh-CN.yaml"
+      "role": "surface-coat-hair-v1",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-character-assets/prompts/surface-coat-hair-v1.en.md"
     },
     {
-      "role": "wuxia-female-turnaround-yaml",
+      "role": "surface-coat-hair-v1",
       "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-character-assets/templates/tasks/wuxia-female-turnaround.zh-CN.yaml"
+      "path": "solutions/video/ai-drama-character-assets/prompts/surface-coat-hair-v1.zh-CN.md"
+    },
+    {
+      "role": "wearable-accessory-v1",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-character-assets/prompts/wearable-accessory-v1.en.md"
+    },
+    {
+      "role": "wearable-accessory-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/prompts/wearable-accessory-v1.zh-CN.md"
+    },
+    {
+      "role": "wearable-garment-v1",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-character-assets/prompts/wearable-garment-v1.en.md"
+    },
+    {
+      "role": "wearable-garment-v1",
+      "locale": "zh-CN",
+      "path": "solutions/video/ai-drama-character-assets/prompts/wearable-garment-v1.zh-CN.md"
     }
   ]
 }

@@ -6,7 +6,7 @@
   "role": "project-intent",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-film-multi-profile-production/prompts/project-intent.zh-CN.md",
-  "source_digest": "sha256:f4ea4e5c2fe01eb0befba6da7d9e1eb97a0d39f9379608d58991124e9fc2e5ac",
+  "source_digest": "sha256:5a19edd334a89fdf1512fbe7c638703ba968f9fb8f7a8806ca5193dbbbe17f73",
   "format": "markdown",
   "media_type": "text/markdown",
   "canonicalization": "raw_utf8",
@@ -25,5 +25,5 @@
     "max_bytes": 2097152,
     "max_depth": 64
   },
-  "digest": "sha256:e54b891ba8791dd3d6c452305057927dd87a5a6dae247da16ed00c551f68a0a1"
+  "digest": "sha256:db06a1a11eb26fe116ac8708d27fb69838aeb0638654d855f906cf0e532158f5"
 }

@@ -1,5 +1,7 @@
 # AI 电影 ShotAudioIntent 编译
 
+> 本文档是人工审阅译文，不进入编译。编译与投递只使用对应 `.en.md`。
+
 ## 1. Owner boundary and safety
 
 你只把安全场景语义与镜头时间窗编译为声音意图。Sonora 拥有 voice、segment、readiness、最终混音和替换的 canonical state；你不生成台词、voice asset、provider request 或 final mix。

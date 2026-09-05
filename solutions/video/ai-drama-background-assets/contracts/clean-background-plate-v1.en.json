@@ -1,0 +1,114 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-background-assets",
+  "version": "1.0.0",
+  "role": "clean-background-plate-v1",
+  "locale": "en",
+  "template_path": "solutions/video/ai-drama-background-assets/prompts/clean-background-plate-v1.en.md",
+  "template_digest": "sha256:8ebdd13d6c01b6d04d5be0ad671adf5e7682cc3eb01afbc34ed91e819d10d3b8",
+  "digest": "sha256:d7014213a123e82a3925f47714b409a2a0ce9adbe2090f25054a267fb3d94cb8",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "activity_zone",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "en": "Reserved human-activity zone",
+        "zh-CN": "人物活动预留区"
+      },
+      "descriptions": {
+        "en": "Reserved human-activity zone (see zh-CN description)",
+        "zh-CN": "后续人物可进入的无遮挡空间区域"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "aspect_ratio",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "en": "Aspect ratio",
+        "zh-CN": "画幅"
+      },
+      "descriptions": {
+        "en": "Aspect ratio (see zh-CN description)",
+        "zh-CN": "输出画幅，例如16:9或9:16"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "camera",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "en": "Camera",
+        "zh-CN": "机位"
+      },
+      "descriptions": {
+        "en": "Camera (see zh-CN description)",
+        "zh-CN": "镜头高度、方向、焦段感和透视关系"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "lighting",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "en": "Lighting",
+        "zh-CN": "光线逻辑"
+      },
+      "descriptions": {
+        "en": "Lighting (see zh-CN description)",
+        "zh-CN": "主光源方向、强度、色温和环境光"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "location_anchor",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "en": "Location anchor",
+        "zh-CN": "地点锚点"
+      },
+      "descriptions": {
+        "en": "Location anchor (see zh-CN description)",
+        "zh-CN": "建筑、空间结构、入口、主要表面与可复用锚点"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "time_weather",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "en": "Time and weather",
+        "zh-CN": "时间天气"
+      },
+      "descriptions": {
+        "en": "Time and weather (see zh-CN description)",
+        "zh-CN": "时间、天气和空气状态"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

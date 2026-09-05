@@ -1,0 +1,55 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "iconic-landmark-poster",
+  "version": "1.0.0",
+  "category": "image",
+  "tags": [
+    "artifact:poster",
+    "category:image",
+    "constraint:series_consistency",
+    "constraint:visual_system_lock",
+    "job:generate",
+    "modality:image",
+    "scenario:city_landmark",
+    "stage:prompt_generation",
+    "use:cover"
+  ],
+  "capabilities": [
+    "archival_typography",
+    "image",
+    "negative_prompt_governance",
+    "series_visual_system"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "ICONIC LANDMARK SERIES City Landmark Poster",
+      "summary": "Fixed visual system (photo upper + vector lower + archival typography) city landmark poster prompt with fully parameterized city content",
+      "usage": "Use with the consumer-side renderer and city specs; supports per-city variants and a series index"
+    },
+    "zh-CN": {
+      "title": "ICONIC LANDMARK SERIES 城市地标海报",
+      "summary": "固定视觉系统（上半真实摄影 + 下半矢量解构 + 建筑档案排版）的城市地标海报 Prompt，城市差异全部变量化",
+      "usage": "配合消费侧渲染器按城市 spec 绑定变量；支持同城多变体与系列索引",
+      "aliases": [
+        "iconic landmark poster",
+        "地标海报",
+        "城市海报"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/iconic-landmark-poster/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/image/iconic-landmark-poster/prompts/main.zh-CN.md"
+    }
+  ]
+}

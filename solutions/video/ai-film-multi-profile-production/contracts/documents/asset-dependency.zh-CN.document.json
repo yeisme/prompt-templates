@@ -6,7 +6,7 @@
   "role": "asset-dependency",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-film-multi-profile-production/prompts/asset-dependency.zh-CN.md",
-  "source_digest": "sha256:a95a6cbd8708dae1b0a6fe9ebefd47df8c1694a29830b1472d504981272f9593",
+  "source_digest": "sha256:0826139dfcba54e15328c40173bbf0fa33760896123d88dcb0daa2bdc729f16b",
   "format": "markdown",
   "media_type": "text/markdown",
   "canonicalization": "raw_utf8",
@@ -25,5 +25,5 @@
     "max_bytes": 2097152,
     "max_depth": 64
   },
-  "digest": "sha256:0d84c836acb520d72662b1c899e9dd54a422fdedd53bd1b9983b2557e5febfa4"
+  "digest": "sha256:1b69502b2d677786e0e24df1c836641237a06fa33518a11e9ee55e326d74a679"
 }

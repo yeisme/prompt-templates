@@ -7,8 +7,7 @@
 - [AI 做剧官方模板测试与今日状态（2026-08-31）](ai-drama-templates-test-guide-2026-08-31.md)：离线验收、实际 preview/inspect、今日证据与已知缺口。
 - [AI 做剧官方模板测试与今日状态（2026-09-02）](ai-drama-templates-test-guide-2026-09-02.md)：模块化视觉资产 v2 全量实现的 provider-free 证据与成熟度边界。
 - [AI 做剧分镜预设](../solutions/video/ai-drama-storyboard-breakdown/docs/preset-matrix.zh-CN.md)：竖屏短剧、对白密集、漫剧和产品微短剧的分镜合同。
-- [AI 做剧视觉资产预设](../solutions/video/ai-drama-character-assets/docs/preset-matrix.zh-CN.md)：角色母版、三视图、服装动作、场景、关键帧和修复模板。
-- [AI 做剧视觉资产预设 v2（角色）](../solutions/video/ai-drama-character-assets-v2/docs/preset-matrix.zh-CN.md)：头/身核心、表面层、单件穿戴、预览的槽位矩阵与稳定失败码。
+- [AI 做剧视觉资产预设（角色，模块化正式版）](../solutions/video/ai-drama-character-assets/docs/preset-matrix.zh-CN.md)：头/身核心、表面层、单件穿戴、预览的槽位矩阵与稳定失败码（2026-09-05 v2 晋升正式 1.0.0）。
 - [AI 做剧视觉资产预设 v2（环境）](../solutions/video/ai-drama-background-assets-v2/docs/preset-matrix.zh-CN.md)：语义物件、空场景壳、环境预览的槽位矩阵与稳定失败码。
 - [AI 做剧模块化视觉资产模板 v2](modular-visual-assets-v2.md)：共享词汇、版本/locale/rights/maturity 规则与已实现状态（provider-free 验证通过）。
 

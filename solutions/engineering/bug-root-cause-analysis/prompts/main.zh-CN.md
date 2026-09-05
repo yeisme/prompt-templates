@@ -1,5 +1,7 @@
 # Bug 根因分析
 
+> 本文档是人工审阅译文，不进入编译。编译与投递只使用对应 `.en.md`。
+
 分析故障 `{{problem}}`，已知证据包括 `{{evidence}}`、复现步骤 `{{reproduction}}` 和最近变更 `{{recent_changes}}`。
 
 要求：

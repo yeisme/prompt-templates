@@ -8,15 +8,15 @@
   "locale": "zh-CN",
   "template": {
     "ref": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.zh-CN.md",
-    "digest": "sha256:9b997d8dc5d7fa1ba03dd53bffff2c1171e38ca1317085140af1de6f812f5c42"
+    "digest": "sha256:45e8379b0bf8cfb9a9141e5564b1bfca44a7f973a82fb7ce376ed3770c7b943a"
   },
   "contract": {
     "ref": "solutions/video/ai-film-multi-profile-production/contracts/failure-restructure.zh-CN.json",
-    "digest": "sha256:9205acbba5ee4befc22e13de2fd8016d8ca11cc9cc0d8de64573f7db6819299d"
+    "digest": "sha256:960876c0265194e00bbbea576abc10e96f2a86dc75013a2d5ef6138d17a65483"
   },
   "document": {
     "ref": "solutions/video/ai-film-multi-profile-production/contracts/documents/failure-restructure.zh-CN.document.json",
-    "digest": "sha256:3500f2d087fb90e4ef6f7c7c5dcc1bd5ea6cbbe4972e5c4cc5948d75006fadfe"
+    "digest": "sha256:f5600681389a9c35cba370b1ed1fbf0ae2a50ab0152f543058abaaaf9a9ca8f2"
   },
   "schema": {
     "ref": "solutions/video/ai-film-multi-profile-production/contracts/schemas/ai-film-failure-restructure-semantic-output-v1.schema.json",
@@ -76,5 +76,5 @@
       }
     }
   ],
-  "digest": "sha256:5bd861298b2daf0e42e014eb29fb3dcd79cbddd8894628cf47b73b39a74e75bb"
+  "digest": "sha256:e99bf2ef46fac3a18215b589a35ec0199f20daf3727f58c3e4e146704b6a558b"
 }

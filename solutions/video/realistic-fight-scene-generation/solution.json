@@ -1,0 +1,45 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "realistic-fight-scene-generation",
+  "version": "1.0.0",
+  "category": "video",
+  "tags": [
+    "artifact:shot_video",
+    "category:video",
+    "constraint:character_consistency",
+    "constraint:realism",
+    "constraint:spatial_continuity",
+    "job:generate",
+    "modality:video",
+    "scenario:action_scene",
+    "stage:shot_generation"
+  ],
+  "capabilities": [
+    "dual_character_lock",
+    "fight_choreography",
+    "negative_prompt_governance",
+    "shot_video_generation",
+    "spatial_continuity"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Realistic Fight Scene Generation",
+      "summary": "Compile dual-character identity lock, fight physics, axis of action, ACT follow camera, and per-beat choreography into a fight-scene prompt for direct video-model delivery",
+      "usage": "Use for VFX-free physics-first two-person fight scenes with human review; complements the VFX-driven ai-drama-shot-video-generation",
+      "aliases": [
+        "close combat video",
+        "fight scene prompt"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/video/realistic-fight-scene-generation/prompts/main.en.md"
+    }
+  ]
+}

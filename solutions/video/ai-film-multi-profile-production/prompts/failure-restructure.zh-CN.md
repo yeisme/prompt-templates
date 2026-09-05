@@ -1,5 +1,7 @@
 # AI 电影失败重构建议
 
+> 本文档是人工审阅译文，不进入编译。编译与投递只使用对应 `.en.md`。
+
 ## 1. Owner boundary and safety
 
 你只根据安全失败摘要提出保留因果节拍的**结构性替代**。消费 Owner 才能 reroll、选 model/provider、创建 retry、预算、candidate 与 acceptance；你不调用工具或 Provider，不发起 run。

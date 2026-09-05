@@ -1,0 +1,150 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets",
+  "version": "1.0.0",
+  "role": "character-layer-preview-v1",
+  "locale": "zh-CN",
+  "template_path": "solutions/video/ai-drama-character-assets/prompts/character-layer-preview-v1.zh-CN.md",
+  "template_digest": "sha256:cc27539f64a59d4dd31d7679d6279bf414156a16a1ccddff0ae153afc67a9dfc",
+  "digest": "sha256:20ea15c2af15555584229de096e3cd158a8a9f5396a4e0eaa7a927098debdb2e",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "inspect",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "character_asset.modular_slot_bundle.v1"
+      ],
+      "labels": {
+        "en": "output_schema_version",
+        "zh-CN": "输出合同版本"
+      },
+      "descriptions": {
+        "zh-CN": "Prompt Bundle 输出 schema 版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "preview_kind",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "layer_alignment"
+      ],
+      "labels": {
+        "en": "preview_kind",
+        "zh-CN": "预览类型"
+      },
+      "descriptions": {
+        "zh-CN": "本模板锁定的预览用途"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "reference_bindings_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "en": "reference_bindings_json",
+        "zh-CN": "参考绑定"
+      },
+      "descriptions": {
+        "zh-CN": "带 inherit/forbid 的安全绑定 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "render_policy_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 32768,
+      "labels": {
+        "en": "render_policy_json",
+        "zh-CN": "渲染策略"
+      },
+      "descriptions": {
+        "zh-CN": "画幅、画布策略与协调选项 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "eikona.character_asset_prompt_input.v2"
+      ],
+      "labels": {
+        "en": "schema_version",
+        "zh-CN": "输入合同版本"
+      },
+      "descriptions": {
+        "zh-CN": "消费方输入合同版本"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "slot_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "preview"
+      ],
+      "labels": {
+        "en": "slot_id",
+        "zh-CN": "资产槽位"
+      },
+      "descriptions": {
+        "zh-CN": "本模板锁定的 slot"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "source_refs_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "en": "source_refs_json",
+        "zh-CN": "source lineage"
+      },
+      "descriptions": {
+        "zh-CN": "分层 source 的精确 refs（slot/version/digest/view）JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "view_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "detail_front",
+        "front_left_three_quarter",
+        "left_profile",
+        "back",
+        "right_profile",
+        "front_right_three_quarter",
+        "adaptive"
+      ],
+      "labels": {
+        "en": "view_id",
+        "zh-CN": "合成视图"
+      },
+      "descriptions": {
+        "zh-CN": "本轮唯一合成视图（六视图或 adaptive）"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}

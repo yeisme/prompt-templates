@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-drama-character-assets/character-harmonized-preview-v1/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets",
+  "version": "1.0.0",
+  "role": "character-harmonized-preview-v1",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-drama-character-assets/prompts/character-harmonized-preview-v1.zh-CN.md",
+    "digest": "sha256:78d68289982e8e0a3d4cb25df09cf05427b19edc69e11619a7c469982b876665"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/character-harmonized-preview-v1.zh-CN.json",
+    "digest": "sha256:d8d35f27cfdb23e6b6ccac13a51a7a5b584a52f7bea078a54433819d142b0a70"
+  },
+  "document": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/documents/character-harmonized-preview-v1.zh-CN.document.json",
+    "digest": "sha256:9cca819aa79c5c415d0047b12cad7d756ee76a5027305683e803fee71b435336"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:f37d007c23f0ee6c9a5e6d99d6e2838386ab94be96a505244bbb1c4f708296f9"
+  },
+  "semantic_schema_version": "character_asset.modular_slot_bundle.v1",
+  "cases": [
+    {
+      "case_id": "harmonized-read-lineage",
+      "kind": "valid",
+      "profile_id": "harmonized-read-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/character-harmonized-preview-v1.zh-CN/harmonized-read-lineage.input.json",
+        "digest": "sha256:05d4ba309e3673dad85262e54ac1b9511bf88758c54dbcb96e1817ae7b6dbc08",
+        "bytes": 1838
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/character-harmonized-preview-v1.zh-CN/harmonized-read-lineage.output.json",
+        "digest": "sha256:557079c3fb3f0e151c415d5ffe960abab4c3370904cc723d68230f73f74549f9",
+        "bytes": 3407
+      }
+    },
+    {
+      "case_id": "production-ready-claim",
+      "kind": "invalid",
+      "profile_id": "harmonized-read-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/character-harmonized-preview-v1.zh-CN/production-ready-claim.input.json",
+        "digest": "sha256:88081de114e9f2ecc72a6d235e85cc02807f7a71addcb4e782709fdd2572bb95",
+        "bytes": 1806
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/character-harmonized-preview-v1.zh-CN/production-ready-claim.output.json",
+        "digest": "sha256:711699fa73a1d2c824168561c18732f1ad91bc94dea33f8b294d229390ad99dc",
+        "bytes": 3636
+      },
+      "expected_codes": [
+        "PREVIEW_SUBJECT_FREEZE_CLAIM_FORBIDDEN"
+      ]
+    }
+  ],
+  "digest": "sha256:8527c51e90cd473789c3fa6efcc36f3d723f21571c75c8c2a71325253bb66ec2"
+}

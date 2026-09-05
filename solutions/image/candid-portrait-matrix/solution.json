@@ -1,0 +1,53 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "candid-portrait-matrix",
+  "version": "1.0.0",
+  "category": "image",
+  "tags": [
+    "artifact:candid_portrait",
+    "category:image",
+    "constraint:batch_dedup",
+    "constraint:realism",
+    "job:generate",
+    "modality:image",
+    "scenario:summer_candid",
+    "stage:prompt_generation"
+  ],
+  "capabilities": [
+    "image",
+    "negative_prompt_governance",
+    "random_matrix_sampling"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Candid Lifestyle Portrait (Random Matrix)",
+      "summary": "Compile a subject plus 12 picture dimensions into a candid summer portrait prompt ready for image-model delivery",
+      "usage": "Use with the consumer-side sampler for batched candidates and in-batch dedup; bind all variables manually for single shots"
+    },
+    "zh-CN": {
+      "title": "真实生活摄影抓拍写真（随机矩阵）",
+      "summary": "把主体与 12 个画面维度（表情/服装/场景/瞬间/景别/焦段/机位/构图/前景/光线/色彩/摄影状态）编译为可直接投递图像模型的抓拍写真 Prompt",
+      "usage": "配合消费侧采样器做批量候选生成与批内去重；单图使用时手工绑定全部变量",
+      "aliases": [
+        "candid portrait matrix",
+        "夏日写真",
+        "抓拍写真"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/candid-portrait-matrix/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/image/candid-portrait-matrix/prompts/main.zh-CN.md"
+    }
+  ]
+}

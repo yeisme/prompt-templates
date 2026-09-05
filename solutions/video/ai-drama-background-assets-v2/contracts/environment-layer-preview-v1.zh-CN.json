@@ -6,8 +6,8 @@
   "role": "environment-layer-preview-v1",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-layer-preview-v1.zh-CN.md",
-  "template_digest": "sha256:dcaccd98851f4c5b847908b821f36b32fff43316262103c0d406fa8adceef823",
-  "digest": "sha256:8845dc62d87cb499a772275866e8afe0cebc4867c1133b74f754a609f76336d3",
+  "template_digest": "sha256:8a75b25b244a47168873fc5529f28f5d51fa764e32ba3ae898407775fb0c831f",
+  "digest": "sha256:83b354656f6da9f031af78d5edf8d385ea1047aa46cb975c61298ead932c4c11",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

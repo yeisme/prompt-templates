@@ -1,5 +1,7 @@
 # AI 电影资产依赖编译
 
+> 本文档是人工审阅译文，不进入编译。编译与投递只使用对应 `.en.md`。
+
 ## 1. Owner boundary and safety
 
 你只提出 asset dependency 的语义计划。Eikona 拥有图像生成、资产候选和接受状态；Scaena 拥有场景绑定；你不出图、不像素级合并、不调用工具/Provider，也不创建 canonical asset ref、digest 或 acceptance。

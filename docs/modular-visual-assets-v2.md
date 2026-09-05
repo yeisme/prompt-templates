@@ -1,6 +1,6 @@
 # AI 做剧模块化视觉资产模板 v2
 
-状态：`archived 2026-09-02（内容已实现，provider-free 验证通过；maturity=exploratory，未发布 release）`  
+状态：`archived 2026-09-02（内容已实现，provider-free 验证通过；maturity=exploratory，未发布 release）`；2026-09-05 character family 晋升为正式 `ai-drama-character-assets@1.0.0`  
 OpenSpec：[`official-ai-drama-modular-visual-assets-v2`](../openspec/changes/archive/2026-09-02-official-ai-drama-modular-visual-assets-v2/proposal.md)
 
 ## 设计目标
@@ -9,7 +9,7 @@ v2 不再让一张“角色完成图”同时承担身份、头发、服装、�
 
 两个 solution family 的边界如下：
 
-- `ai-drama-character-assets@2.0.0`：头部核心、身体核心、头发/表面层、服装、装饰和角色预览；
+- `ai-drama-character-assets@1.0.0`（2026-09-05 由 `-v2@2.0.0` 晋升为正式版本，旧 1.x 目录已移除）：头部核心、身体核心、头发/表面层、服装、装饰和角色预览；
 - `ai-drama-background-assets@2.0.0`：独立语义物件、空场景壳和环境预览。
 
 Prompt Repository 只提供 Prompt 正文、输入变量、输出要求、失败模式、评审清单、rights 和 maturity。图片生成、Alpha QA、候选选择、运行证据和 production acceptance 属于 Eikona/Scaena。
@@ -87,7 +87,7 @@ layer preview 用于检查对齐、穿插和遮挡；harmonized preview 用于�
 
 ## 版本兼容
 
-`ai-drama-character-assets@1.x`、`ai-drama-background-assets@1.x`、`face-master-v1` 和 `face-mask-front-v1` 保持不可变。新 canonical 头部入口为 `head-core-bald-v1`；旧消费者不会自动跳转到 2.0.0。
+2026-09-05：旧 `ai-drama-character-assets@1.x` 目录已清理，模块化 v2 内容整体晋升为正式 `ai-drama-character-assets@1.0.0`（目录无版本后缀）；引用旧 1.x hairstyle/turnaround ref 的消费者按 compat-only 处理（见 `legacy-hairstyle-compat` fixture）。`ai-drama-background-assets@1.x` 保持不可变；`face-master-v1`、`face-mask-front-v1` 随旧 1.x 目录一并退役。新 canonical 头部入口为 `head-core-bald-v1`。
 
 结构化 catalog、contract 和 fixture 索引由 Template Registry CLI 生成。2026-09-02 起两个 family 的全部 11 个模板（7 角色/环境 + 4 预览）已由 CLI 完成正文、contract、document、共享 schema 绑定与 fixture 集（42 cases）并全部通过 `contract/document/fixture/catalog validate`；但这不代表 Provider 实拍验证或 release 已发布。
 
@@ -137,11 +137,11 @@ layer preview 用于检查对齐、穿插和遮挡；harmonized preview 用于�
 
 ### 共享输出合同
 
-两个 family 的模板共用同一输出 schema `character_asset.modular_slot_bundle.v1`（canonical 文件：`solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json`，由 Registry `document artifact add` 生成与校验）。它承载 slot/view/RenderRevision/policy_echo 词汇的机器面，并包含预览专用面：`preview_lineage`（仅 `slot_id=preview` 的 bundle 必填、其他 slot 禁用，经 `allOf` if/then 表达）与 `policy_echo.preview_purpose`；character 与 environment 模板的 document descriptor 都绑定该 exact 文件与 digest，不允许各自复制漂移。
+两个 family 的模板共用同一输出 schema `character_asset.modular_slot_bundle.v1`（canonical 文件：`solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json`，由 Registry `document artifact add` 生成与校验）。它承载 slot/view/RenderRevision/policy_echo 词汇的机器面，并包含预览专用面：`preview_lineage`（仅 `slot_id=preview` 的 bundle 必填、其他 slot 禁用，经 `allOf` if/then 表达）与 `policy_echo.preview_purpose`；character 与 environment 模板的 document descriptor 都绑定该 exact 文件与 digest，不允许各自复制漂移。
 
 ## 版本、locale、rights 与 maturity 规则
 
-- 版本：`ai-drama-character-assets-v2@2.0.0` 与 `ai-drama-background-assets-v2@2.0.0` 是并行新 major；1.x 目录、template ID、正文与 fixture 不修改、不重定向。Registry authoring CLI 以 solution id 定位目录，因此 2.0.0 family 使用版本后缀目录；其 catalog 稳定地址为 `promptrepo://official/video/ai-drama-character-assets-v2@2.0.0` 与 `promptrepo://official/video/ai-drama-background-assets-v2@2.0.0`。2.x 内的加法演进递增 patch/minor，不原地覆盖已发布版本。
+- 版本：2026-09-05 起 `ai-drama-character-assets` 以无后缀目录作为正式版本从 1.0.0 起版（原 `-v2@2.0.0` 内容整体晋升；catalog 稳定地址 `promptrepo://official/video/ai-drama-character-assets@1.0.0`）。`ai-drama-background-assets-v2@2.0.0` 仍为并行演进期目录（catalog 稳定地址 `promptrepo://official/video/ai-drama-background-assets-v2@2.0.0`）。Registry authoring CLI 以 solution id 定位目录，因此并行未转正的 family 使用版本后缀目录；此后非正式（未转正）版本的目录名或版本号必须带 `beta`/`alpha` 标识，正式版本用无后缀 id 从 1.0.0 起版。正式版本内的加法演进递增 patch/minor，不原地覆盖已发布版本。
 - Source digest：`zh-CN` 是 source locale；每个 role 的 template digest 即该 role 的 source digest。`en` 适配逐 role 绑定 source digest（同 `ai-film-multi-profile-production/docs/i18n.md` 的做法），source 变化后对应 en 适配立即 stale，必须重新评审 placeholder/约束等价并重跑 contract validate 后才能继续标注 reviewed；machine ID、slot/view enum、schema 字段与失败码不翻译。
 - Rights：默认 `internal`；示例与 fixture 只使用原创虚构角色与非品牌材料，不含真人肖像、受保护角色复刻、品牌 claim、credential 或 provider payload。
 - Maturity：2.0.0 内容初始一律 `exploratory`；`first-support` 需要 fixture 执行、人工评审、rights 结论与已知失败记录齐全；`mature` 另需真实脱敏使用证据。任何模板不得因正文完成而自称 first-support。

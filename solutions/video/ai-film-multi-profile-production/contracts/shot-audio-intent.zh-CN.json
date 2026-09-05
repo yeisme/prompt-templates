@@ -6,8 +6,8 @@
   "role": "shot-audio-intent",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-film-multi-profile-production/prompts/shot-audio-intent.zh-CN.md",
-  "template_digest": "sha256:4f5763c70d6643d72f42178306027269c7a32db60a0a359d5cd9660c31b1140f",
-  "digest": "sha256:27c1e001a6cd687711213f786793dd31017d8d427fb310eb0400aa8b7ca28c5a",
+  "template_digest": "sha256:97e422cb037d9b6edef568b8a32ea38b1d7c2319c7ef674f1e440740b1534357",
+  "digest": "sha256:0f0529bab980c1dd757451589ebb90953ba117f74a81dd8e5c15cfe08996c8a6",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

@@ -6,7 +6,7 @@
   "role": "continuity-review",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-film-multi-profile-production/prompts/continuity-review.zh-CN.md",
-  "source_digest": "sha256:4adb3f5e0c3f4f3e6fd383cce592533841ddd6cffbcc5059b63e98acf7665453",
+  "source_digest": "sha256:b6c04e61eae57abe5e4a863df6c4f20d6b8e4e2631e6a9580c463aa4915ea5ca",
   "format": "markdown",
   "media_type": "text/markdown",
   "canonicalization": "raw_utf8",
@@ -25,5 +25,5 @@
     "max_bytes": 2097152,
     "max_depth": 64
   },
-  "digest": "sha256:60546ed60ab03cf8802de739a42987f20f4da5371220b65c6a8b17e602bf6bc4"
+  "digest": "sha256:03fae7d729215ca0804eed4c03ad54ffd829dd0eab50eb8abe4e4103c8b6bba8"
 }

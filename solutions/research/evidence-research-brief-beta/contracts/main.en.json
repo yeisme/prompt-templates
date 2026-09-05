@@ -1,0 +1,46 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "research",
+  "solution_id": "evidence-research-brief-beta",
+  "version": "2.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/research/evidence-research-brief-beta/prompts/main.en.md",
+  "template_digest": "sha256:a55e4f485321d94d4b5d7d798fc32ec475b5455ee23fa4964d7dddb20df0f4fd",
+  "digest": "sha256:06a8017fccf90b8e442ec6e0e017f62a2dc475e0b962f3ffb16531a489c3626f",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "decision_maker",
+      "type": "string",
+      "labels": {
+        "en": "Decision Maker",
+        "zh-CN": "决策者"
+      }
+    },
+    {
+      "name": "research_question",
+      "type": "string",
+      "required": true,
+      "labels": {
+        "en": "Research Question",
+        "zh-CN": "研究问题"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "sources",
+      "type": "string",
+      "required": true,
+      "labels": {
+        "en": "Sources",
+        "zh-CN": "来源资料"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

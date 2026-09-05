@@ -6,7 +6,7 @@
   "role": "repair",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md",
-  "source_digest": "sha256:e985526d747415fce8163d69d0a187c966c4f3b6ff85e3fdf9d5ae5f47dcaddd",
+  "source_digest": "sha256:61def1458a712741b43861c350ba4e2fd7976dc078cb19527aabf6476c5da3b7",
   "format": "markdown",
   "media_type": "text/markdown",
   "canonicalization": "raw_utf8",
@@ -30,5 +30,5 @@
     "max_bytes": 262144,
     "max_depth": 64
   },
-  "digest": "sha256:1ae5074d4db0294a56a778a7b55744e6b9bdfa09178a0d30f392cd6f8adf801d"
+  "digest": "sha256:65719e1c0204b1a12b4e3c441c95d9ea12c12f37e41dbe58912169b54e1f90cc"
 }

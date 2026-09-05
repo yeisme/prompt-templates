@@ -6,8 +6,8 @@
   "role": "main",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-storyboard-breakdown/prompts/main.zh-CN.md",
-  "template_digest": "sha256:6817dc387a99f04a0ea81c66f2713ec41be63576052f50cbd47199e61adec4d9",
-  "digest": "sha256:f9e95e9f716e4752e82418feb6b15d6ebe4dc1ce5d83fbf5671139a9001d772b",
+  "template_digest": "sha256:4d6b29ac7f52564d1bd4b9afa8aa236a0543637c786b52b3f44de90e2a2f6b74",
+  "digest": "sha256:67533390a2812e14763a0360615cba99d3e9863bb111ff4d62c40b5c03eca125",
   "license": "internal",
   "permissions": [
     "inspect",

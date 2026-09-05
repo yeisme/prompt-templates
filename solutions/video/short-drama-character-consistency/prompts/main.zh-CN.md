@@ -1,5 +1,7 @@
 # 短剧人物一致性镜头提示
 
+> 本文档是人工审阅译文，不进入编译。编译与投递只使用对应 `.en.md`。
+
 根据角色设定 `{{character_bible}}`、参考图 `{{reference_assets}}`、当前镜头 `{{shot_intent}}` 和前一镜头连续性 `{{previous_shot}}`，生成视频镜头提示。
 
 硬约束：

@@ -14,9 +14,11 @@ Active skills 由根目录 `.skills/profiles/targets/data/yeisme-prompt-template
 
 ## 内容与语言
 
-- `zh-CN` 是默认 source locale，`en` 是首个同步适配。
-- Prompt、指南和示例可以人工编辑；`repository.json`、`solution.json`、`catalog.json`、release manifest 和 lock 必须由 Template Registry CLI 生成。
+- Locale 政策见 `docs/locale-policy.md`：solution 默认单语言，locale 可为任意 BCP 47 语言；`zh-CN` 是仓库 `default_locale` 与文档默认语言，不再强制 zh-CN 源 + en 适配配对。
+- Agent 编译约定（2026-09-05 起，image 包先行，scaena 项目统一遵循）：进入编译器/投递给模型的模板正文一律为 `main.en.md`；`main.zh-CN.md` 只作人工审阅译文，不进入编译。包内中文译文须在头部标注该身份。
+- Prompt、指南和示例可以人工编辑；`repository.json`、`solution.json`、`catalog.json`、release manifest 和 lock 必须由 Template Registry CLI 生成（含 `solution locale remove` 的 locale 移除）。
 - machine IDs、目录名、schema keys、tags、capabilities、rights 和 maturity 使用稳定英文。
+- 版本命名（2026-09-05 起）：正式版本用无后缀 solution id，从 `1.0.0` 起版；非正式（未转正）版本的目录名或版本号必须带 `beta` 或 `alpha` 标识（如 `xxx-assets-beta`、`2.0.0-beta.1`）。转正时去后缀目录、版本重置 `1.0.0`，内容整体晋升并经 Registry CLI 重放 metadata；禁止再用裸 `-v2` 目录表达"并行未转正 major"（`ai-drama-background-assets-v2` 为存量豁免，转正时一并收敛）。
 - 不记录隐藏系统提示、真实用户数据、Provider payload、credential、完整思维链或未脱敏运行证据。
 
 ## 边界
@@ -24,7 +26,7 @@ Active skills 由根目录 `.skills/profiles/targets/data/yeisme-prompt-template
 - 不在本仓库实现 Git/GitHub/S3 adapter、搜索引擎或模型调用。
 - 不复制 Sonora、Eikona、Scaena、Pinax 或 Auctra 的领域状态。
 - 官方条目必须是解决方案包，而不是只有一段 Prompt 字符串；至少包含适用目标、输入变量、输出要求、评审清单、失败模式、rights 与 maturity。
-- 自动翻译只能作为 draft，英文进入 reviewed 前需要人工校对。
+- 任何第二 locale 的自动翻译只能作为 draft，进入 reviewed 前需要人工校对；不为「完整性」补 locale（见 `docs/locale-policy.md`）。
 
 ## Skill 路由
 

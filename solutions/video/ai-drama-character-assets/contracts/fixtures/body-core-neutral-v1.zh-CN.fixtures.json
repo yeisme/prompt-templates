@@ -1,0 +1,125 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/ai-drama-character-assets/body-core-neutral-v1/zh-CN",
+  "package_id": "video",
+  "solution_id": "ai-drama-character-assets",
+  "version": "1.0.0",
+  "role": "body-core-neutral-v1",
+  "locale": "zh-CN",
+  "template": {
+    "ref": "solutions/video/ai-drama-character-assets/prompts/body-core-neutral-v1.zh-CN.md",
+    "digest": "sha256:54113ca980c4d384471978abea3e058e139ddeabd24e2f44fc728b732242a724"
+  },
+  "contract": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/body-core-neutral-v1.zh-CN.json",
+    "digest": "sha256:e27ed6de125d7450025df5455b048dc68643746dd331dc50e6c7cf66b531daf6"
+  },
+  "document": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/documents/body-core-neutral-v1.zh-CN.document.json",
+    "digest": "sha256:96f9c1ab217ae84649f9874010b89acc6c24bf590b39c307e01a326c6c6c537a"
+  },
+  "schema": {
+    "ref": "solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:f37d007c23f0ee6c9a5e6d99d6e2838386ab94be96a505244bbb1c4f708296f9"
+  },
+  "semantic_schema_version": "character_asset.modular_slot_bundle.v1",
+  "cases": [
+    {
+      "case_id": "adult-humanoid-front",
+      "kind": "valid",
+      "profile_id": "body-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/body-core-neutral-v1.zh-CN/adult-humanoid-front.input.json",
+        "digest": "sha256:9f00f6f6ab87be567f8d64011e441c4b5816699009df3f2a63a1873dcb8f9c47",
+        "bytes": 1489
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/body-core-neutral-v1.zh-CN/adult-humanoid-front.output.json",
+        "digest": "sha256:9890ac848dcdc9b4e24f57e267d343f36781fa1dca92363c3d9d2c30446461ef",
+        "bytes": 2112
+      }
+    },
+    {
+      "case_id": "explicit-anatomy-request",
+      "kind": "invalid",
+      "profile_id": "body-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/body-core-neutral-v1.zh-CN/explicit-anatomy-request.input.json",
+        "digest": "sha256:7744bb1e8d863ec72efea9003ffc714fff7ab999d9f0006dbab6d31eb2c84d16",
+        "bytes": 1241
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/body-core-neutral-v1.zh-CN/explicit-anatomy-request.output.json",
+        "digest": "sha256:f08f04530aa9d82a209608bdf774a52bd22e873d385bc67bb9d8d9d3f15bafa4",
+        "bytes": 1335
+      },
+      "expected_codes": [
+        "EXPLICIT_ANATOMY_REQUESTED"
+      ]
+    },
+    {
+      "case_id": "minor-conservative-coverage",
+      "kind": "valid",
+      "profile_id": "body-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/body-core-neutral-v1.zh-CN/minor-conservative-coverage.input.json",
+        "digest": "sha256:60156b29800810b4154d6087345e845186f1c20a580c31af5331226f15036755",
+        "bytes": 1363
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/body-core-neutral-v1.zh-CN/minor-conservative-coverage.output.json",
+        "digest": "sha256:d325a15af91f59419ef32ab044c64a01e078ccbd89eebac766581a37f71d5b67",
+        "bytes": 2162
+      }
+    },
+    {
+      "case_id": "quadruped-topology",
+      "kind": "valid",
+      "profile_id": "body-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/body-core-neutral-v1.zh-CN/quadruped-topology.input.json",
+        "digest": "sha256:8ad62f2cecd4eba0781c7d6dc4e871bf90111be9f111a66e359d5e659036f17d",
+        "bytes": 1443
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/body-core-neutral-v1.zh-CN/quadruped-topology.output.json",
+        "digest": "sha256:acf7a5f743f742fd4103d63d2b3f51eade12d5f98097365665e3f6e687652693",
+        "bytes": 2192
+      }
+    },
+    {
+      "case_id": "unknown-age-conservative-info",
+      "kind": "valid",
+      "profile_id": "body-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/body-core-neutral-v1.zh-CN/unknown-age-conservative-info.input.json",
+        "digest": "sha256:96fbc027c816304263a979608286d1f0bf49f1da16eff03b5e24823d535fa3d1",
+        "bytes": 1491
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/body-core-neutral-v1.zh-CN/unknown-age-conservative-info.output.json",
+        "digest": "sha256:daff4a471ffde56b94d821ad217a2351cd0d27746d63ccee806f2f27f5273b44",
+        "bytes": 2368
+      }
+    },
+    {
+      "case_id": "wardrobe-contamination",
+      "kind": "invalid",
+      "profile_id": "body-core-six-view-v1",
+      "input": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/body-core-neutral-v1.zh-CN/wardrobe-contamination.input.json",
+        "digest": "sha256:4f1e13bf448505cfbc2a9da73320618c0a249c79e62ccd9384eda08169c88c30",
+        "bytes": 1256
+      },
+      "output": {
+        "ref": "solutions/video/ai-drama-character-assets/fixtures/body-core-neutral-v1.zh-CN/wardrobe-contamination.output.json",
+        "digest": "sha256:e388434db02f3ecce1715df95a5c1ea60eec01e71551df6735bd945060902cde",
+        "bytes": 1330
+      },
+      "expected_codes": [
+        "BODY_CORE_WARDROBE_CONTAMINATION"
+      ]
+    }
+  ],
+  "digest": "sha256:52b6e4c864b8a7baeb413982ddcfa77d410c121d52b97bb251a89d02b84d4189"
+}

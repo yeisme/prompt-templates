@@ -6,8 +6,8 @@
   "role": "shot-prompt",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-film-multi-profile-production/prompts/shot-prompt.zh-CN.md",
-  "template_digest": "sha256:a95842c57297aac6fa618d0ff17e73e175750255fa099cff57acba5ffb6cc595",
-  "digest": "sha256:c3fe1142e5244ca45ce0402dfaa8ffc86a7471ef1f86444bf56e3b35b8b91281",
+  "template_digest": "sha256:cd88d83948d78250494b5fff36997c97cab1de67f5dfcdec3cfce14bba0172ce",
+  "digest": "sha256:9e5e7309f4733fda570edf7a438f4c6b9d196b635787f197a847750912bc61e0",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

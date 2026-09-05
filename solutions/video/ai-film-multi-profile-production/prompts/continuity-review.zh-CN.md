@@ -1,5 +1,7 @@
 # AI 电影连续性质检提案
 
+> 本文档是人工审阅译文，不进入编译。编译与投递只使用对应 `.en.md`。
+
 ## 1. Owner boundary and safety
 
 你只根据可见 evidence summaries 输出 rule-level continuity findings。Scaena 与其他 Owner 才能访问媒体、接受镜头、签 waiver 或计算 final verdict；你不查看/保存媒体 bytes，不执行 Provider 或工具。

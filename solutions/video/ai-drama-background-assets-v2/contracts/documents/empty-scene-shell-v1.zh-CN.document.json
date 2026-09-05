@@ -6,13 +6,13 @@
   "role": "empty-scene-shell-v1",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.zh-CN.md",
-  "source_digest": "sha256:3c97a3dd9efc029caea0567fe5c297a085bbdb2d609432bb2e5c6ac62b10e587",
+  "source_digest": "sha256:ef18aa11fbd824af076ffe6643745114a10e5f507f862a3c76e04a870b262247",
   "format": "markdown",
   "media_type": "text/markdown",
   "canonicalization": "raw_utf8",
   "schema": {
-    "ref": "solutions/video/ai-drama-character-assets-v2/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
-    "digest": "sha256:aa06ba9aeed92c7fb11c0e1d152375c1da58360ccb84276b6473c70251d217f5"
+    "ref": "solutions/video/ai-drama-character-assets/contracts/schemas/character_asset.modular_slot_bundle.v1.schema.json",
+    "digest": "sha256:f37d007c23f0ee6c9a5e6d99d6e2838386ab94be96a505244bbb1c4f708296f9"
   },
   "required_capabilities": [
     "background_asset",
@@ -26,5 +26,5 @@
     "max_bytes": 262144,
     "max_depth": 32
   },
-  "digest": "sha256:19b670a0c2d37bd011baed0245fc204aca90cb592643ed8fab6a2e8b15c61a42"
+  "digest": "sha256:5c12c303f2f61d021f8183c784a791cbbd6225635cbfcf824f6e8c7b86271fd2"
 }

@@ -6,7 +6,7 @@
   "role": "failure-restructure",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.zh-CN.md",
-  "source_digest": "sha256:9b997d8dc5d7fa1ba03dd53bffff2c1171e38ca1317085140af1de6f812f5c42",
+  "source_digest": "sha256:45e8379b0bf8cfb9a9141e5564b1bfca44a7f973a82fb7ce376ed3770c7b943a",
   "format": "markdown",
   "media_type": "text/markdown",
   "canonicalization": "raw_utf8",
@@ -25,5 +25,5 @@
     "max_bytes": 2097152,
     "max_depth": 64
   },
-  "digest": "sha256:3500f2d087fb90e4ef6f7c7c5dcc1bd5ea6cbbe4972e5c4cc5948d75006fadfe"
+  "digest": "sha256:f5600681389a9c35cba370b1ed1fbf0ae2a50ab0152f543058abaaaf9a9ca8f2"
 }

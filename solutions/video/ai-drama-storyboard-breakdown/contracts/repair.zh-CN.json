@@ -6,8 +6,8 @@
   "role": "repair",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md",
-  "template_digest": "sha256:e985526d747415fce8163d69d0a187c966c4f3b6ff85e3fdf9d5ae5f47dcaddd",
-  "digest": "sha256:10c1125c3de694e4f2be390654c2372fd14ae015b4f194e889ba80a7224397da",
+  "template_digest": "sha256:61def1458a712741b43861c350ba4e2fd7976dc078cb19527aabf6476c5da3b7",
+  "digest": "sha256:467beb719a7db2bf773666d512ffced025abe52dcd6ced77e86106ea98bcd638",
   "license": "internal",
   "permissions": [
     "inspect",

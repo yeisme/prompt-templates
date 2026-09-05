@@ -42,7 +42,7 @@
 
 ## 渲染与投递
 
-- 英文投递渲染 `main.en.md`；中文投递渲染 `main.zh-CN.md`。
+- 英文投递渲染 `main.en.md`（本 solution 为单语言 `en` 模板）。
 - 渲染结果第一行为 `Made with Seedance 2.5`（来自 `provider_banner`）。
 - `character_ref=@image1` 要求投递时图像槽位 1 已绑定同一人物参考图；引用本身不携带图像数据。
 - 投递前按 `docs/review-checklist.zh-CN.md` 核对。

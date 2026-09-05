@@ -6,8 +6,8 @@
   "role": "main",
   "locale": "zh-CN",
   "template_path": "solutions/image/xhs-product-cover/prompts/main.zh-CN.md",
-  "template_digest": "sha256:c081e1c618861899fb522e284eef137faa30b3abb1837fc2ac0d11a84204ec1d",
-  "digest": "sha256:61d6a31afa393095e8eff2e4af068d0f7a9b3420cd6ea9efb71fc1b501d2c43a",
+  "template_digest": "sha256:c731bfe27a14c7c741284c2ce9c5abab7a9111af2fe5d8dbc4fef481b8ae263c",
+  "digest": "sha256:b4210c42f644c4719a012d5bd2fede11cae397a8f95e884d532d5f0fd74e56c6",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

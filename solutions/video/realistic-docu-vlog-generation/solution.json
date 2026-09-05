@@ -1,0 +1,43 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "realistic-docu-vlog-generation",
+  "version": "1.0.0",
+  "category": "video",
+  "tags": [
+    "artifact:shot_video",
+    "category:video",
+    "constraint:character_consistency",
+    "constraint:realism",
+    "job:generate",
+    "modality:video",
+    "scenario:realistic_vlog",
+    "stage:shot_generation"
+  ],
+  "capabilities": [
+    "character_consistency_lock",
+    "negative_prompt_governance",
+    "shot_video_generation",
+    "voiceover_script"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Realistic Docu-Vlog Generation",
+      "summary": "Compile subject, mixed camera formats, per-beat voiceover, music arc, and realism constraints into a documentary vlog prompt for direct video-model delivery",
+      "usage": "Use for self-narrated day-in-the-life realistic video generation and human review; complements the ambience-only realistic-vlog-shot-generation",
+      "aliases": [
+        "documentary vlog prompt",
+        "voiceover day vlog"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/video/realistic-docu-vlog-generation/prompts/main.en.md"
+    }
+  ]
+}

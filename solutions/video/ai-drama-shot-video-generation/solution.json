@@ -23,21 +23,21 @@
   "rights": "internal",
   "maturity": "exploratory",
   "locales": {
-    "zh-CN": {
-      "title": "AI 短剧镜头级视频生成",
-      "summary": "把角色、技能、敌方、场景、运镜与逐秒分镜编译为可直接投递视频生成模型的镜头级 Prompt",
-      "usage": "用于 AI 短剧/漫剧蓄力-爆发型大招镜头的视频生成 Prompt 渲染与人工审查，由 Scaena 等领域 Owner 消费",
+    "en": {
+      "title": "AI Drama Shot Video Generation",
+      "summary": "Compile character, ultimate skill, enemies, scene, camera, and per-second storyboard into a shot-level prompt for direct video-model delivery",
+      "usage": "Use for AI drama charge-up ultimate-skill shot generation and human review; consumed by domain owners such as Scaena",
       "aliases": [
-        "大招镜头提示词",
-        "镜头级视频生成"
+        "shot-level video generation",
+        "ultimate skill shot prompt"
       ]
     }
   },
   "templates": [
     {
       "role": "main",
-      "locale": "zh-CN",
-      "path": "solutions/video/ai-drama-shot-video-generation/prompts/main.zh-CN.md"
+      "locale": "en",
+      "path": "solutions/video/ai-drama-shot-video-generation/prompts/main.en.md"
     }
   ]
 }

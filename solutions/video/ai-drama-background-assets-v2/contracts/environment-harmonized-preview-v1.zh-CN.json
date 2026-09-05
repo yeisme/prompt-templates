@@ -6,8 +6,8 @@
   "role": "environment-harmonized-preview-v1",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-harmonized-preview-v1.zh-CN.md",
-  "template_digest": "sha256:2d3dcf5ef27d45d8fb8ac58e7ade44db75142e831f88bd5f9c8c0c3e02018d2b",
-  "digest": "sha256:13fb8f5985b8deb0cf5d084e8ef1937e9556251dc66721948d4c18e1cd85d3bf",
+  "template_digest": "sha256:d8efe1e6df8b71e28d9a1e24f5746f87181721a096155264a9c8bc7f89cbc3cd",
+  "digest": "sha256:8778b4cf52c2a9c0393fe7d2f7617595bc8eaa11f5078cfe92c3a917974d808f",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

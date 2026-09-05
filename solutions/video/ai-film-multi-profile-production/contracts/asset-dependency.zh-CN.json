@@ -6,8 +6,8 @@
   "role": "asset-dependency",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-film-multi-profile-production/prompts/asset-dependency.zh-CN.md",
-  "template_digest": "sha256:a95a6cbd8708dae1b0a6fe9ebefd47df8c1694a29830b1472d504981272f9593",
-  "digest": "sha256:c452f0fbb4d8ba1fd000ee9b5cdac6e6b2be8fa182712bd71ee3ad92319bc0d0",
+  "template_digest": "sha256:0826139dfcba54e15328c40173bbf0fa33760896123d88dcb0daa2bdc729f16b",
+  "digest": "sha256:7e5e6a87ce55c3233597e39040eeff00925d9bbb0a1563b99560680864f6113d",
   "license": "internal",
   "permissions": [
     "execute_requires_review",

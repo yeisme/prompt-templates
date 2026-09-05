@@ -8,15 +8,15 @@
   "locale": "zh-CN",
   "template": {
     "ref": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.zh-CN.md",
-    "digest": "sha256:99084dd2c5cdee1dc520a92915029d84a0f3d4ae5ff114f9f8763439ec1ad20b"
+    "digest": "sha256:7c50244f61bee54a44d0723143bb4ffa9cd71cc399bb130aed9225d22674efbd"
   },
   "contract": {
     "ref": "solutions/video/ai-drama-background-assets/contracts/validate-background-plate-v1.zh-CN.json",
-    "digest": "sha256:0f29baaaab72e3f912dec111f24796f8a9772bfb39669d6d67a864b0b46c7f7c"
+    "digest": "sha256:c9c27fb0c48f7e206db79bdbd9f4e77f8a50baaa388eb0edd46d978e101e0c48"
   },
   "document": {
     "ref": "solutions/video/ai-drama-background-assets/contracts/documents/validate-background-plate-v1.zh-CN.document.json",
-    "digest": "sha256:93f4cb63487a42129378e9a84a7481da67e263495b1f9ab90f14917efef84e3e"
+    "digest": "sha256:f9c9b1ce2bf2bea79afd20bb178ecdc08af1f6fe7a918c8ae72e16307d3db2c8"
   },
   "schema": {
     "ref": "solutions/video/ai-drama-background-assets/contracts/schemas/background_asset.validation.v1.schema.json",
@@ -117,5 +117,5 @@
       }
     }
   ],
-  "digest": "sha256:890c4af16c66e3ccd299552564b921afe8d454689603c8ddbf3ced4749253edb"
+  "digest": "sha256:913b8b4176041a2e498f4fa7e76ed29708c714e5e0f25e04aa0699153b7003a2"
 }

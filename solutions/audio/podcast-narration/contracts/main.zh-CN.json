@@ -6,8 +6,8 @@
   "role": "main",
   "locale": "zh-CN",
   "template_path": "solutions/audio/podcast-narration/prompts/main.zh-CN.md",
-  "template_digest": "sha256:78b8ff6d38de8151fce85d980c65a8fb46c54a9e69fd47e88b3f5229ed04648e",
-  "digest": "sha256:7bfa796fa3131687e09cf0d3c59aa2a532a566c293f73ba569f43331187ac395",
+  "template_digest": "sha256:0b3cf2ccf51774d6c33309aba45598ef88a46edcd86db2d3da7c5e81480e8ea0",
+  "digest": "sha256:10f9f11fbb8e39078e00651132ce0d591d3018514483fdb1c548c8b9e4332a2d",
   "license": "internal",
   "permissions": [
     "inspect",

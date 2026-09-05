@@ -14,6 +14,11 @@
   "rights": "internal",
   "maturity": "exploratory",
   "locales": {
+    "en": {
+      "title": "AI drama empty-scene background assets",
+      "summary": "Generate reusable scene background plates with zero people, fully opaque",
+      "usage": "Characters and backgrounds are generated and reviewed separately; no compositing at the base-asset stage"
+    },
     "zh-CN": {
       "title": "AI 做剧空场景背景资产",
       "summary": "生成零人物、完整不透明的可复用场景背景板",
@@ -23,8 +28,18 @@
   "templates": [
     {
       "role": "clean-background-plate-v1",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-background-assets/prompts/clean-background-plate-v1.en.md"
+    },
+    {
+      "role": "clean-background-plate-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-background-assets/prompts/clean-background-plate-v1.zh-CN.md"
+    },
+    {
+      "role": "validate-background-plate-v1",
+      "locale": "en",
+      "path": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.en.md"
     },
     {
       "role": "validate-background-plate-v1",

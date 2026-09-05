@@ -6,7 +6,7 @@
   "role": "shot-prompt",
   "locale": "zh-CN",
   "template_path": "solutions/video/ai-film-multi-profile-production/prompts/shot-prompt.zh-CN.md",
-  "source_digest": "sha256:a95842c57297aac6fa618d0ff17e73e175750255fa099cff57acba5ffb6cc595",
+  "source_digest": "sha256:cd88d83948d78250494b5fff36997c97cab1de67f5dfcdec3cfce14bba0172ce",
   "format": "markdown",
   "media_type": "text/markdown",
   "canonicalization": "raw_utf8",
@@ -25,5 +25,5 @@
     "max_bytes": 2097152,
     "max_depth": 64
   },
-  "digest": "sha256:d445aaea7a288476210c955a43effe4d213a3ef14946de337790b3f5d8b6ce9a"
+  "digest": "sha256:c32d761948687ad557cc05e57bbb6a1230561ccd1bf37d6c6f7bb446443ad7c7"
 }
