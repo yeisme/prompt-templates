@@ -6,7 +6,13 @@
 
 ## 使用
 
-独立 Agent 用户可使用 [Template Registry](https://github.com/yeisme/template-registry)，通过 CLI 或本地 MCP 导入资料、确认输入、编译和导出提示包，无需安装其他 Yeisme 产品。首批兼容模板及多步骤示例见 [Agent 编译用基础模板 v2](docs/agent-consumption-v2.md)。
+当前统一消费者包括 Scaena、Eikona、Auctra、Sonora、Pinax，以及通过单提示词导出接入的 Digital Human Persona Package。各领域项目只保存精确引用、digest、review 和自身资产状态；模板正文、双语合同与成熟度仍由本仓库维护。
+
+- `promptrepo://official/writing/revision-assistant@1.0.0?locale=zh-CN`：Auctra 与通用文本修订。
+- `promptrepo://official/agent/digital-human-persona-system@1.0.0?locale=zh-CN`：编译 Digital Human Persona 的 system prompt。
+- `promptrepo://official/image/xhs-product-cover-v2@2.0.0?locale=zh-CN`：满足 Eikona 通用图像消费能力合同的产品封面模板；v1 精确引用继续保留。
+
+独立 Agent 用户可使用 [Template Registry](https://github.com/yeisme/template-registry)，通过 CLI 或本地 MCP 导入资料、确认输入、编译和导出提示包，无需安装其他 Yeisme 产品。首批兼容模板及多步骤示例见 [Agent 编译用基础模板（beta）](docs/agent-consumption-beta.md)。
 
 在 Sonora 中添加并搜索官方仓库：
 
@@ -54,11 +60,13 @@ structured closure，包含 manifest、source adapter、lens、view、validator 
 - rights、maturity、已知失败和评审要求；
 - 英文同步适配及 freshness 关系。
 
-首批 `TemplateContract` pilot 已覆盖 `image/xhs-product-cover` 与 `audio/podcast-narration` 的 zh-CN/en 模板。结构化 sidecar 必须由 Template Registry CLI 维护：
+首批 `TemplateContract` pilot 已覆盖 `image/xhs-product-cover`、兼容 Eikona 的 `image/xhs-product-cover-v2` 与 `audio/podcast-narration` 的 zh-CN/en 模板。结构化 sidecar 必须由 Template Registry CLI 维护：
 
 ```bash
 template-registry contract validate --repository . --package image --id xhs-product-cover --role main --locale zh-CN --json
 template-registry contract validate --repository . --package image --id xhs-product-cover --role main --locale en --json
+template-registry contract validate --repository . --package image --id xhs-product-cover-v2 --role main --locale zh-CN --json
+template-registry contract validate --repository . --package image --id xhs-product-cover-v2 --role main --locale en --json
 template-registry contract validate --repository . --package audio --id podcast-narration --role main --locale zh-CN --json
 template-registry contract validate --repository . --package audio --id podcast-narration --role main --locale en --json
 template-registry catalog validate --repository . --json
