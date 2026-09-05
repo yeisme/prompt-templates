@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "writing",
+  "id": "revision-assistant",
+  "version": "1.0.0",
+  "category": "writing",
+  "tags": [
+    "artifact:revised_text",
+    "category:writing",
+    "constraint:source_grounded",
+    "job:revise"
+  ],
+  "capabilities": [
+    "revision",
+    "text",
+    "writing"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Text revision assistant",
+      "summary": "Revise existing text against an explicit goal while preserving facts, responsibility, and uncertainty",
+      "usage": "For Auctra revision candidates, article editing, and pre-review rewrites"
+    },
+    "zh-CN": {
+      "title": "文本修订助手",
+      "summary": "按明确目标和约束修订已有文本，保留事实、责任与不确定性",
+      "usage": "用于 Auctra 候选修订、文章编辑和审阅前改稿"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/writing/revision-assistant/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/writing/revision-assistant/prompts/main.zh-CN.md"
+    }
+  ]
+}

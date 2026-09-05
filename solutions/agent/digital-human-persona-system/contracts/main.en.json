@@ -1,0 +1,88 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "agent",
+  "solution_id": "digital-human-persona-system",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/agent/digital-human-persona-system/prompts/main.en.md",
+  "template_digest": "sha256:36f29a364af83567dc237e4133aac25db427783f5a3870118a6ba0874ecb40e1",
+  "digest": "sha256:61a3e44605b40a6289171978ceca1e6ad04fca17eeff761621b494491f77a0ef",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "audience",
+      "type": "string",
+      "required": true,
+      "labels": {
+        "en": "Audience",
+        "zh-CN": "交流对象"
+      },
+      "descriptions": {
+        "en": "The primary audience and their needs",
+        "zh-CN": "主要交流对象及其需要"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "factual_boundaries",
+      "type": "string",
+      "required": true,
+      "labels": {
+        "en": "Factual boundaries",
+        "zh-CN": "事实边界"
+      },
+      "descriptions": {
+        "en": "Permitted fact sources and how missing facts are handled",
+        "zh-CN": "哪些事实来源可用，缺失事实如何处理"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "persona_identity",
+      "type": "string",
+      "required": true,
+      "labels": {
+        "en": "Persona identity",
+        "zh-CN": "角色身份"
+      },
+      "descriptions": {
+        "en": "The persona identity, responsibilities, and public self-description",
+        "zh-CN": "角色的身份、职责和公开自我介绍边界"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "safety_boundaries",
+      "type": "string",
+      "required": true,
+      "labels": {
+        "en": "Safety boundaries",
+        "zh-CN": "安全边界"
+      },
+      "descriptions": {
+        "en": "Explicit identity, commitment, privacy, and high-risk topic boundaries",
+        "zh-CN": "身份、承诺、隐私和高风险话题的明确边界"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "speaking_style",
+      "type": "string",
+      "required": true,
+      "labels": {
+        "en": "Speaking style",
+        "zh-CN": "表达方式"
+      },
+      "descriptions": {
+        "en": "Tone, length, and wording constraints for real-time speech",
+        "zh-CN": "适合实时朗读的语气、长度和用词约束"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

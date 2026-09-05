@@ -1,0 +1,45 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "agent",
+  "id": "digital-human-persona-system",
+  "version": "1.0.0",
+  "category": "agent",
+  "tags": [
+    "artifact:system_prompt",
+    "category:agent",
+    "job:configure_persona",
+    "modality:spoken_dialogue"
+  ],
+  "capabilities": [
+    "agent",
+    "dialogue",
+    "persona",
+    "text"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Digital-human persona system prompt",
+      "summary": "Compile confirmed identity, audience, speaking, factual, and safety boundaries into a real-time persona prompt",
+      "usage": "For prompts/system.md in an OpenTalking Persona Package"
+    },
+    "zh-CN": {
+      "title": "数字人 Persona 系统提示词",
+      "summary": "把已确认的身份、受众、表达、事实和安全边界编译成实时数字人系统提示词",
+      "usage": "用于 OpenTalking Persona Package 的 prompts/system.md"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/agent/digital-human-persona-system/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/agent/digital-human-persona-system/prompts/main.zh-CN.md"
+    }
+  ]
+}

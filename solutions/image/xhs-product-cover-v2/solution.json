@@ -1,0 +1,51 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "xhs-product-cover-v2",
+  "version": "2.0.0",
+  "category": "image",
+  "tags": [
+    "artifact:cover_image",
+    "category:image",
+    "constraint:text_legibility",
+    "job:generate",
+    "modality:image",
+    "platform:xiaohongshu"
+  ],
+  "capabilities": [
+    "generation",
+    "image",
+    "visual",
+    "visual_composition"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Xiaohongshu product cover v2",
+      "summary": "Create a product-cover prompt for generic image workflows with composition, lighting, safe text layout, and negative constraints",
+      "usage": "Use for provider-free inspection and preview before an image consumer review gate"
+    },
+    "zh-CN": {
+      "title": "小红书产品封面 v2",
+      "summary": "生成可由通用图像工作流接入的产品封面提示，包含构图、光线、排版安全区和负面约束",
+      "usage": "适合 Eikona 等图像消费者在 review 前进行 provider-free inspect 和 preview",
+      "aliases": [
+        "XHS 产品封面",
+        "小红书封面"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/xhs-product-cover-v2/prompts/main.en.md"
+    },
+    {
+      "role": "main",
+      "locale": "zh-CN",
+      "path": "solutions/image/xhs-product-cover-v2/prompts/main.zh-CN.md"
+    }
+  ]
+}

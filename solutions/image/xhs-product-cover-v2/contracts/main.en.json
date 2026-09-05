@@ -1,0 +1,102 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "xhs-product-cover-v2",
+  "version": "2.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/xhs-product-cover-v2/prompts/main.en.md",
+  "template_digest": "sha256:42f25e270ecbd044b45f7979fe92826f35e9c7f0de4d824cad50323500b4a39e",
+  "digest": "sha256:8e20ad2be4c9dda805e52b12c875f326b1cf6a66151a065f038ecc1600fb6881",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "aspect_ratio",
+      "type": "enum",
+      "default": "3:4",
+      "enum": [
+        "3:4",
+        "1:1"
+      ],
+      "labels": {
+        "en": "Aspect ratio",
+        "zh-CN": "画面比例"
+      },
+      "descriptions": {
+        "en": "The target cover aspect ratio",
+        "zh-CN": "小红书封面的目标画幅"
+      }
+    },
+    {
+      "name": "audience",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "urban_commuters"
+      ],
+      "labels": {
+        "en": "Audience",
+        "zh-CN": "目标受众"
+      },
+      "descriptions": {
+        "en": "The primary audience for the cover",
+        "zh-CN": "封面希望吸引的核心人群"
+      }
+    },
+    {
+      "name": "product",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "portable_coffee_tumbler"
+      ],
+      "labels": {
+        "en": "Product",
+        "zh-CN": "产品"
+      },
+      "descriptions": {
+        "en": "The real product to feature",
+        "zh-CN": "需要展示的真实产品"
+      }
+    },
+    {
+      "name": "selling_point",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "lightweight_and_leakproof"
+      ],
+      "labels": {
+        "en": "Key benefit",
+        "zh-CN": "核心卖点"
+      },
+      "descriptions": {
+        "en": "A verifiable product benefit without exaggeration",
+        "zh-CN": "可核实且不得夸大的产品卖点"
+      }
+    },
+    {
+      "name": "visual_style",
+      "type": "enum",
+      "default": "clean_commercial",
+      "enum": [
+        "clean_commercial",
+        "lifestyle",
+        "editorial",
+        "illustration"
+      ],
+      "labels": {
+        "en": "Visual style",
+        "zh-CN": "视觉风格"
+      },
+      "descriptions": {
+        "en": "The overall visual direction",
+        "zh-CN": "封面的整体视觉方向"
+      }
+    }
+  ]
+}
