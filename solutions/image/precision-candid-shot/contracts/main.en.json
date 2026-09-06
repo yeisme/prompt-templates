@@ -6,8 +6,8 @@
   "role": "main",
   "locale": "en",
   "template_path": "solutions/image/precision-candid-shot/prompts/main.en.md",
-  "template_digest": "sha256:dd3967ca1376f6f6ff0dfc5056eaf9d7e10e8eca54e89d0fe3555d2b52dcbcc3",
-  "digest": "sha256:202983310a4552f68b21d48debb51aac2ac491f00bf5491f8b92e96b1e07573f",
+  "template_digest": "sha256:047a1f4d5ec0304d53682c9da1ef7a59c8a38999b5b678b9691a1b5ddab2cd19",
+  "digest": "sha256:7072d2858d6c8cd3fe65aa198ff6dadb3f3b1216f17be62c5cf204471907adb6",
   "license": "internal",
   "permissions": [
     "execute_requires_review",
@@ -137,6 +137,19 @@
       "descriptions": {
         "en": "Framing",
         "zh-CN": "Framing"
+      }
+    },
+    {
+      "name": "genre",
+      "type": "string",
+      "default": "candid lifestyle photo",
+      "labels": {
+        "en": "Genre phrase",
+        "zh-CN": "体裁短语"
+      },
+      "descriptions": {
+        "en": "Genre phrase; default 'candid lifestyle photo'; use the appropriate genre for non-candid shots",
+        "zh-CN": "体裁短语，默认 candid lifestyle photo；非抓拍镜头用对应体裁"
       }
     },
     {
@@ -294,6 +307,18 @@
       "descriptions": {
         "en": "Quality tail",
         "zh-CN": "Quality tail"
+      }
+    },
+    {
+      "name": "sections_block",
+      "type": "string",
+      "labels": {
+        "en": "Sections block",
+        "zh-CN": "分区段落块"
+      },
+      "descriptions": {
+        "en": "Optional block of 'Heading: body' paragraphs with leading newlines; empty string when unused",
+        "zh-CN": "可选；自带前导换行的 Heading: body 段落块；不用则空字符串"
       }
     },
     {

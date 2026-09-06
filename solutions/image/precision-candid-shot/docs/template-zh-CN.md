@@ -1,5 +1,3 @@
-> 人工审阅译文。编译与 Agent 投递以 `../prompts/main.en.md` 为准；本文件不注册为模板、不进入 catalog，也不参与编译。
-
 # 精调参数化抓拍镜头
 
 本模板生成一条单镜头精调抓拍 Prompt。与随机矩阵包的区别：本包不做采样，每个变量由 shot spec（JSON）精确绑定，量化参数（cm、百分比、角度）直接进正文。消费方在渲染前完成全部变量绑定；渲染结果是最终 Prompt 正文，不经过二次改写。
@@ -8,10 +6,10 @@
 
 ## 槽位约定
 
-可选子句变量（`perspective_clause`、`foreground_sentence`、`light_fill_clause`、`palette_sentence`、`background_sentence`、`fingerprints_sentence`、`tail_clause`）自带标点与前导空格；不使用时绑定为空字符串，对应内容整段消失。
+可选子句变量（`perspective_clause`、`sections_block`、`foreground_sentence`、`light_fill_clause`、`palette_sentence`、`background_sentence`、`fingerprints_sentence`、`tail_clause`）自带标点与前导空格/换行；不使用时绑定为空字符串，对应内容整段消失。`genre` 默认为 "candid lifestyle photo"；非抓拍镜头（如 editorial portrait）绑不同的体裁短语。
 
-{{orientation}} {{aspect}} candid lifestyle photo, {{subject_description}} {{pose}} with {{expression}}.
-{{pronoun}} wears {{wardrobe}}.
+{{orientation}} {{aspect}} {{genre}}, {{subject_description}} {{pose}} with {{expression}}.
+{{pronoun}} wears {{wardrobe}}.{{sections_block}}
 {{camera_position_clause}}, {{lens}} lens{{perspective_clause}}, {{framing}}.{{foreground_sentence}}
 {{light_key}}{{light_fill_clause}}.{{palette_sentence}}{{background_sentence}}{{fingerprints_sentence}}
 {{quality}}, {{atmosphere}}, {{negatives}}{{tail_clause}}.

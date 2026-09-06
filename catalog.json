@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:075fd8252d894a6ee5f0d86f02a2bc51d6b5a7aebc89647b163d81483c966a6f",
+  "digest": "sha256:99de2eef5b79a77b0d268a680de1915d0a7d68b3720718d4ea3b92914de1cefa",
   "solutions": [
     {
       "package_id": "agent",
@@ -452,7 +452,7 @@
       "package_id": "image",
       "id": "precision-candid-shot",
       "version": "1.0.0",
-      "digest": "sha256:a5deac5cffae3abfb71b200f243df2d0e8919364ea4f41e575f65afceeec348e",
+      "digest": "sha256:8d2245222857c14f5b0834cf6ab608c8affeed1d3cb4673643ce51dd59b0a915",
       "category": "image",
       "tags": [
         "artifact:candid_photo",
@@ -493,7 +493,7 @@
           "role": "main",
           "locale": "en",
           "path": "solutions/image/precision-candid-shot/prompts/main.en.md",
-          "digest": "sha256:dd3967ca1376f6f6ff0dfc5056eaf9d7e10e8eca54e89d0fe3555d2b52dcbcc3"
+          "digest": "sha256:047a1f4d5ec0304d53682c9da1ef7a59c8a38999b5b678b9691a1b5ddab2cd19"
         }
       ]
     },
@@ -1411,6 +1411,60 @@
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-prompt.zh-CN.md",
           "digest": "sha256:cd88d83948d78250494b5fff36997c97cab1de67f5dfcdec3cfce14bba0172ce"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "outfit-collage-transition-director",
+      "version": "1.0.0",
+      "digest": "sha256:71175d65bdc7a9f24efc412c05374e15e61168a82d4ecb047211c07af8a091ba",
+      "category": "video",
+      "tags": [
+        "artifact:cover_image",
+        "artifact:shot_video",
+        "category:video",
+        "constraint:character_consistency",
+        "job:generate",
+        "modality:image",
+        "modality:video",
+        "scenario:outfit_transition",
+        "stage:director_plan"
+      ],
+      "capabilities": [
+        "collage_first_frame",
+        "negative_prompt_governance",
+        "outfit_transition_choreography",
+        "prompt_direction"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Outfit Collage + Beat-Synced Transition Video Director",
+          "summary": "Compile character anchors and outfit lists into a linked package: collage first-frame image prompt, per-segment transition video timeline, compact video prompt, and negative constraints",
+          "usage": "Use for same-character multi-outfit collage first frames and beat-synced outfit-change short videos; adapted from the imported female-outfit-director skill",
+          "aliases": [
+            "collage first frame",
+            "outfit transition director"
+          ]
+        },
+        "zh-CN": {
+          "title": "穿搭拼贴首帧 + 卡点换装视频导演",
+          "summary": "把人物锚点与造型清单编译为联动制作包：拼贴首帧图提示词、逐段换装视频时间轴、精简视频提示词与负面约束",
+          "usage": "用于同一角色多套穿搭拼贴首帧与卡点换装短视频；改写自导入的 female-outfit-director skill",
+          "aliases": [
+            "卡点换装",
+            "换装导演"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/video/outfit-collage-transition-director/prompts/main.en.md",
+          "digest": "sha256:93aca787d288ccbf6c49abfc5dfb206070272ecb885192b285bcbe1b0224bcc0"
         }
       ]
     },

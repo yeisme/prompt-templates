@@ -4,10 +4,10 @@ This template produces a single precision-parameterized candid shot prompt. Unli
 
 ## Slot convention
 
-Optional clause variables (`perspective_clause`, `foreground_sentence`, `light_fill_clause`, `palette_sentence`, `background_sentence`, `fingerprints_sentence`, `tail_clause`) carry their own punctuation and leading spaces; bind them to an empty string when unused and the whole clause disappears.
+Optional clause variables (`perspective_clause`, `sections_block`, `foreground_sentence`, `light_fill_clause`, `palette_sentence`, `background_sentence`, `fingerprints_sentence`, `tail_clause`) carry their own punctuation and leading spaces/newlines; bind them to an empty string when unused and the whole clause disappears. `genre` defaults to "candid lifestyle photo"; use a different genre phrase (e.g. editorial portrait) for non-candid shots.
 
-{{orientation}} {{aspect}} candid lifestyle photo, {{subject_description}} {{pose}} with {{expression}}.
-{{pronoun}} wears {{wardrobe}}.
+{{orientation}} {{aspect}} {{genre}}, {{subject_description}} {{pose}} with {{expression}}.
+{{pronoun}} wears {{wardrobe}}.{{sections_block}}
 {{camera_position_clause}}, {{lens}} lens{{perspective_clause}}, {{framing}}.{{foreground_sentence}}
 {{light_key}}{{light_fill_clause}}.{{palette_sentence}}{{background_sentence}}{{fingerprints_sentence}}
 {{quality}}, {{atmosphere}}, {{negatives}}{{tail_clause}}.

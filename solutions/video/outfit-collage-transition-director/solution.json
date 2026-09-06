@@ -1,0 +1,53 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "outfit-collage-transition-director",
+  "version": "1.0.0",
+  "category": "video",
+  "tags": [
+    "artifact:cover_image",
+    "artifact:shot_video",
+    "category:video",
+    "constraint:character_consistency",
+    "job:generate",
+    "modality:image",
+    "modality:video",
+    "scenario:outfit_transition",
+    "stage:director_plan"
+  ],
+  "capabilities": [
+    "collage_first_frame",
+    "negative_prompt_governance",
+    "outfit_transition_choreography",
+    "prompt_direction"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Outfit Collage + Beat-Synced Transition Video Director",
+      "summary": "Compile character anchors and outfit lists into a linked package: collage first-frame image prompt, per-segment transition video timeline, compact video prompt, and negative constraints",
+      "usage": "Use for same-character multi-outfit collage first frames and beat-synced outfit-change short videos; adapted from the imported female-outfit-director skill",
+      "aliases": [
+        "collage first frame",
+        "outfit transition director"
+      ]
+    },
+    "zh-CN": {
+      "title": "穿搭拼贴首帧 + 卡点换装视频导演",
+      "summary": "把人物锚点与造型清单编译为联动制作包：拼贴首帧图提示词、逐段换装视频时间轴、精简视频提示词与负面约束",
+      "usage": "用于同一角色多套穿搭拼贴首帧与卡点换装短视频；改写自导入的 female-outfit-director skill",
+      "aliases": [
+        "卡点换装",
+        "换装导演"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/video/outfit-collage-transition-director/prompts/main.en.md"
+    }
+  ]
+}

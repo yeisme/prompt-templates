@@ -1,0 +1,285 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "outfit-collage-transition-director",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/video/outfit-collage-transition-director/prompts/main.en.md",
+  "template_digest": "sha256:93aca787d288ccbf6c49abfc5dfb206070272ecb885192b285bcbe1b0224bcc0",
+  "digest": "sha256:878ec660487801431a7665e2025fb26d4310f77d15c3c878be8c0e454d472e06",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "inspect",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "beat_times",
+      "type": "string",
+      "examples": [
+        "1.25s, 2.95s, 4.40s, 6.55s"
+      ],
+      "min_length": 0,
+      "max_length": 1024,
+      "labels": {
+        "en": "Beat times",
+        "zh-CN": "卡点时间"
+      },
+      "descriptions": {
+        "en": "Transition beat timestamps; scaled defaults when empty",
+        "zh-CN": "换装点时间序列；留空时按默认点等比例缩放"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "camera_rule",
+      "type": "string",
+      "min_length": 0,
+      "max_length": 2048,
+      "labels": {
+        "en": "Camera rule",
+        "zh-CN": "镜头规则"
+      },
+      "descriptions": {
+        "en": "Default fixed high angle when empty; alternatives only on explicit request",
+        "zh-CN": "留空用默认固定高机位；可要求正面固定、轻低机位、缓慢推近、轻横移或半环绕"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "character_anchors",
+      "type": "string",
+      "min_length": 0,
+      "max_length": 4096,
+      "labels": {
+        "en": "Character anchors",
+        "zh-CN": "人物锚点"
+      },
+      "descriptions": {
+        "en": "Name, adult age impression, ethnicity, face, skin, makeup, hair, headwear, earrings, temperament; defaults apply only when empty with no reference image",
+        "zh-CN": "角色名称、成年年龄感、族裔外观、脸型五官、肤色、妆容、发型发色、头饰耳饰、气质；留空且无参考图时用默认原创中国成年女性"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "collage_layout",
+      "type": "string",
+      "min_length": 0,
+      "max_length": 4096,
+      "labels": {
+        "en": "Collage layout",
+        "zh-CN": "拼贴布局"
+      },
+      "descriptions": {
+        "en": "Default five-figure collage when empty; 3-6 outfits require stated layout logic",
+        "zh-CN": "留空时用默认五人拼贴版式；3-6 套造型需说明新布局逻辑"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "ending_action",
+      "type": "string",
+      "min_length": 0,
+      "max_length": 2048,
+      "labels": {
+        "en": "Ending action",
+        "zh-CN": "结尾动作"
+      },
+      "descriptions": {
+        "en": "Closing action; final-outfit display when empty",
+        "zh-CN": "视频收尾动作；留空时保留最终造型展示"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "image_aspect",
+      "type": "enum",
+      "default": "9:16",
+      "enum": [
+        "9:16",
+        "16:9",
+        "1:1",
+        "3:4"
+      ],
+      "labels": {
+        "en": "Image aspect",
+        "zh-CN": "图片画幅"
+      },
+      "descriptions": {
+        "en": "First-frame collage aspect ratio",
+        "zh-CN": "首帧拼贴图画幅"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "image_style",
+      "type": "string",
+      "min_length": 0,
+      "max_length": 4096,
+      "labels": {
+        "en": "Image style",
+        "zh-CN": "图片风格"
+      },
+      "descriptions": {
+        "en": "Background, lighting, palette, sticker outline; studio defaults when empty",
+        "zh-CN": "背景、光线、主色系、小人物描边；留空用影棚默认值"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "motion_tone",
+      "type": "string",
+      "examples": [
+        "轻柔、含蓄、优雅"
+      ],
+      "min_length": 0,
+      "max_length": 2048,
+      "labels": {
+        "en": "Motion tone",
+        "zh-CN": "动作基调"
+      },
+      "descriptions": {
+        "en": "Body motion and performance tone",
+        "zh-CN": "人物动作与表演基调"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "outfit_list",
+      "type": "string",
+      "min_length": 0,
+      "max_length": 8192,
+      "labels": {
+        "en": "Outfit list",
+        "zh-CN": "造型清单"
+      },
+      "descriptions": {
+        "en": "Initial main outfit plus 4 transition outfits; derived from style direction when empty",
+        "zh-CN": "初始主造型 + 4 套换装造型；留空时按风格方向推导"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "reference_image_ref",
+      "type": "string",
+      "examples": [
+        "@image1"
+      ],
+      "regex": "^@[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "min_length": 0,
+      "max_length": 256,
+      "labels": {
+        "en": "Reference image ref",
+        "zh-CN": "参考图引用"
+      },
+      "descriptions": {
+        "en": "Optional; registered reference image @-ref, extracted for character and layout when present",
+        "zh-CN": "可选；已登记参考图的 @ 引用，提供时从中提取人物与版式"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "sound_design",
+      "type": "string",
+      "min_length": 0,
+      "max_length": 2048,
+      "labels": {
+        "en": "Sound design",
+        "zh-CN": "声音设计"
+      },
+      "descriptions": {
+        "en": "No BGM by default, mechanism effects only; music arranged on request",
+        "zh-CN": "默认无 BGM，只保留机制音效；指定音乐时按要求编排"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "style_direction",
+      "type": "string",
+      "examples": [
+        "清冷汉服贵女"
+      ],
+      "min_length": 0,
+      "max_length": 2048,
+      "labels": {
+        "en": "Style direction",
+        "zh-CN": "风格方向"
+      },
+      "descriptions": {
+        "en": "Overall style direction guiding outfit completion and mechanism choice",
+        "zh-CN": "整体风格走向，用于补全造型与机制选择"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "transition_mechanism",
+      "type": "enum",
+      "default": "auto",
+      "enum": [
+        "auto",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7",
+        "M8",
+        "M9",
+        "M10",
+        "M11",
+        "M12"
+      ],
+      "labels": {
+        "en": "Transition mechanism",
+        "zh-CN": "换装机制"
+      },
+      "descriptions": {
+        "en": "One of the M1-M12 library; auto maps from style and states the choice",
+        "zh-CN": "M1-M12 机制库之一；auto 时按风格映射选择并说明"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "video_aspect",
+      "type": "enum",
+      "default": "9:16",
+      "enum": [
+        "9:16",
+        "16:9",
+        "1:1"
+      ],
+      "labels": {
+        "en": "Video aspect",
+        "zh-CN": "视频画幅"
+      },
+      "descriptions": {
+        "en": "Transition video aspect ratio",
+        "zh-CN": "换装视频画幅"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "video_duration_s",
+      "type": "integer",
+      "required": true,
+      "default": 8,
+      "examples": [
+        8
+      ],
+      "min": 4,
+      "max": 60,
+      "labels": {
+        "en": "Video duration (s)",
+        "zh-CN": "视频时长（秒）"
+      },
+      "descriptions": {
+        "en": "Total transition video duration",
+        "zh-CN": "换装视频总时长"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}
