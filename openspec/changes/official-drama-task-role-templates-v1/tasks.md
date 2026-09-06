@@ -12,4 +12,4 @@
 - [x] 3.1 `catalog build` 与 `catalog validate --json` 通过且结果确定。| evidence: 双命令 status=success；占位符↔输入核对脚本 6/6 ALL_ALIGNED
 - [x] 3.2 端到端编译至少一个做剧模板。| evidence: file 源 add→sync→search 命中 story-architecture→session create→source import→update→confirm（全 5 字段）→compile（provider_calls=0）→export→bundle verify 全链 success；编译产物 main.txt 未绑定占位符为 0
 - [x] 3.3 `openspec validate official-drama-task-role-templates-v1 --strict --no-interactive` 通过。| evidence: valid（2026-09-06）
-- [ ] 4.1 Skill 矩阵收编在 `.skills/yeisme` 变更中落地：路由表改指 exact ref、五个任务角色 Skill 退役、解析策略增加 `template_ref_available`。
+- [x] 4.1 Skill 矩阵收编在 `.skills/yeisme` 变更中落地：路由表改指 exact ref、五个任务角色 Skill 退役、解析策略增加 `template_ref_available`。| evidence: ai-drama 子仓 feat(router) 提交 + .skills/yeisme change ai-drama-task-role-consolidation-v1 7/7；validate_drama_matrix.py 与 validate_skills.py 双 PASS（16→11 Skill）；root ordo profile 与双 runtime 镜像已同步
