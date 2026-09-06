@@ -12,7 +12,8 @@
 
 ## 3. Provider delivery 分层
 
-- [ ] 3.1 盘点 direct-to-provider 模板，确定首批 additive delivery roles。
+- [x] 3.1 盘点 direct-to-provider 模板，确定首批 additive delivery roles。
+  - Evidence（2026-09-07 凌晨波）：`details/inventory-direct-to-provider.md`——全库包/solution 扫描 + 平台关键词 grep（0 命中，直投属性按包职责判定：image×5/video×12/audio×1 provider-direct）；首批选定 image/candid-portrait-matrix、image/xhs-product-cover（v2 源）、audio/podcast-narration 三个 additive delivery role；video/ai-drama-* 随 film role 统一波延后。未修改任何内容仓正文。
 - [ ] 3.2 将 authoring guide、validation policy 与 delivery body 分离并补回归 fixture。
 
 ## 4. 基础模板质量
