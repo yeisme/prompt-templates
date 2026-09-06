@@ -1,0 +1,37 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "writing",
+  "id": "ai-drama-story-architecture",
+  "version": "1.0.0",
+  "category": "writing",
+  "tags": [
+    "category:writing",
+    "domain:drama",
+    "job:story_architecture"
+  ],
+  "capabilities": [
+    "drama",
+    "semantic_compilation",
+    "story_architecture"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "AI drama story architecture",
+      "summary": "Turn a story idea into a verifiable dramatic structure with a conflict chain and ten-field beat cards"
+    },
+    "zh-CN": {
+      "title": "AI 做剧故事架构",
+      "summary": "把故事想法变成可验证的戏剧结构：冲突链与十字段 beat cards",
+      "usage": "用于 Auctra 剧本前置结构与分集依据"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/writing/ai-drama-story-architecture/prompts/main.en.md"
+    }
+  ]
+}

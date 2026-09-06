@@ -1,0 +1,82 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "writing",
+  "solution_id": "ai-drama-format-strategy",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/writing/ai-drama-format-strategy/prompts/main.en.md",
+  "template_digest": "sha256:28181a6362f459ce9145bbf674812e33581cbec058fea659b5382ecf0cdb9915",
+  "digest": "sha256:49d2485e9015021ad4caad3f3a2c55632dd80e1a830fd5a6a2d6535c2bf01bc5",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "creative_brief_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Creative brief",
+        "zh-CN": "创意简报"
+      },
+      "descriptions": {
+        "en": "Owner-screened goals, audience, medium, platform, and material facts, as JSON",
+        "zh-CN": "Owner 筛选后的目标、受众、媒介、平台与素材事实 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "genre_preferences_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Genre preferences",
+        "zh-CN": "类型偏好"
+      },
+      "descriptions": {
+        "en": "Primary/secondary lens candidates, exclusions, and anti-patterns, as JSON",
+        "zh-CN": "主/副类型候选、排除项与反套路 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "ai-drama-format-strategy-semantic-output-v1"
+      ],
+      "labels": {
+        "en": "Output schema version",
+        "zh-CN": "输出 Schema 版本"
+      },
+      "descriptions": {
+        "en": "Locked semantic output schema for this template",
+        "zh-CN": "本模板锁定的语义输出 Schema"
+      }
+    },
+    {
+      "name": "production_capability_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Production capability",
+        "zh-CN": "制作能力"
+      },
+      "descriptions": {
+        "en": "Budget class, team capacity, delivery target, and density tolerance, as JSON",
+        "zh-CN": "预算档位、团队产能、交付目标与密度容忍度 JSON"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

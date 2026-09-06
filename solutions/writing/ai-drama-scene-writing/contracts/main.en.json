@@ -1,0 +1,113 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "writing",
+  "solution_id": "ai-drama-scene-writing",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/writing/ai-drama-scene-writing/prompts/main.en.md",
+  "template_digest": "sha256:d2ab86426a01347a612118f2acd75f7cebfd5f3fee9a074b95efa5e5ee743c9a",
+  "digest": "sha256:35c3db2079d2641f28e1ea3db15cf1a8c3de86cbade280c820594ddeaea19a52",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "candidate_strategy",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 512,
+      "labels": {
+        "en": "Candidate strategy",
+        "zh-CN": "候选策略"
+      },
+      "descriptions": {
+        "en": "Which A/B strategy variant this draft takes; variants must differ in strategy, not wording",
+        "zh-CN": "本稿采用的 A/B 策略变体；变体必须在策略上不同而非措辞"
+      }
+    },
+    {
+      "name": "canon_snapshot_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Canon snapshot",
+        "zh-CN": "Canon 快照"
+      },
+      "descriptions": {
+        "en": "Character voice markers, knowledge boundaries, and world rules bearing on this scene",
+        "zh-CN": "与场景相关的人物声音标记、知识边界与世界规则"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "dialogue_language",
+      "type": "string",
+      "required": true,
+      "default": "zh-CN",
+      "min_length": 2,
+      "max_length": 16,
+      "labels": {
+        "en": "Dialogue language",
+        "zh-CN": "对白语言"
+      },
+      "descriptions": {
+        "en": "BCP 47 language for spoken dialogue in this draft",
+        "zh-CN": "本稿对白使用的 BCP 47 语言"
+      }
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "ai-drama-scene-writing-semantic-output-v1"
+      ],
+      "labels": {
+        "en": "Output schema version",
+        "zh-CN": "输出 Schema 版本"
+      },
+      "descriptions": {
+        "en": "Locked semantic output schema for this template",
+        "zh-CN": "本模板锁定的语义输出 Schema"
+      }
+    },
+    {
+      "name": "scene_contract_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Scene contract",
+        "zh-CN": "场景合同"
+      },
+      "descriptions": {
+        "en": "Entry state, goal, unspoken cause, conflict strategy, information release, cost, and exit state",
+        "zh-CN": "入口状态、目标、不可直说原因、冲突策略、信息释放、代价与出口状态"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "style_constraints_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Style constraints",
+        "zh-CN": "风格约束"
+      },
+      "descriptions": {
+        "en": "Dimensional style constraints and forbidden phrasing, as JSON",
+        "zh-CN": "维度化风格约束与禁用措辞 JSON"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

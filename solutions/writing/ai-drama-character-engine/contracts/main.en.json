@@ -1,0 +1,98 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "writing",
+  "solution_id": "ai-drama-character-engine",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/writing/ai-drama-character-engine/prompts/main.en.md",
+  "template_digest": "sha256:3e40040b6dfcc0ab0de62078859bb33b23f120c875de4c06d66346511fa10f39",
+  "digest": "sha256:0e21fd0442ec759930d2932478d72056c29a236a21ac700d0a8db505b6ec56ff",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "canon_snapshot_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Canon snapshot",
+        "zh-CN": "Canon 快照"
+      },
+      "descriptions": {
+        "en": "Existing characters, states, and knowledge facts; empty object when greenfield",
+        "zh-CN": "既有角色、状态与知识事实；全新项目传空对象"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "character_brief_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Character brief",
+        "zh-CN": "人物简报"
+      },
+      "descriptions": {
+        "en": "Which characters this round covers, their roles, and any existing traits or references",
+        "zh-CN": "本轮覆盖的人物、角色定位与既有特征或参考"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "ai-drama-character-engine-semantic-output-v1"
+      ],
+      "labels": {
+        "en": "Output schema version",
+        "zh-CN": "输出 Schema 版本"
+      },
+      "descriptions": {
+        "en": "Locked semantic output schema for this template",
+        "zh-CN": "本模板锁定的语义输出 Schema"
+      }
+    },
+    {
+      "name": "story_context_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Story context projection",
+        "zh-CN": "故事上下文投影"
+      },
+      "descriptions": {
+        "en": "Spine, premise, and conflict chain projection, ideally from the story-architecture template",
+        "zh-CN": "故事脊柱、premise 与冲突链投影，宜来自故事架构模板"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "task_delta_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Task delta",
+        "zh-CN": "任务增量"
+      },
+      "descriptions": {
+        "en": "This round only: characters in scope and the decision the proposal serves",
+        "zh-CN": "仅本轮：人物范围与提案服务的决策"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

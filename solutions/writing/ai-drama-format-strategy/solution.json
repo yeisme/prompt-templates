@@ -1,0 +1,37 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "writing",
+  "id": "ai-drama-format-strategy",
+  "version": "1.0.0",
+  "category": "writing",
+  "tags": [
+    "category:writing",
+    "domain:drama",
+    "job:format_strategy"
+  ],
+  "capabilities": [
+    "drama",
+    "format_strategy",
+    "semantic_compilation"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "AI drama format strategy",
+      "summary": "Select the carrying format profile, genre lens, audience promise, and structural cadence before story planning"
+    },
+    "zh-CN": {
+      "title": "AI 做剧形态与类型策略",
+      "summary": "在故事架构与分集规划前，选择承载形态、类型镜头、观众承诺与结构节拍",
+      "usage": "用于 Auctra 项目立项与做剧路由的阶段前置决策"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/writing/ai-drama-format-strategy/prompts/main.en.md"
+    }
+  ]
+}

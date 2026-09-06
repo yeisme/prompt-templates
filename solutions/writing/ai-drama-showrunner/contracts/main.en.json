@@ -1,0 +1,98 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "writing",
+  "solution_id": "ai-drama-showrunner",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/writing/ai-drama-showrunner/prompts/main.en.md",
+  "template_digest": "sha256:60ba1d2aa9ea4cb461d9f6f97c3fa3fcfb4cccd42a5348323b67ad3546da94eb",
+  "digest": "sha256:7608316b977cb6d5ac249e5f2165ea371b4ba5e6275461e16258a624beda4962",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "format_contract_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Format contract projection",
+        "zh-CN": "形态合同投影"
+      },
+      "descriptions": {
+        "en": "Owner-screened DramaFormatContract projection governing episode shape and cadence",
+        "zh-CN": "Owner 筛选后的形态合同投影，约束集形态与节拍"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "ai-drama-showrunner-semantic-output-v1"
+      ],
+      "labels": {
+        "en": "Output schema version",
+        "zh-CN": "输出 Schema 版本"
+      },
+      "descriptions": {
+        "en": "Locked semantic output schema for this template",
+        "zh-CN": "本模板锁定的语义输出 Schema"
+      }
+    },
+    {
+      "name": "series_context_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Series context",
+        "zh-CN": "系列上下文"
+      },
+      "descriptions": {
+        "en": "Completed episodes, character states, unresolved setups, and voice confirmations; empty object at season start",
+        "zh-CN": "已完成集、人物状态、未兑现伏笔与声音确认；季初传空对象"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "story_proposal_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Story proposal projection",
+        "zh-CN": "故事提案投影"
+      },
+      "descriptions": {
+        "en": "Spine and beat projection, ideally from the story-architecture template",
+        "zh-CN": "脊柱与 beat 投影，宜来自故事架构模板"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "task_delta_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Task delta",
+        "zh-CN": "任务增量"
+      },
+      "descriptions": {
+        "en": "This round only: scope, episode range, and whether this is a new write or heavy rewrite",
+        "zh-CN": "仅本轮：范围、集区间与是否新写或大改"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

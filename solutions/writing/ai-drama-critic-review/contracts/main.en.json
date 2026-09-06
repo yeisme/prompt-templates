@@ -1,0 +1,82 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "writing",
+  "solution_id": "ai-drama-critic-review",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/writing/ai-drama-critic-review/prompts/main.en.md",
+  "template_digest": "sha256:2949519f18eec09d6a14844a8d30629f5bfe47b8650678205abc2e6523d7813e",
+  "digest": "sha256:f222faa356eb66df776a97838ed303c35f2221f784889bca3140859992c01c32",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "assessment_goal_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Assessment goal",
+        "zh-CN": "评审目标"
+      },
+      "descriptions": {
+        "en": "The decision this review serves, the evaluation target, and the subject lens, as JSON",
+        "zh-CN": "本次评审服务的决策、评价对象与题材镜头 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "candidates_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "en": "Candidates",
+        "zh-CN": "候选集"
+      },
+      "descriptions": {
+        "en": "Two or more labeled candidates within one comparison class, as JSON",
+        "zh-CN": "同一比较类内两个及以上带标签候选 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "ai-drama-critic-review-semantic-output-v1"
+      ],
+      "labels": {
+        "en": "Output schema version",
+        "zh-CN": "输出 Schema 版本"
+      },
+      "descriptions": {
+        "en": "Locked semantic output schema for this template",
+        "zh-CN": "本模板锁定的语义输出 Schema"
+      }
+    },
+    {
+      "name": "rubric_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Rubric",
+        "zh-CN": "评分标准"
+      },
+      "descriptions": {
+        "en": "Frozen rubric with dimensions and weights; empty object for qualitative-only review",
+        "zh-CN": "冻结的维度与权重标准；仅定性评审传空对象"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

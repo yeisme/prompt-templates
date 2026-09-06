@@ -1,0 +1,37 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "writing",
+  "id": "ai-drama-scene-writing",
+  "version": "1.0.0",
+  "category": "writing",
+  "tags": [
+    "category:writing",
+    "domain:drama",
+    "job:scene_writing"
+  ],
+  "capabilities": [
+    "drama",
+    "scene_writing",
+    "semantic_compilation"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "AI drama scene writing",
+      "summary": "Compile one shootable scene draft with executable action, separated subtext, ordered information release, and exit state"
+    },
+    "zh-CN": {
+      "title": "AI 做剧场景写作",
+      "summary": "编译可拍场景草案：可执行动作、分离潜台词、信息释放次序与出口状态",
+      "usage": "用于 Auctra 场景候选与 A/B 策略试写"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/writing/ai-drama-scene-writing/prompts/main.en.md"
+    }
+  ]
+}

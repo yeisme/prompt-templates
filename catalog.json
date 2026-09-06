@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:cbe5804573eb428f717ff0a52df7e8df5c1f1b645c4e6de40f2bd34cdccc49a8",
+  "digest": "sha256:075fd8252d894a6ee5f0d86f02a2bc51d6b5a7aebc89647b163d81483c966a6f",
   "solutions": [
     {
       "package_id": "agent",
@@ -1640,6 +1640,234 @@
           "locale": "zh-CN",
           "path": "solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md",
           "digest": "sha256:615d426e93b1c89ea5876079247a41b3376ecd34290ef62a0766e3f31168065f"
+        }
+      ]
+    },
+    {
+      "package_id": "writing",
+      "id": "ai-drama-character-engine",
+      "version": "1.0.0",
+      "digest": "sha256:5e6f4dffed182dbab2fcffad99a97b2f110f0e982402d4b6a8e789ae0114d9d2",
+      "category": "writing",
+      "tags": [
+        "category:writing",
+        "domain:drama",
+        "job:character_engine"
+      ],
+      "capabilities": [
+        "character_design",
+        "drama",
+        "semantic_compilation"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "AI drama character engine",
+          "summary": "Design characters as pressure-driven decision systems with motives, secrets, knowledge boundaries, and relationships"
+        },
+        "zh-CN": {
+          "title": "AI 做剧人物引擎",
+          "summary": "以压力驱动的人物决策系统设计动机、秘密、知识边界与关系",
+          "usage": "用于 Auctra 人物设定与对白前置"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/writing/ai-drama-character-engine/prompts/main.en.md",
+          "digest": "sha256:3e40040b6dfcc0ab0de62078859bb33b23f120c875de4c06d66346511fa10f39"
+        }
+      ]
+    },
+    {
+      "package_id": "writing",
+      "id": "ai-drama-critic-review",
+      "version": "1.0.0",
+      "digest": "sha256:fb359e108e6afa567857ccaacb08fb5c2c1428f03c1b2024338663ec6f19ad5f",
+      "category": "writing",
+      "tags": [
+        "category:writing",
+        "domain:drama",
+        "job:critic_review"
+      ],
+      "capabilities": [
+        "drama",
+        "review",
+        "semantic_compilation"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "AI drama critic review",
+          "summary": "Compare two or more candidates within one comparison class with evidence-anchored findings and bounded single-variable repairs"
+        },
+        "zh-CN": {
+          "title": "AI 做剧评审团",
+          "summary": "在同一比较类内比较多候选：证据锚定 findings 与有界单变量修复",
+          "usage": "用于 Auctra 候选评审与选优建议"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/writing/ai-drama-critic-review/prompts/main.en.md",
+          "digest": "sha256:2949519f18eec09d6a14844a8d30629f5bfe47b8650678205abc2e6523d7813e"
+        }
+      ]
+    },
+    {
+      "package_id": "writing",
+      "id": "ai-drama-format-strategy",
+      "version": "1.0.0",
+      "digest": "sha256:49606531c25d370d43ff3672f8ad5cf7ef5c3f886c99a4a706b45d5059de29e3",
+      "category": "writing",
+      "tags": [
+        "category:writing",
+        "domain:drama",
+        "job:format_strategy"
+      ],
+      "capabilities": [
+        "drama",
+        "format_strategy",
+        "semantic_compilation"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "AI drama format strategy",
+          "summary": "Select the carrying format profile, genre lens, audience promise, and structural cadence before story planning"
+        },
+        "zh-CN": {
+          "title": "AI 做剧形态与类型策略",
+          "summary": "在故事架构与分集规划前，选择承载形态、类型镜头、观众承诺与结构节拍",
+          "usage": "用于 Auctra 项目立项与做剧路由的阶段前置决策"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/writing/ai-drama-format-strategy/prompts/main.en.md",
+          "digest": "sha256:28181a6362f459ce9145bbf674812e33581cbec058fea659b5382ecf0cdb9915"
+        }
+      ]
+    },
+    {
+      "package_id": "writing",
+      "id": "ai-drama-scene-writing",
+      "version": "1.0.0",
+      "digest": "sha256:48b55434a96ab774d164cfb9c4aaae333b09e85e49bd27bea8fd6812c29250df",
+      "category": "writing",
+      "tags": [
+        "category:writing",
+        "domain:drama",
+        "job:scene_writing"
+      ],
+      "capabilities": [
+        "drama",
+        "scene_writing",
+        "semantic_compilation"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "AI drama scene writing",
+          "summary": "Compile one shootable scene draft with executable action, separated subtext, ordered information release, and exit state"
+        },
+        "zh-CN": {
+          "title": "AI 做剧场景写作",
+          "summary": "编译可拍场景草案：可执行动作、分离潜台词、信息释放次序与出口状态",
+          "usage": "用于 Auctra 场景候选与 A/B 策略试写"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/writing/ai-drama-scene-writing/prompts/main.en.md",
+          "digest": "sha256:d2ab86426a01347a612118f2acd75f7cebfd5f3fee9a074b95efa5e5ee743c9a"
+        }
+      ]
+    },
+    {
+      "package_id": "writing",
+      "id": "ai-drama-showrunner",
+      "version": "1.0.0",
+      "digest": "sha256:773b38b82e04bafd15cee6534eae89c73eb5416a35448320439153e1ab940ca8",
+      "category": "writing",
+      "tags": [
+        "category:writing",
+        "domain:drama",
+        "job:showrunner"
+      ],
+      "capabilities": [
+        "drama",
+        "episode_planning",
+        "semantic_compilation"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "AI drama showrunner",
+          "summary": "Plan seasons and episodes with proof-slice batching, expansion gates, payoff windows, and suspense debt"
+        },
+        "zh-CN": {
+          "title": "AI 做剧分集规划",
+          "summary": "以 proof slice、扩写门禁、回报窗口与悬念债务规划季与集",
+          "usage": "用于 Auctra 分集与批次扩写控制"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/writing/ai-drama-showrunner/prompts/main.en.md",
+          "digest": "sha256:60ba1d2aa9ea4cb461d9f6f97c3fa3fcfb4cccd42a5348323b67ad3546da94eb"
+        }
+      ]
+    },
+    {
+      "package_id": "writing",
+      "id": "ai-drama-story-architecture",
+      "version": "1.0.0",
+      "digest": "sha256:d9e488589941e66736b04c3bb33e1e07f55784fd86d53098dd06687f98528917",
+      "category": "writing",
+      "tags": [
+        "category:writing",
+        "domain:drama",
+        "job:story_architecture"
+      ],
+      "capabilities": [
+        "drama",
+        "semantic_compilation",
+        "story_architecture"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "AI drama story architecture",
+          "summary": "Turn a story idea into a verifiable dramatic structure with a conflict chain and ten-field beat cards"
+        },
+        "zh-CN": {
+          "title": "AI 做剧故事架构",
+          "summary": "把故事想法变成可验证的戏剧结构：冲突链与十字段 beat cards",
+          "usage": "用于 Auctra 剧本前置结构与分集依据"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/writing/ai-drama-story-architecture/prompts/main.en.md",
+          "digest": "sha256:2177ab4f05c5edcf0a37aa288bb5ce485d1e48faa0dc4a0ebe0a0fd3f3a38b95"
         }
       ]
     },

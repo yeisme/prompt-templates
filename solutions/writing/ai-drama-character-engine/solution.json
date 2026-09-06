@@ -1,0 +1,37 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "writing",
+  "id": "ai-drama-character-engine",
+  "version": "1.0.0",
+  "category": "writing",
+  "tags": [
+    "category:writing",
+    "domain:drama",
+    "job:character_engine"
+  ],
+  "capabilities": [
+    "character_design",
+    "drama",
+    "semantic_compilation"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "AI drama character engine",
+      "summary": "Design characters as pressure-driven decision systems with motives, secrets, knowledge boundaries, and relationships"
+    },
+    "zh-CN": {
+      "title": "AI 做剧人物引擎",
+      "summary": "以压力驱动的人物决策系统设计动机、秘密、知识边界与关系",
+      "usage": "用于 Auctra 人物设定与对白前置"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/writing/ai-drama-character-engine/prompts/main.en.md"
+    }
+  ]
+}

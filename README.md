@@ -11,6 +11,7 @@
 - `promptrepo://official/writing/revision-assistant@1.0.0?locale=en`：Auctra 与通用文本修订。
 - `promptrepo://official/agent/digital-human-persona-system@1.0.0?locale=en`：编译 Digital Human Persona 的 system prompt。
 - `promptrepo://official/image/xhs-product-cover-v2@2.0.0?locale=en`：满足 Eikona 通用图像消费能力合同的产品封面模板；v1 精确引用继续保留。
+- `promptrepo://official/writing/ai-drama-format-strategy@1.0.0?locale=en` 等 `writing/ai-drama-*@1.0.0` 六件套：AI 做剧任务角色链（形态策略→故事架构→人物引擎→分集规划→场景写作→评审团），由做剧 Skills 矩阵收编为可编译模板。
 
 独立 Agent 用户可使用 [Template Registry](https://github.com/yeisme/template-registry)，通过 CLI 或本地 MCP 导入资料、确认输入、编译和导出提示包，无需安装其他 Yeisme 产品。首批兼容模板及多步骤示例见 [Agent 编译用基础模板（beta）](docs/agent-consumption-beta.md)。
 
@@ -18,7 +19,7 @@
 
 ```bash
 sonora prompt-asset repository add official \
-  --source github://yeisme/prompt-templates \
+  --source https://github.com/yeisme/prompt-templates \
   --revision main \
   --trust official
 

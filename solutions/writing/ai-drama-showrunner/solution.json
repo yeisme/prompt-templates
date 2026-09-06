@@ -1,0 +1,37 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "writing",
+  "id": "ai-drama-showrunner",
+  "version": "1.0.0",
+  "category": "writing",
+  "tags": [
+    "category:writing",
+    "domain:drama",
+    "job:showrunner"
+  ],
+  "capabilities": [
+    "drama",
+    "episode_planning",
+    "semantic_compilation"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "AI drama showrunner",
+      "summary": "Plan seasons and episodes with proof-slice batching, expansion gates, payoff windows, and suspense debt"
+    },
+    "zh-CN": {
+      "title": "AI 做剧分集规划",
+      "summary": "以 proof slice、扩写门禁、回报窗口与悬念债务规划季与集",
+      "usage": "用于 Auctra 分集与批次扩写控制"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/writing/ai-drama-showrunner/prompts/main.en.md"
+    }
+  ]
+}

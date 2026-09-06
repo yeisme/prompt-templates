@@ -1,0 +1,37 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "writing",
+  "id": "ai-drama-critic-review",
+  "version": "1.0.0",
+  "category": "writing",
+  "tags": [
+    "category:writing",
+    "domain:drama",
+    "job:critic_review"
+  ],
+  "capabilities": [
+    "drama",
+    "review",
+    "semantic_compilation"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "AI drama critic review",
+      "summary": "Compare two or more candidates within one comparison class with evidence-anchored findings and bounded single-variable repairs"
+    },
+    "zh-CN": {
+      "title": "AI 做剧评审团",
+      "summary": "在同一比较类内比较多候选：证据锚定 findings 与有界单变量修复",
+      "usage": "用于 Auctra 候选评审与选优建议"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/writing/ai-drama-critic-review/prompts/main.en.md"
+    }
+  ]
+}

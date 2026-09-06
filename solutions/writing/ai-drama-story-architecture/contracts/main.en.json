@@ -1,0 +1,98 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "writing",
+  "solution_id": "ai-drama-story-architecture",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/writing/ai-drama-story-architecture/prompts/main.en.md",
+  "template_digest": "sha256:2177ab4f05c5edcf0a37aa288bb5ce485d1e48faa0dc4a0ebe0a0fd3f3a38b95",
+  "digest": "sha256:e5297c7b6173825ab68ed018ad93bcc9108f315e77181e6e92226ddb024a769b",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "canon_snapshot_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Canon snapshot",
+        "zh-CN": "Canon 快照"
+      },
+      "descriptions": {
+        "en": "World rules, existing characters, timeline, and forbidden facts; empty object when greenfield",
+        "zh-CN": "世界规则、已有角色、时间线与禁用事实；全新项目传空对象"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "creative_brief_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Creative brief",
+        "zh-CN": "创意简报"
+      },
+      "descriptions": {
+        "en": "Subject matter, audience, medium, runtime, and target emotion, as JSON",
+        "zh-CN": "题材、受众、媒介、时长与目标情绪 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "format_contract_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Format contract projection",
+        "zh-CN": "形态合同投影"
+      },
+      "descriptions": {
+        "en": "Owner-screened DramaFormatContract projection, ideally from the format-strategy template",
+        "zh-CN": "Owner 筛选后的形态合同投影，宜来自形态策略模板"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "ai-drama-story-architecture-semantic-output-v1"
+      ],
+      "labels": {
+        "en": "Output schema version",
+        "zh-CN": "输出 Schema 版本"
+      },
+      "descriptions": {
+        "en": "Locked semantic output schema for this template",
+        "zh-CN": "本模板锁定的语义输出 Schema"
+      }
+    },
+    {
+      "name": "task_delta_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 65536,
+      "labels": {
+        "en": "Task delta",
+        "zh-CN": "任务增量"
+      },
+      "descriptions": {
+        "en": "This round only: scope, episode or beat range, and revision intent, as JSON",
+        "zh-CN": "仅本轮：范围、集/beat 区间与修订意图 JSON"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}
