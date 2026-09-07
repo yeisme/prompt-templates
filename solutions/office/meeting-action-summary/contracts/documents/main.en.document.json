@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "office",
+  "solution_id": "meeting-action-summary",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/office/meeting-action-summary/prompts/main.en.md",
+  "source_digest": "sha256:b32cf7778d0c396029603ef4895e1051d58e8c0403905fc13ff513e289cc90a4",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/office/meeting-action-summary/contracts/schemas/meeting-action-summary-output.v1.schema.json",
+    "digest": "sha256:cf132ae51d5f55eabcc9c7c17510f3601aae21f025f44b8220b36e85240ff59a"
+  },
+  "required_capabilities": [
+    "meeting_action_synthesis"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:0322c77b5f912f72dc05740236099ab9b3af1009c50bd3c0032b9b6351bb5c19"
+}

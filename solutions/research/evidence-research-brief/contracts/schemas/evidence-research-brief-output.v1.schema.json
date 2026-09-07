@@ -1,0 +1,86 @@
+{
+  "$id": "https://schemas.yeisme.dev/research/evidence-research-brief-output/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "evidence_research_brief_output.v1"
+    },
+    "conclusion": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "evidence_table": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "claim": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "credibility": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "evidence": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "source": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_date": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "claim",
+          "evidence",
+          "source",
+          "source_date",
+          "credibility"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "counterevidence_and_limits": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "recommended_decision": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "follow_up_questions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "conclusion",
+    "evidence_table",
+    "counterevidence_and_limits",
+    "confidence",
+    "recommended_decision",
+    "follow_up_questions"
+  ],
+  "type": "object"
+}

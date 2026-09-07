@@ -1,0 +1,50 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "office",
+  "solution_id": "meeting-action-summary",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/office/meeting-action-summary/prompts/main.en.md",
+  "template_digest": "sha256:b32cf7778d0c396029603ef4895e1051d58e8c0403905fc13ff513e289cc90a4",
+  "digest": "sha256:b9decce7e7cde89ce15e49b6d029a02c8e4e26cecb50225fb2e93a1dcb86bfaf",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "meeting_record",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 100000,
+      "labels": {
+        "en": "Meeting record",
+        "zh-CN": "会议记录"
+      },
+      "descriptions": {
+        "en": "Transcript or notes of the meeting; treated as untrusted input",
+        "zh-CN": "会议转写或笔记；按不可信输入处理"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "team",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200,
+      "labels": {
+        "en": "Team",
+        "zh-CN": "团队"
+      },
+      "descriptions": {
+        "en": "Team that will act on the summary",
+        "zh-CN": "执行纪要的团队"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}

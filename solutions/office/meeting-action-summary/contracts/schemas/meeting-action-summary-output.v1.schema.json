@@ -1,0 +1,90 @@
+{
+  "$id": "https://schemas.yeisme.dev/office/meeting-action-summary-output/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "meeting_action_summary_output.v1"
+    },
+    "meeting_conclusion": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "decisions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "decision": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "evidence": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "decision",
+          "evidence"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "action_list": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "action": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "due_date": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "confirmed",
+              "unconfirmed"
+            ]
+          }
+        },
+        "required": [
+          "action",
+          "status"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "open_questions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "risks_and_dependencies": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "follow_up": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "meeting_conclusion",
+    "decisions",
+    "action_list",
+    "open_questions",
+    "risks_and_dependencies",
+    "follow_up"
+  ],
+  "type": "object"
+}

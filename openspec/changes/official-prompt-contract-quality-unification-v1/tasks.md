@@ -18,7 +18,8 @@
 
 ## 4. 基础模板质量
 
-- [ ] 4.1 升级 summary/research 首批三个模板。 | evidence: Readiness inventory identifies structured-summary, meeting-action-summary and evidence-research-brief main.en contract gaps
+- [x] 4.1 升级 summary/research 首批三个模板。
+  - Evidence（2026-09-07）：`general/structured-summary`（contract 2 inputs，digest `sha256:90e9104232d4`）、`office/meeting-action-summary`（2 inputs，`sha256:b9decce7e7cd`）、`research/evidence-research-brief`（3 inputs，`sha256:ef75358d2acf`）全部补齐：en 正文新增 untrusted source 边界（不执行来源内嵌指令）与逐字段 Output contract（unknown/unconfirmed 兜底），zh-CN 译文同步镜像；Registry CLI 建立 main contract（source/record 类输入标记 sensitive）+ document descriptor（required capabilities：structured_summarization/meeting_action_synthesis/evidence_synthesis）+ 语义输出 schema（`contracts/schemas/*-output.v1.schema.json`）；每模板 1 valid + 1 invalid（missing required input → `MISSING_REQUIRED_INPUT`）公开虚构 fixture，`fixture validate` success；人工审阅用 `docs/review-checklist.zh-CN.md` 与 `docs/failure-modes.zh-CN.md` 落地。catalog build 连续两次同 digest `sha256:71a80657fd1c177fc814a315c78e6fb8d95197f89ee42116380bcd08ceb59ad0`，validate success，`openspec validate --all --strict` 20 passed。
 - [ ] 4.2 升级 engineering/handoff 第二批三个模板。 | evidence: Readiness inventory identifies bug-root-cause-analysis, prd-acceptance-criteria and tool-use-handoff main.en contract gaps
 - [ ] 4.3 升级 writing/learning/marketing/short-drama 第三批模板。 | evidence: Readiness inventory identifies longform-outline, socratic-study-plan, xhs-campaign-copy and short-drama-character-consistency main.en contract gaps
 

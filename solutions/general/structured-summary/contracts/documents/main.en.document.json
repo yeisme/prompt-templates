@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "general",
+  "solution_id": "structured-summary",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/general/structured-summary/prompts/main.en.md",
+  "source_digest": "sha256:6541343794131a020f8e9d0491cad5dd6cf3ef1e0ae5a42884197677744b2325",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/general/structured-summary/contracts/schemas/structured-summary-output.v1.schema.json",
+    "digest": "sha256:1a8899dc36d96dca32d9b3bbb1e35a3e0cc8ad5d8d0e4ee1dd003d475d826f6e"
+  },
+  "required_capabilities": [
+    "structured_summarization"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:c4bf5c1901cfea7e3878dd96ea83948757fea09ffb223b41d42bc5db42d18f66"
+}

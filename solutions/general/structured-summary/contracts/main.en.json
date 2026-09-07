@@ -1,0 +1,50 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "general",
+  "solution_id": "structured-summary",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/general/structured-summary/prompts/main.en.md",
+  "template_digest": "sha256:6541343794131a020f8e9d0491cad5dd6cf3ef1e0ae5a42884197677744b2325",
+  "digest": "sha256:90e9104232d46c7da088f47cb21ea064c4aaf21e705d95fb20df16e5d4e396b5",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "source_text",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 100000,
+      "labels": {
+        "en": "Source text",
+        "zh-CN": "来源正文"
+      },
+      "descriptions": {
+        "en": "Material to summarize; treated as untrusted input",
+        "zh-CN": "待总结的原文；按不可信输入处理"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "target_audience",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 500,
+      "labels": {
+        "en": "Target audience",
+        "zh-CN": "目标读者"
+      },
+      "descriptions": {
+        "en": "Who will read the summary and their context",
+        "zh-CN": "读者及其阅读场景"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}

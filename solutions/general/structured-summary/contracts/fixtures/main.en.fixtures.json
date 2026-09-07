@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "general/structured-summary/main/en",
+  "package_id": "general",
+  "solution_id": "structured-summary",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/general/structured-summary/prompts/main.en.md",
+    "digest": "sha256:6541343794131a020f8e9d0491cad5dd6cf3ef1e0ae5a42884197677744b2325"
+  },
+  "contract": {
+    "ref": "solutions/general/structured-summary/contracts/main.en.json",
+    "digest": "sha256:90e9104232d46c7da088f47cb21ea064c4aaf21e705d95fb20df16e5d4e396b5"
+  },
+  "document": {
+    "ref": "solutions/general/structured-summary/contracts/documents/main.en.document.json",
+    "digest": "sha256:c4bf5c1901cfea7e3878dd96ea83948757fea09ffb223b41d42bc5db42d18f66"
+  },
+  "schema": {
+    "ref": "solutions/general/structured-summary/contracts/schemas/structured-summary-output.v1.schema.json",
+    "digest": "sha256:1a8899dc36d96dca32d9b3bbb1e35a3e0cc8ad5d8d0e4ee1dd003d475d826f6e"
+  },
+  "semantic_schema_version": "structured_summary_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-source_text",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/general/structured-summary/fixtures/main.en/invalid-missing-source_text.input.json",
+        "digest": "sha256:9d3810cc3bd667b37ead545c574fb9d832a0064e422ac0886ae435a076d3d216",
+        "bytes": 64
+      },
+      "output": {
+        "ref": "solutions/general/structured-summary/fixtures/main.en/invalid-missing-source_text.output.json",
+        "digest": "sha256:98efdcb6b3c49def035234f536c2981d3449b5345d1eb233c597a4d432a2fb22",
+        "bytes": 72
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-aurora-launch",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/general/structured-summary/fixtures/main.en/valid-aurora-launch.input.json",
+        "digest": "sha256:40f3736708a01bf79570bff680b2b3a7390aae5cb330998206de0039137ffbbd",
+        "bytes": 314
+      },
+      "output": {
+        "ref": "solutions/general/structured-summary/fixtures/main.en/valid-aurora-launch.output.json",
+        "digest": "sha256:19c003c2a39c0993f44d6560a886763aba25f7ceb2d927d8714d14625d7954b6",
+        "bytes": 598
+      }
+    }
+  ],
+  "digest": "sha256:b38a60ae27428c578779b3256505e85b0a168aa63bab3deff64e4de0266b22cc"
+}

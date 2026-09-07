@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "research",
+  "solution_id": "evidence-research-brief",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/research/evidence-research-brief/prompts/main.en.md",
+  "source_digest": "sha256:184b8eaed95e188c64eb3c0ce5f780052a6c16ea19009379682f565bae470152",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/research/evidence-research-brief/contracts/schemas/evidence-research-brief-output.v1.schema.json",
+    "digest": "sha256:0ac77dd3f1bc40055f5d54b801f6e49f023157647bf316dc431f33b6e9ee2552"
+  },
+  "required_capabilities": [
+    "evidence_synthesis"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:84f7d8512e94451eb711893ae03dbd0490891a227671883282ccf25ffd136ea0"
+}

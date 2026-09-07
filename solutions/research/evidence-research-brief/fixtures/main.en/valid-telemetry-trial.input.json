@@ -1,0 +1,1 @@
+{"decision_maker":"the platform lead","research_question":"Should the fictional team adopt database X for the new telemetry service?","sources":"Fictional sources. [1] Vendor benchmark report, 2026-08-12: database X handled the simulated telemetry load with lower tail latency (table 3). [2] Internal pilot log, 2026-08-30: no data loss observed over 400 hours."}

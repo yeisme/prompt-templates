@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:91762c23095237f550280d84b33b61288a127dd4bca593f968768a6bbc3360d7",
+  "digest": "sha256:71a80657fd1c177fc814a315c78e6fb8d95197f89ee42116380bcd08ceb59ad0",
   "solutions": [
     {
       "package_id": "agent",
@@ -295,7 +295,7 @@
       "package_id": "general",
       "id": "structured-summary",
       "version": "1.0.0",
-      "digest": "sha256:8156c96b7e1c863c575e46933829a747f835cbc0baabf8179575c0d32c414c26",
+      "digest": "sha256:56772fa1f4be123ad9ee1c6d68070f5a420440baf613ecb66653e2a03ccb89bf",
       "category": "general",
       "tags": [
         "artifact:structured_summary",
@@ -330,13 +330,13 @@
           "role": "main",
           "locale": "en",
           "path": "solutions/general/structured-summary/prompts/main.en.md",
-          "digest": "sha256:2bbad07bd5d54228e3797a8f1ecf9404d5dda86c0698d572e6af8cb36993711e"
+          "digest": "sha256:6541343794131a020f8e9d0491cad5dd6cf3ef1e0ae5a42884197677744b2325"
         },
         {
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/general/structured-summary/prompts/main.zh-CN.md",
-          "digest": "sha256:032ead0d534bb067eba73f08de4c7cc401c474b7359f4672ec06becb6c354f8c"
+          "digest": "sha256:013c968269541a7a8c87085fd81474f83d8f70cc8bef1837224f78fdb929d218"
         }
       ]
     },
@@ -842,7 +842,7 @@
       "package_id": "office",
       "id": "meeting-action-summary",
       "version": "1.0.0",
-      "digest": "sha256:18e4e7f427a0fb19a5fef0a39db7435c13c83dd95bf2e67d8d4bc62b43e5aa44",
+      "digest": "sha256:8659571bea6aa5667c2152e09a1972c1825325c51200b806cb2188d1667f1e83",
       "category": "office",
       "tags": [
         "artifact:meeting_minutes",
@@ -877,13 +877,13 @@
           "role": "main",
           "locale": "en",
           "path": "solutions/office/meeting-action-summary/prompts/main.en.md",
-          "digest": "sha256:204a7f96577ce23ed006f7a2bf7484e4d0b6fb4e27406dd1a0929ef4027e3d54"
+          "digest": "sha256:b32cf7778d0c396029603ef4895e1051d58e8c0403905fc13ff513e289cc90a4"
         },
         {
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/office/meeting-action-summary/prompts/main.zh-CN.md",
-          "digest": "sha256:660c51b1260efac9196055b93c1f23e595632a6c85b8f6b21a429592f1ccc379"
+          "digest": "sha256:ef60a4a5c9196185329fe6ee37eabba848f77c03f8e1fa1b2af38bd605b27ebd"
         }
       ]
     },
@@ -981,7 +981,7 @@
       "package_id": "research",
       "id": "evidence-research-brief",
       "version": "1.0.0",
-      "digest": "sha256:0ea92f44ee3a75fc3ce89d15690c23709e8f9555d2ce7c2c02754210736ec048",
+      "digest": "sha256:df07efd39e55e8db814ef24548166efaef3ec8214fe7bd596577b4315eb100af",
       "category": "research",
       "tags": [
         "artifact:research_brief",
@@ -1017,13 +1017,13 @@
           "role": "main",
           "locale": "en",
           "path": "solutions/research/evidence-research-brief/prompts/main.en.md",
-          "digest": "sha256:3ade9a1d72e4fa45f98daf637310f487fcacc7df17d26da4eedbcb531f2d9ab5"
+          "digest": "sha256:184b8eaed95e188c64eb3c0ce5f780052a6c16ea19009379682f565bae470152"
         },
         {
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/research/evidence-research-brief/prompts/main.zh-CN.md",
-          "digest": "sha256:10457424dbab8b8426dd2c33cb499af50575053f901e91d9f14b3de9985f0e4b"
+          "digest": "sha256:9adf95637f7cc4e7c5b88bc8649b0be22f6cf4eb56d78cf39861f8a2f40ef857"
         }
       ]
     },

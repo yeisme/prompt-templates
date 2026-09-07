@@ -1,0 +1,72 @@
+{
+  "$id": "https://schemas.yeisme.dev/general/structured-summary-output/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "structured_summary_output.v1"
+    },
+    "summary": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "type": "string"
+    },
+    "key_facts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "fact": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_location": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "uncertain": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "fact",
+          "source_location"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "decisions_and_actions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "item": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "item"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "risks_and_open_questions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "summary",
+    "key_facts",
+    "decisions_and_actions",
+    "risks_and_open_questions"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "research/evidence-research-brief/main/en",
+  "package_id": "research",
+  "solution_id": "evidence-research-brief",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/research/evidence-research-brief/prompts/main.en.md",
+    "digest": "sha256:184b8eaed95e188c64eb3c0ce5f780052a6c16ea19009379682f565bae470152"
+  },
+  "contract": {
+    "ref": "solutions/research/evidence-research-brief/contracts/main.en.json",
+    "digest": "sha256:ef75358d2acfa5671da825208698d688ed50a36463f703362ef39dfb25044189"
+  },
+  "document": {
+    "ref": "solutions/research/evidence-research-brief/contracts/documents/main.en.document.json",
+    "digest": "sha256:84f7d8512e94451eb711893ae03dbd0490891a227671883282ccf25ffd136ea0"
+  },
+  "schema": {
+    "ref": "solutions/research/evidence-research-brief/contracts/schemas/evidence-research-brief-output.v1.schema.json",
+    "digest": "sha256:0ac77dd3f1bc40055f5d54b801f6e49f023157647bf316dc431f33b6e9ee2552"
+  },
+  "semantic_schema_version": "evidence_research_brief_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-sources",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/research/evidence-research-brief/fixtures/main.en/invalid-missing-sources.input.json",
+        "digest": "sha256:8e7c5dcc16ec4a72d6b34b1bf7d473a8a26383359f177867350446c15c0e0d24",
+        "bytes": 134
+      },
+      "output": {
+        "ref": "solutions/research/evidence-research-brief/fixtures/main.en/invalid-missing-sources.output.json",
+        "digest": "sha256:0e95d3b7f6a88d11bb932a4de8c21d552c8dfb436f46ba2a97edc956ecb90050",
+        "bytes": 68
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-telemetry-trial",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/research/evidence-research-brief/fixtures/main.en/valid-telemetry-trial.input.json",
+        "digest": "sha256:0a97a3f47cdaf2d29bcbd140e84622e290b9f31c61d2c157c9074b5eca97e19a",
+        "bytes": 363
+      },
+      "output": {
+        "ref": "solutions/research/evidence-research-brief/fixtures/main.en/valid-telemetry-trial.output.json",
+        "digest": "sha256:138244862ad06d6f465a6ed52bfa9507a9b6a46bee9d554b30bddbdaefa333af",
+        "bytes": 885
+      }
+    }
+  ],
+  "digest": "sha256:016b758d590ec4ba7b0392418ef2c7027e3e259449e0471a5c0c4e1d88669b8c"
+}

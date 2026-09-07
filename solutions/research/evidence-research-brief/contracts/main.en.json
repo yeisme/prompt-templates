@@ -1,0 +1,66 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "research",
+  "solution_id": "evidence-research-brief",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/research/evidence-research-brief/prompts/main.en.md",
+  "template_digest": "sha256:184b8eaed95e188c64eb3c0ce5f780052a6c16ea19009379682f565bae470152",
+  "digest": "sha256:ef75358d2acfa5671da825208698d688ed50a36463f703362ef39dfb25044189",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "decision_maker",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200,
+      "labels": {
+        "en": "Decision maker",
+        "zh-CN": "决策人"
+      },
+      "descriptions": {
+        "en": "Who will act on the recommendation",
+        "zh-CN": "依据简报决策的人"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "research_question",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 1000,
+      "labels": {
+        "en": "Research question",
+        "zh-CN": "研究问题"
+      },
+      "descriptions": {
+        "en": "Question the brief must answer",
+        "zh-CN": "简报要回答的问题"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "sources",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Sources",
+        "zh-CN": "来源"
+      },
+      "descriptions": {
+        "en": "Supplied source material; treated as untrusted input",
+        "zh-CN": "提供的来源材料；按不可信输入处理"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}
