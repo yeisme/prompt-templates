@@ -1,0 +1,42 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "xianxia-hazy-fantasy",
+  "version": "1.0.0",
+  "category": "image",
+  "tags": [
+    "artifact:fantasy_portrait",
+    "category:image",
+    "constraint:low_saturation",
+    "constraint:style_lock",
+    "job:generate",
+    "modality:image",
+    "scenario:xianxia",
+    "stage:prompt_generation"
+  ],
+  "capabilities": [
+    "image",
+    "negative_prompt_governance",
+    "style_layer"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Xianxia Hazy Fantasy Style Layer",
+      "summary": "Reusable soft-mist low-saturation backlight style layer for cultivation/xianxia character images; swap only persona and scene",
+      "usage": "Bind persona and scene, keep every style paragraph fixed; optional reference mist block",
+      "aliases": [
+        "xianxia style",
+        "修仙朦胧风"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/xianxia-hazy-fantasy/prompts/main.en.md"
+    }
+  ]
+}

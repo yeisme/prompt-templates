@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:d87c97fc8a3cedebeb23f5138ee0d288bbdd41f41db3ddd2f8f34289e2d279f3",
+  "digest": "sha256:15668219404fedda8fd9f07e7edad312a1911f1d9ca8316686e3dc474e0269ce",
   "solutions": [
     {
       "package_id": "agent",
@@ -635,6 +635,49 @@
           "locale": "zh-CN",
           "path": "solutions/image/xhs-product-cover/prompts/main.zh-CN.md",
           "digest": "sha256:c731bfe27a14c7c741284c2ce9c5abab7a9111af2fe5d8dbc4fef481b8ae263c"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "xianxia-hazy-fantasy",
+      "version": "1.0.0",
+      "digest": "sha256:030f39b3b5c530337828b3f3ef3508e2b3ce33f816f757de3044ddd2a38b3859",
+      "category": "image",
+      "tags": [
+        "artifact:fantasy_portrait",
+        "category:image",
+        "constraint:low_saturation",
+        "constraint:style_lock",
+        "job:generate",
+        "modality:image",
+        "scenario:xianxia",
+        "stage:prompt_generation"
+      ],
+      "capabilities": [
+        "image",
+        "negative_prompt_governance",
+        "style_layer"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Xianxia Hazy Fantasy Style Layer",
+          "summary": "Reusable soft-mist low-saturation backlight style layer for cultivation/xianxia character images; swap only persona and scene",
+          "usage": "Bind persona and scene, keep every style paragraph fixed; optional reference mist block",
+          "aliases": [
+            "xianxia style",
+            "修仙朦胧风"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/xianxia-hazy-fantasy/prompts/main.en.md",
+          "digest": "sha256:c03ef9bf2ee48ee973bdbfdf6ddc0f38ed083fec7563e4c3afba121ceabcd43e"
         }
       ]
     },

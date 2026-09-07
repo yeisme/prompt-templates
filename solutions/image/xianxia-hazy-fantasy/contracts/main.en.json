@@ -1,0 +1,80 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "xianxia-hazy-fantasy",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/xianxia-hazy-fantasy/prompts/main.en.md",
+  "template_digest": "sha256:c03ef9bf2ee48ee973bdbfdf6ddc0f38ed083fec7563e4c3afba121ceabcd43e",
+  "digest": "sha256:70b55bf25b30c73487b57006f72509c555b8f815aedccdf6149c6905bf60385f",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "format_clause",
+      "type": "string",
+      "examples": [
+        "Vertical 9:16 "
+      ],
+      "labels": {
+        "en": "Format clause",
+        "zh-CN": "画幅前缀"
+      },
+      "descriptions": {
+        "en": "Optional aspect prefix with trailing space; empty string when unused",
+        "zh-CN": "可选画幅前缀，自带尾部空格；不用则空字符串"
+      }
+    },
+    {
+      "name": "persona",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "A white-robed sword immortal"
+      ],
+      "labels": {
+        "en": "Persona",
+        "zh-CN": "人物身份"
+      },
+      "descriptions": {
+        "en": "The persona in one phrase, e.g. A white-robed sword immortal",
+        "zh-CN": "人物身份一句，如白衣剑仙"
+      }
+    },
+    {
+      "name": "reference_mist_block",
+      "type": "string",
+      "examples": [
+        " A soft-mist filter with a faint old-film glow, as if viewed through a thin veil — contours never fully sharp, warm green and pale pink bleeding into each other, a watery vapor feel, pearl-soft highlights, a quiet, ambiguous, elusive maidenly emotion, the reserved grace of classical Eastern femininity."
+      ],
+      "labels": {
+        "en": "Reference mist block",
+        "zh-CN": "柔雾增强段"
+      },
+      "descriptions": {
+        "en": "Optional soft-mist enhancement block with its own leading space; empty string when unused",
+        "zh-CN": "可选；贴近柔雾参考图时绑入增强段，自带前导空格/换行；不用则空字符串"
+      }
+    },
+    {
+      "name": "scene",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "above a cloud-sea immortal sect"
+      ],
+      "labels": {
+        "en": "Scene",
+        "zh-CN": "修仙场景"
+      },
+      "descriptions": {
+        "en": "Cultivation scene phrase",
+        "zh-CN": "修仙场景短语"
+      }
+    }
+  ]
+}
