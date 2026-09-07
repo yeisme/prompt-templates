@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "image/xhs-product-cover-v2/delivery/en",
+  "package_id": "image",
+  "solution_id": "xhs-product-cover-v2",
+  "version": "2.0.0",
+  "role": "delivery",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/image/xhs-product-cover-v2/prompts/delivery.en.md",
+    "digest": "sha256:42f25e270ecbd044b45f7979fe92826f35e9c7f0de4d824cad50323500b4a39e"
+  },
+  "contract": {
+    "ref": "solutions/image/xhs-product-cover-v2/contracts/delivery.en.json",
+    "digest": "sha256:429a1356c6c458d0c0f00d66254c0af155fa9f73cbf14f195e233c07945598cd"
+  },
+  "document": {
+    "ref": "solutions/image/xhs-product-cover-v2/contracts/documents/delivery.en.document.json",
+    "digest": "sha256:5cc69ef94a60e57ae08bfc06cf37d2b81af8d47799290426958ad121e42cfa70"
+  },
+  "schema": {
+    "ref": "solutions/image/xhs-product-cover-v2/contracts/schemas/xhs-product-cover-delivery.v1.schema.json",
+    "digest": "sha256:5bc9d49fa9914fd2a9891bbfeeb8388d0cd4f533079200ffaa1e71aaa0ac7a5d"
+  },
+  "semantic_schema_version": "xhs_product_cover_delivery.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-product",
+      "kind": "invalid",
+      "profile_id": "delivery_regression",
+      "input": {
+        "ref": "solutions/image/xhs-product-cover-v2/fixtures/delivery.en/invalid-missing-product.input.json",
+        "digest": "sha256:97d7dc63cd4f0f6797c8ca39b9056c0401f13039b54be4224337da189aaaf491",
+        "bytes": 122
+      },
+      "output": {
+        "ref": "solutions/image/xhs-product-cover-v2/fixtures/delivery.en/invalid-missing-product.output.json",
+        "digest": "sha256:b52a74713c83b734ce27ccfcf45adf13814f04ad2c9bc9dfce6346a8d3b358a2",
+        "bytes": 68
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-tumbler-cover",
+      "kind": "valid",
+      "profile_id": "delivery_regression",
+      "input": {
+        "ref": "solutions/image/xhs-product-cover-v2/fixtures/delivery.en/valid-tumbler-cover.input.json",
+        "digest": "sha256:2bb273ccec751f3709870401d16bddf7344a76608309d1c1f428859aa41cc8e5",
+        "bytes": 158
+      },
+      "output": {
+        "ref": "solutions/image/xhs-product-cover-v2/fixtures/delivery.en/valid-tumbler-cover.output.json",
+        "digest": "sha256:45ab2ba60ef15660ebe6408a7f24a35a229041a5f69c1ce871131d20522f964b",
+        "bytes": 833
+      }
+    }
+  ],
+  "digest": "sha256:3db9c1b925bbfc1f1f6e87f0184a4bb81ccd2683e51c8036b5443d264ecbac8a"
+}

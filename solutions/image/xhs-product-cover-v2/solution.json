@@ -38,6 +38,11 @@
   },
   "templates": [
     {
+      "role": "delivery",
+      "locale": "en",
+      "path": "solutions/image/xhs-product-cover-v2/prompts/delivery.en.md"
+    },
+    {
       "role": "main",
       "locale": "en",
       "path": "solutions/image/xhs-product-cover-v2/prompts/main.en.md"

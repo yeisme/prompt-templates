@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:15668219404fedda8fd9f07e7edad312a1911f1d9ca8316686e3dc474e0269ce",
+  "digest": "sha256:91762c23095237f550280d84b33b61288a127dd4bca593f968768a6bbc3360d7",
   "solutions": [
     {
       "package_id": "agent",
@@ -147,7 +147,7 @@
       "package_id": "audio",
       "id": "podcast-narration",
       "version": "1.0.0",
-      "digest": "sha256:ec3c47eaacc743003e504981f96e2d398f785742dbbcb0b1dba822fd7e8ec117",
+      "digest": "sha256:5cf4473d40e3c7d5f8977233b4adfdb45ebcc48672912c88821bc2439dbe5dde",
       "category": "audio",
       "tags": [
         "artifact:voiceover",
@@ -182,10 +182,16 @@
       },
       "templates": [
         {
+          "role": "delivery",
+          "locale": "en",
+          "path": "solutions/audio/podcast-narration/prompts/delivery.en.md",
+          "digest": "sha256:5cbd2160706f59e7f945fde3c02cf44ee71b43c5da3d0ac75785fb16648aae77"
+        },
+        {
           "role": "main",
           "locale": "en",
           "path": "solutions/audio/podcast-narration/prompts/main.en.md",
-          "digest": "sha256:5cbd2160706f59e7f945fde3c02cf44ee71b43c5da3d0ac75785fb16648aae77"
+          "digest": "sha256:4d742108009319a196d73cf23632a50029b28ea7fd8d19965876679a7251c212"
         },
         {
           "role": "main",
@@ -395,7 +401,7 @@
       "package_id": "image",
       "id": "candid-portrait-matrix",
       "version": "1.0.0",
-      "digest": "sha256:c957d94e7e811c9d06f7c66dc7602a4d540586101f10023dc44e8c7d8aa47c9a",
+      "digest": "sha256:4152b344324d26359b1b527999f8d55d27df0aeea59af81e0bbbf8d4933d85fd",
       "category": "image",
       "tags": [
         "artifact:candid_portrait",
@@ -433,10 +439,16 @@
       },
       "templates": [
         {
+          "role": "delivery",
+          "locale": "en",
+          "path": "solutions/image/candid-portrait-matrix/prompts/delivery.en.md",
+          "digest": "sha256:0a3fe1afc9c88e97c801af10a0a42f394bc9415cf95a551d48f2be7447593aee"
+        },
+        {
           "role": "main",
           "locale": "en",
           "path": "solutions/image/candid-portrait-matrix/prompts/main.en.md",
-          "digest": "sha256:652a718a9d10636ecb2d72737171fba8bf08a3199beea07333a3e9c988356555"
+          "digest": "sha256:a0ba9fa986a3617c6d62f37e4b972b0be3ddab0358a8531ac1b26f9d22fb5c13"
         }
       ]
     },
@@ -544,7 +556,7 @@
       "package_id": "image",
       "id": "xhs-product-cover-v2",
       "version": "2.0.0",
-      "digest": "sha256:3f71226ae5e3766aab8e93a9d30992fdcea30a596eef7ae023d843edd688c9cd",
+      "digest": "sha256:33399e982160127e116d38dc819031a69f7aa8ff966e2eb0e660ce8a709f8322",
       "category": "image",
       "tags": [
         "artifact:cover_image",
@@ -580,10 +592,16 @@
       },
       "templates": [
         {
+          "role": "delivery",
+          "locale": "en",
+          "path": "solutions/image/xhs-product-cover-v2/prompts/delivery.en.md",
+          "digest": "sha256:42f25e270ecbd044b45f7979fe92826f35e9c7f0de4d824cad50323500b4a39e"
+        },
+        {
           "role": "main",
           "locale": "en",
           "path": "solutions/image/xhs-product-cover-v2/prompts/main.en.md",
-          "digest": "sha256:42f25e270ecbd044b45f7979fe92826f35e9c7f0de4d824cad50323500b4a39e"
+          "digest": "sha256:b768436847208699ec8752386e79343df1feb99d423d28f72ee6bf7cc5ba7efd"
         }
       ]
     },

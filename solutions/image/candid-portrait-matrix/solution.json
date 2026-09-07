@@ -40,6 +40,11 @@
   },
   "templates": [
     {
+      "role": "delivery",
+      "locale": "en",
+      "path": "solutions/image/candid-portrait-matrix/prompts/delivery.en.md"
+    },
+    {
       "role": "main",
       "locale": "en",
       "path": "solutions/image/candid-portrait-matrix/prompts/main.en.md"

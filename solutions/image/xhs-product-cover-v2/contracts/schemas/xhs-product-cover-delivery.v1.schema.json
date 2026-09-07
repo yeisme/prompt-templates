@@ -1,0 +1,19 @@
+{
+  "$id": "https://schemas.yeisme.dev/image/xhs-product-cover-delivery/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "prompt_body": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "xhs_product_cover_delivery.v1"
+    }
+  },
+  "required": [
+    "prompt_body",
+    "schema_version"
+  ],
+  "type": "object"
+}

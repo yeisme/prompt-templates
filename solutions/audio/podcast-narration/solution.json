@@ -37,6 +37,11 @@
   },
   "templates": [
     {
+      "role": "delivery",
+      "locale": "en",
+      "path": "solutions/audio/podcast-narration/prompts/delivery.en.md"
+    },
+    {
       "role": "main",
       "locale": "en",
       "path": "solutions/audio/podcast-narration/prompts/main.en.md"

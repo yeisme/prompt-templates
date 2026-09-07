@@ -13,7 +13,8 @@
 
 - [x] 3.1 盘点 direct-to-provider 模板，确定首批 additive delivery roles。
   - Evidence（2026-09-07 凌晨波）：`details/inventory-direct-to-provider.md`——全库包/solution 扫描 + 平台关键词 grep（0 命中，直投属性按包职责判定：image×5/video×12/audio×1 provider-direct）；首批选定 image/candid-portrait-matrix、image/xhs-product-cover（v2 源）、audio/podcast-narration 三个 additive delivery role；video/ai-drama-* 随 film role 统一波延后。未修改任何内容仓正文。
-- [ ] 3.2 将 authoring guide、validation policy 与 delivery body 分离并补回归 fixture。
+- [x] 3.2 将 authoring guide、validation policy 与 delivery body 分离并补回归 fixture。
+  - Evidence（2026-09-07）：首批三 solution 全部落地 additive `delivery` role——`image/candid-portrait-matrix`（delivery contract 14 inputs，digest `sha256:ed5bba3d24f4`）、`image/xhs-product-cover-v2`（5 inputs，`sha256:429a1356c6c4`）、`audio/podcast-narration`（5 inputs，`sha256:154163b834cf`）；输入定义逐项复用 main companion contract（名称/类型/enum/bounds/sensitivity/labels 不变），`contract validate` 全绿。delivery 正文为纯 Provider body（无 authoring 说明、无人工 checklist）；guide/validation policy 留在 main role 文档（candid 原有 intro+self-check，xhs/podcast 新增 Maintenance and validation 节）并加注「Provider 集成必须 render delivery role」。document descriptor 以 `document init` 建立（required capabilities：image_delivery/image_delivery/audio_delivery，schema 绑定 `contracts/schemas/*-delivery.v1.schema.json`）。每 solution 回归 fixture 1 valid + 1 invalid（valid 为占位符完整代入后的渲染体，invalid 为缺 required input → `MISSING_REQUIRED_INPUT`），`fixture validate` 全部 success（case_count 2）。main contract 经 `contract refresh` 重绑 digest 后 validate 通过；catalog build 连续两次同 digest `sha256:91762c23095237f550280d84b33b61288a127dd4bca593f968768a6bbc3360d7`（42 solutions），`catalog validate` success，`openspec validate --all --strict` 20 passed/0 failed。
 
 ## 4. 基础模板质量
 

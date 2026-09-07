@@ -11,18 +11,3 @@ Provide:
 5. One main prompt, one conservative repair prompt, and negative constraints.
 
 Do not invent product capabilities, certifications, comparisons, or testimonials.
-
-
-## Maintenance and validation
-
-This main role is the authoring and validation reference. Provider integrations must render the `delivery` role (prompts/delivery.en.md) as the only Provider payload.
-
-Deterministic checks:
-
-- All required inputs are bound; `visual_style` and `aspect_ratio` stay inside their enum ranges.
-- The rendered delivery body contains no authoring instructions and no human review checklist.
-
-Human review checklist:
-
-- The main prompt stays inside confirmed product facts; no invented capabilities, certifications, comparisons, or testimonials.
-- Negative constraints cover brand errors, garbled text, malformed hands, duplicated objects, and misleading effects.

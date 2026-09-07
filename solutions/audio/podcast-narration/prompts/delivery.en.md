@@ -11,19 +11,3 @@ Requirements:
 - Produce a TTS-ready version and human voice direction; never imitate an unauthorized real person's voice.
 
 Output: cleaned narration, performance marks, pronunciation list, audio review checklist.
-
-
-## Maintenance and validation
-
-This main role is the authoring and validation reference. Provider integrations must render the `delivery` role (prompts/delivery.en.md) as the only Provider payload.
-
-Deterministic checks:
-
-- All five inputs are bound; `script` is treated as a sensitive untrusted source and quoted facts stay verbatim.
-- The rendered delivery body contains no authoring instructions and no human review checklist.
-
-Human review checklist:
-
-- Uncertain pronunciations are resolved before any TTS run.
-- No imitation of an unauthorized real person's voice.
-- Facts, claims, and quotations are unchanged from the source script.

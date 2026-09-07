@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "image",
+  "solution_id": "candid-portrait-matrix",
+  "version": "1.0.0",
+  "role": "delivery",
+  "locale": "en",
+  "template_path": "solutions/image/candid-portrait-matrix/prompts/delivery.en.md",
+  "source_digest": "sha256:0a3fe1afc9c88e97c801af10a0a42f394bc9415cf95a551d48f2be7447593aee",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/image/candid-portrait-matrix/contracts/schemas/candid-portrait-matrix-delivery.v1.schema.json",
+    "digest": "sha256:88806b1ea80b9c433bbe414d7592802dd8c4b559d31eb9f913a038545d61a8f0"
+  },
+  "required_capabilities": [
+    "image_delivery"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:f8605731bd2faf5304a50fa04bf907a42b033cb2a0b612b22d49e28b0b8a11a0"
+}

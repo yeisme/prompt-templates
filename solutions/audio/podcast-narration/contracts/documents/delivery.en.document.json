@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "audio",
+  "solution_id": "podcast-narration",
+  "version": "1.0.0",
+  "role": "delivery",
+  "locale": "en",
+  "template_path": "solutions/audio/podcast-narration/prompts/delivery.en.md",
+  "source_digest": "sha256:5cbd2160706f59e7f945fde3c02cf44ee71b43c5da3d0ac75785fb16648aae77",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/audio/podcast-narration/contracts/schemas/podcast-narration-delivery.v1.schema.json",
+    "digest": "sha256:5385b0a327779c085095e85de2f113e2203788f5cd9f7ab57a456c44febf5766"
+  },
+  "required_capabilities": [
+    "audio_delivery"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:f4256bea74daaa970cb2672988c48999ef5277a4357e02c41c4de7fe3374d261"
+}

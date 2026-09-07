@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "audio/podcast-narration/delivery/en",
+  "package_id": "audio",
+  "solution_id": "podcast-narration",
+  "version": "1.0.0",
+  "role": "delivery",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/audio/podcast-narration/prompts/delivery.en.md",
+    "digest": "sha256:5cbd2160706f59e7f945fde3c02cf44ee71b43c5da3d0ac75785fb16648aae77"
+  },
+  "contract": {
+    "ref": "solutions/audio/podcast-narration/contracts/delivery.en.json",
+    "digest": "sha256:154163b834cfc91b55bb4973b759b7355bbde131e62a54f8d195ba671b472a43"
+  },
+  "document": {
+    "ref": "solutions/audio/podcast-narration/contracts/documents/delivery.en.document.json",
+    "digest": "sha256:f4256bea74daaa970cb2672988c48999ef5277a4357e02c41c4de7fe3374d261"
+  },
+  "schema": {
+    "ref": "solutions/audio/podcast-narration/contracts/schemas/podcast-narration-delivery.v1.schema.json",
+    "digest": "sha256:5385b0a327779c085095e85de2f113e2203788f5cd9f7ab57a456c44febf5766"
+  },
+  "semantic_schema_version": "podcast_narration_delivery.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-script",
+      "kind": "invalid",
+      "profile_id": "delivery_regression",
+      "input": {
+        "ref": "solutions/audio/podcast-narration/fixtures/delivery.en/invalid-missing-script.input.json",
+        "digest": "sha256:57330b6ff44c9547db0243c8637645799616e9c84ce7a1f8a58bb929269ef2ce",
+        "bytes": 161
+      },
+      "output": {
+        "ref": "solutions/audio/podcast-narration/fixtures/delivery.en/invalid-missing-script.output.json",
+        "digest": "sha256:653f90745bb8dccc46ccfab3d4ac9831f2f639d4737e6979a53365e097881999",
+        "bytes": 67
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-morning-checklist",
+      "kind": "valid",
+      "profile_id": "delivery_regression",
+      "input": {
+        "ref": "solutions/audio/podcast-narration/fixtures/delivery.en/valid-morning-checklist.input.json",
+        "digest": "sha256:443757a2a72fb00b214b84a10928484644894f530f1b6852b31b9e1083ffbbe5",
+        "bytes": 380
+      },
+      "output": {
+        "ref": "solutions/audio/podcast-narration/fixtures/delivery.en/valid-morning-checklist.output.json",
+        "digest": "sha256:8f28e4ab4ecb63599fc7dfc7073ba3c9957718d48899ab5783be5fd008c91f65",
+        "bytes": 1296
+      }
+    }
+  ],
+  "digest": "sha256:523de9c0960380ca9557629fa6f1413fbcd68d9de2c2e5d28939ac167c55ea7c"
+}

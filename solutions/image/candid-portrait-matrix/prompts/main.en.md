@@ -1,6 +1,6 @@
 # Candid Lifestyle Portrait (Random Matrix)
 
-This template produces a single summer candid-portrait prompt ready for direct delivery to an image model. Each of the 12 picture dimensions is bound to exactly one value before rendering; the rendered result is the final prompt body and must not be rewritten. Dimension pools, compatibility constraints, and in-batch dedup belong to the consumer-side sampler (the Eikona candid-photo director skill); this template only defines the single-image body structure.
+This template produces a single summer candid-portrait prompt ready for direct delivery to an image model. Each of the 12 picture dimensions is bound to exactly one value before rendering; the rendered result is the final prompt body and must not be rewritten. Dimension pools, compatibility constraints, and in-batch dedup belong to the consumer-side sampler (the Eikona candid-photo director skill); this template only defines the single-image body structure. Provider integrations must render the `delivery` role (prompts/delivery.en.md) as the only Provider payload; this main role stays the authoring and validation reference.
 
 ## Goal
 

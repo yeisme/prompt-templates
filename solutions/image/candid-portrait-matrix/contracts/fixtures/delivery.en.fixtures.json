@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "image/candid-portrait-matrix/delivery/en",
+  "package_id": "image",
+  "solution_id": "candid-portrait-matrix",
+  "version": "1.0.0",
+  "role": "delivery",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/image/candid-portrait-matrix/prompts/delivery.en.md",
+    "digest": "sha256:0a3fe1afc9c88e97c801af10a0a42f394bc9415cf95a551d48f2be7447593aee"
+  },
+  "contract": {
+    "ref": "solutions/image/candid-portrait-matrix/contracts/delivery.en.json",
+    "digest": "sha256:ed5bba3d24f48c50548d80b09f23fbed679fd355fb72f112ea906064e412776c"
+  },
+  "document": {
+    "ref": "solutions/image/candid-portrait-matrix/contracts/documents/delivery.en.document.json",
+    "digest": "sha256:f8605731bd2faf5304a50fa04bf907a42b033cb2a0b612b22d49e28b0b8a11a0"
+  },
+  "schema": {
+    "ref": "solutions/image/candid-portrait-matrix/contracts/schemas/candid-portrait-matrix-delivery.v1.schema.json",
+    "digest": "sha256:88806b1ea80b9c433bbe414d7592802dd8c4b559d31eb9f913a038545d61a8f0"
+  },
+  "semantic_schema_version": "candid_portrait_matrix_delivery.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-subject",
+      "kind": "invalid",
+      "profile_id": "delivery_regression",
+      "input": {
+        "ref": "solutions/image/candid-portrait-matrix/fixtures/delivery.en/invalid-missing-subject.input.json",
+        "digest": "sha256:3c2f5f871580898ff11110630585e384ca5d0f743e388b8c4c1407b4297525bf",
+        "bytes": 513
+      },
+      "output": {
+        "ref": "solutions/image/candid-portrait-matrix/fixtures/delivery.en/invalid-missing-subject.output.json",
+        "digest": "sha256:02ce9adc1ef9d7c46fb189d97e9ee86a8e662e3ca975676234de937084abdb90",
+        "bytes": 68
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-lotus-pond",
+      "kind": "valid",
+      "profile_id": "delivery_regression",
+      "input": {
+        "ref": "solutions/image/candid-portrait-matrix/fixtures/delivery.en/valid-lotus-pond.input.json",
+        "digest": "sha256:23cacffcab615082b1165a0783b0239cfb8cad61d4ffe22577a54d26308d4661",
+        "bytes": 602
+      },
+      "output": {
+        "ref": "solutions/image/candid-portrait-matrix/fixtures/delivery.en/valid-lotus-pond.output.json",
+        "digest": "sha256:f06810bc036ada670e1e6d6c77eb6e35537ee5d4371e68ff758a5c2305ddb820",
+        "bytes": 1238
+      }
+    }
+  ],
+  "digest": "sha256:3d32531c28e015988feef0d2a8eddb181b22d78050b8a0c7083b2e3a38687527"
+}

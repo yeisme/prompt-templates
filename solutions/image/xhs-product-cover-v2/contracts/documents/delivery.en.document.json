@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "image",
+  "solution_id": "xhs-product-cover-v2",
+  "version": "2.0.0",
+  "role": "delivery",
+  "locale": "en",
+  "template_path": "solutions/image/xhs-product-cover-v2/prompts/delivery.en.md",
+  "source_digest": "sha256:42f25e270ecbd044b45f7979fe92826f35e9c7f0de4d824cad50323500b4a39e",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/image/xhs-product-cover-v2/contracts/schemas/xhs-product-cover-delivery.v1.schema.json",
+    "digest": "sha256:5bc9d49fa9914fd2a9891bbfeeb8388d0cd4f533079200ffaa1e71aaa0ac7a5d"
+  },
+  "required_capabilities": [
+    "image_delivery"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:5cc69ef94a60e57ae08bfc06cf37d2b81af8d47799290426958ad121e42cfa70"
+}
