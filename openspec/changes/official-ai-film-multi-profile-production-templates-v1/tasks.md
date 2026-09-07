@@ -4,6 +4,7 @@
   - Acceptance：no hand-written `solution.json`/schema/fixture manifest/catalog；stable exact dependency refs to existing official solutions。
   - Verify：catalog build/validate commands from local `AGENTS.md`。
   - 当前状态（2026-09-03 复验）：结构化 metadata 已全部经 Registry authoring 命令生成或重放——`solution add`（zh-CN×7 + en×7）、`contract init/input set/validate`（14 个 sidecar）、`document init/validate`（14 个 descriptor）、`fixture validate`（7 组 zh-CN manifest）与 `catalog build/validate`（2026-09-03 复验 digest `sha256:cb1dda68199eed2150f7bcd4c6128ab19322f693a980b5f59d003fdcffb35582`，19 solutions 连续两次构建一致、工作树零漂移）；无手写结构化文件。仍无法完成的唯一子项：依赖 solution（`ai-drama-character-assets@1.0.0`、`ai-drama-storyboard-breakdown@1.0.0`）需要 exact released `promptrepo://` dependency refs，而 Registry 当前 `graph-kit release create` 的 required-role 合同锁定 graph-kit profile（`internal/structuredrelease` `requiredGraphKitRoles`），尚无覆盖普通 prompt solution 的 immutable release/snapshot CLI 面（2026-09-03 对照 template-registry HEAD 复验：新增的 `ui-template release` family 面向 UI template artifact，与本 solution 的七 role prompt 形态不匹配；内容仓 `releases/` 仍无任何 prompt solution release；`solution add` 亦无 dependency-ref 参数）；不得伪造 receipt，消费方继续 fail-closed 返回 `DEPENDENCY_RELEASE_UNAVAILABLE`。
+  - 复核（2026-09-07）：对照 template-registry 当前 HEAD 复验不变——`internal/structuredrelease/release.go:43` 仍以 `requiredGraphKitRoles`（manifest/source_adapter/lens/view/validator）锁定唯一 prompt release 面，CLI 仅 graph-kit/ui-template 两个 release family，`solution add` 仍无 dependency-ref 参数；外部门：Registry 需新增覆盖普通 prompt solution 的 immutable release/dependency-ref CLI。
 
 - [x] 1.2 Author Chinese source prompts for seven roles
   - Depends on：1.1。
@@ -59,6 +60,7 @@
   - Depends on：3.1、human content review。
   - Acceptance：rights/maturity/locale/dependency refs correct；release does not claim first-support。
   - 当前状态（2026-09-03 复验）：3.1 与 reviewed English locale 已满足；仍无法完成的原因有二——(a) Registry 当前唯一覆盖 prompt solution 的结构化 immutable release CLI（`graph-kit release create`）把 required roles 锁定为 graph-kit profile（manifest/source_adapter/lens/view/validator），本 solution 的七 role 形态与其不匹配，也没有覆盖普通 prompt solution 的 release artifact family（2026-09-03 对照 template-registry HEAD 复验不变：`internal/structuredrelease` 仍按 `requiredGraphKitRoles` 锁定，新增 `ui-template release` family 面向 UI template artifact 不适用，内容仓 `releases/` 无任何 prompt solution release）；(b) 正式 internal immutable release 还需要维护者 Git commit/tag 固定与发布授权（与 `ai-drama-character-assets@1.0.0` release candidate 的先例一致：candidate 文档记录可以生成，immutable release 不得宣称已存在）。不得发布或宣称 exploratory release 已存在。
+  - 复核（2026-09-07）：外部门不变且双重—— Registry CLI 仍缺普通 prompt solution 的结构化 immutable release 命令（同上复验），且正式 internal release 需维护者 Git commit/tag 固定与发布授权（人工决策）；内容仓 `releases/` 仍为空，无法本地推进。
 
 - [x] 3.4 Run final OpenSpec validation
   - Verify：`openspec validate --all --strict`。
