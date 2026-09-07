@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "engineering/bug-root-cause-analysis/main/en",
+  "package_id": "engineering",
+  "solution_id": "bug-root-cause-analysis",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/engineering/bug-root-cause-analysis/prompts/main.en.md",
+    "digest": "sha256:72c9f8de699feddf9fd7712500afa77aa73174dfa0b75ca54eb54f5efdfa267b"
+  },
+  "contract": {
+    "ref": "solutions/engineering/bug-root-cause-analysis/contracts/main.en.json",
+    "digest": "sha256:8cad0d424b68ca8b02685565e0179a13bdf99665677a2963aa15a70c27834480"
+  },
+  "document": {
+    "ref": "solutions/engineering/bug-root-cause-analysis/contracts/documents/main.en.document.json",
+    "digest": "sha256:a5197a192f726ab9804baaabd7782569224177ec0f6272f49244882a7cd6be66"
+  },
+  "schema": {
+    "ref": "solutions/engineering/bug-root-cause-analysis/contracts/schemas/bug-root-cause-analysis-output.v1.schema.json",
+    "digest": "sha256:9d1b33e0d0c5cbb296bdf75f1915c3073a4d3421bd5a8f0426690e4b211064c6"
+  },
+  "semantic_schema_version": "bug_root_cause_analysis_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-evidence",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/engineering/bug-root-cause-analysis/fixtures/main.en/invalid-missing-evidence.input.json",
+        "digest": "sha256:db1a981b1b43cae231e4d0ddd77624faf12a1ce078d8cb20379e04104fe3c628",
+        "bytes": 268
+      },
+      "output": {
+        "ref": "solutions/engineering/bug-root-cause-analysis/fixtures/main.en/invalid-missing-evidence.output.json",
+        "digest": "sha256:38d37104c0ee4e896e0bd5369ad017b2d5f271f5896c78a42f0c009fbb509c33",
+        "bytes": 69
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-cache-storm",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/engineering/bug-root-cause-analysis/fixtures/main.en/valid-cache-storm.input.json",
+        "digest": "sha256:3b15517b2c324c87e1581981148ff86ac608b1e72dd733d6071f935b3e522678",
+        "bytes": 398
+      },
+      "output": {
+        "ref": "solutions/engineering/bug-root-cause-analysis/fixtures/main.en/valid-cache-storm.output.json",
+        "digest": "sha256:e210e9fbec42efd7d180d8593844d28a80a17293f4fb5eb2d92c3ffee7a8f6f8",
+        "bytes": 1314
+      }
+    }
+  ],
+  "digest": "sha256:665013e16f5019b1d965b9f41866d02996f58192cc89f87acbd3ca897c0c8a2c"
+}

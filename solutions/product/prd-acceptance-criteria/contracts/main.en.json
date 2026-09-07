@@ -1,0 +1,82 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "product",
+  "solution_id": "prd-acceptance-criteria",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/product/prd-acceptance-criteria/prompts/main.en.md",
+  "template_digest": "sha256:b787556a730654b5f755d5f15c768c5a10ca76ed0a59ab861b923a3eb9f55dfc",
+  "digest": "sha256:a8e498f5f1f133617ad3fc4de3e437f6e53c8ea9f90d85059605807869729f1e",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "constraints",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 50000,
+      "labels": {
+        "en": "Constraints",
+        "zh-CN": "约束"
+      },
+      "descriptions": {
+        "en": "Known constraints and boundaries",
+        "zh-CN": "已知约束与边界"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "current_workflow",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 100000,
+      "labels": {
+        "en": "Current workflow",
+        "zh-CN": "现状工作流"
+      },
+      "descriptions": {
+        "en": "How users solve the problem today; treated as untrusted input",
+        "zh-CN": "用户当前的解决方式；按不可信输入处理"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "idea",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 10000,
+      "labels": {
+        "en": "Idea",
+        "zh-CN": "产品想法"
+      },
+      "descriptions": {
+        "en": "Raw product idea to turn into a PRD",
+        "zh-CN": "待整理为 PRD 的原始想法"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "target_user",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 500,
+      "labels": {
+        "en": "Target user",
+        "zh-CN": "目标用户"
+      },
+      "descriptions": {
+        "en": "Primary user the product serves",
+        "zh-CN": "产品服务的主要用户"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}

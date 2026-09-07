@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "product/prd-acceptance-criteria/main/en",
+  "package_id": "product",
+  "solution_id": "prd-acceptance-criteria",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/product/prd-acceptance-criteria/prompts/main.en.md",
+    "digest": "sha256:b787556a730654b5f755d5f15c768c5a10ca76ed0a59ab861b923a3eb9f55dfc"
+  },
+  "contract": {
+    "ref": "solutions/product/prd-acceptance-criteria/contracts/main.en.json",
+    "digest": "sha256:a8e498f5f1f133617ad3fc4de3e437f6e53c8ea9f90d85059605807869729f1e"
+  },
+  "document": {
+    "ref": "solutions/product/prd-acceptance-criteria/contracts/documents/main.en.document.json",
+    "digest": "sha256:2cb6dda46f1fa6058654f29ed0d06dc5214c556370cb57e9e221f32c04fd0afa"
+  },
+  "schema": {
+    "ref": "solutions/product/prd-acceptance-criteria/contracts/schemas/prd-acceptance-criteria-output.v1.schema.json",
+    "digest": "sha256:1ef26714929f393b857b7964a36b67baaa7507280e747d7fcdc39ccf8867b7e4"
+  },
+  "semantic_schema_version": "prd_acceptance_criteria_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-current_workflow",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/product/prd-acceptance-criteria/fixtures/main.en/invalid-missing-current_workflow.input.json",
+        "digest": "sha256:7ba9ede90e91c874364d80701933ef1a3a24d82dc4036bdbd1289682c5241a76",
+        "bytes": 257
+      },
+      "output": {
+        "ref": "solutions/product/prd-acceptance-criteria/fixtures/main.en/invalid-missing-current_workflow.output.json",
+        "digest": "sha256:eae4f500234e3ff125d48611190e3441c3b4c7624ba05342158d85008dc46f9a",
+        "bytes": 77
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-local-inbox",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/product/prd-acceptance-criteria/fixtures/main.en/valid-local-inbox.input.json",
+        "digest": "sha256:811bdf413508676c873781ae32f7bb6eb0852956a478619107193ade9ec36f89",
+        "bytes": 394
+      },
+      "output": {
+        "ref": "solutions/product/prd-acceptance-criteria/fixtures/main.en/valid-local-inbox.output.json",
+        "digest": "sha256:52239bf940ffedc32da5b09e8282d2b00dd49f1ddd3e6b3955dd8c8d3f4b2fa0",
+        "bytes": 1920
+      }
+    }
+  ],
+  "digest": "sha256:9d02a929a52bfc694fd17629f9fe94e7036982901a1b014a4c7d8c6ad099c7c2"
+}

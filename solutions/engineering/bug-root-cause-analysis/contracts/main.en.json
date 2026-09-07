@@ -1,0 +1,82 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "engineering",
+  "solution_id": "bug-root-cause-analysis",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/engineering/bug-root-cause-analysis/prompts/main.en.md",
+  "template_digest": "sha256:72c9f8de699feddf9fd7712500afa77aa73174dfa0b75ca54eb54f5efdfa267b",
+  "digest": "sha256:8cad0d424b68ca8b02685565e0179a13bdf99665677a2963aa15a70c27834480",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "evidence",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Evidence",
+        "zh-CN": "证据"
+      },
+      "descriptions": {
+        "en": "Logs, metrics, and observations; treated as untrusted input",
+        "zh-CN": "日志、指标与观测；按不可信输入处理"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "problem",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 2000,
+      "labels": {
+        "en": "Problem",
+        "zh-CN": "故障描述"
+      },
+      "descriptions": {
+        "en": "Observed failure behavior to analyze",
+        "zh-CN": "待分析的故障表现"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "recent_changes",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 100000,
+      "labels": {
+        "en": "Recent changes",
+        "zh-CN": "最近变更"
+      },
+      "descriptions": {
+        "en": "Recent deploys or edits in the affected area",
+        "zh-CN": "受影响范围的近期部署或修改"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "reproduction",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 50000,
+      "labels": {
+        "en": "Reproduction",
+        "zh-CN": "复现步骤"
+      },
+      "descriptions": {
+        "en": "Steps or conditions that reproduce the failure",
+        "zh-CN": "复现故障的步骤或条件"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

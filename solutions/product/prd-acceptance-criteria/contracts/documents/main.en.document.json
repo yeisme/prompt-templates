@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "product",
+  "solution_id": "prd-acceptance-criteria",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/product/prd-acceptance-criteria/prompts/main.en.md",
+  "source_digest": "sha256:b787556a730654b5f755d5f15c768c5a10ca76ed0a59ab861b923a3eb9f55dfc",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/product/prd-acceptance-criteria/contracts/schemas/prd-acceptance-criteria-output.v1.schema.json",
+    "digest": "sha256:1ef26714929f393b857b7964a36b67baaa7507280e747d7fcdc39ccf8867b7e4"
+  },
+  "required_capabilities": [
+    "prd_authoring"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:2cb6dda46f1fa6058654f29ed0d06dc5214c556370cb57e9e221f32c04fd0afa"
+}

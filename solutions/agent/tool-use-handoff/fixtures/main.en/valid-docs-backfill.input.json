@@ -1,0 +1,1 @@
+{"deliverable":"three release-note files under docs/releases/","permissions":"repo-local writes allowed; anything sending external messages requires explicit user approval","task":"Backfill fictional release notes for three tagged versions from local git history","tools":"git log (read-only), file editor (reversible write in repo), no network tools"}

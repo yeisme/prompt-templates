@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "engineering",
+  "solution_id": "bug-root-cause-analysis",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/engineering/bug-root-cause-analysis/prompts/main.en.md",
+  "source_digest": "sha256:72c9f8de699feddf9fd7712500afa77aa73174dfa0b75ca54eb54f5efdfa267b",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/engineering/bug-root-cause-analysis/contracts/schemas/bug-root-cause-analysis-output.v1.schema.json",
+    "digest": "sha256:9d1b33e0d0c5cbb296bdf75f1915c3073a4d3421bd5a8f0426690e4b211064c6"
+  },
+  "required_capabilities": [
+    "root_cause_analysis"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:a5197a192f726ab9804baaabd7782569224177ec0f6272f49244882a7cd6be66"
+}

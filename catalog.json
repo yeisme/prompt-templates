@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:71a80657fd1c177fc814a315c78e6fb8d95197f89ee42116380bcd08ceb59ad0",
+  "digest": "sha256:1e682182166221b8e5e9822be3a3262256c70dccba1b1a6f4f6c1bf1a8f9ac3c",
   "solutions": [
     {
       "package_id": "agent",
@@ -97,7 +97,7 @@
       "package_id": "agent",
       "id": "tool-use-handoff",
       "version": "1.0.0",
-      "digest": "sha256:c8349c28f2e1da3e3c2e088ab4f74b040cfafbcce6830605966672f4c865d9ab",
+      "digest": "sha256:be284eb435c8a23dfe992bce61f144b2b2b07ecfd036b66d0be97eea8c33b376",
       "category": "agent",
       "tags": [
         "artifact:handoff_packet",
@@ -133,13 +133,13 @@
           "role": "main",
           "locale": "en",
           "path": "solutions/agent/tool-use-handoff/prompts/main.en.md",
-          "digest": "sha256:a900e7523341e5d018296ac37765a986acdc25561da2a555edfd8c95e96be8f1"
+          "digest": "sha256:0c181ac82208bab7f038bfe3ee3acfc7d2cc8efbc3e63bf5e8f69194e78bfa11"
         },
         {
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/agent/tool-use-handoff/prompts/main.zh-CN.md",
-          "digest": "sha256:d8f3e4bb83262db7a7a67345bc747da41daefaabea7428137f8f97939140135b"
+          "digest": "sha256:de02b9d975091f3df75d526f10956706ce9699407f45f83d032d704a10d8981a"
         }
       ]
     },
@@ -205,7 +205,7 @@
       "package_id": "engineering",
       "id": "bug-root-cause-analysis",
       "version": "1.0.0",
-      "digest": "sha256:cf0f9cb91ad3acfe509f033e63bd718e480f299f0779201b01fe75d1e3d70c32",
+      "digest": "sha256:1b57ea043f2151c634a5f0a3d364a8bd64ca03d3ddd430e50b0c8542e1364545",
       "category": "engineering",
       "tags": [
         "artifact:root_cause_report",
@@ -241,13 +241,13 @@
           "role": "main",
           "locale": "en",
           "path": "solutions/engineering/bug-root-cause-analysis/prompts/main.en.md",
-          "digest": "sha256:7e34a32e86f8fe917ac12974ab094f5a75a3c09a8c4612acdc431a68b040978c"
+          "digest": "sha256:72c9f8de699feddf9fd7712500afa77aa73174dfa0b75ca54eb54f5efdfa267b"
         },
         {
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/engineering/bug-root-cause-analysis/prompts/main.zh-CN.md",
-          "digest": "sha256:a2125d911ea7c244de456118c95eab4cc10fbfc6bd945ba4f161c2d42a98fe93"
+          "digest": "sha256:92a678bdd2d3310d7730c3d2ad9929cdddd8bc179ec5ff860af97741397f76ef"
         }
       ]
     },
@@ -891,7 +891,7 @@
       "package_id": "product",
       "id": "prd-acceptance-criteria",
       "version": "1.0.0",
-      "digest": "sha256:354f98693ef9067ff091bb048e1038be593e87da579ed7ad6acf0775b229217a",
+      "digest": "sha256:038365351719324684ec4419df26b764bf2b14fe516291547ff5d9d68108a23c",
       "category": "product",
       "tags": [
         "artifact:prd",
@@ -926,13 +926,13 @@
           "role": "main",
           "locale": "en",
           "path": "solutions/product/prd-acceptance-criteria/prompts/main.en.md",
-          "digest": "sha256:0470e09832303a2268fc224bccc03b07e7796c5cbdba1208b93408f827bfbade"
+          "digest": "sha256:b787556a730654b5f755d5f15c768c5a10ca76ed0a59ab861b923a3eb9f55dfc"
         },
         {
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/product/prd-acceptance-criteria/prompts/main.zh-CN.md",
-          "digest": "sha256:7c7b0a200292edcd0666b93983fcd545f3ce7c957e73da35d90355e094e236d4"
+          "digest": "sha256:cf88d1d9f4ccf58b9a0f2c582b9e24a425f21c3fd4a0db647769bd9799e796b5"
         }
       ]
     },

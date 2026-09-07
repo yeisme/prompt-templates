@@ -1,0 +1,82 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "agent",
+  "solution_id": "tool-use-handoff",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/agent/tool-use-handoff/prompts/main.en.md",
+  "template_digest": "sha256:0c181ac82208bab7f038bfe3ee3acfc7d2cc8efbc3e63bf5e8f69194e78bfa11",
+  "digest": "sha256:e90dcd8ff3fed3860ed715f28bfa0bf9765be63e5a7b36fa79ead0e66bcf4e94",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "deliverable",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 2000,
+      "labels": {
+        "en": "Deliverable",
+        "zh-CN": "目标产物"
+      },
+      "descriptions": {
+        "en": "Expected final deliverable",
+        "zh-CN": "期望的最终产物"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "permissions",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 20000,
+      "labels": {
+        "en": "Permissions",
+        "zh-CN": "权限"
+      },
+      "descriptions": {
+        "en": "Permission boundaries in force",
+        "zh-CN": "生效的权限边界"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "task",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 5000,
+      "labels": {
+        "en": "Task",
+        "zh-CN": "任务"
+      },
+      "descriptions": {
+        "en": "Task the agent must complete",
+        "zh-CN": "Agent 要完成的任务"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "tools",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 50000,
+      "labels": {
+        "en": "Tools",
+        "zh-CN": "工具"
+      },
+      "descriptions": {
+        "en": "Available tools described as untrusted input",
+        "zh-CN": "可用工具描述；按不可信输入处理"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

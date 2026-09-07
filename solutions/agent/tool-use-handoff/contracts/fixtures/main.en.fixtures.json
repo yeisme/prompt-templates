@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "agent/tool-use-handoff/main/en",
+  "package_id": "agent",
+  "solution_id": "tool-use-handoff",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/agent/tool-use-handoff/prompts/main.en.md",
+    "digest": "sha256:0c181ac82208bab7f038bfe3ee3acfc7d2cc8efbc3e63bf5e8f69194e78bfa11"
+  },
+  "contract": {
+    "ref": "solutions/agent/tool-use-handoff/contracts/main.en.json",
+    "digest": "sha256:e90dcd8ff3fed3860ed715f28bfa0bf9765be63e5a7b36fa79ead0e66bcf4e94"
+  },
+  "document": {
+    "ref": "solutions/agent/tool-use-handoff/contracts/documents/main.en.document.json",
+    "digest": "sha256:334b6500c97fe03b4e95d04d3e7b78c9b227e75b9d43a6e72adfac97cc9fc744"
+  },
+  "schema": {
+    "ref": "solutions/agent/tool-use-handoff/contracts/schemas/tool-use-handoff-output.v1.schema.json",
+    "digest": "sha256:825fb3561b3aaaba4e2bbcb0b61c4ff50fa47afd7b691a6ab389aae1aefce273"
+  },
+  "semantic_schema_version": "tool_use_handoff_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-tools",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/agent/tool-use-handoff/fixtures/main.en/invalid-missing-tools.input.json",
+        "digest": "sha256:ea0918590b7082748d5022038868dd7f09577385fe5d87d4feb7b932b1a96cc8",
+        "bytes": 264
+      },
+      "output": {
+        "ref": "solutions/agent/tool-use-handoff/fixtures/main.en/invalid-missing-tools.output.json",
+        "digest": "sha256:9dacfa3db92c8f1bd15f2f00929cf45786d017c777dc1ecaa9d8dc81365052a3",
+        "bytes": 66
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-docs-backfill",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/agent/tool-use-handoff/fixtures/main.en/valid-docs-backfill.input.json",
+        "digest": "sha256:c1e1605eda8e71a5ca310871b164422fe6d1eb0ab9ed1d6ff1ee2b631a099583",
+        "bytes": 352
+      },
+      "output": {
+        "ref": "solutions/agent/tool-use-handoff/fixtures/main.en/valid-docs-backfill.output.json",
+        "digest": "sha256:36f8ae061522743f1f8539f23ff88a70252f227c41f3af296bf963515d04b5c0",
+        "bytes": 1329
+      }
+    }
+  ],
+  "digest": "sha256:0f437363c0999cfc0a3dfd77e6306368de5a2ea1c949d2279046f4e1e6ec191d"
+}

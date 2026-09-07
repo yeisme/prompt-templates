@@ -1,0 +1,40 @@
+{
+  "$id": "https://schemas.yeisme.dev/engineering/bug-root-cause-analysis-output/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "bug_root_cause_analysis_output.v1"},
+    "symptoms": {"minLength": 1, "type": "string"},
+    "evidence": {"items": {"type": "string"}, "type": "array"},
+    "ranked_hypotheses": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "falsification_check": {"minLength": 1, "type": "string"},
+          "hypothesis": {"minLength": 1, "type": "string"},
+          "supporting_evidence": {"minLength": 1, "type": "string"}
+        },
+        "required": ["hypothesis", "supporting_evidence", "falsification_check"],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "root_cause": {
+      "additionalProperties": false,
+      "properties": {
+        "direct_cause": {"minLength": 1, "type": "string"},
+        "impact_scope": {"minLength": 1, "type": "string"},
+        "systemic_cause": {"minLength": 1, "type": "string"},
+        "trigger": {"minLength": 1, "type": "string"}
+      },
+      "required": ["trigger", "direct_cause", "systemic_cause", "impact_scope"],
+      "type": "object"
+    },
+    "fix_target": {"minLength": 1, "type": "string"},
+    "verification": {"items": {"type": "string"}, "type": "array"},
+    "risks": {"items": {"type": "string"}, "type": "array"},
+    "next_diagnostic_action": {"minLength": 1, "type": "string"}
+  },
+  "required": ["schema_version", "symptoms", "evidence", "ranked_hypotheses", "root_cause", "fix_target", "verification", "risks", "next_diagnostic_action"],
+  "type": "object"
+}

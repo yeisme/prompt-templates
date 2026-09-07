@@ -1,0 +1,1 @@
+{"problem":"Intermittent 502s on the fictional checkout service under load","recent_changes":"Config v118 halved the DB connection pool; no code deploy this week.","reproduction":"Load test at 500 rps reproduces 502s within 40s; at 100 rps no failures in 30 minutes."}

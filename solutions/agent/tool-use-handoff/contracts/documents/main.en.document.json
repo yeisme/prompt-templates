@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "agent",
+  "solution_id": "tool-use-handoff",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/agent/tool-use-handoff/prompts/main.en.md",
+  "source_digest": "sha256:0c181ac82208bab7f038bfe3ee3acfc7d2cc8efbc3e63bf5e8f69194e78bfa11",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/agent/tool-use-handoff/contracts/schemas/tool-use-handoff-output.v1.schema.json",
+    "digest": "sha256:825fb3561b3aaaba4e2bbcb0b61c4ff50fa47afd7b691a6ab389aae1aefce273"
+  },
+  "required_capabilities": [
+    "agent_tool_planning"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:334b6500c97fe03b4e95d04d3e7b78c9b227e75b9d43a6e72adfac97cc9fc744"
+}

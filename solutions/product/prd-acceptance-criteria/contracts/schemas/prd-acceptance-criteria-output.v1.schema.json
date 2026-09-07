@@ -1,0 +1,54 @@
+{
+  "$id": "https://schemas.yeisme.dev/product/prd-acceptance-criteria-output/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "prd_acceptance_criteria_output.v1"},
+    "problem": {"minLength": 1, "type": "string"},
+    "users": {"minLength": 1, "type": "string"},
+    "scope": {
+      "additionalProperties": false,
+      "properties": {
+        "goals": {"items": {"type": "string"}, "type": "array"},
+        "non_goals": {"items": {"type": "string"}, "type": "array"}
+      },
+      "required": ["goals", "non_goals"],
+      "type": "object"
+    },
+    "capability_ledger": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "capability": {"minLength": 1, "type": "string"},
+          "delivery_slice": {"minLength": 1, "type": "string"},
+          "evidence": {"minLength": 1, "type": "string"},
+          "owner": {"minLength": 1, "type": "string"},
+          "surface": {"minLength": 1, "type": "string"}
+        },
+        "required": ["capability", "owner", "surface", "delivery_slice", "evidence"],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "user_flow": {"minLength": 1, "type": "string"},
+    "requirements": {"items": {"type": "string"}, "type": "array"},
+    "acceptance_criteria": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "requirement": {"minLength": 1, "type": "string"},
+          "then": {"minLength": 1, "type": "string"},
+          "when": {"minLength": 1, "type": "string"}
+        },
+        "required": ["requirement", "when", "then"],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "test_matrix": {"items": {"type": "string"}, "type": "array"},
+    "risks": {"items": {"type": "string"}, "type": "array"},
+    "open_decisions": {"items": {"type": "string"}, "type": "array"}
+  },
+  "required": ["schema_version", "problem", "users", "scope", "capability_ledger", "user_flow", "requirements", "acceptance_criteria", "test_matrix", "risks", "open_decisions"],
+  "type": "object"
+}

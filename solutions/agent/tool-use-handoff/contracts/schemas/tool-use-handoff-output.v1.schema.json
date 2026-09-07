@@ -1,0 +1,41 @@
+{
+  "$id": "https://schemas.yeisme.dev/agent/tool-use-handoff-output/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "tool_use_handoff_output.v1"},
+    "task_boundary": {"minLength": 1, "type": "string"},
+    "tool_plan": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "expected_output": {"minLength": 1, "type": "string"},
+          "failure_classification": {"minLength": 1, "type": "string"},
+          "input": {"minLength": 1, "type": "string"},
+          "step": {"minLength": 1, "type": "string"},
+          "tool": {"minLength": 1, "type": "string"},
+          "verification_evidence": {"minLength": 1, "type": "string"}
+        },
+        "required": ["step", "tool", "input", "expected_output", "failure_classification", "verification_evidence"],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "permission_gates": {"items": {"type": "string"}, "type": "array"},
+    "verification_matrix": {"items": {"type": "string"}, "type": "array"},
+    "handoff_packet": {
+      "additionalProperties": false,
+      "properties": {
+        "conclusions": {"items": {"type": "string"}, "type": "array"},
+        "key_evidence": {"items": {"type": "string"}, "type": "array"},
+        "next_actions": {"items": {"type": "string"}, "type": "array"},
+        "risks": {"items": {"type": "string"}, "type": "array"}
+      },
+      "required": ["conclusions", "key_evidence", "risks", "next_actions"],
+      "type": "object"
+    },
+    "rollback": {"minLength": 1, "type": "string"}
+  },
+  "required": ["schema_version", "task_boundary", "tool_plan", "permission_gates", "verification_matrix", "handoff_packet", "rollback"],
+  "type": "object"
+}
