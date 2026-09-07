@@ -21,6 +21,8 @@ Locale 遵循 `docs/locale-policy.md`：Agent 可编译 solution 只注册 `en` 
 
 Prompt Markdown 可人工编辑。完成正文后运行 `template-registry solution add ...` 生成或更新 `solution.json`，再运行 catalog build/validate。
 
+跨图片、视频、文档、剪辑或多步骤工具链的方案先使用 `template-registry-integration-designer`，明确哪些内容属于 template、Skill、recipe 和领域执行 owner。可复用步骤写入 recipe，一次用户任务写入 Registry session；模板仓不保存用户会话或领域资产状态。
+
 需要让 inspect 告诉用户“填什么”时，为实际占位符生成 companion contract。不得手写 JSON；先初始化，再逐字段维护：
 
 ```bash
@@ -29,9 +31,17 @@ template-registry solution locale describe --repository . --package image --id p
 template-registry contract init --repository . --package image --id product-cover --role main --locale en --license internal --permission preview --permission execute_requires_review --json
 template-registry contract input set --repository . --package image --id product-cover --role main --locale en --name product --type string --required --example 'portable coffee cup' --label-zh-CN '产品' --label-en 'Product' --description-zh-CN '需要展示的真实产品' --description-en 'The real product to feature' --json
 template-registry contract validate --repository . --package image --id product-cover --role main --locale en --json
+template-registry solution tag set --repository . --package image --id product-cover --tag job:generate --tag artifact:cover_image --tag modality:image --json
+template-registry solution capability set --repository . --package image --id product-cover --capability image --capability generation --capability visual --json
 ```
 
 contract input 必须与正文中的 `{{name}}` 一致。example 只能使用公开、虚构、非敏感内容；敏感字段不能声明 default、example 或 enum。
+
+已有 document role 的准入能力用完整列表替换，不需要重新初始化 descriptor：
+
+```bash
+template-registry document capability set --repository . --package video --id ai-film-multi-profile-production --role shot-prompt --locale en --capability film_shot_semantics --json
+```
 
 ## 模块化视觉资产 v2 的 authoring 循环
 

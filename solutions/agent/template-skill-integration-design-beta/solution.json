@@ -1,0 +1,42 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "agent",
+  "id": "template-skill-integration-design-beta",
+  "version": "1.0.0-beta.1",
+  "category": "agent",
+  "tags": [
+    "artifact:integration_brief",
+    "constraint:owner_boundary",
+    "constraint:provider_free_compile",
+    "job:design",
+    "modality:multimodal",
+    "scenario:agent_integration",
+    "stage:briefing"
+  ],
+  "capabilities": [
+    "agent_integration",
+    "structured_output",
+    "workflow_design"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Template and Skill Integration Design",
+      "summary": "Compile confirmed multimodal requirements into an owner-aware template, Skill, recipe, persistence, installation, and handoff brief",
+      "usage": "Use with the integration designer Skill before implementing a reusable integration"
+    },
+    "zh-CN": {
+      "title": "模板与 Skill 集成设计",
+      "summary": "把已确认的多模态需求编译为包含 owner、模板、Skill、recipe、持久化、安装和交接的集成说明",
+      "usage": "由集成设计 Skill 在实现可复用工作流前使用；中文正文仅供人工审阅"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/agent/template-skill-integration-design-beta/prompts/main.en.md"
+    }
+  ]
+}

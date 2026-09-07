@@ -6,9 +6,8 @@
 
 ## 2. Film role 能力
 
-- [ ] 2.1 使用 Registry CLI 为七个 film roles 写入稳定 required capabilities。
-  - 状态（2026-09-07 凌晨波复核）：**上游缺口阻塞**——Registry CLI 现面只有 `document init`（--capability 仅建新）与 `document refresh`（只刷 digest，catalogcmd/refresh.go:50 → documentauthor.Refresh 不含 capabilities 编辑）；七个 role descriptor 已存在（required_capabilities 现为 generic film_production/semantic_compilation）。需 template-registry 先提供 `document capability` 类子命令或 Init 支持 in-place 更新（跨仓任务，本仓不代办）。design 表七对 role→capability 映射已确认可直接采用。
-- [ ] 2.2 校验 role、contract、document descriptor 与 source digest 一致。
+- [x] 2.1 使用 Registry CLI 为七个 film roles 写入稳定 required capabilities。 | evidence: Registry document capability set updated seven English Film role descriptors to the exact role-specific capability map
+- [x] 2.2 校验 role、contract、document descriptor 与 source digest 一致。 | evidence: All seven document validate commands passed with preserved source/schema/compiler bindings; final 40-solution catalog validate passed at sha256:c96a982b212f4469afdca3ee7b43345bf5ff567ed1c5cb59d4b6d41cd88eec6e
 
 ## 3. Provider delivery 分层
 
@@ -18,9 +17,9 @@
 
 ## 4. 基础模板质量
 
-- [ ] 4.1 升级 summary/research 首批三个模板。
-- [ ] 4.2 升级 engineering/handoff 第二批三个模板。
-- [ ] 4.3 升级 writing/learning/marketing/short-drama 第三批模板。
+- [ ] 4.1 升级 summary/research 首批三个模板。 | evidence: Readiness inventory identifies structured-summary, meeting-action-summary and evidence-research-brief main.en contract gaps
+- [ ] 4.2 升级 engineering/handoff 第二批三个模板。 | evidence: Readiness inventory identifies bug-root-cause-analysis, prd-acceptance-criteria and tool-use-handoff main.en contract gaps
+- [ ] 4.3 升级 writing/learning/marketing/short-drama 第三批模板。 | evidence: Readiness inventory identifies longform-outline, socratic-study-plan, xhs-campaign-copy and short-drama-character-consistency main.en contract gaps
 
 ## 5. 证据
 

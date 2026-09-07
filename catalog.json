@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:99de2eef5b79a77b0d268a680de1915d0a7d68b3720718d4ea3b92914de1cefa",
+  "digest": "sha256:d87c97fc8a3cedebeb23f5138ee0d288bbdd41f41db3ddd2f8f34289e2d279f3",
   "solutions": [
     {
       "package_id": "agent",
@@ -47,6 +47,49 @@
           "locale": "en",
           "path": "solutions/agent/digital-human-persona-system/prompts/main.en.md",
           "digest": "sha256:36f29a364af83567dc237e4133aac25db427783f5a3870118a6ba0874ecb40e1"
+        }
+      ]
+    },
+    {
+      "package_id": "agent",
+      "id": "template-skill-integration-design-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:0cbd11949773299639b577ebbd2a3af9232adc2fde0648489e4f87cf6d470a31",
+      "category": "agent",
+      "tags": [
+        "artifact:integration_brief",
+        "constraint:owner_boundary",
+        "constraint:provider_free_compile",
+        "job:design",
+        "modality:multimodal",
+        "scenario:agent_integration",
+        "stage:briefing"
+      ],
+      "capabilities": [
+        "agent_integration",
+        "structured_output",
+        "workflow_design"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Template and Skill Integration Design",
+          "summary": "Compile confirmed multimodal requirements into an owner-aware template, Skill, recipe, persistence, installation, and handoff brief",
+          "usage": "Use with the integration designer Skill before implementing a reusable integration"
+        },
+        "zh-CN": {
+          "title": "模板与 Skill 集成设计",
+          "summary": "把已确认的多模态需求编译为包含 owner、模板、Skill、recipe、持久化、安装和交接的集成说明",
+          "usage": "由集成设计 Skill 在实现可复用工作流前使用；中文正文仅供人工审阅"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/agent/template-skill-integration-design-beta/prompts/main.en.md",
+          "digest": "sha256:8fdd462575ba79d8ae64e3391f04d74b28714284f33e0b24156378e5cab3b4c9"
         }
       ]
     },
@@ -1465,6 +1508,69 @@
           "locale": "en",
           "path": "solutions/video/outfit-collage-transition-director/prompts/main.en.md",
           "digest": "sha256:93aca787d288ccbf6c49abfc5dfb206070272ecb885192b285bcbe1b0224bcc0"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "product-promo-shot-design-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:3a6380921cca186b925613af37616ffd18575c610f205c9fd0e708d34e887c72",
+      "category": "video",
+      "tags": [
+        "artifact:product_video_brief",
+        "artifact:shot_plan",
+        "category:video",
+        "constraint:rights_aware",
+        "constraint:source_grounded",
+        "job:shot_planning",
+        "modality:video",
+        "scenario:product_promo",
+        "stage:director_plan",
+        "workflow:film-production"
+      ],
+      "capabilities": [
+        "product_video_briefing",
+        "rights_awareness",
+        "shot_library_resolution",
+        "shot_planning",
+        "source_mapping",
+        "structured_output"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Product Promo Shot Design",
+          "summary": "Create a source-grounded product promo brief and exact shot-library plan",
+          "usage": "Use the brief role first, then bind the accepted brief into the shot-plan role",
+          "aliases": [
+            "product promo video",
+            "product video shot plan"
+          ]
+        },
+        "zh-CN": {
+          "title": "产品宣传片 Brief 与镜头设计",
+          "summary": "根据产品事实生成 Brief，并用固定镜头库生成可追溯镜头计划",
+          "usage": "中文正文只供人工审阅；Agent 编译使用英文 role",
+          "aliases": [
+            "产品宣传片",
+            "产品视频镜头计划"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "brief",
+          "locale": "en",
+          "path": "solutions/video/product-promo-shot-design-beta/prompts/brief.en.md",
+          "digest": "sha256:803db04faf2e0fb0da326ef922d9168268a85f3fbdf026376869528cbeee4892"
+        },
+        {
+          "role": "shot-plan",
+          "locale": "en",
+          "path": "solutions/video/product-promo-shot-design-beta/prompts/shot-plan.en.md",
+          "digest": "sha256:679a452d341d60388a8a690fdd1405ce87afab6497288ede0b680b900a293a92"
         }
       ]
     },

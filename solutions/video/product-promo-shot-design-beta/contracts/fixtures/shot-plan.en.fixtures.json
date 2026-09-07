@@ -1,0 +1,45 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/product-promo-shot-design-beta/shot-plan/en",
+  "package_id": "video",
+  "solution_id": "product-promo-shot-design-beta",
+  "version": "1.0.0-beta.1",
+  "role": "shot-plan",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/video/product-promo-shot-design-beta/prompts/shot-plan.en.md",
+    "digest": "sha256:679a452d341d60388a8a690fdd1405ce87afab6497288ede0b680b900a293a92"
+  },
+  "contract": {
+    "ref": "solutions/video/product-promo-shot-design-beta/contracts/shot-plan.en.json",
+    "digest": "sha256:e7580c883ae2875844429d7ce6af9edd9b3c03864109a3f9326236632dfc1f85"
+  },
+  "document": {
+    "ref": "solutions/video/product-promo-shot-design-beta/contracts/documents/shot-plan.en.document.json",
+    "digest": "sha256:8e179bccdc6a0823e911eee71b04952f7707b517c395a23fde146d0fe7799211"
+  },
+  "schema": {
+    "ref": "solutions/video/product-promo-shot-design-beta/contracts/schemas/product-promo-shot-plan.v1.schema.json",
+    "digest": "sha256:b9cee75e9b9f66d2d64ec80d395e1be14a0d457588d878843323182090aeb7d8"
+  },
+  "semantic_schema_version": "product_promo_shot_plan.v1",
+  "validator_command_ref": "template-registry.product-promo-shot-plan.v1",
+  "cases": [
+    {
+      "case_id": "video-shotcraft-guided",
+      "kind": "valid",
+      "profile_id": "video-shotcraft-guided",
+      "input": {
+        "ref": "solutions/video/product-promo-shot-design-beta/fixtures/shot-plan.en/video-shotcraft-guided.input.json",
+        "digest": "sha256:21350e7d26379858ef2713c93cde9bf6d1e4b0e0d89832be697669f54e178e8b",
+        "bytes": 2247
+      },
+      "output": {
+        "ref": "solutions/video/product-promo-shot-design-beta/fixtures/shot-plan.en/video-shotcraft-guided.output.json",
+        "digest": "sha256:76773d09210a14623b6cf6e2f1a92cfb2750a520df58b385f1f55b7e9be78844",
+        "bytes": 1735
+      }
+    }
+  ],
+  "digest": "sha256:28282d9a08b4d73a2b8c89b76418277251af8a1afd4e197bfcbc627e62730ed2"
+}

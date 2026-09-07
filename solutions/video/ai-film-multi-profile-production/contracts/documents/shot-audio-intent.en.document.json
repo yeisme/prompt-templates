@@ -15,8 +15,7 @@
     "digest": "sha256:c843c121a9dcd8e30239a6d7b259da84a40416c4af4453773a93cdb04a12a088"
   },
   "required_capabilities": [
-    "film_production",
-    "semantic_compilation"
+    "film_audio_intent"
   ],
   "selector_kinds": [
     "heading"
@@ -25,5 +24,5 @@
     "max_bytes": 2097152,
     "max_depth": 64
   },
-  "digest": "sha256:cdc1daa030996211b8140ae48eee0a9280b4f0c79a85a0b39d6d12d135014f31"
+  "digest": "sha256:2059f71060f9157991cf9410e08674edc5a3c118714e9cc4d458587a318d71de"
 }

@@ -1,0 +1,167 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "product-promo-shot-design-beta",
+  "version": "1.0.0-beta.1",
+  "role": "shot-plan",
+  "locale": "en",
+  "template_path": "solutions/video/product-promo-shot-design-beta/prompts/shot-plan.en.md",
+  "template_digest": "sha256:679a452d341d60388a8a690fdd1405ce87afab6497288ede0b680b900a293a92",
+  "digest": "sha256:e7580c883ae2875844429d7ce6af9edd9b3c03864109a3f9326236632dfc1f85",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview",
+    "step_output_binding"
+  ],
+  "inputs": [
+    {
+      "name": "accepted_brief_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 524288,
+      "labels": {
+        "en": "Accepted product brief",
+        "zh-CN": "已接受产品 Brief"
+      },
+      "descriptions": {
+        "en": "Human-accepted product_promo_brief.v1 serialized as JSON",
+        "zh-CN": "经用户接受的 product_promo_brief.v1 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "downstream_owner",
+      "type": "string",
+      "required": true,
+      "regex": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "min_length": 1,
+      "max_length": 256,
+      "labels": {
+        "en": "Downstream owner",
+        "zh-CN": "下游 Owner"
+      },
+      "descriptions": {
+        "en": "Stable owner or execution profile that will consume the plan",
+        "zh-CN": "消费镜头计划的稳定 Owner 或执行 profile"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "execution_constraints_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Execution constraints",
+        "zh-CN": "执行约束"
+      },
+      "descriptions": {
+        "en": "Installed capabilities, environment limits, data rules and review gates serialized as JSON",
+        "zh-CN": "已安装能力、环境限制、数据规则和评审门禁 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "output_language",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "en",
+        "zh-CN"
+      ],
+      "labels": {
+        "en": "Output language",
+        "zh-CN": "输出语言"
+      },
+      "descriptions": {
+        "en": "Language of the semantic shot plan",
+        "zh-CN": "语义镜头计划的输出语言"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "selected_shot_cards_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Selected shot constraints",
+        "zh-CN": "指定镜头约束"
+      },
+      "descriptions": {
+        "en": "User-selected card names and style keys, or an empty JSON list",
+        "zh-CN": "用户指定的卡名与 style key，未指定时为空 JSON 列表"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "shot_library_index_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 2097152,
+      "labels": {
+        "en": "Shot library index",
+        "zh-CN": "镜头库索引"
+      },
+      "descriptions": {
+        "en": "Pinned shot-card names, styles, source paths, implementation paths and preview states serialized as JSON",
+        "zh-CN": "固定镜头卡名称、样式、来源路径、实现路径和预览状态 JSON"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "shot_library_revision",
+      "type": "string",
+      "required": true,
+      "regex": "^[A-Za-z0-9][A-Za-z0-9._/-]{6,255}$",
+      "min_length": 7,
+      "max_length": 256,
+      "labels": {
+        "en": "Shot library revision",
+        "zh-CN": "镜头库修订"
+      },
+      "descriptions": {
+        "en": "Exact Git commit, release tag or immutable library revision",
+        "zh-CN": "精确 Git 提交、release tag 或不可变库修订"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "source_asset_map_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 524288,
+      "labels": {
+        "en": "Source asset map",
+        "zh-CN": "来源资产映射"
+      },
+      "descriptions": {
+        "en": "Available product states, screenshots, pages, media and rights facts serialized as JSON",
+        "zh-CN": "可用产品状态、截图、页面、媒体和 rights 信息 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "timing_and_audio_constraints_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Timing and audio constraints",
+        "zh-CN": "时长与音频约束"
+      },
+      "descriptions": {
+        "en": "Duration, frame rate, beat, narration, caption and sound constraints serialized as JSON",
+        "zh-CN": "时长、帧率、节拍、旁白、字幕和声音约束 JSON"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

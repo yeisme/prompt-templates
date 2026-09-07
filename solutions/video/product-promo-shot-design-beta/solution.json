@@ -1,0 +1,61 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "product-promo-shot-design-beta",
+  "version": "1.0.0-beta.1",
+  "category": "video",
+  "tags": [
+    "artifact:product_video_brief",
+    "artifact:shot_plan",
+    "category:video",
+    "constraint:rights_aware",
+    "constraint:source_grounded",
+    "job:shot_planning",
+    "modality:video",
+    "scenario:product_promo",
+    "stage:director_plan",
+    "workflow:film-production"
+  ],
+  "capabilities": [
+    "product_video_briefing",
+    "rights_awareness",
+    "shot_library_resolution",
+    "shot_planning",
+    "source_mapping",
+    "structured_output"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Product Promo Shot Design",
+      "summary": "Create a source-grounded product promo brief and exact shot-library plan",
+      "usage": "Use the brief role first, then bind the accepted brief into the shot-plan role",
+      "aliases": [
+        "product promo video",
+        "product video shot plan"
+      ]
+    },
+    "zh-CN": {
+      "title": "产品宣传片 Brief 与镜头设计",
+      "summary": "根据产品事实生成 Brief，并用固定镜头库生成可追溯镜头计划",
+      "usage": "中文正文只供人工审阅；Agent 编译使用英文 role",
+      "aliases": [
+        "产品宣传片",
+        "产品视频镜头计划"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "brief",
+      "locale": "en",
+      "path": "solutions/video/product-promo-shot-design-beta/prompts/brief.en.md"
+    },
+    {
+      "role": "shot-plan",
+      "locale": "en",
+      "path": "solutions/video/product-promo-shot-design-beta/prompts/shot-plan.en.md"
+    }
+  ]
+}

@@ -19,6 +19,14 @@
 
 ## Namespace tags
 
-官方 tags 使用 `namespace:value`：`category`、`job`、`scenario`、`artifact`、`modality`、`constraint`、`audience`、`platform`、`capability`、`locale`、`maturity`、`rights`。ID 使用 ASCII lower snake_case，显示名和别名按 locale 管理。
+官方 tags 使用 `namespace:value`：`category`、`job`、`scenario`、`artifact`、`modality`、`constraint`、`audience`、`platform`、`use`、`workflow`、`locale`、`maturity`、`rights`。ID 使用 ASCII lower snake_case，显示名和别名按 locale 管理。
 
 一个 solution 只有一个 primary category，但可以通过其他 tags 跨入口发现。模型名和 Provider 名只能作为兼容信息，不能成为一级分类。
+
+`solution.capabilities` 是 provider-neutral 粗粒度兼容能力；document descriptor 的 `required_capabilities` 是具体 role 的准入能力。不要再使用 `capability:*` tag 复制同一语义。
+
+```bash
+template-registry solution tag set --repository . --package video --id campaign-production --tag job:plan --tag artifact:storyboard --tag modality:video --tag workflow:film-production --json
+template-registry solution capability set --repository . --package video --id campaign-production --capability storyboard --capability source_mapping --json
+template-registry document capability set --repository . --package video --id campaign-production --role shot-prompt --locale en --capability film_shot_semantics --json
+```

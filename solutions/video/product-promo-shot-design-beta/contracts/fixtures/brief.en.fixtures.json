@@ -1,0 +1,45 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/product-promo-shot-design-beta/brief/en",
+  "package_id": "video",
+  "solution_id": "product-promo-shot-design-beta",
+  "version": "1.0.0-beta.1",
+  "role": "brief",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/video/product-promo-shot-design-beta/prompts/brief.en.md",
+    "digest": "sha256:803db04faf2e0fb0da326ef922d9168268a85f3fbdf026376869528cbeee4892"
+  },
+  "contract": {
+    "ref": "solutions/video/product-promo-shot-design-beta/contracts/brief.en.json",
+    "digest": "sha256:3a11fdaf2a16aaac11bfa7bc835f499d97915596e9816fdd722edd89bdd0827f"
+  },
+  "document": {
+    "ref": "solutions/video/product-promo-shot-design-beta/contracts/documents/brief.en.document.json",
+    "digest": "sha256:0aa5593dd1b8837a87650de48e6c246b43a07daa69634c3ccacd57a2e363f2a4"
+  },
+  "schema": {
+    "ref": "solutions/video/product-promo-shot-design-beta/contracts/schemas/product-promo-brief.v1.schema.json",
+    "digest": "sha256:5602cd6d38176334cec0a674618c85e23c574229033ef783c2d284ad5f038986"
+  },
+  "semantic_schema_version": "product_promo_brief.v1",
+  "validator_command_ref": "template-registry.product-promo-brief.v1",
+  "cases": [
+    {
+      "case_id": "video-shotcraft-guided",
+      "kind": "valid",
+      "profile_id": "video-shotcraft-guided",
+      "input": {
+        "ref": "solutions/video/product-promo-shot-design-beta/fixtures/brief.en/video-shotcraft-guided.input.json",
+        "digest": "sha256:a90ba105e61fbf2951d6d2b29581853676a8da418aa17e490e945a663602404b",
+        "bytes": 869
+      },
+      "output": {
+        "ref": "solutions/video/product-promo-shot-design-beta/fixtures/brief.en/video-shotcraft-guided.output.json",
+        "digest": "sha256:3f7e896a658f02c6fa3c4a13568ac1b97f546301f6b9f23b2f5bb7a4ea5323ec",
+        "bytes": 980
+      }
+    }
+  ],
+  "digest": "sha256:150070c1ad626724fd6329e37c14829dfb228117e93bda1ad26994bc77808f21"
+}

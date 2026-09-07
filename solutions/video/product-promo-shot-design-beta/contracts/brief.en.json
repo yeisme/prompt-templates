@@ -1,0 +1,170 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "product-promo-shot-design-beta",
+  "version": "1.0.0-beta.1",
+  "role": "brief",
+  "locale": "en",
+  "template_path": "solutions/video/product-promo-shot-design-beta/prompts/brief.en.md",
+  "template_digest": "sha256:803db04faf2e0fb0da326ef922d9168268a85f3fbdf026376869528cbeee4892",
+  "digest": "sha256:3a11fdaf2a16aaac11bfa7bc835f499d97915596e9816fdd722edd89bdd0827f",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "audience_and_outcome",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8192,
+      "labels": {
+        "en": "Audience and outcome",
+        "zh-CN": "受众与预期结果"
+      },
+      "descriptions": {
+        "en": "Confirmed audience, viewing context and intended business or communication outcome",
+        "zh-CN": "已确认的受众、观看情境和业务或传播结果"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "brand_constraints_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Brand constraints",
+        "zh-CN": "品牌约束"
+      },
+      "descriptions": {
+        "en": "Brand tokens, visual rules and approved deviations serialized as JSON",
+        "zh-CN": "品牌 token、视觉规则和允许偏离项 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "creative_mode",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "template_adaptation",
+        "agent_directed",
+        "guided_collaboration"
+      ],
+      "labels": {
+        "en": "Creative mode",
+        "zh-CN": "创作模式"
+      },
+      "descriptions": {
+        "en": "Confirmed collaboration mode for product promo planning",
+        "zh-CN": "产品宣传片规划的已确认协作模式"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "data_handling_policy",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "public_demo_only",
+        "synthetic_or_redacted",
+        "mixed_with_review"
+      ],
+      "labels": {
+        "en": "Data handling policy",
+        "zh-CN": "数据处理政策"
+      },
+      "descriptions": {
+        "en": "Confirmed rule for product data visible in captured or generated assets",
+        "zh-CN": "采集或生成资产中可见产品数据的确认规则"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "delivery_requirements_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Delivery requirements",
+        "zh-CN": "交付要求"
+      },
+      "descriptions": {
+        "en": "Duration, aspect, language, audio, captions, variants and editability serialized as JSON",
+        "zh-CN": "时长、画幅、语言、音频、字幕、变体和可编辑性 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "output_language",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "en",
+        "zh-CN"
+      ],
+      "labels": {
+        "en": "Output language",
+        "zh-CN": "输出语言"
+      },
+      "descriptions": {
+        "en": "Language of the semantic brief output",
+        "zh-CN": "语义 Brief 的输出语言"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "product_facts_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 524288,
+      "labels": {
+        "en": "Product facts",
+        "zh-CN": "产品事实"
+      },
+      "descriptions": {
+        "en": "Source-grounded product facts serialized as JSON",
+        "zh-CN": "带来源的产品事实 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "rights_constraints_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Rights constraints",
+        "zh-CN": "权利约束"
+      },
+      "descriptions": {
+        "en": "Asset, music, font, code, attribution and portability constraints serialized as JSON",
+        "zh-CN": "资产、音乐、字体、代码、署名和可搬运约束 JSON"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "source_inventory_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 524288,
+      "labels": {
+        "en": "Source inventory",
+        "zh-CN": "来源清单"
+      },
+      "descriptions": {
+        "en": "Imported source identifiers, locations, digests and portability facts serialized as JSON",
+        "zh-CN": "导入来源的 ID、位置、digest 与可搬运信息 JSON"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

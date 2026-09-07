@@ -1,0 +1,102 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "agent",
+  "solution_id": "template-skill-integration-design-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/agent/template-skill-integration-design-beta/prompts/main.en.md",
+  "template_digest": "sha256:8fdd462575ba79d8ae64e3391f04d74b28714284f33e0b24156378e5cab3b4c9",
+  "digest": "sha256:15f5fe23743d3551e8f5a48811cdaeb0e900619280910e10c39df72041a51d50",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "confirmed_decisions",
+      "type": "string",
+      "labels": {
+        "en": "Confirmed User Decisions",
+        "zh-CN": "用户已确认选择"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "constraints",
+      "type": "string",
+      "labels": {
+        "en": "Constraints and Acceptance Requirements",
+        "zh-CN": "约束与验收要求"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "downstream_targets",
+      "type": "string",
+      "labels": {
+        "en": "Downstream Tools or Owners",
+        "zh-CN": "下游工具或 Owner"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "installation_targets",
+      "type": "string",
+      "labels": {
+        "en": "Installation Targets",
+        "zh-CN": "安装目标"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "modalities",
+      "type": "string",
+      "required": true,
+      "labels": {
+        "en": "Modalities and Operations",
+        "zh-CN": "模态与操作"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "objective",
+      "type": "string",
+      "required": true,
+      "labels": {
+        "en": "Objective",
+        "zh-CN": "目标"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "persistence_scope",
+      "type": "string",
+      "labels": {
+        "en": "Persistence Scope",
+        "zh-CN": "持久化范围"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "target_artifact",
+      "type": "string",
+      "required": true,
+      "labels": {
+        "en": "Target Artifact",
+        "zh-CN": "目标产物"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "upstream_inputs",
+      "type": "string",
+      "labels": {
+        "en": "Upstream Inputs and Assets",
+        "zh-CN": "上游输入与资产"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

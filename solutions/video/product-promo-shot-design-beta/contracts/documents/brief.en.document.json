@@ -1,0 +1,30 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "video",
+  "solution_id": "product-promo-shot-design-beta",
+  "version": "1.0.0-beta.1",
+  "role": "brief",
+  "locale": "en",
+  "template_path": "solutions/video/product-promo-shot-design-beta/prompts/brief.en.md",
+  "source_digest": "sha256:803db04faf2e0fb0da326ef922d9168268a85f3fbdf026376869528cbeee4892",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/video/product-promo-shot-design-beta/contracts/schemas/product-promo-brief.v1.schema.json",
+    "digest": "sha256:5602cd6d38176334cec0a674618c85e23c574229033ef783c2d284ad5f038986"
+  },
+  "required_capabilities": [
+    "confirmation_tracking",
+    "json_output",
+    "source_binding"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 524288,
+    "max_depth": 64
+  },
+  "digest": "sha256:0aa5593dd1b8837a87650de48e6c246b43a07daa69634c3ccacd57a2e363f2a4"
+}

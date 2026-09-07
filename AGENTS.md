@@ -8,6 +8,7 @@ Active skills 由根目录 `.skills/profiles/targets/data/yeisme-prompt-template
 - `ai-native-cli-output-contract`
 - `natural-writing-editor`
 - `review`
+- `template-registry-integration-designer`
 - `template-registry-template-author`
 - `yeisme-evolutionary-change-policy`
 - `yeisme-prompt-repository-router`

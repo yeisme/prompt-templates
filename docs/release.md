@@ -21,7 +21,7 @@ contract sidecar 绑定 template digest，但不进入 catalog digest。Prompt �
 
 同一输入必须生成相同 solution/template/catalog digest。正文、tags、capabilities、rights 或 locale 变化需要重新 build，并通过 pull request review。已发布版本不原地修改；创建新 version 并保留 replacement/rollback 说明。
 
-当前仓库保持 private。公开前需要单独决定内容许可、代码/Schema 许可和签名策略。
+当前仓库公开可读，但 GitHub visibility 不改变 solution 的 `rights` 或 contract 的 `license/permissions`。仓库不设置一个覆盖全部内容的统一开源许可；发布时必须保留逐 solution 权限、外部资产许可和用户素材权利的边界，详见 `RIGHTS.md`。
 
 ## Graph Kit first-support release
 
@@ -30,8 +30,8 @@ document/fixture、closure validate、Git export 和 restore 均通过；Registr
 exact refs/digests，不输出模板正文。Auctra 消费端另行验证了 preview → apply →
 review accept → rollback，双方不共享项目内容。
 
-发布边界仍保持不变：本次只生成本地 release lock 与 evidence，不执行 GitHub push、
-远端 tag、公开 release 或部署。任一 child digest 变化必须创建新版本，不能就地替换
-已发布 `1.0.0`。
+Graph Kit 此次记录仍只证明本地 release lock 与 evidence；它没有因为仓库公开或其它
+solution 被推送而自动获得独立 immutable release。任一 child digest 变化必须创建新
+版本，不能就地替换已发布 `1.0.0`。
 
 首批内容统一保持 `exploratory`。`first-support` 不是编辑完成标记，必须同时具备 fixture 执行、人工评审、rights 结论和已知失败记录；`mature` 还要求真实脱敏使用证据和稳定修复历史。

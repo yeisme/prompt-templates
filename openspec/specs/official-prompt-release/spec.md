@@ -17,9 +17,8 @@ Repository、solution 和 catalog structured metadata SHALL 由 Template Registr
 
 Release SHALL 固定 Git commit/tag、catalog digest 与 solution versions。仓库 MUST NOT 包含 credential、用户私有 Prompt、Provider payload、数据库、cache 或完整思维链。
 
-#### Scenario: 公开许可尚未决定
+#### Scenario: Public visibility with restrictive solution rights
 
-- **WHEN** license/signing 仍未决
-- **THEN** repository SHALL 保持 private
-- **AND** MUST NOT 声称已完成公共供应链发布。
-
+- **WHEN** repository visibility is public but a solution keeps `rights: internal` or an internal template license
+- **THEN** release guidance SHALL preserve those restrictive values
+- **AND** MUST NOT infer permission to copy, redistribute, execute, publish, or use external assets from GitHub visibility alone.

@@ -15,6 +15,10 @@
 
 独立 Agent 用户可使用 [Template Registry](https://github.com/yeisme/template-registry)，通过 CLI 或本地 MCP 导入资料、确认输入、编译和导出提示包，无需安装其他 Yeisme 产品。首批兼容模板及多步骤示例见 [Agent 编译用基础模板（beta）](docs/agent-consumption-beta.md)。
 
+当需求同时涉及新模板、Skill、图片/视频/文档/剪辑操作或多步骤上下游时，先使用 `template-registry-integration-designer` 确定 template、Skill、recipe 与领域 owner 的边界，再由 `template-registry-template-author` 维护本仓库内容。
+
+本仓库公开可读不等于全部模板采用开源许可。每个 solution 的 `rights`、contract 的 `license/permissions`、外部资产许可和用户素材权利分别生效，详见 [Repository visibility and content rights](RIGHTS.md)。
+
 在 Sonora 中添加并搜索官方仓库：
 
 ```bash
@@ -74,6 +78,16 @@ template-registry catalog validate --repository . --json
 ```
 
 sidecar 只声明字段、license、permission 和 digest，不包含真实用户值，也不授予 Eikona 或其他 Provider 执行权限。
+
+已有方案的 tags、粗粒度能力和 role 准入能力通过 Registry 命令维护：
+
+```bash
+template-registry solution tag set --repository . --package image --id xhs-product-cover-v2 --tag job:generate --tag artifact:cover_image --tag modality:image --tag platform:xiaohongshu --json
+template-registry solution capability set --repository . --package image --id xhs-product-cover-v2 --capability generation --capability image --capability visual --capability visual_composition --json
+template-registry document capability set --repository . --package video --id ai-film-multi-profile-production --role shot-prompt --locale en --capability film_shot_semantics --json
+```
+
+`set` 使用完整列表替换；清空必须显式使用 `--clear`。solution tags/capabilities 会改变 catalog digest，document role capability 只改变 companion descriptor digest。
 
 验证 AI 做剧 Agent 模板：
 

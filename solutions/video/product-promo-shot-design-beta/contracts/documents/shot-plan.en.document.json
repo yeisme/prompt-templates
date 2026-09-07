@@ -1,0 +1,31 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "video",
+  "solution_id": "product-promo-shot-design-beta",
+  "version": "1.0.0-beta.1",
+  "role": "shot-plan",
+  "locale": "en",
+  "template_path": "solutions/video/product-promo-shot-design-beta/prompts/shot-plan.en.md",
+  "source_digest": "sha256:679a452d341d60388a8a690fdd1405ce87afab6497288ede0b680b900a293a92",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/video/product-promo-shot-design-beta/contracts/schemas/product-promo-shot-plan.v1.schema.json",
+    "digest": "sha256:b9cee75e9b9f66d2d64ec80d395e1be14a0d457588d878843323182090aeb7d8"
+  },
+  "required_capabilities": [
+    "json_output",
+    "shot_library_resolution",
+    "source_binding",
+    "step_output_binding"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 1048576,
+    "max_depth": 64
+  },
+  "digest": "sha256:8e179bccdc6a0823e911eee71b04952f7707b517c395a23fde146d0fe7799211"
+}

@@ -15,8 +15,7 @@
     "digest": "sha256:cf5d1e4ba031e7e1a6726d8ba0273568044fd4d1be43691c8892211d0a3cb4f7"
   },
   "required_capabilities": [
-    "film_production",
-    "semantic_compilation"
+    "film_project_intent"
   ],
   "selector_kinds": [
     "heading"
@@ -25,5 +24,5 @@
     "max_bytes": 2097152,
     "max_depth": 64
   },
-  "digest": "sha256:b2c5ef7b54c574c028a050e31422928a79a499a4d298eec25fab07a5a719cfa7"
+  "digest": "sha256:219646987f65de43ea48c9d677e4ea78b43db5c6d043a16f7593a2c817f80e5b"
 }
