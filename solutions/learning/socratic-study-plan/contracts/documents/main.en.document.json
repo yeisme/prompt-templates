@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "learning",
+  "solution_id": "socratic-study-plan",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/learning/socratic-study-plan/prompts/main.en.md",
+  "source_digest": "sha256:19769c2d4a8c49b5c0f46191e192f5c1fc0cf3fd1550b3ddd9b3584c3283f8c0",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/learning/socratic-study-plan/contracts/schemas/socratic-study-plan-output.v1.schema.json",
+    "digest": "sha256:4b3ce555fa9084abace3462cc9fa1b105e14ee87fbd18c41ff6acb2a41275b68"
+  },
+  "required_capabilities": [
+    "socratic_tutoring"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:48c296920d3b58039094e3f12d1bc4c4da02fe82892eb4bc2858e66de69caa2c"
+}

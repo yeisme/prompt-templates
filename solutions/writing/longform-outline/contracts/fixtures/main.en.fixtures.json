@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "writing/longform-outline/main/en",
+  "package_id": "writing",
+  "solution_id": "longform-outline",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/writing/longform-outline/prompts/main.en.md",
+    "digest": "sha256:bf602ddc9e3961e65880243e74f9c7b457e302f0edf2fa30f3e5c989612ff220"
+  },
+  "contract": {
+    "ref": "solutions/writing/longform-outline/contracts/main.en.json",
+    "digest": "sha256:074f9dd45eaf2bfd057ab2c76c371d76bf5b5c0241ae82f098405184ca25315c"
+  },
+  "document": {
+    "ref": "solutions/writing/longform-outline/contracts/documents/main.en.document.json",
+    "digest": "sha256:00e1b048e504fbbb0ca312de4baed1a73f6cecb8c21318a333469f27e5866fe3"
+  },
+  "schema": {
+    "ref": "solutions/writing/longform-outline/contracts/schemas/longform-outline-output.v1.schema.json",
+    "digest": "sha256:ac1f54e2efea8aadc94b9eeddcdf25d156642379f06db2be7675a21a37465e43"
+  },
+  "semantic_schema_version": "longform_outline_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-source_material",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/writing/longform-outline/fixtures/main.en/invalid-missing-source_material.input.json",
+        "digest": "sha256:7f870eebec606c2f3f11561b2d7efaaebe5cbe5efb1b9a71b9d7d4da5841044f",
+        "bytes": 316
+      },
+      "output": {
+        "ref": "solutions/writing/longform-outline/fixtures/main.en/invalid-missing-source_material.output.json",
+        "digest": "sha256:0a0e46ff9ce4c7efc1ede05b7738e545e165e082b86a36485e124955e46b3b07",
+        "bytes": 76
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-focus-audit",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/writing/longform-outline/fixtures/main.en/valid-focus-audit.input.json",
+        "digest": "sha256:82aae3f3a6263247fdba98e9eb8ce7ea9b4e6dc1dac152d2a2e0bed82c606aa1",
+        "bytes": 530
+      },
+      "output": {
+        "ref": "solutions/writing/longform-outline/fixtures/main.en/valid-focus-audit.output.json",
+        "digest": "sha256:ae121cc5a5d8709c24b8d7ccf2442efacb2c92a8c13e1fef96d5b76997e96998",
+        "bytes": 1435
+      }
+    }
+  ],
+  "digest": "sha256:9a805a2f948bb25187a877e544102b3ff849b9156c4fddc7ee6cbf6d1856ce66"
+}

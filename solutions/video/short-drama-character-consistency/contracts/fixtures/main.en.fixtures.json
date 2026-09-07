@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/short-drama-character-consistency/main/en",
+  "package_id": "video",
+  "solution_id": "short-drama-character-consistency",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/video/short-drama-character-consistency/prompts/main.en.md",
+    "digest": "sha256:38110433ac53a5614efe071f0859bfa4fc26336d3ecc3a121ab2c62d28c4b98b"
+  },
+  "contract": {
+    "ref": "solutions/video/short-drama-character-consistency/contracts/main.en.json",
+    "digest": "sha256:fe77d912edf100f859e56f66ea434d2a6735468ce083c6df5deb6ad68b83e8c8"
+  },
+  "document": {
+    "ref": "solutions/video/short-drama-character-consistency/contracts/documents/main.en.document.json",
+    "digest": "sha256:13905a998c6971f1136ca966bc20bdcfcf03b0bdbdf3281ec077514b5c0c729c"
+  },
+  "schema": {
+    "ref": "solutions/video/short-drama-character-consistency/contracts/schemas/short-drama-character-consistency-output.v1.schema.json",
+    "digest": "sha256:af37c993784cc1fdfc319bad69a70090f9659c503be71f8fd8695a9ead778976"
+  },
+  "semantic_schema_version": "short_drama_character_consistency_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-character_bible",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/video/short-drama-character-consistency/fixtures/main.en/invalid-missing-character_bible.input.json",
+        "digest": "sha256:212bf6c2ae05a75bb969af89598e7e8e43bcc8794ab58522726f1f7b928736ae",
+        "bytes": 357
+      },
+      "output": {
+        "ref": "solutions/video/short-drama-character-consistency/fixtures/main.en/invalid-missing-character_bible.output.json",
+        "digest": "sha256:1c008391dbd4a4211ed8f231f159a979afc7e456b15c010cc14ceb8b0eec39f1",
+        "bytes": 76
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-rain-umbrella-turn",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/video/short-drama-character-consistency/fixtures/main.en/valid-rain-umbrella-turn.input.json",
+        "digest": "sha256:15907f0157f6bb365762d5e22a6ddbaa937e604416474332c5ead92ae4e14f6e",
+        "bytes": 601
+      },
+      "output": {
+        "ref": "solutions/video/short-drama-character-consistency/fixtures/main.en/valid-rain-umbrella-turn.output.json",
+        "digest": "sha256:e5c6b57e98f5daa6c81b95b0e8ec08967acc929853a83169954af0e38faf1ca9",
+        "bytes": 1167
+      }
+    }
+  ],
+  "digest": "sha256:744283a3c72acba073535edc93ff84a5c559290274c6ab7eb13eca389f6395cd"
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "short-drama-character-consistency",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/video/short-drama-character-consistency/prompts/main.en.md",
+  "template_digest": "sha256:38110433ac53a5614efe071f0859bfa4fc26336d3ecc3a121ab2c62d28c4b98b",
+  "digest": "sha256:fe77d912edf100f859e56f66ea434d2a6735468ce083c6df5deb6ad68b83e8c8",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "character_bible",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 50000,
+      "labels": {
+        "en": "Character bible",
+        "zh-CN": "角色设定"
+      },
+      "descriptions": {
+        "en": "Canonical character facts; treated as untrusted continuity input",
+        "zh-CN": "角色权威设定；按不可信连续性输入处理"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "previous_shot",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 10000,
+      "labels": {
+        "en": "Previous shot",
+        "zh-CN": "前一镜头"
+      },
+      "descriptions": {
+        "en": "Continuity facts from the previous shot",
+        "zh-CN": "来自前一镜头的连续性事实"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "reference_assets",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 50000,
+      "labels": {
+        "en": "Reference assets",
+        "zh-CN": "参考图"
+      },
+      "descriptions": {
+        "en": "Reference image bindings for the character",
+        "zh-CN": "角色参考图绑定"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "shot_intent",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 5000,
+      "labels": {
+        "en": "Shot intent",
+        "zh-CN": "镜头意图"
+      },
+      "descriptions": {
+        "en": "What this shot must show",
+        "zh-CN": "本镜头要呈现的内容"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "marketing/xhs-campaign-copy/main/en",
+  "package_id": "marketing",
+  "solution_id": "xhs-campaign-copy",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/marketing/xhs-campaign-copy/prompts/main.en.md",
+    "digest": "sha256:3a737f1387532ef3d27423ed1fe51f4eaa8ac030b1e97c4910d9f46facbf49d4"
+  },
+  "contract": {
+    "ref": "solutions/marketing/xhs-campaign-copy/contracts/main.en.json",
+    "digest": "sha256:b334956c74fad067cdfd53ec521040358532d4197c43d1076d9b21ac874822aa"
+  },
+  "document": {
+    "ref": "solutions/marketing/xhs-campaign-copy/contracts/documents/main.en.document.json",
+    "digest": "sha256:0bc1af964ddf77cb70a623ce4721009692e380aaf59c95af6bf464a84b490327"
+  },
+  "schema": {
+    "ref": "solutions/marketing/xhs-campaign-copy/contracts/schemas/xhs-campaign-copy-output.v1.schema.json",
+    "digest": "sha256:9f739bb6af56148bc9cb18ebe3c48da9783d2d650cf5a40301ee7e2085eba97a"
+  },
+  "semantic_schema_version": "xhs_campaign_copy_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-verified_benefits",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/marketing/xhs-campaign-copy/fixtures/main.en/invalid-missing-verified_benefits.input.json",
+        "digest": "sha256:b5e7bee53377f15086472e78023eee83a311f29cc1fdf06442f29935d1e6ac71",
+        "bytes": 192
+      },
+      "output": {
+        "ref": "solutions/marketing/xhs-campaign-copy/fixtures/main.en/invalid-missing-verified_benefits.output.json",
+        "digest": "sha256:fd1d27e4801aafa45bedc5e994cd15aea2124f8829346ad66db9938b9b8ac232",
+        "bytes": 78
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-tumbler-launch",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/marketing/xhs-campaign-copy/fixtures/main.en/valid-tumbler-launch.input.json",
+        "digest": "sha256:aa2610d04054c623d4aab90e793a6836838d7625e4ec57252e781d687a051812",
+        "bytes": 370
+      },
+      "output": {
+        "ref": "solutions/marketing/xhs-campaign-copy/fixtures/main.en/valid-tumbler-launch.output.json",
+        "digest": "sha256:06fff1f7f4665a4216440138375ad0f45e470776033e73e878bc57a10108fd07",
+        "bytes": 1064
+      }
+    }
+  ],
+  "digest": "sha256:bcfd84703a819a736bd2c3fc656ba40bc9f6069421a8e11955d7fd1cc6ecd943"
+}

@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:1e682182166221b8e5e9822be3a3262256c70dccba1b1a6f4f6c1bf1a8f9ac3c",
+  "digest": "sha256:0f91b3cc9d5de9132f4ca33057776a8c66c98afc2df7efbe8344c35739b945ac",
   "solutions": [
     {
       "package_id": "agent",
@@ -703,7 +703,7 @@
       "package_id": "learning",
       "id": "socratic-study-plan",
       "version": "1.0.0",
-      "digest": "sha256:10b268573202fa75e2b255e75e5e2b38a565572f34e9fc1567493f48fd34d302",
+      "digest": "sha256:256e01e025903830b0167c4344de71a8a6c83e30a5bdee92d312b87361e3c223",
       "category": "learning",
       "tags": [
         "artifact:study_plan",
@@ -738,13 +738,13 @@
           "role": "main",
           "locale": "en",
           "path": "solutions/learning/socratic-study-plan/prompts/main.en.md",
-          "digest": "sha256:8c92525d448426d17d9c1e2b43e767f56047ae7f10e2c903d59d2b7478f3d3c1"
+          "digest": "sha256:19769c2d4a8c49b5c0f46191e192f5c1fc0cf3fd1550b3ddd9b3584c3283f8c0"
         },
         {
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/learning/socratic-study-plan/prompts/main.zh-CN.md",
-          "digest": "sha256:fbcdb2544de55ffa554ef9363a23e075861bb8daa7b903ea6670808e54747b14"
+          "digest": "sha256:45e9a10a23b024618225932ae09cc7059a0890b4517e46de3d1f49acfc11113b"
         }
       ]
     },
@@ -752,7 +752,7 @@
       "package_id": "marketing",
       "id": "xhs-campaign-copy",
       "version": "1.0.0",
-      "digest": "sha256:d3e315aa5b9689648cea6515ced830b429e5656d5545feb9605285df0a0f4d5c",
+      "digest": "sha256:ee9d7c0a01d987d8e4f4a0e7028476cc0e8d25a43aa8f2ea2854ab0437955217",
       "category": "marketing",
       "tags": [
         "artifact:social_post",
@@ -788,13 +788,13 @@
           "role": "main",
           "locale": "en",
           "path": "solutions/marketing/xhs-campaign-copy/prompts/main.en.md",
-          "digest": "sha256:ad739aee0cf2edac20752a2939298839af8e75eeed129b1d8d866c221f9bb97e"
+          "digest": "sha256:3a737f1387532ef3d27423ed1fe51f4eaa8ac030b1e97c4910d9f46facbf49d4"
         },
         {
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/marketing/xhs-campaign-copy/prompts/main.zh-CN.md",
-          "digest": "sha256:f42b8e6baaab4f394420c78d134f7af3a85d83228f6d3a8db67930192f565020"
+          "digest": "sha256:a4dbd814a5e0fc04e1da21a0f1f759076b8096593ab4b7e98e4fbd6e50a53c06"
         }
       ]
     },
@@ -1817,7 +1817,7 @@
       "package_id": "video",
       "id": "short-drama-character-consistency",
       "version": "1.0.0",
-      "digest": "sha256:fc974d705434c99318b484c29070ebb5b83d9c6862885df6be31fefcacba0a64",
+      "digest": "sha256:2f95db358618804f94239d3c91c596c8809bef5f7b3ed443a5299a67af1215e7",
       "category": "video",
       "tags": [
         "artifact:shot_video",
@@ -1854,13 +1854,13 @@
           "role": "main",
           "locale": "en",
           "path": "solutions/video/short-drama-character-consistency/prompts/main.en.md",
-          "digest": "sha256:701a89ef76fe3e025ad5c977cbe536cd75edb179db4c0496d0fdc411a3dca4dd"
+          "digest": "sha256:38110433ac53a5614efe071f0859bfa4fc26336d3ecc3a121ab2c62d28c4b98b"
         },
         {
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md",
-          "digest": "sha256:615d426e93b1c89ea5876079247a41b3376ecd34290ef62a0766e3f31168065f"
+          "digest": "sha256:0fa5845dd1f85afcaad8c2f3d509af9374c89660a5b1cc8913241df881d84b27"
         }
       ]
     },
@@ -2096,7 +2096,7 @@
       "package_id": "writing",
       "id": "longform-outline",
       "version": "1.0.0",
-      "digest": "sha256:a8440a0b009ac5538b392261257ec5ea4d45f391c93715994d6941bf74c364b5",
+      "digest": "sha256:383902bf5d249d4d7f023dcc8452c0fc49563dcbd714c146e24d162daf3225a2",
       "category": "writing",
       "tags": [
         "artifact:outline",
@@ -2131,13 +2131,13 @@
           "role": "main",
           "locale": "en",
           "path": "solutions/writing/longform-outline/prompts/main.en.md",
-          "digest": "sha256:fd72af160435b52996fb149b56e31aaa1b685efdcd0d9ea3ad3f4a8436f8741a"
+          "digest": "sha256:bf602ddc9e3961e65880243e74f9c7b457e302f0edf2fa30f3e5c989612ff220"
         },
         {
           "role": "main",
           "locale": "zh-CN",
           "path": "solutions/writing/longform-outline/prompts/main.zh-CN.md",
-          "digest": "sha256:b2a7e8b2f809ed5d3ec5732e10aab4bbea1045b8f45ba2b95b83524388a6f5ea"
+          "digest": "sha256:913d9a35aa23a9ef2b7cfb30b86cbf38557b91d65c5b96292c4d7075187a28db"
         }
       ]
     },

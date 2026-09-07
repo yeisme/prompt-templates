@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "video",
+  "solution_id": "short-drama-character-consistency",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/video/short-drama-character-consistency/prompts/main.en.md",
+  "source_digest": "sha256:38110433ac53a5614efe071f0859bfa4fc26336d3ecc3a121ab2c62d28c4b98b",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/video/short-drama-character-consistency/contracts/schemas/short-drama-character-consistency-output.v1.schema.json",
+    "digest": "sha256:af37c993784cc1fdfc319bad69a70090f9659c503be71f8fd8695a9ead778976"
+  },
+  "required_capabilities": [
+    "short_drama_continuity"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:13905a998c6971f1136ca966bc20bdcfcf03b0bdbdf3281ec077514b5c0c729c"
+}

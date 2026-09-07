@@ -1,0 +1,38 @@
+{
+  "$id": "https://schemas.yeisme.dev/learning/socratic-study-plan-output/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "socratic_study_plan_output.v1"},
+    "diagnosis": {
+      "additionalProperties": false,
+      "properties": {
+        "likely_misconceptions": {"items": {"type": "string"}, "type": "array"},
+        "prerequisites": {"items": {"type": "string"}, "type": "array"}
+      },
+      "required": ["prerequisites", "likely_misconceptions"],
+      "type": "object"
+    },
+    "stages": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "practice": {"minLength": 1, "type": "string"},
+          "self_check": {"minLength": 1, "type": "string"},
+          "skills": {"items": {"type": "string"}, "minItems": 1, "type": "array"},
+          "stage": {"minLength": 1, "type": "string"}
+        },
+        "required": ["stage", "skills", "practice", "self_check"],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "daily_tasks": {"items": {"type": "string"}, "type": "array"},
+    "question_path": {"items": {"type": "string"}, "type": "array"},
+    "self_assessment": {"items": {"type": "string"}, "type": "array"},
+    "adaptation_rules": {"items": {"type": "string"}, "type": "array"}
+  },
+  "required": ["schema_version", "diagnosis", "stages", "daily_tasks", "question_path", "self_assessment", "adaptation_rules"],
+  "type": "object"
+}

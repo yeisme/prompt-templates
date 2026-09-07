@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "writing",
+  "solution_id": "longform-outline",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/writing/longform-outline/prompts/main.en.md",
+  "source_digest": "sha256:bf602ddc9e3961e65880243e74f9c7b457e302f0edf2fa30f3e5c989612ff220",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/writing/longform-outline/contracts/schemas/longform-outline-output.v1.schema.json",
+    "digest": "sha256:ac1f54e2efea8aadc94b9eeddcdf25d156642379f06db2be7675a21a37465e43"
+  },
+  "required_capabilities": [
+    "longform_outlining"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:00e1b048e504fbbb0ca312de4baed1a73f6cecb8c21318a333469f27e5866fe3"
+}

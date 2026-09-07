@@ -1,0 +1,16 @@
+{
+  "$id": "https://schemas.yeisme.dev/video/short-drama-character-consistency-output/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "short_drama_character_consistency_output.v1"},
+    "main_shot_prompt": {"minLength": 1, "type": "string"},
+    "continuity_locks": {"items": {"type": "string"}, "minItems": 1, "type": "array"},
+    "negative_constraints": {"items": {"type": "string"}, "type": "array"},
+    "repair_prompt": {"minLength": 1, "type": "string"},
+    "human_review_points": {"items": {"type": "string"}, "type": "array"},
+    "conflicts": {"items": {"type": "string"}, "type": "array"}
+  },
+  "required": ["schema_version", "main_shot_prompt", "continuity_locks", "negative_constraints", "repair_prompt", "human_review_points", "conflicts"],
+  "type": "object"
+}

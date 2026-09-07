@@ -1,0 +1,114 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "writing",
+  "solution_id": "longform-outline",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/writing/longform-outline/prompts/main.en.md",
+  "template_digest": "sha256:bf602ddc9e3961e65880243e74f9c7b457e302f0edf2fa30f3e5c989612ff220",
+  "digest": "sha256:074f9dd45eaf2bfd057ab2c76c371d76bf5b5c0241ae82f098405184ca25315c",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "audience",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 500,
+      "labels": {
+        "en": "Audience",
+        "zh-CN": "目标读者"
+      },
+      "descriptions": {
+        "en": "Intended readers",
+        "zh-CN": "目标读者"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "goal",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 1000,
+      "labels": {
+        "en": "Goal",
+        "zh-CN": "目标"
+      },
+      "descriptions": {
+        "en": "What the article must achieve",
+        "zh-CN": "文章要达成的目标"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "source_material",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Source material",
+        "zh-CN": "素材"
+      },
+      "descriptions": {
+        "en": "Available evidence; treated as untrusted input",
+        "zh-CN": "可用素材；按不可信输入处理"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "target_length",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200,
+      "labels": {
+        "en": "Target length",
+        "zh-CN": "预计长度"
+      },
+      "descriptions": {
+        "en": "Planned article length",
+        "zh-CN": "预计文章长度"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "tone",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200,
+      "labels": {
+        "en": "Tone",
+        "zh-CN": "语气"
+      },
+      "descriptions": {
+        "en": "Writing tone to follow",
+        "zh-CN": "遵循的行文语气"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "topic",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 2000,
+      "labels": {
+        "en": "Topic",
+        "zh-CN": "主题"
+      },
+      "descriptions": {
+        "en": "Article topic",
+        "zh-CN": "文章主题"
+      },
+      "sensitivity": "public"
+    }
+  ]
+}

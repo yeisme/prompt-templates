@@ -1,0 +1,82 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "marketing",
+  "solution_id": "xhs-campaign-copy",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/marketing/xhs-campaign-copy/prompts/main.en.md",
+  "template_digest": "sha256:3a737f1387532ef3d27423ed1fe51f4eaa8ac030b1e97c4910d9f46facbf49d4",
+  "digest": "sha256:b334956c74fad067cdfd53ec521040358532d4197c43d1076d9b21ac874822aa",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "audience",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 500,
+      "labels": {
+        "en": "Audience",
+        "zh-CN": "受众"
+      },
+      "descriptions": {
+        "en": "Target readers on the platform",
+        "zh-CN": "平台上的目标读者"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "brand_voice",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 500,
+      "labels": {
+        "en": "Brand voice",
+        "zh-CN": "品牌语气"
+      },
+      "descriptions": {
+        "en": "Required tone of voice",
+        "zh-CN": "要求的品牌语气"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "product_or_campaign",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 2000,
+      "labels": {
+        "en": "Product or campaign",
+        "zh-CN": "产品或活动"
+      },
+      "descriptions": {
+        "en": "What the copy promotes",
+        "zh-CN": "文案推广的对象"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "verified_benefits",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 20000,
+      "labels": {
+        "en": "Verified benefits",
+        "zh-CN": "已核实卖点"
+      },
+      "descriptions": {
+        "en": "Brand-confirmed facts; treated as untrusted input",
+        "zh-CN": "品牌已核实的事实；按不可信输入处理"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

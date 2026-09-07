@@ -1,0 +1,29 @@
+{
+  "$id": "https://schemas.yeisme.dev/writing/longform-outline-output/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "longform_outline_output.v1"},
+    "title_options": {"items": {"type": "string"}, "minItems": 1, "type": "array"},
+    "central_argument": {"minLength": 1, "type": "string"},
+    "hierarchical_outline": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "purpose": {"minLength": 1, "type": "string"},
+          "repetition_or_logic_risk": {"minLength": 1, "type": "string"},
+          "required_evidence": {"type": "string"},
+          "section": {"minLength": 1, "type": "string"}
+        },
+        "required": ["section", "purpose", "required_evidence", "repetition_or_logic_risk"],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "evidence_gaps": {"items": {"type": "string"}, "type": "array"},
+    "review_checklist": {"items": {"type": "string"}, "type": "array"}
+  },
+  "required": ["schema_version", "title_options", "central_argument", "hierarchical_outline", "evidence_gaps", "review_checklist"],
+  "type": "object"
+}

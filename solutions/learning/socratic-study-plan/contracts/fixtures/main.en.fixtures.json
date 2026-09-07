@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "learning/socratic-study-plan/main/en",
+  "package_id": "learning",
+  "solution_id": "socratic-study-plan",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/learning/socratic-study-plan/prompts/main.en.md",
+    "digest": "sha256:19769c2d4a8c49b5c0f46191e192f5c1fc0cf3fd1550b3ddd9b3584c3283f8c0"
+  },
+  "contract": {
+    "ref": "solutions/learning/socratic-study-plan/contracts/main.en.json",
+    "digest": "sha256:08f0398a5dd80cf473516d122676c7b3823cc8c5fa315ee93ae2cddc385a7d46"
+  },
+  "document": {
+    "ref": "solutions/learning/socratic-study-plan/contracts/documents/main.en.document.json",
+    "digest": "sha256:48c296920d3b58039094e3f12d1bc4c4da02fe82892eb4bc2858e66de69caa2c"
+  },
+  "schema": {
+    "ref": "solutions/learning/socratic-study-plan/contracts/schemas/socratic-study-plan-output.v1.schema.json",
+    "digest": "sha256:4b3ce555fa9084abace3462cc9fa1b105e14ee87fbd18c41ff6acb2a41275b68"
+  },
+  "semantic_schema_version": "socratic_study_plan_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-current_level",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/learning/socratic-study-plan/fixtures/main.en/invalid-missing-current_level.input.json",
+        "digest": "sha256:43399d1a2bc0bcf69f6ab11d8b5f7c45a4623be20931387fcd96626a95a69e4c",
+        "bytes": 167
+      },
+      "output": {
+        "ref": "solutions/learning/socratic-study-plan/fixtures/main.en/invalid-missing-current_level.output.json",
+        "digest": "sha256:2ada9b456e8145141f46894ef23dffbbc3038cddbba8607360be64b0391d80f0",
+        "bytes": 74
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-sql-foundations",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/learning/socratic-study-plan/fixtures/main.en/valid-sql-foundations.input.json",
+        "digest": "sha256:3f284d888a3d7ad1a1f0a88818507fa9fcce0ac845b56fdde8e2b4510c489abf",
+        "bytes": 268
+      },
+      "output": {
+        "ref": "solutions/learning/socratic-study-plan/fixtures/main.en/valid-sql-foundations.output.json",
+        "digest": "sha256:013f9c90ad985241d7db34b4b9955b3f283d68ebcf4e0505b179b7b732661917",
+        "bytes": 1563
+      }
+    }
+  ],
+  "digest": "sha256:21b0eb4b65f94b77074a30f579f49e9e8a63f91cde086629920ac5c7cd11e7e9"
+}

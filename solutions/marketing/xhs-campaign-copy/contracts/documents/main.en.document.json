@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "marketing",
+  "solution_id": "xhs-campaign-copy",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/marketing/xhs-campaign-copy/prompts/main.en.md",
+  "source_digest": "sha256:3a737f1387532ef3d27423ed1fe51f4eaa8ac030b1e97c4910d9f46facbf49d4",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/marketing/xhs-campaign-copy/contracts/schemas/xhs-campaign-copy-output.v1.schema.json",
+    "digest": "sha256:9f739bb6af56148bc9cb18ebe3c48da9783d2d650cf5a40301ee7e2085eba97a"
+  },
+  "required_capabilities": [
+    "xhs_copywriting"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:0bc1af964ddf77cb70a623ce4721009692e380aaf59c95af6bf464a84b490327"
+}

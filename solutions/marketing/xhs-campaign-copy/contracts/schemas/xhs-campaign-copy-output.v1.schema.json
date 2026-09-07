@@ -1,0 +1,25 @@
+{
+  "$id": "https://schemas.yeisme.dev/marketing/xhs-campaign-copy-output/v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "xhs_campaign_copy_output.v1"},
+    "content_strategy": {
+      "additionalProperties": false,
+      "properties": {
+        "angle": {"minLength": 1, "type": "string"},
+        "credible_promise": {"minLength": 1, "type": "string"},
+        "reader_problem": {"minLength": 1, "type": "string"}
+      },
+      "required": ["reader_problem", "angle", "credible_promise"],
+      "type": "object"
+    },
+    "titles": {"items": {"type": "string"}, "minItems": 1, "type": "array"},
+    "body": {"minLength": 1, "type": "string"},
+    "cta": {"minLength": 1, "type": "string"},
+    "tag_suggestions": {"items": {"type": "string"}, "type": "array"},
+    "risk_review": {"items": {"type": "string"}, "type": "array"}
+  },
+  "required": ["schema_version", "content_strategy", "titles", "body", "cta", "tag_suggestions", "risk_review"],
+  "type": "object"
+}
