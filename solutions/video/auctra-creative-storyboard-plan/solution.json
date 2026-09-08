@@ -1,0 +1,41 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "auctra-creative-storyboard-plan",
+  "version": "1.0.0",
+  "category": "video",
+  "tags": [
+    "artifact:storyboard_plan_candidate",
+    "category:video",
+    "consumer:auctra",
+    "job:storyboard_planning",
+    "modality:text",
+    "scenario:ai_drama",
+    "stage:creative_storyboard"
+  ],
+  "capabilities": [
+    "shot_planning",
+    "source_mapping",
+    "storyboard"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Auctra creative storyboard plan",
+      "summary": "Compile one episode creative storyboard plan candidate from an accepted auctra.director_scene_plan.v1 projection, mapping to auctra.storyboard_plan.v1"
+    },
+    "zh-CN": {
+      "title": "Auctra 创作分镜计划",
+      "summary": "从已接受的导演场景计划投影编译单集创作分镜计划候选，映射到 auctra.storyboard_plan.v1",
+      "usage": "用于 Auctra 创作分镜主生成与有界修复；不生成生产候选"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/video/auctra-creative-storyboard-plan/prompts/main.en.md"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "auctra.compiler-profile.v1",
+  "id": "auctra.storyboard_plan.v1",
+  "version": "1.0.0",
+  "candidate_owner": "auctra",
+  "source_address_owner": "auctra",
+  "input_schema_ref": "auctra_storyboard_plan_output.v1",
+  "output_contract_ref": "auctra.storyboard_plan.v1",
+  "canonicalization": "rfc8785",
+  "deterministic_only": true,
+  "human_review_required": true,
+  "provider_calls": 0,
+  "profile_ids": [
+    "vertical-short-drama",
+    "manga-drama"
+  ],
+  "mapping_policy": {
+    "beat_coverage": "every_beat_on_screen_or_finding",
+    "beat_order": "preserve_director_plan_order",
+    "shot_order": "strictly_increasing_per_beat",
+    "source_refs": "subset_of_accepted_source_refs",
+    "continuity_refs": "subset_of_continuity_refs",
+    "axis": "declared_axis_or_motivated_cross",
+    "unknown_refs": "reject",
+    "unmapped_refs": "explicit"
+  },
+  "forbidden_output_fields": [
+    "acceptance_state",
+    "digest",
+    "expected_version",
+    "idempotency_key",
+    "parent_plan_ref",
+    "plan_ref",
+    "project_ref",
+    "provider",
+    "provider_payload",
+    "review_item_ref",
+    "revision",
+    "stale_reasons",
+    "timestamp"
+  ],
+  "reason_codes": [
+    "AXIS_CROSS_UNMOTIVATED",
+    "BEAT_OFFSCREEN_WITHOUT_REASON",
+    "BEAT_REF_UNKNOWN",
+    "DURATION_INVALID",
+    "FORBIDDEN_FIELD",
+    "SCHEMA_INVALID",
+    "SHOT_ORDER_INVALID",
+    "SOURCE_REF_UNKNOWN",
+    "CONTINUITY_REF_UNKNOWN",
+    "CUT_UNMOTIVATED"
+  ],
+  "semantic_review_codes": [
+    "UNMAPPED_SOURCE_REFS",
+    "CONTINUITY_REVIEW_REQUIRED",
+    "CLAIM_EVIDENCE_MISSING"
+  ]
+}

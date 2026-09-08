@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:0f91b3cc9d5de9132f4ca33057776a8c66c98afc2df7efbe8344c35739b945ac",
+  "digest": "sha256:cd2c5c456fff2e320f26f42e1af66e0e62581d5e2de2945025fbdad7b51416c2",
   "solutions": [
     {
       "package_id": "agent",
@@ -1515,6 +1515,48 @@
           "locale": "zh-CN",
           "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-prompt.zh-CN.md",
           "digest": "sha256:cd88d83948d78250494b5fff36997c97cab1de67f5dfcdec3cfce14bba0172ce"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "auctra-creative-storyboard-plan",
+      "version": "1.0.0",
+      "digest": "sha256:d8b35c5c8a27f808266afc8408c0e7d016929d4435a6badc3c83639343ea0ba9",
+      "category": "video",
+      "tags": [
+        "artifact:storyboard_plan_candidate",
+        "category:video",
+        "consumer:auctra",
+        "job:storyboard_planning",
+        "modality:text",
+        "scenario:ai_drama",
+        "stage:creative_storyboard"
+      ],
+      "capabilities": [
+        "shot_planning",
+        "source_mapping",
+        "storyboard"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Auctra creative storyboard plan",
+          "summary": "Compile one episode creative storyboard plan candidate from an accepted auctra.director_scene_plan.v1 projection, mapping to auctra.storyboard_plan.v1"
+        },
+        "zh-CN": {
+          "title": "Auctra 创作分镜计划",
+          "summary": "从已接受的导演场景计划投影编译单集创作分镜计划候选，映射到 auctra.storyboard_plan.v1",
+          "usage": "用于 Auctra 创作分镜主生成与有界修复；不生成生产候选"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/video/auctra-creative-storyboard-plan/prompts/main.en.md",
+          "digest": "sha256:fc0c63e86c23280674100e315499ade39fe9304c505f25575248b8a79c5fc317"
         }
       ]
     },

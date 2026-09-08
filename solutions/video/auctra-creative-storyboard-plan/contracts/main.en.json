@@ -1,0 +1,133 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "auctra-creative-storyboard-plan",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/video/auctra-creative-storyboard-plan/prompts/main.en.md",
+  "template_digest": "sha256:fc0c63e86c23280674100e315499ade39fe9304c505f25575248b8a79c5fc317",
+  "digest": "sha256:4bfb9325523dedfe197839418de19442418d42b38f71e9347a0ce013a0003ac7",
+  "license": "internal",
+  "permissions": [
+    "inspect",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "accepted_source_refs_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Accepted source refs",
+        "zh-CN": "已接受来源 refs"
+      },
+      "descriptions": {
+        "en": "The only citable source ref universe for shot and beat source_refs, serialized as JSON",
+        "zh-CN": "beat/shot source_refs 唯一可引用的来源 ref 全集，JSON 序列化"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "continuity_refs_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Continuity refs",
+        "zh-CN": "连贯性 refs"
+      },
+      "descriptions": {
+        "en": "Allowed character, wardrobe, prop and location refs, serialized as JSON",
+        "zh-CN": "允许引用的人物、服装、道具、场地 refs，JSON 序列化"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "director_scene_plan_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 262144,
+      "labels": {
+        "en": "Director scene plan",
+        "zh-CN": "导演场景计划"
+      },
+      "descriptions": {
+        "en": "Accepted auctra.director_scene_plan.v1 projection: scene thesis, topology, blocking, camera grammar, sound strategy",
+        "zh-CN": "已接受的导演场景计划投影：场景主旨、拓扑、走位、镜头语法、声音策略"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "episode_ref",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "episode:01"
+      ],
+      "regex": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "labels": {
+        "en": "Episode ref",
+        "zh-CN": "集数 ref"
+      },
+      "descriptions": {
+        "en": "Stable ref for the current and only allowed episode",
+        "zh-CN": "当前唯一允许的集数稳定 ref"
+      },
+      "sensitivity": "public"
+    },
+    {
+      "name": "format_profile",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "vertical-short-drama",
+        "manga-drama"
+      ],
+      "labels": {
+        "en": "Format profile",
+        "zh-CN": "格式 profile"
+      },
+      "descriptions": {
+        "en": "Auctra format profile constraining shot budget and pacing",
+        "zh-CN": "约束镜头预算与节奏的 Auctra 格式 profile"
+      }
+    },
+    {
+      "name": "output_schema_version",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "auctra-storyboard-plan-output-v1"
+      ],
+      "labels": {
+        "en": "Output schema version",
+        "zh-CN": "输出 Schema 版本"
+      },
+      "descriptions": {
+        "en": "Locked semantic output schema for this template",
+        "zh-CN": "本模板锁定的语义输出 Schema"
+      }
+    },
+    {
+      "name": "scene_contract_json",
+      "type": "string",
+      "required": true,
+      "min_length": 2,
+      "max_length": 131072,
+      "labels": {
+        "en": "Scene contract",
+        "zh-CN": "场景合同"
+      },
+      "descriptions": {
+        "en": "Scene contract projection bearing on this episode plan",
+        "zh-CN": "与本集计划相关的场景合同投影"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

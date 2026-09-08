@@ -1,0 +1,84 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "video/auctra-creative-storyboard-plan/main/en",
+  "package_id": "video",
+  "solution_id": "auctra-creative-storyboard-plan",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/video/auctra-creative-storyboard-plan/prompts/main.en.md",
+    "digest": "sha256:fc0c63e86c23280674100e315499ade39fe9304c505f25575248b8a79c5fc317"
+  },
+  "contract": {
+    "ref": "solutions/video/auctra-creative-storyboard-plan/contracts/main.en.json",
+    "digest": "sha256:4bfb9325523dedfe197839418de19442418d42b38f71e9347a0ce013a0003ac7"
+  },
+  "document": {
+    "ref": "solutions/video/auctra-creative-storyboard-plan/contracts/documents/main.en.document.json",
+    "digest": "sha256:fdf3f122ffc2ff23278ca65d048df5e6eb0948a09328b0dd845d5550ff6bc459"
+  },
+  "schema": {
+    "ref": "solutions/video/auctra-creative-storyboard-plan/contracts/schemas/auctra-storyboard-plan-output.v1.schema.json",
+    "digest": "sha256:97d10f1b22ce970663d6b9e1a8d56bc23b2fabc52d923426d4e5c8f7a540f36e"
+  },
+  "compiler_profile": {
+    "ref": "solutions/video/auctra-creative-storyboard-plan/contracts/compilers/auctra.storyboard_plan.v1.json",
+    "digest": "sha256:49fe574a6e56738b46dc236489687e125665171d3250367e9cd1d91c3681e957"
+  },
+  "semantic_schema_version": "auctra_storyboard_plan_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-forbidden-field",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/video/auctra-creative-storyboard-plan/fixtures/main.en/invalid-forbidden-field.input.json",
+        "digest": "sha256:e95acbe907d113a67511a29f1fb2c10b0d7003367f06b1a68d54ee996575d048",
+        "bytes": 462
+      },
+      "output": {
+        "ref": "solutions/video/auctra-creative-storyboard-plan/fixtures/main.en/invalid-forbidden-field.output.json",
+        "digest": "sha256:a6d38e71b7fb3ddc473ea180be83cc84b14c6612f64dc4176cea57ad6d66931e",
+        "bytes": 649
+      },
+      "expected_codes": [
+        "FORBIDDEN_FIELD"
+      ]
+    },
+    {
+      "case_id": "invalid-unknown-source-ref",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/video/auctra-creative-storyboard-plan/fixtures/main.en/invalid-unknown-source-ref.input.json",
+        "digest": "sha256:7d4811a49687f7356cfd39ff0baf7d309ba1621f4a70b5814db996c777081801",
+        "bytes": 481
+      },
+      "output": {
+        "ref": "solutions/video/auctra-creative-storyboard-plan/fixtures/main.en/invalid-unknown-source-ref.output.json",
+        "digest": "sha256:d931ac973bfae7c05ffd959b715341d3c375627f80b9cec4108a4b81275c8a0f",
+        "bytes": 628
+      },
+      "expected_codes": [
+        "SOURCE_REF_UNKNOWN"
+      ]
+    },
+    {
+      "case_id": "valid-ep01-confrontation",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/video/auctra-creative-storyboard-plan/fixtures/main.en/valid-ep01-confrontation.input.json",
+        "digest": "sha256:d933052125e9e38b05820035a7bc1033b56f206cc3c8e579a58ffda6004f9756",
+        "bytes": 1198
+      },
+      "output": {
+        "ref": "solutions/video/auctra-creative-storyboard-plan/fixtures/main.en/valid-ep01-confrontation.output.json",
+        "digest": "sha256:a04fcceca746b2e182884016cdf52ed6d5bff865f8cb73d2eb5a1ada1a745270",
+        "bytes": 1312
+      }
+    }
+  ],
+  "digest": "sha256:2f57ddec72eec6dc525a0bc088606621fa895d88a1bb9c5938cc5cbe83fa27be"
+}

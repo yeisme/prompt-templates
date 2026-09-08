@@ -1,0 +1,337 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:yeisme:schema:auctra-storyboard-plan-output.v1",
+  "title": "Auctra Creative Storyboard Plan Output v1",
+  "description": "Provider-neutral creative storyboard plan candidate that Auctra maps into auctra.storyboard_plan.v1; server-owned identity, review and digest fields are forbidden.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "episode_ref",
+    "director_plan_ref",
+    "beats",
+    "shots",
+    "unmapped_source_refs",
+    "findings"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "auctra_storyboard_plan_output.v1",
+      "type": "string"
+    },
+    "episode_ref": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "director_plan_ref": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "narrative_graph_ref": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "scene_contract_ref": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "originality_decision_ref": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "format_profile": {
+      "enum": [
+        "vertical-short-drama",
+        "manga-drama"
+      ],
+      "type": "string"
+    },
+    "beats": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 256,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "beat_ref",
+          "marker",
+          "description",
+          "source_refs"
+        ],
+        "properties": {
+          "beat_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "marker": {
+            "enum": [
+              "opening",
+              "development",
+              "turn",
+              "aftermath",
+              "exit"
+            ],
+            "type": "string"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8192
+          },
+          "state_change": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8192
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$"
+            },
+            "minItems": 1,
+            "maxItems": 4096,
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "shots": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 512,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "shot_ref",
+          "beat_ref",
+          "ordinal",
+          "framing",
+          "camera",
+          "action",
+          "shot_purpose",
+          "cut_motivation",
+          "duration_seconds",
+          "source_refs"
+        ],
+        "properties": {
+          "shot_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "beat_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "ordinal": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10000
+          },
+          "zone_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "axis": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "screen_direction": {
+            "enum": [
+              "left_to_right",
+              "right_to_left",
+              "neutral"
+            ],
+            "type": "string"
+          },
+          "eyeline": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "framing": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "camera": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "staging": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2048
+          },
+          "performance": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2048
+          },
+          "shot_purpose": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2048
+          },
+          "cut_motivation": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 2048
+          },
+          "action": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4096
+          },
+          "duration_seconds": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 600
+          },
+          "transition": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "character_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$"
+            },
+            "maxItems": 64,
+            "uniqueItems": true
+          },
+          "prop_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$"
+            },
+            "maxItems": 128,
+            "uniqueItems": true
+          },
+          "wardrobe_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$"
+            },
+            "maxItems": 128,
+            "uniqueItems": true
+          },
+          "location_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$"
+            },
+            "minItems": 1,
+            "maxItems": 4096,
+            "uniqueItems": true
+          },
+          "audio_cue_ref": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+            "minLength": 1,
+            "maxLength": 256
+          }
+        }
+      }
+    },
+    "unmapped_source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$"
+      },
+      "maxItems": 4096,
+      "uniqueItems": true
+    },
+    "findings": {
+      "type": "array",
+      "maxItems": 512,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "severity",
+          "blocking",
+          "refs",
+          "message",
+          "repair_hint"
+        ],
+        "properties": {
+          "code": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9_]*$",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "severity": {
+            "enum": [
+              "info",
+              "warning",
+              "error"
+            ],
+            "type": "string"
+          },
+          "blocking": {
+            "type": "boolean"
+          },
+          "refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$"
+            },
+            "maxItems": 256,
+            "uniqueItems": true
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8192
+          },
+          "repair_hint": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 8192
+          }
+        }
+      }
+    }
+  }
+}
