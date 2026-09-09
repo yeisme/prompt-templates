@@ -1,0 +1,36 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "visual-exploration-starter-beta",
+  "version": "1.0.0-beta.1",
+  "category": "image",
+  "tags": [
+    "artifact:visual_direction",
+    "job:explore",
+    "modality:image"
+  ],
+  "capabilities": [
+    "structured_output",
+    "text"
+  ],
+  "rights": "free-evaluation",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Visual exploration starter",
+      "summary": "Explore, compare and reuse three visual directions with an Agent"
+    },
+    "zh-CN": {
+      "title": "三方向视觉探索入门包",
+      "summary": "让 Agent 帮你比较视觉方向并在新任务中复用",
+      "usage": "免费 beta；英文编译，中文指南，出图另行确认"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/visual-exploration-starter-beta/prompts/main.en.md"
+    }
+  ]
+}

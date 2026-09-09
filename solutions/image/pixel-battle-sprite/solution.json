@@ -1,0 +1,38 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "pixel-battle-sprite",
+  "version": "1.0.0",
+  "category": "image",
+  "tags": [
+    "artifact:sprite_sheet",
+    "category:image",
+    "constraint:pixel_art",
+    "constraint:transparency",
+    "job:generate",
+    "modality:image",
+    "scenario:game_sprite",
+    "stage:prompt_generation"
+  ],
+  "capabilities": [
+    "image",
+    "negative_prompt_governance",
+    "sprite_grid_contract"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Pixel Battle Sprite Sheet (4x4)",
+      "summary": "Convert a character into a chibi pixel-art battle sprite as a 4x4 transparent RGBA PNG with 16 loopable combat frames",
+      "usage": "Bind character (reference image and/or description) and optional combat style; pair with the sprite_to_gif.py code pipeline for GIF conversion"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/pixel-battle-sprite/prompts/main.en.md"
+    }
+  ]
+}

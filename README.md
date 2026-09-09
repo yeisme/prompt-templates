@@ -1,5 +1,9 @@
 # Yeisme 官方提示词方案库
 
+## 视觉探索免费试用（本地 beta）
+
+新增 [三方向视觉探索入门包](solutions/image/visual-exploration-starter-beta/docs/README.md)，包含三个公开练习、英文模板、中文指南和复用检查。先读 [可运行指南](docs/visual-exploration/quickstart.md)。当前为本地未发布版本，图片效果尚未实测；不要假设远程官方库已经包含新包。商业试点与证据边界见 [维护说明](docs/visual-exploration/operations.md)。
+
 ## 一句话安装（发给你的 Agent）
 
 > 安装 Yeisme 提示词体系：运行 `curl -fsSL https://raw.githubusercontent.com/yeisme/yeisme-dist/main/install.sh | bash -s template-registry` 安装 CLI，然后 `template-registry prompt skill install --runtime agents --json` 安装 Agent Skills，再登记官方模板库 `template-registry prompt repository add --id official --source github://yeisme/prompt-templates --revision main --trust official --json`（已登记会返回 ALREADY_EXISTS，属正常），最后 `template-registry prompt repository sync --id official --json`。完成后用 `template-registry prompt search --query '<你的需求>' --locale zh-CN --json` 选模板。

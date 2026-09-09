@@ -1,0 +1,74 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "visual-exploration-starter-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/visual-exploration-starter-beta/prompts/main.en.md",
+  "template_digest": "sha256:1d45b8238ee717d5e33e5f20070e95fedb51e2986335cf3893c2b93cd6d03885",
+  "digest": "sha256:f8d936ea9841360c87e48854846c06a9c0fcf43ed4519726ad108e0428212a28",
+  "license": "LicenseRef-Yeisme-Free-Evaluation",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "aspect_ratio",
+      "type": "string",
+      "required": true,
+      "regex": "^(1:1|4:5|3:4|16:9|9:16)$",
+      "min_length": 1,
+      "max_length": 2000,
+      "labels": {
+        "en": "Aspect Ratio",
+        "zh-CN": "比例"
+      }
+    },
+    {
+      "name": "audience",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 2000,
+      "labels": {
+        "en": "Audience",
+        "zh-CN": "受众"
+      }
+    },
+    {
+      "name": "brief",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 8000,
+      "labels": {
+        "en": "Brief",
+        "zh-CN": "需求"
+      }
+    },
+    {
+      "name": "constraints",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 2000,
+      "labels": {
+        "en": "Constraints",
+        "zh-CN": "硬约束"
+      }
+    },
+    {
+      "name": "output_language",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 2000,
+      "labels": {
+        "en": "Output Language",
+        "zh-CN": "说明语言"
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "pixel-battle-sprite",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/pixel-battle-sprite/prompts/main.en.md",
+  "template_digest": "sha256:bf6a60585112f0114c75a388474881047dfc2a61371b3fe7ddcae8cf50b2f1df",
+  "digest": "sha256:cf826d4b676f8aab2369c372b7c72ce37223c0cf89924d2c2af7499dc2624387",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "character",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "the armored swordswoman from the reference image"
+      ],
+      "labels": {
+        "en": "Character",
+        "zh-CN": "角色"
+      },
+      "descriptions": {
+        "en": "One-line character description matching the uploaded reference image",
+        "zh-CN": "要转换的角色一句话（与上传参考图一致）"
+      }
+    },
+    {
+      "name": "combat_style",
+      "type": "string",
+      "default": "Follow the character's original combat logic if any; otherwise melee weapons drive weapon strikes, ranged weapons drive shots or projectiles, elemental/magic/energy abilities get matching effect visuals, and absent all of these use a natural physical melee attack.",
+      "labels": {
+        "en": "Combat style",
+        "zh-CN": "战斗风格"
+      },
+      "descriptions": {
+        "en": "Combat action design; the template derives it from the character when left as the default",
+        "zh-CN": "战斗动作设计说明；留空则由模板自动按角色推导"
+      }
+    },
+    {
+      "name": "reference_binding",
+      "type": "string",
+      "examples": [
+        "the uploaded character reference image attached at generation time"
+      ],
+      "labels": {
+        "en": "Reference binding note",
+        "zh-CN": "参考图绑定说明"
+      },
+      "descriptions": {
+        "en": "How the reference image is attached; or 'no reference image, design from description'",
+        "zh-CN": "参考图如何附加的说明；无参考图时写 no reference image, design from description"
+      }
+    }
+  ]
+}
