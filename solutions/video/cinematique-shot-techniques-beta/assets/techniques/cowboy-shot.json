@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "cowboy-shot",
+ "name": "Cowboy Shot",
+ "category": "Camera Work",
+ "difficulty": "Basic",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "Frames the subject from roughly mid-thigh up, named after Western films where the frame needed to include a gunslinger's holstered weapon, conveying casual authority. Sergio Leone codified this framing in his Dollars trilogy, making the cowboy shot synonymous with Clint Eastwood's laconic gunfighter stance. Tarantino pays homage to the cowboy shot throughout \"Kill Bill\" and \"Django Unchained,\" and it has migrated beyond Westerns — John Woo uses the same mid-thigh framing for his dual-pistol action heroes in \"Hard Boiled\" and \"The Killer.\"",
+ "prompt_template": "Cowboy shot of [Subject] framed from mid-thigh up, hands hanging loose at their sides, the figure's posture radiating coiled readiness beneath apparent calm, shot on Techniscope 2-perf 35mm for a gritty widescreen look, warm dusty color palette of ochre and leather brown",
+ "when_to_use": "Use the cowboy shot when a character's hands, hips, stance, or carried weapon matters alongside the face. Mid-thigh framing conveys readiness and casual authority without losing expression. It fits Western tension, action entrances, fashion, and any moment built around what someone might reach for. Choose a medium shot for more conversational ease, or a full long shot when footwork and environment matter.",
+ "directing_the_ai": "Crop the figure at mid-thigh, keeping both hands visible and enough headroom for a stable silhouette. Ask for a relaxed but ready posture, with weight distribution and wardrobe details doing as much work as expression. Use a gritty widescreen texture, warm ochre and leather tones, and a natural perspective that does not stretch the legs. In video, hold the framing through hand movement rather than automatically pushing closer to the face.",
+ "common_mistakes": [
+  "Cropping at the waist, which removes the holster zone and turns the image into a standard medium shot.",
+  "Hiding both hands behind props or frame edges, losing the latent action that gives the composition tension.",
+  "Using an exaggerated low angle by default, piling obvious dominance onto framing that already carries authority."
+ ],
+ "insight": "Archetypes are the recurring figures, symbols, objects, rituals and framings that carry meaning across a world.",
+ "related": [
+  {
+   "id": "medium-shot",
+   "name": "Medium Shot"
+  },
+  {
+   "id": "long-shot",
+   "name": "Long Shot"
+  },
+  {
+   "id": "spaghetti-western",
+   "name": "Spaghetti Western"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/cowboy-shot"
+ }
+}

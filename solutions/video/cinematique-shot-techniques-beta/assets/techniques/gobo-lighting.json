@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "gobo-lighting",
+ "name": "Gobo Lighting",
+ "category": "Lighting",
+ "difficulty": "Advanced",
+ "moods": [
+  "Dramatic"
+ ],
+ "has_video": false,
+ "summary": "Light shaped by a template (gobo) placed in front of the source, casting patterned shadows — window frames, venetian blinds, branches — adding narrative texture without physical set pieces. Film noir cinematography relied heavily on gobo lighting; John Alton's venetian blind shadows in \"The Big Combo\" became the genre's visual shorthand. Dean Cundey used gobo patterns in John Carpenter's \"Halloween\" to cast ominous branch shadows across interiors. Roger Deakins uses subtle gobo patterns in \"Skyfall\" to create the impression of light filtering through unseen architectural elements, adding visual complexity without visible source.",
+ "prompt_template": "Gobo lighting casting patterned shadows across [Subject], horizontal bars of light and dark striping across the form at an angle, the shadow pattern breaking and wrapping as it crosses three-dimensional contours, projected by a single hard source through a template, Kodak Double-X black and white stock for maximum contrast between the light bars and shadow bars, the quintessential film noir visual texture",
+ "when_to_use": "Gobo lighting is useful when a plain wall or simple set needs narrative texture without adding physical construction. Projected blinds can suggest confinement or secrecy; branches can make an interior feel exposed to the world outside. The technique belongs in noir, suspense, horror, and stylized drama. Use one recognizable template and a motivated hard source. The pattern should clarify the scene's emotional geometry, not fill empty space with arbitrary stripes.",
+ "directing_the_ai": "Place a shaped template between one hard source and the subject. Define the pattern precisely, such as angled horizontal bars or broken branch shadows, and state where it lands. Let the projection wrap, widen, and break across face, clothing, furniture, and wall according to their depth. Keep light bars and shadow bars clearly separated. In video, hold the template spatially stable unless a believable blind, branch, source, or camera movement causes the pattern to shift.",
+ "common_mistakes": [
+  "Overlaying a flat pattern across every surface at identical scale, ignoring distance and three-dimensional projection behavior.",
+  "Using several unrelated templates together, turning focused narrative texture into visual noise with no readable source.",
+  "Softening the source until the projected bars or branches lose definition and no longer function as shaped light."
+ ],
+ "insight": "Atmosphere is the physical condition of the air, the light and the weather at the moment the image exists. It is what decides how far you can see, and therefore how large the world is.",
+ "related": [
+  {
+   "id": "hard-light",
+   "name": "Hard Light"
+  },
+  {
+   "id": "film-noir",
+   "name": "Film Noir"
+  },
+  {
+   "id": "chiaroscuro",
+   "name": "Chiaroscuro"
+  },
+  {
+   "id": "three-point-lighting",
+   "name": "Three-Point Lighting"
+  },
+  {
+   "id": "key-light",
+   "name": "Key Light"
+  },
+  {
+   "id": "high-key-lighting",
+   "name": "High-Key Lighting"
+  },
+  {
+   "id": "low-key-lighting",
+   "name": "Low-Key Lighting"
+  },
+  {
+   "id": "rembrandt-lighting",
+   "name": "Rembrandt Lighting"
+  },
+  {
+   "id": "silhouette",
+   "name": "Silhouette"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/gobo-lighting"
+ }
+}

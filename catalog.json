@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:cd2c5c456fff2e320f26f42e1af66e0e62581d5e2de2945025fbdad7b51416c2",
+  "digest": "sha256:fe3bf8b3db2ba8223d16714d7c298d30e5bd05eb606876fa229b5fed15504a0f",
   "solutions": [
     {
       "package_id": "agent",
@@ -505,6 +505,45 @@
     },
     {
       "package_id": "image",
+      "id": "pixel-battle-sprite",
+      "version": "1.0.0",
+      "digest": "sha256:c94849a33c2e1ecfcde17188ada3525d54893867f878b237d0241754c09a3eaf",
+      "category": "image",
+      "tags": [
+        "artifact:sprite_sheet",
+        "category:image",
+        "constraint:pixel_art",
+        "constraint:transparency",
+        "job:generate",
+        "modality:image",
+        "scenario:game_sprite",
+        "stage:prompt_generation"
+      ],
+      "capabilities": [
+        "image",
+        "negative_prompt_governance",
+        "sprite_grid_contract"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Pixel Battle Sprite Sheet (4x4)",
+          "summary": "Convert a character into a chibi pixel-art battle sprite as a 4x4 transparent RGBA PNG with 16 loopable combat frames",
+          "usage": "Bind character (reference image and/or description) and optional combat style; pair with the sprite_to_gif.py code pipeline for GIF conversion"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/pixel-battle-sprite/prompts/main.en.md",
+          "digest": "sha256:bf6a60585112f0114c75a388474881047dfc2a61371b3fe7ddcae8cf50b2f1df"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
       "id": "precision-candid-shot",
       "version": "1.0.0",
       "digest": "sha256:8d2245222857c14f5b0834cf6ab608c8affeed1d3cb4673643ce51dd59b0a915",
@@ -549,6 +588,43 @@
           "locale": "en",
           "path": "solutions/image/precision-candid-shot/prompts/main.en.md",
           "digest": "sha256:047a1f4d5ec0304d53682c9da1ef7a59c8a38999b5b678b9691a1b5ddab2cd19"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "visual-exploration-starter-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:c9e37947061ba7e35c52d71a7596f73b947904e9a815438016489e154bb6b5bf",
+      "category": "image",
+      "tags": [
+        "artifact:visual_direction",
+        "job:explore",
+        "modality:image"
+      ],
+      "capabilities": [
+        "structured_output",
+        "text"
+      ],
+      "rights": "free-evaluation",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Visual exploration starter",
+          "summary": "Explore, compare and reuse three visual directions with an Agent"
+        },
+        "zh-CN": {
+          "title": "三方向视觉探索入门包",
+          "summary": "让 Agent 帮你比较视觉方向并在新任务中复用",
+          "usage": "免费 beta；英文编译，中文指南，出图另行确认"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/visual-exploration-starter-beta/prompts/main.en.md",
+          "digest": "sha256:1d45b8238ee717d5e33e5f20070e95fedb51e2986335cf3893c2b93cd6d03885"
         }
       ]
     },
@@ -1557,6 +1633,62 @@
           "locale": "en",
           "path": "solutions/video/auctra-creative-storyboard-plan/prompts/main.en.md",
           "digest": "sha256:fc0c63e86c23280674100e315499ade39fe9304c505f25575248b8a79c5fc317"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "cinematique-shot-techniques-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:6243a8eb4746e965619adb671cee00feb67c46494ae669c63e91e5704b75c25d",
+      "category": "video",
+      "tags": [
+        "artifact:shot_prompt",
+        "category:video",
+        "constraint:single_technique_per_shot",
+        "constraint:source_grounded",
+        "job:generate",
+        "job:shot_planning",
+        "modality:image",
+        "modality:text",
+        "modality:video",
+        "scenario:ai_drama",
+        "stage:director_plan",
+        "stage:shot_generation"
+      ],
+      "capabilities": [
+        "negative_prompt_governance",
+        "shot_technique_selection",
+        "subject_binding"
+      ],
+      "rights": "external-attributed",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Cinematique Shot Technique Prompts",
+          "summary": "Render one of 150 vendored cinematography techniques (camera, lighting, composition, editing, storytelling, FX, genre styles) into a bound shot prompt for AI image or video generation",
+          "usage": "Select a technique per shot during storyboard breakdown or shot generation, bind the library prompt to the subject, and deliver to image/video models; consumed by domain owners such as Scaena",
+          "aliases": [
+            "cinematique prompt library",
+            "film technique prompt"
+          ]
+        },
+        "zh-CN": {
+          "title": "Cinematique 镜头技术提示词库",
+          "summary": "把 150 条电影运镜/布光/构图/剪辑/叙事/特效/风格技术中的一条渲染为绑定主体的镜头提示词，直接投递图像或视频生成模型",
+          "usage": "分镜拆解或镜头生成阶段逐镜头选择技术、绑定主体后投递；Scaena 等领域 owner 通过 promptrepo 消费。来源 vvsvs.pro/cinematique（免费开放工具），保留署名",
+          "aliases": [
+            "运镜提示词",
+            "镜头技术库"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/video/cinematique-shot-techniques-beta/prompts/main.en.md",
+          "digest": "sha256:efb203ef80aa727fc85fea0ae008f753d052b2025cc707f576c66364fb499035"
         }
       ]
     },

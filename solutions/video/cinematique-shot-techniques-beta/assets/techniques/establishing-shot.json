@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "establishing-shot",
+ "name": "Establishing Shot",
+ "category": "Camera Work",
+ "difficulty": "Basic",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "A wide shot typically used at the beginning of a scene to set the context, showing the location, time of day, and spatial relationships before cutting to closer action. Stanley Kubrick's establishing shots in \"The Shining\" — the Overlook Hotel dwarfed by mountains — immediately communicated isolation and foreboding. Ridley Scott's opening of \"Blade Runner\" established a dystopian Los Angeles with a single, unforgettable wide shot of industrial hellscape. David Fincher meticulously crafts establishing shots that embed narrative information into every architectural detail.",
+ "prompt_template": "Wide establishing shot of [Subject] at blue hour, deep indigo sky with the last traces of sunset, a few warm lights glowing from within, atmospheric haze softening the distance, shot on ARRI Alexa with Zeiss Master Primes, desaturated cool palette with selective warm accents, architectural precision meets cinematic storytelling",
+ "when_to_use": "Open with an establishing shot when viewers need to understand where the scene happens, what time or weather shapes it, and how the key spaces connect. A strong version can also seed isolation, danger, wealth, or decay through architecture and scale. Use it before tighter coverage or after a major location change. Do not spend it on a setting the audience already reads clearly.",
+ "directing_the_ai": "Frame the location wide enough to show its dominant architecture, surrounding terrain, access points, and one small sign of life. Set the scene at blue hour with a deep indigo sky, faint sunset residue, warm interior lights, and haze softening the distance. Keep the composition legible rather than merely expansive. If generating video, begin still or with a restrained drift, allowing the viewer to map the place before any cut or character movement claims attention.",
+ "common_mistakes": [
+  "Showing a beautiful location without the landmarks or spatial relationships needed to orient the next scene.",
+  "Making the principal character too large in frame, turning contextual coverage into a conventional long shot.",
+  "Packing the image with unrelated atmosphere cues that obscure the intended time, geography, or narrative tone."
+ ],
+ "insight": "Framing is grammar. Distance, angle and lens each carry a fixed emotional consequence before a single texture is described.",
+ "related": [
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "master-shot",
+   "name": "Master Shot"
+  },
+  {
+   "id": "extreme-long-shot",
+   "name": "Extreme Long Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "extreme-close-up",
+   "name": "Extreme Close-Up"
+  },
+  {
+   "id": "eye-level-shot",
+   "name": "Eye-Level Shot"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/establishing-shot"
+ }
+}

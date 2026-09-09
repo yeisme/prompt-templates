@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "close-up",
+ "name": "Close-Up",
+ "category": "Camera Work",
+ "difficulty": "Basic",
+ "moods": [
+  "Dramatic"
+ ],
+ "has_video": false,
+ "summary": "A tightly framed shot that fills the screen with a subject's face or a specific detail, revealing emotions, textures, and subtle details invisible in wider shots. Carl Theodor Dreyer's \"The Passion of Joan of Arc\" (1928) is built almost entirely from devastating close-ups of Renée Falconetti's face, widely considered the greatest performance ever captured on film. Sergio Leone elevated the close-up to operatic intensity in his Westerns, while Jonathan Demme's direct-to-camera close-ups in \"The Silence of the Lambs\" created unbearable intimacy with Hannibal Lecter.",
+ "prompt_template": "Tight close-up of [Subject] filling the entire frame, every pore and texture rendered in sharp detail, shallow depth of field with background dissolving into creamy bokeh, warm sidelight from a single source, shot on Cooke S4 75mm at T2, Kodak Vision3 500T color science",
+ "when_to_use": "Use a close-up when a face, gesture, or object carries the meaning of the scene. It removes environmental information and asks the audience to read micro-expression, texture, and hesitation. Save it for information that genuinely deserves intimacy; constant close-ups flatten the visual hierarchy.",
+ "directing_the_ai": "Specify the crop, focal length, focus plane, eye line, and one motivated light source. If the face must remain consistent, describe the identity before the shot language and keep lens distortion controlled with portrait-range focal lengths. For video, ask for restrained movement — a breath, blink, or minute push-in — rather than a second competing action.",
+ "common_mistakes": [
+  "Using a very wide lens close to the face when you do not want exaggerated facial distortion.",
+  "Adding so much environment and action that the result stops reading as a close-up.",
+  "Demanding sharp eyes, sharp background, heavy bokeh, and extreme shallow focus simultaneously."
+ ],
+ "insight": "Framing is grammar. Distance, angle and lens each carry a fixed emotional consequence before a single texture is described.",
+ "related": [
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "rembrandt-lighting",
+   "name": "Rembrandt Lighting"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  },
+  {
+   "id": "extreme-close-up",
+   "name": "Extreme Close-Up"
+  },
+  {
+   "id": "extreme-long-shot",
+   "name": "Extreme Long Shot"
+  },
+  {
+   "id": "eye-level-shot",
+   "name": "Eye-Level Shot"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/close-up"
+ }
+}

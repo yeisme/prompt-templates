@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "pov-shot",
+ "name": "P.O.V. Shot",
+ "category": "Camera Work",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Dramatic"
+ ],
+ "has_video": false,
+ "summary": "Shows the scene exactly as a character sees it, placing the viewer inside their subjective experience and creating powerful identification and immersion. Hitchcock was the master of POV, using subjective shots in \"Rear Window\" to lock the audience into James Stewart's voyeuristic gaze, and in \"Vertigo\" to plunge viewers into the protagonist's acrophobia. Gaspar Noé built \"Enter the Void\" entirely from a first-person perspective, including the afterlife. The \"Peep Show\" technique was also used to devastating effect by Kathryn Bigelow in \"Strange Days\" and Jonathan Glazer in \"Under the Skin.\"",
+ "prompt_template": "First-person POV shot through the eyes of [Subject], shallow depth of field mimicking unfocused human vision, subtle lens breathing as focus racks, shot on a wide 14mm rectilinear lens to approximate human field of view, the immersive subjectivity of seeing exactly what the character sees",
+ "when_to_use": "Choose a point-of-view shot when viewers must share a character's act of looking rather than merely observe them. It can intensify discovery, fear, desire, surveillance, confusion, or physical danger. The shot works best when paired with a clear owner of the gaze and a meaningful target. Without that setup, first-person framing can feel like an unmotivated camera trick or generic game footage.",
+ "directing_the_ai": "State whose eyes define the camera and what they are looking toward. Keep the viewpoint at that character's height, with natural head movement, subtle focus breathing, and peripheral softness rather than a visible third-person body. A wide rectilinear perspective can suggest human field of view without fisheye distortion. For video, synchronize gaze shifts with sound or action cues and let focus settle imperfectly, as human attention does, before the important detail becomes clear.",
+ "common_mistakes": [
+  "Showing the observing character in the same frame, which breaks the claim that the image is their exact view.",
+  "Adding exaggerated fisheye curvature that reads as an action camera rather than ordinary subjective vision.",
+  "Using random head sway without a target, making the viewpoint nauseating instead of emotionally identified with a character."
+ ],
+ "insight": "A world model does not remove the need for world building. It increases it.",
+ "related": [
+  {
+   "id": "reaction-shot",
+   "name": "Reaction Shot"
+  },
+  {
+   "id": "head-on-shot",
+   "name": "Head-On Shot"
+  },
+  {
+   "id": "found-footage",
+   "name": "Found Footage"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/pov-shot"
+ }
+}

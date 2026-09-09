@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "hyperlink-cinema",
+ "name": "Hyperlink Cinema",
+ "category": "Genres & Styles",
+ "difficulty": "Advanced",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "A narrative style weaving multiple storylines that initially seem unconnected but gradually reveal hidden links — \"Crash,\" \"Babel,\" \"Magnolia\" — the interconnected web of human experience. Robert Altman pioneered the form with \"Nashville\" and \"Short Cuts.\" Paul Thomas Anderson's \"Magnolia\" weaves nine storylines that converge in a biblical climax. Alejandro González Iñárritu's \"Amores Perros\" and \"Babel\" extended the form across cultures and continents. Paul Haggis's \"Crash\" won the Best Picture Oscar using the structure. The form reflects a philosophical worldview — that all human lives are connected through invisible threads of cause and effect, that no story exists in isolation.",
+ "prompt_template": "Hyperlink cinema visualization with [Subject] shown across multiple disconnected lives in the same moment, each in their own lighting world and emotional register yet sharing the same space, the invisible connections not yet apparent but waiting to be revealed, the Robert Altman and Paul Thomas Anderson structure of simultaneous parallel stories, the whole greater than the sum because these lives will eventually collide",
+ "when_to_use": "Use hyperlink cinema when several apparently separate stories can reveal a larger web of cause, coincidence, or shared consequence. Unlike simple parallel action, the pleasure comes from discovering hidden links between lives that initially seem unrelated. Give each thread an independent emotional engine and plant connective objects, spaces, or events early. The convergence should change how prior scenes are understood, not merely place everyone in one room.",
+ "directing_the_ai": "Create distinct visual worlds for each character through location, palette, light, and framing rhythm. Repeat one ordinary object, route, broadcast, weather event, or background figure across threads without emphasizing the connection too early. Cross-cut at matching gestures or consequences, gradually tightening temporal proximity. When lives collide, bring visual elements from their separate worlds into one composition. Preserve causality so the final network feels uncovered rather than manufactured.",
+ "common_mistakes": [
+  "Revealing every connection immediately, removing the gradual recognition that gives the structure its narrative pleasure.",
+  "Giving secondary threads no independent stakes, making them feel like machinery for the central character’s plot.",
+  "Using coincidence alone at convergence without planted objects, spaces, causes, or consequences linking earlier scenes."
+ ],
+ "insight": "Every world needs a center. I call that center the thesis, and a movement or a genre is only a thesis someone already committed to.",
+ "related": [
+  {
+   "id": "parallel-storylines",
+   "name": "Parallel Storylines"
+  },
+  {
+   "id": "cross-cutting",
+   "name": "Cross-Cutting"
+  },
+  {
+   "id": "motif",
+   "name": "Motif"
+  },
+  {
+   "id": "film-noir",
+   "name": "Film Noir"
+  },
+  {
+   "id": "german-expressionism",
+   "name": "German Expressionism"
+  },
+  {
+   "id": "cinema-verite",
+   "name": "Cinéma Vérité"
+  },
+  {
+   "id": "french-new-wave",
+   "name": "French New Wave"
+  },
+  {
+   "id": "surrealism",
+   "name": "Surrealism"
+  },
+  {
+   "id": "found-footage",
+   "name": "Found Footage"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/hyperlink-cinema"
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "frame-narrative",
+ "name": "Frame Narrative",
+ "category": "Storytelling",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "A story-within-a-story structure — a character tells a tale, and we watch it unfold — creating layers of perspective, questions of reliability, and a satisfying nesting of narratives. Rob Reiner's \"The Princess Bride\" is a beloved frame narrative, with Peter Falk reading to Fred Savage while the fairy tale plays out. \"Titanic\" uses a frame narrative of elderly Rose recounting her experience to researchers. Wes Anderson employs nested frame narratives in \"The Grand Budapest Hotel\" — a girl reads a book by an author recounting a story told to him by Zero Moustafa. The frame narrative raises inherent questions of reliability since we see events filtered through a teller's perspective.",
+ "prompt_template": "Frame narrative with [Subject] as the storyteller in warm amber lamplight, the image beginning to dissolve into the story being told, two realities briefly coexisting in the dissolve, the warm domestic frame giving way to the adventure palette of the nested story, the nested structure raising questions about what is real and what has been embellished",
+ "when_to_use": "Use a frame narrative when the act of telling matters as much as the tale. A narrator can filter events through memory, bias, affection, or invention, while the outer scene gives the audience a place to question and interpret the inner story. It suits recollection, legend, testimony, and storybook structures. Return to the frame at meaningful points so it shapes the nested narrative rather than merely introducing it.",
+ "directing_the_ai": "Stage the storyteller in a stable, intimate frame with warm lamplight and a clear listener or storytelling object. Transition into the nested tale through a dissolve, matched gesture, page, photograph, or changing background. Give the inner story a broader palette and different spatial scale, but repeat one visual element from the frame to preserve authorship. When returning, reveal a reaction or altered detail that questions, confirms, or complicates what the audience just saw.",
+ "common_mistakes": [
+  "Abandoning the outer frame after the opening, making the storyteller structurally unnecessary to the narrative.",
+  "Giving both narrative layers identical visual treatment, so the transition between teller and tale becomes muddy.",
+  "Using the frame only for exposition instead of allowing perspective or reliability to affect the inner story."
+ ],
+ "insight": "A still cannot tell a story, but it can prove one happened. Before, during and after are the three states every frame sits in.",
+ "related": [
+  {
+   "id": "voiceover-narration",
+   "name": "Voiceover Narration"
+  },
+  {
+   "id": "flashback",
+   "name": "Flashback"
+  },
+  {
+   "id": "dissolve",
+   "name": "Dissolve"
+  },
+  {
+   "id": "foreshadowing",
+   "name": "Foreshadowing"
+  },
+  {
+   "id": "breaking-fourth-wall",
+   "name": "Breaking the Fourth Wall"
+  },
+  {
+   "id": "in-medias-res",
+   "name": "In Medias Res"
+  },
+  {
+   "id": "cliffhanger",
+   "name": "Cliffhanger"
+  },
+  {
+   "id": "flashforward",
+   "name": "Flashforward"
+  },
+  {
+   "id": "non-linear-narrative",
+   "name": "Non-Linear Narrative"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/frame-narrative"
+ }
+}

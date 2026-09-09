@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "extreme-long-shot",
+ "name": "Extreme Long Shot",
+ "category": "Camera Work",
+ "difficulty": "Basic",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "A very wide shot where the subject appears small against a vast environment, emphasizing scale, isolation, or the overwhelming nature of the surroundings. David Lean defined the technique in \"Lawrence of Arabia,\" where Peter O'Toole becomes a speck against infinite desert horizons, communicating both the grandeur and the punishing emptiness of the landscape. Terrence Malick uses extreme long shots in \"The Thin Red Line\" to dwarf soldiers against indifferent nature, and Chloé Zhao employed them throughout \"Nomadland\" to place Frances McDormand's van as a tiny vessel adrift in the American West.",
+ "prompt_template": "Extreme long shot of [Subject] barely visible against a vast landscape stretching to the horizon, a single long shadow the only vertical element in a perfectly horizontal world, sky gradient from pale white at the horizon to deep cerulean overhead, shot on large format 65mm film, infinite depth of field rendering everything sharp from feet to infinity, Lawrence of Arabia scale and desolation",
+ "when_to_use": "Use an extreme long shot when the environment should overwhelm the person inside it. It suits desert crossings, isolated vehicles, battlefields, migration, wilderness, and moments when distance itself is the emotion. The subject may be tiny, but must remain compositionally discoverable. Choose this scale for grandeur, loneliness, or indifference; switch closer when gesture, identity, or dialogue becomes the dramatic center.",
+ "directing_the_ai": "Make the subject a small but intentional mark against a horizon-spanning environment. Describe a dominant horizontal composition, immense negative space, and one long shadow or contrasting color that lets the figure register. Keep detail sharp from near ground to distant horizon, with a pale-to-cerulean sky gradient reinforcing depth. For moving footage, use a nearly static frame or a very slow lateral drift; rapid movement destroys the patient comparison between human scale and landscape.",
+ "common_mistakes": [
+  "Making the subject so invisible that the frame reads only as landscape rather than a deliberate scale comparison.",
+  "Using shallow depth of field, which collapses the vast environmental detail needed to communicate distance and isolation.",
+  "Crowding the horizon with several competing focal points that weaken the lone figure's compositional importance."
+ ],
+ "insight": "Scale is not a measurement. It is a relationship, and relationships produce feelings.",
+ "related": [
+  {
+   "id": "long-shot",
+   "name": "Long Shot"
+  },
+  {
+   "id": "negative-space",
+   "name": "Negative Space"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  },
+  {
+   "id": "extreme-close-up",
+   "name": "Extreme Close-Up"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/extreme-long-shot"
+ }
+}

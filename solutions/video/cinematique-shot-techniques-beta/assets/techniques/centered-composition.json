@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "centered-composition",
+ "name": "Centered Composition",
+ "category": "Composition",
+ "difficulty": "Basic",
+ "moods": [
+  "Artistic"
+ ],
+ "has_video": false,
+ "summary": "Placing the subject dead center in the frame — when done deliberately, it creates a powerful, confrontational, or hypnotically ordered effect that requires confidence and intentionality. Wes Anderson builds his entire visual identity around centered subjects, creating his trademark \"planimetric\" compositions. Kubrick's centered one-point-perspective shots in \"The Shining\" and \"Full Metal Jacket\" use the center position for maximum psychological impact. Jonathan Demme's centered close-ups in \"Silence of the Lambs\" break the conventional off-center framing of dialogue scenes to create confrontational direct address.",
+ "prompt_template": "Centered composition with [Subject] at the exact mathematical center, the space arranged in perfect bilateral symmetry around them, the deliberate center placement creating ritual importance and confrontational directness, shot on a 28mm lens from a locked tripod at center height, deep focus rendering every detail sharp, Wes Anderson planimetric aesthetic meets Kubrick one-point-perspective severity",
+ "when_to_use": "Centered composition is powerful when the subject should confront the viewer, command ritual importance, or become the fixed axis of an ordered world. Use it for direct address, formal portraits, one-point perspective, deadpan comedy, and psychologically rigid spaces. It requires confidence because the eye notices every imbalance around the center. Avoid default centering for convenience; the frame should gain pressure, clarity, or hypnotic order from the decision.",
+ "directing_the_ai": "Place the subject's central axis on the exact midpoint of the frame and align the camera with the environment's vanishing point. Arrange surrounding forms to reinforce that position through symmetry, converging lines, or balanced negative space. Keep lens height level and make any asymmetry deliberate. The subject may look directly into camera for confrontation or remain still within the ordered space. For video, use locked framing or movement straight toward the center axis without lateral drift.",
+ "common_mistakes": [
+  "Centering the subject while architecture and vanishing lines sit off-axis, making the composition feel carelessly misaligned.",
+  "Using central placement in every shot, reducing a forceful choice to an unexamined visual habit with no escalation.",
+  "Adding several equally bright side elements, which pull attention away from the exact axis the composition establishes."
+ ],
+ "insight": "Framing is grammar. Distance, angle and lens each carry a fixed emotional consequence before a single texture is described.",
+ "related": [
+  {
+   "id": "symmetry",
+   "name": "Symmetry"
+  },
+  {
+   "id": "head-on-shot",
+   "name": "Head-On Shot"
+  },
+  {
+   "id": "leading-lines",
+   "name": "Leading Lines"
+  },
+  {
+   "id": "rule-of-thirds",
+   "name": "Rule of Thirds"
+  },
+  {
+   "id": "framing-within-frame",
+   "name": "Framing Within Frame"
+  },
+  {
+   "id": "negative-space",
+   "name": "Negative Space"
+  },
+  {
+   "id": "shallow-focus",
+   "name": "Shallow Focus"
+  },
+  {
+   "id": "deep-focus",
+   "name": "Deep Focus"
+  },
+  {
+   "id": "mise-en-scene",
+   "name": "Mise-en-Scène"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/centered-composition"
+ }
+}

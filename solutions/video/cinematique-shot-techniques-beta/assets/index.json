@@ -1,0 +1,1501 @@
+{
+ "schema_version": "cinematique.index.v1",
+ "solution_id": "cinematique-shot-techniques-beta",
+ "generated_at": "2026-09-09T15:31:06Z",
+ "count": 150,
+ "categories": {
+  "Camera Work": 41,
+  "Lighting": 30,
+  "Composition": 21,
+  "Editing": 17,
+  "Storytelling": 12,
+  "Visual Effects & Promptable FX": 8,
+  "Genres & Styles": 21
+ },
+ "techniques": [
+  {
+   "id": "360-degree-shot",
+   "name": "360-Degree Shot",
+   "category": "Camera Work",
+   "difficulty": "Advanced",
+   "moods": [
+    "Romantic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "acid-western",
+   "name": "Acid Western",
+   "category": "Genres & Styles",
+   "difficulty": "Advanced",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "ambient-light",
+   "name": "Ambient Light",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [
+    "Documentary"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "available-light",
+   "name": "Available Light",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Documentary"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "backlight",
+   "name": "Backlight",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "balancing-elements",
+   "name": "Balancing Elements",
+   "category": "Composition",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "blue-hour",
+   "name": "Blue Hour",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [],
+   "has_video": false
+  },
+  {
+   "id": "bokeh",
+   "name": "Bokeh",
+   "category": "Visual Effects & Promptable FX",
+   "difficulty": "Basic",
+   "moods": [
+    "Romantic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "bounce-light",
+   "name": "Bounce Light",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "breaking-fourth-wall",
+   "name": "Breaking the Fourth Wall",
+   "category": "Storytelling",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "broad-lighting",
+   "name": "Broad Lighting",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "centered-composition",
+   "name": "Centered Composition",
+   "category": "Composition",
+   "difficulty": "Basic",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "chiaroscuro",
+   "name": "Chiaroscuro",
+   "category": "Lighting",
+   "difficulty": "Advanced",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "choker-shot",
+   "name": "Choker Shot",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "cinema-verite",
+   "name": "Cinéma Vérité",
+   "category": "Genres & Styles",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Documentary"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "cliffhanger",
+   "name": "Cliffhanger",
+   "category": "Storytelling",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "color-grading",
+   "name": "Color Grading",
+   "category": "Visual Effects & Promptable FX",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "color-temperature",
+   "name": "Color Temperature",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "contrast-composition",
+   "name": "Contrast",
+   "category": "Composition",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "cosmic-horror",
+   "name": "Cosmic Horror",
+   "category": "Genres & Styles",
+   "difficulty": "Advanced",
+   "moods": [
+    "Horror"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "cowboy-shot",
+   "name": "Cowboy Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "crane-shot",
+   "name": "Crane Shot",
+   "category": "Camera Work",
+   "difficulty": "Advanced",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "crash-zoom",
+   "name": "Crash Zoom",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Action"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "cross-cutting",
+   "name": "Cross-Cutting",
+   "category": "Editing",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "cross-lighting",
+   "name": "Cross Lighting",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "cut-in",
+   "name": "Cut-In",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "cutaway",
+   "name": "Cutaway",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "dappled-light",
+   "name": "Dappled Light",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Romantic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "deep-focus",
+   "name": "Deep Focus",
+   "category": "Composition",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "depth-of-field",
+   "name": "Depth of Field",
+   "category": "Composition",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "desaturation",
+   "name": "Desaturation",
+   "category": "Visual Effects & Promptable FX",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "diagonal-lines",
+   "name": "Diagonal Lines",
+   "category": "Composition",
+   "difficulty": "Basic",
+   "moods": [
+    "Action"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "dissolve",
+   "name": "Dissolve",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [],
+   "has_video": false
+  },
+  {
+   "id": "dogme-95",
+   "name": "Dogme 95",
+   "category": "Genres & Styles",
+   "difficulty": "Advanced",
+   "moods": [
+    "Documentary"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Horror"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "edge-light",
+   "name": "Edge Light",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "extreme-close-up",
+   "name": "Extreme Close-Up",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "extreme-long-shot",
+   "name": "Extreme Long Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "eye-level-shot",
+   "name": "Eye-Level Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Documentary"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "eye-light",
+   "name": "Eye Light",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "fade-in-out",
+   "name": "Fade In/Out",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "fast-motion",
+   "name": "Fast Motion",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [
+    "Action"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "figure-ground",
+   "name": "Figure-Ground Relationship",
+   "category": "Composition",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "fill-light",
+   "name": "Fill Light",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [],
+   "has_video": false
+  },
+  {
+   "id": "film-grain",
+   "name": "Film Grain",
+   "category": "Visual Effects & Promptable FX",
+   "difficulty": "Basic",
+   "moods": [],
+   "has_video": false
+  },
+  {
+   "id": "film-noir",
+   "name": "Film Noir",
+   "category": "Genres & Styles",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "flashback",
+   "name": "Flashback",
+   "category": "Storytelling",
+   "difficulty": "Basic",
+   "moods": [
+    "Nostalgic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "flashforward",
+   "name": "Flashforward",
+   "category": "Storytelling",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "forced-perspective",
+   "name": "Forced Perspective",
+   "category": "Visual Effects & Promptable FX",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "foreground-interest",
+   "name": "Foreground Interest",
+   "category": "Composition",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "foreshadowing",
+   "name": "Foreshadowing",
+   "category": "Storytelling",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "found-footage",
+   "name": "Found Footage",
+   "category": "Genres & Styles",
+   "difficulty": "Basic",
+   "moods": [],
+   "has_video": false
+  },
+  {
+   "id": "frame-narrative",
+   "name": "Frame Narrative",
+   "category": "Storytelling",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "framing-within-frame",
+   "name": "Framing Within Frame",
+   "category": "Composition",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "freeze-frame",
+   "name": "Freeze Frame",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "french-new-wave",
+   "name": "French New Wave",
+   "category": "Genres & Styles",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "german-expressionism",
+   "name": "German Expressionism",
+   "category": "Genres & Styles",
+   "difficulty": "Advanced",
+   "moods": [
+    "Horror"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "giallo",
+   "name": "Giallo",
+   "category": "Genres & Styles",
+   "difficulty": "Advanced",
+   "moods": [
+    "Horror"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "gobo-lighting",
+   "name": "Gobo Lighting",
+   "category": "Lighting",
+   "difficulty": "Advanced",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "golden-hour",
+   "name": "Golden Hour",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [
+    "Romantic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "golden-ratio",
+   "name": "Golden Ratio",
+   "category": "Composition",
+   "difficulty": "Advanced",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "handheld-shot",
+   "name": "Handheld Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Documentary"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "hard-light",
+   "name": "Hard Light",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "head-on-shot",
+   "name": "Head-On Shot",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "headroom",
+   "name": "Headroom",
+   "category": "Composition",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "high-angle-shot",
+   "name": "High Angle Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "high-key-lighting",
+   "name": "High-Key Lighting",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [
+    "Romantic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "hyperlink-cinema",
+   "name": "Hyperlink Cinema",
+   "category": "Genres & Styles",
+   "difficulty": "Advanced",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "in-medias-res",
+   "name": "In Medias Res",
+   "category": "Storytelling",
+   "difficulty": "Basic",
+   "moods": [
+    "Action"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "insert-shot",
+   "name": "Insert Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "iris-transition",
+   "name": "Iris",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [
+    "Nostalgic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "italian-neorealism",
+   "name": "Italian Neorealism",
+   "category": "Genres & Styles",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Documentary"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "jump-cut",
+   "name": "Jump Cut",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "key-light",
+   "name": "Key Light",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "kicker-light",
+   "name": "Kicker Light",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "lead-room",
+   "name": "Lead Room",
+   "category": "Composition",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "leading-lines",
+   "name": "Leading Lines",
+   "category": "Composition",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "lens-distortion",
+   "name": "Lens Distortion",
+   "category": "Visual Effects & Promptable FX",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "lens-flare",
+   "name": "Lens Flare",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "long-shot",
+   "name": "Long Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "long-take",
+   "name": "Long Take",
+   "category": "Editing",
+   "difficulty": "Advanced",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "low-angle-shot",
+   "name": "Low Angle Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "low-key-lighting",
+   "name": "Low-Key Lighting",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "master-shot",
+   "name": "Master Shot",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [],
+   "has_video": false
+  },
+  {
+   "id": "medium-close-up",
+   "name": "Medium Close-Up",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "medium-shot",
+   "name": "Medium Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "mise-en-scene",
+   "name": "Mise-en-Scène",
+   "category": "Composition",
+   "difficulty": "Advanced",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "mockumentary",
+   "name": "Mockumentary",
+   "category": "Genres & Styles",
+   "difficulty": "Basic",
+   "moods": [
+    "Documentary"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "montage",
+   "name": "Montage",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "morphing",
+   "name": "Morphing / Dissolve Effect",
+   "category": "Visual Effects & Promptable FX",
+   "difficulty": "Advanced",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "motif",
+   "name": "Motif",
+   "category": "Storytelling",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "motivated-lighting",
+   "name": "Motivated Lighting",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "mumblecore",
+   "name": "Mumblecore",
+   "category": "Genres & Styles",
+   "difficulty": "Basic",
+   "moods": [],
+   "has_video": false
+  },
+  {
+   "id": "negative-space",
+   "name": "Negative Space",
+   "category": "Composition",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "noir-tech",
+   "name": "Tech Noir",
+   "category": "Genres & Styles",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "non-linear-narrative",
+   "name": "Non-Linear Narrative",
+   "category": "Storytelling",
+   "difficulty": "Advanced",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "one-er",
+   "name": "One-er (Oner)",
+   "category": "Camera Work",
+   "difficulty": "Advanced",
+   "moods": [],
+   "has_video": false
+  },
+  {
+   "id": "over-the-shoulder",
+   "name": "Over-the-Shoulder",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "overhead-shot",
+   "name": "Overhead Shot",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "pan-shot",
+   "name": "Pan Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "parallel-storylines",
+   "name": "Parallel Storylines",
+   "category": "Storytelling",
+   "difficulty": "Advanced",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "poetic-realism",
+   "name": "Poetic Realism",
+   "category": "Genres & Styles",
+   "difficulty": "Advanced",
+   "moods": [
+    "Romantic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "pov-shot",
+   "name": "P.O.V. Shot",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "practical-lighting",
+   "name": "Practical Lighting",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "pull-out",
+   "name": "Pull Out",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "push-in",
+   "name": "Push In",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "rack-focus",
+   "name": "Rack Focus",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "reaction-shot",
+   "name": "Reaction Shot",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "rembrandt-lighting",
+   "name": "Rembrandt Lighting",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "repetition-and-pattern",
+   "name": "Repetition and Pattern",
+   "category": "Composition",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "reverse-motion",
+   "name": "Reverse Motion",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "rule-of-thirds",
+   "name": "Rule of Thirds",
+   "category": "Composition",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "sepia-tone",
+   "name": "Sepia Tone",
+   "category": "Visual Effects & Promptable FX",
+   "difficulty": "Basic",
+   "moods": [
+    "Nostalgic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "shallow-focus",
+   "name": "Shallow Focus",
+   "category": "Composition",
+   "difficulty": "Basic",
+   "moods": [
+    "Romantic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "short-lighting",
+   "name": "Short Lighting",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "side-lighting",
+   "name": "Side Lighting",
+   "category": "Lighting",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "silhouette",
+   "name": "Silhouette",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "slow-cinema",
+   "name": "Slow Cinema",
+   "category": "Genres & Styles",
+   "difficulty": "Advanced",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "slow-motion",
+   "name": "Slow Motion",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "smash-cut",
+   "name": "Smash Cut",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [
+    "Action"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "soft-light",
+   "name": "Soft Light",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [
+    "Romantic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "southern-gothic",
+   "name": "Southern Gothic",
+   "category": "Genres & Styles",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Horror"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "spaghetti-western",
+   "name": "Spaghetti Western",
+   "category": "Genres & Styles",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "split-screen",
+   "name": "Split Screen",
+   "category": "Editing",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "static-shot",
+   "name": "Static Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "steadicam",
+   "name": "Steadicam",
+   "category": "Camera Work",
+   "difficulty": "Advanced",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "surrealism",
+   "name": "Surrealism",
+   "category": "Genres & Styles",
+   "difficulty": "Advanced",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "symbolism",
+   "name": "Symbolism",
+   "category": "Storytelling",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "symmetry",
+   "name": "Symmetry",
+   "category": "Composition",
+   "difficulty": "Basic",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "three-point-lighting",
+   "name": "Three-Point Lighting",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "three-shot",
+   "name": "Three-Shot",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "tilt-shot",
+   "name": "Tilt Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "time-lapse",
+   "name": "Time-Lapse",
+   "category": "Editing",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "tracking-shot",
+   "name": "Tracking Shot",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "triangular-composition",
+   "name": "Triangular Composition",
+   "category": "Composition",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "two-shot",
+   "name": "Two-Shot",
+   "category": "Camera Work",
+   "difficulty": "Basic",
+   "moods": [
+    "Cinematic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "uplighting",
+   "name": "Uplighting",
+   "category": "Lighting",
+   "difficulty": "Basic",
+   "moods": [
+    "Horror"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "vaporwave",
+   "name": "Vaporwave Aesthetic",
+   "category": "Genres & Styles",
+   "difficulty": "Basic",
+   "moods": [
+    "Nostalgic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "vertigo-effect",
+   "name": "Vertigo Effect",
+   "category": "Camera Work",
+   "difficulty": "Advanced",
+   "moods": [
+    "Horror"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "visual-weight",
+   "name": "Visual Weight",
+   "category": "Composition",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "voiceover-narration",
+   "name": "Voiceover Narration",
+   "category": "Storytelling",
+   "difficulty": "Basic",
+   "moods": [
+    "Nostalgic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "whip-pan",
+   "name": "Whip Pan",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Action"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "wipe-transition",
+   "name": "Wipe",
+   "category": "Editing",
+   "difficulty": "Basic",
+   "moods": [
+    "Action"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "worms-eye-view",
+   "name": "Worm's Eye View",
+   "category": "Camera Work",
+   "difficulty": "Intermediate",
+   "moods": [
+    "Dramatic"
+   ],
+   "has_video": false
+  },
+  {
+   "id": "wuxia",
+   "name": "Wuxia",
+   "category": "Genres & Styles",
+   "difficulty": "Advanced",
+   "moods": [
+    "Artistic"
+   ],
+   "has_video": false
+  }
+ ]
+}

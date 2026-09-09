@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "pull-out",
+ "name": "Pull Out",
+ "category": "Camera Work",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "The camera physically moves away from the subject, revealing more of the environment, often used to create a sense of isolation, revelation, or to transition from intimate to epic scale. The final pull-out of \"The Truman Show\" — revealing that Truman's entire world is a television set — is a defining use of the technique. Steven Spielberg's pull-out in \"Schindler's List\" from Oskar Schindler to reveal the enormous line of saved workers is emotionally devastating. The famous opening of Robert Altman's \"The Player\" pulls out from an office window to reveal the entire studio lot in one continuous movement.",
+ "prompt_template": "Pull-out shot beginning tight on [Subject] then slowly withdrawing to reveal the true scale of their surroundings, the shot transitioning from intimacy to cosmic isolation in one continuous movement, shot on 24mm wide-angle lens mounted on a telescoping jib arm, the scale expanding to swallow the individual",
+ "when_to_use": "Choose a pull-out when new context should reframe an intimate moment. Moving away can reveal a crowd, set, landscape, aftermath, or barrier that changes the subject's meaning and makes them feel isolated. It works for endings, revelations, and transitions from personal to epic scale. The wider information must matter; withdrawing only to show more empty room rarely earns the emotional shift.",
+ "directing_the_ai": "Start tightly enough to read the subject's expression, then move the camera physically backward in one continuous path. Let foreground objects enter and background architecture expand through visible parallax, gradually reducing the person inside the composition. Use a wide perspective only as space opens, not as a sudden lens jump. Specify the final revealed element and maintain the subject's screen position so viewers can track them as the environment begins to swallow the frame.",
+ "common_mistakes": [
+  "Revealing nothing consequential beyond the original frame, so the withdrawal changes size but not meaning.",
+  "Shrinking the subject through a zoom alone, missing the foreground parallax that makes physical retreat convincing.",
+  "Losing the subject behind newly revealed objects before the audience can compare them with the larger environment."
+ ],
+ "insight": "Pacing is the control of when the audience learns things. Speed is a decision about revelation, never about energy.",
+ "related": [
+  {
+   "id": "crane-shot",
+   "name": "Crane Shot"
+  },
+  {
+   "id": "extreme-long-shot",
+   "name": "Extreme Long Shot"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  },
+  {
+   "id": "extreme-close-up",
+   "name": "Extreme Close-Up"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/pull-out"
+ }
+}

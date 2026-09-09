@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "wuxia",
+ "name": "Wuxia",
+ "category": "Genres & Styles",
+ "difficulty": "Advanced",
+ "moods": [
+  "Artistic"
+ ],
+ "has_video": false,
+ "summary": "A Chinese genre centered on martial arts warriors bound by codes of honor, featuring gravity-defying combat choreography, flowing silk costumes, and painterly landscapes. Ang Lee's \"Crouching Tiger, Hidden Dragon\" (2000) introduced the genre to global audiences with its bamboo forest fight sequence. Zhang Yimou's \"Hero\" and \"House of Flying Daggers\" pushed the visual poetry further with color-coded narrative chapters and rain of arrows frozen in mid-air. King Hu's \"A Touch of Zen\" (1971) established the template of martial artists fighting in natural landscapes. The genre treats action as dance and violence as calligraphy.",
+ "prompt_template": "Wuxia style with [Subject] in gravity-defying motion, robes and fabric trailing like calligraphy strokes through the air, the fight-as-dance choreography of Ang Lee and Zhang Yimou, painterly natural landscape behind — bamboo forests or misty mountains, the action frozen at its most balletic moment, Kodak Vision3 250D warmth, the poetry of martial arts rendered as visual art",
+ "when_to_use": "Use wuxia for martial conflict shaped by honor, loyalty, restraint, and impossible physical grace. Combat becomes dance, while landscape and costume carry emotional meaning equal to the fighters. It suits duels in bamboo, misty mountains, courtyards, and color-coded chapters. Focus on one balletic action and its moral tension; crowded chaotic fighting loses the calligraphic clarity that makes the genre distinctive.",
+ "directing_the_ai": "Freeze or track the subject at the most graceful point of a leap, turn, or suspended strike. Extend robes, sleeves, hair, and fabric along the motion path like calligraphy strokes. Place the action against bamboo, misty mountains, or another painterly natural setting with warm daylight and layered depth. Keep bodies anatomically readable and weapons aligned with gesture. Choreograph opponents as a balanced composition, treating gravity-defying movement as controlled dance rather than explosive flight.",
+ "common_mistakes": [
+  "Crowding the frame with many fighters, making the choreography read as battle noise instead of visual calligraphy.",
+  "Using rigid clothing and poses, which removes the flowing motion that gives wuxia action its lyricism.",
+  "Treating aerial movement as superhero flight without grounded gesture, landscape, or honor-bound dramatic tension."
+ ],
+ "insight": "Every world needs a center. I call that center the thesis, and a movement or a genre is only a thesis someone already committed to.",
+ "related": [
+  {
+   "id": "slow-motion",
+   "name": "Slow Motion"
+  },
+  {
+   "id": "diagonal-lines",
+   "name": "Diagonal Lines"
+  },
+  {
+   "id": "golden-hour",
+   "name": "Golden Hour"
+  },
+  {
+   "id": "film-noir",
+   "name": "Film Noir"
+  },
+  {
+   "id": "german-expressionism",
+   "name": "German Expressionism"
+  },
+  {
+   "id": "cinema-verite",
+   "name": "Cinéma Vérité"
+  },
+  {
+   "id": "french-new-wave",
+   "name": "French New Wave"
+  },
+  {
+   "id": "surrealism",
+   "name": "Surrealism"
+  },
+  {
+   "id": "found-footage",
+   "name": "Found Footage"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/wuxia"
+ }
+}

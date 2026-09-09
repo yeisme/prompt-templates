@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "iris-transition",
+ "name": "Iris",
+ "category": "Editing",
+ "difficulty": "Basic",
+ "moods": [
+  "Nostalgic"
+ ],
+ "has_video": false,
+ "summary": "A circular aperture opens or closes on the frame, focusing attention on a specific point — an early cinema technique that has seen a modern revival for its charming, self-aware quality. D.W. Griffith and Buster Keaton used iris shots extensively in the silent era to direct attention and create transitions. The technique fell out of favor with the arrival of sound but has been revived by directors like the Coen Brothers in \"The Hudsucker Proxy,\" Wes Anderson in \"The Grand Budapest Hotel,\" and Martin Scorsese in \"Hugo\" as an affectionate nod to cinema's origins. The iris closing on a character's face is one of the most recognizable images from early film history.",
+ "prompt_template": "Iris transition closing concentrically around [Subject] at center frame, the circular black mask tightening from edges like a closing eye, the world progressively swallowed by darkness until only a small disc remains, the charming self-awareness of silent cinema technique, warm sepia-inflected tones suggesting aged film stock",
+ "when_to_use": "Use an iris when you want to end on a face, object, or gesture with unmistakable theatrical emphasis. It suits chapter endings, comic exits, storybook framing, and affectionate references to early cinema. Because the device announces itself, reserve it for sequences with formal playfulness or nostalgia. It is less effective in scenes that depend on seamless realism or emotional restraint.",
+ "directing_the_ai": "Place the chosen subject precisely at the center or selected focal point. Close a circular black mask concentrically from the frame edges, keeping the remaining image stable as the visible disc shrinks. For an opening iris, reverse the movement and reveal the scene around the point of interest. Use warm, slightly aged color and restrained grain if nostalgia fits. Finish on full black or a fully open frame rather than stopping at an arbitrary aperture.",
+ "common_mistakes": [
+  "Misplacing the subject so the closing circle drifts away from the intended emotional or comic focus.",
+  "Combining the iris with excessive motion, making the audience chase the subject inside a shrinking frame.",
+  "Applying aged color and grain so heavily that the transition becomes parody rather than affectionate reference."
+ ],
+ "insight": "Generation is cheap and curation is expensive. A world is built as much by what you delete as by what you make.",
+ "related": [
+  {
+   "id": "wipe-transition",
+   "name": "Wipe"
+  },
+  {
+   "id": "fade-in-out",
+   "name": "Fade In/Out"
+  },
+  {
+   "id": "centered-composition",
+   "name": "Centered Composition"
+  },
+  {
+   "id": "cross-cutting",
+   "name": "Cross-Cutting"
+  },
+  {
+   "id": "jump-cut",
+   "name": "Jump Cut"
+  },
+  {
+   "id": "dissolve",
+   "name": "Dissolve"
+  },
+  {
+   "id": "montage",
+   "name": "Montage"
+  },
+  {
+   "id": "smash-cut",
+   "name": "Smash Cut"
+  },
+  {
+   "id": "long-take",
+   "name": "Long Take"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/iris-transition"
+ }
+}

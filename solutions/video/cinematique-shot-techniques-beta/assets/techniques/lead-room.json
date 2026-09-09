@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "lead-room",
+ "name": "Lead Room",
+ "category": "Composition",
+ "difficulty": "Basic",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "Empty space in front of a moving subject or in the direction they're looking, giving the subject visual breathing room and implying destination or intent. Lead room is one of the fundamental principles of shot composition — violating it deliberately creates tension and unease, as the Coen Brothers and David Fincher sometimes do in thriller sequences. Denis Villeneuve uses generous lead room in \"Arrival\" to suggest the vastness of the unknown that Amy Adams's character faces. Breaking the convention — placing a character at the leading edge of the frame with nothing ahead — immediately signals to the audience that something is wrong.",
+ "prompt_template": "Lead room composition with [Subject] positioned on one side of the frame with generous empty space in the direction of their gaze or movement, the open space suggesting possibility and destination, the satisfying rightness of proper lead room creating visual momentum, shot on a 50mm lens, the composition feeling natural and kinetically forward",
+ "when_to_use": "Lead room is essential when a subject looks, walks, drives, or moves toward one side of the frame. Space ahead gives that action somewhere to go and lets the audience anticipate a destination, person, or threat. Use generous room for possibility and forward momentum. Remove it deliberately when the character should feel blocked, pursued, or trapped against the edge. The technique must follow actual gaze and movement, not merely the direction a body faces.",
+ "directing_the_ai": "Place the moving or looking subject on the side opposite their direction, leaving a larger open field ahead of the eyes or motion. Keep the destination readable through environment, light, or framing, even if nothing has entered yet. Reduce trailing space behind the subject without crowding them. For video, pan or track at a speed that preserves the open area. If tension requires breaking the rule, pin the subject near the leading edge and make the absence of room unmistakable.",
+ "common_mistakes": [
+  "Leaving empty space behind a moving subject while compressing the area ahead, making the frame feel visually backward.",
+  "Following body orientation instead of eye direction, which can create lead room on the wrong side of a glance.",
+  "Recentering the subject continuously during a tracking shot, erasing the forward space that communicates destination and momentum."
+ ],
+ "insight": "Framing is grammar. Distance, angle and lens each carry a fixed emotional consequence before a single texture is described.",
+ "related": [
+  {
+   "id": "tracking-shot",
+   "name": "Tracking Shot"
+  },
+  {
+   "id": "pan-shot",
+   "name": "Pan Shot"
+  },
+  {
+   "id": "rule-of-thirds",
+   "name": "Rule of Thirds"
+  },
+  {
+   "id": "symmetry",
+   "name": "Symmetry"
+  },
+  {
+   "id": "leading-lines",
+   "name": "Leading Lines"
+  },
+  {
+   "id": "framing-within-frame",
+   "name": "Framing Within Frame"
+  },
+  {
+   "id": "negative-space",
+   "name": "Negative Space"
+  },
+  {
+   "id": "shallow-focus",
+   "name": "Shallow Focus"
+  },
+  {
+   "id": "deep-focus",
+   "name": "Deep Focus"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/lead-room"
+ }
+}

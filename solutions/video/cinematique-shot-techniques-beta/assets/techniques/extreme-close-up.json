@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "extreme-close-up",
+ "name": "Extreme Close-Up",
+ "category": "Camera Work",
+ "difficulty": "Basic",
+ "moods": [
+  "Dramatic"
+ ],
+ "has_video": false,
+ "summary": "An intensely tight shot focusing on a very specific detail — an eye, a hand trembling, a drop of sweat — amplifying significance and forcing the viewer into intimate proximity with the subject. Sergio Leone built the climax of \"The Good, the Bad and the Ugly\" almost entirely from extreme close-ups of eyes during the three-way standoff, creating unbearable tension through the intimacy of a glance. Darren Aronofsky used macro close-ups of dilating pupils and needle punctures in \"Requiem for a Dream\" to physicalize addiction. David Lynch frequently employs extreme close-ups of mundane objects to reveal the uncanny lurking beneath the ordinary.",
+ "prompt_template": "Extreme macro close-up of [Subject] filling the entire frame, every microscopic detail rendered with clinical precision, ring light creating a circular catchlight, razor-thin depth of field at f/2.8 on a 100mm macro lens, Fujifilm Velvia-inspired saturated color science, the forensic intimacy of extreme proximity",
+ "when_to_use": "Cut to an extreme close-up when one tiny detail must carry the scene: a pupil changing, a finger tightening, sweat forming, or a needle touching skin. The frame forces attention and turns physical texture into emotion. Use it to intensify suspense, reveal evidence, or make an ordinary object uncanny. Its power drops quickly when every beat receives the same microscopic treatment.",
+ "directing_the_ai": "Name the exact fragment that fills the frame and exclude the wider face or body. Ask for macro-scale detail, a 100mm macro perspective, razor-thin depth of field, and one precise focus plane. A circular catchlight or controlled ring light can reveal surface structure without flattening the subject. Keep background information abstract or absent. In video, limit motion to a tremor, blink, bead of moisture, or minute focus adjustment so proximity remains the event.",
+ "common_mistakes": [
+  "Prompting a generic close-up instead of naming the exact eye, fingertip, wound, or object detail that fills frame.",
+  "Demanding sharpness everywhere, which removes the selective attention and optical intimacy of true macro framing.",
+  "Adding a busy background that reintroduces context and breaks the suffocating proximity of the chosen detail."
+ ],
+ "insight": "Scale is not a measurement. It is a relationship, and relationships produce feelings.",
+ "related": [
+  {
+   "id": "choker-shot",
+   "name": "Choker Shot"
+  },
+  {
+   "id": "insert-shot",
+   "name": "Insert Shot"
+  },
+  {
+   "id": "shallow-focus",
+   "name": "Shallow Focus"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/extreme-close-up"
+ }
+}

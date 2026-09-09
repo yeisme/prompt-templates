@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "static-shot",
+ "name": "Static Shot",
+ "category": "Camera Work",
+ "difficulty": "Basic",
+ "moods": [
+  "Artistic"
+ ],
+ "has_video": false,
+ "summary": "A completely locked-off shot with no camera movement, forcing the composition to do all the work — the deliberate stillness can create contemplation, comedy through staging, or unsettling tension. Yasujiro Ozu built an entire cinematic philosophy around the static shot, his \"pillow shots\" of empty rooms and corridors in \"Tokyo Story\" becoming meditations on impermanence. Wes Anderson's rigorously static, symmetrical compositions in \"The Grand Budapest Hotel\" turn every frame into a diorama. Roy Andersson constructs elaborate single-frame tableaux vivants in \"Songs from the Second Floor,\" and Chantal Akerman's static shots in \"Jeanne Dielman\" transform domestic routine into radical cinema.",
+ "prompt_template": "Perfectly static locked-off shot of [Subject], the camera absolutely motionless on a heavy tripod, every element placed with obsessive precision, the stillness of the camera making the frame feel like a living painting, shot on ARRI Alexa with a 40mm Zeiss Master Prime at T5.6 for maximum sharpness edge to edge, Wes Anderson palette, the deadpan humor of perfect order",
+ "when_to_use": "Choose a static shot when stillness should make viewers study composition, duration, and behavior inside the frame. It suits deadpan comedy, domestic routine, architectural order, contemplation, and tension created by waiting. With no camera movement to manufacture emphasis, blocking and timing become exposed. Use it when the frame can evolve internally; otherwise locked-off footage may simply feel inactive rather than deliberate.",
+ "directing_the_ai": "Lock the camera to a heavy tripod and prohibit pan, tilt, zoom, drift, or stabilization sway. Arrange every object and figure with precise spacing, strong verticals, and enough depth for movement within the composition. Use edge-to-edge clarity and a controlled palette so small changes register. For video, choreograph entrances, exits, gestures, or background events while the frame remains absolutely fixed. The visual tension must come from what changes inside the boundary.",
+ "common_mistakes": [
+  "Adding subtle automated push or handheld drift, which breaks the formal stillness even when movement is barely visible.",
+  "Treating locked camera as permission for weak composition, leaving no internal lines, depth, or staged action to inspect.",
+  "Centering every subject mechanically when asymmetry or offscreen pressure would create stronger tension within the fixed frame."
+ ],
+ "insight": "Internal logic is the set of laws that hold in your world whether or not anyone explains them. A shot that breaks them reads as a mistake even when it is beautiful.",
+ "related": [
+  {
+   "id": "symmetry",
+   "name": "Symmetry"
+  },
+  {
+   "id": "slow-cinema",
+   "name": "Slow Cinema"
+  },
+  {
+   "id": "master-shot",
+   "name": "Master Shot"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/static-shot"
+ }
+}

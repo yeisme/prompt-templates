@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "vaporwave",
+ "name": "Vaporwave Aesthetic",
+ "category": "Genres & Styles",
+ "difficulty": "Basic",
+ "moods": [
+  "Nostalgic"
+ ],
+ "has_video": false,
+ "summary": "A visual style born from internet culture that repurposes 1980s and 90s commercial aesthetics — glitch art, neon pink and cyan gradients, retro computer interfaces, marble busts, Japanese text, and VHS degradation — into a nostalgic critique of consumer capitalism. While originating as a music genre, the visual language has been widely adopted in film, advertising, and AI generation. Nicolas Winding Refn's neon-soaked aesthetics in \"The Neon Demon\" share DNA with vaporwave. The style is simultaneously ironic and sincere — mourning a future that never arrived.",
+ "prompt_template": "Vaporwave aesthetic with [Subject] bathed in neon pink and cyan gradient lighting, retro digital artifacts and scan lines overlaid, reflective chrome and glass surfaces, the nostalgic melancholy of a 1990s shopping mall at closing time, VHS color bleeding and tracking errors, palm trees and marble columns, the beauty of obsolete technology, everything slightly too saturated and slightly too perfect",
+ "when_to_use": "Use vaporwave when the image should feel nostalgic for a commercial future that never arrived. It suits empty malls, obsolete technology, artificial leisure spaces, retro interfaces, and scenes balancing irony with sincere melancholy. The style is strongest when recognizable 1980s or 1990s consumer imagery feels abandoned or looped. Avoid treating it as a random neon collage; the emotional center is loss, repetition, and obsolete promise.",
+ "directing_the_ai": "Bathe the subject in a pink-to-cyan gradient and place them among reflective chrome, glass, marble columns, palms, or an empty shopping-mall interior. Add scan lines, mild VHS color bleed, tracking errors, and retro interface fragments without covering the composition. Keep surfaces slightly too polished and colors slightly too saturated. Leave generous empty space and late-night stillness so obsolete commercial imagery reads as melancholy rather than energetic cyberpunk spectacle.",
+ "common_mistakes": [
+  "Combining every retro icon at once, turning a coherent nostalgic world into an internet sticker collage.",
+  "Using dark aggressive cyberpunk lighting, which loses vaporwave’s pastel commercial emptiness and wistful artificial calm.",
+  "Applying severe VHS damage until architecture, text, and the central subject can no longer be read."
+ ],
+ "insight": "A genre is a container, not a look. What makes a style yours is the palette, the materials and the light behaving the same way every time.",
+ "related": [
+  {
+   "id": "color-grading",
+   "name": "Color Grading"
+  },
+  {
+   "id": "film-grain",
+   "name": "Film Grain"
+  },
+  {
+   "id": "noir-tech",
+   "name": "Tech Noir"
+  },
+  {
+   "id": "film-noir",
+   "name": "Film Noir"
+  },
+  {
+   "id": "german-expressionism",
+   "name": "German Expressionism"
+  },
+  {
+   "id": "cinema-verite",
+   "name": "Cinéma Vérité"
+  },
+  {
+   "id": "french-new-wave",
+   "name": "French New Wave"
+  },
+  {
+   "id": "surrealism",
+   "name": "Surrealism"
+  },
+  {
+   "id": "found-footage",
+   "name": "Found Footage"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/vaporwave"
+ }
+}

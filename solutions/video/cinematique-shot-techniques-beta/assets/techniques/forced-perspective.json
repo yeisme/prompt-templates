@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "forced-perspective",
+ "name": "Forced Perspective",
+ "category": "Visual Effects & Promptable FX",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Artistic"
+ ],
+ "has_video": false,
+ "summary": "Using the relationship between camera position and object placement to create optical illusions of size — Hobbits appear small next to Gandalf through precise staging rather than CGI. Peter Jackson used forced perspective extensively in \"The Lord of the Rings,\" building oversized and undersized duplicate sets and using precise camera alignment to make Elijah Wood appear four feet shorter than Ian McKellen in the same frame. Jean-Pierre Jeunet used forced perspective for whimsical effect in \"Amélie.\" The technique dates back to the earliest days of cinema and architecture — Egyptian temples and Baroque churches used the same principle to appear larger than they are.",
+ "prompt_template": "Forced perspective illusion with [Subject] appearing impossibly large or small through precise camera alignment and placement, the depth of field deep enough that both near and far elements appear sharp, the lighting matching between foreground and background, the Peter Jackson technique of making the impossible look real without digital manipulation, just physics and precise alignment",
+ "when_to_use": "Use forced perspective when characters or objects must appear impossibly large or small while sharing one believable frame. It suits fantasy scale, whimsical comedy, giant-object illusions, and practical-looking visual tricks. The technique works from a precise viewpoint, so it is strongest in composed shots with controlled blocking. Avoid wide camera movement unless the alignment and depth relationship can remain locked throughout.",
+ "directing_the_ai": "Place the larger-looking subject close to camera and the smaller-looking subject farther away on the same sightline. Use deep focus so both planes remain sharp, then match light direction, color temperature, shadow softness, and eye lines across the distance. Hide scale references that expose the separation. Keep the camera fixed at the alignment point. For interaction, choreograph gestures to meet visually in the frame even though the subjects occupy different depths.",
+ "common_mistakes": [
+  "Allowing shallow focus to reveal that the apparently adjacent subjects sit on widely separated depth planes.",
+  "Including familiar scale references between subjects, exposing the distance trick before the illusion can work.",
+  "Moving the camera away from the designed viewpoint, causing edges, eye lines, and apparent contact to separate."
+ ],
+ "insight": "Scale is not a measurement. It is a relationship, and relationships produce feelings.",
+ "related": [
+  {
+   "id": "deep-focus",
+   "name": "Deep Focus"
+  },
+  {
+   "id": "worms-eye-view",
+   "name": "Worm's Eye View"
+  },
+  {
+   "id": "mise-en-scene",
+   "name": "Mise-en-Scène"
+  },
+  {
+   "id": "color-grading",
+   "name": "Color Grading"
+  },
+  {
+   "id": "desaturation",
+   "name": "Desaturation"
+  },
+  {
+   "id": "sepia-tone",
+   "name": "Sepia Tone"
+  },
+  {
+   "id": "film-grain",
+   "name": "Film Grain"
+  },
+  {
+   "id": "bokeh",
+   "name": "Bokeh"
+  },
+  {
+   "id": "lens-distortion",
+   "name": "Lens Distortion"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/forced-perspective"
+ }
+}

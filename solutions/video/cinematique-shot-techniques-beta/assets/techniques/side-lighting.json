@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "side-lighting",
+ "name": "Side Lighting",
+ "category": "Lighting",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Dramatic"
+ ],
+ "has_video": false,
+ "summary": "Light striking the subject from a 90-degree angle, illuminating one half while leaving the other in shadow, splitting the face or figure to create strong dimensionality and visual tension. Vittorio Storaro used dramatic side lighting throughout \"Apocalypse Now\" to bisect characters between light and darkness, mirroring the moral duality at the film's core. Roger Deakins employs precise side lighting in \"Prisoners\" and \"Sicario\" to create sculptural depth. The technique is central to Conrad Hall's Oscar-winning cinematography in \"American Beauty,\" where side light from venetian blinds creates the film's signature visual motif.",
+ "prompt_template": "Side lighting from a single source striking [Subject] at exactly 90 degrees, one half brilliantly illuminated while the other half vanishes into complete shadow creating a perfect vertical division, every texture on the lit side rendered in crystalline detail while the shadow side reveals nothing, shot on large format with an 80mm lens, the extreme dimensionality of single-source side light, the duality made visible",
+ "when_to_use": "Use side lighting when a face or figure needs strong dimensionality, moral tension, or a visible split between competing states. It suits confrontations, secretive portraits, and moments when one side of a character should remain unreadable. The technique also gives textured subjects more relief because light travels across the surface rather than flattening it. Avoid it when the scene needs openness, softness, or evenly legible expressions.",
+ "directing_the_ai": "Place one dominant source exactly 90 degrees to the subject. Keep the camera-facing division clear: one half receives crisp illumination while the opposite half falls into deep shadow. Describe which facial plane, object edge, or body contour catches the light, and protect detail on that side. Hold fill to a minimum so the split remains graphic. For video, keep the source and subject positions consistent as they move, or let the division shift deliberately across the face.",
+ "common_mistakes": [
+  "Adding frontal fill until both sides become equally readable, which removes the tension and sculptural split the setup needs.",
+  "Placing the source too far forward, turning the result into ordinary three-quarter portrait lighting instead of true side light.",
+  "Leaving the lit side featureless or clipped, so the frame loses the texture that should carry its dimensional detail."
+ ],
+ "insight": "A genre is a container, not a look. What makes a style yours is the palette, the materials and the light behaving the same way every time.",
+ "related": [
+  {
+   "id": "low-key-lighting",
+   "name": "Low-Key Lighting"
+  },
+  {
+   "id": "chiaroscuro",
+   "name": "Chiaroscuro"
+  },
+  {
+   "id": "short-lighting",
+   "name": "Short Lighting"
+  },
+  {
+   "id": "three-point-lighting",
+   "name": "Three-Point Lighting"
+  },
+  {
+   "id": "key-light",
+   "name": "Key Light"
+  },
+  {
+   "id": "high-key-lighting",
+   "name": "High-Key Lighting"
+  },
+  {
+   "id": "rembrandt-lighting",
+   "name": "Rembrandt Lighting"
+  },
+  {
+   "id": "silhouette",
+   "name": "Silhouette"
+  },
+  {
+   "id": "golden-hour",
+   "name": "Golden Hour"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/side-lighting"
+ }
+}

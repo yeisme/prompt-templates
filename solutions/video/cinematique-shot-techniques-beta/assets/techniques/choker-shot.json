@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "choker-shot",
+ "name": "Choker Shot",
+ "category": "Camera Work",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Dramatic"
+ ],
+ "has_video": false,
+ "summary": "A very tight shot framing the face from forehead to chin, eliminating nearly all background, more claustrophobic than a standard close-up and often used for moments of extreme emotion. Ingmar Bergman used the choker shot relentlessly in \"Persona\" and \"Cries and Whispers,\" trapping his actors' faces in frames that feel like emotional prisons. Darren Aronofsky adopted this approach in \"Black Swan,\" keeping Natalie Portman's face in suffocating proximity, and Steve McQueen uses sustained choker shots in \"Hunger\" and \"Shame\" to force viewers into uncomfortable intimacy with his characters' pain.",
+ "prompt_template": "Choker shot framing [Subject] from hairline to chin with zero background visible, the skin filling the entire screen like a landscape, harsh toplight creating deep shadow in the eye sockets while illuminating the planes of cheekbone and brow, shot on a 100mm macro lens at T2.8, high-contrast monochromatic color treatment, Bergman-level psychological claustrophobia",
+ "when_to_use": "Use a choker shot when a face must become a confined emotional space. Framing from forehead to chin removes almost all context and lets tiny shifts in eyes, mouth, and skin tension feel enormous. It suits panic, shame, obsession, confrontation, and sustained discomfort. Because the closeness is aggressive, save it for peaks or deliberate formal systems rather than ordinary dialogue coverage.",
+ "directing_the_ai": "Fill the frame with the face from hairline to chin and remove all visible background. Use a longer or macro portrait perspective to keep features controlled, then shape the planes with hard toplight and deep eye-socket shadow. Preserve pores, moisture, and micro-expression rather than cosmetic smoothness. For video, hold the subject inside this narrow boundary with only breath, blinking, or minute focus drift; large head movement should feel constrained by the frame.",
+ "common_mistakes": [
+  "Leaving background visible around the head, giving the viewer spatial relief that the choker shot should deny.",
+  "Moving too close with a wide lens, distorting the nose and cheeks into unintended caricature.",
+  "Using the framing for neutral exposition, where its psychological pressure overwhelms the actual dramatic importance."
+ ],
+ "insight": "Scale is not a measurement. It is a relationship, and relationships produce feelings.",
+ "related": [
+  {
+   "id": "extreme-close-up",
+   "name": "Extreme Close-Up"
+  },
+  {
+   "id": "medium-close-up",
+   "name": "Medium Close-Up"
+  },
+  {
+   "id": "low-key-lighting",
+   "name": "Low-Key Lighting"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/choker-shot"
+ }
+}

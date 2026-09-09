@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "symmetry",
+ "name": "Symmetry",
+ "category": "Composition",
+ "difficulty": "Basic",
+ "moods": [
+  "Artistic"
+ ],
+ "has_video": false,
+ "summary": "A composition where both halves of the frame mirror each other, creating a sense of order, formality, perfection, or unsettling precision. Stanley Kubrick made symmetry his defining visual signature — the one-point-perspective corridor shots of \"The Shining\" and \"A Clockwork Orange\" remain the technique's most analyzed examples. Wes Anderson took symmetry to its whimsical extreme, making it the entire visual language of \"The Grand Budapest Hotel\" and \"The French Dispatch.\" Denis Villeneuve uses cold, imposing symmetry in \"Blade Runner 2049\" and \"Arrival\" to convey alien or corporate power structures.",
+ "prompt_template": "Perfect bilateral symmetry with [Subject] standing at the exact center of the vanishing point, matching elements receding into infinity on both sides, the symmetry so absolute it becomes psychologically oppressive rather than beautiful, shot on a wide 24mm lens from a locked-off tripod at exact center height, Kubrick one-point-perspective severity",
+ "when_to_use": "Symmetry is strongest when order itself carries emotion. Use it for ritual, authority, control, artificial perfection, deadpan comedy, or an unsettling sense that the world has been arranged too precisely. Corridors, facades, tables, and grouped characters provide natural mirrored structure. The effect depends on exact camera position and balanced set elements. Avoid casual near-symmetry; small errors look accidental unless one deliberate break in the pattern is the subject.",
+ "directing_the_ai": "Lock the camera on the exact center axis of the space and place the subject at the central vanishing point. Mirror major architectural forms, props, spacing, and light levels across the vertical divide. Keep lens height level so lines do not drift. Decide whether the symmetry feels playful, formal, or oppressive through scale and repetition. In video, use stable movement directly along the center axis; lateral drift should either remain absent or become a clear rupture of the ordered frame.",
+ "common_mistakes": [
+  "Setting the camera slightly off-axis, causing doorways, ceiling lines, and vanishing points to disagree across the frame.",
+  "Mirroring broad shapes but ignoring light, color, and spacing, leaving the composition balanced only at first glance.",
+  "Breaking symmetry with several unrelated objects, so no single disruption gains the attention or narrative weight it deserves."
+ ],
+ "insight": "This is the fundamental that explains why some worlds feel infinitely deep and others feel exhausted after five images.",
+ "related": [
+  {
+   "id": "centered-composition",
+   "name": "Centered Composition"
+  },
+  {
+   "id": "leading-lines",
+   "name": "Leading Lines"
+  },
+  {
+   "id": "repetition-and-pattern",
+   "name": "Repetition and Pattern"
+  },
+  {
+   "id": "rule-of-thirds",
+   "name": "Rule of Thirds"
+  },
+  {
+   "id": "framing-within-frame",
+   "name": "Framing Within Frame"
+  },
+  {
+   "id": "negative-space",
+   "name": "Negative Space"
+  },
+  {
+   "id": "shallow-focus",
+   "name": "Shallow Focus"
+  },
+  {
+   "id": "deep-focus",
+   "name": "Deep Focus"
+  },
+  {
+   "id": "mise-en-scene",
+   "name": "Mise-en-Scène"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/symmetry"
+ }
+}

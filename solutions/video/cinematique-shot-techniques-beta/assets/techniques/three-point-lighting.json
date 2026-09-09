@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "three-point-lighting",
+ "name": "Three-Point Lighting",
+ "category": "Lighting",
+ "difficulty": "Basic",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "The foundational lighting setup using three sources: a key light as the primary source, a fill light to soften shadows, and a backlight to separate the subject from the background. Developed during Hollywood's Golden Age by cinematographers like James Wong Howe and Gregg Toland, three-point lighting became the grammar of classical Hollywood cinema. It defined the glamorous look of stars from Garbo to Monroe and remains the starting point for all narrative lighting. Modern cinematographers like Roger Deakins and Janusz Kamiński build upon and deconstruct this foundation in every film they shoot.",
+ "prompt_template": "Classic three-point lighting on [Subject], the key light at 45 degrees creating defined shadow, a soft fill light gently opening the shadows, a warm-toned backlight rimming the edges with a thin golden halo, the balanced interplay sculpting the form into three dimensions, shot on medium format with an 80mm portrait lens at f/2.8, Kodak Portra color science with creamy skin tones and deep velvety blacks",
+ "when_to_use": "Use three-point lighting when you need a flexible, readable foundation for portraits, interviews, dialogue, product work, or narrative coverage. The key establishes direction, fill controls contrast, and backlight separates the subject from the setting. It can look polished or dramatic depending on ratios. Treat it as a starting structure rather than a compulsory formula; some scenes are stronger with one motivated source.",
+ "directing_the_ai": "Place the key about 45 degrees to one side and above the subject, creating a clear modeled shadow. Add a softer, dimmer fill from the opposite side that opens detail without erasing shape. Position a warm backlight behind and above to trace shoulders and hair while avoiding lens flare. Describe the relative intensity and color of all three sources. Keep the background darker enough that separation remains visible without making the rim look pasted on.",
+ "common_mistakes": [
+  "Making key and fill equally bright, which flattens the face and removes the setup's directional hierarchy.",
+  "Using a backlight so strong that it creates a white cutout around hair and shoulders.",
+  "Listing three lights without positions or ratios, leaving the resulting illumination arbitrary rather than intentionally structured."
+ ],
+ "insight": "A genre is a container, not a look. What makes a style yours is the palette, the materials and the light behaving the same way every time.",
+ "related": [
+  {
+   "id": "key-light",
+   "name": "Key Light"
+  },
+  {
+   "id": "fill-light",
+   "name": "Fill Light"
+  },
+  {
+   "id": "backlight",
+   "name": "Backlight"
+  },
+  {
+   "id": "high-key-lighting",
+   "name": "High-Key Lighting"
+  },
+  {
+   "id": "low-key-lighting",
+   "name": "Low-Key Lighting"
+  },
+  {
+   "id": "chiaroscuro",
+   "name": "Chiaroscuro"
+  },
+  {
+   "id": "rembrandt-lighting",
+   "name": "Rembrandt Lighting"
+  },
+  {
+   "id": "silhouette",
+   "name": "Silhouette"
+  },
+  {
+   "id": "golden-hour",
+   "name": "Golden Hour"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/three-point-lighting"
+ }
+}

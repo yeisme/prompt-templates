@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "lens-distortion",
+ "name": "Lens Distortion",
+ "category": "Visual Effects & Promptable FX",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Artistic"
+ ],
+ "has_video": false,
+ "summary": "Optical aberrations from specific lenses that bend, stretch, or warp the image — wide-angle barrel distortion, anamorphic oval bokeh, or vintage lens flaring — each lens has a personality. Emmanuel Lubezki exploits wide-angle distortion in his work with Terrence Malick, using ultra-wide lenses that bend the edges of reality. Roger Deakins prefers Arri/Zeiss Master Primes for their clinical precision, while Robert Richardson often chooses older, imperfect glass for its character. The anamorphic distortion of Panavision C-series and E-series lenses — their signature flares, edge softness, and oval bokeh — has become synonymous with the \"cinematic look.\" Modern lens designers at Cooke, Arri, and Zeiss carefully engineer specific amounts of controlled aberration.",
+ "prompt_template": "Lens distortion from a vintage anamorphic lens visible across [Subject], barrel distortion curving straight lines at frame edges into subtle arcs, oval-shaped bokeh, horizontal flare streaks, the edges softer and more swirled than the sharp center, chromatic aberration creating slight color fringing, the accumulated imperfections giving the image character that clinical modern lenses deliberately avoid",
+ "when_to_use": "Use lens distortion when optical imperfection should add personality, unease, intimacy, or period texture. Wide barrel distortion can make nearby faces confrontational, while anamorphic softness, oval bokeh, and horizontal flare can create expansive cinematic space. Match the aberration to a clear lens character and framing purpose. Distortion is less useful when architecture, products, or visual evidence must remain geometrically precise.",
+ "directing_the_ai": "Keep the central subject relatively sharp while curving straight lines near frame edges into subtle arcs. Add edge softness, mild chromatic fringing, oval background bokeh, and restrained horizontal flare from actual bright sources. Let perspective stretch objects closest to the lens, not distant forms at random. Preserve one coherent optical center across the shot. The imperfections should share a lens logic, with stronger aberration toward the perimeter and cleaner rendering near the middle.",
+ "common_mistakes": [
+  "Warping the center and edges equally, making the image feel digitally melted rather than optically distorted.",
+  "Adding flare without a bright source, which breaks the physical logic of the implied lens.",
+  "Stacking barrel distortion, fringing, softness, and bokeh so heavily that the subject loses visual authority."
+ ],
+ "insight": "Atmosphere is the physical condition of the air, the light and the weather at the moment the image exists. It is what decides how far you can see, and therefore how large the world is.",
+ "related": [
+  {
+   "id": "bokeh",
+   "name": "Bokeh"
+  },
+  {
+   "id": "lens-flare",
+   "name": "Lens Flare"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "color-grading",
+   "name": "Color Grading"
+  },
+  {
+   "id": "desaturation",
+   "name": "Desaturation"
+  },
+  {
+   "id": "sepia-tone",
+   "name": "Sepia Tone"
+  },
+  {
+   "id": "film-grain",
+   "name": "Film Grain"
+  },
+  {
+   "id": "forced-perspective",
+   "name": "Forced Perspective"
+  },
+  {
+   "id": "morphing",
+   "name": "Morphing / Dissolve Effect"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/lens-distortion"
+ }
+}

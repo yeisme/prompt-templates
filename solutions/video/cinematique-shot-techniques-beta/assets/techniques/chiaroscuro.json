@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "chiaroscuro",
+ "name": "Chiaroscuro",
+ "category": "Lighting",
+ "difficulty": "Advanced",
+ "moods": [
+  "Artistic"
+ ],
+ "has_video": false,
+ "summary": "An extreme contrast between light and dark, inspired by Renaissance painting, creating deeply sculpted, painterly images with rich shadows and selective illumination. Directly descended from Caravaggio's revolutionary use of tenebrism in paintings like \"The Calling of Saint Matthew,\" chiaroscuro entered cinema through German Expressionism and was perfected by Gordon Willis in \"The Godfather\" — his overhead toplight leaving Brando's eye sockets in impenetrable shadow became one of the most imitated looks in film history. Vittorio Storaro brought painterly chiaroscuro to \"Apocalypse Now,\" and Barry Jenkins' cinematographer James Laxton uses it to sculpt Black skin with luminous beauty in \"Moonlight.\"",
+ "prompt_template": "Chiaroscuro lighting on [Subject] with a single candle or flame as the only source, warm amber light painting face and hands while everything beyond arm's reach vanishes into absolute blackness, the contrast ratio approaching infinity, shot to emulate oil painting with a fast 50mm lens wide open, the Caravaggio-meets-Gordon Willis treatment of light as a moral force that reveals and conceals in equal measure",
+ "when_to_use": "Choose chiaroscuro when light and darkness should feel symbolic as well as descriptive. A face emerging from blackness can express divided motives, secrecy, spiritual weight, danger, or revelation. The painterly contrast works for intimate portraits, historical interiors, crime, and solemn drama. It demands selective control: if every surface receives dramatic light, the frame loses the tension between what is exposed and what remains hidden.",
+ "directing_the_ai": "Use one candle, flame, or narrow warm source to paint the subject's face and hands while everything beyond immediate reach falls toward absolute black. Shape the light across planes rather than outlining the entire body. Let one eye or side of the face disappear if the emotional idea supports concealment. Preserve rich amber gradation in lit skin and fabric. Keep secondary sources absent or extremely weak so darkness remains a compositional mass.",
+ "common_mistakes": [
+  "Lighting the background for visual interest, reducing the black field that gives selective illumination its painterly force.",
+  "Using equal split lighting with no tonal gradation, producing a simple half-lit portrait instead of sculpted chiaroscuro.",
+  "Adding several colored sources that fragment the moral clarity of one dominant relationship between light and dark."
+ ],
+ "insight": "Tone is the hardest fundamental to get right, and the easiest to lose without noticing. One warm frame in a cold world undoes twenty.",
+ "related": [
+  {
+   "id": "low-key-lighting",
+   "name": "Low-Key Lighting"
+  },
+  {
+   "id": "rembrandt-lighting",
+   "name": "Rembrandt Lighting"
+  },
+  {
+   "id": "film-noir",
+   "name": "Film Noir"
+  },
+  {
+   "id": "three-point-lighting",
+   "name": "Three-Point Lighting"
+  },
+  {
+   "id": "key-light",
+   "name": "Key Light"
+  },
+  {
+   "id": "high-key-lighting",
+   "name": "High-Key Lighting"
+  },
+  {
+   "id": "silhouette",
+   "name": "Silhouette"
+  },
+  {
+   "id": "golden-hour",
+   "name": "Golden Hour"
+  },
+  {
+   "id": "blue-hour",
+   "name": "Blue Hour"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/chiaroscuro"
+ }
+}

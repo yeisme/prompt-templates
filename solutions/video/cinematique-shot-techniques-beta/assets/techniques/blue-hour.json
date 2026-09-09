@@ -1,0 +1,27 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "blue-hour",
+ "name": "Blue Hour",
+ "category": "Lighting",
+ "difficulty": "Intermediate",
+ "moods": [],
+ "has_video": false,
+ "summary": "The cool, diffused light just before sunrise or after sunset when the sky turns deep blue, creating a melancholic, contemplative, or mysterious atmosphere. Michael Mann is the master of blue hour photography, using the transitional twilight extensively in \"Heat,\" \"Collateral,\" and \"Miami Vice\" to create his signature cool urban melancholy. Janusz Kamiński shot the D-Day sequence in \"Saving Private Ryan\" during overcast blue-hour conditions for authenticity, and Wong Kar-wai's \"Fallen Angels\" uses Hong Kong's blue hour as an emotional blanket over its lonely characters.",
+ "prompt_template": "Blue hour twilight twenty minutes after sunset enveloping [Subject], the sky a luminous deep cobalt blue glowing from within, warm amber artificial light sources contrasting with the pervasive blue atmosphere, shot on Alexa at high ISO with Cooke S4 glass rendering practical lights as soft warm glows, the contemplative melancholy of Michael Mann's visual language",
+ "when_to_use": "Use blue hour for transitional scenes that need cool calm, loneliness, anticipation, or mystery without full darkness. The luminous sky keeps exterior detail visible while windows, streetlights, and vehicles begin to glow warm. It suits city arrivals, departures, reflective portraits, and quiet suspense. Keep it distinct from night by preserving cobalt ambient light and from sunset by removing direct golden sunlight.",
+ "directing_the_ai": "Set the moment roughly twenty minutes after sunset or before sunrise, when the sky is deep cobalt but still luminous. Let cool ambient light wrap buildings and faces while warm amber practicals punctuate windows, signs, or vehicles. Use high sensitivity with soft halation around those sources, preserving detail in both sky and shadow. For video, hold the narrow twilight state consistently; do not let the sky flicker between daylight, sunset orange, and black night.",
+ "common_mistakes": [
+  "Making the sky completely black, which turns the scene into night and removes blue hour's luminous transition.",
+  "Adding direct orange sunlight even though the sun has already dropped below the horizon in the intended setup.",
+  "Coloring skin and every object uniformly blue, instead of balancing cool ambience with selective warm practical sources."
+ ],
+ "insight": "Atmosphere is the physical condition of the air, the light and the weather at the moment the image exists. It is what decides how far you can see, and therefore how large the world is.",
+ "related": [],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/blue-hour"
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "medium-close-up",
+ "name": "Medium Close-Up",
+ "category": "Camera Work",
+ "difficulty": "Basic",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "Frames the subject from the chest up, tighter than a medium shot but not as intimate as a close-up, ideal for emotional dialogue while retaining some body language context. This framing became the default for television drama and is the backbone of prestige TV from \"The Sopranos\" to \"Breaking Bad.\" In cinema, Michael Mann favors the medium close-up in \"Heat\" and \"Collateral\" to maintain both the intensity of facial performance and the physical awareness of characters in dangerous environments. Jonathan Demme's slightly-off-center medium close-ups became his signature from \"Silence of the Lambs\" through \"Rachel Getting Married.\"",
+ "prompt_template": "Medium close-up of [Subject] from the chest up, the intimate distance perfect for reading micro-expressions while body language of tension remains visible in the shoulders and hands, shot on a 75mm Cooke S4 at T2, noir-inflected color palette of deep blues and intermittent warm accents",
+ "when_to_use": "Choose a medium close-up when emotional dialogue needs intimacy without the pressure of a full close-up. Chest-up framing keeps micro-expressions legible while shoulders and upper-body tension remain available. It is strong for interviews, confession, restrained conflict, and reaction beats. Pull wider when hands or spatial relations matter; move tighter when the face must become the entire dramatic landscape.",
+ "directing_the_ai": "Frame from the chest upward, keeping the shoulders fully present and the eyes near the upper third. Use a slightly longer portrait perspective, moderate background blur, and controlled contrast that preserves skin detail. Let small changes in jaw, breath, and shoulder position carry the performance. Include only enough environment to anchor location. For video, avoid automatic zooming; hold the intimate distance and let the actor's micro-expressions create the variation.",
+ "common_mistakes": [
+  "Cropping beneath the chin or above the shoulders, which turns the intended frame into a tight close-up.",
+  "Leaving too much torso visible, weakening facial emphasis and drifting back toward a conventional medium shot.",
+  "Smoothing skin and expression so aggressively that the subtle performance cues the framing exists to capture disappear."
+ ],
+ "insight": "Framing is grammar. Distance, angle and lens each carry a fixed emotional consequence before a single texture is described.",
+ "related": [
+  {
+   "id": "medium-shot",
+   "name": "Medium Shot"
+  },
+  {
+   "id": "choker-shot",
+   "name": "Choker Shot"
+  },
+  {
+   "id": "eye-light",
+   "name": "Eye Light"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/medium-close-up"
+ }
+}

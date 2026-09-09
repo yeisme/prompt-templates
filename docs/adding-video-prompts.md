@@ -29,6 +29,7 @@
 | 画外 VO 自述 + 音乐弧线 | `realistic-docu-vlog-generation` | VO 绑定键、音乐弧线、混合机位 |
 | 出镜口播 + 唇形同步 | `realistic-diary-vlog-generation` | 台词脚本、声学空间、服装逻辑链 |
 | 双人物写实格斗 | `realistic-fight-scene-generation` | 双参考图锁、攻防物理、行动轴线 |
+| 150 条电影技术选型+绑定（运镜/布光/构图/剪辑/叙事/风格） | `cinematique-shot-techniques-beta` | 单主技术约束、[Subject] 绑定、来源 vvsvs.pro/cinematique |
 | 穿搭拼贴首帧 + 卡点换装 | `outfit-collage-transition-director` | 图为视频母图、机制库、五节输出协议 |
 
 ## 食谱 A：新实例（最常用）

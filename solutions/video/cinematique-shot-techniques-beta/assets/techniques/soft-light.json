@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "soft-light",
+ "name": "Soft Light",
+ "category": "Lighting",
+ "difficulty": "Basic",
+ "moods": [
+  "Romantic"
+ ],
+ "has_video": false,
+ "summary": "Diffused light from a large source that wraps around the subject, creating gentle shadow transitions that are flattering for skin and create a dreamy or intimate quality. Sven Nykvist, Ingmar Bergman's cinematographer, was legendary for his soft, natural light in films like \"Cries and Whispers\" and \"Fanny and Alexander,\" often bouncing light off white walls and ceilings. Emmanuel Lubezki creates ethereal soft light in Terrence Malick's \"The Tree of Life\" using large diffusion frames and natural overcast skies. Robert Richardson's soft light work in \"The Aviator\" recreated the luminous quality of Golden Age Hollywood glamour photography.",
+ "prompt_template": "Soft diffused light wrapping around [Subject] with barely perceptible shadow transitions, a massive window or diffusion source bending light gently around face and shoulders, skin rendered with luminous porcelain quality, shot on Cooke S7 lenses known for gentle rendering and subtle halation on highlights, Fujifilm Eterna color science with delicate pastel tonality, the Vermeer-like quality of undirected daylight",
+ "when_to_use": "Choose soft light when faces and materials need gentle modeling, intimacy, romance, or natural overcast calm. A large source wraps around features and creates gradual shadow transitions that are flattering without removing all shape. It suits close portraits, domestic scenes, beauty, and reflective drama. Soft does not mean flat: retain direction and controlled contrast so the subject remains dimensional and the source feels located.",
+ "directing_the_ai": "Describe a very large window, bounced source, or diffusion frame close to the subject, placed slightly to one side. Ask for light that wraps around cheeks and shoulders with broad highlights and barely perceptible shadow edges. Keep skin luminous, pastel color delicate, and highlight halation subtle. Use negative fill on the far side if more shape is needed. Avoid hard rim lines and tiny catchlights that would contradict the broad source's apparent size.",
+ "common_mistakes": [
+  "Filling both sides equally until the face loses direction, volume, and any sense of a located source.",
+  "Adding crisp nose or jaw shadows that contradict the requested broad diffusion and gentle transitions.",
+  "Smoothing texture into plastic skin, mistaking soft illumination for aggressive cosmetic post-processing."
+ ],
+ "insight": "A genre is a container, not a look. What makes a style yours is the palette, the materials and the light behaving the same way every time.",
+ "related": [
+  {
+   "id": "hard-light",
+   "name": "Hard Light"
+  },
+  {
+   "id": "bounce-light",
+   "name": "Bounce Light"
+  },
+  {
+   "id": "high-key-lighting",
+   "name": "High-Key Lighting"
+  },
+  {
+   "id": "three-point-lighting",
+   "name": "Three-Point Lighting"
+  },
+  {
+   "id": "key-light",
+   "name": "Key Light"
+  },
+  {
+   "id": "low-key-lighting",
+   "name": "Low-Key Lighting"
+  },
+  {
+   "id": "chiaroscuro",
+   "name": "Chiaroscuro"
+  },
+  {
+   "id": "rembrandt-lighting",
+   "name": "Rembrandt Lighting"
+  },
+  {
+   "id": "silhouette",
+   "name": "Silhouette"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/soft-light"
+ }
+}

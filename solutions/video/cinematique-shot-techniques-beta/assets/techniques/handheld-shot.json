@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "handheld-shot",
+ "name": "Handheld Shot",
+ "category": "Camera Work",
+ "difficulty": "Basic",
+ "moods": [
+  "Documentary"
+ ],
+ "has_video": false,
+ "summary": "Camera held by the operator without stabilization, resulting in natural shake and movement that creates raw immediacy, documentary realism, or frantic energy depending on context. John Cassavetes pioneered the emotional handheld style in \"A Woman Under the Influence,\" where the camera's restlessness mirrors Gena Rowlands' unraveling psyche. Paul Greengrass brought visceral handheld energy to mainstream cinema with the \"Bourne\" trilogy, while the Dardenne brothers and Lars von Trier's Dogme 95 movement made handheld a philosophical commitment to unvarnished truth.",
+ "prompt_template": "Handheld camera following [Subject], natural shake and breathing motion in the frame, motion blur on fast-moving elements, the gritty texture of Super 16mm film pushed two stops in processing, desaturated color with blown-out highlights, the raw unfiltered energy of being inside the moment rather than observing it",
+ "when_to_use": "Reach for handheld movement when the camera must feel physically present inside an unstable moment. It can follow a character through conflict, capture documentary spontaneity, mirror panic, or make polished spaces feel exposed. The shake should reflect operator behavior and subject movement, not random vibration. Avoid it when spatial clarity, ceremonial scale, or controlled stillness matters more than raw proximity.",
+ "directing_the_ai": "Describe a shoulder-held operator following close behind or beside the subject, with subtle breathing drift, imperfect reframing, and heavier jolts only during sudden movement. Allow motion blur on fast gestures and occasional clipped highlights, supported by gritty Super 16 texture and restrained color. Keep the subject recoverable after each shake. For a still image, imply handheld capture through slight motion smear and off-center timing rather than uniformly blurring the entire frame.",
+ "common_mistakes": [
+  "Requesting constant violent shake, which feels synthetic and makes the subject impossible to track through the scene.",
+  "Combining handheld language with perfectly centered, mechanically smooth framing that cancels the intended operator presence.",
+  "Applying equal blur to every surface instead of tying motion artifacts to camera and subject movement."
+ ],
+ "insight": "Framing is grammar. Distance, angle and lens each carry a fixed emotional consequence before a single texture is described.",
+ "related": [
+  {
+   "id": "found-footage",
+   "name": "Found Footage"
+  },
+  {
+   "id": "cinema-verite",
+   "name": "Cinéma Vérité"
+  },
+  {
+   "id": "steadicam",
+   "name": "Steadicam"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/handheld-shot"
+ }
+}

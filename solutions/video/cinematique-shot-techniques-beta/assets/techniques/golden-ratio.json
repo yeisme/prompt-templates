@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "golden-ratio",
+ "name": "Golden Ratio",
+ "category": "Composition",
+ "difficulty": "Advanced",
+ "moods": [
+  "Artistic"
+ ],
+ "has_video": false,
+ "summary": "Composing using the mathematical golden spiral (1.618:1) to place key elements along a naturally occurring logarithmic curve, creating compositions that feel organically harmonious. While debate exists about whether filmmakers consciously employ the golden ratio, analysis of work by Akira Kurosawa, Kubrick, and Spielberg reveals compositions that consistently align with the spiral. Vittorio Storaro has explicitly discussed using the golden ratio in his compositions for \"Apocalypse Now\" and \"The Last Emperor.\" Renaissance painters from Leonardo to Vermeer used the proportion extensively, and its presence in cinema connects film composition to centuries of visual art tradition.",
+ "prompt_template": "Golden ratio spiral composition with [Subject] placed along the logarithmic curve, every major element sitting naturally along the mathematical spiral, the proportional harmony creating organic rightness that the eye follows without conscious awareness, shot on a 24mm wide-angle lens, the mathematical beauty that connects Fibonacci sequences to Renaissance painting to cinematic composition",
+ "when_to_use": "Use the golden ratio when a composition needs organic flow rather than the visible grid of thirds or the formality of symmetry. It suits landscapes, portraits in complex environments, still life, and layered action with a curved visual path. The spiral can connect a broad outer shape to a tight focal point. Treat it as a planning guide, not mystical proof of quality; subject hierarchy and readable staging still matter more than mathematical display.",
+ "directing_the_ai": "Lay a logarithmic spiral across the frame and place the main subject near its tightest curl. Arrange larger environmental forms, secondary figures, or lines along the expanding arc so the eye travels inward naturally. Avoid drawing a literal spiral into the set unless the story requires one. Keep the focal point strongest through contrast and detail. For video, let camera or subject movement follow the curved path while preserving the final visual landing point.",
+ "common_mistakes": [
+  "Forcing every prop onto a visible spiral, making the composition feel diagrammed instead of naturally organized around attention.",
+  "Using the golden ratio as a substitute for contrast, depth, and subject hierarchy, leaving the focal point weak.",
+  "Confusing the technique with centered symmetry, which removes the expanding curved path that should guide the viewer."
+ ],
+ "insight": "This is the fundamental that explains why some worlds feel infinitely deep and others feel exhausted after five images.",
+ "related": [
+  {
+   "id": "rule-of-thirds",
+   "name": "Rule of Thirds"
+  },
+  {
+   "id": "leading-lines",
+   "name": "Leading Lines"
+  },
+  {
+   "id": "balancing-elements",
+   "name": "Balancing Elements"
+  },
+  {
+   "id": "symmetry",
+   "name": "Symmetry"
+  },
+  {
+   "id": "framing-within-frame",
+   "name": "Framing Within Frame"
+  },
+  {
+   "id": "negative-space",
+   "name": "Negative Space"
+  },
+  {
+   "id": "shallow-focus",
+   "name": "Shallow Focus"
+  },
+  {
+   "id": "deep-focus",
+   "name": "Deep Focus"
+  },
+  {
+   "id": "mise-en-scene",
+   "name": "Mise-en-Scène"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/golden-ratio"
+ }
+}

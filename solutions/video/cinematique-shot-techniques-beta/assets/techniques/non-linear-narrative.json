@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "non-linear-narrative",
+ "name": "Non-Linear Narrative",
+ "category": "Storytelling",
+ "difficulty": "Advanced",
+ "moods": [
+  "Artistic"
+ ],
+ "has_video": false,
+ "summary": "A story told out of chronological order — rearranging time to create mystery, thematic resonance, or a puzzle the audience assembles. Quentin Tarantino's \"Pulp Fiction\" made non-linear narrative a mainstream phenomenon, while Christopher Nolan's \"Memento\" pushed it to its logical extreme by running the entire film in reverse. Alejandro González Iñárritu's \"21 Grams\" fragments three timelines into a mosaic, and Denis Villeneuve's \"Arrival\" uses non-linear structure to redefine the audience's understanding of time itself. Gaspar Noé's \"Irréversible\" tells its story in reverse chronological order, making its final scene of peaceful joy the most devastating in the film.",
+ "prompt_template": "Non-linear narrative visualized with [Subject] existing simultaneously at different moments, each temporal fragment in its own distinct visual world with unique color science, the puzzle-like structure of Nolan and Tarantino made visual, the non-linear principle that chronology is a creative choice rather than an obligation",
+ "when_to_use": "Use a non-linear narrative when reordered time creates mystery, emotional contrast, or thematic resonance that chronology cannot provide. Place consequences before causes, revisit one event from different periods, or interleave temporal fragments that change one another’s meaning. Every jump should contribute evidence. The structure demands strong anchors such as age, wardrobe, location, color, or repeated composition so the viewer can assemble the timeline without constant labels.",
+ "directing_the_ai": "Define each time period with a distinct but related palette, lighting condition, costume state, and environmental detail. Repeat one subject or composition across periods to expose change. Arrange fragments around dramatic meaning rather than random chronology: consequence, cause, contradiction, revelation. Keep screen direction and identity consistent within each period. When moments overlap, show a clear visual bridge. The final sequence should reward reconstruction, with each temporal fragment altering how another fragment is read.",
+ "common_mistakes": [
+  "Reordering scenes arbitrarily without creating mystery, contrast, or a new relationship between cause and consequence.",
+  "Giving every period identical styling, forcing viewers to guess when events occur from dialogue alone.",
+  "Overloading each fragment with clues, making the structure feel like a puzzle interface instead of lived drama."
+ ],
+ "insight": "A still cannot tell a story, but it can prove one happened. Before, during and after are the three states every frame sits in.",
+ "related": [
+  {
+   "id": "flashback",
+   "name": "Flashback"
+  },
+  {
+   "id": "flashforward",
+   "name": "Flashforward"
+  },
+  {
+   "id": "parallel-storylines",
+   "name": "Parallel Storylines"
+  },
+  {
+   "id": "foreshadowing",
+   "name": "Foreshadowing"
+  },
+  {
+   "id": "breaking-fourth-wall",
+   "name": "Breaking the Fourth Wall"
+  },
+  {
+   "id": "in-medias-res",
+   "name": "In Medias Res"
+  },
+  {
+   "id": "cliffhanger",
+   "name": "Cliffhanger"
+  },
+  {
+   "id": "frame-narrative",
+   "name": "Frame Narrative"
+  },
+  {
+   "id": "voiceover-narration",
+   "name": "Voiceover Narration"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/non-linear-narrative"
+ }
+}

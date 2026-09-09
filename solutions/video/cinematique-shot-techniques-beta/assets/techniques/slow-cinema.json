@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "slow-cinema",
+ "name": "Slow Cinema",
+ "category": "Genres & Styles",
+ "difficulty": "Advanced",
+ "moods": [
+  "Artistic"
+ ],
+ "has_video": false,
+ "summary": "A contemporary movement embracing extremely long takes, minimal dialogue, and patient observation that challenges the viewer to slow down, observe, and find meaning in duration itself. Andrei Tarkovsky is the spiritual father of slow cinema, with his meditative long takes in \"Stalker\" and \"Mirror\" establishing duration as a cinematic tool. Béla Tarr's \"Sátántangó\" (seven hours of long takes) and \"The Turin Horse\" are the movement's most extreme expressions. Apichatpong Weerasethakul's Palme d'Or-winning \"Uncle Boonmee Who Can Recall His Past Lives\" and Chantal Akerman's \"Jeanne Dielman\" represent slow cinema's philosophical commitment to the idea that cinema should not compress time but inhabit it.",
+ "prompt_template": "Slow cinema with [Subject] in a single unbroken composition, the camera absolutely still observing with infinite patience, the only movement gradual shifting of natural light, duration itself becoming the subject, natural overcast daylight providing soft even illumination, the Tarkovsky-Bela Tarr discipline of trusting that observation is enough, that the passage of real time is cinema's most radical subject",
+ "when_to_use": "Use slow cinema when duration itself reveals behavior, labor, landscape, grief, routine, or waiting. A long unbroken view can make tiny changes matter because the audience has time to notice them. It suits contemplative stories and actions normally compressed by editing. Choose a frame with evolving light, weather, posture, or background life; stillness should contain attention, not simply withhold events.",
+ "directing_the_ai": "Lock the camera in one carefully balanced composition and observe the subject through a complete action or interval without cutting. Keep dialogue sparse and movement gradual. Let natural overcast light shift, a distant figure cross, steam disappear, or posture change over real time. Avoid push-ins, coverage, and music cues that instruct emotion. Preserve ambient sound and depth. The frame must remain visually exact enough that small changes become legible rewards for patience.",
+ "common_mistakes": [
+  "Holding an empty composition with no evolving light, behavior, sound, or environmental detail to observe.",
+  "Adding frequent reframing or coverage cuts, which removes the sustained duration defining the approach.",
+  "Using slow pacing as automatic seriousness without giving the audience specific visual activity worth attending to."
+ ],
+ "insight": "Pacing is the control of when the audience learns things. Speed is a decision about revelation, never about energy.",
+ "related": [
+  {
+   "id": "long-take",
+   "name": "Long Take"
+  },
+  {
+   "id": "static-shot",
+   "name": "Static Shot"
+  },
+  {
+   "id": "italian-neorealism",
+   "name": "Italian Neorealism"
+  },
+  {
+   "id": "film-noir",
+   "name": "Film Noir"
+  },
+  {
+   "id": "german-expressionism",
+   "name": "German Expressionism"
+  },
+  {
+   "id": "cinema-verite",
+   "name": "Cinéma Vérité"
+  },
+  {
+   "id": "french-new-wave",
+   "name": "French New Wave"
+  },
+  {
+   "id": "surrealism",
+   "name": "Surrealism"
+  },
+  {
+   "id": "found-footage",
+   "name": "Found Footage"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/slow-cinema"
+ }
+}

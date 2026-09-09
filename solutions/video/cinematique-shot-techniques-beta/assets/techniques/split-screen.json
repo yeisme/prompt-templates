@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "split-screen",
+ "name": "Split Screen",
+ "category": "Editing",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Dramatic"
+ ],
+ "has_video": false,
+ "summary": "The frame is divided into two or more sections, each showing a different angle, location, or timeline simultaneously, showing parallel action, phone conversations, or multiple perspectives at once. Brian De Palma made split screen his signature, using it in \"Carrie,\" \"Dressed to Kill,\" and \"Snake Eyes\" to create impossible simultaneity. Ang Lee used complex multi-panel split screens in \"Hulk\" to emulate comic book layouts. Denis Villeneuve employed split screen in \"Enemy\" to visualize duality, and the technique has experienced a revival in television through shows like \"24\" where real-time parallel action demanded simultaneous visual presentation.",
+ "prompt_template": "Split screen dividing the frame with [Subject] visible in both halves simultaneously, one side warm-toned and the other cool-toned, the vertical divide becoming the physical and emotional distance, the De Palma technique of making the audience omniscient observers of parallel realities occupying the same frame",
+ "when_to_use": "Split screen is effective when the audience needs simultaneous access to separate locations, angles, timelines, or perspectives. Use it for phone calls, parallel action, surveillance, comparison, duality, or events whose timing matters more than spatial unity. Each panel needs a clear function and compatible visual hierarchy. The method becomes exhausting when every panel contains equal motion and detail, so decide where attention should move from moment to moment.",
+ "directing_the_ai": "Divide the canvas into two or more clean panels with explicit proportions and boundaries. Assign each panel a location, palette, camera angle, and action, then synchronize moments that should connect across the divide. Keep identities and environments stable within their own sections. Control attention by varying motion, contrast, or duration so only one panel dominates at a time. Prevent limbs, faces, and objects from bleeding across boundaries unless a deliberate transition unites the spaces.",
+ "common_mistakes": [
+  "Filling every panel with equally intense movement, forcing the viewer to miss essential actions happening at the same time.",
+  "Changing panel sizes and borders without narrative purpose, making the layout feel unstable rather than intentionally dynamic.",
+  "Allowing character features or backgrounds to drift between panels, weakening the distinction between separate locations or perspectives."
+ ],
+ "insight": "Generation is cheap and curation is expensive. A world is built as much by what you delete as by what you make.",
+ "related": [
+  {
+   "id": "cross-cutting",
+   "name": "Cross-Cutting"
+  },
+  {
+   "id": "parallel-storylines",
+   "name": "Parallel Storylines"
+  },
+  {
+   "id": "two-shot",
+   "name": "Two-Shot"
+  },
+  {
+   "id": "jump-cut",
+   "name": "Jump Cut"
+  },
+  {
+   "id": "dissolve",
+   "name": "Dissolve"
+  },
+  {
+   "id": "fade-in-out",
+   "name": "Fade In/Out"
+  },
+  {
+   "id": "montage",
+   "name": "Montage"
+  },
+  {
+   "id": "smash-cut",
+   "name": "Smash Cut"
+  },
+  {
+   "id": "long-take",
+   "name": "Long Take"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/split-screen"
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "repetition-and-pattern",
+ "name": "Repetition and Pattern",
+ "category": "Composition",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Artistic"
+ ],
+ "has_video": false,
+ "summary": "Using recurring visual elements — shapes, colors, objects — to create rhythm and unity in the frame, where breaking a pattern draws immediate attention to the disruption. Kubrick's symmetrical corridors in \"The Shining\" use pattern repetition to create hypnotic unease, and any break in the pattern (the twins at the end of a hallway) becomes terrifying. Wes Anderson builds frames from repeated elements — rows of identical doors, matching uniforms, symmetrical windows. Zhang Yimou uses massive pattern compositions of soldiers, lanterns, and fabric in \"Hero\" and \"House of Flying Daggers\" where a single disruption in the array carries narrative weight.",
+ "prompt_template": "Repetition and pattern composition with [Subject] as the single disruption in an otherwise uniform array, hundreds of repeated elements creating mesmerizing regularity with one anomaly immediately drawing the eye, the visual principle that the human eye is hardwired to detect anomalies in regular patterns, shot on a 50mm lens at f/4 with the full pattern sharp edge to edge, warm ambient lighting",
+ "when_to_use": "Repetition and pattern works when order, scale, routine, conformity, or obsession should dominate the frame. Rows of windows, uniforms, doors, lights, or bodies create rhythm that the eye reads quickly. One anomaly then gains immediate narrative force. Use the technique for architecture, crowds, ritual, comedy, or unease. The repeated units need consistent shape and spacing; if variation is already everywhere, the intended disruption cannot separate itself from ordinary noise.",
+ "directing_the_ai": "Build a clear array of recurring shapes, colors, objects, or figures with consistent spacing and orientation. Choose one subject as the only meaningful break through color, pose, absence, or direction. Keep the full pattern readable across the frame and give the anomaly enough contrast to register without becoming unrelated. For video, establish the regular rhythm before introducing disruption, then preserve continuity in the repeated units as the camera moves through or across them.",
+ "common_mistakes": [
+  "Varying color, size, and spacing across every repeated unit, leaving no stable pattern for the audience to recognize.",
+  "Introducing several anomalies at once, which divides attention and weakens the narrative force of the intended disruption.",
+  "Cropping the array so tightly that repetition cannot accumulate into rhythm or communicate a larger ordered system."
+ ],
+ "insight": "This is the fundamental that explains why some worlds feel infinitely deep and others feel exhausted after five images.",
+ "related": [
+  {
+   "id": "symmetry",
+   "name": "Symmetry"
+  },
+  {
+   "id": "motif",
+   "name": "Motif"
+  },
+  {
+   "id": "leading-lines",
+   "name": "Leading Lines"
+  },
+  {
+   "id": "rule-of-thirds",
+   "name": "Rule of Thirds"
+  },
+  {
+   "id": "framing-within-frame",
+   "name": "Framing Within Frame"
+  },
+  {
+   "id": "negative-space",
+   "name": "Negative Space"
+  },
+  {
+   "id": "shallow-focus",
+   "name": "Shallow Focus"
+  },
+  {
+   "id": "deep-focus",
+   "name": "Deep Focus"
+  },
+  {
+   "id": "mise-en-scene",
+   "name": "Mise-en-Scène"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/repetition-and-pattern"
+ }
+}

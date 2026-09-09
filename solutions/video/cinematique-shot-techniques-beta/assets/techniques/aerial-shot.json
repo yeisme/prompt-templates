@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "aerial-shot",
+ "name": "Aerial Shot",
+ "category": "Camera Work",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "A shot captured from high above the ground, typically using a drone or helicopter, providing a sweeping view of landscapes, cityscapes, or large-scale action. The aerial perspective conveys omniscience, freedom, or the terrifying scale of nature. David Lean pioneered epic aerial work in \"Lawrence of Arabia,\" while Ridley Scott used helicopter shots to establish the grandeur of ancient Rome in \"Gladiator.\" More recently, Denis Villeneuve employed haunting aerial compositions in \"Sicario\" to reveal the eerie geometry of border landscapes.",
+ "prompt_template": "Sweeping aerial shot of [Subject] seen from 300 feet above, captured at golden hour with warm amber light painting one side of the terrain while the other falls into deep violet shadow, volumetric god rays piercing through scattered cumulus clouds, shot on ARRI Alexa 65 with Hasselblad glass, 8K resolution, Kodak Vision3 250D color science, subtle atmospheric haze layering depth into the landscape",
+ "when_to_use": "Choose an aerial shot when geography matters as much as the subject. It can introduce a city, expose the geometry of a border or road network, track large-scale action, or reduce a person to a vulnerable mark inside the landscape. The height creates emotional distance, so use it for omniscience, freedom, grandeur, or environmental threat rather than intimate character beats.",
+ "directing_the_ai": "Place the camera roughly 300 feet above the subject and describe a broad downward view rather than a straight top-down angle. Keep a recognizable focal point inside the terrain, then build depth with foreground landforms, distant layers, atmospheric haze, and scattered clouds. Let warm golden-hour light strike one side of the landscape while deep violet shadow holds the other. For motion, specify a slow, stable glide that preserves scale and horizon orientation.",
+ "common_mistakes": [
+  "Setting the camera high without defining its angle, leaving the result confused between an aerial view and an overhead diagram.",
+  "Filling every part of the landscape with equal detail, so the subject disappears without a deliberate scale relationship.",
+  "Requesting fast drone movement when the scene needs grandeur, which turns a measured reveal into restless travel footage."
+ ],
+ "insight": "Scale is not a measurement. It is a relationship, and relationships produce feelings.",
+ "related": [
+  {
+   "id": "extreme-long-shot",
+   "name": "Extreme Long Shot"
+  },
+  {
+   "id": "crane-shot",
+   "name": "Crane Shot"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "extreme-close-up",
+   "name": "Extreme Close-Up"
+  },
+  {
+   "id": "eye-level-shot",
+   "name": "Eye-Level Shot"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/aerial-shot"
+ }
+}

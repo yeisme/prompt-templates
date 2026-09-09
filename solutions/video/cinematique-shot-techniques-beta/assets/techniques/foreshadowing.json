@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "foreshadowing",
+ "name": "Foreshadowing",
+ "category": "Storytelling",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Dramatic"
+ ],
+ "has_video": false,
+ "summary": "Planting subtle hints of events to come — a cracked mirror, a line of dialogue, a color choice — details that seem innocuous on first viewing but become devastating on rewatch. Stanley Kubrick embedded foreshadowing details so densely in \"The Shining\" that the documentary \"Room 237\" is dedicated entirely to analyzing them. M. Night Shyamalan structures \"The Sixth Sense\" so that every scene contains foreshadowing of the twist ending. The Coen Brothers plant narrative seeds early — the wood chipper glimpsed in the first act of \"Fargo\" becomes the instrument of horror in the third. Denis Villeneuve's \"Arrival\" hides its entire twist in plain sight through carefully constructed visual foreshadowing.",
+ "prompt_template": "Foreshadowing detail hiding in plain sight around [Subject], a seemingly ordinary detail barely visible that the viewer will only recognize as prophetic on a second viewing, every element appearing innocent on first viewing but loaded with ominous meaning in retrospect, warm amber domestic lighting that makes the scene feel safe even as visual clues whisper that safety is temporary",
+ "when_to_use": "Use foreshadowing when a later reveal should feel earned rather than arbitrary. Plant a prop, shape, color, gesture, or line whose first meaning is ordinary and whose second meaning appears only after the outcome. It is ideal for mystery, tragedy, twists, and mounting dread. The clue must be visible enough to register unconsciously, yet integrated naturally enough that first-time viewers do not stop the story to decode it.",
+ "directing_the_ai": "Compose a safe, ordinary scene around the main subject, then place one consequential detail near the edge of attention. Match its scale, light, and material to the environment so it belongs there. Avoid isolating it with a spotlight or explicit close-up. Repeat its shape, color, or position later if the pattern matters. On rewatch, the clue should look deliberate; on first viewing, it should remain plausible background information rather than a warning label.",
+ "common_mistakes": [
+  "Centering and spotlighting the clue so aggressively that the future reveal becomes obvious on first viewing.",
+  "Planting a detail with no later payoff, teaching the audience to distrust the story’s visual information.",
+  "Using an unrelated ominous object instead of a clue that connects specifically to the eventual event."
+ ],
+ "insight": "A still cannot tell a story, but it can prove one happened. Before, during and after are the three states every frame sits in.",
+ "related": [
+  {
+   "id": "motif",
+   "name": "Motif"
+  },
+  {
+   "id": "symbolism",
+   "name": "Symbolism"
+  },
+  {
+   "id": "flashforward",
+   "name": "Flashforward"
+  },
+  {
+   "id": "flashback",
+   "name": "Flashback"
+  },
+  {
+   "id": "breaking-fourth-wall",
+   "name": "Breaking the Fourth Wall"
+  },
+  {
+   "id": "in-medias-res",
+   "name": "In Medias Res"
+  },
+  {
+   "id": "cliffhanger",
+   "name": "Cliffhanger"
+  },
+  {
+   "id": "non-linear-narrative",
+   "name": "Non-Linear Narrative"
+  },
+  {
+   "id": "parallel-storylines",
+   "name": "Parallel Storylines"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/foreshadowing"
+ }
+}

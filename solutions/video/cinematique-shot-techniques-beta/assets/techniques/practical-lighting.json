@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "practical-lighting",
+ "name": "Practical Lighting",
+ "category": "Lighting",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "Using visible light sources within the scene — lamps, candles, neon signs, TV screens — as the actual illumination, creating naturalistic, motivated lighting with rich atmosphere. Stanley Kubrick famously lit \"Barry Lyndon\" using only candles and natural window light, requiring specially modified NASA lenses. Wong Kar-wai and Christopher Doyle use neon signs and fluorescent tubes as practical sources in \"Chungking Express\" and \"In the Mood for Love,\" turning Hong Kong's light pollution into visual poetry. Roger Deakins uses practicals masterfully in \"Blade Runner 2049,\" letting in-scene holographic advertisements and industrial lights do the work of sculpting the frame.",
+ "prompt_template": "Practical lighting on [Subject] illuminated only by visible sources within the frame, each practical creating its own color world, the interplay of multiple color temperatures producing a rich layered chromatic atmosphere, no hidden movie lights, shot wide open at T1.3 on a Zeiss Super Speed to drink in every photon, the visual language of Christopher Doyle",
+ "when_to_use": "Choose practical lighting when the sources should belong visibly to the world of the scene. Lamps, candles, televisions, fluorescent tubes, and neon signs can motivate color, direction, and atmosphere while making an interior feel lived-in. It works for naturalism and stylization alike. The visible fixtures must actually affect nearby surfaces; decorative bulbs that cast no corresponding light break the illusion immediately.",
+ "directing_the_ai": "Name every visible source and assign it a local pool of illumination, color temperature, falloff, and affected surfaces. A warm lamp can shape one face while a cool television colors the shadow side and distant neon adds another layer. Keep brightness physically plausible and let areas between sources remain darker. Use a fast-lens look to retain low-light texture. For video, preserve each fixture's position and chromatic influence as characters move through the room.",
+ "common_mistakes": [
+  "Showing visible lamps that cast no matching light or shadow, making them look like decorative props.",
+  "Giving every practical equal brightness and reach, flattening the layered pools that create believable atmosphere.",
+  "Adding an unexplained frontal beauty light that contradicts the claim that visible in-scene sources provide illumination."
+ ],
+ "insight": "Atmosphere is the physical condition of the air, the light and the weather at the moment the image exists. It is what decides how far you can see, and therefore how large the world is.",
+ "related": [
+  {
+   "id": "motivated-lighting",
+   "name": "Motivated Lighting"
+  },
+  {
+   "id": "available-light",
+   "name": "Available Light"
+  },
+  {
+   "id": "color-temperature",
+   "name": "Color Temperature"
+  },
+  {
+   "id": "three-point-lighting",
+   "name": "Three-Point Lighting"
+  },
+  {
+   "id": "key-light",
+   "name": "Key Light"
+  },
+  {
+   "id": "high-key-lighting",
+   "name": "High-Key Lighting"
+  },
+  {
+   "id": "low-key-lighting",
+   "name": "Low-Key Lighting"
+  },
+  {
+   "id": "chiaroscuro",
+   "name": "Chiaroscuro"
+  },
+  {
+   "id": "rembrandt-lighting",
+   "name": "Rembrandt Lighting"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/practical-lighting"
+ }
+}

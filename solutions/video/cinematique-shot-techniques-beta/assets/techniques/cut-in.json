@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "cut-in",
+ "name": "Cut-In",
+ "category": "Editing",
+ "difficulty": "Basic",
+ "moods": [
+  "Dramatic"
+ ],
+ "has_video": false,
+ "summary": "A cut to a closer shot of something already visible in the wider frame — zooming in on hands, a prop, or a facial detail — focusing attention on a specific element within the scene. Sergio Leone's films are built on the rhythm of wide shots cutting in to extreme close-ups of eyes and gun hands. Quentin Tarantino uses stylized cut-ins to food, drinks, and bare feet as signature moments. David Fincher cuts in to hands and screens and text messages with forensic precision in \"The Social Network\" and \"Gone Girl.\" The cut-in is the editor's way of saying \"look at this\" — directing attention from the general to the specific.",
+ "prompt_template": "Cut-in to a tight close-up of [Subject] revealing a telling detail, shot on a 100mm macro lens at T2, the directorial decision to abandon the wider view and find the truth hiding in a specific detail",
+ "when_to_use": "Use a cut-in when an element already present in the master view deserves sudden emphasis. Hands tightening around a glass, a hidden message on a screen, or a flicker in someone’s eye can redirect the scene without changing location. It works best when the audience first understands the wider geography, then needs one precise fact, gesture, or object to read the moment correctly.",
+ "directing_the_ai": "Compose a clear wider view where the detail is visible, then cut to a much tighter angle on that same element. Preserve hand position, object orientation, wardrobe, light direction, and screen direction across the edit. Use shallow depth of field and exact focus to make the detail dominant. Time the cut at the instant the information becomes consequential. Return wide only after the close view has changed the audience’s understanding of the action.",
+ "common_mistakes": [
+  "Introducing a detail that was absent from the wider shot, breaking continuity and visual credibility.",
+  "Using nearly identical framing for both shots, so the editorial emphasis feels weak and indecisive.",
+  "Cutting closer without a narrative reason, turning a precise attention cue into empty visual punctuation."
+ ],
+ "insight": "Generation is cheap and curation is expensive. A world is built as much by what you delete as by what you make.",
+ "related": [
+  {
+   "id": "insert-shot",
+   "name": "Insert Shot"
+  },
+  {
+   "id": "extreme-close-up",
+   "name": "Extreme Close-Up"
+  },
+  {
+   "id": "rack-focus",
+   "name": "Rack Focus"
+  },
+  {
+   "id": "cross-cutting",
+   "name": "Cross-Cutting"
+  },
+  {
+   "id": "jump-cut",
+   "name": "Jump Cut"
+  },
+  {
+   "id": "dissolve",
+   "name": "Dissolve"
+  },
+  {
+   "id": "fade-in-out",
+   "name": "Fade In/Out"
+  },
+  {
+   "id": "montage",
+   "name": "Montage"
+  },
+  {
+   "id": "smash-cut",
+   "name": "Smash Cut"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/cut-in"
+ }
+}

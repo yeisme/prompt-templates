@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "eye-level-shot",
+ "name": "Eye-Level Shot",
+ "category": "Camera Work",
+ "difficulty": "Basic",
+ "moods": [
+  "Documentary"
+ ],
+ "has_video": false,
+ "summary": "A neutral shot taken at the subject's eye height, the most natural and common camera angle, creating a sense of equality and objectivity between viewer and subject. Yasujiro Ozu famously placed his camera at a low eye-level (the \"tatami shot\") in films like \"Tokyo Story,\" creating an intimate, respectful perspective that defined Japanese domestic cinema. The Dardenne brothers use persistent eye-level handheld work in \"Rosetta\" and \"The Child\" to maintain unflinching equality with their working-class subjects, never looking down on or up at them.",
+ "prompt_template": "Eye-level shot of [Subject] with the camera positioned exactly at their eye height creating a direct and equal relationship with the viewer, natural available light providing gentle directional illumination, no dramatic angles or manipulation, shot on 16mm film stock with gentle grain, naturalistic color palette, intimate documentary stillness",
+ "when_to_use": "Choose eye level when the camera should meet a person without glorifying, diminishing, or judging them. It is the dependable angle for interviews, domestic scenes, observational drama, and direct exchanges where performance matters more than visual manipulation. Because it feels normal, it can also make unusual behavior more disturbing. Use another angle only when power, vulnerability, or spatial overview needs stronger emphasis.",
+ "directing_the_ai": "Position the lens exactly at the subject's eye height and keep verticals neutral. Frame the person with a natural conversational distance, available directional light, gentle 16mm-style grain, and an unforced color palette. Avoid heroic upward lines or downward compression. Let posture, gaze, and small facial shifts carry the frame. In video, use minimal handheld breathing or a locked camera rather than conspicuous movement, preserving the equal relationship between viewer and subject.",
+ "common_mistakes": [
+  "Placing the camera at chest or forehead height while calling it eye level, subtly changing the power relationship.",
+  "Adding dramatic lens distortion or canted framing that contradicts the angle's neutral, observational purpose.",
+  "Treating neutrality as visual emptiness instead of using gaze, posture, and available light to hold attention."
+ ],
+ "insight": "Internal logic is the set of laws that hold in your world whether or not anyone explains them. A shot that breaks them reads as a mistake even when it is beautiful.",
+ "related": [
+  {
+   "id": "medium-shot",
+   "name": "Medium Shot"
+  },
+  {
+   "id": "cinema-verite",
+   "name": "Cinéma Vérité"
+  },
+  {
+   "id": "available-light",
+   "name": "Available Light"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/eye-level-shot"
+ }
+}

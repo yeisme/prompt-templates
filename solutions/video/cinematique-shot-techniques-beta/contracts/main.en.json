@@ -1,0 +1,270 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "cinematique-shot-techniques-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/video/cinematique-shot-techniques-beta/prompts/main.en.md",
+  "template_digest": "sha256:efb203ef80aa727fc85fea0ae008f753d052b2025cc707f576c66364fb499035",
+  "digest": "sha256:b76f2564174f6ea1ae45191d9d661b6b9b635b035a78f59894041c730ccff388",
+  "license": "external-attribution (Cinematique by VVSVS free open tool built on grokfilm.app)",
+  "permissions": [
+    "execute_requires_review",
+    "inspect",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "extra_directives",
+      "type": "string",
+      "labels": {
+        "en": "Extra directives",
+        "zh-CN": "附加指令"
+      },
+      "descriptions": {
+        "en": "Optional per-shot delivery directives; adjusts parameters never stacks a second technique",
+        "zh-CN": "可选的逐镜头投递指令；只调参数，不得叠加第二条技术"
+      }
+    },
+    {
+      "name": "negative_prompts",
+      "type": "string",
+      "labels": {
+        "en": "Negative prompts",
+        "zh-CN": "负面提示词"
+      },
+      "descriptions": {
+        "en": "Optional override for the default negative list",
+        "zh-CN": "可选，覆盖默认负面清单"
+      }
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "required": true,
+      "min_length": 4,
+      "labels": {
+        "en": "Subject",
+        "zh-CN": "主体"
+      },
+      "descriptions": {
+        "en": "Concrete filmable character, object, or scene description replacing [Subject] in the library prompt",
+        "zh-CN": "替换库内提示词 [Subject] 的具体可拍主体描述"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "target",
+      "type": "enum",
+      "required": true,
+      "default": "video",
+      "enum": [
+        "image",
+        "video"
+      ],
+      "labels": {
+        "en": "Target surface",
+        "zh-CN": "投递面"
+      },
+      "descriptions": {
+        "en": "image keeps one still frame; video honors technique motion language",
+        "zh-CN": "image 为单帧静图；video 保留技术内运动语言"
+      }
+    },
+    {
+      "name": "technique_id",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "360-degree-shot",
+        "acid-western",
+        "aerial-shot",
+        "ambient-light",
+        "available-light",
+        "backlight",
+        "balancing-elements",
+        "birds-eye-view",
+        "blue-hour",
+        "bokeh",
+        "bounce-light",
+        "breaking-fourth-wall",
+        "broad-lighting",
+        "centered-composition",
+        "chiaroscuro",
+        "choker-shot",
+        "cinema-verite",
+        "cliffhanger",
+        "close-up",
+        "color-grading",
+        "color-temperature",
+        "contrast-composition",
+        "cosmic-horror",
+        "cowboy-shot",
+        "crane-shot",
+        "crash-zoom",
+        "cross-cutting",
+        "cross-lighting",
+        "cut-in",
+        "cutaway",
+        "dappled-light",
+        "deep-focus",
+        "depth-of-field",
+        "desaturation",
+        "diagonal-lines",
+        "dissolve",
+        "dogme-95",
+        "dolly-shot",
+        "dutch-angle",
+        "edge-light",
+        "establishing-shot",
+        "extreme-close-up",
+        "extreme-long-shot",
+        "eye-level-shot",
+        "eye-light",
+        "fade-in-out",
+        "fast-motion",
+        "figure-ground",
+        "fill-light",
+        "film-grain",
+        "film-noir",
+        "flashback",
+        "flashforward",
+        "forced-perspective",
+        "foreground-interest",
+        "foreshadowing",
+        "found-footage",
+        "frame-narrative",
+        "framing-within-frame",
+        "freeze-frame",
+        "french-new-wave",
+        "german-expressionism",
+        "giallo",
+        "gobo-lighting",
+        "golden-hour",
+        "golden-ratio",
+        "handheld-shot",
+        "hard-light",
+        "head-on-shot",
+        "headroom",
+        "high-angle-shot",
+        "high-key-lighting",
+        "hyperlink-cinema",
+        "in-medias-res",
+        "insert-shot",
+        "iris-transition",
+        "italian-neorealism",
+        "jump-cut",
+        "key-light",
+        "kicker-light",
+        "lead-room",
+        "leading-lines",
+        "lens-distortion",
+        "lens-flare",
+        "long-shot",
+        "long-take",
+        "low-angle-shot",
+        "low-key-lighting",
+        "master-shot",
+        "medium-close-up",
+        "medium-shot",
+        "mise-en-scene",
+        "mockumentary",
+        "montage",
+        "morphing",
+        "motif",
+        "motivated-lighting",
+        "mumblecore",
+        "negative-space",
+        "noir-tech",
+        "non-linear-narrative",
+        "one-er",
+        "over-the-shoulder",
+        "overhead-shot",
+        "pan-shot",
+        "parallel-storylines",
+        "poetic-realism",
+        "pov-shot",
+        "practical-lighting",
+        "pull-out",
+        "push-in",
+        "rack-focus",
+        "reaction-shot",
+        "rembrandt-lighting",
+        "repetition-and-pattern",
+        "reverse-motion",
+        "rule-of-thirds",
+        "sepia-tone",
+        "shallow-focus",
+        "short-lighting",
+        "side-lighting",
+        "silhouette",
+        "slow-cinema",
+        "slow-motion",
+        "smash-cut",
+        "soft-light",
+        "southern-gothic",
+        "spaghetti-western",
+        "split-screen",
+        "static-shot",
+        "steadicam",
+        "surrealism",
+        "symbolism",
+        "symmetry",
+        "three-point-lighting",
+        "three-shot",
+        "tilt-shot",
+        "time-lapse",
+        "tracking-shot",
+        "triangular-composition",
+        "two-shot",
+        "uplighting",
+        "vaporwave",
+        "vertigo-effect",
+        "visual-weight",
+        "voiceover-narration",
+        "whip-pan",
+        "wipe-transition",
+        "worms-eye-view",
+        "wuxia"
+      ],
+      "labels": {
+        "en": "Technique id",
+        "zh-CN": "技术 ID"
+      },
+      "descriptions": {
+        "en": "One of the 150 Cinematique technique ids; must exist in assets/index.json",
+        "zh-CN": "150 条 Cinematique 技术 ID 之一；必须存在于 assets/index.json"
+      }
+    },
+    {
+      "name": "technique_name",
+      "type": "string",
+      "required": true,
+      "min_length": 3,
+      "labels": {
+        "en": "Technique name",
+        "zh-CN": "技术名称"
+      },
+      "descriptions": {
+        "en": "Display name of the selected technique from its spec",
+        "zh-CN": "所选技术在 spec 中的显示名"
+      }
+    },
+    {
+      "name": "technique_prompt_bound",
+      "type": "string",
+      "required": true,
+      "min_length": 40,
+      "labels": {
+        "en": "Bound technique prompt",
+        "zh-CN": "绑定后技术提示词"
+      },
+      "descriptions": {
+        "en": "The spec prompt_template verbatim with [Subject] replaced by subject; no other edits",
+        "zh-CN": "spec 的 prompt_template 原文，仅把 [Subject] 替换为 subject；不得改动其他内容"
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

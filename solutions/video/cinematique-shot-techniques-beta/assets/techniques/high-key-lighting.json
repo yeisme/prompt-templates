@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "high-key-lighting",
+ "name": "High-Key Lighting",
+ "category": "Lighting",
+ "difficulty": "Basic",
+ "moods": [
+  "Romantic"
+ ],
+ "has_video": false,
+ "summary": "A bright, even lighting style with minimal shadows that creates an optimistic, clean, or ethereal atmosphere, common in comedies, commercials, and dream sequences. The classic Hollywood musical relied on high-key lighting — Vincente Minnelli's \"An American in Paris\" and \"The Band Wagon\" glow with uniform brightness. Kubrick used clinical high-key lighting in the space station sequences of \"2001\" to create sterile futurism, and Sofia Coppola bathes \"Marie Antoinette\" in high-key pastel light to capture the candy-colored excess of Versailles. The technique is also fundamental to the visual language of romantic comedies from Nora Ephron to Nancy Meyers.",
+ "prompt_template": "High-key lighting flooding [Subject] in bright even illumination with barely a shadow to be found, the overall exposure pushed a third of a stop hot to create an airy blown-out feeling, shot on Alexa at 1280 ISO with Cooke S7 glass for gentle halation around the highlights, the dreamy overlit aesthetic of warmth without shadows, optimism without darkness",
+ "when_to_use": "Choose high-key lighting for optimism, cleanliness, glamour, romantic ease, clinical futurism, or a dreamlike lack of darkness. It works in comedy, commercials, musicals, beauty work, and deliberately sterile interiors. The frame should remain shaped even with minimal shadow. Use low contrast intentionally; simply overexposing a normal setup will lose skin, fabric, and production detail rather than create luminous control.",
+ "directing_the_ai": "Surround the subject with broad, diffused illumination and keep the fill level close to the key so shadows remain pale and soft. Lift the overall exposure slightly while protecting facial and fabric highlights from clipping. Use light backgrounds, gentle halation, creamy skin, and restrained pastel color. Preserve subtle edge separation through small tonal differences rather than hard rims. For video, maintain stable brightness across movement so the subject does not fall into accidental contrast pockets.",
+ "common_mistakes": [
+  "Confusing high key with blown highlights, erasing skin texture and white surfaces instead of controlling contrast.",
+  "Removing every trace of direction, which makes the subject look flat rather than softly and evenly modeled.",
+  "Placing dark background elements behind the subject that contradict the intended bright, low-contrast visual field."
+ ],
+ "insight": "Tone is the hardest fundamental to get right, and the easiest to lose without noticing. One warm frame in a cold world undoes twenty.",
+ "related": [
+  {
+   "id": "soft-light",
+   "name": "Soft Light"
+  },
+  {
+   "id": "fill-light",
+   "name": "Fill Light"
+  },
+  {
+   "id": "broad-lighting",
+   "name": "Broad Lighting"
+  },
+  {
+   "id": "three-point-lighting",
+   "name": "Three-Point Lighting"
+  },
+  {
+   "id": "key-light",
+   "name": "Key Light"
+  },
+  {
+   "id": "low-key-lighting",
+   "name": "Low-Key Lighting"
+  },
+  {
+   "id": "chiaroscuro",
+   "name": "Chiaroscuro"
+  },
+  {
+   "id": "rembrandt-lighting",
+   "name": "Rembrandt Lighting"
+  },
+  {
+   "id": "silhouette",
+   "name": "Silhouette"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/high-key-lighting"
+ }
+}

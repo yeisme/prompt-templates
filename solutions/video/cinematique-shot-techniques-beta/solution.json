@@ -1,0 +1,55 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "cinematique-shot-techniques-beta",
+  "version": "1.0.0-beta.1",
+  "category": "video",
+  "tags": [
+    "artifact:shot_prompt",
+    "category:video",
+    "constraint:single_technique_per_shot",
+    "constraint:source_grounded",
+    "job:generate",
+    "job:shot_planning",
+    "modality:image",
+    "modality:text",
+    "modality:video",
+    "scenario:ai_drama",
+    "stage:director_plan",
+    "stage:shot_generation"
+  ],
+  "capabilities": [
+    "negative_prompt_governance",
+    "shot_technique_selection",
+    "subject_binding"
+  ],
+  "rights": "external-attributed",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Cinematique Shot Technique Prompts",
+      "summary": "Render one of 150 vendored cinematography techniques (camera, lighting, composition, editing, storytelling, FX, genre styles) into a bound shot prompt for AI image or video generation",
+      "usage": "Select a technique per shot during storyboard breakdown or shot generation, bind the library prompt to the subject, and deliver to image/video models; consumed by domain owners such as Scaena",
+      "aliases": [
+        "cinematique prompt library",
+        "film technique prompt"
+      ]
+    },
+    "zh-CN": {
+      "title": "Cinematique 镜头技术提示词库",
+      "summary": "把 150 条电影运镜/布光/构图/剪辑/叙事/特效/风格技术中的一条渲染为绑定主体的镜头提示词，直接投递图像或视频生成模型",
+      "usage": "分镜拆解或镜头生成阶段逐镜头选择技术、绑定主体后投递；Scaena 等领域 owner 通过 promptrepo 消费。来源 vvsvs.pro/cinematique（免费开放工具），保留署名",
+      "aliases": [
+        "运镜提示词",
+        "镜头技术库"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/video/cinematique-shot-techniques-beta/prompts/main.en.md"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "time-lapse",
+ "name": "Time-Lapse",
+ "category": "Editing",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "Capturing frames at intervals much slower than playback speed, compressing hours, days, or months into seconds to reveal processes invisible to normal perception — clouds racing, cities pulsing. Ron Fricke's \"Koyaanisqatsi\" (with Philip Glass's score) turned time-lapse into transcendent art, showing the rhythms of nature and civilization accelerated into hypnotic visual music. Terrence Malick uses time-lapse in \"The Tree of Life\" for cosmic creation sequences. David Fincher employed time-lapse in \"Fight Club\" and \"The Curious Case of Benjamin Button\" for both practical and poetic purposes. Modern nature documentaries by BBC and National Geographic have elevated time-lapse photography to a science.",
+ "prompt_template": "Time-lapse of [Subject] compressed from hours into seconds, light cycling through the full spectrum of the day, shadows rotating like sundial hands, the entire rhythm of existence compressed into a single visual breath, shot on a locked-off camera with an intervalometer, the Koyaanisqatsi revelation that accelerating time reveals patterns invisible to human perception",
+ "when_to_use": "Use time-lapse when the story needs to show a process whose scale exceeds ordinary screen time: daylight crossing a room, clouds building, streets filling, or a structure changing. It can bridge hours, mark labor, reveal systems, or turn gradual transformation into visual rhythm. The technique works when change is the subject; it feels empty when nothing meaningful evolves within the locked composition.",
+ "directing_the_ai": "Lock the camera and define a clear start state, end state, and visible process between them. Keep permanent architecture and horizon lines stable while clouds, shadows, traffic, people, or growth accelerate through frame. Describe light cycling across a believable path, with shadows rotating consistently rather than flickering randomly. Maintain one composition throughout. Compress duration aggressively, but preserve enough intermediate stages for the transformation to read as a continuous pattern rather than unrelated snapshots.",
+ "common_mistakes": [
+  "Moving the camera without purpose, which hides the gradual pattern that time compression is meant to reveal.",
+  "Accelerating every element equally, making solid buildings wobble or permanent objects mutate with passing time.",
+  "Providing no distinct beginning or ending state, so the sequence feels busy without communicating change."
+ ],
+ "insight": "Pacing is the control of when the audience learns things. Speed is a decision about revelation, never about energy.",
+ "related": [
+  {
+   "id": "montage",
+   "name": "Montage"
+  },
+  {
+   "id": "slow-motion",
+   "name": "Slow Motion"
+  },
+  {
+   "id": "static-shot",
+   "name": "Static Shot"
+  },
+  {
+   "id": "cross-cutting",
+   "name": "Cross-Cutting"
+  },
+  {
+   "id": "jump-cut",
+   "name": "Jump Cut"
+  },
+  {
+   "id": "dissolve",
+   "name": "Dissolve"
+  },
+  {
+   "id": "fade-in-out",
+   "name": "Fade In/Out"
+  },
+  {
+   "id": "smash-cut",
+   "name": "Smash Cut"
+  },
+  {
+   "id": "long-take",
+   "name": "Long Take"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/time-lapse"
+ }
+}

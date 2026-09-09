@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "uplighting",
+ "name": "Uplighting",
+ "category": "Lighting",
+ "difficulty": "Basic",
+ "moods": [
+  "Horror"
+ ],
+ "has_video": false,
+ "summary": "Light cast upward from below the subject, unnatural to human experience, creating eerie, sinister, or supernatural effects — the classic \"flashlight under the chin\" horror look. James Whale used uplighting to terrifying effect in \"Frankenstein\" (1931) and \"Bride of Frankenstein,\" casting Boris Karloff's face into monstrous relief. F.W. Murnau's \"Nosferatu\" employed underlighting to transform Max Schreck into a figure of pure dread. Modern horror directors like Ari Aster use subtle uplighting in \"Hereditary\" during the séance sequences, and Jordan Peele employs it in \"Us\" when the tethered versions of characters emerge from below.",
+ "prompt_template": "Uplighting from below illuminating [Subject], the unnatural upward-casting light reversing every shadow humans instinctively expect, shadows falling upward from the brow ridge creating deep black pools where the eyes should be, orange flickering firelight causing the shadows to dance, shot on a 50mm lens with the warm 2000K color temperature of open flame, the deep biological wrongness of light coming from below",
+ "when_to_use": "Use uplighting when illumination should feel instinctively wrong. A source below the face reverses familiar shadow patterns, turning ordinary features sinister, supernatural, theatrical, or childishly spooky. It works for horror, séances, firelit threats, and characters emerging from beneath a space. Keep the motivation visible or plausible. Constant underlighting outside those contexts can feel campy and flatten the scene into a single genre signal.",
+ "directing_the_ai": "Place the main source below the subject's chin or beneath the frame and angle it upward. Shadows should climb from brow, nose, and cheekbones, with eye sockets becoming dark pools above the lit planes. Use warm flickering firelight around 2000K when a flame motivates the effect, or a colder source for unnatural dread. Keep overhead fill minimal so normal shadow direction does not return. In video, vary flicker subtly without changing source position.",
+ "common_mistakes": [
+  "Adding a stronger overhead key, which restores conventional facial shadows and cancels the unsettling reversal.",
+  "Lighting the face evenly from below, missing the deep upward-cast shadows that make the setup biologically strange.",
+  "Using uplighting in a neutral dialogue scene without motivation, making the visual tone feel accidentally theatrical."
+ ],
+ "insight": "A genre is a container, not a look. What makes a style yours is the palette, the materials and the light behaving the same way every time.",
+ "related": [
+  {
+   "id": "german-expressionism",
+   "name": "German Expressionism"
+  },
+  {
+   "id": "hard-light",
+   "name": "Hard Light"
+  },
+  {
+   "id": "low-key-lighting",
+   "name": "Low-Key Lighting"
+  },
+  {
+   "id": "three-point-lighting",
+   "name": "Three-Point Lighting"
+  },
+  {
+   "id": "key-light",
+   "name": "Key Light"
+  },
+  {
+   "id": "high-key-lighting",
+   "name": "High-Key Lighting"
+  },
+  {
+   "id": "chiaroscuro",
+   "name": "Chiaroscuro"
+  },
+  {
+   "id": "rembrandt-lighting",
+   "name": "Rembrandt Lighting"
+  },
+  {
+   "id": "silhouette",
+   "name": "Silhouette"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/uplighting"
+ }
+}

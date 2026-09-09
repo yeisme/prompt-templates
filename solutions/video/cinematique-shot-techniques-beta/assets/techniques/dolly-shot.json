@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "dolly-shot",
+ "name": "Dolly Shot",
+ "category": "Camera Work",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "A smooth camera movement where the entire camera physically moves toward, away from, or alongside the subject on a wheeled platform or track, creating an immersive sense of movement through space. Orson Welles used dolly shots to navigate the deep-focus interiors of \"Citizen Kane,\" while Spike Lee invented his signature double-dolly shot — mounting both actor and camera on the same platform — to create a floating, surreal glide seen in \"Do the Right Thing\" and \"25th Hour.\" Martin Scorsese's famous Copacabana shot in \"Goodfellas\" tracks Henry Hill through the back entrance of a nightclub in one fluid dolly movement.",
+ "prompt_template": "Smooth dolly shot gliding toward [Subject], the camera at eye level moving with buttery precision on dolly track, parallax effect separating foreground elements from the mid-ground subject from far-ground details, shot on 35mm with Panavision Primo lenses, rich blacks and saturated warm tones, the elegant motion of precision dolly track work",
+ "when_to_use": "Use a dolly-in when a realization, threat, or emotional detail needs to become unavoidable. Dolly out when context should overwhelm the subject or create emotional distance. Move alongside a character when the audience should travel with them rather than simply observe them.",
+ "directing_the_ai": "Describe physical camera travel, direction, speed, subject lock, and foreground-to-background separation. “Dolly toward” is more useful than “cinematic movement.” Give the model visible layers for parallax — a foreground obstruction, the subject in the middle distance, and a readable background — so the move changes spatial relationships instead of behaving like a digital zoom.",
+ "common_mistakes": [
+  "Calling for a dolly and a zoom at the same time without intentionally asking for a dolly zoom.",
+  "Describing camera movement without foreground or background layers, leaving no parallax for the model to express.",
+  "Stacking “smooth,” “dynamic,” “epic,” and multiple conflicting camera directions instead of specifying one controlled move."
+ ],
+ "insight": "Framing is grammar. Distance, angle and lens each carry a fixed emotional consequence before a single texture is described.",
+ "related": [
+  {
+   "id": "tracking-shot",
+   "name": "Tracking Shot"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  },
+  {
+   "id": "extreme-close-up",
+   "name": "Extreme Close-Up"
+  },
+  {
+   "id": "extreme-long-shot",
+   "name": "Extreme Long Shot"
+  },
+  {
+   "id": "eye-level-shot",
+   "name": "Eye-Level Shot"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/dolly-shot"
+ }
+}

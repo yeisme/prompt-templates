@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "film-noir",
+ "name": "Film Noir",
+ "category": "Genres & Styles",
+ "difficulty": "Intermediate",
+ "moods": [
+  "Dramatic"
+ ],
+ "has_video": false,
+ "summary": "A genre defined by high-contrast black-and-white photography, urban settings, morally ambiguous characters, femme fatales, and a pervasive sense of cynicism and doom. Born from German Expressionist emigrés and American hardboiled fiction, film noir flowered in the 1940s and 50s with Billy Wilder's \"Double Indemnity,\" Orson Welles's \"Touch of Evil,\" and John Huston's \"The Maltese Falcon.\" Cinematographers like John Alton and Nicholas Musuraca defined the visual language of shadows, rain, and venetian blinds. The genre was revived as neo-noir by Roman Polanski's \"Chinatown,\" the Coen Brothers' \"Blood Simple,\" and David Lynch's \"Mulholland Drive.\"",
+ "prompt_template": "Film noir aesthetic with [Subject] in high-contrast black and white, deep blacks and silvery highlights, venetian blind shadow patterns, neon signs reflected in rain puddles, shot on Kodak Double-X black and white stock with hard lighting creating razor shadows, the John Alton visual language of moral ambiguity expressed through the war between light and darkness",
+ "when_to_use": "Use film noir for crime, betrayal, investigation, fatal attraction, or any story built on compromised choices and approaching doom. Its visual language turns light into moral pressure: characters are divided by shadow, streets become traps, and interiors conceal more than they reveal. The genre is strongest when cinematography and character conflict agree. Venetian blinds alone cannot create noir without ambiguity, danger, and isolation.",
+ "directing_the_ai": "Work in high-contrast black and white with deep blacks, silvery highlights, and limited midtones. Place the subject in an urban interior or rain-dark street, then rake hard light through blinds, doorways, or smoke to create sharp patterned shadows. Use low or oblique angles and leave portions of faces concealed. Add wet reflections and restrained practical neon translated into tonal brightness. Compose every light source as pressure, surveillance, or temptation.",
+ "common_mistakes": [
+  "Adding venetian-blind shadows to a bright neutral scene without noir conflict, danger, or moral ambiguity.",
+  "Crushing every dark area to featureless black, erasing the location and the subject’s readable silhouette.",
+  "Using soft flattering portrait light, which removes the hard visual conflict central to noir imagery."
+ ],
+ "insight": "Tone is the hardest fundamental to get right, and the easiest to lose without noticing. One warm frame in a cold world undoes twenty.",
+ "related": [
+  {
+   "id": "low-key-lighting",
+   "name": "Low-Key Lighting"
+  },
+  {
+   "id": "chiaroscuro",
+   "name": "Chiaroscuro"
+  },
+  {
+   "id": "noir-tech",
+   "name": "Tech Noir"
+  },
+  {
+   "id": "german-expressionism",
+   "name": "German Expressionism"
+  },
+  {
+   "id": "cinema-verite",
+   "name": "Cinéma Vérité"
+  },
+  {
+   "id": "french-new-wave",
+   "name": "French New Wave"
+  },
+  {
+   "id": "surrealism",
+   "name": "Surrealism"
+  },
+  {
+   "id": "found-footage",
+   "name": "Found Footage"
+  },
+  {
+   "id": "spaghetti-western",
+   "name": "Spaghetti Western"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/film-noir"
+ }
+}

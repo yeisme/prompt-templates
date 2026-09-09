@@ -1,0 +1,66 @@
+{
+ "schema_version": "cinematique.technique.v1",
+ "id": "crane-shot",
+ "name": "Crane Shot",
+ "category": "Camera Work",
+ "difficulty": "Advanced",
+ "moods": [
+  "Cinematic"
+ ],
+ "has_video": false,
+ "summary": "Camera mounted on a mechanical crane arm that sweeps upward, downward, or across a scene with majestic, controlled movement, often used for dramatic reveals or grand establishing moments. Orson Welles opened \"Touch of Evil\" with one of cinema's most famous crane shots — a continuous three-minute take following a car bomb through a Mexican border town. The final crane shot of \"Gone with the Wind\" pulling back to reveal hundreds of wounded soldiers remains one of Hollywood's most iconic images. Brian De Palma used elaborate crane work in \"The Untouchables\" for the Union Station staircase sequence, and Steven Spielberg's crane shots in \"Schindler's List\" shift from intimate to devastating in scale.",
+ "prompt_template": "Crane shot beginning tight on [Subject] then sweeping upward and backward in a majestic arc to reveal the true surrounding scale, the individual becoming one element among many in a seamless vertical revelation, shot on ARRI Alexa 65 with a 35mm Signature Prime, the mechanical grace of a Technocrane executing a precisely choreographed arc, golden hour light flooding horizontally",
+ "when_to_use": "Choose a crane shot when a scene needs a grand reveal that changes scale and perspective in one controlled movement. Rising from a person to a crowd, battlefield, building, or landscape can expose consequences beyond the intimate frame. Descending can isolate one figure from a larger world. The move suits openings, finales, and major transitions; it is excessive when a simple tilt or pull-out conveys the same information.",
+ "directing_the_ai": "Begin on a clearly framed subject, then sweep upward and backward along a smooth mechanical arc. Reveal new layers in sequence rather than exposing the full environment at once: nearby action, surrounding group, architecture, then horizon. Keep the subject's location traceable as scale expands. Use broad golden-hour light to bind the levels together and a wide lens that avoids severe distortion. The path should feel engineered, stable, and continuous, never like free-floating aerial footage.",
+ "common_mistakes": [
+  "Revealing the whole setting in the first frame, leaving the crane movement without new visual information to uncover.",
+  "Losing the original subject during ascent, which breaks the intended transition between individual and surrounding scale.",
+  "Replacing the controlled arc with random airborne drift that reads as an aerial shot rather than crane movement."
+ ],
+ "insight": "Scale is not a measurement. It is a relationship, and relationships produce feelings.",
+ "related": [
+  {
+   "id": "pull-out",
+   "name": "Pull Out"
+  },
+  {
+   "id": "aerial-shot",
+   "name": "Aerial Shot"
+  },
+  {
+   "id": "tilt-shot",
+   "name": "Tilt Shot"
+  },
+  {
+   "id": "birds-eye-view",
+   "name": "Bird's Eye View"
+  },
+  {
+   "id": "close-up",
+   "name": "Close-Up"
+  },
+  {
+   "id": "dutch-angle",
+   "name": "Dutch Angle"
+  },
+  {
+   "id": "dolly-shot",
+   "name": "Dolly Shot"
+  },
+  {
+   "id": "establishing-shot",
+   "name": "Establishing Shot"
+  },
+  {
+   "id": "extreme-close-up",
+   "name": "Extreme Close-Up"
+  }
+ ],
+ "source": {
+  "site": "vvsvs.pro Cinematique",
+  "site_url": "https://vvsvs.pro/cinematique",
+  "upstream": "grokfilm.app by Tetsuo Corp, remixed & expanded by VVSVS (Ivan Flugelman); labeled Free Tool - Open Source",
+  "retrieved": "2026-09-09",
+  "url": "https://vvsvs.pro/cinematique/crane-shot"
+ }
+}
