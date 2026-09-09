@@ -1,5 +1,7 @@
 # 内容编写指南
 
+新增内容先选层级：图像侧读 `docs/adding-image-prompts.md`，视频侧读 `docs/adding-video-prompts.md`，跨资产联动先用 `template-registry-integration-designer` 分类；确认需要新 solution 后再按本文执行。新建 solution 的完整步骤以 `template-registry-template-author` skill 为准。
+
 每个 solution 是可执行方案包，不是孤立 Prompt。正文应明确：
 
 1. 角色和目标；

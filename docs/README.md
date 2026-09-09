@@ -2,6 +2,10 @@
 
 - [分类与标签](taxonomy.md)：十二类导航、namespace tags 和稳定 ID。
 - [内容编写](authoring.md)：solution 最小结构、Prompt 变量与质量门。
+- [Locale 政策](locale-policy.md)：单语言模板、任意语言设计、locale 移除流程与视频家族 en+zh 双层约定。
+- [添加图像提示词](adding-image-prompts.md)：shot spec / 风格层 / 系列变体 / 矩阵取值 / 新包的决策树与食谱。
+- [添加视频提示词](adding-video-prompts.md)：实例 / Provider 兼容 / 加变量 / 新 solution 的决策树、视频生成家族表与验证闭环。
+- [Agent 编译用基础模板（beta）](agent-consumption-beta.md)：结构化总结、会议纪要、证据研究简报三个 beta 方案与消费方式。
 - [国际化](i18n.md)：`en` Agent 模板、中文人工审阅译文和旧引用兼容性。
 - [发布与验证](release.md)：catalog build、validate、版本与回滚。
 - [AI 做剧官方模板测试与今日状态（2026-08-31）](ai-drama-templates-test-guide-2026-08-31.md)：离线验收、实际 preview/inspect、今日证据与已知缺口。

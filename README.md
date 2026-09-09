@@ -1,5 +1,11 @@
 # Yeisme 官方提示词方案库
 
+## 一句话安装（发给你的 Agent）
+
+> 安装 Yeisme 提示词体系：运行 `curl -fsSL https://raw.githubusercontent.com/yeisme/yeisme-dist/main/install.sh | bash -s template-registry` 安装 CLI，然后 `template-registry prompt skill install --runtime agents --json` 安装 Agent Skills，再登记官方模板库 `template-registry prompt repository add --id official --source github://yeisme/prompt-templates --revision main --trust official --json`（已登记会返回 ALREADY_EXISTS，属正常），最后 `template-registry prompt repository sync --id official --json`。完成后用 `template-registry prompt search --query '<你的需求>' --locale zh-CN --json` 选模板。
+
+以上命令已在 Linux 公开渠道实测通过（checksum 校验 + 搜索可用）。Windows 用户从 [公开二进制发行页](https://github.com/yeisme/yeisme-dist/releases) 下载，CLI 细节见 [Template Registry](https://github.com/yeisme/template-registry)。
+
 这是面向中文用户的官方 Prompt 解决方案目录。内容按“用户要完成什么”组织，而不是按模型或供应商堆放。
 
 首版提供十二个导航类目：通用处理、写作与内容、图像与视觉、视频与短剧、音频与语音、研究与分析、产品与设计、营销与电商、办公与知识、编程与工程、Agent 与自动化、学习与教育。
