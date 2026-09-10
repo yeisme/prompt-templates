@@ -1,6 +1,15 @@
 # 三方向视觉探索：从下载到复用
 
-当前包是 `visual-exploration-starter-beta@1.0.0-beta.1`，本地编译可用，远端尚未发布，图片效果未实测。先使用本地目录或展示站下载包，不假设远程 main 已包含新包。
+本指南使用 `visual-exploration-starter-beta@1.0.0-beta.1`，演示从需求输入到提示包导出，再到第二次复用。图片效果尚未实测。
+
+本页尚未提供独立 ZIP 的公开下载链接。你需要已取得包含该方案的完整模板仓库或评估包；如果只有远程目录且找不到该版本，请先阅读示例，不要继续执行下面的命令。
+
+开始前准备：
+
+- 已安装的 Template Registry CLI；安装入口见[仓库首页](../../README.md)。
+- Bash 或 Zsh，以及用于读取命令结果的 `jq`；Windows 可在 WSL 中运行本页示例。
+- 包内的 `repository.json`、`catalog.json` 和 `solutions/image/visual-exploration-starter-beta/`；只有模板子目录不足以登记来源。
+- 阅读本包的免费评估许可：`solutions/image/visual-exploration-starter-beta/docs/LICENSE.md`。它不包含模板转售或公开分发授权。
 
 ## 发给 Agent
 
@@ -8,7 +17,7 @@
 
 ## 安装和本地来源
 
-先按 Template Registry 公开说明安装 CLI。将免费 ZIP 解压为 `visual-starter`，在它的父目录运行：
+如果你收到独立评估 ZIP，将其解压为 `visual-starter`，并在它的父目录运行。若使用完整模板仓库，将下方 `file://$PWD/visual-starter` 替换为该仓库根目录的绝对 `file://` 地址；登记名称仍可使用 `visual-starter`：
 
 ```bash
 template-registry prompt repository add --id visual-starter --source "file://$PWD/visual-starter" --trust user_trusted --json
@@ -18,7 +27,7 @@ template-registry prompt inspect --ref 'promptrepo://visual-starter/image/visual
 
 来源名已存在时使用现有配置或另选名称，不能覆盖无关来源。`inspect` 返回 `partial` 表示必填输入待补齐，是正常下一步。输入合同为 `en`，中文资料仍可作为值。
 
-在完整源码工作区中，也可以把 source 指向本内容仓的绝对 `file://` 路径。不要把本地未发布的新 ref 写成已经能从远程同步获得。
+先确认 `inspect` 返回的是上述方案与版本，再创建会话。找不到模板时，检查来源目录与版本是否匹配；不要覆盖其他已登记的来源。
 
 ## 用户确认后编译
 
@@ -42,11 +51,10 @@ template-registry prompt bundle verify --path result --json
 
 新建会话，将杯子换成玻璃花瓶，重新确认材质和约束。检查是否残留杯柄、陶瓷质感或旧事实。活动视觉和内容封面练习见包内 `docs/examples.md`。
 
-## 维护者验证
+## 完成后检查
 
-```bash
-python3 scripts/author_visual_exploration.py
-python3 scripts/check_visual_exploration.py
-```
+`bundle verify` 应成功结束，导出的提示包位于 `result`。将提示包交给 Agent 后，检查它是否给出三个不同的视觉方向、各自取舍和独立英文出图提示词。此时仍未生成图片。
 
-未安装 CLI 的源码工作区可先在 Registry owner 运行 `go build -o /tmp/template-registry ./cmd/template-registry`，再将 `--registry /tmp/template-registry` 传给脚本。验证会生成脱敏 evidence，私有会话和导出在临时目录中清理。
+例如，陶瓷杯练习需要保留“无品牌、米白色、单杯”的条件，不添加价格或认证。换成玻璃花瓶后，结果不应残留杯柄或陶瓷材质。这些是检查标准，不是实测效果展示。
+
+如果编译提示输入不完整，先补充并确认缺少的字段；如果提示版本冲突，先读取当前会话状态，不要直接重复旧的确认命令。模型执行和图片生成另行选择工具并确认费用。

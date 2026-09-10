@@ -1,5 +1,7 @@
 # AI 做剧官方模板测试与今日状态（2026-08-31）
 
+> 历史维护记录，仅描述 2026-08-31 的验证情况，不作为当前安装或使用指南。本文命令需要维护者自行设置 `YEISME_WORKSPACE` 为包含相关子项目的源码工作区绝对路径；普通模板用户请从[首页](../README.md)开始。
+
 最后核对时间：2026-08-31 04:50 UTC。
 
 ## 今日结论
@@ -59,7 +61,7 @@ openspec --version
 ### 1. 查看 OpenSpec 状态
 
 ```bash
-cd /workspaces/yeisme-agent/data/yeisme-prompt-templates
+cd $YEISME_WORKSPACE/data/yeisme-prompt-templates
 openspec list
 openspec validate --all --strict
 ```
@@ -77,18 +79,18 @@ Changes:
 当前 Template Registry 需要同时绑定本地 `shared/promptrepo`。下面的临时 Go workspace 只用于本次命令，不修改仓库配置：
 
 ```bash
-cd /workspaces/yeisme-agent
+cd $YEISME_WORKSPACE
 
 REGISTRY_WORK=$(mktemp -d)
 (
   cd "$REGISTRY_WORK"
   go work init \
-    /workspaces/yeisme-agent/backend-server/template-registry \
-    /workspaces/yeisme-agent/shared/promptrepo
+    $YEISME_WORKSPACE/backend-server/template-registry \
+    $YEISME_WORKSPACE/shared/promptrepo
 )
 
 (
-  cd /workspaces/yeisme-agent/backend-server/template-registry
+  cd $YEISME_WORKSPACE/backend-server/template-registry
   GOWORK="$REGISTRY_WORK/go.work" \
     go run ./cmd/template-registry catalog validate \
       --repository ../../data/yeisme-prompt-templates \
@@ -101,7 +103,7 @@ REGISTRY_WORK=$(mktemp -d)
 ### 3. 测试 Eikona Character consumer
 
 ```bash
-cd /workspaces/yeisme-agent/cli/eikona
+cd $YEISME_WORKSPACE/cli/eikona
 task test:integration:official-character-asset-canary
 ```
 
@@ -116,14 +118,14 @@ task test:integration:official-character-asset-canary
 查看最新证据：
 
 ```bash
-cd /workspaces/yeisme-agent/cli/eikona
+cd $YEISME_WORKSPACE/cli/eikona
 ls -dt temp/integration-test-runs/integration-* | head -1
 ```
 
 ### 4. 测试 Scaena Character 与 Storyboard consumer
 
 ```bash
-cd /workspaces/yeisme-agent/agent/scaena
+cd $YEISME_WORKSPACE/agent/scaena
 
 task test:integration:official-character-asset-canary
 task test:integration:storyboard-breakdown
@@ -140,7 +142,7 @@ Storyboard 测试应得到：
 查看最新证据：
 
 ```bash
-cd /workspaces/yeisme-agent/agent/scaena
+cd $YEISME_WORKSPACE/agent/scaena
 ls -dt temp/integration-test-runs/* | head -3
 ```
 
@@ -153,8 +155,8 @@ SMOKE_ROOT=$(mktemp -d)
 export XDG_CONFIG_HOME="$SMOKE_ROOT/config"
 export XDG_CACHE_HOME="$SMOKE_ROOT/cache"
 
-CONTENT_ROOT=/workspaces/yeisme-agent/data/yeisme-prompt-templates
-EIKONA_ROOT=/workspaces/yeisme-agent/cli/eikona
+CONTENT_ROOT=$YEISME_WORKSPACE/data/yeisme-prompt-templates
+EIKONA_ROOT=$YEISME_WORKSPACE/cli/eikona
 FIXTURE="$CONTENT_ROOT/solutions/video/ai-drama-character-assets/fixtures/main.zh-CN/wuxia-female-turnaround.input.json"
 
 cd "$EIKONA_ROOT"
@@ -222,9 +224,9 @@ jq '{
 继续使用上一节的临时 XDG 配置。Eikona 当前可以把 solution ref 解析成含 path、digest 与 snapshot 的 exact address；Scaena 再以该地址执行只读 inspect。
 
 ```bash
-CONTENT_ROOT=/workspaces/yeisme-agent/data/yeisme-prompt-templates
-EIKONA_ROOT=/workspaces/yeisme-agent/cli/eikona
-SCAENA_ROOT=/workspaces/yeisme-agent/agent/scaena
+CONTENT_ROOT=$YEISME_WORKSPACE/data/yeisme-prompt-templates
+EIKONA_ROOT=$YEISME_WORKSPACE/cli/eikona
+SCAENA_ROOT=$YEISME_WORKSPACE/agent/scaena
 
 cd "$EIKONA_ROOT"
 
@@ -263,7 +265,7 @@ jq '{
 以下检查不会生成图片：
 
 ```bash
-cd /workspaces/yeisme-agent/cli/eikona
+cd $YEISME_WORKSPACE/cli/eikona
 
 go build -trimpath -o dist/eikona ./cmd/eikona
 ./dist/eikona config inspect --agent
@@ -280,7 +282,7 @@ go build -trimpath -o dist/eikona ./cmd/eikona
 ### 2. 通用 Provider canary
 
 ```bash
-cd /workspaces/yeisme-agent/cli/eikona
+cd $YEISME_WORKSPACE/cli/eikona
 task test:canary
 ```
 
@@ -299,7 +301,7 @@ task test:canary
 显式付费 Task 已改为只加载官方 `wuxia-female-face-master.output.json`，在内存中编译一个 `face_master` 单图 job，再进入既有 cost/auth/provider gate。它不会再渲染或直发仓库 `main` 编译元 Prompt，也不会在首轮请求三视图。持久证据只保留 Prompt digest，不保存模板正文。普通 `task test` 和 `task test:integration` 不会自动调用它。
 
 ```bash
-cd /workspaces/yeisme-agent/cli/eikona
+cd $YEISME_WORKSPACE/cli/eikona
 task test:canary:official-character-asset
 ```
 
@@ -317,7 +319,7 @@ task test:canary:official-character-asset
 图片位置：
 
 ```text
-/workspaces/yeisme-agent/cli/eikona/temp/official-ai-drama-character-live-runs/runs/run_20260831_034934_909308527/outputs/openai_001.png
+$YEISME_WORKSPACE/cli/eikona/temp/official-ai-drama-character-live-runs/runs/run_20260831_034934_909308527/outputs/openai_001.png
 ```
 
 人工烟雾检查：
@@ -331,7 +333,7 @@ task test:canary:official-character-asset
 ### 4. Scaena 真实分镜检查
 
 ```bash
-cd /workspaces/yeisme-agent/agent/scaena
+cd $YEISME_WORKSPACE/agent/scaena
 go run ./cmd/scaena doctor --agent
 go run ./cmd/scaena production doctor --project . --agent
 ```
@@ -351,14 +353,14 @@ go run ./cmd/scaena production doctor --project . --agent
 先运行只读诊断：
 
 ```bash
-cd /workspaces/yeisme-agent/agent/scaena
+cd $YEISME_WORKSPACE/agent/scaena
 go run ./cmd/scaena production doctor --project . --agent
 ```
 
 Eikona 的两个真实图片 canary 都会产生费用：
 
 ```bash
-cd /workspaces/yeisme-agent/cli/eikona
+cd $YEISME_WORKSPACE/cli/eikona
 task test:canary
 task test:canary:official-character-asset
 ```
@@ -386,7 +388,6 @@ task test:canary:official-character-asset
 
 相关文档：
 
-- [Character 1.0.0 release candidate](../solutions/video/ai-drama-character-assets/docs/release-1.0.0.zh-CN.md)
 - [Storyboard 1.0.0 release candidate](../solutions/video/ai-drama-storyboard-breakdown/docs/release-1.0.0.zh-CN.md)
 - [Character preset matrix](../solutions/video/ai-drama-character-assets/docs/preset-matrix.zh-CN.md)
 - [Storyboard preset matrix](../solutions/video/ai-drama-storyboard-breakdown/docs/preset-matrix.zh-CN.md)

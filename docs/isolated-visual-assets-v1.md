@@ -1,7 +1,7 @@
 # AI 做剧人物/背景隔离资产模板 v1
 
 状态：candidate（内容已实现，provider-free 验证通过；人物侧 fixture 集被 Registry 禁止 `*ref` 键的语义门阻塞，见下；maturity=exploratory，未发布 release）
-OpenSpec：[`official-ai-drama-isolated-visual-assets-v1`](../openspec/changes/official-ai-drama-isolated-visual-assets-v1/proposal.md)
+OpenSpec：[`official-ai-drama-isolated-visual-assets-v1`](../openspec/changes/archive/2026-09-05-official-ai-drama-isolated-visual-assets-v1/proposal.md)
 
 本 change 是 `face-mask-front-v1` 与 `clean-background-plate-v1` 的窄兼容切片；头发、服饰、整套资产包与可拆物件等模块化能力由 `official-ai-drama-modular-visual-assets-v2` 承接。
 
