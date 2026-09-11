@@ -8,5 +8,5 @@
 - [ ] 4 内容 owner：撰写 `3d-asset-review-beta` 评审清单模板（几何完整性、UV/贴图、比例、rights_review）；依赖 1；验证 contract 校验；可与任务 2、3 并行。 | evidence: contract valid; review checklist covers geometry/uv/scale/rights
 - [ ] 5 内容 owner：用 Registry CLI 注册 recipe `concept-to-3d-asset-beta`，步骤引用 exact `locale=en` ref；依赖 2、3、4；验证 recipe DAG、依赖循环与失效传播校验；失败重检步骤 ref 与输出绑定。 | evidence: recipe DAG validation passed; exact refs resolve
 - [ ] 6 内容 owner：为 5 个 solution 撰写 `docs/template-zh-CN.md` 中文审阅译文并标注人工审阅身份；依赖 2、3、4；验证变量 parity 与 locale 政策（中文不可编译、不进 catalog digest）；失败重检变量集合差异。 | evidence: translation variable parity passed; zh-CN not registered as compilable locale
-- [ ] 7 文档 owner：更新仓库 README 类别索引与 taxonomy 增量说明；依赖 1–6；验证链接与类别清单一致；失败重检索引条目。 | evidence: README category index includes 3d package; taxonomy additions documented
+- [ ] 7 文档 owner：随 solution 落地校正 `docs/adding-3d-prompts.md`、`docs/taxonomy.md` 与 `docs/README.md` 索引（本次设计阶段已写入 beta 版，实施时对齐实际 CLI 命令与链接）；依赖 1–6；验证链接与类别清单一致；失败重检索引条目。 | evidence: docs links resolve; taxonomy 3d entries match registered metadata
 - [ ] 8 外部阶段：真实 3D provider 调用、费用授权、Scaena 字段映射与转正评审；依赖后续运行与发布授权；未完成不得转正式支持。

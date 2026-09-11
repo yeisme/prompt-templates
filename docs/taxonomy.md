@@ -1,6 +1,6 @@
 # 分类与标签
 
-## 十二类导航
+## 十三类导航
 
 | ID | 中文名称 | 典型任务 |
 | --- | --- | --- |
@@ -16,6 +16,7 @@
 | `engineering` | 编程与工程 | 代码、调试、测试、架构、安全 |
 | `agent` | Agent 与自动化 | workflow、tool use、review、handoff |
 | `learning` | 学习与教育 | 教学、练习、解释、测验、学习计划 |
+| `3d` | 3D 模型与空间资产（beta 试点） | 文生 3D、图生 3D、场景布局、3D 打印约束、资产评审 |
 
 ## Namespace tags
 

@@ -6,8 +6,9 @@
 ## What Changes
 - 新增 `3d` package，含 5 个 beta solution：`text-to-3d-object-beta`（文生 3D 单物体）、`image-to-3d-refine-beta`（图生 3D 精修）、`3d-scene-layout-beta`（场景布局）、`3d-printable-design-beta`（3D 打印约束）、`3d-asset-review-beta`（资产评审清单）。
 - 新增 1 个 recipe：`concept-to-3d-asset-beta`，表达「Eikona 概念图 → 图生 3D → 评审 → 交付」DAG，步骤引用 exact `locale=en` ref。
-- taxonomy 增量：`modality:3d`、`artifact:model_3d`、`artifact:scene_layout`、`constraint:manifold_geometry`、`constraint:scale_anchored`、`constraint:multi_view_consistency`，capabilities 增加 `model3d`、`scene_spatial`。
+- taxonomy 增量：`category:3d`、`modality:3d`、`artifact:model_3d`、`artifact:scene_layout`、`constraint:manifold_geometry`、`constraint:scale_anchored`、`constraint:multi_view_consistency`，capabilities 增加 `model3d`、`scene_spatial`。
 - 每个 solution 按仓库规范只注册英文模板与英文 contract，中文译文放 `docs/template-zh-CN.md` 供人工审阅；结构化 metadata 全部由 Template Registry CLI 生成。
+- 新增 `docs/adding-3d-prompts.md` 创作指南与 `docs/taxonomy.md` 类别导航更新。
 
 ## Capabilities
 ### New Capabilities
