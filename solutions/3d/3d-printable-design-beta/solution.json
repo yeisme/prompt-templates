@@ -1,0 +1,39 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "3d",
+  "id": "3d-printable-design-beta",
+  "version": "1.0.0-beta.1",
+  "category": "3d",
+  "tags": [
+    "artifact:model_3d",
+    "category:3d",
+    "constraint:manifold_geometry",
+    "job:design",
+    "modality:3d"
+  ],
+  "capabilities": [
+    "model3d",
+    "structured_output"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "3D printable design constraints",
+      "summary": "Compile confirmed manufacturability constraints into a decidable checklist-style 3D printing prompt package",
+      "usage": "English-compiled beta; every constraint is a decidable item; printing is a separately authorized step"
+    },
+    "zh-CN": {
+      "title": "3D 打印约束",
+      "summary": "把可制造性硬约束编译为逐条可判定的打印检查清单",
+      "usage": "beta 试点：仅英文可编译；本中文条目为人工审阅说明，完整译文见包内 docs/template-zh-CN.md；任何 3D 执行均需另行授权"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/3d/3d-printable-design-beta/prompts/main.en.md"
+    }
+  ]
+}

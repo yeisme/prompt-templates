@@ -1,0 +1,39 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "3d",
+  "id": "text-to-3d-object-beta",
+  "version": "1.0.0-beta.1",
+  "category": "3d",
+  "tags": [
+    "artifact:model_3d",
+    "category:3d",
+    "job:generate",
+    "modality:3d"
+  ],
+  "capabilities": [
+    "model3d",
+    "structured_output",
+    "text"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Text to 3D object",
+      "summary": "Compile a confirmed subject, purpose, style, and constraints into a provider-neutral text-to-3D prompt package",
+      "usage": "English-compiled beta; human-reviewed Chinese translation ships separately; any 3D execution is a separately authorized step"
+    },
+    "zh-CN": {
+      "title": "文生 3D 单物体",
+      "summary": "把确认后的主体、用途、风格与约束编译为 provider-neutral 文生 3D 提示包",
+      "usage": "beta 试点：仅英文可编译；本中文条目为人工审阅说明，完整译文见包内 docs/template-zh-CN.md；任何 3D 执行均需另行授权"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/3d/text-to-3d-object-beta/prompts/main.en.md"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "3d",
+  "solution_id": "text-to-3d-object-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/3d/text-to-3d-object-beta/prompts/main.en.md",
+  "template_digest": "sha256:16eb62304bc86f0b19fc53ce57d7cb9ab568d82ab81458e7be4055ca468ef337",
+  "digest": "sha256:9aaf0009bd5959a28d580cc32e1658346065944d5e68392713aea732aa299412",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "material_notes",
+      "type": "string",
+      "max_length": 2000,
+      "labels": {
+        "en": "Material notes",
+        "zh-CN": "材质说明"
+      },
+      "descriptions": {
+        "en": "Advisory surface and material look",
+        "zh-CN": "参考性的表面与材质观感"
+      }
+    },
+    {
+      "name": "poly_budget",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "low",
+        "mid",
+        "high",
+        "unspecified"
+      ],
+      "labels": {
+        "en": "Polygon budget",
+        "zh-CN": "面数级别"
+      },
+      "descriptions": {
+        "en": "Topology density level",
+        "zh-CN": "拓扑密度级别"
+      }
+    },
+    {
+      "name": "purpose",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "game",
+        "print",
+        "background"
+      ],
+      "labels": {
+        "en": "Purpose",
+        "zh-CN": "用途"
+      },
+      "descriptions": {
+        "en": "Intended use driving topology decisions",
+        "zh-CN": "驱动拓扑决策的用途"
+      }
+    },
+    {
+      "name": "style",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 2000,
+      "labels": {
+        "en": "Style anchor",
+        "zh-CN": "风格锚点"
+      },
+      "descriptions": {
+        "en": "Verifiable style reference traits",
+        "zh-CN": "可验证的风格参考特征"
+      }
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 2000,
+      "labels": {
+        "en": "Subject",
+        "zh-CN": "主体"
+      },
+      "descriptions": {
+        "en": "One object and its distinguishing features",
+        "zh-CN": "单一物体及其区分特征"
+      }
+    },
+    {
+      "name": "symmetry",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "none",
+        "bilateral",
+        "radial",
+        "unspecified"
+      ],
+      "labels": {
+        "en": "Symmetry",
+        "zh-CN": "对称性约束"
+      },
+      "descriptions": {
+        "en": "Symmetry constraint for decomposition",
+        "zh-CN": "结构分解的对称性约束"
+      }
+    }
+  ]
+}

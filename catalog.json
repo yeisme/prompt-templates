@@ -7,8 +7,210 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:fe3bf8b3db2ba8223d16714d7c298d30e5bd05eb606876fa229b5fed15504a0f",
+  "digest": "sha256:9de636245d2b5943f3ec07633e3201dae5c41573268ccc9de6e7638627ac8932",
   "solutions": [
+    {
+      "package_id": "3d",
+      "id": "3d-asset-review-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:b9cf1d28e687e528d8c9762bd11eac056e18f498429c0505804cef314b8aeddc",
+      "category": "3d",
+      "tags": [
+        "artifact:model_3d",
+        "category:3d",
+        "constraint:rights_aware",
+        "job:critic_review",
+        "modality:3d"
+      ],
+      "capabilities": [
+        "model3d",
+        "review",
+        "structured_output"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "3D asset review checklist",
+          "summary": "Review a candidate 3D asset across geometry integrity, UV and texture, scale consistency, and rights with pass/fail/unknown items",
+          "usage": "English-compiled beta; reviews report findings and never issue execution instructions"
+        },
+        "zh-CN": {
+          "title": "3D 资产评审",
+          "summary": "覆盖几何完整性、UV/贴图、比例与使用权的 pass/fail/unknown 评审清单",
+          "usage": "beta 试点：仅英文可编译；本中文条目为人工审阅说明，完整译文见包内 docs/template-zh-CN.md；任何 3D 执行均需另行授权"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/3d/3d-asset-review-beta/prompts/main.en.md",
+          "digest": "sha256:3435f85bd81ce350646f6888ecbd411203b8c5f4a6a317667f599f51f9310755"
+        }
+      ]
+    },
+    {
+      "package_id": "3d",
+      "id": "3d-printable-design-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:27da3960d3e9be9c52ac80b9d9c519ad33cd9218aef6df0af1b0bfcc6376de41",
+      "category": "3d",
+      "tags": [
+        "artifact:model_3d",
+        "category:3d",
+        "constraint:manifold_geometry",
+        "job:design",
+        "modality:3d"
+      ],
+      "capabilities": [
+        "model3d",
+        "structured_output"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "3D printable design constraints",
+          "summary": "Compile confirmed manufacturability constraints into a decidable checklist-style 3D printing prompt package",
+          "usage": "English-compiled beta; every constraint is a decidable item; printing is a separately authorized step"
+        },
+        "zh-CN": {
+          "title": "3D 打印约束",
+          "summary": "把可制造性硬约束编译为逐条可判定的打印检查清单",
+          "usage": "beta 试点：仅英文可编译；本中文条目为人工审阅说明，完整译文见包内 docs/template-zh-CN.md；任何 3D 执行均需另行授权"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/3d/3d-printable-design-beta/prompts/main.en.md",
+          "digest": "sha256:4c3da4b3c1e65a29e19341a5b07c441c5f44f6506542675735d1a3ca03973748"
+        }
+      ]
+    },
+    {
+      "package_id": "3d",
+      "id": "3d-scene-layout-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:9e8edbde7889cc5106b24d13baf784721b77d62c75aa154c4d4437566e2519d4",
+      "category": "3d",
+      "tags": [
+        "artifact:scene_layout",
+        "category:3d",
+        "constraint:scale_anchored",
+        "job:design",
+        "modality:3d"
+      ],
+      "capabilities": [
+        "scene_spatial",
+        "structured_output"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "3D scene layout",
+          "summary": "Compose a provider-neutral multi-object spatial layout with relative placement, a scale statement, and optional camera placeholders",
+          "usage": "English-compiled beta; generic spatial fields only, no downstream scene schema coupling"
+        },
+        "zh-CN": {
+          "title": "3D 场景布局",
+          "summary": "输出通用空间字段的多物体布局：相对位置、尺度声明与相机占位",
+          "usage": "beta 试点：仅英文可编译；本中文条目为人工审阅说明，完整译文见包内 docs/template-zh-CN.md；任何 3D 执行均需另行授权"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/3d/3d-scene-layout-beta/prompts/main.en.md",
+          "digest": "sha256:285dde03fba3b39edcaea277c2f2b03491c3f9cdd9e457b4c414d0980986070a"
+        }
+      ]
+    },
+    {
+      "package_id": "3d",
+      "id": "image-to-3d-refine-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:a8991eab56709228f96d238479f9ee9cd693ebf5df0bdb281cd4e8af7a557be0",
+      "category": "3d",
+      "tags": [
+        "artifact:model_3d",
+        "category:3d",
+        "constraint:multi_view_consistency",
+        "job:generate",
+        "modality:3d"
+      ],
+      "capabilities": [
+        "model3d",
+        "reference_image",
+        "structured_output"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Image to 3D refine",
+          "summary": "Compile a reference-image exact ref with view, occlusion, and consistency decisions into an image-to-3D prompt package",
+          "usage": "English-compiled beta; references are pointers, never copied; 3D execution is a separately authorized step"
+        },
+        "zh-CN": {
+          "title": "图生 3D 精修",
+          "summary": "把参考图 exact ref 与视角、遮挡、一致性决策编译为图生 3D 提示包",
+          "usage": "beta 试点：仅英文可编译；本中文条目为人工审阅说明，完整译文见包内 docs/template-zh-CN.md；任何 3D 执行均需另行授权"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/3d/image-to-3d-refine-beta/prompts/main.en.md",
+          "digest": "sha256:d3b347ed760e303705628fce0a016583fb597bb2e66d2ef57855e8a5b0891c0d"
+        }
+      ]
+    },
+    {
+      "package_id": "3d",
+      "id": "text-to-3d-object-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:adc02f8b7e11d57c0bbb7ac7c8df1b14de3b090ed27c0696bc51908e524a1ee8",
+      "category": "3d",
+      "tags": [
+        "artifact:model_3d",
+        "category:3d",
+        "job:generate",
+        "modality:3d"
+      ],
+      "capabilities": [
+        "model3d",
+        "structured_output",
+        "text"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Text to 3D object",
+          "summary": "Compile a confirmed subject, purpose, style, and constraints into a provider-neutral text-to-3D prompt package",
+          "usage": "English-compiled beta; human-reviewed Chinese translation ships separately; any 3D execution is a separately authorized step"
+        },
+        "zh-CN": {
+          "title": "文生 3D 单物体",
+          "summary": "把确认后的主体、用途、风格与约束编译为 provider-neutral 文生 3D 提示包",
+          "usage": "beta 试点：仅英文可编译；本中文条目为人工审阅说明，完整译文见包内 docs/template-zh-CN.md；任何 3D 执行均需另行授权"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/3d/text-to-3d-object-beta/prompts/main.en.md",
+          "digest": "sha256:16eb62304bc86f0b19fc53ce57d7cb9ab568d82ab81458e7be4055ca468ef337"
+        }
+      ]
+    },
     {
       "package_id": "agent",
       "id": "digital-human-persona-system",

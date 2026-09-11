@@ -1,0 +1,95 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "3d",
+  "solution_id": "3d-printable-design-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/3d/3d-printable-design-beta/prompts/main.en.md",
+  "template_digest": "sha256:4c3da4b3c1e65a29e19341a5b07c441c5f44f6506542675735d1a3ca03973748",
+  "digest": "sha256:45325a818eb25114b92053b21154620de52da5a3fd45e5898ea6a8cd8a6ef7e4",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "material",
+      "type": "string",
+      "max_length": 200,
+      "labels": {
+        "en": "Material",
+        "zh-CN": "材料"
+      },
+      "descriptions": {
+        "en": "Optional material for material-driven checks",
+        "zh-CN": "可选材料，用于材料相关检查"
+      }
+    },
+    {
+      "name": "print_orientation",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 500,
+      "labels": {
+        "en": "Print orientation",
+        "zh-CN": "成型方向"
+      },
+      "descriptions": {
+        "en": "Confirmed orientation for printing",
+        "zh-CN": "确认的打印成型方向"
+      }
+    },
+    {
+      "name": "support_strategy",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "none",
+        "minimal",
+        "standard",
+        "dense"
+      ],
+      "labels": {
+        "en": "Support strategy",
+        "zh-CN": "支撑策略"
+      },
+      "descriptions": {
+        "en": "Support approach for overhangs and bridges",
+        "zh-CN": "悬垂与桥接的支撑策略"
+      }
+    },
+    {
+      "name": "tolerance",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200,
+      "labels": {
+        "en": "Tolerance",
+        "zh-CN": "公差"
+      },
+      "descriptions": {
+        "en": "Mating tolerance with unit",
+        "zh-CN": "带单位的配合公差"
+      }
+    },
+    {
+      "name": "wall_thickness",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200,
+      "labels": {
+        "en": "Wall thickness",
+        "zh-CN": "壁厚"
+      },
+      "descriptions": {
+        "en": "Minimum wall thickness with unit",
+        "zh-CN": "带单位的最小壁厚"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "3d",
+  "id": "3d-scene-layout-beta",
+  "version": "1.0.0-beta.1",
+  "category": "3d",
+  "tags": [
+    "artifact:scene_layout",
+    "category:3d",
+    "constraint:scale_anchored",
+    "job:design",
+    "modality:3d"
+  ],
+  "capabilities": [
+    "scene_spatial",
+    "structured_output"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "3D scene layout",
+      "summary": "Compose a provider-neutral multi-object spatial layout with relative placement, a scale statement, and optional camera placeholders",
+      "usage": "English-compiled beta; generic spatial fields only, no downstream scene schema coupling"
+    },
+    "zh-CN": {
+      "title": "3D 场景布局",
+      "summary": "输出通用空间字段的多物体布局：相对位置、尺度声明与相机占位",
+      "usage": "beta 试点：仅英文可编译；本中文条目为人工审阅说明，完整译文见包内 docs/template-zh-CN.md；任何 3D 执行均需另行授权"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/3d/3d-scene-layout-beta/prompts/main.en.md"
+    }
+  ]
+}

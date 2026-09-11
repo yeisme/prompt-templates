@@ -1,0 +1,84 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "3d",
+  "solution_id": "image-to-3d-refine-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/3d/image-to-3d-refine-beta/prompts/main.en.md",
+  "template_digest": "sha256:d3b347ed760e303705628fce0a016583fb597bb2e66d2ef57855e8a5b0891c0d",
+  "digest": "sha256:4f312b183cf8fbf36c129e8cee5370568187e283b0f7804d88129482bb0a41b5",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "consistency_targets",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 4000,
+      "labels": {
+        "en": "Consistency targets",
+        "zh-CN": "一致性特征"
+      },
+      "descriptions": {
+        "en": "Features that must survive across views",
+        "zh-CN": "必须在各视角保持的特征清单"
+      }
+    },
+    {
+      "name": "occlusion_policy",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "inference_marked",
+        "conservative_infer",
+        "visible_only"
+      ],
+      "labels": {
+        "en": "Occlusion policy",
+        "zh-CN": "遮挡推测策略"
+      },
+      "descriptions": {
+        "en": "How hidden faces are treated",
+        "zh-CN": "不可见面的处理策略"
+      }
+    },
+    {
+      "name": "reference_image_ref",
+      "type": "string",
+      "required": true,
+      "regex": "^promptrepo://[A-Za-z0-9][A-Za-z0-9._-]*/.+",
+      "min_length": 1,
+      "max_length": 500,
+      "labels": {
+        "en": "Reference image ref",
+        "zh-CN": "参考图 exact ref"
+      },
+      "descriptions": {
+        "en": "Pointer to the reference image; content is never copied",
+        "zh-CN": "参考图指针；正文永不复制"
+      }
+    },
+    {
+      "name": "view_strategy",
+      "type": "enum",
+      "required": true,
+      "enum": [
+        "multi_view",
+        "single_view_infer"
+      ],
+      "labels": {
+        "en": "View strategy",
+        "zh-CN": "视角策略"
+      },
+      "descriptions": {
+        "en": "Committed views or single-view inference",
+        "zh-CN": "承诺多视角或单视角推测"
+      }
+    }
+  ]
+}

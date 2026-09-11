@@ -1,0 +1,74 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "3d",
+  "solution_id": "3d-scene-layout-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/3d/3d-scene-layout-beta/prompts/main.en.md",
+  "template_digest": "sha256:285dde03fba3b39edcaea277c2f2b03491c3f9cdd9e457b4c414d0980986070a",
+  "digest": "sha256:45f245c3fe3df441135ca078b795e9023815487ec0e75918f9e832dde437e866",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "camera_seeds",
+      "type": "string",
+      "max_length": 2000,
+      "labels": {
+        "en": "Camera seeds",
+        "zh-CN": "相机占位"
+      },
+      "descriptions": {
+        "en": "Optional named viewpoints with framing intent",
+        "zh-CN": "可选的具名视点与取景意图"
+      }
+    },
+    {
+      "name": "objects",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 4000,
+      "labels": {
+        "en": "Objects",
+        "zh-CN": "物体清单"
+      },
+      "descriptions": {
+        "en": "Named objects and their scene roles",
+        "zh-CN": "具名物体及其场景角色"
+      }
+    },
+    {
+      "name": "relations",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 4000,
+      "labels": {
+        "en": "Relations",
+        "zh-CN": "相对位置关系"
+      },
+      "descriptions": {
+        "en": "Relative placement and orientation between named objects",
+        "zh-CN": "具名物体间的相对位置与朝向"
+      }
+    },
+    {
+      "name": "scale_anchor",
+      "type": "string",
+      "max_length": 2000,
+      "labels": {
+        "en": "Scale anchor",
+        "zh-CN": "尺度锚点"
+      },
+      "descriptions": {
+        "en": "Real-world scale reference; empty means relative proportions only",
+        "zh-CN": "真实尺度参照；留空表示仅相对比例"
+      }
+    }
+  ]
+}

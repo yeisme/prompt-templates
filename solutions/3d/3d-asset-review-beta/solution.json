@@ -1,0 +1,40 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "3d",
+  "id": "3d-asset-review-beta",
+  "version": "1.0.0-beta.1",
+  "category": "3d",
+  "tags": [
+    "artifact:model_3d",
+    "category:3d",
+    "constraint:rights_aware",
+    "job:critic_review",
+    "modality:3d"
+  ],
+  "capabilities": [
+    "model3d",
+    "review",
+    "structured_output"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "3D asset review checklist",
+      "summary": "Review a candidate 3D asset across geometry integrity, UV and texture, scale consistency, and rights with pass/fail/unknown items",
+      "usage": "English-compiled beta; reviews report findings and never issue execution instructions"
+    },
+    "zh-CN": {
+      "title": "3D 资产评审",
+      "summary": "覆盖几何完整性、UV/贴图、比例与使用权的 pass/fail/unknown 评审清单",
+      "usage": "beta 试点：仅英文可编译；本中文条目为人工审阅说明，完整译文见包内 docs/template-zh-CN.md；任何 3D 执行均需另行授权"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/3d/3d-asset-review-beta/prompts/main.en.md"
+    }
+  ]
+}

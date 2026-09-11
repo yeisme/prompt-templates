@@ -6,7 +6,7 @@
 - [使用许可](../RIGHTS.md)：先确认模板允许的使用范围。
 - [视觉探索入门指南（beta）](visual-exploration/quickstart.md)：准备资料、导出提示包并检查复用结果。
 - [视觉探索支持范围](visual-exploration/operations.md)
-- [分类与标签](taxonomy.md)：十二类导航、namespace tags 和稳定 ID。
+- [分类与标签](taxonomy.md)：十三类导航（含 beta 试点 3d）、namespace tags 和稳定 ID。
 - [Agent 编译用基础模板（beta）](agent-consumption-beta.md)：结构化总结、会议纪要、证据研究简报三个 beta 方案与消费方式。
 - [AI 做剧分镜预设](../solutions/video/ai-drama-storyboard-breakdown/docs/preset-matrix.zh-CN.md)：竖屏短剧、对白密集、漫剧和产品微短剧的分镜合同。
 - [AI 做剧视觉资产预设（角色，模块化正式版）](../solutions/video/ai-drama-character-assets/docs/preset-matrix.zh-CN.md)：头/身核心、表面层、单件穿戴、预览的槽位矩阵与稳定失败码（2026-09-05 v2 晋升正式 1.0.0）。

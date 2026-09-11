@@ -1,0 +1,40 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "3d",
+  "id": "image-to-3d-refine-beta",
+  "version": "1.0.0-beta.1",
+  "category": "3d",
+  "tags": [
+    "artifact:model_3d",
+    "category:3d",
+    "constraint:multi_view_consistency",
+    "job:generate",
+    "modality:3d"
+  ],
+  "capabilities": [
+    "model3d",
+    "reference_image",
+    "structured_output"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Image to 3D refine",
+      "summary": "Compile a reference-image exact ref with view, occlusion, and consistency decisions into an image-to-3D prompt package",
+      "usage": "English-compiled beta; references are pointers, never copied; 3D execution is a separately authorized step"
+    },
+    "zh-CN": {
+      "title": "图生 3D 精修",
+      "summary": "把参考图 exact ref 与视角、遮挡、一致性决策编译为图生 3D 提示包",
+      "usage": "beta 试点：仅英文可编译；本中文条目为人工审阅说明，完整译文见包内 docs/template-zh-CN.md；任何 3D 执行均需另行授权"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/3d/image-to-3d-refine-beta/prompts/main.en.md"
+    }
+  ]
+}

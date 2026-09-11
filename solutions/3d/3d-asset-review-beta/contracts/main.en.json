@@ -1,0 +1,61 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "3d",
+  "solution_id": "3d-asset-review-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/3d/3d-asset-review-beta/prompts/main.en.md",
+  "template_digest": "sha256:3435f85bd81ce350646f6888ecbd411203b8c5f4a6a317667f599f51f9310755",
+  "digest": "sha256:7d994764cc454c7d98be8a0eac569aeaaa8aeca3895ff045667a02dc6cead918",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "asset_ref",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 500,
+      "labels": {
+        "en": "Asset reference",
+        "zh-CN": "资产引用"
+      },
+      "descriptions": {
+        "en": "Pointer to the candidate asset under review",
+        "zh-CN": "被评审的候选资产引用"
+      }
+    },
+    {
+      "name": "intended_use",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 2000,
+      "labels": {
+        "en": "Intended use",
+        "zh-CN": "预期用途"
+      },
+      "descriptions": {
+        "en": "Use the asset is being reviewed for",
+        "zh-CN": "评审所针对的用途"
+      }
+    },
+    {
+      "name": "scene_context_ref",
+      "type": "string",
+      "max_length": 500,
+      "labels": {
+        "en": "Scene context ref",
+        "zh-CN": "场景上下文引用"
+      },
+      "descriptions": {
+        "en": "Optional scene the asset must fit",
+        "zh-CN": "可选：资产需适配的场景"
+      }
+    }
+  ]
+}
