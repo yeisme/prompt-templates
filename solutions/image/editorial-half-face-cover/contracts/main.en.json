@@ -1,0 +1,82 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "editorial-half-face-cover",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/editorial-half-face-cover/prompts/main.en.md",
+  "template_digest": "sha256:3d72a46a8fcb2b16376060f18079cdfea138fe49e1c7a646df9311d4462ae44b",
+  "digest": "sha256:b6e63695508a9af54219d6d38ef631df729c417196419e75f46d1b977f94dd39",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "format_clause",
+      "type": "string",
+      "examples": [
+        "Vertical 3:4 "
+      ],
+      "labels": {
+        "en": "Format clause",
+        "zh-CN": "画幅前缀"
+      },
+      "descriptions": {
+        "en": "Optional aspect prefix with trailing space; empty string when unused",
+        "zh-CN": "可选画幅前缀，自带尾部空格；不用则空字符串"
+      }
+    },
+    {
+      "name": "persona",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "platinum pale-blonde hair with a light airy fringe, pale irises, fair skin, soft refined makeup, a quiet poised expression, gold star hair ornaments with pearl chains, wearing a soft light knit sweater"
+      ],
+      "labels": {
+        "en": "Persona",
+        "zh-CN": "人物印象"
+      },
+      "descriptions": {
+        "en": "Identity impressions to preserve from the reference person: hair color and style, fringe, gaze, expression, makeup, accessories, and clothing impression in one phrase",
+        "zh-CN": "参考人物需保持的印象一句：发色发型、刘海、眼神、神情、妆容、饰品与服装印象"
+      }
+    },
+    {
+      "name": "signature",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "「[ SOPHIA AU ]」",
+        "「[ YUNA ]」"
+      ],
+      "labels": {
+        "en": "Signature",
+        "zh-CN": "签名"
+      },
+      "descriptions": {
+        "en": "Signature rendered character-exact near the campaign line, including every bracket and symbol; this is the replacement for the 「【在此输入签名】」 placeholder",
+        "zh-CN": "宣传语附近逐字精确渲染的签名，含全部括号与符号；即 「【在此输入签名】」 占位符的替换值"
+      }
+    },
+    {
+      "name": "slogan",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Platinum Poise, Gilded Gaze."
+      ],
+      "labels": {
+        "en": "Campaign line",
+        "zh-CN": "宣传语"
+      },
+      "descriptions": {
+        "en": "Short campaign line rendered verbatim in the lower left; Japanese or English, written from the subject visual impression; not a poem, not boilerplate",
+        "zh-CN": "左下方逐字渲染的宣传语；日语或英语，按人物视觉印象创作，不是诗句、不要空泛套话"
+      }
+    }
+  ]
+}

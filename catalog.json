@@ -7,7 +7,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:9de636245d2b5943f3ec07633e3201dae5c41573268ccc9de6e7638627ac8932",
+  "digest": "sha256:d0c238da964df4fe4355a0c4bc692129e3aa4180d73ec38a0f1bbe2c3f02a7e8",
   "solutions": [
     {
       "package_id": "3d",
@@ -651,6 +651,58 @@
           "locale": "en",
           "path": "solutions/image/candid-portrait-matrix/prompts/main.en.md",
           "digest": "sha256:a0ba9fa986a3617c6d62f37e4b972b0be3ddab0358a8531ac1b26f9d22fb5c13"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "editorial-half-face-cover",
+      "version": "1.0.0",
+      "digest": "sha256:c5f0fb61e071a725dff13278bc018a398df31cd4edbbf09c1673d584decb37d3",
+      "category": "image",
+      "tags": [
+        "artifact:editorial_cover",
+        "category:image",
+        "constraint:character_consistency",
+        "constraint:realism",
+        "constraint:style_lock",
+        "constraint:text_legibility",
+        "job:generate",
+        "modality:image",
+        "scenario:magazine_cover",
+        "stage:prompt_generation"
+      ],
+      "capabilities": [
+        "image",
+        "negative_prompt_governance",
+        "reference_image",
+        "style_layer"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Editorial Half-Face Magazine Cover Portrait",
+          "summary": "Compile a reference person into a magazine-cover-grade luxury half-face portrait prompt: exact centerline half-face close-up on the right, clean left negative space, one campaign line, and a character-exact signature",
+          "usage": "Bind persona, slogan, and signature; keep every style paragraph fixed; attach the reference image when delivering"
+        },
+        "zh-CN": {
+          "title": "杂志封面半脸肖像（高端宣传照）",
+          "summary": "把参考人物编译为杂志封面级高端肖像 Prompt：右侧沿中线恰好半脸的超大特写、左侧干净留白、一句专属宣传语与逐字精确的签名",
+          "usage": "绑定人物印象、宣传语与签名，风格段固定；投递时附参考图",
+          "aliases": [
+            "magazine cover portrait",
+            "半脸封面",
+            "杂志封面肖像"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/editorial-half-face-cover/prompts/main.en.md",
+          "digest": "sha256:3d72a46a8fcb2b16376060f18079cdfea138fe49e1c7a646df9311d4462ae44b"
         }
       ]
     },
