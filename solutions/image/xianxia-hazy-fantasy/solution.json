@@ -34,6 +34,14 @@
   },
   "templates": [
     {
+      "title": "Xianxia Hazy Fantasy Style Layer",
+      "summary": "Reusable soft-mist low-saturation backlight style layer for cultivation/xianxia character images; swap only persona and scene",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/image/xianxia-hazy-fantasy/prompts/main.en.md"

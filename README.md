@@ -18,6 +18,8 @@ Windows 用户可从 [公开二进制发行页](https://github.com/yeisme/yeisme
 
 ## 使用
 
+运行 `template-registry prompt list` 可按方案直接展开模板；图像用途使用 `--media image`。数量口径与目录审计见 [模板发现](docs/discovery.md)。
+
 你可以通过 Template Registry 搜索、编译和导出提示包，也可以在支持 `promptrepo://` 引用的工具中使用模板。以下是部分模板的精确版本引用：
 
 - `promptrepo://official/writing/revision-assistant@1.0.0?locale=en`：Auctra 与通用文本修订。

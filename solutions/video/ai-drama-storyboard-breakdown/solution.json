@@ -41,21 +41,41 @@
   },
   "templates": [
     {
+      "title": "AI Drama Storyboard Breakdown",
+      "summary": "Turn one episode of script segments into a reviewable directorial semantic storyboard plan",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/main.en.md"
     },
     {
+      "title": "AI Drama Storyboard Breakdown",
+      "summary": "Turn one episode of script segments into a reviewable directorial semantic storyboard plan",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/main.zh-CN.md"
     },
     {
+      "title": "Repair pass",
+      "summary": "Repair a reviewed storyboard while preserving source traceability.",
+      "media": [
+        "text"
+      ],
       "role": "repair",
       "locale": "en",
       "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.en.md"
     },
     {
+      "title": "Repair pass",
+      "summary": "Repair a reviewed storyboard while preserving source traceability.",
+      "media": [
+        "text"
+      ],
       "role": "repair",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-storyboard-breakdown/prompts/repair.zh-CN.md"

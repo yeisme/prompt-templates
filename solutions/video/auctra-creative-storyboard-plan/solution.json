@@ -33,6 +33,14 @@
   },
   "templates": [
     {
+      "title": "Auctra creative storyboard plan",
+      "summary": "Compile one episode creative storyboard plan candidate from an accepted auctra.director_scene_plan.v1 projection, mapping to auctra.storyboard_plan.v1",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/video/auctra-creative-storyboard-plan/prompts/main.en.md"

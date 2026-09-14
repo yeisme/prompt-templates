@@ -35,11 +35,21 @@
   },
   "templates": [
     {
+      "title": "Xiaohongshu campaign copy",
+      "summary": "Create natural, compliant Xiaohongshu campaign content from verified benefits",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/marketing/xhs-campaign-copy/prompts/main.en.md"
     },
     {
+      "title": "Xiaohongshu campaign copy",
+      "summary": "Create natural, compliant Xiaohongshu campaign content from verified benefits",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/marketing/xhs-campaign-copy/prompts/main.zh-CN.md"

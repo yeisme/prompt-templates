@@ -29,6 +29,14 @@
   },
   "templates": [
     {
+      "title": "AI drama story architecture",
+      "summary": "Turn a story idea into a verifiable dramatic structure with a conflict chain and ten-field beat cards",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/writing/ai-drama-story-architecture/prompts/main.en.md"

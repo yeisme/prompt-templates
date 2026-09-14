@@ -29,6 +29,14 @@
   },
   "templates": [
     {
+      "title": "AI drama showrunner",
+      "summary": "Plan seasons and episodes with proof-slice batching, expansion gates, payoff windows, and suspense debt",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/writing/ai-drama-showrunner/prompts/main.en.md"

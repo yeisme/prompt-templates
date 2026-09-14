@@ -31,6 +31,14 @@
   },
   "templates": [
     {
+      "title": "Text revision assistant",
+      "summary": "Revise existing text against an explicit goal while preserving facts, responsibility, and uncertainty",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/writing/revision-assistant/prompts/main.en.md"

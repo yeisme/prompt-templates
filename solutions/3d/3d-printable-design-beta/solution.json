@@ -31,6 +31,11 @@
   },
   "templates": [
     {
+      "title": "3D printable design constraints",
+      "summary": "Compile confirmed manufacturability constraints into a decidable checklist-style 3D printing prompt package",
+      "media": [
+        "3d"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/3d/3d-printable-design-beta/prompts/main.en.md"

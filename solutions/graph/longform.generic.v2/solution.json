@@ -24,26 +24,66 @@
   },
   "templates": [
     {
+      "title": "Lens",
+      "summary": "面向长篇小说分支规划的五角色精确闭包，覆盖十个知识图谱面板、校验、动态更新与回滚",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "lens",
       "locale": "zh-CN",
       "path": "solutions/graph/longform.generic.v2/prompts/lens.zh-CN.yaml"
     },
     {
+      "title": "Manifest",
+      "summary": "面向长篇小说分支规划的五角色精确闭包，覆盖十个知识图谱面板、校验、动态更新与回滚",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "manifest",
       "locale": "zh-CN",
       "path": "solutions/graph/longform.generic.v2/prompts/manifest.zh-CN.yaml"
     },
     {
+      "title": "Source_Adapter",
+      "summary": "面向长篇小说分支规划的五角色精确闭包，覆盖十个知识图谱面板、校验、动态更新与回滚",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "source_adapter",
       "locale": "zh-CN",
       "path": "solutions/graph/longform.generic.v2/prompts/source_adapter.zh-CN.yaml"
     },
     {
+      "title": "Validator",
+      "summary": "面向长篇小说分支规划的五角色精确闭包，覆盖十个知识图谱面板、校验、动态更新与回滚",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "validator",
       "locale": "zh-CN",
       "path": "solutions/graph/longform.generic.v2/prompts/validator.zh-CN.yaml"
     },
     {
+      "title": "View",
+      "summary": "面向长篇小说分支规划的五角色精确闭包，覆盖十个知识图谱面板、校验、动态更新与回滚",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "view",
       "locale": "zh-CN",
       "path": "solutions/graph/longform.generic.v2/prompts/view.zh-CN.yaml"

@@ -30,6 +30,14 @@
   },
   "templates": [
     {
+      "title": "Pixel Battle Sprite Sheet (4x4)",
+      "summary": "Convert a character into a chibi pixel-art battle sprite as a 4x4 transparent RGBA PNG with 16 loopable combat frames",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/image/pixel-battle-sprite/prompts/main.en.md"

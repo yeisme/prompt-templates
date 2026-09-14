@@ -34,6 +34,11 @@
   },
   "templates": [
     {
+      "title": "Realistic Vlog Shot Generation",
+      "summary": "Compile subject, setting, handheld camera texture, timeline beats, and realism/audio constraints into a realistic vlog prompt for direct video-model delivery",
+      "media": [
+        "video"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/video/realistic-vlog-shot-generation/prompts/main.en.md"

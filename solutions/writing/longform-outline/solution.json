@@ -34,11 +34,27 @@
   },
   "templates": [
     {
+      "title": "Long-form outline",
+      "summary": "Turn a topic and source material into a writing-ready hierarchical outline",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/writing/longform-outline/prompts/main.en.md"
     },
     {
+      "title": "Long-form outline",
+      "summary": "Turn a topic and source material into a writing-ready hierarchical outline",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/writing/longform-outline/prompts/main.zh-CN.md"

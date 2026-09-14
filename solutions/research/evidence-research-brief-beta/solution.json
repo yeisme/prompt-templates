@@ -32,6 +32,11 @@
   },
   "templates": [
     {
+      "title": "Evidence research brief for agents",
+      "summary": "A successor with explicit source boundaries and confirmable inputs",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/research/evidence-research-brief-beta/prompts/main.en.md"

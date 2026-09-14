@@ -8,6 +8,19 @@
 
 从仓库根目录打开 [可运行演练](../../../../docs/visual-exploration/quickstart.md)。英文模板负责 Agent 编译，中文输入和说明受支持。
 
+## 给 Agent 的阅读顺序
+
+请把本目录和这些链接交给 Agent，让它先读取工具能力，再按输入合同提问。网页或文档不会替你执行模型调用。
+
+1. [方案清单 `solution.json`](../solution.json)：确认 package、solution、版本和公开角色。
+2. [输入合同 `main.en.json`](../contracts/main.en.json)：确认必填字段、类型、默认值和边界。
+3. [英文 Agent 模板 `main.en.md`](../prompts/main.en.md)：编译后输出三个方向和独立提示词。
+4. [中文阅读指南 `template-zh-CN.md`](template-zh-CN.md)：了解输入、评审和复用方法。
+5. [练习示例 `examples.md`](examples.md)：检查方向差异和事实清理。
+6. [使用许可 `LICENSE.md`](LICENSE.md)：确认执行、修改和商用边界。
+
+固定版本入口可用于复现本次行为；`main` 可能继续更新，获取新版前请重新核对版本和合同。仓库级流程见 [visual-exploration quickstart](../../../../docs/visual-exploration/quickstart.md) 和 [仓库文档目录](../../../../docs/README.md)。
+
 你需要提供：需求、目标受众、必须保留/避免的内容、画面比例、说明语言。检查 Agent 是否保留真实主体、是否给出三种不同构图与表现方式、是否明确说明取舍。确认方向后再决定是否授权图像工具执行。
 
 ## 三个公开练习
@@ -23,3 +36,7 @@
 免费评估权限见[使用许可](LICENSE.md)，不改变仓库里其他模板的权限。拟支持环境为 Eikona + `openai/gpt-5.4-image-2`，尚无真实图像验证；其他环境仅提供通用导出。模型调用费用不包含在模板中。
 
 本页提供免费 beta 的使用说明，付费方案尚未开放销售。
+
+## 复制给 Agent 的任务起点
+
+请读取本页、`solution.json`、`contracts/main.en.json` 和 `prompts/main.en.md`，先向我询问需求、受众、硬约束、比例和说明语言。确认输入后再编译，输出三个方向和各自取舍，等待我选择；图片生成、精修、费用和模型调用是后续独立步骤。更换主体时建立新会话，重新确认输入并检查旧事实没有残留。

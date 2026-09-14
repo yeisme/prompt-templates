@@ -35,11 +35,21 @@
   },
   "templates": [
     {
+      "title": "Bug root-cause analysis",
+      "summary": "Rank hypotheses from reproduction evidence, identify root cause, and design minimal fix verification",
+      "media": [
+        "code"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/engineering/bug-root-cause-analysis/prompts/main.en.md"
     },
     {
+      "title": "Bug root-cause analysis",
+      "summary": "Rank hypotheses from reproduction evidence, identify root cause, and design minimal fix verification",
+      "media": [
+        "code"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/engineering/bug-root-cause-analysis/prompts/main.zh-CN.md"

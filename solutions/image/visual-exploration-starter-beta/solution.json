@@ -28,6 +28,14 @@
   },
   "templates": [
     {
+      "title": "Visual exploration starter",
+      "summary": "Explore, compare and reuse three visual directions with an Agent",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/image/visual-exploration-starter-beta/prompts/main.en.md"

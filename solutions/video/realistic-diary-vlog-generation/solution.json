@@ -36,6 +36,11 @@
   },
   "templates": [
     {
+      "title": "Realistic Diary Vlog Generation",
+      "summary": "Compile subject, selfie/follow camera formats, on-camera dialogue with lip sync, acoustic-space continuity, and realism constraints into a diary vlog prompt for direct video-model delivery",
+      "media": [
+        "video"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/video/realistic-diary-vlog-generation/prompts/main.en.md"

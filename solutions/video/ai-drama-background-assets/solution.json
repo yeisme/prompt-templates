@@ -27,21 +27,57 @@
   },
   "templates": [
     {
+      "title": "Clean background plate",
+      "summary": "Create a subject-free background plate for shot composition.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "clean-background-plate-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-background-assets/prompts/clean-background-plate-v1.en.md"
     },
     {
+      "title": "Clean background plate",
+      "summary": "Create a subject-free background plate for shot composition.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "clean-background-plate-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-background-assets/prompts/clean-background-plate-v1.zh-CN.md"
     },
     {
+      "title": "Background plate review",
+      "summary": "Review a background plate for isolation and reuse.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "validate-background-plate-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.en.md"
     },
     {
+      "title": "Background plate review",
+      "summary": "Review a background plate for isolation and reuse.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "validate-background-plate-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-background-assets/prompts/validate-background-plate-v1.zh-CN.md"

@@ -40,11 +40,27 @@
   },
   "templates": [
     {
+      "title": "Delivery handoff",
+      "summary": "Prepare a structured handoff to the consuming production tool.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "delivery",
       "locale": "en",
       "path": "solutions/image/candid-portrait-matrix/prompts/delivery.en.md"
     },
     {
+      "title": "Candid Lifestyle Portrait (Random Matrix)",
+      "summary": "Compile a subject plus 12 picture dimensions into a candid summer portrait prompt ready for image-model delivery",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/image/candid-portrait-matrix/prompts/main.en.md"

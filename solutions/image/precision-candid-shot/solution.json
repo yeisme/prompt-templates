@@ -40,6 +40,14 @@
   },
   "templates": [
     {
+      "title": "Precision-Parameterized Candid Shot",
+      "summary": "Single-shot fully quantified candid prompt: camera height/lens/framing/foreground/palette/lighting all parameterized and bound exactly from a shot spec",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/image/precision-candid-shot/prompts/main.en.md"

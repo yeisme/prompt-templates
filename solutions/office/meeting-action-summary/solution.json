@@ -34,11 +34,21 @@
   },
   "templates": [
     {
+      "title": "Meeting action summary",
+      "summary": "Extract decisions, actions, owners, dates, and risks from meeting records",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/office/meeting-action-summary/prompts/main.en.md"
     },
     {
+      "title": "Meeting action summary",
+      "summary": "Extract decisions, actions, owners, dates, and risks from meeting records",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/office/meeting-action-summary/prompts/main.zh-CN.md"

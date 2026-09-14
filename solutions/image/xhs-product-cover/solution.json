@@ -36,11 +36,27 @@
   },
   "templates": [
     {
+      "title": "Xiaohongshu product cover",
+      "summary": "Create a product-cover prompt with composition, lighting, safe text layout, and negative constraints",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/image/xhs-product-cover/prompts/main.en.md"
     },
     {
+      "title": "Xiaohongshu product cover",
+      "summary": "Create a product-cover prompt with composition, lighting, safe text layout, and negative constraints",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/image/xhs-product-cover/prompts/main.zh-CN.md"

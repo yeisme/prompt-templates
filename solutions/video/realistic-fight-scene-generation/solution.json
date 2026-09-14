@@ -37,6 +37,11 @@
   },
   "templates": [
     {
+      "title": "Realistic Fight Scene Generation",
+      "summary": "Compile dual-character identity lock, fight physics, axis of action, ACT follow camera, and per-beat choreography into a fight-scene prompt for direct video-model delivery",
+      "media": [
+        "video"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/video/realistic-fight-scene-generation/prompts/main.en.md"

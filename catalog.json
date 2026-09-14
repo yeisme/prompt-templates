@@ -1,4 +1,1424 @@
 {
+  "discovery": [
+    {
+      "package_id": "3d",
+      "solution_id": "3d-asset-review-beta",
+      "role": "main",
+      "locale": "en",
+      "title": "3D asset review checklist",
+      "summary": "Review a candidate 3D asset across geometry integrity, UV and texture, scale consistency, and rights with pass/fail/unknown items",
+      "media": [
+        "3d"
+      ]
+    },
+    {
+      "package_id": "3d",
+      "solution_id": "3d-printable-design-beta",
+      "role": "main",
+      "locale": "en",
+      "title": "3D printable design constraints",
+      "summary": "Compile confirmed manufacturability constraints into a decidable checklist-style 3D printing prompt package",
+      "media": [
+        "3d"
+      ]
+    },
+    {
+      "package_id": "3d",
+      "solution_id": "3d-scene-layout-beta",
+      "role": "main",
+      "locale": "en",
+      "title": "3D scene layout",
+      "summary": "Compose a provider-neutral multi-object spatial layout with relative placement, a scale statement, and optional camera placeholders",
+      "media": [
+        "3d"
+      ]
+    },
+    {
+      "package_id": "3d",
+      "solution_id": "image-to-3d-refine-beta",
+      "role": "main",
+      "locale": "en",
+      "title": "Image to 3D refine",
+      "summary": "Compile a reference-image exact ref with view, occlusion, and consistency decisions into an image-to-3D prompt package",
+      "media": [
+        "3d"
+      ]
+    },
+    {
+      "package_id": "3d",
+      "solution_id": "text-to-3d-object-beta",
+      "role": "main",
+      "locale": "en",
+      "title": "Text to 3D object",
+      "summary": "Compile a confirmed subject, purpose, style, and constraints into a provider-neutral text-to-3D prompt package",
+      "media": [
+        "3d"
+      ]
+    },
+    {
+      "package_id": "agent",
+      "solution_id": "digital-human-persona-system",
+      "role": "main",
+      "locale": "en",
+      "title": "Digital-human persona system prompt",
+      "summary": "Compile confirmed identity, audience, speaking, factual, and safety boundaries into a real-time persona prompt",
+      "media": [
+        "spoken_dialogue"
+      ]
+    },
+    {
+      "package_id": "agent",
+      "solution_id": "template-skill-integration-design-beta",
+      "role": "main",
+      "locale": "en",
+      "title": "Template and Skill Integration Design",
+      "summary": "Compile confirmed multimodal requirements into an owner-aware template, Skill, recipe, persistence, installation, and handoff brief",
+      "media": [
+        "multimodal"
+      ]
+    },
+    {
+      "package_id": "agent",
+      "solution_id": "tool-use-handoff",
+      "role": "main",
+      "locale": "en",
+      "title": "Agent tool use and handoff",
+      "summary": "Design permission-aware, evidence-backed, reversible agent execution and handoff",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "agent",
+      "solution_id": "tool-use-handoff",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "Agent tool use and handoff",
+      "summary": "Design permission-aware, evidence-backed, reversible agent execution and handoff",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "audio",
+      "solution_id": "podcast-narration",
+      "role": "delivery",
+      "locale": "en",
+      "title": "Delivery handoff",
+      "summary": "Prepare a structured handoff to the consuming production tool.",
+      "media": [
+        "audio"
+      ],
+      "consumers": [
+        "sonora"
+      ]
+    },
+    {
+      "package_id": "audio",
+      "solution_id": "podcast-narration",
+      "role": "main",
+      "locale": "en",
+      "title": "Chinese podcast narration",
+      "summary": "Convert Chinese scripts into podcast narration with pacing, pauses, emphasis, and pronunciation guidance",
+      "media": [
+        "audio"
+      ],
+      "consumers": [
+        "sonora"
+      ]
+    },
+    {
+      "package_id": "audio",
+      "solution_id": "podcast-narration",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "Chinese podcast narration",
+      "summary": "Convert Chinese scripts into podcast narration with pacing, pauses, emphasis, and pronunciation guidance",
+      "media": [
+        "audio"
+      ],
+      "consumers": [
+        "sonora"
+      ]
+    },
+    {
+      "package_id": "engineering",
+      "solution_id": "bug-root-cause-analysis",
+      "role": "main",
+      "locale": "en",
+      "title": "Bug root-cause analysis",
+      "summary": "Rank hypotheses from reproduction evidence, identify root cause, and design minimal fix verification",
+      "media": [
+        "code"
+      ]
+    },
+    {
+      "package_id": "engineering",
+      "solution_id": "bug-root-cause-analysis",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "Bug root-cause analysis",
+      "summary": "Rank hypotheses from reproduction evidence, identify root cause, and design minimal fix verification",
+      "media": [
+        "code"
+      ]
+    },
+    {
+      "package_id": "general",
+      "solution_id": "structured-summary",
+      "role": "main",
+      "locale": "en",
+      "title": "Structured summary",
+      "summary": "Extract verifiable conclusions, facts, actions, and risks from long-form material",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "general",
+      "solution_id": "structured-summary",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "Structured summary",
+      "summary": "Extract verifiable conclusions, facts, actions, and risks from long-form material",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "general",
+      "solution_id": "structured-summary-beta",
+      "role": "main",
+      "locale": "en",
+      "title": "Structured summary for agents",
+      "summary": "A successor with explicit source boundaries and confirmable inputs",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "graph",
+      "solution_id": "longform.generic.v2",
+      "role": "lens",
+      "locale": "zh-CN",
+      "title": "Lens",
+      "summary": "面向长篇小说分支规划的五角色精确闭包，覆盖十个知识图谱面板、校验、动态更新与回滚",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "graph",
+      "solution_id": "longform.generic.v2",
+      "role": "manifest",
+      "locale": "zh-CN",
+      "title": "Manifest",
+      "summary": "面向长篇小说分支规划的五角色精确闭包，覆盖十个知识图谱面板、校验、动态更新与回滚",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "graph",
+      "solution_id": "longform.generic.v2",
+      "role": "source_adapter",
+      "locale": "zh-CN",
+      "title": "Source_Adapter",
+      "summary": "面向长篇小说分支规划的五角色精确闭包，覆盖十个知识图谱面板、校验、动态更新与回滚",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "graph",
+      "solution_id": "longform.generic.v2",
+      "role": "validator",
+      "locale": "zh-CN",
+      "title": "Validator",
+      "summary": "面向长篇小说分支规划的五角色精确闭包，覆盖十个知识图谱面板、校验、动态更新与回滚",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "graph",
+      "solution_id": "longform.generic.v2",
+      "role": "view",
+      "locale": "zh-CN",
+      "title": "View",
+      "summary": "面向长篇小说分支规划的五角色精确闭包，覆盖十个知识图谱面板、校验、动态更新与回滚",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "image",
+      "solution_id": "candid-portrait-matrix",
+      "role": "delivery",
+      "locale": "en",
+      "title": "Delivery handoff",
+      "summary": "Prepare a structured handoff to the consuming production tool.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ]
+    },
+    {
+      "package_id": "image",
+      "solution_id": "candid-portrait-matrix",
+      "role": "main",
+      "locale": "en",
+      "title": "Candid Lifestyle Portrait (Random Matrix)",
+      "summary": "Compile a subject plus 12 picture dimensions into a candid summer portrait prompt ready for image-model delivery",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ]
+    },
+    {
+      "package_id": "image",
+      "solution_id": "editorial-half-face-cover",
+      "role": "main",
+      "locale": "en",
+      "title": "Editorial Half-Face Magazine Cover Portrait",
+      "summary": "Compile a reference person into a magazine-cover-grade luxury half-face portrait prompt: exact centerline half-face close-up on the right, clean left negative space, one campaign line, and a character-exact signature",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ]
+    },
+    {
+      "package_id": "image",
+      "solution_id": "iconic-landmark-poster",
+      "role": "main",
+      "locale": "en",
+      "title": "ICONIC LANDMARK SERIES City Landmark Poster",
+      "summary": "Fixed visual system (photo upper + vector lower + archival typography) city landmark poster prompt with fully parameterized city content",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ]
+    },
+    {
+      "package_id": "image",
+      "solution_id": "pixel-battle-sprite",
+      "role": "main",
+      "locale": "en",
+      "title": "Pixel Battle Sprite Sheet (4x4)",
+      "summary": "Convert a character into a chibi pixel-art battle sprite as a 4x4 transparent RGBA PNG with 16 loopable combat frames",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ]
+    },
+    {
+      "package_id": "image",
+      "solution_id": "precision-candid-shot",
+      "role": "main",
+      "locale": "en",
+      "title": "Precision-Parameterized Candid Shot",
+      "summary": "Single-shot fully quantified candid prompt: camera height/lens/framing/foreground/palette/lighting all parameterized and bound exactly from a shot spec",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ]
+    },
+    {
+      "package_id": "image",
+      "solution_id": "visual-exploration-starter-beta",
+      "role": "main",
+      "locale": "en",
+      "title": "Visual exploration starter",
+      "summary": "Explore, compare and reuse three visual directions with an Agent",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ]
+    },
+    {
+      "package_id": "image",
+      "solution_id": "xhs-product-cover",
+      "role": "main",
+      "locale": "en",
+      "title": "Xiaohongshu product cover",
+      "summary": "Create a product-cover prompt with composition, lighting, safe text layout, and negative constraints",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ]
+    },
+    {
+      "package_id": "image",
+      "solution_id": "xhs-product-cover",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "Xiaohongshu product cover",
+      "summary": "Create a product-cover prompt with composition, lighting, safe text layout, and negative constraints",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ]
+    },
+    {
+      "package_id": "image",
+      "solution_id": "xhs-product-cover-v2",
+      "role": "delivery",
+      "locale": "en",
+      "title": "Delivery handoff",
+      "summary": "Prepare a structured handoff to the consuming production tool.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ]
+    },
+    {
+      "package_id": "image",
+      "solution_id": "xhs-product-cover-v2",
+      "role": "main",
+      "locale": "en",
+      "title": "Xiaohongshu product cover v2",
+      "summary": "Create a product-cover prompt for generic image workflows with composition, lighting, safe text layout, and negative constraints",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ]
+    },
+    {
+      "package_id": "image",
+      "solution_id": "xianxia-hazy-fantasy",
+      "role": "main",
+      "locale": "en",
+      "title": "Xianxia Hazy Fantasy Style Layer",
+      "summary": "Reusable soft-mist low-saturation backlight style layer for cultivation/xianxia character images; swap only persona and scene",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ]
+    },
+    {
+      "package_id": "learning",
+      "solution_id": "socratic-study-plan",
+      "role": "main",
+      "locale": "en",
+      "title": "Socratic study plan",
+      "summary": "Design a verifiable and adaptive question-led learning path from the learner's current level",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "learning",
+      "solution_id": "socratic-study-plan",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "Socratic study plan",
+      "summary": "Design a verifiable and adaptive question-led learning path from the learner's current level",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "marketing",
+      "solution_id": "xhs-campaign-copy",
+      "role": "main",
+      "locale": "en",
+      "title": "Xiaohongshu campaign copy",
+      "summary": "Create natural, compliant Xiaohongshu campaign content from verified benefits",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "marketing",
+      "solution_id": "xhs-campaign-copy",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "Xiaohongshu campaign copy",
+      "summary": "Create natural, compliant Xiaohongshu campaign content from verified benefits",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "office",
+      "solution_id": "meeting-action-summary",
+      "role": "main",
+      "locale": "en",
+      "title": "Meeting action summary",
+      "summary": "Extract decisions, actions, owners, dates, and risks from meeting records",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "office",
+      "solution_id": "meeting-action-summary",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "Meeting action summary",
+      "summary": "Extract decisions, actions, owners, dates, and risks from meeting records",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "office",
+      "solution_id": "meeting-action-summary-beta",
+      "role": "main",
+      "locale": "en",
+      "title": "Meeting action summary for agents",
+      "summary": "A successor with explicit source boundaries and confirmable inputs",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "product",
+      "solution_id": "prd-acceptance-criteria",
+      "role": "main",
+      "locale": "en",
+      "title": "PRD and acceptance criteria",
+      "summary": "Turn a product idea into a capability ledger, workflow, requirements, and testable acceptance criteria",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "product",
+      "solution_id": "prd-acceptance-criteria",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "PRD and acceptance criteria",
+      "summary": "Turn a product idea into a capability ledger, workflow, requirements, and testable acceptance criteria",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "research",
+      "solution_id": "evidence-research-brief",
+      "role": "main",
+      "locale": "en",
+      "title": "Evidence-based research brief",
+      "summary": "Create a research brief that separates facts, inference, counterevidence, and limitations",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "research",
+      "solution_id": "evidence-research-brief",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "Evidence-based research brief",
+      "summary": "Create a research brief that separates facts, inference, counterevidence, and limitations",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "research",
+      "solution_id": "evidence-research-brief-beta",
+      "role": "main",
+      "locale": "en",
+      "title": "Evidence research brief for agents",
+      "summary": "A successor with explicit source boundaries and confirmable inputs",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-background-assets",
+      "role": "clean-background-plate-v1",
+      "locale": "en",
+      "title": "Clean background plate",
+      "summary": "Create a subject-free background plate for shot composition.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-background-assets",
+      "role": "clean-background-plate-v1",
+      "locale": "zh-CN",
+      "title": "Clean background plate",
+      "summary": "Create a subject-free background plate for shot composition.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-background-assets",
+      "role": "validate-background-plate-v1",
+      "locale": "en",
+      "title": "Background plate review",
+      "summary": "Review a background plate for isolation and reuse.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-background-assets",
+      "role": "validate-background-plate-v1",
+      "locale": "zh-CN",
+      "title": "Background plate review",
+      "summary": "Review a background plate for isolation and reuse.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-background-assets-v2",
+      "role": "empty-scene-shell-v1",
+      "locale": "en",
+      "title": "Empty scene shell",
+      "summary": "Create a reusable empty environment without foreground subjects.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-background-assets-v2",
+      "role": "empty-scene-shell-v1",
+      "locale": "zh-CN",
+      "title": "Empty scene shell",
+      "summary": "Create a reusable empty environment without foreground subjects.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-background-assets-v2",
+      "role": "environment-harmonized-preview-v1",
+      "locale": "en",
+      "title": "Environment harmonization preview",
+      "summary": "Review the assembled environment for visual consistency.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-background-assets-v2",
+      "role": "environment-harmonized-preview-v1",
+      "locale": "zh-CN",
+      "title": "Environment harmonization preview",
+      "summary": "Review the assembled environment for visual consistency.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-background-assets-v2",
+      "role": "environment-layer-preview-v1",
+      "locale": "en",
+      "title": "Environment layer preview",
+      "summary": "Preview environment layer placement and spatial alignment.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-background-assets-v2",
+      "role": "environment-layer-preview-v1",
+      "locale": "zh-CN",
+      "title": "Environment layer preview",
+      "summary": "Preview environment layer placement and spatial alignment.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-background-assets-v2",
+      "role": "semantic-object-v1",
+      "locale": "en",
+      "title": "Semantic environment object",
+      "summary": "Create a separately reusable environment object.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-background-assets-v2",
+      "role": "semantic-object-v1",
+      "locale": "zh-CN",
+      "title": "Semantic environment object",
+      "summary": "Create a separately reusable environment object.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "body-core-neutral-v1",
+      "locale": "en",
+      "title": "Neutral body reference",
+      "summary": "Create a neutral body proportion reference for reusable character assembly.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "body-core-neutral-v1",
+      "locale": "zh-CN",
+      "title": "Neutral body reference",
+      "summary": "Create a neutral body proportion reference for reusable character assembly.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "character-harmonized-preview-v1",
+      "locale": "en",
+      "title": "Character harmonization preview",
+      "summary": "Review a visually harmonized assembled character.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "character-harmonized-preview-v1",
+      "locale": "zh-CN",
+      "title": "Character harmonization preview",
+      "summary": "Review a visually harmonized assembled character.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "character-layer-preview-v1",
+      "locale": "en",
+      "title": "Character layer preview",
+      "summary": "Preview the alignment of character layers before harmonization.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "character-layer-preview-v1",
+      "locale": "zh-CN",
+      "title": "Character layer preview",
+      "summary": "Preview the alignment of character layers before harmonization.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "head-core-bald-v1",
+      "locale": "en",
+      "title": "Bald head identity",
+      "summary": "Create an isolated head identity reference without hair or accessories.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "head-core-bald-v1",
+      "locale": "zh-CN",
+      "title": "Bald head identity",
+      "summary": "Create an isolated head identity reference without hair or accessories.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "surface-coat-hair-v1",
+      "locale": "en",
+      "title": "Hair surface layer",
+      "summary": "Create an isolated hair layer matched to the character identity.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "surface-coat-hair-v1",
+      "locale": "zh-CN",
+      "title": "Hair surface layer",
+      "summary": "Create an isolated hair layer matched to the character identity.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "wearable-accessory-v1",
+      "locale": "en",
+      "title": "Accessory layer",
+      "summary": "Create an isolated wearable accessory reference.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "wearable-accessory-v1",
+      "locale": "zh-CN",
+      "title": "Accessory layer",
+      "summary": "Create an isolated wearable accessory reference.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "wearable-garment-v1",
+      "locale": "en",
+      "title": "Garment layer",
+      "summary": "Create an isolated garment reference for character assembly.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-character-assets",
+      "role": "wearable-garment-v1",
+      "locale": "zh-CN",
+      "title": "Garment layer",
+      "summary": "Create an isolated garment reference for character assembly.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-shot-video-generation",
+      "role": "main",
+      "locale": "en",
+      "title": "AI Drama Shot Video Generation",
+      "summary": "Compile character, ultimate skill, enemies, scene, camera, and per-second storyboard into a shot-level prompt for direct video-model delivery",
+      "media": [
+        "video"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-storyboard-breakdown",
+      "role": "main",
+      "locale": "en",
+      "title": "AI Drama Storyboard Breakdown",
+      "summary": "Turn one episode of script segments into a reviewable directorial semantic storyboard plan",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-storyboard-breakdown",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "AI Drama Storyboard Breakdown",
+      "summary": "Turn one episode of script segments into a reviewable directorial semantic storyboard plan",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-storyboard-breakdown",
+      "role": "repair",
+      "locale": "en",
+      "title": "Repair pass",
+      "summary": "Repair a reviewed storyboard while preserving source traceability.",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-drama-storyboard-breakdown",
+      "role": "repair",
+      "locale": "zh-CN",
+      "title": "Repair pass",
+      "summary": "Repair a reviewed storyboard while preserving source traceability.",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "asset-dependency",
+      "locale": "en",
+      "title": "Asset dependencies",
+      "summary": "Identify the visual assets required by the production plan.",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "asset-dependency",
+      "locale": "zh-CN",
+      "title": "Asset dependencies",
+      "summary": "Identify the visual assets required by the production plan.",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "continuity-review",
+      "locale": "en",
+      "title": "Continuity review",
+      "summary": "Review cross-shot character, environment and narrative continuity.",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "continuity-review",
+      "locale": "zh-CN",
+      "title": "Continuity review",
+      "summary": "Review cross-shot character, environment and narrative continuity.",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "failure-restructure",
+      "locale": "en",
+      "title": "Failure restructuring",
+      "summary": "Revise a failed production plan while preserving its accepted intent.",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "failure-restructure",
+      "locale": "zh-CN",
+      "title": "Failure restructuring",
+      "summary": "Revise a failed production plan while preserving its accepted intent.",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "project-intent",
+      "locale": "en",
+      "title": "Project intent",
+      "summary": "Describe the production intent and required output profile.",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "project-intent",
+      "locale": "zh-CN",
+      "title": "Project intent",
+      "summary": "Describe the production intent and required output profile.",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "scene-package",
+      "locale": "en",
+      "title": "Scene package",
+      "summary": "Organize a production-ready scene package and its dependencies.",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "scene-package",
+      "locale": "zh-CN",
+      "title": "Scene package",
+      "summary": "Organize a production-ready scene package and its dependencies.",
+      "media": [
+        "text"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "shot-audio-intent",
+      "locale": "en",
+      "title": "Shot audio intent",
+      "summary": "Describe dialogue, voice and sound requirements for a shot.",
+      "media": [
+        "audio"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "shot-audio-intent",
+      "locale": "zh-CN",
+      "title": "Shot audio intent",
+      "summary": "Describe dialogue, voice and sound requirements for a shot.",
+      "media": [
+        "audio"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "shot-prompt",
+      "locale": "en",
+      "title": "Shot prompt",
+      "summary": "Compile a shot-level video generation prompt.",
+      "media": [
+        "video"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "ai-film-multi-profile-production",
+      "role": "shot-prompt",
+      "locale": "zh-CN",
+      "title": "Shot prompt",
+      "summary": "Compile a shot-level video generation prompt.",
+      "media": [
+        "video"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "auctra-creative-storyboard-plan",
+      "role": "main",
+      "locale": "en",
+      "title": "Auctra creative storyboard plan",
+      "summary": "Compile one episode creative storyboard plan candidate from an accepted auctra.director_scene_plan.v1 projection, mapping to auctra.storyboard_plan.v1",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "cinematique-shot-techniques-beta",
+      "role": "main",
+      "locale": "en",
+      "title": "Cinematique Shot Technique Prompts",
+      "summary": "Render one of 150 vendored cinematography techniques (camera, lighting, composition, editing, storytelling, FX, genre styles) into a bound shot prompt for AI image or video generation",
+      "media": [
+        "image",
+        "text",
+        "video"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "outfit-collage-transition-director",
+      "role": "main",
+      "locale": "en",
+      "title": "Outfit Collage + Beat-Synced Transition Video Director",
+      "summary": "Compile character anchors and outfit lists into a linked package: collage first-frame image prompt, per-segment transition video timeline, compact video prompt, and negative constraints",
+      "media": [
+        "image",
+        "video"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "product-promo-shot-design-beta",
+      "role": "brief",
+      "locale": "en",
+      "title": "Brief",
+      "summary": "Create a source-grounded product promo brief and exact shot-library plan",
+      "media": [
+        "video"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "product-promo-shot-design-beta",
+      "role": "shot-plan",
+      "locale": "en",
+      "title": "Shot Plan",
+      "summary": "Create a source-grounded product promo brief and exact shot-library plan",
+      "media": [
+        "video"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "realistic-diary-vlog-generation",
+      "role": "main",
+      "locale": "en",
+      "title": "Realistic Diary Vlog Generation",
+      "summary": "Compile subject, selfie/follow camera formats, on-camera dialogue with lip sync, acoustic-space continuity, and realism constraints into a diary vlog prompt for direct video-model delivery",
+      "media": [
+        "video"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "realistic-docu-vlog-generation",
+      "role": "main",
+      "locale": "en",
+      "title": "Realistic Docu-Vlog Generation",
+      "summary": "Compile subject, mixed camera formats, per-beat voiceover, music arc, and realism constraints into a documentary vlog prompt for direct video-model delivery",
+      "media": [
+        "video"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "realistic-fight-scene-generation",
+      "role": "main",
+      "locale": "en",
+      "title": "Realistic Fight Scene Generation",
+      "summary": "Compile dual-character identity lock, fight physics, axis of action, ACT follow camera, and per-beat choreography into a fight-scene prompt for direct video-model delivery",
+      "media": [
+        "video"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "realistic-vlog-shot-generation",
+      "role": "main",
+      "locale": "en",
+      "title": "Realistic Vlog Shot Generation",
+      "summary": "Compile subject, setting, handheld camera texture, timeline beats, and realism/audio constraints into a realistic vlog prompt for direct video-model delivery",
+      "media": [
+        "video"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "short-drama-character-consistency",
+      "role": "main",
+      "locale": "en",
+      "title": "Short-drama character-consistent shot",
+      "summary": "Generate short-drama shot prompts with locked identity, costume, direction, and continuity",
+      "media": [
+        "video"
+      ]
+    },
+    {
+      "package_id": "video",
+      "solution_id": "short-drama-character-consistency",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "Short-drama character-consistent shot",
+      "summary": "Generate short-drama shot prompts with locked identity, costume, direction, and continuity",
+      "media": [
+        "video"
+      ]
+    },
+    {
+      "package_id": "writing",
+      "solution_id": "ai-drama-character-engine",
+      "role": "main",
+      "locale": "en",
+      "title": "AI drama character engine",
+      "summary": "Design characters as pressure-driven decision systems with motives, secrets, knowledge boundaries, and relationships",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "writing",
+      "solution_id": "ai-drama-critic-review",
+      "role": "main",
+      "locale": "en",
+      "title": "AI drama critic review",
+      "summary": "Compare two or more candidates within one comparison class with evidence-anchored findings and bounded single-variable repairs",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "writing",
+      "solution_id": "ai-drama-format-strategy",
+      "role": "main",
+      "locale": "en",
+      "title": "AI drama format strategy",
+      "summary": "Select the carrying format profile, genre lens, audience promise, and structural cadence before story planning",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "writing",
+      "solution_id": "ai-drama-scene-writing",
+      "role": "main",
+      "locale": "en",
+      "title": "AI drama scene writing",
+      "summary": "Compile one shootable scene draft with executable action, separated subtext, ordered information release, and exit state",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "writing",
+      "solution_id": "ai-drama-showrunner",
+      "role": "main",
+      "locale": "en",
+      "title": "AI drama showrunner",
+      "summary": "Plan seasons and episodes with proof-slice batching, expansion gates, payoff windows, and suspense debt",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "writing",
+      "solution_id": "ai-drama-story-architecture",
+      "role": "main",
+      "locale": "en",
+      "title": "AI drama story architecture",
+      "summary": "Turn a story idea into a verifiable dramatic structure with a conflict chain and ten-field beat cards",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "writing",
+      "solution_id": "longform-outline",
+      "role": "main",
+      "locale": "en",
+      "title": "Long-form outline",
+      "summary": "Turn a topic and source material into a writing-ready hierarchical outline",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "writing",
+      "solution_id": "longform-outline",
+      "role": "main",
+      "locale": "zh-CN",
+      "title": "Long-form outline",
+      "summary": "Turn a topic and source material into a writing-ready hierarchical outline",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    },
+    {
+      "package_id": "writing",
+      "solution_id": "revision-assistant",
+      "role": "main",
+      "locale": "en",
+      "title": "Text revision assistant",
+      "summary": "Revise existing text against an explicit goal while preserving facts, responsibility, and uncertainty",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ]
+    }
+  ],
   "schema_version": "promptrepo.catalog.v0.1",
   "repository": {
     "id": "official",
@@ -7,7 +1427,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:d0c238da964df4fe4355a0c4bc692129e3aa4180d73ec38a0f1bbe2c3f02a7e8",
+  "digest": "sha256:7da67a6e385f8903219e8ce83b9278b2609422536a7152df7e5a2ba5e9d18b10",
   "solutions": [
     {
       "package_id": "3d",
@@ -793,6 +2213,49 @@
           "locale": "en",
           "path": "solutions/image/pixel-battle-sprite/prompts/main.en.md",
           "digest": "sha256:bf6a60585112f0114c75a388474881047dfc2a61371b3fe7ddcae8cf50b2f1df"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "pop-science-encyclopedia",
+      "version": "1.0.0",
+      "digest": "sha256:7b7e4827a6240e51e7ff3e135923c5d2de39dc8c0161854cd8683b1625ef4144",
+      "category": "image",
+      "tags": [
+        "artifact:science_infographic",
+        "category:image",
+        "constraint:chinese_text",
+        "constraint:editorial_layout",
+        "job:generate",
+        "modality:image",
+        "scenario:popular_science",
+        "stage:prompt_generation"
+      ],
+      "capabilities": [
+        "image",
+        "information_design",
+        "style_layer"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Popular Science Encyclopedia Infographic",
+          "summary": "Vertical modular popular-science encyclopedia plate for one subject; hero visual plus knowledge modules, callouts, rating card and Top 5 highlights",
+          "usage": "Bind topic, english_name and subtitle (optional palette_hint); keep every structural and style paragraph fixed; in-image text is Chinese-first",
+          "aliases": [
+            "science infographic",
+            "科普百科图鉴"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/pop-science-encyclopedia/prompts/main.en.md",
+          "digest": "sha256:0102603939c47608dc445d234bc0fdd6750e02fd355da541d8d0fe03611fb703"
         }
       ]
     },

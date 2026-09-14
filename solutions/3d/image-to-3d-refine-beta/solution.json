@@ -32,6 +32,11 @@
   },
   "templates": [
     {
+      "title": "Image to 3D refine",
+      "summary": "Compile a reference-image exact ref with view, occlusion, and consistency decisions into an image-to-3D prompt package",
+      "media": [
+        "3d"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/3d/image-to-3d-refine-beta/prompts/main.en.md"

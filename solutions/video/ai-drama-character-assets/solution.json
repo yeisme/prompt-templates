@@ -33,71 +33,197 @@
   },
   "templates": [
     {
+      "title": "Neutral body reference",
+      "summary": "Create a neutral body proportion reference for reusable character assembly.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "body-core-neutral-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-character-assets/prompts/body-core-neutral-v1.en.md"
     },
     {
+      "title": "Neutral body reference",
+      "summary": "Create a neutral body proportion reference for reusable character assembly.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "body-core-neutral-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-character-assets/prompts/body-core-neutral-v1.zh-CN.md"
     },
     {
+      "title": "Character harmonization preview",
+      "summary": "Review a visually harmonized assembled character.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "character-harmonized-preview-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-character-assets/prompts/character-harmonized-preview-v1.en.md"
     },
     {
+      "title": "Character harmonization preview",
+      "summary": "Review a visually harmonized assembled character.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "character-harmonized-preview-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-character-assets/prompts/character-harmonized-preview-v1.zh-CN.md"
     },
     {
+      "title": "Character layer preview",
+      "summary": "Preview the alignment of character layers before harmonization.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "character-layer-preview-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-character-assets/prompts/character-layer-preview-v1.en.md"
     },
     {
+      "title": "Character layer preview",
+      "summary": "Preview the alignment of character layers before harmonization.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "character-layer-preview-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-character-assets/prompts/character-layer-preview-v1.zh-CN.md"
     },
     {
+      "title": "Bald head identity",
+      "summary": "Create an isolated head identity reference without hair or accessories.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "head-core-bald-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-character-assets/prompts/head-core-bald-v1.en.md"
     },
     {
+      "title": "Bald head identity",
+      "summary": "Create an isolated head identity reference without hair or accessories.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "head-core-bald-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-character-assets/prompts/head-core-bald-v1.zh-CN.md"
     },
     {
+      "title": "Hair surface layer",
+      "summary": "Create an isolated hair layer matched to the character identity.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "surface-coat-hair-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-character-assets/prompts/surface-coat-hair-v1.en.md"
     },
     {
+      "title": "Hair surface layer",
+      "summary": "Create an isolated hair layer matched to the character identity.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "surface-coat-hair-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-character-assets/prompts/surface-coat-hair-v1.zh-CN.md"
     },
     {
+      "title": "Accessory layer",
+      "summary": "Create an isolated wearable accessory reference.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "wearable-accessory-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-character-assets/prompts/wearable-accessory-v1.en.md"
     },
     {
+      "title": "Accessory layer",
+      "summary": "Create an isolated wearable accessory reference.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "wearable-accessory-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-character-assets/prompts/wearable-accessory-v1.zh-CN.md"
     },
     {
+      "title": "Garment layer",
+      "summary": "Create an isolated garment reference for character assembly.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "wearable-garment-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-character-assets/prompts/wearable-garment-v1.en.md"
     },
     {
+      "title": "Garment layer",
+      "summary": "Create an isolated garment reference for character assembly.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "wearable-garment-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-character-assets/prompts/wearable-garment-v1.zh-CN.md"

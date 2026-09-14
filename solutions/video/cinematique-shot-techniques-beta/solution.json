@@ -47,6 +47,13 @@
   },
   "templates": [
     {
+      "title": "Cinematique Shot Technique Prompts",
+      "summary": "Render one of 150 vendored cinematography techniques (camera, lighting, composition, editing, storytelling, FX, genre styles) into a bound shot prompt for AI image or video generation",
+      "media": [
+        "image",
+        "text",
+        "video"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/video/cinematique-shot-techniques-beta/prompts/main.en.md"

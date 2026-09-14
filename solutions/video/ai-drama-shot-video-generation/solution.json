@@ -35,6 +35,11 @@
   },
   "templates": [
     {
+      "title": "AI Drama Shot Video Generation",
+      "summary": "Compile character, ultimate skill, enemies, scene, camera, and per-second storyboard into a shot-level prompt for direct video-model delivery",
+      "media": [
+        "video"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/video/ai-drama-shot-video-generation/prompts/main.en.md"

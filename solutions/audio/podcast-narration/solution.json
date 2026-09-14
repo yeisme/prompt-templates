@@ -37,16 +37,40 @@
   },
   "templates": [
     {
+      "title": "Delivery handoff",
+      "summary": "Prepare a structured handoff to the consuming production tool.",
+      "media": [
+        "audio"
+      ],
+      "consumers": [
+        "sonora"
+      ],
       "role": "delivery",
       "locale": "en",
       "path": "solutions/audio/podcast-narration/prompts/delivery.en.md"
     },
     {
+      "title": "Chinese podcast narration",
+      "summary": "Convert Chinese scripts into podcast narration with pacing, pauses, emphasis, and pronunciation guidance",
+      "media": [
+        "audio"
+      ],
+      "consumers": [
+        "sonora"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/audio/podcast-narration/prompts/main.en.md"
     },
     {
+      "title": "Chinese podcast narration",
+      "summary": "Convert Chinese scripts into podcast narration with pacing, pauses, emphasis, and pronunciation guidance",
+      "media": [
+        "audio"
+      ],
+      "consumers": [
+        "sonora"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/audio/podcast-narration/prompts/main.zh-CN.md"

@@ -43,6 +43,14 @@
   },
   "templates": [
     {
+      "title": "Editorial Half-Face Magazine Cover Portrait",
+      "summary": "Compile a reference person into a magazine-cover-grade luxury half-face portrait prompt: exact centerline half-face close-up on the right, clean left negative space, one campaign line, and a character-exact signature",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/image/editorial-half-face-cover/prompts/main.en.md"

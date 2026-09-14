@@ -1,0 +1,42 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "pop-science-encyclopedia",
+  "version": "1.0.0",
+  "category": "image",
+  "tags": [
+    "artifact:science_infographic",
+    "category:image",
+    "constraint:chinese_text",
+    "constraint:editorial_layout",
+    "job:generate",
+    "modality:image",
+    "scenario:popular_science",
+    "stage:prompt_generation"
+  ],
+  "capabilities": [
+    "image",
+    "information_design",
+    "style_layer"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Popular Science Encyclopedia Infographic",
+      "summary": "Vertical modular popular-science encyclopedia plate for one subject; hero visual plus knowledge modules, callouts, rating card and Top 5 highlights",
+      "usage": "Bind topic, english_name and subtitle (optional palette_hint); keep every structural and style paragraph fixed; in-image text is Chinese-first",
+      "aliases": [
+        "science infographic",
+        "科普百科图鉴"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/pop-science-encyclopedia/prompts/main.en.md"
+    }
+  ]
+}

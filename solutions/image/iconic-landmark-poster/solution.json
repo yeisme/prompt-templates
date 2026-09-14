@@ -42,6 +42,14 @@
   },
   "templates": [
     {
+      "title": "ICONIC LANDMARK SERIES City Landmark Poster",
+      "summary": "Fixed visual system (photo upper + vector lower + archival typography) city landmark poster prompt with fully parameterized city content",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/image/iconic-landmark-poster/prompts/main.en.md"

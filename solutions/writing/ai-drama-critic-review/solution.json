@@ -29,6 +29,14 @@
   },
   "templates": [
     {
+      "title": "AI drama critic review",
+      "summary": "Compare two or more candidates within one comparison class with evidence-anchored findings and bounded single-variable repairs",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/writing/ai-drama-critic-review/prompts/main.en.md"

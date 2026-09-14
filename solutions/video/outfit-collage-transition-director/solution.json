@@ -45,6 +45,12 @@
   },
   "templates": [
     {
+      "title": "Outfit Collage + Beat-Synced Transition Video Director",
+      "summary": "Compile character anchors and outfit lists into a linked package: collage first-frame image prompt, per-segment transition video timeline, compact video prompt, and negative constraints",
+      "media": [
+        "image",
+        "video"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/video/outfit-collage-transition-director/prompts/main.en.md"

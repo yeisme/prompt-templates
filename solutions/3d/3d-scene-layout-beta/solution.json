@@ -31,6 +31,11 @@
   },
   "templates": [
     {
+      "title": "3D scene layout",
+      "summary": "Compose a provider-neutral multi-object spatial layout with relative placement, a scale statement, and optional camera placeholders",
+      "media": [
+        "3d"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/3d/3d-scene-layout-beta/prompts/main.en.md"

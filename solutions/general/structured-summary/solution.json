@@ -34,11 +34,21 @@
   },
   "templates": [
     {
+      "title": "Structured summary",
+      "summary": "Extract verifiable conclusions, facts, actions, and risks from long-form material",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/general/structured-summary/prompts/main.en.md"
     },
     {
+      "title": "Structured summary",
+      "summary": "Extract verifiable conclusions, facts, actions, and risks from long-form material",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/general/structured-summary/prompts/main.zh-CN.md"

@@ -38,11 +38,27 @@
   },
   "templates": [
     {
+      "title": "Delivery handoff",
+      "summary": "Prepare a structured handoff to the consuming production tool.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "delivery",
       "locale": "en",
       "path": "solutions/image/xhs-product-cover-v2/prompts/delivery.en.md"
     },
     {
+      "title": "Xiaohongshu product cover v2",
+      "summary": "Create a product-cover prompt for generic image workflows with composition, lighting, safe text layout, and negative constraints",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/image/xhs-product-cover-v2/prompts/main.en.md"

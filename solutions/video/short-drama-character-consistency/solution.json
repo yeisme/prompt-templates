@@ -36,11 +36,21 @@
   },
   "templates": [
     {
+      "title": "Short-drama character-consistent shot",
+      "summary": "Generate short-drama shot prompts with locked identity, costume, direction, and continuity",
+      "media": [
+        "video"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/video/short-drama-character-consistency/prompts/main.en.md"
     },
     {
+      "title": "Short-drama character-consistent shot",
+      "summary": "Generate short-drama shot prompts with locked identity, costume, direction, and continuity",
+      "media": [
+        "video"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md"

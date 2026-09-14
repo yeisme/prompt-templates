@@ -35,11 +35,21 @@
   },
   "templates": [
     {
+      "title": "Agent tool use and handoff",
+      "summary": "Design permission-aware, evidence-backed, reversible agent execution and handoff",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/agent/tool-use-handoff/prompts/main.en.md"
     },
     {
+      "title": "Agent tool use and handoff",
+      "summary": "Design permission-aware, evidence-backed, reversible agent execution and handoff",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/agent/tool-use-handoff/prompts/main.zh-CN.md"

@@ -33,41 +33,113 @@
   },
   "templates": [
     {
+      "title": "Empty scene shell",
+      "summary": "Create a reusable empty environment without foreground subjects.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "empty-scene-shell-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.en.md"
     },
     {
+      "title": "Empty scene shell",
+      "summary": "Create a reusable empty environment without foreground subjects.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "empty-scene-shell-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-background-assets-v2/prompts/empty-scene-shell-v1.zh-CN.md"
     },
     {
+      "title": "Environment harmonization preview",
+      "summary": "Review the assembled environment for visual consistency.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "environment-harmonized-preview-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-harmonized-preview-v1.en.md"
     },
     {
+      "title": "Environment harmonization preview",
+      "summary": "Review the assembled environment for visual consistency.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "environment-harmonized-preview-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-harmonized-preview-v1.zh-CN.md"
     },
     {
+      "title": "Environment layer preview",
+      "summary": "Preview environment layer placement and spatial alignment.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "environment-layer-preview-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-layer-preview-v1.en.md"
     },
     {
+      "title": "Environment layer preview",
+      "summary": "Preview environment layer placement and spatial alignment.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "environment-layer-preview-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-background-assets-v2/prompts/environment-layer-preview-v1.zh-CN.md"
     },
     {
+      "title": "Semantic environment object",
+      "summary": "Create a separately reusable environment object.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "semantic-object-v1",
       "locale": "en",
       "path": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.en.md"
     },
     {
+      "title": "Semantic environment object",
+      "summary": "Create a separately reusable environment object.",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona",
+        "scaena"
+      ],
       "role": "semantic-object-v1",
       "locale": "zh-CN",
       "path": "solutions/video/ai-drama-background-assets-v2/prompts/semantic-object-v1.zh-CN.md"

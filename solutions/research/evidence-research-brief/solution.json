@@ -35,11 +35,21 @@
   },
   "templates": [
     {
+      "title": "Evidence-based research brief",
+      "summary": "Create a research brief that separates facts, inference, counterevidence, and limitations",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/research/evidence-research-brief/prompts/main.en.md"
     },
     {
+      "title": "Evidence-based research brief",
+      "summary": "Create a research brief that separates facts, inference, counterevidence, and limitations",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/research/evidence-research-brief/prompts/main.zh-CN.md"

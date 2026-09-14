@@ -34,71 +34,141 @@
   },
   "templates": [
     {
+      "title": "Asset dependencies",
+      "summary": "Identify the visual assets required by the production plan.",
+      "media": [
+        "text"
+      ],
       "role": "asset-dependency",
       "locale": "en",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/asset-dependency.en.md"
     },
     {
+      "title": "Asset dependencies",
+      "summary": "Identify the visual assets required by the production plan.",
+      "media": [
+        "text"
+      ],
       "role": "asset-dependency",
       "locale": "zh-CN",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/asset-dependency.zh-CN.md"
     },
     {
+      "title": "Continuity review",
+      "summary": "Review cross-shot character, environment and narrative continuity.",
+      "media": [
+        "text"
+      ],
       "role": "continuity-review",
       "locale": "en",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/continuity-review.en.md"
     },
     {
+      "title": "Continuity review",
+      "summary": "Review cross-shot character, environment and narrative continuity.",
+      "media": [
+        "text"
+      ],
       "role": "continuity-review",
       "locale": "zh-CN",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/continuity-review.zh-CN.md"
     },
     {
+      "title": "Failure restructuring",
+      "summary": "Revise a failed production plan while preserving its accepted intent.",
+      "media": [
+        "text"
+      ],
       "role": "failure-restructure",
       "locale": "en",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.en.md"
     },
     {
+      "title": "Failure restructuring",
+      "summary": "Revise a failed production plan while preserving its accepted intent.",
+      "media": [
+        "text"
+      ],
       "role": "failure-restructure",
       "locale": "zh-CN",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/failure-restructure.zh-CN.md"
     },
     {
+      "title": "Project intent",
+      "summary": "Describe the production intent and required output profile.",
+      "media": [
+        "text"
+      ],
       "role": "project-intent",
       "locale": "en",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/project-intent.en.md"
     },
     {
+      "title": "Project intent",
+      "summary": "Describe the production intent and required output profile.",
+      "media": [
+        "text"
+      ],
       "role": "project-intent",
       "locale": "zh-CN",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/project-intent.zh-CN.md"
     },
     {
+      "title": "Scene package",
+      "summary": "Organize a production-ready scene package and its dependencies.",
+      "media": [
+        "text"
+      ],
       "role": "scene-package",
       "locale": "en",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.en.md"
     },
     {
+      "title": "Scene package",
+      "summary": "Organize a production-ready scene package and its dependencies.",
+      "media": [
+        "text"
+      ],
       "role": "scene-package",
       "locale": "zh-CN",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/scene-package.zh-CN.md"
     },
     {
+      "title": "Shot audio intent",
+      "summary": "Describe dialogue, voice and sound requirements for a shot.",
+      "media": [
+        "audio"
+      ],
       "role": "shot-audio-intent",
       "locale": "en",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-audio-intent.en.md"
     },
     {
+      "title": "Shot audio intent",
+      "summary": "Describe dialogue, voice and sound requirements for a shot.",
+      "media": [
+        "audio"
+      ],
       "role": "shot-audio-intent",
       "locale": "zh-CN",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-audio-intent.zh-CN.md"
     },
     {
+      "title": "Shot prompt",
+      "summary": "Compile a shot-level video generation prompt.",
+      "media": [
+        "video"
+      ],
       "role": "shot-prompt",
       "locale": "en",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-prompt.en.md"
     },
     {
+      "title": "Shot prompt",
+      "summary": "Compile a shot-level video generation prompt.",
+      "media": [
+        "video"
+      ],
       "role": "shot-prompt",
       "locale": "zh-CN",
       "path": "solutions/video/ai-film-multi-profile-production/prompts/shot-prompt.zh-CN.md"

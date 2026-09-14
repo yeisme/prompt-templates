@@ -48,11 +48,21 @@
   },
   "templates": [
     {
+      "title": "Brief",
+      "summary": "Create a source-grounded product promo brief and exact shot-library plan",
+      "media": [
+        "video"
+      ],
       "role": "brief",
       "locale": "en",
       "path": "solutions/video/product-promo-shot-design-beta/prompts/brief.en.md"
     },
     {
+      "title": "Shot Plan",
+      "summary": "Create a source-grounded product promo brief and exact shot-library plan",
+      "media": [
+        "video"
+      ],
       "role": "shot-plan",
       "locale": "en",
       "path": "solutions/video/product-promo-shot-design-beta/prompts/shot-plan.en.md"

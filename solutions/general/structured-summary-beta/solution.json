@@ -31,6 +31,11 @@
   },
   "templates": [
     {
+      "title": "Structured summary for agents",
+      "summary": "A successor with explicit source boundaries and confirmable inputs",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/general/structured-summary-beta/prompts/main.en.md"

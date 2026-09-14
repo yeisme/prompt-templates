@@ -32,6 +32,11 @@
   },
   "templates": [
     {
+      "title": "3D asset review checklist",
+      "summary": "Review a candidate 3D asset across geometry integrity, UV and texture, scale consistency, and rights with pass/fail/unknown items",
+      "media": [
+        "3d"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/3d/3d-asset-review-beta/prompts/main.en.md"

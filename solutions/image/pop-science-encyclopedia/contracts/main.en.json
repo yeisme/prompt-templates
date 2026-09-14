@@ -1,0 +1,81 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "pop-science-encyclopedia",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/pop-science-encyclopedia/prompts/main.en.md",
+  "template_digest": "sha256:0102603939c47608dc445d234bc0fdd6750e02fd355da541d8d0fe03611fb703",
+  "digest": "sha256:074b6c439fb927475d1d25ae552092ffcb49407549bfaccba1662f79ac68f89d",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "english_name",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Manis pentadactyla"
+      ],
+      "labels": {
+        "en": "English or scientific name",
+        "zh-CN": "英文/学名"
+      },
+      "descriptions": {
+        "en": "English or scientific name shown under the main title",
+        "zh-CN": "主标题下方的英文名或学名"
+      }
+    },
+    {
+      "name": "palette_hint",
+      "type": "string",
+      "examples": [
+        " Primary palette pale green and cream."
+      ],
+      "labels": {
+        "en": "Palette hint",
+        "zh-CN": "配色提示"
+      },
+      "descriptions": {
+        "en": "Optional palette hint clause with its own leading space; empty string when unused",
+        "zh-CN": "可选配色提示短句，自带前导空格；不用则空字符串"
+      }
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "物种观察图鉴"
+      ],
+      "labels": {
+        "en": "Plate subtitle",
+        "zh-CN": "图鉴副标题"
+      },
+      "descriptions": {
+        "en": "Encyclopedia plate subtitle such as 物种观察图鉴 / 科技产品解剖图鉴",
+        "zh-CN": "图鉴副标题，如物种观察图鉴/科技产品解剖图鉴"
+      }
+    },
+    {
+      "name": "topic",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "中华穿山甲"
+      ],
+      "labels": {
+        "en": "Topic",
+        "zh-CN": "主题"
+      },
+      "descriptions": {
+        "en": "Subject name in Chinese; drives the hero visual and main title",
+        "zh-CN": "主题中文名，驱动主视觉与主标题"
+      }
+    }
+  ]
+}

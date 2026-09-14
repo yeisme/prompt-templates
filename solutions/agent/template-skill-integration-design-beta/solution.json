@@ -34,6 +34,11 @@
   },
   "templates": [
     {
+      "title": "Template and Skill Integration Design",
+      "summary": "Compile confirmed multimodal requirements into an owner-aware template, Skill, recipe, persistence, installation, and handoff brief",
+      "media": [
+        "multimodal"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/agent/template-skill-integration-design-beta/prompts/main.en.md"

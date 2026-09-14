@@ -1,5 +1,7 @@
 # 公开虚构练习与检查
 
+开始前先阅读同目录的 [README](README.md)、[输入合同](../contracts/main.en.json) 和 [中文指南](template-zh-CN.md)；模板正文位于 [main.en.md](../prompts/main.en.md)，许可见 [LICENSE](LICENSE.md)。
+
 以下是输入练习，不是实际生成效果。所有对象均为虚构或无品牌主题。
 
 | 场景 | 首次需求 | 硬约束 | 换素材复用 | 检查 |

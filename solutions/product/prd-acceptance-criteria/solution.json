@@ -34,11 +34,21 @@
   },
   "templates": [
     {
+      "title": "PRD and acceptance criteria",
+      "summary": "Turn a product idea into a capability ledger, workflow, requirements, and testable acceptance criteria",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/product/prd-acceptance-criteria/prompts/main.en.md"
     },
     {
+      "title": "PRD and acceptance criteria",
+      "summary": "Turn a product idea into a capability ledger, workflow, requirements, and testable acceptance criteria",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/product/prd-acceptance-criteria/prompts/main.zh-CN.md"

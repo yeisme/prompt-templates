@@ -34,11 +34,21 @@
   },
   "templates": [
     {
+      "title": "Socratic study plan",
+      "summary": "Design a verifiable and adaptive question-led learning path from the learner's current level",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/learning/socratic-study-plan/prompts/main.en.md"
     },
     {
+      "title": "Socratic study plan",
+      "summary": "Design a verifiable and adaptive question-led learning path from the learner's current level",
+      "media": [
+        "text"
+      ],
       "role": "main",
       "locale": "zh-CN",
       "path": "solutions/learning/socratic-study-plan/prompts/main.zh-CN.md"

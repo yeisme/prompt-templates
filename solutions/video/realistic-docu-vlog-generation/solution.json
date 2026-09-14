@@ -35,6 +35,11 @@
   },
   "templates": [
     {
+      "title": "Realistic Docu-Vlog Generation",
+      "summary": "Compile subject, mixed camera formats, per-beat voiceover, music arc, and realism constraints into a documentary vlog prompt for direct video-model delivery",
+      "media": [
+        "video"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/video/realistic-docu-vlog-generation/prompts/main.en.md"

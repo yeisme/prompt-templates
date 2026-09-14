@@ -29,6 +29,14 @@
   },
   "templates": [
     {
+      "title": "AI drama character engine",
+      "summary": "Design characters as pressure-driven decision systems with motives, secrets, knowledge boundaries, and relationships",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/writing/ai-drama-character-engine/prompts/main.en.md"

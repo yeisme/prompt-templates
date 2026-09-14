@@ -29,6 +29,14 @@
   },
   "templates": [
     {
+      "title": "AI drama scene writing",
+      "summary": "Compile one shootable scene draft with executable action, separated subtext, ordered information release, and exit state",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/writing/ai-drama-scene-writing/prompts/main.en.md"

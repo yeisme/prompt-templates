@@ -29,6 +29,14 @@
   },
   "templates": [
     {
+      "title": "AI drama format strategy",
+      "summary": "Select the carrying format profile, genre lens, audience promise, and structural cadence before story planning",
+      "media": [
+        "text"
+      ],
+      "consumers": [
+        "auctra"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/writing/ai-drama-format-strategy/prompts/main.en.md"

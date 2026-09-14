@@ -32,6 +32,11 @@
   },
   "templates": [
     {
+      "title": "Digital-human persona system prompt",
+      "summary": "Compile confirmed identity, audience, speaking, factual, and safety boundaries into a real-time persona prompt",
+      "media": [
+        "spoken_dialogue"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/agent/digital-human-persona-system/prompts/main.en.md"
