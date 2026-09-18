@@ -31,7 +31,7 @@
 
 ## Provider 兼容
 
-Provider 名只作兼容信息：`provider_banner` 可选保留平台标识行；资产引用接受 `@uuid` 与 `@image1` 位置引用。完整绑定示例见 `examples/japanese-idol-private-day.zh-CN.md`。
+Provider 名只作兼容信息：`provider_banner` 可选保留平台标识行；资产引用接受 `@uuid` 与 `@image1` 位置引用。完整绑定示例见 `examples/japanese-idol-private-day.zh-CN.md`（60 秒口播）与 `examples/east-asian-weekend-cafe-30s.zh-CN.md`（30 秒、1080p、9:16、Seedance 2.5 HD）。
 
 ## 成熟度说明
 
