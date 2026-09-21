@@ -7,7 +7,7 @@
 ## 适用与不适用
 
 - 适用：AI 短剧/漫剧的单镜头或连续镜头视频生成 Prompt，尤其是有明确蓄力期与爆发期结构的大招镜头。
-- 不适用：剧本到分镜的语义拆解（用 `ai-drama-storyboard-breakdown`）；多 Profile 生产编译与语义提案（用 `ai-film-multi-profile-production`）；角色/背景资产生成（用 `ai-drama-*-assets-v2`）。
+- 不适用：剧本到分镜的语义拆解（用 `ai-drama-storyboard-breakdown`）；多 Profile 生产编译与语义提案（用 `ai-film-multi-profile-production`）；角色/背景资产生成（用 `ai-drama-*-assets-v2`）；无特效双人近身格斗（用 `realistic-fight-scene-generation`）；穿越机环绕双色刀气对拼（用 `fpv-sword-duel-generation-beta`）。
 
 ## 渲染流程
 

@@ -9,6 +9,7 @@
 | 需求 | 模板 |
 | --- | --- |
 | 特效/技能/大招镜头（法阵、剑气、清屏） | `ai-drama-shot-video-generation` |
+| 穿越机环绕 + 双色刀气对拼 | `fpv-sword-duel-generation-beta` |
 | 无台词纯环境音抓拍 vlog | `realistic-vlog-shot-generation` |
 | 画外 VO 自述 + 音乐弧线 | `realistic-docu-vlog-generation` |
 | 出镜口播 + 唇形同步 | `realistic-diary-vlog-generation` |

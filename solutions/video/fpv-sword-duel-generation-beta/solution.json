@@ -1,0 +1,58 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "fpv-sword-duel-generation-beta",
+  "version": "1.0.0-beta.1",
+  "category": "video",
+  "tags": [
+    "artifact:shot_video",
+    "category:video",
+    "constraint:character_consistency",
+    "constraint:spatial_continuity",
+    "job:generate",
+    "modality:video",
+    "scenario:action_scene",
+    "stage:shot_generation"
+  ],
+  "capabilities": [
+    "dual_character_lock",
+    "dual_vfx_binding",
+    "fight_choreography",
+    "first_frame_lock",
+    "fpv_orbit_camera",
+    "negative_prompt_governance",
+    "shot_video_generation",
+    "spatial_continuity"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Cinematic FPV Sword Duel Generation",
+      "summary": "Compile first-frame lock, dual blade-VFX palettes, FPV-orbit camera, readable sword choreography, and a suppression-without-defeat arc into a duel prompt for direct video-model delivery",
+      "usage": "Use for FPV-orbit two-swordsman duels with motion-bound dual VFX; complements VFX-free realistic-fight-scene-generation and charge-up ai-drama-shot-video-generation",
+      "aliases": [
+        "FPV sword duel",
+        "cinematic blade fight",
+        "wuxia FPV fight"
+      ]
+    },
+    "zh-CN": {
+      "title": "电影级穿越机刀战视频生成",
+      "summary": "把首帧锁定、双色刀气、穿越机环绕、可读刀法对拼和压制但不击败的弧线编译成可直接投递的刀战 Prompt",
+      "usage": "用于穿越机环绕的双剑客对拼；无特效近身格斗走 realistic-fight-scene-generation；蓄力大招清屏走 ai-drama-shot-video-generation；中文阅读版见包内 docs/template-zh-CN.md",
+      "aliases": [
+        "武侠对打模板",
+        "电影级刀气对拼",
+        "穿越机刀战"
+      ]
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/video/fpv-sword-duel-generation-beta/prompts/main.en.md"
+    }
+  ]
+}

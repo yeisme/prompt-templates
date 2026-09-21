@@ -1427,7 +1427,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:7da67a6e385f8903219e8ce83b9278b2609422536a7152df7e5a2ba5e9d18b10",
+  "digest": "sha256:cedf197191f16abca4b0589ebdb01078076c02cbc3c4cb11d63a8ae24bf6d97e",
   "solutions": [
     {
       "package_id": "3d",
@@ -3406,6 +3406,65 @@
           "locale": "en",
           "path": "solutions/video/cinematique-shot-techniques-beta/prompts/main.en.md",
           "digest": "sha256:efb203ef80aa727fc85fea0ae008f753d052b2025cc707f576c66364fb499035"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "fpv-sword-duel-generation-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:9185ca1ff6f1d04fe95e559eab8aca00cfaceae0c46a25fa493e6730c9d64b67",
+      "category": "video",
+      "tags": [
+        "artifact:shot_video",
+        "category:video",
+        "constraint:character_consistency",
+        "constraint:spatial_continuity",
+        "job:generate",
+        "modality:video",
+        "scenario:action_scene",
+        "stage:shot_generation"
+      ],
+      "capabilities": [
+        "dual_character_lock",
+        "dual_vfx_binding",
+        "fight_choreography",
+        "first_frame_lock",
+        "fpv_orbit_camera",
+        "negative_prompt_governance",
+        "shot_video_generation",
+        "spatial_continuity"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Cinematic FPV Sword Duel Generation",
+          "summary": "Compile first-frame lock, dual blade-VFX palettes, FPV-orbit camera, readable sword choreography, and a suppression-without-defeat arc into a duel prompt for direct video-model delivery",
+          "usage": "Use for FPV-orbit two-swordsman duels with motion-bound dual VFX; complements VFX-free realistic-fight-scene-generation and charge-up ai-drama-shot-video-generation",
+          "aliases": [
+            "FPV sword duel",
+            "cinematic blade fight",
+            "wuxia FPV fight"
+          ]
+        },
+        "zh-CN": {
+          "title": "电影级穿越机刀战视频生成",
+          "summary": "把首帧锁定、双色刀气、穿越机环绕、可读刀法对拼和压制但不击败的弧线编译成可直接投递的刀战 Prompt",
+          "usage": "用于穿越机环绕的双剑客对拼；无特效近身格斗走 realistic-fight-scene-generation；蓄力大招清屏走 ai-drama-shot-video-generation；中文阅读版见包内 docs/template-zh-CN.md",
+          "aliases": [
+            "武侠对打模板",
+            "电影级刀气对拼",
+            "穿越机刀战"
+          ]
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/video/fpv-sword-duel-generation-beta/prompts/main.en.md",
+          "digest": "sha256:a955f44f2c0ba6c7b924862f356a00ee3e7ee42f898fc748590443b69a3b431c"
         }
       ]
     },

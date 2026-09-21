@@ -1,0 +1,588 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "fpv-sword-duel-generation-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/video/fpv-sword-duel-generation-beta/prompts/main.en.md",
+  "template_digest": "sha256:a955f44f2c0ba6c7b924862f356a00ee3e7ee42f898fc748590443b69a3b431c",
+  "digest": "sha256:2f55a7e8141873c2213b6bc1951bbd5e3cf842631341c2f6548f27449db5960b",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "inspect",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "action_principles",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "draws, slashes, blocks, slips, counters, sheaths, pursuit; fast and stylish"
+      ],
+      "min_length": 10,
+      "max_length": 8192,
+      "labels": {
+        "en": "Action principles",
+        "zh-CN": "动作原则"
+      },
+      "descriptions": {
+        "en": "Blade vocabulary and how stylish draws/blocks/counters must read",
+        "zh-CN": "刀法组成与拔刀/格挡/反切的利落要求"
+      }
+    },
+    {
+      "name": "aspect_ratio",
+      "type": "enum",
+      "default": "16:9",
+      "enum": [
+        "16:9",
+        "9:16",
+        "1:1",
+        "2.39:1"
+      ],
+      "labels": {
+        "en": "Aspect ratio",
+        "zh-CN": "画幅比例"
+      },
+      "descriptions": {
+        "en": "Output aspect ratio",
+        "zh-CN": "输出视频画幅"
+      }
+    },
+    {
+      "name": "audio_design",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "synced steel, cloth, footwork, stone, dust, banners, breath; no dialogue"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Audio design",
+        "zh-CN": "声音设计"
+      },
+      "descriptions": {
+        "en": "Picture-synced location sound; no dialogue and only restrained low-frequency music by default",
+        "zh-CN": "严格同步画面的现场声；默认无对白、音乐仅极克制低频脉冲"
+      }
+    },
+    {
+      "name": "camera_language",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "FPV close orbit, low orbit, rear-side cut, ground skim, thread between fighters, spiral on clash"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "FPV camera language",
+        "zh-CN": "穿越机环绕语言"
+      },
+      "descriptions": {
+        "en": "Allowed FPV orbit set; side/rear/low preferred over front-face",
+        "zh-CN": "允许的穿越机绕拍集合；侧面/斜后/低机位优先于正面人脸"
+      }
+    },
+    {
+      "name": "camera_motion_rules",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "fast but readable; never chaotic flying; short impact shake aligned with force"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Camera motion rules",
+        "zh-CN": "摄影机运动规则"
+      },
+      "descriptions": {
+        "en": "Speed, readability, impact shake, and key-moment sharpness",
+        "zh-CN": "速度、可读性、撞击震动与关键清晰度规则"
+      }
+    },
+    {
+      "name": "character_dynamics",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "A presses with continuous pursuit; B is precise, defensive, stylish, suppressed but unbeaten"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Fighting-style contrast",
+        "zh-CN": "格斗风格对比"
+      },
+      "descriptions": {
+        "en": "Aggressor/defender contrast and the suppression-without-defeat relationship",
+        "zh-CN": "双方风格差异以及压制但不击败的关系"
+      }
+    },
+    {
+      "name": "clash_vfx",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "sparks, transparent shock rings, black and cold-white tearing, stone burst, banner rip, dust wave"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Clash tear",
+        "zh-CN": "对拼撕裂"
+      },
+      "descriptions": {
+        "en": "Contact-frame VFX when the two palettes collide",
+        "zh-CN": "两套特效正面相撞时的接触帧表现"
+      }
+    },
+    {
+      "name": "dual_consistency_lock",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "strictly inherit first-frame faces, bodies, wardrobe; never swap identities"
+      ],
+      "min_length": 10,
+      "max_length": 2048,
+      "labels": {
+        "en": "Dual consistency lock",
+        "zh-CN": "双人物一致性锁定"
+      },
+      "descriptions": {
+        "en": "No identity swap / face drift / wardrobe-body change / third combatant lock",
+        "zh-CN": "不交换身份/不变脸/不改服装体型/无第三者的锁定声明"
+      }
+    },
+    {
+      "name": "duration_s",
+      "type": "integer",
+      "required": true,
+      "default": 30,
+      "examples": [
+        30
+      ],
+      "min": 5,
+      "max": 120,
+      "labels": {
+        "en": "Duration (s)",
+        "zh-CN": "总时长（秒）"
+      },
+      "descriptions": {
+        "en": "Total duration; the duel timeline must cover it continuously",
+        "zh-CN": "视频总时长，对拼时间线必须连续覆盖"
+      }
+    },
+    {
+      "name": "ending_directive",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "B almost kneels then recovers; A stands with advantage; FPV pull-back to unresolved standoff"
+      ],
+      "min_length": 4,
+      "max_length": 2048,
+      "labels": {
+        "en": "Ending directive",
+        "zh-CN": "结尾指令"
+      },
+      "descriptions": {
+        "en": "How the unresolved suppression ending is staged",
+        "zh-CN": "压制但不击败的收尾如何落幅"
+      }
+    },
+    {
+      "name": "environment_destruction",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "tiles crack, pillars split, beams burst, banners tear, stones fly, dust waves with mass"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Environment destruction",
+        "zh-CN": "环境破坏"
+      },
+      "descriptions": {
+        "en": "Which objects break, how far, and that debris has mass and direction",
+        "zh-CN": "哪些物件可碎、碎到什么程度，以及碎片的质量与方向"
+      }
+    },
+    {
+      "name": "fight_arc",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "A opens aggressive, B is forced onto defense, B's one stylish counter is broken, unresolved standoff"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Structural arc",
+        "zh-CN": "结构弧线"
+      },
+      "descriptions": {
+        "en": "Suppression-without-defeat phase arc",
+        "zh-CN": "压制但不击败的阶段弧线"
+      }
+    },
+    {
+      "name": "fight_beats",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 131072,
+      "labels": {
+        "en": "Duel beats",
+        "zh-CN": "对拼时间线"
+      },
+      "descriptions": {
+        "en": "Per-beat choreography: time range, FPV move, origin/path/contact/result, bound VFX, debris, momentum handoff",
+        "zh-CN": "逐拍攻防编排：时间区间、穿越机运镜、起点/路径/接触点/结果、绑定特效、环境反应、惯性延续"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "fighter_a_identity",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Fighter A identity",
+        "zh-CN": "角色 A 身份特征"
+      },
+      "descriptions": {
+        "en": "Left-side aggressor face, hair, wardrobe, weapon, and temperament",
+        "zh-CN": "左侧压迫方的面部、发型、服装、武器与气质"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "fighter_a_vfx",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "black ink-wind afterimages, dark-grey torn air, thread-like blade qi, black-feather debris"
+      ],
+      "min_length": 10,
+      "max_length": 8192,
+      "labels": {
+        "en": "Fighter A VFX palette",
+        "zh-CN": "角色 A 特效体系"
+      },
+      "descriptions": {
+        "en": "Darker, wilder, invasive blade-VFX language bound to A's cuts",
+        "zh-CN": "更黑、更狂、更具侵略性、绑定 A 刀路的特效语言"
+      }
+    },
+    {
+      "name": "fighter_b_identity",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Fighter B identity",
+        "zh-CN": "角色 B 身份特征"
+      },
+      "descriptions": {
+        "en": "Right-side defender face, hair, wardrobe, weapon, and temperament; follow first-frame right figure",
+        "zh-CN": "右侧防守方的面部、发型、服装、武器与气质；严格参考首帧右侧人物"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "fighter_b_vfx",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "cold-white vacuum cuts, silver transparent arcs, thin air-slash lines, faint white afterimages"
+      ],
+      "min_length": 10,
+      "max_length": 8192,
+      "labels": {
+        "en": "Fighter B VFX palette",
+        "zh-CN": "角色 B 特效体系"
+      },
+      "descriptions": {
+        "en": "Colder, cleaner, sharper blade-VFX language bound to B's blocks and counters",
+        "zh-CN": "更冷、更净、更锐利、绑定 B 格挡与反切的特效语言"
+      }
+    },
+    {
+      "name": "final_feel",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "high-end action demo: fast, stylish, VFX-heavy, readable, cinematic not cheap xianxia glow"
+      ],
+      "min_length": 10,
+      "max_length": 2048,
+      "labels": {
+        "en": "Final feel",
+        "zh-CN": "最终气质"
+      },
+      "descriptions": {
+        "en": "Overall feel declaration of the final footage",
+        "zh-CN": "成片整体气质声明"
+      }
+    },
+    {
+      "name": "first_frame_hold_s",
+      "type": "string",
+      "required": true,
+      "default": "0.3",
+      "examples": [
+        "0.3"
+      ],
+      "min_length": 1,
+      "max_length": 16,
+      "labels": {
+        "en": "First-frame hold (s)",
+        "zh-CN": "首帧保持秒数"
+      },
+      "descriptions": {
+        "en": "Seconds to hold the first-frame composition before the first FPV orbit",
+        "zh-CN": "进入第一圈穿越机环绕前，钉住首帧构图的秒数"
+      }
+    },
+    {
+      "name": "first_frame_ref",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "@image1"
+      ],
+      "regex": "^@[A-Za-z0-9][A-Za-z0-9:._/-]{0,255}$",
+      "min_length": 2,
+      "max_length": 256,
+      "labels": {
+        "en": "First-frame ref",
+        "zh-CN": "首帧参考图引用"
+      },
+      "descriptions": {
+        "en": "t=0 two-person composition and visual baseline @-ref",
+        "zh-CN": "第 0 秒双人构图与人物视觉基准的 @ 引用"
+      }
+    },
+    {
+      "name": "footage_style",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "16:9 cinematic photoreal live-action, strict 30s, 24fps"
+      ],
+      "min_length": 4,
+      "max_length": 2048,
+      "labels": {
+        "en": "Footage style",
+        "zh-CN": "影像风格声明"
+      },
+      "descriptions": {
+        "en": "Overall footage style declaration",
+        "zh-CN": "整体影像气质声明"
+      }
+    },
+    {
+      "name": "frame_rate",
+      "type": "enum",
+      "default": "24fps",
+      "enum": [
+        "24fps",
+        "25fps",
+        "30fps",
+        "50fps",
+        "60fps"
+      ],
+      "labels": {
+        "en": "Frame rate",
+        "zh-CN": "帧率"
+      },
+      "descriptions": {
+        "en": "Output frame rate",
+        "zh-CN": "输出视频帧率"
+      }
+    },
+    {
+      "name": "lighting_palette",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "hard-edge sunlight through broken roofs, volumetric dust, cold metal highlights"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Lighting and materials",
+        "zh-CN": "光影与材质"
+      },
+      "descriptions": {
+        "en": "Key light, rim light, palette, and material requirements",
+        "zh-CN": "主光、轮廓光、主色调与材质要求"
+      }
+    },
+    {
+      "name": "negative_prompts",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "no sluggish motion, standing duels, front-face holds, magic orbs, laser cannons, knockout, gore, scene change"
+      ],
+      "min_length": 10,
+      "max_length": 8192,
+      "labels": {
+        "en": "Negative prompts",
+        "zh-CN": "负面提示词"
+      },
+      "descriptions": {
+        "en": "Negative constraint list; template defaults are merged",
+        "zh-CN": "负面约束清单；模板内置默认负面项会并入"
+      }
+    },
+    {
+      "name": "provider_banner",
+      "type": "string",
+      "examples": [
+        "Made with Seedance 2.5"
+      ],
+      "min_length": 0,
+      "max_length": 256,
+      "labels": {
+        "en": "Provider banner",
+        "zh-CN": "平台标识行"
+      },
+      "descriptions": {
+        "en": "Optional delivery-platform banner line rendered at the top; omitted when empty",
+        "zh-CN": "可选的投递平台标识行，渲染在 Prompt 顶部；留空则省略"
+      }
+    },
+    {
+      "name": "quality_profile",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "UE5-level lighting, PBR materials, fine cloth hair dust stone and metal sparks"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Quality profile",
+        "zh-CN": "品质设定"
+      },
+      "descriptions": {
+        "en": "Lighting, material, and micro-detail quality bar",
+        "zh-CN": "光影、材质与微细节品质要求"
+      }
+    },
+    {
+      "name": "resolution",
+      "type": "enum",
+      "default": "1080p",
+      "enum": [
+        "720p",
+        "1080p",
+        "4K"
+      ],
+      "labels": {
+        "en": "Resolution",
+        "zh-CN": "分辨率"
+      },
+      "descriptions": {
+        "en": "Output video resolution",
+        "zh-CN": "输出视频分辨率"
+      }
+    },
+    {
+      "name": "scenario_summary",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 2048,
+      "labels": {
+        "en": "Scenario summary",
+        "zh-CN": "场景梗概"
+      },
+      "descriptions": {
+        "en": "One-line summary of who fights whom and where",
+        "zh-CN": "一句话说明谁与谁在何处对战"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "scene_desc",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 8192,
+      "labels": {
+        "en": "Scene description",
+        "zh-CN": "场景描述"
+      },
+      "descriptions": {
+        "en": "Single ruined-street environment, materials, and atmosphere",
+        "zh-CN": "同一处废墟街巷的环境、材质与氛围细节"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "scene_layout",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "max_length": 8192,
+      "labels": {
+        "en": "Layout and axis of action",
+        "zh-CN": "空间布局与行动轴线"
+      },
+      "descriptions": {
+        "en": "Opening left/right staging, movement path, landmarks, and axis rules",
+        "zh-CN": "开场左右站位、战斗移动路径、关键地物与行动轴线规则"
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "style_reference",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "fast close-range high-pressure action-demo temperament; inherit lens language only"
+      ],
+      "min_length": 10,
+      "max_length": 4096,
+      "labels": {
+        "en": "Style reference",
+        "zh-CN": "风格参照"
+      },
+      "descriptions": {
+        "en": "Temperament/lens-language reference; never copies characters, locations, or shots",
+        "zh-CN": "只继承气质与镜头语言的参照描述，不得照搬人物/场景/镜头"
+      }
+    },
+    {
+      "name": "vfx_binding_rules",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "every important cut binds aura to blade path, body rotation, footwork, clash, and debris"
+      ],
+      "min_length": 10,
+      "max_length": 8192,
+      "labels": {
+        "en": "VFX binding rules",
+        "zh-CN": "刀气特效绑定"
+      },
+      "descriptions": {
+        "en": "How blade VFX must follow motion instead of floating unmotivated",
+        "zh-CN": "刀气如何跟随动作，而不是无源漂浮"
+      }
+    }
+  ]
+}
