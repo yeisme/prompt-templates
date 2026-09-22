@@ -20,7 +20,7 @@ Active skills 由根目录 `.skills/profiles/targets/data/yeisme-prompt-template
 - 中文用于人类阅读：与英文模板对应的译文放在 `docs/template-zh-CN.md`，头部必须标注人工审阅身份；不得注册为 template、不得建立可编译 contract、不得进入 catalog template 列表或内容 digest。已发布双语 exact ref 仅保留兼容性，不作为新建规范。
 - Prompt、指南和示例可以人工编辑；`repository.json`、`solution.json`、`catalog.json`、release manifest 和 lock 必须由 Template Registry CLI 生成（含 `solution locale remove` 的 locale 移除）。
 - machine IDs、目录名、schema keys、tags、capabilities、rights 和 maturity 使用稳定英文。
-- 版本命名（2026-09-05 起）：正式版本用无后缀 solution id，从 `1.0.0` 起版；非正式（未转正）版本的目录名或版本号必须带 `beta` 或 `alpha` 标识（如 `xxx-assets-beta`、`2.0.0-beta.1`）。转正时去后缀目录、版本重置 `1.0.0`，内容整体晋升并经 Registry CLI 重放 metadata；禁止再用裸 `-v2` 目录表达"并行未转正 major"（`ai-drama-background-assets-v2` 为存量豁免，转正时一并收敛）。
+- 版本命名（2026-09-05 起）：正式版本用无后缀 solution id，从 `1.0.0` 起版；非正式（未转正）版本的目录名或版本号必须带 `beta` 或 `alpha` 标识（如 `xxx-assets-beta`、`2.0.0-beta.1`）。转正时去后缀目录、版本重置 `1.0.0`，内容整体晋升并经 Registry CLI 重放 metadata；禁止再用裸 `-v2` 目录表达"并行未转正 major"（存量豁免：`ai-drama-background-assets-v2`、`xhs-product-cover-v2`，均为规则落地同日的既有目录，转正时一并收敛）。
 - 不记录隐藏系统提示、真实用户数据、Provider payload、credential、完整思维链或未脱敏运行证据。
 
 ## 边界

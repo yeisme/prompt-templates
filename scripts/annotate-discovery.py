@@ -4,6 +4,7 @@ import argparse
 import json
 import pathlib
 import subprocess
+import sys
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--cli', default='template-registry')
@@ -50,10 +51,16 @@ for path in sorted((root / 'solutions').glob('*/*/solution.json')):
         media, consumers = ['text'], ['auctra']
     if s['package_id'] == 'audio':
         consumers = ['sonora']
+    en_locale = s['locales'].get('en')
+    if en_locale is None:
+        # Locale policy: annotations feed compiled template metadata and must
+        # be English. Legacy en-less solutions keep their existing state.
+        print(f"skip {s['package_id']}/{s['id']}: no en locale to annotate", file=sys.stderr)
+        continue
     for template in s['templates']:
-        title, summary = roles.get(template['role'], (template['role'].replace('-', ' ').title(), s['locales'].get('en', next(iter(s['locales'].values())))['summary']))
+        title, summary = roles.get(template['role'], (template['role'].replace('-', ' ').title(), en_locale['summary']))
         if template['role'] == 'main':
-            title = s['locales'].get('en', next(iter(s['locales'].values())))['title']
+            title = en_locale['title']
         role_media = media
         if s['id'] == 'ai-film-multi-profile-production':
             role_media = ['audio'] if template['role'] == 'shot-audio-intent' else ['video'] if template['role'] == 'shot-prompt' else ['text']

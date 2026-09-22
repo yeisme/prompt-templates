@@ -67,7 +67,10 @@ def main():
         (destination / guide).parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(ROOT / guide, destination / guide)
         author(args.registry, destination)
-        with zipfile.ZipFile(destination.with_suffix(".zip"), "w", zipfile.ZIP_DEFLATED) as archive:
+        archive_path = Path(str(destination) + ".zip")
+        if archive_path.exists():
+            raise SystemExit("Sample zip already exists; remove it or choose a new destination.")
+        with zipfile.ZipFile(archive_path, "w", zipfile.ZIP_DEFLATED) as archive:
             for path in sorted(destination.rglob("*")):
                 if path.is_file():
                     archive.write(path, Path("visual-starter") / path.relative_to(destination))

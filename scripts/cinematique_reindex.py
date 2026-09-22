@@ -9,7 +9,6 @@ regenerated after any spec add/remove/rename. Run from repository root.
 """
 import json
 import sys
-from datetime import date, datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,11 +45,29 @@ def main() -> int:
     categories: dict[str, int] = {}
     for spec in specs:
         categories[spec["category"]] = categories.get(spec["category"], 0) + 1
+    unknown = set(categories) - set(CATEGORY_ORDER)
+    if unknown:
+        print(f"unknown category (extend CATEGORY_ORDER first): {sorted(unknown)}", file=sys.stderr)
+        return 1
+    if sum(categories.values()) != len(specs):
+        print("category counts do not sum to the technique count", file=sys.stderr)
+        return 1
+
+    out = SOL / "assets" / "index.json"
+    # Derived output must be deterministic across re-runs: carry the stamp
+    # forward from the existing index (epoch for a first build), like the
+    # catalog CLI's generated_at convention.
+    generated_at = "1970-01-01T00:00:00Z"
+    if out.exists():
+        try:
+            generated_at = json.loads(out.read_text(encoding="utf-8")).get("generated_at", generated_at)
+        except json.JSONDecodeError:
+            pass
 
     index = {
         "schema_version": "cinematique.index.v1",
         "solution_id": "cinematique-shot-techniques-beta",
-        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "generated_at": generated_at,
         "count": len(specs),
         "categories": {c: categories.get(c, 0) for c in CATEGORY_ORDER if c in categories},
         "techniques": [
@@ -65,7 +82,6 @@ def main() -> int:
             for s in specs
         ],
     }
-    out = SOL / "assets" / "index.json"
     out.write_text(json.dumps(index, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"index written: {out} ({len(specs)} techniques)")
     print("technique_id enum values for contract input set:")
