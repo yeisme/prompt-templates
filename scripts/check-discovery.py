@@ -23,10 +23,16 @@ solutions = catalog['solutions']
 counts = {'solutions': len(solutions), 'roles': sum(len({t['role'] for t in s['templates']}) for s in solutions), 'documents': sum(len(s['templates']) for s in solutions)}
 counts['image_documents'] = sum('image' in a.get('media', []) for a in catalog.get('discovery', []))
 counts['image_solutions'] = len({(a['package_id'], a['solution_id']) for a in catalog.get('discovery', []) if 'image' in a.get('media', [])})
+counts['discovery'] = len(catalog.get('discovery', []))
 code = result.returncode
 if args.expected_solutions is not None and counts['solutions'] != args.expected_solutions:
     code = 1
 if args.expected_documents is not None and counts['documents'] != args.expected_documents:
+    code = 1
+# Every registered template document must carry a discovery annotation; the
+# catalog audit only reports mismatch drift, not absence.
+if counts['discovery'] != counts['documents']:
+    print(f"discovery entries {counts['discovery']} != registered documents {counts['documents']}; run scripts/annotate-discovery.py", file=sys.stderr)
     code = 1
 (evidence / 'command.txt').write_text('template-registry catalog audit --repository . --json\n')
 (evidence / 'stdout.log').write_text(result.stdout.replace(str(root), '<repository>'))

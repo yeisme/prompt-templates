@@ -50,6 +50,11 @@
   },
   "templates": [
     {
+      "title": "Cinematic FPV Sword Duel Generation",
+      "summary": "Compile first-frame lock, dual blade-VFX palettes, FPV-orbit camera, readable sword choreography, and a suppression-without-defeat arc into a duel prompt for direct video-model delivery",
+      "media": [
+        "video"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/video/fpv-sword-duel-generation-beta/prompts/main.en.md"

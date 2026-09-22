@@ -34,6 +34,14 @@
   },
   "templates": [
     {
+      "title": "Popular Science Encyclopedia Infographic",
+      "summary": "Vertical modular popular-science encyclopedia plate for one subject; hero visual plus knowledge modules, callouts, rating card and Top 5 highlights",
+      "media": [
+        "image"
+      ],
+      "consumers": [
+        "eikona"
+      ],
       "role": "main",
       "locale": "en",
       "path": "solutions/image/pop-science-encyclopedia/prompts/main.en.md"
