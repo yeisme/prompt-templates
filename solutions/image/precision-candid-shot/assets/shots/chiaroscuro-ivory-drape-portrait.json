@@ -1,0 +1,113 @@
+{
+  "schema_version": "precision-candid-shot/1.0",
+  "id": "chiaroscuro-ivory-drape-portrait",
+  "label": "纯黑房间古典明暗法侧倾人像：黑发遮脸 + 旧象牙白垂坠布 + 极窄暖光厚黑位 + 旧胶片柔焦油画感，Soran 三层自然水印",
+  "aspect": "4:5",
+  "orientation": "Vertical",
+  "genre": "a painterly low-key chiaroscuro narrative portrait photograph with an old-lens film-scan rendering",
+  "subject": {
+    "id": "east-asian-woman",
+    "pronoun": "She",
+    "description": "a clearly adult East Asian woman, apparent age 20-30, tall and slender, with a natural East Asian bone structure, delicate yet recognizable features, real slight facial asymmetry and natural skin texture — never an influencer-template face, never a surgical or AI-fake face",
+    "pose": "slipping heavily sideways from the right side of the frame toward the lower left, half-leaning as if wearily sliding into the darkness: her body losing its upright axis, head drooped and slightly turned, one shoulder raised while the other sinks, her neck naturally elongated and her torso slightly twisted into a fragile, off-balance, quiet physical tension",
+    "expression": "eyelids half-lowered, gaze falling off-frame or toward the floor, lips naturally slightly parted — quiet, tired, detached, sleepwalking, faintly melancholic; no smile, no commercial model expression",
+    "wardrobe": "loose soft draped fabric in old ivory, warm grayish white and linen white — an extremely minimal loose wrap or knit that naturally envelops her shoulder, neck and torso with real gravity, drape, pressing folds and local stacking, irregular edges, never pure white; not a modern evening gown, wedding dress or complex fashion design"
+  },
+  "sections": [
+    {
+      "heading": "Hair",
+      "body": "deep black to black-tea long hair falling loosely, abundant strands covering the forehead, the eye area and the sides of the face and melting directly into the black background, leaving only the nose bridge, the lips, one cheek and a trace of the eye contour emerging from the darkness; the face is never fully revealed and she never gazes into the lens"
+    },
+    {
+      "heading": "Watermarking",
+      "body": "a three-layer natural 'Soran' watermark system: first, 'Soran' accurately written on a tiny woven label at the edge of the old white fabric or on an old metal button; second, 'Soran' hidden within the fabric folds, the dark background texture and the light-shadow boundaries; third, 'Soran' micro-embedded into the fiber texture, stitches and tiny worn spots. All layers stay low-contrast and genuinely belong to the in-image materials. No external watermark, no sticker-style logo, no floating letters, no captions."
+    }
+  ],
+  "camera": {
+    "position": "about 1.2 m in front of her tilted upper body, level with her drooping head",
+    "lens": "58mm vintage portrait",
+    "framing": "the tilted figure occupies about 60% of the frame along a diagonal from upper right to lower left, cropped from above the head down to the hips, with more than half of the frame left as pure black negative space"
+  },
+  "light": {
+    "key": "an extremely narrow, soft yet clearly directional warm side-front / upper-side light touches only the nose bridge, the lips, the neck, the collarbone, one shoulder tip, the chest fabric and a small strip of torso; the rest of the face, hair, body and background fall quickly into deep black — deep black occupies more than half of the frame and the shadows are never lifted or filled",
+    "temperature": "narrow-warm-lowkey"
+  },
+  "palette": [
+    {
+      "color": "deep black",
+      "pct": 60
+    },
+    {
+      "color": "warm honey-brown skin",
+      "pct": 20
+    },
+    {
+      "color": "old ivory white",
+      "pct": 15
+    },
+    {
+      "color": "dark red lips",
+      "pct": 5
+    }
+  ],
+  "background": "an almost completely black indoor space whose exact location cannot be identified — no furniture, no decoration, no modern objects",
+  "fingerprints": [
+    "real pores and lip creases preserved inside the narrow lit strip",
+    "loose hair strands dissolving into the black background",
+    "irregular worn edges and stacking folds of the old drape"
+  ],
+  "atmosphere": "a melancholic, intimate, fragile, dreamlike atmosphere — the figure slowly emerging from darkness under a sliver of light, in the manner of classical chiaroscuro painting",
+  "quality": [
+    "old-lens rendering with obvious soft focus, low micro-contrast, melting edges and slight defocus",
+    "highlight blooming, shadow grain, subtle color shift, slight haze and slight exposure unevenness",
+    "real pores, lip creases, flyaway strands and fabric fibers all wrapped in a soft-focus low-resolution feel",
+    "skin tones and shadows blending like oil paint, at the blurred boundary between photography and classical painting",
+    "never modern commercial-grade sharpness"
+  ],
+  "negative": [
+    "fully lit bright face",
+    "frontal upright seated pose",
+    "strong direct gaze into the camera",
+    "sweet smile",
+    "exaggerated sexy pose",
+    "modern evening gown",
+    "pure white wedding dress",
+    "complex interior furniture",
+    "bright background",
+    "commercial studio shoot",
+    "rim light",
+    "HDR",
+    "8K ultra-sharp",
+    "plastic skin",
+    "influencer-template face",
+    "AI fake face",
+    "over-smoothed skin",
+    "razor-sharp individual hair strands",
+    "high-saturation colors",
+    "neon",
+    "cyberpunk",
+    "sharp digital photography look",
+    "lifted or filled shadows",
+    "external watermark",
+    "sticker logo",
+    "captions"
+  ],
+  "tail": [
+    "photorealistic"
+  ],
+  "tags": {
+    "use": [
+      "portrait",
+      "reference"
+    ],
+    "mood": [
+      "melancholic",
+      "dreamy",
+      "fragile"
+    ],
+    "theme": [
+      "chiaroscuro",
+      "fine-art"
+    ]
+  }
+}

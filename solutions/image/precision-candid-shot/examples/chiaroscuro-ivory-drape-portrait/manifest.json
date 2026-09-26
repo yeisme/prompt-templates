@@ -1,0 +1,50 @@
+{
+  "schema_version": "precision-candid-shot/1.0",
+  "shot": "chiaroscuro-ivory-drape-portrait",
+  "combo": "d4a01e2f",
+  "aspect": "4:5",
+  "model": "openai/gpt-5.4-image-2",
+  "images": [
+    {
+      "file": "prompts/01-chiaroscuro-ivory-drape-portrait.md",
+      "combo": "d4a01e2f",
+      "tags": [
+        "style:precision-candid",
+        "shot:chiaroscuro-ivory-drape-portrait",
+        "aspect:4:5",
+        "subject:east-asian-woman",
+        "lens:58mm-vintage-portrait",
+        "light.temperature:narrow-warm-lowkey",
+        "palette.primary:deep-black",
+        "fingerprint:real-pores-and-lip-creases-preserved-inside-the-narrow-lit-strip",
+        "fingerprint:loose-hair-strands-dissolving-into-the-black-background",
+        "fingerprint:irregular-worn-edges-and-stacking-folds-of-the-old-drape",
+        "use:portrait",
+        "use:reference",
+        "mood:melancholic",
+        "mood:dreamy",
+        "mood:fragile",
+        "theme:chiaroscuro",
+        "theme:fine-art"
+      ],
+      "palette": [
+        {
+          "color": "deep black",
+          "pct": 60
+        },
+        {
+          "color": "warm honey-brown skin",
+          "pct": 20
+        },
+        {
+          "color": "old ivory white",
+          "pct": 15
+        },
+        {
+          "color": "dark red lips",
+          "pct": 5
+        }
+      ]
+    }
+  ]
+}

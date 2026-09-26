@@ -31,6 +31,12 @@
 | --- | --- |
 | `still-in-crowd-overhead` | 高位俯拍慢门：人群中静止的她、牛皮纸花束（3:4） |
 
+## 古典明暗 / 低照度（theme:chiaroscuro）
+
+| id | 说明 |
+| --- | --- |
+| `chiaroscuro-ivory-drape-portrait` | 纯黑房间古典明暗法侧倾人像（4:5）：黑发遮脸、旧象牙白垂坠布、极窄暖光厚黑位、旧胶片柔焦油画感、Soran 三层水印 |
+
 ## 其他组
 
 | id | theme | 说明 |
