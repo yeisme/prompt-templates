@@ -1,0 +1,29 @@
+{
+  "schema_version": "precision-candid-shot/1.0",
+  "shot": "gothic-candlelight-portrait",
+  "combo": "01d07d74",
+  "aspect": "9:16",
+  "model": "openai/gpt-5.4-image-2",
+  "images": [
+    {
+      "file": "prompts/01-gothic-candlelight-portrait.md",
+      "combo": "01d07d74",
+      "tags": [
+        "style:precision-candid",
+        "shot:gothic-candlelight-portrait",
+        "aspect:9:16",
+        "subject:east-asian-woman",
+        "lens:85mm-portrait",
+        "light.temperature:mixed-warm-cool",
+        "use:reference",
+        "use:cover",
+        "mood:gothic",
+        "mood:dark-romantic",
+        "mood:mysterious",
+        "theme:gothic",
+        "theme:editorial"
+      ],
+      "palette": []
+    }
+  ]
+}

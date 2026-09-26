@@ -6,8 +6,8 @@
 
 ## 变量绑定
 
-- 33 个变量全部由城市 spec 注入；推荐消费方式为 Eikona iconic-landmark 海报导演技能（`.skills/yeisme/eikona-image/eikona-iconic-landmark-poster-director`）的 `render_poster.py`，直接从 `assets/cities/<id>.json` 渲染，支持 variants 变体合并。
-- `series_no` 全系列唯一，三位数字（如 `001`）；新增城市后运行 `render_poster.py --reindex` 检查冲突。
+- 33 个变量全部由城市 spec 注入；推荐消费方式为仓库渲染脚本 `data/yeisme-prompt-templates/scripts/render_landmark_poster.py`（本 solution 内），直接从 `assets/cities/<id>.json` 渲染，支持 variants 变体合并。
+- `series_no` 全系列唯一，三位数字（如 `001`）；新增城市后运行 `python3 scripts/render_landmark_poster.py --reindex` 检查冲突。
 - `negative_extra` 只放城市专属负面词，固定基线已在模板内。
 
 ## 渲染与投递

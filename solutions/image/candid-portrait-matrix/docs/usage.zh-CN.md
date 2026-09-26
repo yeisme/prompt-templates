@@ -8,7 +8,7 @@
 
 - 全部 12 个维度变量（`expression` / `wardrobe` / `scene` / `moment` / `shot` / `lens` / `camera` / `composition` / `foreground` / `light` / `palette` / `state`）必须从 contract 枚举池取值。
 - `subject` 为自由文本，但必须写明 adult 与镜头感。
-- 推荐消费方式：Eikona candid-photo 导演技能的采样器（`.skills/yeisme/eikona-image/eikona-candid-photo-director`）按 seed 确定性采样、校验兼容约束并输出 tags；不要手工编造组合。
+- 推荐消费方式：模板仓库采样器 `data/yeisme-prompt-templates/scripts/sample_candid_matrix.py`（本 solution 内）按 seed 确定性采样、校验兼容约束并输出 tags；不要手工编造组合。
 
 ## 渲染与投递
 

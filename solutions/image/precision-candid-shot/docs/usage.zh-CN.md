@@ -6,7 +6,7 @@
 
 ## 变量绑定
 
-- 推荐消费方式：Eikona precision-candid 导演技能（`.skills/yeisme/eikona-image/eikona-precision-candid-director`）的 `render_shot.py`，从 `assets/shots/<id>.json` 结构化字段自动生成全部子句并绑定。
+- 推荐消费方式：模板仓库渲染脚本 `scripts/render_precision_candid.py`（本 solution 内），从 `assets/shots/<id>.json` 结构化字段自动生成全部子句并绑定。
 - 可选子句（`perspective_clause`、`foreground_sentence`、`light_fill_clause`、`palette_sentence`、`background_sentence`、`fingerprints_sentence`、`tail_clause`）自带标点与前导空格；不使用时绑定为空字符串。
 - 手工绑定时保持量化参数原样（cm、%、degrees），不要改写成模糊形容词。
 

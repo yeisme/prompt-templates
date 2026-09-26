@@ -1,0 +1,29 @@
+{
+  "schema_version": "precision-candid-shot/1.0",
+  "shot": "french-vintage-editorial",
+  "combo": "1e78c615",
+  "aspect": "9:16",
+  "model": "openai/gpt-5.4-image-2",
+  "images": [
+    {
+      "file": "prompts/01-french-vintage-editorial.md",
+      "combo": "1e78c615",
+      "tags": [
+        "style:precision-candid",
+        "shot:french-vintage-editorial",
+        "aspect:9:16",
+        "subject:east-asian-woman",
+        "lens:85mm-portrait",
+        "light.temperature:studio-soft",
+        "use:cover",
+        "use:poster",
+        "mood:elegant",
+        "mood:vintage",
+        "mood:editorial",
+        "theme:editorial",
+        "theme:studio-portrait"
+      ],
+      "palette": []
+    }
+  ]
+}
