@@ -1452,7 +1452,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:cedf197191f16abca4b0589ebdb01078076c02cbc3c4cb11d63a8ae24bf6d97e",
+  "digest": "sha256:58e6ba20205abc35b59c229ed086a5790cbc4b2c0602cc91b460800f22acb2c8",
   "solutions": [
     {
       "package_id": "3d",
@@ -2199,6 +2199,54 @@
           "locale": "en",
           "path": "solutions/image/iconic-landmark-poster/prompts/main.en.md",
           "digest": "sha256:d5cf6e7303bf9a4e5f3cab103bcf149e6cee78b2dc70b86429156dabc1070419"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "new-england-gothic-documentary",
+      "version": "1.0.0",
+      "digest": "sha256:271825a75126103539f4e98da6a1f88acdc0df1036de4042b20991cc6669f2a3",
+      "category": "image",
+      "tags": [
+        "artifact:documentary_photograph",
+        "category:image",
+        "constraint:muted_palette",
+        "constraint:style_lock",
+        "job:generate",
+        "modality:image",
+        "scenario:small_town_documentary",
+        "stage:prompt_generation"
+      ],
+      "capabilities": [
+        "image",
+        "negative_prompt_governance",
+        "style_layer"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "New England Gothic Documentary Style Layer",
+          "summary": "Reusable quiet documentary style layer for American small-town night scenes with New England gothic atmosphere; swap only subjects and setting",
+          "usage": "Bind subjects and setting, keep every style paragraph fixed; optional format clause prefix",
+          "aliases": [
+            "new england gothic documentary",
+            "新英格兰哥特纪实"
+          ]
+        },
+        "zh-CN": {
+          "title": "新英格兰哥特纪实摄影风格层",
+          "summary": "面向美国小镇夜间场景的可复用安静纪实摄影风格层；只替换人物与场景",
+          "usage": "绑定人物与场景变量，固定风格段落不变；可选画幅前缀"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/new-england-gothic-documentary/prompts/main.en.md",
+          "digest": "sha256:624e04cd85d3a0519802d8658df95622544d14a9cb0ee2dc2d1ca656ffbb6e08"
         }
       ]
     },

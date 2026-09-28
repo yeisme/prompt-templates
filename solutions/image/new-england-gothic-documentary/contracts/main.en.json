@@ -1,0 +1,65 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "new-england-gothic-documentary",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/new-england-gothic-documentary/prompts/main.en.md",
+  "template_digest": "sha256:624e04cd85d3a0519802d8658df95622544d14a9cb0ee2dc2d1ca656ffbb6e08",
+  "digest": "sha256:ade56b7311d5c693749ad074576b1bac623f0f6f5c74416e3b5d8c019a81cd7e",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "format_clause",
+      "type": "string",
+      "examples": [
+        "Vertical 9:16 "
+      ],
+      "labels": {
+        "en": "Format clause",
+        "zh-CN": "画幅前缀"
+      },
+      "descriptions": {
+        "en": "Optional aspect prefix with trailing space; empty string when unused",
+        "zh-CN": "可选画幅前缀，自带尾部空格；不用则空字符串"
+      }
+    },
+    {
+      "name": "setting",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "small industrial town in Vermont, pre-dawn October night, nearly deserted back street, old red-brick warehouses, wet cracked asphalt reflecting one sodium streetlight, dark wooded hills in the distance, faint church steeple"
+      ],
+      "labels": {
+        "en": "Setting",
+        "zh-CN": "场景"
+      },
+      "descriptions": {
+        "en": "Town, time of day and weather in one phrase; darkness and available-light sources must come from the scene itself",
+        "zh-CN": "小镇、时刻与天气一句；黑暗与可用光源由场景自带"
+      }
+    },
+    {
+      "name": "subjects",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "two ordinary middle-aged graffiti writers quietly working on a weathered brick wall, one standing and one crouching, worn work clothes, subtle spray-paint stains"
+      ],
+      "labels": {
+        "en": "Subjects",
+        "zh-CN": "人物"
+      },
+      "descriptions": {
+        "en": "The ordinary people and their quiet activity in one phrase, including wardrobe and honest traces of labor",
+        "zh-CN": "普通人物与其安静动作一句，含衣着与劳作痕迹"
+      }
+    }
+  ]
+}

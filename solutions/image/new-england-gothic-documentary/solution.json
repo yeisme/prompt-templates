@@ -1,0 +1,47 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "new-england-gothic-documentary",
+  "version": "1.0.0",
+  "category": "image",
+  "tags": [
+    "artifact:documentary_photograph",
+    "category:image",
+    "constraint:muted_palette",
+    "constraint:style_lock",
+    "job:generate",
+    "modality:image",
+    "scenario:small_town_documentary",
+    "stage:prompt_generation"
+  ],
+  "capabilities": [
+    "image",
+    "negative_prompt_governance",
+    "style_layer"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "New England Gothic Documentary Style Layer",
+      "summary": "Reusable quiet documentary style layer for American small-town night scenes with New England gothic atmosphere; swap only subjects and setting",
+      "usage": "Bind subjects and setting, keep every style paragraph fixed; optional format clause prefix",
+      "aliases": [
+        "new england gothic documentary",
+        "新英格兰哥特纪实"
+      ]
+    },
+    "zh-CN": {
+      "title": "新英格兰哥特纪实摄影风格层",
+      "summary": "面向美国小镇夜间场景的可复用安静纪实摄影风格层；只替换人物与场景",
+      "usage": "绑定人物与场景变量，固定风格段落不变；可选画幅前缀"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/new-england-gothic-documentary/prompts/main.en.md"
+    }
+  ]
+}
