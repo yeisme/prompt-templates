@@ -3,6 +3,7 @@
 | 失败模式 | 表现 | 处理 |
 | --- | --- | --- |
 | 明快回潮 | 笑容、明亮欢快色调 | 负向已含 smiles/cheerful；重申 solemn expressions、muted palette |
+| 嘉年华回潮 | 废弃游乐场等场景漂成彩色欢腾、灯彩点亮 | 负向已含 carnival cheer/carnival lights；重申 quiet ruin、muted palette |
 | 魅惑/时尚大片化 | 美颜修饰、编辑摆拍、时装感 | 重申 no glamour、no beauty retouching、no stylized posing |
 | 恐怖片化 | 超自然、鬼魂、恐怖构图 | 负向已含 fantasy/supernatural glow/horror clichés；重申 haunted everyday life 而非恐怖 |
 | 贫困猎奇化 | 把人物拍成奇观、悲情消费 | 重申「ordinary lives watched quietly, never turned into spectacle」 |

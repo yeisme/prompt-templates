@@ -8,8 +8,8 @@
 
 | 变量 | 必填 | 说明 |
 | --- | --- | --- |
-| `subjects` | 是 | 人物及神态姿态。示例一（少女）：`a teenage girl in a faded pale dress and worn sneakers, solemn expression, awkward posture of adolescence`；示例二（全家福）：`a poor multigenerational white Southern family dressed plainly, serious expressions, no smiles, the grandmother seated in the center, children barefoot` |
-| `setting` | 是 | 场景与时刻。示例一（荒地）：`a neglected field behind a small Southern town, tall dry grass, an abandoned swing set, a distant church, humid cloudy afternoon`；示例二（农舍）：`in front of a decaying farmhouse, overgrown yard, rusted farm tools, an old pickup truck, late summer heat` |
+| `subjects` | 是 | 人物及神态姿态。示例一（少女）：`a teenage girl in a faded pale dress and worn sneakers, solemn expression, awkward posture of adolescence`；示例二（全家福）：`a poor multigenerational white Southern family dressed plainly, serious expressions, no smiles, the grandmother seated in the center, children barefoot`；示例三（独行者）：`a lone woman walking through the scene carrying a plastic bag, faded denim jacket` |
+| `setting` | 是 | 场景与时刻。示例一（荒地）：`a neglected field behind a small Southern town, tall dry grass, an abandoned swing set, a distant church, humid cloudy afternoon`；示例二（农舍）：`in front of a decaying farmhouse, overgrown yard, rusted farm tools, an old pickup truck, late summer heat`；示例三（游乐场）：`an abandoned county fairground in the American South, morning after a storm, muddy earth, rusted rides, torn banners, empty ticket booth, heavy humid air, gray sky` |
 | `format_clause` | 否 | 画幅前缀，如 "Vertical 9:16 "；不用则空字符串 |
 
 ## 渲染与投递

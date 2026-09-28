@@ -6,8 +6,8 @@
   "role": "main",
   "locale": "en",
   "template_path": "solutions/image/southern-gothic-documentary/prompts/main.en.md",
-  "template_digest": "sha256:9692abac35518259a9723517d15b933330a19f9c8b978bfda2eefff8777b7d60",
-  "digest": "sha256:bcb96538098b7c25f9fb3d9e8ddd2cd88b83a2b46accf5e8b4bcfabffa9271bb",
+  "template_digest": "sha256:822c42e6bf98bc7831259785fc9af82360351b9ebc6a8c46a985ab0c335d2f9c",
+  "digest": "sha256:a29c9f097d144485066cbdcd6ebbedddaa95bad17fc09521d27f0d243845c898",
   "license": "internal",
   "permissions": [
     "execute_requires_review",
@@ -35,7 +35,8 @@
       "required": true,
       "examples": [
         "a neglected field behind a small Southern town, tall dry grass, an abandoned swing set, a distant church, humid cloudy afternoon",
-        "in front of a decaying farmhouse, overgrown yard, rusted farm tools, an old pickup truck, late summer heat"
+        "in front of a decaying farmhouse, overgrown yard, rusted farm tools, an old pickup truck, late summer heat",
+        "an abandoned county fairground in the American South, morning after a storm, muddy earth, rusted rides, torn banners, empty ticket booth, heavy humid air, gray sky"
       ],
       "labels": {
         "en": "Setting",
@@ -52,7 +53,8 @@
       "required": true,
       "examples": [
         "a teenage girl in a faded pale dress and worn sneakers, solemn expression, awkward posture of adolescence",
-        "a poor multigenerational white Southern family dressed plainly, serious expressions, no smiles, the grandmother seated in the center, children barefoot"
+        "a poor multigenerational white Southern family dressed plainly, serious expressions, no smiles, the grandmother seated in the center, children barefoot",
+        "a lone woman walking through the scene carrying a plastic bag, faded denim jacket"
       ],
       "labels": {
         "en": "Subjects",

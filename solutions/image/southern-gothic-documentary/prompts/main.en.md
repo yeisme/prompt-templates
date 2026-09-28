@@ -12,7 +12,7 @@ Humid overcast light, soft natural light, muted colors, muted palette; realistic
 
 documentary photography, Southern Gothic, American South, documentary realism, environmental portrait, family portrait, photo essay, humid overcast light, soft natural light, muted palette, faded clothing, raw skin texture, solemn expression, no smiles, quiet tension, inherited sorrow, haunted everyday life, cinematic documentary feel, believable rather than stylized.
 
-Negative prompt: smiles, laughing, glamour, beauty retouching, stylized posing, fashion editorial look, fantasy elements, supernatural glow, horror clichés, golden-hour postcard light, HDR look, high contrast, oversaturation, glossy retouching, plastic skin, airbrushed skin, painting, illustration, anime, cartoon, 3D render, cheerful bright colors, clean modern clothing, tidy staged set, exaggerated composition, cluttered advertising look, watermark, text overlay.
+Negative prompt: smiles, laughing, glamour, beauty retouching, stylized posing, fashion editorial look, fantasy elements, supernatural glow, horror clichés, golden-hour postcard light, HDR look, high contrast, oversaturation, glossy retouching, plastic skin, airbrushed skin, painting, illustration, anime, cartoon, 3D render, cheerful bright colors, carnival cheer, carnival lights, clean modern clothing, tidy staged set, exaggerated composition, cluttered advertising look, watermark, text overlay.
 
 ## Self-check
 
