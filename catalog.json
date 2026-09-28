@@ -1452,7 +1452,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:58e6ba20205abc35b59c229ed086a5790cbc4b2c0602cc91b460800f22acb2c8",
+  "digest": "sha256:fb9fba545c8a78e455aafad9cb4e2d24eca59a671c55aed76a01371df3406fde",
   "solutions": [
     {
       "package_id": "3d",
@@ -2378,6 +2378,54 @@
           "locale": "en",
           "path": "solutions/image/precision-candid-shot/prompts/main.en.md",
           "digest": "sha256:047a1f4d5ec0304d53682c9da1ef7a59c8a38999b5b678b9691a1b5ddab2cd19"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "southern-gothic-documentary",
+      "version": "1.0.0",
+      "digest": "sha256:44fddc20291c7ead8601e81b7f21ac05e9b5367605717786f59f0ae87368437e",
+      "category": "image",
+      "tags": [
+        "artifact:documentary_photograph",
+        "category:image",
+        "constraint:muted_palette",
+        "constraint:style_lock",
+        "job:generate",
+        "modality:image",
+        "scenario:southern_gothic",
+        "stage:prompt_generation"
+      ],
+      "capabilities": [
+        "image",
+        "negative_prompt_governance",
+        "style_layer"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Southern Gothic Documentary Style Layer",
+          "summary": "Reusable quiet documentary style layer for American South scenes with Southern Gothic atmosphere, humid decay and family silence; swap only subjects and setting",
+          "usage": "Bind subjects and setting, keep every style paragraph fixed; optional format clause prefix",
+          "aliases": [
+            "southern gothic documentary",
+            "南部哥特纪实"
+          ]
+        },
+        "zh-CN": {
+          "title": "南部哥特纪实摄影风格层",
+          "summary": "面向美国南方场景的可复用安静纪实摄影风格层：湿热衰败与家族沉默；只替换人物与场景",
+          "usage": "绑定人物与场景变量，固定风格段落不变；可选画幅前缀"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/southern-gothic-documentary/prompts/main.en.md",
+          "digest": "sha256:9692abac35518259a9723517d15b933330a19f9c8b978bfda2eefff8777b7d60"
         }
       ]
     },
