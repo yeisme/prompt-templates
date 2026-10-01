@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p02-kneel-turn-back-three-quarter",
+  "no": 2,
+  "family": "quadruped-kneeling-support",
+  "label": "跪姿回身 / 后侧三分之四视角",
+  "pose_lead": "Grounded pose, kneeling turn-back seen from a rear three-quarter angle:",
+  "lower_limbs": "Both knees rest on the ground slightly apart, the lower legs folded back and the seat clearly raised off the heels.",
+  "upper_limbs": "Both arms hang at the sides and slightly behind the body, hands near the ground or close to the thighs.",
+  "torso_head": "The upper body rotates backward from the pelvis, the shoulder line visibly twisted; the head turns toward the rear side.",
+  "weight_silhouette": "Weight rests on both knees and lower legs; the counter-twist between hips, waist and shoulders is the point of the pose."
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p04-quadruped-leg-abducted",
+  "no": 4,
+  "family": "quadruped-kneeling-support",
+  "label": "四足跪姿 + 单腿外展",
+  "pose_lead": "Grounded pose, quadruped kneel with one leg abducted:",
+  "lower_limbs": "One knee supports on the ground while the other hip opens outward, that knee bent and lifted away to the side.",
+  "upper_limbs": "Both hands press the ground, arms nearly vertical to the floor.",
+  "torso_head": "The torso lies close to horizontal with a slight arch in the back; the head turns to face the front of the frame.",
+  "weight_silhouette": "A classic three- or four-point support with the seat held high; the side-lifted knee gives the pose a clear asymmetry."
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p12-crossed-legs-sit-arm-raised",
+  "no": 12,
+  "family": "independent-grounded",
+  "label": "交叠腿坐姿 + 举臂",
+  "pose_lead": "Grounded pose, seated with crossed legs and one arm raised:",
+  "lower_limbs": "The legs cross and fold in front of the body, one leg passing in front of the other.",
+  "upper_limbs": "One hand props on the ground behind and to the side while the other arm lifts, bends, and brings the hand behind the head.",
+  "torso_head": "The chest rises with a slight side-bend through the waist; the head faces forward.",
+  "weight_silhouette": "The arms sit at two different heights for a clear asymmetry; the overall line feels stretched and open."
+}

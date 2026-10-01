@@ -1,0 +1,98 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "grounded-pose-library",
+  "version": "1.0.0",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/grounded-pose-library/prompts/main.en.md",
+  "template_digest": "sha256:df94584e7239c316a42eab5f9d0cba3c6bcbbc80eb3a1d56d0f0d8cdb2ed0a13",
+  "digest": "sha256:cbad389da48bb6c64c504936f57d91692f3063b0759214cd13c88c7131ed1d23",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "lower_limbs",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Both legs bend and gather to one side of the body, one thigh angling forward while the other leg folds behind, the calves lying close together."
+      ],
+      "labels": {
+        "en": "Lower limbs",
+        "zh-CN": "下肢"
+      },
+      "descriptions": {
+        "en": "One complete sentence on legs and feet; camera-relative directions only",
+        "zh-CN": "腿与脚的完整一句；方向只用画面相对方向"
+      }
+    },
+    {
+      "name": "pose_lead",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Grounded pose, mermaid side-sit with rear support:"
+      ],
+      "labels": {
+        "en": "Pose lead",
+        "zh-CN": "姿势引导短语"
+      },
+      "descriptions": {
+        "en": "Opening phrase naming the pose family and variant, ending with a colon",
+        "zh-CN": "点明姿势家族与变体的引导短语，以冒号结尾"
+      }
+    },
+    {
+      "name": "torso_head",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "The chest lifts upward and the waist arches slightly back; the head rises and turns toward the upper side."
+      ],
+      "labels": {
+        "en": "Torso and head",
+        "zh-CN": "躯干与头部"
+      },
+      "descriptions": {
+        "en": "One complete sentence on torso, spine curve, shoulder line and head direction",
+        "zh-CN": "躯干、脊柱弧度、肩线与头部的完整一句"
+      }
+    },
+    {
+      "name": "upper_limbs",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Both arms reach behind the body, palms pressing the ground, elbows almost straight."
+      ],
+      "labels": {
+        "en": "Upper limbs",
+        "zh-CN": "上肢"
+      },
+      "descriptions": {
+        "en": "One complete sentence on arms and hands; camera-relative directions only",
+        "zh-CN": "臂与手的完整一句；方向只用画面相对方向"
+      }
+    },
+    {
+      "name": "weight_silhouette",
+      "type": "string",
+      "required": true,
+      "examples": [
+        "Weight rests mainly on the hips and both hands, the body tracing an S-line from lifted chest through arched waist to legs spreading sideways."
+      ],
+      "labels": {
+        "en": "Weight and silhouette",
+        "zh-CN": "重心与轮廓"
+      },
+      "descriptions": {
+        "en": "One complete sentence on support points and overall outline",
+        "zh-CN": "支撑点与整体轮廓的完整一句"
+      }
+    }
+  ]
+}

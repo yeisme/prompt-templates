@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p21-side-lying-head-propped",
+  "no": 21,
+  "family": "prone-side-lying-rest",
+  "label": "侧卧托头",
+  "pose_lead": "Grounded pose, side-lying with the head propped on one hand:",
+  "lower_limbs": "Both legs bend and stack along one side of the body, the knees pointing forward or slightly up.",
+  "upper_limbs": "One hand props the head with the elbow on the ground; the other forearm rests on the ground in front of the chest for support.",
+  "torso_head": "The torso lies on its side but the chest opens slightly toward the front of the frame; the head tilts toward the supporting hand.",
+  "weight_silhouette": "Weight rests on the side hip, the side leg and the elbow; the figure forms a classic reclining triangle."
+}

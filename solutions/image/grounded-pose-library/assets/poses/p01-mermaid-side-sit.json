@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p01-mermaid-side-sit",
+  "no": 1,
+  "family": "side-sit-rear-support",
+  "label": "侧坐后撑 / 人鱼坐",
+  "pose_lead": "Grounded pose, mermaid side-sit with rear support:",
+  "lower_limbs": "Both legs bend and gather to one side of the body, one thigh angling forward while the other leg folds behind, the calves lying close together.",
+  "upper_limbs": "Both arms reach behind the body, palms pressing the ground, elbows almost straight.",
+  "torso_head": "The chest lifts upward and the waist arches slightly back; the head rises and turns toward the upper side.",
+  "weight_silhouette": "Weight rests mainly on the hips and both hands, the body tracing an S-line from lifted chest through arched waist to legs spreading sideways."
+}

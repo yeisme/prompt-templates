@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p13-prone-face-cradle",
+  "no": 13,
+  "family": "prone-side-lying-rest",
+  "label": "俯卧双手托脸",
+  "pose_lead": "Grounded pose, prone with the face cradled in both hands:",
+  "lower_limbs": "The stomach lies against the ground, both knees bent so the lower legs swing up, the ankles or feet crossed.",
+  "upper_limbs": "Both elbows rest on the ground in front of the chest, hands cradling the face from both sides.",
+  "torso_head": "The chest lifts slightly, the head centered.",
+  "weight_silhouette": "The body stretches mainly horizontal, the raised legs forming a second point of interest; the whole reads as nearly left-right symmetric."
+}

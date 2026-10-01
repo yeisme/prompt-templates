@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p16-open-knee-side-sit-forward-lean",
+  "no": 16,
+  "family": "independent-grounded",
+  "label": "开膝侧坐前倾",
+  "pose_lead": "Grounded pose, side-sit with knees open and torso leaning forward:",
+  "lower_limbs": "One leg folds in front of the body while the other tucks folded to the rear side, the two knees pointing different directions.",
+  "upper_limbs": "Both arms reach forward and down, hands side by side on the ground.",
+  "torso_head": "The upper body leans forward, the shoulders slightly drawn in, the head low and turned to one side.",
+  "weight_silhouette": "The figure composes a wide triangle: upper body pitching forward, legs opening to both sides."
+}

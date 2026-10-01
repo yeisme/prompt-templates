@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p14-upright-side-sit-rear-support",
+  "no": 14,
+  "family": "side-sit-rear-support",
+  "label": "侧坐后撑（挺拔）",
+  "pose_lead": "Grounded pose, upright side-sit with rear support:",
+  "lower_limbs": "Both legs bend at once and gather to one side of the body, thigh and calf layered.",
+  "upper_limbs": "The arms are placed behind the body, one hand clearly bearing weight on the ground.",
+  "torso_head": "The chest lifts, the pelvis sits settled, the upper body leaning back a little; the head frontal or slightly turned.",
+  "weight_silhouette": "The hips are the main anchor with the rear hand steadying the balance; the carriage stays fairly upright and open."
+}

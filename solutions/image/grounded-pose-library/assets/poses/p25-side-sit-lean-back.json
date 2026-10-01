@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p25-side-sit-lean-back",
+  "no": 25,
+  "family": "side-sit-rear-support",
+  "label": "侧坐后仰",
+  "pose_lead": "Grounded pose, side-sit leaning back on one hand:",
+  "lower_limbs": "Both legs bend and gather toward the same side, one leg in front, the other folded behind.",
+  "upper_limbs": "One hand is placed on the ground behind the body, the other resting close to the body or a leg.",
+  "torso_head": "The upper body leans back yet keeps the chest open, the shoulders carrying a slight rotation; the head upright.",
+  "weight_silhouette": "Weight concentrates on the hips and the rear supporting hand; the legs spread sideways while the torso forms a backward diagonal."
+}

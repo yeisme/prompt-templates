@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p09-frontal-wide-knee-kneel",
+  "no": 9,
+  "family": "frontal-wide-knee-kneel",
+  "label": "正面宽膝跪坐",
+  "pose_lead": "Grounded pose, frontal kneel with the knees wide open:",
+  "lower_limbs": "Both knees open far to each side, the lower legs folded back, the seat settling between the legs.",
+  "upper_limbs": "Both arms reach straight down, hands placed together on the ground directly in front of the body.",
+  "torso_head": "The upper body sits almost upright with the shoulders drawn slightly forward; the head faces straight ahead.",
+  "weight_silhouette": "A highly symmetric composition: the knees form a wide triangular base and the arms a single central vertical."
+}

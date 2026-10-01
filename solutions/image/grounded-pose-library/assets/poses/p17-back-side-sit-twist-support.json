@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p17-back-side-sit-twist-support",
+  "no": 17,
+  "family": "side-sit-rear-support",
+  "label": "背侧侧坐 / 扭身后撑",
+  "pose_lead": "Grounded pose, back-turned side-sit with rear support and twist:",
+  "lower_limbs": "Both legs fold toward the same side, one leg passing in front while the other tucks near the hip.",
+  "upper_limbs": "At least one hand props on the ground behind the body, the other arm staying close behind the torso.",
+  "torso_head": "The chest lifts as the upper body rotates backward, the shoulder line and the pelvis pointing different ways; the head follows the turn.",
+  "weight_silhouette": "The lumbar twist is the essence; a clear spiral line runs from the hips through the shoulders."
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p11-quadruped-forward-lean-hips-high",
+  "no": 11,
+  "family": "quadruped-kneeling-support",
+  "label": "四足前俯 / 臀部高抬",
+  "pose_lead": "Grounded pose, quadruped forward lean with the hips high:",
+  "lower_limbs": "Both knees rest on the ground with the lower legs folded back and some distance between the knees.",
+  "upper_limbs": "Both hands press the ground, arms essentially straight.",
+  "torso_head": "The upper body slopes clearly forward and down, the hips rising high, the head also lowering.",
+  "weight_silhouette": "Weight rests on both knees and palms; the back runs in a visible descending line from hips to shoulders."
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p05-prone-chin-rest",
+  "no": 5,
+  "family": "prone-side-lying-rest",
+  "label": "俯卧托腮",
+  "pose_lead": "Grounded pose, prone with the chin cradled in both hands:",
+  "lower_limbs": "The body lies prone, both knees bent so the lower legs kick up, the feet close together or crossed.",
+  "upper_limbs": "Both elbows rest on the ground, forearms rising vertically, hands cradling the cheeks or chin.",
+  "torso_head": "The chest lifts slightly off the ground with a gentle extension through the upper back; the head stays raised.",
+  "weight_silhouette": "Weight spreads across the abdomen, pelvis and both elbows; the outline stays relaxed, the legs forming an upward arc."
+}

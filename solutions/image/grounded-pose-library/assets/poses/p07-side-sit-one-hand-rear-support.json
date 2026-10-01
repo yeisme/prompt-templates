@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p07-side-sit-one-hand-rear-support",
+  "no": 7,
+  "family": "side-sit-rear-support",
+  "label": "侧坐单手后撑",
+  "pose_lead": "Grounded pose, side-sit propped on one hand behind:",
+  "lower_limbs": "One leg bends in front of the body while the other folds away to the side, the two legs loosely overlapping.",
+  "upper_limbs": "One hand rests near a leg or knee, the other placed behind the body to prop on the ground.",
+  "torso_head": "The chest stays open and the upper body leans slightly back toward the supporting hand; the head stays level.",
+  "weight_silhouette": "The hips and the rear supporting hand carry most of the weight; an easy, casual seated posture."
+}

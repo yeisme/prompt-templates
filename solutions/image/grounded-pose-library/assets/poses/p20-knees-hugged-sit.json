@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p20-knees-hugged-sit",
+  "no": 20,
+  "family": "independent-grounded",
+  "label": "抱膝坐姿",
+  "pose_lead": "Grounded pose, seated hugging the knees:",
+  "lower_limbs": "Both legs draw bent toward the chest, the feet together, the knees above the hips.",
+  "upper_limbs": "Both arms wrap around the knees or shins, crossing in front of the legs.",
+  "torso_head": "The back rounds slightly and the upper body tips a little backward; the head stays level.",
+  "weight_silhouette": "The body closes into a compact ball; weight concentrates on the hips and the outline feels tightly sealed."
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p24-supine-legs-lifted",
+  "no": 24,
+  "family": "supine",
+  "label": "仰卧屈腿抬膝",
+  "pose_lead": "Grounded pose, supine with the knees lifted off the ground:",
+  "lower_limbs": "Both legs leave the ground, the hips and knees deeply bent, the shins folding back and upward, the feet drawn close.",
+  "upper_limbs": "One arm extends along the ground to one side, the other bends close to the head, shoulder or upper body.",
+  "torso_head": "The upper body turns slightly sideways, the head and shoulders just off the ground or tilted to one side.",
+  "weight_silhouette": "The lifted legs become the main visual focus; upper and lower body point different ways with a light twist."
+}

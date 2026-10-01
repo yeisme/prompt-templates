@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p08-quadruped-hips-raised",
+  "no": 8,
+  "family": "quadruped-kneeling-support",
+  "label": "四足跪姿 / 臀部后抬",
+  "pose_lead": "Grounded pose, quadruped kneel with the hips raised:",
+  "lower_limbs": "Both knees rest on the ground fairly close together, the lower legs flat behind, the seat held higher than the shoulders.",
+  "upper_limbs": "Both arms reach forward and down, hands planted on the ground.",
+  "torso_head": "The lower back curves into a clear arch, the abdomen lightly drawn in; the head turns to one side.",
+  "weight_silhouette": "Weight distributes between the knees and the palms; the whole figure reads as a front-low, rear-high ramp."
+}

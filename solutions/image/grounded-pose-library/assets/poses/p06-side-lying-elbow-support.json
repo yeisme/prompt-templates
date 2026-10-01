@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p06-side-lying-elbow-support",
+  "no": 6,
+  "family": "prone-side-lying-rest",
+  "label": "侧卧肘撑",
+  "pose_lead": "Grounded pose, side-lying on one elbow:",
+  "lower_limbs": "The legs lie stacked sideways and bent, extending as a whole toward frame right.",
+  "upper_limbs": "The frame-left forearm props on the ground while the other hand reaches back along the body toward a leg or ankle.",
+  "torso_head": "The upper body is raised on that forearm, the shoulder line tilted; the head leans slightly toward the supporting side.",
+  "weight_silhouette": "Weight concentrates on the side hip, the outside of the legs and the forearm; the body forms a low, horizontally stretched silhouette."
+}

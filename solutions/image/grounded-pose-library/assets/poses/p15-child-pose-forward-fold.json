@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p15-child-pose-forward-fold",
+  "no": 15,
+  "family": "independent-grounded",
+  "label": "儿童式 / 跪姿前趴",
+  "pose_lead": "Grounded pose, kneeling forward fold (child's pose):",
+  "lower_limbs": "Both knees bend and the seat settles toward the heels, the legs folded beneath the body.",
+  "upper_limbs": "Both arms stretch completely forward, palms flat on the ground.",
+  "torso_head": "The chest and stomach fold down toward the thighs, the head lowering close to the ground.",
+  "weight_silhouette": "A low, stable weight center; the silhouette descends steadily from the highest point at the hips toward the hands."
+}

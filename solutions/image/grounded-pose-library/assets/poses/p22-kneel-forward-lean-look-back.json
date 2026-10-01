@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p22-kneel-forward-lean-look-back",
+  "no": 22,
+  "family": "quadruped-kneeling-support",
+  "label": "跪姿前撑回头",
+  "pose_lead": "Grounded pose, kneeling forward lean with a look back:",
+  "lower_limbs": "Both knees bend on the ground, the hips rising back and up, the feet tucked behind.",
+  "upper_limbs": "Both arms reach forward and down, the hands or fingertips touching the ground.",
+  "torso_head": "The upper body leans forward while the head and shoulders rotate back toward the rear side.",
+  "weight_silhouette": "The pelvis and the shoulder line point different directions, forward lean and twist together; a strongly dynamic shape."
+}

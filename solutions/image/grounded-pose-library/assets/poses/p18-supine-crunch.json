@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p18-supine-crunch",
+  "no": 18,
+  "family": "supine",
+  "label": "仰卧卷腹",
+  "pose_lead": "Grounded pose, supine with a crunch:",
+  "lower_limbs": "Both knees bend with the soles on or near the ground, the two legs roughly parallel.",
+  "upper_limbs": "Both hands rest behind the head, the elbows opening to the sides.",
+  "torso_head": "Head, shoulders and upper back leave the ground, the abdomen tightening; the lower back stays close to the floor.",
+  "weight_silhouette": "A classic abdominal-effort shape; weight falls on the pelvis, the lower back and both feet."
+}

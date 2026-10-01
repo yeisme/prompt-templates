@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p23-ultra-wide-knee-frontal-kneel",
+  "no": 23,
+  "family": "frontal-wide-knee-kneel",
+  "label": "超宽膝正面跪姿",
+  "pose_lead": "Grounded pose, frontal kneel with the knees ultra-wide:",
+  "lower_limbs": "Both knees open to the sides at their widest, the lower legs folded back or inward, the pelvis sitting low.",
+  "upper_limbs": "Both arms hang vertically, the hands stacked or side by side on the ground directly in front.",
+  "torso_head": "The upper body upright with a slight forward lean, the shoulders centered, the head frontal.",
+  "weight_silhouette": "Like the frontal wide kneel but wider and lower, the horizontal outline even more emphatic."
+}

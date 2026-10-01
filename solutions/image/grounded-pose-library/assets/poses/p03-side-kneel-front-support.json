@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p03-side-kneel-front-support",
+  "no": 3,
+  "family": "independent-grounded",
+  "label": "侧跪坐前撑",
+  "pose_lead": "Grounded pose, side-kneel with front support:",
+  "lower_limbs": "One leg folds beneath the body while the other extends folded toward frame right, its knee on the ground.",
+  "upper_limbs": "Both arms reach straight down, hands planted on the ground in front of the body.",
+  "torso_head": "The upper body stays nearly upright with only a slight forward lean; the head turns a little to one side.",
+  "weight_silhouette": "Hips and hands share the support for a stable stance; the legs open toward one side into a triangular silhouette."
+}

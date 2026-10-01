@@ -1,0 +1,47 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "grounded-pose-library",
+  "version": "1.0.0",
+  "category": "image",
+  "tags": [
+    "artifact:pose_clause",
+    "category:image",
+    "constraint:camera_relative_directions",
+    "constraint:style_neutral",
+    "job:generate",
+    "modality:image",
+    "scenario:pose_reference",
+    "stage:prompt_generation"
+  ],
+  "capabilities": [
+    "image",
+    "pose_reference"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Grounded Pose Library",
+      "summary": "Camera-relative English pose clauses for 25 grounded seated/kneeling/lying poses in four fixed body sections; copy one clause as the pose slot of any image prompt",
+      "usage": "Pick a pose id from assets/poses, copy its pre-rendered clause from examples/\u003cid\u003e/pose-clause.en.md, or bind the five slots from a pose spec",
+      "aliases": [
+        "grounded poses",
+        "pose library",
+        "姿势库"
+      ]
+    },
+    "zh-CN": {
+      "title": "贴地姿势库（25 个参考姿势）",
+      "summary": "面向坐/跪/卧姿势的四段式 camera-relative 英文姿势句库；单句直接复制进任意图像提示词的 pose 槽",
+      "usage": "从 assets/poses 选姿势，直接复制 examples/\u003cid\u003e/pose-clause.en.md，或按五槽位绑定编译"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/grounded-pose-library/prompts/main.en.md"
+    }
+  ]
+}

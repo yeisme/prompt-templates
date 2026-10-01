@@ -1,0 +1,239 @@
+{
+  "schema_version": "grounded-pose-library-examples/1.0",
+  "generated_by": "scripts/render_pose_library.py",
+  "pose_count": 25,
+  "poses": [
+    {
+      "no": 1,
+      "id": "p01-mermaid-side-sit",
+      "family": "side-sit-rear-support",
+      "label": "侧坐后撑 / 人鱼坐",
+      "file": "examples/p01-mermaid-side-sit/pose-clause.en.md"
+    },
+    {
+      "no": 2,
+      "id": "p02-kneel-turn-back-three-quarter",
+      "family": "quadruped-kneeling-support",
+      "label": "跪姿回身 / 后侧三分之四视角",
+      "file": "examples/p02-kneel-turn-back-three-quarter/pose-clause.en.md"
+    },
+    {
+      "no": 3,
+      "id": "p03-side-kneel-front-support",
+      "family": "independent-grounded",
+      "label": "侧跪坐前撑",
+      "file": "examples/p03-side-kneel-front-support/pose-clause.en.md"
+    },
+    {
+      "no": 4,
+      "id": "p04-quadruped-leg-abducted",
+      "family": "quadruped-kneeling-support",
+      "label": "四足跪姿 + 单腿外展",
+      "file": "examples/p04-quadruped-leg-abducted/pose-clause.en.md"
+    },
+    {
+      "no": 5,
+      "id": "p05-prone-chin-rest",
+      "family": "prone-side-lying-rest",
+      "label": "俯卧托腮",
+      "file": "examples/p05-prone-chin-rest/pose-clause.en.md"
+    },
+    {
+      "no": 6,
+      "id": "p06-side-lying-elbow-support",
+      "family": "prone-side-lying-rest",
+      "label": "侧卧肘撑",
+      "file": "examples/p06-side-lying-elbow-support/pose-clause.en.md"
+    },
+    {
+      "no": 7,
+      "id": "p07-side-sit-one-hand-rear-support",
+      "family": "side-sit-rear-support",
+      "label": "侧坐单手后撑",
+      "file": "examples/p07-side-sit-one-hand-rear-support/pose-clause.en.md"
+    },
+    {
+      "no": 8,
+      "id": "p08-quadruped-hips-raised",
+      "family": "quadruped-kneeling-support",
+      "label": "四足跪姿 / 臀部后抬",
+      "file": "examples/p08-quadruped-hips-raised/pose-clause.en.md"
+    },
+    {
+      "no": 9,
+      "id": "p09-frontal-wide-knee-kneel",
+      "family": "frontal-wide-knee-kneel",
+      "label": "正面宽膝跪坐",
+      "file": "examples/p09-frontal-wide-knee-kneel/pose-clause.en.md"
+    },
+    {
+      "no": 10,
+      "id": "p10-bent-knee-side-sit-rear-support",
+      "family": "side-sit-rear-support",
+      "label": "屈膝侧坐后撑",
+      "file": "examples/p10-bent-knee-side-sit-rear-support/pose-clause.en.md"
+    },
+    {
+      "no": 11,
+      "id": "p11-quadruped-forward-lean-hips-high",
+      "family": "quadruped-kneeling-support",
+      "label": "四足前俯 / 臀部高抬",
+      "file": "examples/p11-quadruped-forward-lean-hips-high/pose-clause.en.md"
+    },
+    {
+      "no": 12,
+      "id": "p12-crossed-legs-sit-arm-raised",
+      "family": "independent-grounded",
+      "label": "交叠腿坐姿 + 举臂",
+      "file": "examples/p12-crossed-legs-sit-arm-raised/pose-clause.en.md"
+    },
+    {
+      "no": 13,
+      "id": "p13-prone-face-cradle",
+      "family": "prone-side-lying-rest",
+      "label": "俯卧双手托脸",
+      "file": "examples/p13-prone-face-cradle/pose-clause.en.md"
+    },
+    {
+      "no": 14,
+      "id": "p14-upright-side-sit-rear-support",
+      "family": "side-sit-rear-support",
+      "label": "侧坐后撑（挺拔）",
+      "file": "examples/p14-upright-side-sit-rear-support/pose-clause.en.md"
+    },
+    {
+      "no": 15,
+      "id": "p15-child-pose-forward-fold",
+      "family": "independent-grounded",
+      "label": "儿童式 / 跪姿前趴",
+      "file": "examples/p15-child-pose-forward-fold/pose-clause.en.md"
+    },
+    {
+      "no": 16,
+      "id": "p16-open-knee-side-sit-forward-lean",
+      "family": "independent-grounded",
+      "label": "开膝侧坐前倾",
+      "file": "examples/p16-open-knee-side-sit-forward-lean/pose-clause.en.md"
+    },
+    {
+      "no": 17,
+      "id": "p17-back-side-sit-twist-support",
+      "family": "side-sit-rear-support",
+      "label": "背侧侧坐 / 扭身后撑",
+      "file": "examples/p17-back-side-sit-twist-support/pose-clause.en.md"
+    },
+    {
+      "no": 18,
+      "id": "p18-supine-crunch",
+      "family": "supine",
+      "label": "仰卧卷腹",
+      "file": "examples/p18-supine-crunch/pose-clause.en.md"
+    },
+    {
+      "no": 19,
+      "id": "p19-forearm-kneel-hips-high",
+      "family": "quadruped-kneeling-support",
+      "label": "前臂跪姿 / 臀部高位",
+      "file": "examples/p19-forearm-kneel-hips-high/pose-clause.en.md"
+    },
+    {
+      "no": 20,
+      "id": "p20-knees-hugged-sit",
+      "family": "independent-grounded",
+      "label": "抱膝坐姿",
+      "file": "examples/p20-knees-hugged-sit/pose-clause.en.md"
+    },
+    {
+      "no": 21,
+      "id": "p21-side-lying-head-propped",
+      "family": "prone-side-lying-rest",
+      "label": "侧卧托头",
+      "file": "examples/p21-side-lying-head-propped/pose-clause.en.md"
+    },
+    {
+      "no": 22,
+      "id": "p22-kneel-forward-lean-look-back",
+      "family": "quadruped-kneeling-support",
+      "label": "跪姿前撑回头",
+      "file": "examples/p22-kneel-forward-lean-look-back/pose-clause.en.md"
+    },
+    {
+      "no": 23,
+      "id": "p23-ultra-wide-knee-frontal-kneel",
+      "family": "frontal-wide-knee-kneel",
+      "label": "超宽膝正面跪姿",
+      "file": "examples/p23-ultra-wide-knee-frontal-kneel/pose-clause.en.md"
+    },
+    {
+      "no": 24,
+      "id": "p24-supine-legs-lifted",
+      "family": "supine",
+      "label": "仰卧屈腿抬膝",
+      "file": "examples/p24-supine-legs-lifted/pose-clause.en.md"
+    },
+    {
+      "no": 25,
+      "id": "p25-side-sit-lean-back",
+      "family": "side-sit-rear-support",
+      "label": "侧坐后仰",
+      "file": "examples/p25-side-sit-lean-back/pose-clause.en.md"
+    }
+  ],
+  "families": {
+    "frontal-wide-knee-kneel": {
+      "count": 2,
+      "members": [
+        "p09-frontal-wide-knee-kneel",
+        "p23-ultra-wide-knee-frontal-kneel"
+      ]
+    },
+    "independent-grounded": {
+      "count": 5,
+      "members": [
+        "p03-side-kneel-front-support",
+        "p12-crossed-legs-sit-arm-raised",
+        "p15-child-pose-forward-fold",
+        "p16-open-knee-side-sit-forward-lean",
+        "p20-knees-hugged-sit"
+      ]
+    },
+    "prone-side-lying-rest": {
+      "count": 4,
+      "members": [
+        "p05-prone-chin-rest",
+        "p06-side-lying-elbow-support",
+        "p13-prone-face-cradle",
+        "p21-side-lying-head-propped"
+      ]
+    },
+    "quadruped-kneeling-support": {
+      "count": 6,
+      "members": [
+        "p02-kneel-turn-back-three-quarter",
+        "p04-quadruped-leg-abducted",
+        "p08-quadruped-hips-raised",
+        "p11-quadruped-forward-lean-hips-high",
+        "p19-forearm-kneel-hips-high",
+        "p22-kneel-forward-lean-look-back"
+      ]
+    },
+    "side-sit-rear-support": {
+      "count": 6,
+      "members": [
+        "p01-mermaid-side-sit",
+        "p07-side-sit-one-hand-rear-support",
+        "p10-bent-knee-side-sit-rear-support",
+        "p14-upright-side-sit-rear-support",
+        "p17-back-side-sit-twist-support",
+        "p25-side-sit-lean-back"
+      ]
+    },
+    "supine": {
+      "count": 2,
+      "members": [
+        "p18-supine-crunch",
+        "p24-supine-legs-lifted"
+      ]
+    }
+  }
+}

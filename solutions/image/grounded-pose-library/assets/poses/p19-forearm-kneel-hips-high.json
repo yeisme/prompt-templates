@@ -1,0 +1,12 @@
+{
+  "schema_version": "grounded-pose-library/1.0",
+  "id": "p19-forearm-kneel-hips-high",
+  "no": 19,
+  "family": "quadruped-kneeling-support",
+  "label": "前臂跪姿 / 臀部高位",
+  "pose_lead": "Grounded pose, kneeling on the forearms with the hips high:",
+  "lower_limbs": "Both knees and lower legs support on the ground, the knees bent, the seat clearly lifted.",
+  "upper_limbs": "Both forearms, not the palms, rest on the ground, the arms bent.",
+  "torso_head": "The chest hangs below the hips, the back sloping downward; the head low and turned to one side.",
+  "weight_silhouette": "The forearms and knees carry the weight; front-low and rear-high, the body pressed even lower than a hands-forward kneel."
+}
