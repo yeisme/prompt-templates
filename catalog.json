@@ -1452,7 +1452,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:872fc968b6ba7c04052f10ce5d465cbd8d6e28d261976846a368234c7e32002d",
+  "digest": "sha256:fbdec30648a5e07ae60c45f6d0c33338999f6e5b60368f2768e711e8645260ae",
   "solutions": [
     {
       "package_id": "3d",
@@ -2148,6 +2148,54 @@
           "locale": "en",
           "path": "solutions/image/editorial-half-face-cover/prompts/main.en.md",
           "digest": "sha256:3d72a46a8fcb2b16376060f18079cdfea138fe49e1c7a646df9311d4462ae44b"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "grounded-pose-library",
+      "version": "1.0.0",
+      "digest": "sha256:ab6fb2cf2c120cf2e7d00f501612528675da42f9a12db2f8b744f2a117a61bb7",
+      "category": "image",
+      "tags": [
+        "artifact:pose_clause",
+        "category:image",
+        "constraint:camera_relative_directions",
+        "constraint:style_neutral",
+        "job:generate",
+        "modality:image",
+        "scenario:pose_reference",
+        "stage:prompt_generation"
+      ],
+      "capabilities": [
+        "image",
+        "pose_reference"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Grounded Pose Library",
+          "summary": "Camera-relative English pose clauses for 25 grounded seated/kneeling/lying poses in four fixed body sections; copy one clause as the pose slot of any image prompt",
+          "usage": "Pick a pose id from assets/poses, copy its pre-rendered clause from examples/\u003cid\u003e/pose-clause.en.md, or bind the five slots from a pose spec",
+          "aliases": [
+            "grounded poses",
+            "pose library",
+            "姿势库"
+          ]
+        },
+        "zh-CN": {
+          "title": "贴地姿势库（25 个参考姿势）",
+          "summary": "面向坐/跪/卧姿势的四段式 camera-relative 英文姿势句库；单句直接复制进任意图像提示词的 pose 槽",
+          "usage": "从 assets/poses 选姿势，直接复制 examples/\u003cid\u003e/pose-clause.en.md，或按五槽位绑定编译"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/grounded-pose-library/prompts/main.en.md",
+          "digest": "sha256:df94584e7239c316a42eab5f9d0cba3c6bcbbc80eb3a1d56d0f0d8cdb2ed0a13"
         }
       ]
     },
