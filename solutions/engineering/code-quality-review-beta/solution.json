@@ -1,0 +1,41 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "engineering",
+  "id": "code-quality-review-beta",
+  "version": "1.0.0-beta.1",
+  "category": "engineering",
+  "tags": [
+    "artifact:quality_report",
+    "category:engineering",
+    "constraint:evidence_first",
+    "job:code_quality",
+    "modality:code"
+  ],
+  "capabilities": [
+    "code",
+    "diagnostics",
+    "provider_neutral",
+    "testing"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Code quality review",
+      "summary": "Review bounded code changes with evidence-backed findings and safe verification.",
+      "usage": "Use for provider-neutral code change review."
+    },
+    "zh-CN": {
+      "title": "Code quality review",
+      "summary": "Review bounded code changes with evidence-backed findings and safe verification.",
+      "usage": "中文仅供人工审阅；编译使用英文模板。"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/engineering/code-quality-review-beta/prompts/main.en.md"
+    }
+  ]
+}

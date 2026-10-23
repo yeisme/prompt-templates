@@ -1,0 +1,63 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "engineering/code-quality-test-gap-beta/main/en",
+  "package_id": "engineering",
+  "solution_id": "code-quality-test-gap-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/engineering/code-quality-test-gap-beta/prompts/main.en.md",
+    "digest": "sha256:d20603407840f8f7059b6d3e36022576fb341cb17c0bf1eb2f953aafa0d86164"
+  },
+  "contract": {
+    "ref": "solutions/engineering/code-quality-test-gap-beta/contracts/main.en.json",
+    "digest": "sha256:7f741dc3e13e46eaa75f7d650e07a8ae903844aff4930b88b7468032d0de9e8a"
+  },
+  "document": {
+    "ref": "solutions/engineering/code-quality-test-gap-beta/contracts/documents/main.en.document.json",
+    "digest": "sha256:3c89eecada5615907fbdd2050b309391731c795bf7442447c53d1d7695fd23dd"
+  },
+  "schema": {
+    "ref": "solutions/engineering/code-quality-test-gap-beta/contracts/schemas/code-quality-test-gap-output-v1.schema.json",
+    "digest": "sha256:df633e97bd48464c212658cc13282e2153ae356ef7670a03f8afe0caff0d2740"
+  },
+  "semantic_schema_version": "code_quality_test_gap_output.v1",
+  "validator_command_ref": "template-registry.schema.code_quality_test_gap_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-review",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/engineering/code-quality-test-gap-beta/fixtures/main.en/invalid-missing-review.input.json",
+        "digest": "sha256:39438a636ec8ff47db8e0b390c0513283cfc90344c7ed2b406a34e3c9536d303",
+        "bytes": 29
+      },
+      "output": {
+        "ref": "solutions/engineering/code-quality-test-gap-beta/fixtures/main.en/invalid-missing-review.output.json",
+        "digest": "sha256:2eb064f539534f1870037d87f92889e9ff497508be26ac4d4089a396a855fa45",
+        "bytes": 111
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-basic",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/engineering/code-quality-test-gap-beta/fixtures/main.en/valid-basic.input.json",
+        "digest": "sha256:6324fd07b36599db361a48bc2237b60a8dc2929a6529447ac2c2b511031baaaf",
+        "bytes": 215
+      },
+      "output": {
+        "ref": "solutions/engineering/code-quality-test-gap-beta/fixtures/main.en/valid-basic.output.json",
+        "digest": "sha256:78b8bd765ee01c0eb644b9d88637664ce19b9e695ada3ec8db2c4346c1c99d44",
+        "bytes": 667
+      }
+    }
+  ],
+  "digest": "sha256:bf5fe108073453451356479095bebd839a26f3417ab8c1665c154676c67d0738"
+}

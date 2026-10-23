@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "style-scene-pairing-beta",
+  "version": "1.0.0-beta.1",
+  "category": "image",
+  "tags": [
+    "artifact:scene_prompt",
+    "category:image",
+    "constraint:cultural_grounding",
+    "constraint:sensitivity_guarded",
+    "job:compile",
+    "modality:image",
+    "modality:text",
+    "scenario:style_pairing",
+    "stage:prompt_generation"
+  ],
+  "capabilities": [
+    "cultural_legitimacy_grading",
+    "provider_neutral",
+    "sensitivity_guard",
+    "style_pairing"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Style-Scene-Theme Pairing Compiler",
+      "summary": "Compile a creative geographic unit and verified scene facts into a graded style pairing: legitimacy level, sensitivity gate, primary prompt, mixed-style variant and confidence grade; 32-style controlled vocabulary with cultural-misreading hard gate"
+    },
+    "zh-CN": {
+      "title": "风格×场景×主题配对编译器",
+      "summary": "把创作地理单元与场景事实编译为带合理性分级、敏感性门槛、主提示词、混合变体与置信级的风格配对；32 风格受控词表，文化误读硬门槛",
+      "usage": "地区事实先进合理性判断再选风格；产出喂给各风格层模板或 video-prompt-optimization-beta 的 style_requirements"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/style-scene-pairing-beta/prompts/main.en.md"
+    }
+  ]
+}

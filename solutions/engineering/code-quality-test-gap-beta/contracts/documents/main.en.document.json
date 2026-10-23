@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "engineering",
+  "solution_id": "code-quality-test-gap-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/engineering/code-quality-test-gap-beta/prompts/main.en.md",
+  "source_digest": "sha256:d20603407840f8f7059b6d3e36022576fb341cb17c0bf1eb2f953aafa0d86164",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/engineering/code-quality-test-gap-beta/contracts/schemas/code-quality-test-gap-output-v1.schema.json",
+    "digest": "sha256:df633e97bd48464c212658cc13282e2153ae356ef7670a03f8afe0caff0d2740"
+  },
+  "required_capabilities": [
+    "code_quality_test_gap"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:3c89eecada5615907fbdd2050b309391731c795bf7442447c53d1d7695fd23dd"
+}

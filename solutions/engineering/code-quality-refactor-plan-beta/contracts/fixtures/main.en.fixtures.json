@@ -1,0 +1,63 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "engineering/code-quality-refactor-plan-beta/main/en",
+  "package_id": "engineering",
+  "solution_id": "code-quality-refactor-plan-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/engineering/code-quality-refactor-plan-beta/prompts/main.en.md",
+    "digest": "sha256:ad90fd827bf6852b20ab30f64b1f6f7439eee8afab3c2a5a27c1db4a08d645ef"
+  },
+  "contract": {
+    "ref": "solutions/engineering/code-quality-refactor-plan-beta/contracts/main.en.json",
+    "digest": "sha256:95831f0b6c80981097b611d0dab25aea9c0a70a2557130fa2d9925c9a245f0bd"
+  },
+  "document": {
+    "ref": "solutions/engineering/code-quality-refactor-plan-beta/contracts/documents/main.en.document.json",
+    "digest": "sha256:3946022c961cb08d2f6820660f6eb18bc8d6f26ac6471d1a13fe6e0ac418958a"
+  },
+  "schema": {
+    "ref": "solutions/engineering/code-quality-refactor-plan-beta/contracts/schemas/code-quality-refactor-plan-output-v1.schema.json",
+    "digest": "sha256:f8aab479ee90077b7e8cc3fe8d45881438107f06b4465e705d6f6f08eb6f40fe"
+  },
+  "semantic_schema_version": "code_quality_refactor_plan_output.v1",
+  "validator_command_ref": "template-registry.schema.code_quality_refactor_plan_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-gap",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/engineering/code-quality-refactor-plan-beta/fixtures/main.en/invalid-missing-gap.input.json",
+        "digest": "sha256:66cebfec5ab36ea17010e04feaac1a4abcd33aec2ca62cb99d9d13c36c080c59",
+        "bytes": 90
+      },
+      "output": {
+        "ref": "solutions/engineering/code-quality-refactor-plan-beta/fixtures/main.en/invalid-missing-gap.output.json",
+        "digest": "sha256:e72c10895d1465f69bbdd097463a43eb70b4ac69cb2202ebf4804954388d7732",
+        "bytes": 76
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-basic",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/engineering/code-quality-refactor-plan-beta/fixtures/main.en/valid-basic.input.json",
+        "digest": "sha256:0901e7ff6c92096c91cbdd1f6833d517be98432083e4d7b90d032e808de79830",
+        "bytes": 162
+      },
+      "output": {
+        "ref": "solutions/engineering/code-quality-refactor-plan-beta/fixtures/main.en/valid-basic.output.json",
+        "digest": "sha256:2b8ea834ecb42aa2b8116e7219c954b07e204ea56ff0f23e51e0ce19889b06dd",
+        "bytes": 1008
+      }
+    }
+  ],
+  "digest": "sha256:c4c9c4cd743dd31f1bb869d96f794374f9960e9b22d79b75edaea1ad47691cac"
+}

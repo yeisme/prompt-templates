@@ -1,0 +1,63 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "design/taste-extract-beta/main/en",
+  "package_id": "design",
+  "solution_id": "taste-extract-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/design/taste-extract-beta/prompts/main.en.md",
+    "digest": "sha256:239eebe271d1bf3aa99840838938f62d1aec481fa42da2aa5969039c67597e74"
+  },
+  "contract": {
+    "ref": "solutions/design/taste-extract-beta/contracts/main.en.json",
+    "digest": "sha256:c894655aedf1ea0808bbc73455234a9600ccbd1f8103b8517d3d25ca990551b0"
+  },
+  "document": {
+    "ref": "solutions/design/taste-extract-beta/contracts/documents/main.en.document.json",
+    "digest": "sha256:d481ac3f32095eebe4b31d75ae81bf593ae71f2f7c9a172eaeb22a1573d6cd54"
+  },
+  "schema": {
+    "ref": "solutions/design/taste-extract-beta/contracts/schemas/taste-extract-output-v1.schema.json",
+    "digest": "sha256:0d88ebb8f44e1b5b8eb2f8675632627cb6ba10460c825087de12b0182824b884"
+  },
+  "semantic_schema_version": "taste_card.v1",
+  "validator_command_ref": "taste.schema.taste_card.v1",
+  "cases": [
+    {
+      "case_id": "invalid-schema",
+      "kind": "invalid",
+      "profile_id": "synthetic",
+      "input": {
+        "ref": "solutions/design/taste-extract-beta/fixtures/main.en/invalid-schema.input.json",
+        "digest": "sha256:596333264e155c811fdc231c193259e25d6660772a651e399201cf1f2fd7c274",
+        "bytes": 145
+      },
+      "output": {
+        "ref": "solutions/design/taste-extract-beta/fixtures/main.en/invalid-schema.output.json",
+        "digest": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "bytes": 2
+      },
+      "expected_codes": [
+        "SCHEMA_INVALID"
+      ]
+    },
+    {
+      "case_id": "valid-basic",
+      "kind": "valid",
+      "profile_id": "synthetic",
+      "input": {
+        "ref": "solutions/design/taste-extract-beta/fixtures/main.en/valid-basic.input.json",
+        "digest": "sha256:596333264e155c811fdc231c193259e25d6660772a651e399201cf1f2fd7c274",
+        "bytes": 145
+      },
+      "output": {
+        "ref": "solutions/design/taste-extract-beta/fixtures/main.en/valid-basic.output.json",
+        "digest": "sha256:ea619b097df269b0af2f72ae9c0eb09228b3596e99935966df5a194bb4c54fd6",
+        "bytes": 320
+      }
+    }
+  ],
+  "digest": "sha256:7ad9011dc5c2ffdef35ee806bc09443d0b06617a1daddb5c270d768c1a48ff1c"
+}

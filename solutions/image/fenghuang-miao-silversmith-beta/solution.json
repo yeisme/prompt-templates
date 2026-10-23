@@ -1,0 +1,41 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "fenghuang-miao-silversmith-beta",
+  "version": "1.0.0-beta.1",
+  "category": "image",
+  "tags": [
+    "artifact:scene_prompt",
+    "category:image",
+    "constraint:cultural_grounding",
+    "job:compile",
+    "modality:image",
+    "scenario:china_cultural_visual"
+  ],
+  "capabilities": [
+    "image",
+    "prompt_compilation",
+    "provider_neutral"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Fenghuang Miao Silversmith Workshop",
+      "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+      "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+    },
+    "zh-CN": {
+      "title": "凤凰银匠·银白冷辉",
+      "summary": "湖南湘西凤凰；苗族；苗族银饰锻制技艺。当代匠作纪实，清至民国的器物分期另行核验。",
+      "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/fenghuang-miao-silversmith-beta/prompts/main.en.md"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "mongolian-long-song-steppe-beta",
+  "version": "1.0.0-beta.1",
+  "category": "image",
+  "tags": [
+    "artifact:scene_prompt",
+    "category:image",
+    "constraint:cultural_grounding",
+    "job:compile",
+    "modality:image",
+    "scenario:china_cultural_visual"
+  ],
+  "capabilities": [
+    "image",
+    "prompt_compilation",
+    "provider_neutral"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Mongolian Long Song on the Steppe",
+      "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+      "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+    },
+    "zh-CN": {
+      "title": "蒙古长调·草原风与长线条",
+      "summary": "内蒙古；蒙古族长调民歌／乌日汀哆。旗县和地域流派暂未明确，需补地方资料；默认当代牧业语境。",
+      "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/mongolian-long-song-steppe-beta/prompts/main.en.md"
+    }
+  ]
+}

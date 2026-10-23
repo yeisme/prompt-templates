@@ -1,0 +1,42 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "southern-gothic-style-beta",
+  "version": "1.0.0-beta.1",
+  "category": "image",
+  "tags": [
+    "artifact:styled_image",
+    "category:image",
+    "constraint:muted_palette",
+    "constraint:style_lock",
+    "job:generate",
+    "modality:image",
+    "scenario:southern_gothic",
+    "stage:prompt_generation"
+  ],
+  "capabilities": [
+    "image",
+    "negative_prompt_governance",
+    "style_layer"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Southern Gothic Style Pack",
+      "summary": "Full Southern Gothic style layer: elegant decay, lush corrupting nature, grotesque dignified figures, muted earthy palette, oppressive chiaroscuro light, time-eroded textures; painting, photography and AI image generation; swap setting, subjects and theme clause only"
+    },
+    "zh-CN": {
+      "title": "南部哥特风格包",
+      "summary": "优雅与腐烂并存的美国南方风格层：繁茂腐败的自然、庄重怪诞的人物、低饱和土地色、强明暗反差的压抑光线、时间侵蚀质感；绘画/摄影/AI 生图通用",
+      "usage": "换场景、人物与主题句，风格段固定；安静纪实滤镜走 southern-gothic-documentary；出图执行交 Eikona"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/southern-gothic-style-beta/prompts/main.en.md"
+    }
+  ]
+}

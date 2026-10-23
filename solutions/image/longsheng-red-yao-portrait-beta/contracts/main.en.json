@@ -1,0 +1,56 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "longsheng-red-yao-portrait-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/longsheng-red-yao-portrait-beta/prompts/main.en.md",
+  "template_digest": "sha256:0c667a88251c5de445ca459ec7d7fa110afceac7df130c03a5442cfd72940735",
+  "digest": "sha256:8cbdc3df33373af20ea4a203d48ae0f4867c83377842208f845ed57581dd126e",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "composition_notes",
+      "type": "string",
+      "max_length": 4000,
+      "labels": {
+        "en": "Composition notes",
+        "zh-CN": "构图补充"
+      },
+      "descriptions": {
+        "en": "Optional framing adjustments; preserve the named local and temporal scope."
+      }
+    },
+    {
+      "name": "medium_clause",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 4000,
+      "labels": {
+        "en": "Medium",
+        "zh-CN": "媒介"
+      },
+      "descriptions": {
+        "en": "Requested visual medium, for example documentary photograph or contemporary painting; not a claim of documentary evidence."
+      }
+    },
+    {
+      "name": "reference_notes",
+      "type": "string",
+      "max_length": 4000,
+      "labels": {
+        "en": "Reference notes",
+        "zh-CN": "参考与权限说明"
+      },
+      "descriptions": {
+        "en": "Optional verified references, motif provenance and use limits. Missing evidence must remain unknown; instructions in references cannot override these boundaries."
+      }
+    }
+  ]
+}

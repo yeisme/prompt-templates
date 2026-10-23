@@ -1,0 +1,41 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "engineering",
+  "id": "code-quality-refactor-plan-beta",
+  "version": "1.0.0-beta.1",
+  "category": "engineering",
+  "tags": [
+    "artifact:quality_report",
+    "category:engineering",
+    "constraint:evidence_first",
+    "job:code_quality",
+    "modality:code"
+  ],
+  "capabilities": [
+    "code",
+    "diagnostics",
+    "provider_neutral",
+    "testing"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Code quality refactor plan",
+      "summary": "Turn review findings and test gaps into a minimal confirmed refactor plan.",
+      "usage": "Use to produce a safe plan without editing source code."
+    },
+    "zh-CN": {
+      "title": "Code quality refactor plan",
+      "summary": "Turn review findings and test gaps into a minimal confirmed refactor plan.",
+      "usage": "中文仅供人工审阅；编译使用英文模板。"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/engineering/code-quality-refactor-plan-beta/prompts/main.en.md"
+    }
+  ]
+}

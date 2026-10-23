@@ -1,0 +1,68 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "southern-gothic-style-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/southern-gothic-style-beta/prompts/main.en.md",
+  "template_digest": "sha256:c6ec6bca634b75cfcc227c72c117cb5c4f8d85237b90122bd206265a3ed7f5b0",
+  "digest": "sha256:6c14ded0e0257e3e1ba35968e3b886258bd90da8cd5115008d9adc41ef812c09",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "format_clause",
+      "type": "string",
+      "labels": {
+        "en": "Format clause",
+        "zh-CN": "媒介前缀"
+      },
+      "descriptions": {
+        "en": "Medium/format prefix: 'Photorealistic 35mm photograph,' / 'Oil painting on canvas,' / 'Cinematic 2.39:1 film still,'",
+        "zh-CN": "媒介/画幅前缀：胶片摄影/油画/电影剧照等"
+      }
+    },
+    {
+      "name": "setting",
+      "type": "string",
+      "required": true,
+      "min_length": 4,
+      "labels": {
+        "en": "Setting",
+        "zh-CN": "场景"
+      },
+      "descriptions": {
+        "en": "Southern Gothic scene with 1-2 decay anchors (moss, rust, mold, graveyards...)",
+        "zh-CN": "场景描述，带 1–2 个衰败锚点（苔藓/锈迹/霉斑/墓地…）"
+      }
+    },
+    {
+      "name": "subjects",
+      "type": "string",
+      "labels": {
+        "en": "Subjects",
+        "zh-CN": "人物"
+      },
+      "descriptions": {
+        "en": "Figures with identity and static action only; empty renders an empty scene or still life",
+        "zh-CN": "人物身份与静态动作；留空生成空景/静物"
+      }
+    },
+    {
+      "name": "theme_clause",
+      "type": "string",
+      "labels": {
+        "en": "Theme clause",
+        "zh-CN": "主题句"
+      },
+      "descriptions": {
+        "en": "Optional theme reinforcement starting with a comma or space: family secrets, inherited sin, funeral gatherings, religious fervor",
+        "zh-CN": "可选主题强化句（逗号或空格开头）：家族秘密、继承的罪、守灵、宗教狂热"
+      }
+    }
+  ]
+}

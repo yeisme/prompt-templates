@@ -1,0 +1,53 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "design",
+  "solution_id": "taste-extract-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/design/taste-extract-beta/prompts/main.en.md",
+  "template_digest": "sha256:239eebe271d1bf3aa99840838938f62d1aec481fa42da2aa5969039c67597e74",
+  "digest": "sha256:c894655aedf1ea0808bbc73455234a9600ccbd1f8103b8517d3d25ca990551b0",
+  "license": "MIT",
+  "permissions": [
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "output_language",
+      "type": "string",
+      "required": true,
+      "max_length": 100000,
+      "labels": {
+        "en": "Language for human text"
+      }
+    },
+    {
+      "name": "source_identity",
+      "type": "string",
+      "required": true,
+      "max_length": 100000,
+      "labels": {
+        "en": "Fixed revision, URL, license and content hash"
+      }
+    },
+    {
+      "name": "source_text",
+      "type": "string",
+      "required": true,
+      "max_length": 100000,
+      "labels": {
+        "en": "Source instructions and field notes"
+      }
+    },
+    {
+      "name": "use_context",
+      "type": "string",
+      "required": true,
+      "max_length": 100000,
+      "labels": {
+        "en": "Intended medium and use"
+      }
+    }
+  ]
+}

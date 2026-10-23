@@ -1,0 +1,22 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "design",
+  "id": "taste-extract-beta",
+  "version": "1.0.0-beta.1",
+  "category": "design",
+  "rights": "MIT",
+  "maturity": "beta",
+  "locales": {
+    "en": {
+      "title": "Taste extraction",
+      "summary": "Taste extraction"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/design/taste-extract-beta/prompts/main.en.md"
+    }
+  ]
+}

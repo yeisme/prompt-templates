@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "design",
+  "solution_id": "taste-extract-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/design/taste-extract-beta/prompts/main.en.md",
+  "source_digest": "sha256:239eebe271d1bf3aa99840838938f62d1aec481fa42da2aa5969039c67597e74",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/design/taste-extract-beta/contracts/schemas/taste-extract-output-v1.schema.json",
+    "digest": "sha256:0d88ebb8f44e1b5b8eb2f8675632627cb6ba10460c825087de12b0182824b884"
+  },
+  "required_capabilities": [
+    "taste"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:d481ac3f32095eebe4b31d75ae81bf593ae71f2f7c9a172eaeb22a1573d6cd54"
+}

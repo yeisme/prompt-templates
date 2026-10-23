@@ -1,0 +1,66 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "engineering",
+  "solution_id": "code-quality-refactor-plan-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/engineering/code-quality-refactor-plan-beta/prompts/main.en.md",
+  "template_digest": "sha256:ad90fd827bf6852b20ab30f64b1f6f7439eee8afab3c2a5a27c1db4a08d645ef",
+  "digest": "sha256:95831f0b6c80981097b611d0dab25aea9c0a70a2557130fa2d9925c9a245f0bd",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "project_constraints",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Project constraints",
+        "zh-CN": "项目约束"
+      },
+      "descriptions": {
+        "en": "Scope, compatibility, permission, and rollback constraints.",
+        "zh-CN": "Scope, compatibility, permission, and rollback constraints."
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "review_output",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Review output",
+        "zh-CN": "审查输出"
+      },
+      "descriptions": {
+        "en": "A code quality review packet.",
+        "zh-CN": "A code quality review packet."
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "test_gap_output",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Test-gap output",
+        "zh-CN": "测试缺口输出"
+      },
+      "descriptions": {
+        "en": "A code quality test-gap packet.",
+        "zh-CN": "A code quality test-gap packet."
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

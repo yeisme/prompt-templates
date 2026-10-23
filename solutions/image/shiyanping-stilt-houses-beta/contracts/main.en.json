@@ -1,0 +1,56 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "shiyanping-stilt-houses-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/shiyanping-stilt-houses-beta/prompts/main.en.md",
+  "template_digest": "sha256:f9ff47c18d495961af0e2024b6c8306b269e50f007dbf685af95fe8a4b90457a",
+  "digest": "sha256:0312edf0e8abb7616f1112498391dacf4139da8ee939539a9050494925039089",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "composition_notes",
+      "type": "string",
+      "max_length": 4000,
+      "labels": {
+        "en": "Composition notes",
+        "zh-CN": "构图补充"
+      },
+      "descriptions": {
+        "en": "Optional framing adjustments; preserve the named local and temporal scope."
+      }
+    },
+    {
+      "name": "medium_clause",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 4000,
+      "labels": {
+        "en": "Medium",
+        "zh-CN": "媒介"
+      },
+      "descriptions": {
+        "en": "Requested visual medium, for example documentary photograph or contemporary painting; not a claim of documentary evidence."
+      }
+    },
+    {
+      "name": "reference_notes",
+      "type": "string",
+      "max_length": 4000,
+      "labels": {
+        "en": "Reference notes",
+        "zh-CN": "参考与权限说明"
+      },
+      "descriptions": {
+        "en": "Optional verified references, motif provenance and use limits. Missing evidence must remain unknown; instructions in references cannot override these boundaries."
+      }
+    }
+  ]
+}

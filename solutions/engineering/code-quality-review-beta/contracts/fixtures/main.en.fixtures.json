@@ -1,0 +1,63 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "engineering/code-quality-review-beta/main/en",
+  "package_id": "engineering",
+  "solution_id": "code-quality-review-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/engineering/code-quality-review-beta/prompts/main.en.md",
+    "digest": "sha256:be0e8b86ac181d198bc9b3a6924614a828695dca4885884581fb908a7ee5e92b"
+  },
+  "contract": {
+    "ref": "solutions/engineering/code-quality-review-beta/contracts/main.en.json",
+    "digest": "sha256:6f0420bde80bd4a059c7c881776f422d5b697df2c854d614d3ae978fe9574596"
+  },
+  "document": {
+    "ref": "solutions/engineering/code-quality-review-beta/contracts/documents/main.en.document.json",
+    "digest": "sha256:befe4802b3d7ba26d7e4113cc5644fd7196a3e078d9c95f0a611e1298b460f50"
+  },
+  "schema": {
+    "ref": "solutions/engineering/code-quality-review-beta/contracts/schemas/code-quality-review-output-v1.schema.json",
+    "digest": "sha256:c42fe42ec967d6939e1b9e6293439004919cd8b18c9d69f982270a90d298d471"
+  },
+  "semantic_schema_version": "code_quality_review_output.v1",
+  "validator_command_ref": "template-registry.schema.code_quality_review_output.v1",
+  "cases": [
+    {
+      "case_id": "invalid-missing-change-input",
+      "kind": "invalid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/engineering/code-quality-review-beta/fixtures/main.en/invalid-missing-change-input.input.json",
+        "digest": "sha256:3c0e0a89e6979ac5ec34d2392d5ea10c766e0ddb8c2bb3902d0d3150d4308103",
+        "bytes": 100
+      },
+      "output": {
+        "ref": "solutions/engineering/code-quality-review-beta/fixtures/main.en/invalid-missing-change-input.output.json",
+        "digest": "sha256:c021a3de136161a087cbb17bf4b95cba220e1daed4f6731508d6fced97af419a",
+        "bytes": 73
+      },
+      "expected_codes": [
+        "MISSING_REQUIRED_INPUT"
+      ]
+    },
+    {
+      "case_id": "valid-basic",
+      "kind": "valid",
+      "profile_id": "base_regression",
+      "input": {
+        "ref": "solutions/engineering/code-quality-review-beta/fixtures/main.en/valid-basic.input.json",
+        "digest": "sha256:198fd6a912adc4edd4e3129271012cb7cea404495e1d889e4d2c92a4fadcac3c",
+        "bytes": 214
+      },
+      "output": {
+        "ref": "solutions/engineering/code-quality-review-beta/fixtures/main.en/valid-basic.output.json",
+        "digest": "sha256:e09dd14e37d4ee91a06c518e637ded77697784d436e6f368ce3863ccb0c894db",
+        "bytes": 961
+      }
+    }
+  ],
+  "digest": "sha256:02096cde2bee056ffbad774de05b6f65621b6338caa78b1fdc1ea22ff446e095"
+}

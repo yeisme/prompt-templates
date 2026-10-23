@@ -1,0 +1,82 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "engineering",
+  "solution_id": "code-quality-test-gap-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/engineering/code-quality-test-gap-beta/prompts/main.en.md",
+  "template_digest": "sha256:d20603407840f8f7059b6d3e36022576fb341cb17c0bf1eb2f953aafa0d86164",
+  "digest": "sha256:7f741dc3e13e46eaa75f7d650e07a8ae903844aff4930b88b7468032d0de9e8a",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "review_output",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Review output",
+        "zh-CN": "审查输出"
+      },
+      "descriptions": {
+        "en": "A code quality review packet.",
+        "zh-CN": "A code quality review packet."
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "risk_focus",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Risk focus",
+        "zh-CN": "风险重点"
+      },
+      "descriptions": {
+        "en": "Requested risk categories or priorities.",
+        "zh-CN": "Requested risk categories or priorities."
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "test_inventory",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Test inventory",
+        "zh-CN": "测试清单"
+      },
+      "descriptions": {
+        "en": "Existing test and validation inventory.",
+        "zh-CN": "Existing test and validation inventory."
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "verification_evidence",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Verification evidence",
+        "zh-CN": "验证证据"
+      },
+      "descriptions": {
+        "en": "Safe check results and observations.",
+        "zh-CN": "Safe check results and observations."
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "fenghuang-miao-silversmith-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/fenghuang-miao-silversmith-beta/prompts/main.en.md",
+  "template_digest": "sha256:f6527f4f0c64f59046caec973e4ad63fee3759bc0300175d6a40246cc98a49b1",
+  "digest": "sha256:6b52a6195f9665c98f77995e9f89b624be32198932aaf526b799e21b5a688126",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "composition_notes",
+      "type": "string",
+      "max_length": 4000,
+      "labels": {
+        "en": "Composition notes",
+        "zh-CN": "构图补充"
+      },
+      "descriptions": {
+        "en": "Optional framing adjustments; preserve the named local and temporal scope."
+      }
+    },
+    {
+      "name": "medium_clause",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 4000,
+      "labels": {
+        "en": "Medium",
+        "zh-CN": "媒介"
+      },
+      "descriptions": {
+        "en": "Requested visual medium, for example documentary photograph or contemporary painting; not a claim of documentary evidence."
+      }
+    },
+    {
+      "name": "reference_notes",
+      "type": "string",
+      "max_length": 4000,
+      "labels": {
+        "en": "Reference notes",
+        "zh-CN": "参考与权限说明"
+      },
+      "descriptions": {
+        "en": "Optional verified references, motif provenance and use limits. Missing evidence must remain unknown; instructions in references cannot override these boundaries."
+      }
+    }
+  ]
+}

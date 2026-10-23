@@ -1,0 +1,56 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "lhasa-applique-thangka-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/lhasa-applique-thangka-beta/prompts/main.en.md",
+  "template_digest": "sha256:1c047e3a9604db184205072078e5c6d0588765e17694685856494bf3f3f0838f",
+  "digest": "sha256:82a9b3f638739ed0a9ec2ff9f5fe61ca0deb7bd8573091922ab719a9f767ca09",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "composition_notes",
+      "type": "string",
+      "max_length": 4000,
+      "labels": {
+        "en": "Composition notes",
+        "zh-CN": "构图补充"
+      },
+      "descriptions": {
+        "en": "Optional framing adjustments; preserve the named local and temporal scope."
+      }
+    },
+    {
+      "name": "medium_clause",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 4000,
+      "labels": {
+        "en": "Medium",
+        "zh-CN": "媒介"
+      },
+      "descriptions": {
+        "en": "Requested visual medium, for example documentary photograph or contemporary painting; not a claim of documentary evidence."
+      }
+    },
+    {
+      "name": "reference_notes",
+      "type": "string",
+      "max_length": 4000,
+      "labels": {
+        "en": "Reference notes",
+        "zh-CN": "参考与权限说明"
+      },
+      "descriptions": {
+        "en": "Optional verified references, motif provenance and use limits. Missing evidence must remain unknown; instructions in references cannot override these boundaries."
+      }
+    }
+  ]
+}

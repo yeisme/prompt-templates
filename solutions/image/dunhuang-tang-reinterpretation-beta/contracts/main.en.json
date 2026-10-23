@@ -1,0 +1,56 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "image",
+  "solution_id": "dunhuang-tang-reinterpretation-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/image/dunhuang-tang-reinterpretation-beta/prompts/main.en.md",
+  "template_digest": "sha256:7a089234b81a8bf26ad0476809d5ad538aec8008dfc9adc33087b96065b3e2a4",
+  "digest": "sha256:95de4f2ab902c9ef13d407281d5cae038be991065d3a1b846b0abaaeb1d6e6c3",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "composition_notes",
+      "type": "string",
+      "max_length": 4000,
+      "labels": {
+        "en": "Composition notes",
+        "zh-CN": "构图补充"
+      },
+      "descriptions": {
+        "en": "Optional framing adjustments; preserve the named local and temporal scope."
+      }
+    },
+    {
+      "name": "medium_clause",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 4000,
+      "labels": {
+        "en": "Medium",
+        "zh-CN": "媒介"
+      },
+      "descriptions": {
+        "en": "Requested visual medium, for example documentary photograph or contemporary painting; not a claim of documentary evidence."
+      }
+    },
+    {
+      "name": "reference_notes",
+      "type": "string",
+      "max_length": 4000,
+      "labels": {
+        "en": "Reference notes",
+        "zh-CN": "参考与权限说明"
+      },
+      "descriptions": {
+        "en": "Optional verified references, motif provenance and use limits. Missing evidence must remain unknown; instructions in references cannot override these boundaries."
+      }
+    }
+  ]
+}

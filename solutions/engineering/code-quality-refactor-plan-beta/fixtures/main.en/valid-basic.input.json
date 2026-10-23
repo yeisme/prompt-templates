@@ -1,0 +1,1 @@
+{"project_constraints":"Keep public API stable; no migration.","review_output":"finding-unstable-error is medium","test_gap_output":"gap-error-context is medium"}

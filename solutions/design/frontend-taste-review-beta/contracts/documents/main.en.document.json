@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "design",
+  "solution_id": "frontend-taste-review-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/design/frontend-taste-review-beta/prompts/main.en.md",
+  "source_digest": "sha256:e993374827591dc492b96bebd1eafdb44055e1883d3fea271d2f8866468b4f6a",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/design/frontend-taste-review-beta/contracts/schemas/frontend-taste-review-output-v1.schema.json",
+    "digest": "sha256:e8a8f163497dca3ddbfa7a958d5d4cae9a3059e9aecc136e1b3f530fdc9705a6"
+  },
+  "required_capabilities": [
+    "taste"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:cb65a0cf4b0ce72c6977503d148a6250c9c40ee4d1fe2a6de22d991a9bf763e5"
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "guyuan-brick-carving-beta",
+  "version": "1.0.0-beta.1",
+  "category": "image",
+  "tags": [
+    "artifact:scene_prompt",
+    "category:image",
+    "constraint:cultural_grounding",
+    "job:compile",
+    "modality:image",
+    "scenario:china_cultural_visual"
+  ],
+  "capabilities": [
+    "image",
+    "prompt_compilation",
+    "provider_neutral"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Guyuan Brick Carving Courtyard",
+      "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+      "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+    },
+    "zh-CN": {
+      "title": "固原砖雕·黄土青砖",
+      "summary": "宁夏固原；回族及多民族共享的地方匠作语境。默认普通院落砖雕，非宗教活动记录。",
+      "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/guyuan-brick-carving-beta/prompts/main.en.md"
+    }
+  ]
+}

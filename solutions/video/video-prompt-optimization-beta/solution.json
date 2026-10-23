@@ -1,0 +1,45 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "video",
+  "id": "video-prompt-optimization-beta",
+  "version": "1.0.0-beta.1",
+  "category": "video",
+  "tags": [
+    "artifact:shot_prompt",
+    "category:video",
+    "constraint:positive_phrasing",
+    "constraint:provider_neutral",
+    "constraint:source_grounded",
+    "job:compile",
+    "modality:audio",
+    "modality:text",
+    "modality:video",
+    "stage:prompt_authoring"
+  ],
+  "capabilities": [
+    "audio_visual_joint_planning",
+    "prompt_compilation",
+    "provider_neutral",
+    "reference_mapping"
+  ],
+  "rights": "unknown",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Video Prompt Optimization",
+      "summary": "Compile a rough brief or storyboard into one submission-ready prompt body for diffusion-based audio-video joint generation models, provider-neutral: positive-exclusion, sound, and object discipline plus duration and speech-rate calibration, with platform differences declared via inputs"
+    },
+    "zh-CN": {
+      "title": "视频提示词编译（模型无关）",
+      "summary": "把粗略分镜或故事概要编译成一条扩散类音视频联合生成模型可直接提交的提示词正文：正向排除、声音与器物纪律、时长与逐句语速核算，平台差异经输入变量声明",
+      "usage": "由 Scaena 等 Agent 消费方编译使用；提交参数、生成执行与验收归生成层与验证层"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/video/video-prompt-optimization-beta/prompts/main.en.md"
+    }
+  ]
+}

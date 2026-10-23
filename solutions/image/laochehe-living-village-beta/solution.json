@@ -1,0 +1,41 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "laochehe-living-village-beta",
+  "version": "1.0.0-beta.1",
+  "category": "image",
+  "tags": [
+    "artifact:scene_prompt",
+    "category:image",
+    "constraint:cultural_grounding",
+    "job:compile",
+    "modality:image",
+    "scenario:china_cultural_visual"
+  ],
+  "capabilities": [
+    "image",
+    "prompt_compilation",
+    "provider_neutral"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Laochehe Living Timber Village",
+      "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+      "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+    },
+    "zh-CN": {
+      "title": "捞车河·溪谷生活遗产",
+      "summary": "湖南湘西龙山；土家族传统村落建筑。呈现现存生活，不将明清建筑层累等同于所有居民的服饰年代。",
+      "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/laochehe-living-village-beta/prompts/main.en.md"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "promptrepo.template-document.v0.1",
+  "package_id": "engineering",
+  "solution_id": "code-quality-review-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/engineering/code-quality-review-beta/prompts/main.en.md",
+  "source_digest": "sha256:be0e8b86ac181d198bc9b3a6924614a828695dca4885884581fb908a7ee5e92b",
+  "format": "markdown",
+  "media_type": "text/markdown",
+  "canonicalization": "raw_utf8",
+  "schema": {
+    "ref": "solutions/engineering/code-quality-review-beta/contracts/schemas/code-quality-review-output-v1.schema.json",
+    "digest": "sha256:c42fe42ec967d6939e1b9e6293439004919cd8b18c9d69f982270a90d298d471"
+  },
+  "required_capabilities": [
+    "code_quality_review"
+  ],
+  "selector_kinds": [
+    "heading"
+  ],
+  "limits": {
+    "max_bytes": 2097152,
+    "max_depth": 64
+  },
+  "digest": "sha256:befe4802b3d7ba26d7e4113cc5644fd7196a3e078d9c95f0a611e1298b460f50"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "design",
+  "id": "frontend-taste-review-beta",
+  "version": "1.0.0-beta.1",
+  "category": "design",
+  "rights": "MIT",
+  "maturity": "beta",
+  "locales": {
+    "en": {
+      "title": "Frontend Taste review",
+      "summary": "Frontend Taste review"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/design/frontend-taste-review-beta/prompts/main.en.md"
+    }
+  ]
+}

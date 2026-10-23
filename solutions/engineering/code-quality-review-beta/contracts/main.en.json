@@ -1,0 +1,82 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "engineering",
+  "solution_id": "code-quality-review-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/engineering/code-quality-review-beta/prompts/main.en.md",
+  "template_digest": "sha256:be0e8b86ac181d198bc9b3a6924614a828695dca4885884581fb908a7ee5e92b",
+  "digest": "sha256:6f0420bde80bd4a059c7c881776f422d5b697df2c854d614d3ae978fe9574596",
+  "license": "internal",
+  "permissions": [
+    "execute_requires_review",
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "change_input",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Change input",
+        "zh-CN": "变更输入"
+      },
+      "descriptions": {
+        "en": "Safe diff or changed-file summary.",
+        "zh-CN": "Safe diff or changed-file summary."
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "change_scope",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Change scope",
+        "zh-CN": "变更范围"
+      },
+      "descriptions": {
+        "en": "Repository-relative scope and review mode.",
+        "zh-CN": "Repository-relative scope and review mode."
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "project_context",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Project context",
+        "zh-CN": "项目上下文"
+      },
+      "descriptions": {
+        "en": "Relevant project facts, constraints, and detected ownership.",
+        "zh-CN": "Relevant project facts, constraints, and detected ownership."
+      },
+      "sensitivity": "sensitive"
+    },
+    {
+      "name": "verification_evidence",
+      "type": "string",
+      "required": true,
+      "min_length": 1,
+      "max_length": 200000,
+      "labels": {
+        "en": "Verification evidence",
+        "zh-CN": "验证证据"
+      },
+      "descriptions": {
+        "en": "Safe check results and observations; unknown is allowed.",
+        "zh-CN": "Safe check results and observations; unknown is allowed."
+      },
+      "sensitivity": "sensitive"
+    }
+  ]
+}

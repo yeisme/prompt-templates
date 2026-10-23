@@ -1,0 +1,1 @@
+{"change_input":"internal/check.go lines 10-16 changed","change_scope":"working tree","project_context":"Synthetic Go package; no production claim.","verification_evidence":"evidence-command-1: gofmt check passed"}

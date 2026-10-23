@@ -1,0 +1,142 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "video",
+  "solution_id": "video-prompt-optimization-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/video/video-prompt-optimization-beta/prompts/main.en.md",
+  "template_digest": "sha256:9a2ca7a6a7a6361db5891b6eb6f99aa9430a0235a5566c05e02a1d9d0f3b0625",
+  "digest": "sha256:3e01a7597d5ba22f6aba6bfd508e31f19ebe59f42b33abea2a67eef2f0779230",
+  "license": "internal",
+  "permissions": [
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "dialogue_script",
+      "type": "string",
+      "labels": {
+        "en": "Dialogue script",
+        "zh-CN": "台词稿"
+      },
+      "descriptions": {
+        "en": "Verbatim user dialogue; empty means no dialogue in the whole piece",
+        "zh-CN": "用户台词逐字稿；留空表示全片无台词"
+      }
+    },
+    {
+      "name": "duration_budget",
+      "type": "string",
+      "labels": {
+        "en": "Duration budget",
+        "zh-CN": "时长预算"
+      },
+      "descriptions": {
+        "en": "Target duration or constraint; include the target model single-generation cap if known (commonly 5-30s)",
+        "zh-CN": "目标时长或约束；含目标模型单次生成上限则一并给出（常见 5–30s）"
+      }
+    },
+    {
+      "name": "extra_constraints",
+      "type": "string",
+      "labels": {
+        "en": "Extra constraints",
+        "zh-CN": "额外约束"
+      },
+      "descriptions": {
+        "en": "Additional user constraints the compiled body must respect",
+        "zh-CN": "编译正文必须遵守的用户额外约束"
+      }
+    },
+    {
+      "name": "generation_mode",
+      "type": "enum",
+      "required": true,
+      "default": "t2v",
+      "enum": [
+        "t2v",
+        "first_frame",
+        "first_last_frame",
+        "reference_image",
+        "reference_video",
+        "edit_extend"
+      ],
+      "labels": {
+        "en": "Generation mode",
+        "zh-CN": "生成形态"
+      },
+      "descriptions": {
+        "en": "Submission media shape: t2v, first_frame, first_last_frame, reference_image, reference_video, edit_extend",
+        "zh-CN": "提交素材形态，决定正文信息加减法策略"
+      }
+    },
+    {
+      "name": "media_reference_syntax",
+      "type": "string",
+      "labels": {
+        "en": "Media reference syntax",
+        "zh-CN": "素材指代语法"
+      },
+      "descriptions": {
+        "en": "Target provider's native in-text reference notation, e.g. @图片1（name）, @image1, or UUID refs; empty falls back to positional descriptions",
+        "zh-CN": "目标平台正文内指代素材的原生语法，如 @图片1（名称）、@image1 或 UUID；留空改用位置描述"
+      }
+    },
+    {
+      "name": "output_language",
+      "type": "enum",
+      "default": "zh",
+      "enum": [
+        "zh",
+        "en"
+      ],
+      "labels": {
+        "en": "Output body language",
+        "zh-CN": "正文输出语言"
+      },
+      "descriptions": {
+        "en": "Language of the compiled submission body",
+        "zh-CN": "提交正文语言"
+      }
+    },
+    {
+      "name": "reference_manifest",
+      "type": "string",
+      "labels": {
+        "en": "Reference media manifest",
+        "zh-CN": "参考素材清单"
+      },
+      "descriptions": {
+        "en": "Upload order, names, and kinds: character prior / scene / frame anchor",
+        "zh-CN": "上传顺序、名称与类型：角色视觉先验/场景/帧锚点"
+      }
+    },
+    {
+      "name": "source_brief",
+      "type": "string",
+      "required": true,
+      "min_length": 4,
+      "labels": {
+        "en": "Rough brief",
+        "zh-CN": "粗略概要"
+      },
+      "descriptions": {
+        "en": "Rough storyboard or story outline in any language",
+        "zh-CN": "粗略分镜或故事概要原文"
+      }
+    },
+    {
+      "name": "style_requirements",
+      "type": "string",
+      "labels": {
+        "en": "Style requirements",
+        "zh-CN": "风格要求"
+      },
+      "descriptions": {
+        "en": "User-specified quality, style, and mood requirements",
+        "zh-CN": "用户指定的画质/风格/基调要求"
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "promptrepo.template-contract.v0.1",
+  "package_id": "design",
+  "solution_id": "frontend-taste-review-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template_path": "solutions/design/frontend-taste-review-beta/prompts/main.en.md",
+  "template_digest": "sha256:e993374827591dc492b96bebd1eafdb44055e1883d3fea271d2f8866468b4f6a",
+  "digest": "sha256:8c4b0d130a2ea5675d038bef2c28b2d4e9d26ce777fea911b9769c5cd69981dc",
+  "license": "MIT",
+  "permissions": [
+    "preview"
+  ],
+  "inputs": [
+    {
+      "name": "browser_evidence",
+      "type": "string",
+      "required": true,
+      "max_length": 100000,
+      "labels": {
+        "en": "Actual screenshots and interaction evidence"
+      }
+    },
+    {
+      "name": "design_brief",
+      "type": "string",
+      "required": true,
+      "max_length": 100000,
+      "labels": {
+        "en": "Fixed design decisions"
+      }
+    },
+    {
+      "name": "output_language",
+      "type": "string",
+      "required": true,
+      "max_length": 100000,
+      "labels": {
+        "en": "Language for human text"
+      }
+    },
+    {
+      "name": "user_feedback",
+      "type": "string",
+      "required": true,
+      "max_length": 100000,
+      "labels": {
+        "en": "Explicit feedback and its scope"
+      }
+    }
+  ]
+}

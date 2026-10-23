@@ -1,0 +1,41 @@
+{
+  "schema_version": "promptrepo.solution.v0.1",
+  "package_id": "image",
+  "id": "dunhuang-tang-reinterpretation-beta",
+  "version": "1.0.0-beta.1",
+  "category": "image",
+  "tags": [
+    "artifact:scene_prompt",
+    "category:image",
+    "constraint:cultural_grounding",
+    "job:compile",
+    "modality:image",
+    "scenario:china_cultural_visual"
+  ],
+  "capabilities": [
+    "image",
+    "prompt_compilation",
+    "provider_neutral"
+  ],
+  "rights": "internal",
+  "maturity": "exploratory",
+  "locales": {
+    "en": {
+      "title": "Dunhuang-Inspired Contemporary Composition",
+      "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+      "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+    },
+    "zh-CN": {
+      "title": "敦煌启发·矿物色现代画面",
+      "summary": "甘肃敦煌艺术启发的当代创作；采用唐代相关视觉方向，具体洞窟、年代、图像不在未核验时断言。历史人群不套现代民族分类。",
+      "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+    }
+  },
+  "templates": [
+    {
+      "role": "main",
+      "locale": "en",
+      "path": "solutions/image/dunhuang-tang-reinterpretation-beta/prompts/main.en.md"
+    }
+  ]
+}

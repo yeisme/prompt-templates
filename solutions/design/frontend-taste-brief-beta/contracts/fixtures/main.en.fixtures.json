@@ -1,0 +1,63 @@
+{
+  "schema_version": "promptrepo.fixture-set.v0.1",
+  "fixture_set_id": "design/frontend-taste-brief-beta/main/en",
+  "package_id": "design",
+  "solution_id": "frontend-taste-brief-beta",
+  "version": "1.0.0-beta.1",
+  "role": "main",
+  "locale": "en",
+  "template": {
+    "ref": "solutions/design/frontend-taste-brief-beta/prompts/main.en.md",
+    "digest": "sha256:12f3c4e1bcfce2b671a86160fbaeb8aed6cd725a610b83aca91769bd5b3275df"
+  },
+  "contract": {
+    "ref": "solutions/design/frontend-taste-brief-beta/contracts/main.en.json",
+    "digest": "sha256:0f1d826d9e2c84dd27c577c98c9753816be8fc1630eacdfb1820958a702a8c3c"
+  },
+  "document": {
+    "ref": "solutions/design/frontend-taste-brief-beta/contracts/documents/main.en.document.json",
+    "digest": "sha256:54286a2ac90950b703f311186cde13fc99a22438878a723d1d9c11dda71b6235"
+  },
+  "schema": {
+    "ref": "solutions/design/frontend-taste-brief-beta/contracts/schemas/frontend-taste-brief-output-v1.schema.json",
+    "digest": "sha256:e9eb48b91e1b14fe6b45b4c113c531df876ebf6e45523975f40d2150b1fea645"
+  },
+  "semantic_schema_version": "frontend_taste_brief.v1",
+  "validator_command_ref": "taste.schema.frontend_taste_brief.v1",
+  "cases": [
+    {
+      "case_id": "invalid-schema",
+      "kind": "invalid",
+      "profile_id": "synthetic",
+      "input": {
+        "ref": "solutions/design/frontend-taste-brief-beta/fixtures/main.en/invalid-schema.input.json",
+        "digest": "sha256:80d360dab253bdf74d324a1c58e30cbe36555312471964c42baec8ef0c5af604",
+        "bytes": 171
+      },
+      "output": {
+        "ref": "solutions/design/frontend-taste-brief-beta/fixtures/main.en/invalid-schema.output.json",
+        "digest": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "bytes": 2
+      },
+      "expected_codes": [
+        "SCHEMA_INVALID"
+      ]
+    },
+    {
+      "case_id": "valid-basic",
+      "kind": "valid",
+      "profile_id": "synthetic",
+      "input": {
+        "ref": "solutions/design/frontend-taste-brief-beta/fixtures/main.en/valid-basic.input.json",
+        "digest": "sha256:80d360dab253bdf74d324a1c58e30cbe36555312471964c42baec8ef0c5af604",
+        "bytes": 171
+      },
+      "output": {
+        "ref": "solutions/design/frontend-taste-brief-beta/fixtures/main.en/valid-basic.output.json",
+        "digest": "sha256:0ffd8e05fe559c1b88ce06361a19a45321bf4349d5ef5bbff8d3a65e5c7a4d0d",
+        "bytes": 188
+      }
+    }
+  ],
+  "digest": "sha256:9b0f97cd68d27d0a98f46132c59510cfbdb04edf3e07b8b7224d33de27e07d96"
+}
