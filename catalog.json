@@ -1452,7 +1452,7 @@
     "taxonomy_version": "v1"
   },
   "generated_at": "1970-01-01T00:00:00Z",
-  "digest": "sha256:fbdec30648a5e07ae60c45f6d0c33338999f6e5b60368f2768e711e8645260ae",
+  "digest": "sha256:6dd00593b924b822447654e159fc9cc36ef4eba6be238e89e59224a39b2179f6",
   "solutions": [
     {
       "package_id": "3d",
@@ -1849,6 +1849,75 @@
       ]
     },
     {
+      "package_id": "design",
+      "id": "frontend-taste-brief-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:3246dd6149c117745ce1837a77f611e9b1665257ab2f6c0f2ee6c5c26775ae0c",
+      "category": "design",
+      "rights": "MIT",
+      "maturity": "beta",
+      "locales": {
+        "en": {
+          "title": "Frontend Taste brief",
+          "summary": "Frontend Taste brief"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/design/frontend-taste-brief-beta/prompts/main.en.md",
+          "digest": "sha256:12f3c4e1bcfce2b671a86160fbaeb8aed6cd725a610b83aca91769bd5b3275df"
+        }
+      ]
+    },
+    {
+      "package_id": "design",
+      "id": "frontend-taste-review-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:16939cbac29dd110047184250e40ca325dcf297b545d0506e81d8b27d39105cc",
+      "category": "design",
+      "rights": "MIT",
+      "maturity": "beta",
+      "locales": {
+        "en": {
+          "title": "Frontend Taste review",
+          "summary": "Frontend Taste review"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/design/frontend-taste-review-beta/prompts/main.en.md",
+          "digest": "sha256:e993374827591dc492b96bebd1eafdb44055e1883d3fea271d2f8866468b4f6a"
+        }
+      ]
+    },
+    {
+      "package_id": "design",
+      "id": "taste-extract-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:f734867e0d0f8fe93cf115d7761267cac225f80d74102d66ecb3300f38bd41b4",
+      "category": "design",
+      "rights": "MIT",
+      "maturity": "beta",
+      "locales": {
+        "en": {
+          "title": "Taste extraction",
+          "summary": "Taste extraction"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/design/taste-extract-beta/prompts/main.en.md",
+          "digest": "sha256:239eebe271d1bf3aa99840838938f62d1aec481fa42da2aa5969039c67597e74"
+        }
+      ]
+    },
+    {
       "package_id": "engineering",
       "id": "bug-root-cause-analysis",
       "version": "1.0.0",
@@ -1895,6 +1964,132 @@
           "locale": "zh-CN",
           "path": "solutions/engineering/bug-root-cause-analysis/prompts/main.zh-CN.md",
           "digest": "sha256:92a678bdd2d3310d7730c3d2ad9929cdddd8bc179ec5ff860af97741397f76ef"
+        }
+      ]
+    },
+    {
+      "package_id": "engineering",
+      "id": "code-quality-refactor-plan-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:f4691ca8ad7dfbbae1f8c15e2eaff9c190c257a7d7b2a3fa68653abdbdb6d79f",
+      "category": "engineering",
+      "tags": [
+        "artifact:quality_report",
+        "category:engineering",
+        "constraint:evidence_first",
+        "job:code_quality",
+        "modality:code"
+      ],
+      "capabilities": [
+        "code",
+        "diagnostics",
+        "provider_neutral",
+        "testing"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Code quality refactor plan",
+          "summary": "Turn review findings and test gaps into a minimal confirmed refactor plan.",
+          "usage": "Use to produce a safe plan without editing source code."
+        },
+        "zh-CN": {
+          "title": "Code quality refactor plan",
+          "summary": "Turn review findings and test gaps into a minimal confirmed refactor plan.",
+          "usage": "中文仅供人工审阅；编译使用英文模板。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/engineering/code-quality-refactor-plan-beta/prompts/main.en.md",
+          "digest": "sha256:ad90fd827bf6852b20ab30f64b1f6f7439eee8afab3c2a5a27c1db4a08d645ef"
+        }
+      ]
+    },
+    {
+      "package_id": "engineering",
+      "id": "code-quality-review-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:ac9f632269be1011f7ca6099ae8f603420ae141ae754435ebc590b85651b47f6",
+      "category": "engineering",
+      "tags": [
+        "artifact:quality_report",
+        "category:engineering",
+        "constraint:evidence_first",
+        "job:code_quality",
+        "modality:code"
+      ],
+      "capabilities": [
+        "code",
+        "diagnostics",
+        "provider_neutral",
+        "testing"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Code quality review",
+          "summary": "Review bounded code changes with evidence-backed findings and safe verification.",
+          "usage": "Use for provider-neutral code change review."
+        },
+        "zh-CN": {
+          "title": "Code quality review",
+          "summary": "Review bounded code changes with evidence-backed findings and safe verification.",
+          "usage": "中文仅供人工审阅；编译使用英文模板。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/engineering/code-quality-review-beta/prompts/main.en.md",
+          "digest": "sha256:be0e8b86ac181d198bc9b3a6924614a828695dca4885884581fb908a7ee5e92b"
+        }
+      ]
+    },
+    {
+      "package_id": "engineering",
+      "id": "code-quality-test-gap-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:7fb134d467d087dadb1724f1c3c41589d92bbef868996f472afd8aefe42f2f44",
+      "category": "engineering",
+      "tags": [
+        "artifact:quality_report",
+        "category:engineering",
+        "constraint:evidence_first",
+        "job:code_quality",
+        "modality:code"
+      ],
+      "capabilities": [
+        "code",
+        "diagnostics",
+        "provider_neutral",
+        "testing"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Code quality test-gap analysis",
+          "summary": "Identify evidence-backed test gaps and verification priorities from a code review.",
+          "usage": "Use after a code quality review to plan validation."
+        },
+        "zh-CN": {
+          "title": "Code quality test-gap analysis",
+          "summary": "Identify evidence-backed test gaps and verification priorities from a code review.",
+          "usage": "中文仅供人工审阅；编译使用英文模板。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/engineering/code-quality-test-gap-beta/prompts/main.en.md",
+          "digest": "sha256:d20603407840f8f7059b6d3e36022576fb341cb17c0bf1eb2f953aafa0d86164"
         }
       ]
     },
@@ -2046,6 +2241,48 @@
     },
     {
       "package_id": "image",
+      "id": "baojing-xilankapu-weaving-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:2ffb865e7cc4cf05e9737682fe673c582525bab5d271942f04160ac462348102",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Baojing Xilankapu Weaving",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "保靖西兰卡普·几何经纬",
+          "summary": "湖南湘西保靖酉水流域；土家族；土家族织锦技艺／西兰卡普。采用活态织造场景。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/baojing-xilankapu-weaving-beta/prompts/main.en.md",
+          "digest": "sha256:592d37678bcd018b914b8a1cac913d7d2080fb413749eb5aa94d4372c61d35d6"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
       "id": "candid-portrait-matrix",
       "version": "1.0.0",
       "digest": "sha256:4152b344324d26359b1b527999f8d55d27df0aeea59af81e0bbbf8d4933d85fd",
@@ -2096,6 +2333,132 @@
           "locale": "en",
           "path": "solutions/image/candid-portrait-matrix/prompts/main.en.md",
           "digest": "sha256:a0ba9fa986a3617c6d62f37e4b972b0be3ddab0358a8531ac1b26f9d22fb5c13"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "danzhai-miao-batik-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:65e6b685fb5f3a0af77b2e3b81d053d26b953173f288332bf0d2472231213a86",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Danzhai Miao Batik Workshop",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "丹寨蜡染·蓝白蜡裂",
+          "summary": "贵州黔东南丹寨；苗族蜡染技艺。地方纹样有差异，采用当代工艺过程而非笼统古代民族形象。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/danzhai-miao-batik-beta/prompts/main.en.md",
+          "digest": "sha256:33409acd83881217817da6bad6d8ba8267173ce925510a27234dd4cd91961cc8"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "dong-grand-song-drum-tower-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:da2fd84329bdf093b9c160be1c17376c761a0ac231edde1eeb59d7ead1ffd96f",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Dong Grand Song in a Drum Tower",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "侗族大歌·鼓楼木寨夜色",
+          "summary": "贵州黎平／从江；侗族大歌。具体村寨与服饰须定位；呈现当代社区歌唱。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/dong-grand-song-drum-tower-beta/prompts/main.en.md",
+          "digest": "sha256:32aaa938b5d714cd8b31f4a0ab045b1998b68592a325c5a6f4deb6a3796031ca"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "dunhuang-tang-reinterpretation-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:1735d73958e2be79dca689c21d68ca36123c3650adfc78f2f35de859593665aa",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Dunhuang-Inspired Contemporary Composition",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "敦煌启发·矿物色现代画面",
+          "summary": "甘肃敦煌艺术启发的当代创作；采用唐代相关视觉方向，具体洞窟、年代、图像不在未核验时断言。历史人群不套现代民族分类。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/dunhuang-tang-reinterpretation-beta/prompts/main.en.md",
+          "digest": "sha256:7a089234b81a8bf26ad0476809d5ad538aec8008dfc9adc33087b96065b3e2a4"
         }
       ]
     },
@@ -2153,6 +2516,90 @@
     },
     {
       "package_id": "image",
+      "id": "fenghuang-miao-embroidery-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:32bab8240be8252c1d2ed79c33bcf1c9e65a647810ac113db4caeb0b9d0551a0",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Fenghuang Miao Embroidery",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "凤凰苗绣·黑底彩线",
+          "summary": "湖南湘西凤凰；苗族；湘西苗绣。采用当代活态技艺场景，不据传统源流推定服饰年代。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/fenghuang-miao-embroidery-beta/prompts/main.en.md",
+          "digest": "sha256:a7fbefee1a780ec4d2ebe13f33704c4a82f5eb7520aa37f2295060e642f5555f"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "fenghuang-miao-silversmith-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:69b0e52c1e355e0a780e9a9ebb3d655bf35c3b29d5cc9bbcd73a771ce57b37b7",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Fenghuang Miao Silversmith Workshop",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "凤凰银匠·银白冷辉",
+          "summary": "湖南湘西凤凰；苗族；苗族银饰锻制技艺。当代匠作纪实，清至民国的器物分期另行核验。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/fenghuang-miao-silversmith-beta/prompts/main.en.md",
+          "digest": "sha256:f6527f4f0c64f59046caec973e4ad63fee3759bc0300175d6a40246cc98a49b1"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
       "id": "grounded-pose-library",
       "version": "1.0.0",
       "digest": "sha256:ab6fb2cf2c120cf2e7d00f501612528675da42f9a12db2f8b744f2a117a61bb7",
@@ -2196,6 +2643,90 @@
           "locale": "en",
           "path": "solutions/image/grounded-pose-library/prompts/main.en.md",
           "digest": "sha256:df94584e7239c316a42eab5f9d0cba3c6bcbbc80eb3a1d56d0f0d8cdb2ed0a13"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "guyuan-brick-carving-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:87c3715910995e44399194cfd97e5d8280115566f6cc8412d6b96db7ca2e6fb1",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Guyuan Brick Carving Courtyard",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "固原砖雕·黄土青砖",
+          "summary": "宁夏固原；回族及多民族共享的地方匠作语境。默认普通院落砖雕，非宗教活动记录。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/guyuan-brick-carving-beta/prompts/main.en.md",
+          "digest": "sha256:71a8fc1809a54c819eb4e042cf35a74f6549fa17594231e23f338939d268b707"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "huayuan-contemporary-embroidery-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:1d6972b70139dbadac445ff92ded3eb779f02175b30220a8b210405e40ea74e6",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Huayuan Contemporary Embroidery Workshop",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "花垣苗绣·当代协作工坊",
+          "summary": "湖南湘西花垣；苗族；湘西苗绣的当代工坊语境。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/huayuan-contemporary-embroidery-beta/prompts/main.en.md",
+          "digest": "sha256:a78b65da947064197f789a67ba97172a91ac042c00411c9f6e56bed687847128"
         }
       ]
     },
@@ -2247,6 +2778,384 @@
           "locale": "en",
           "path": "solutions/image/iconic-landmark-poster/prompts/main.en.md",
           "digest": "sha256:d5cf6e7303bf9a4e5f3cab103bcf149e6cee78b2dc70b86429156dabc1070419"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "jingxi-zhuang-brocade-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:6c85da68fc1aadaa4cbabe03fd070a7a881e9b980dd1e4efcd94d8675082ddaf",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Jingxi Zhuang Brocade",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "靖西壮锦·彩纬几何节奏",
+          "summary": "广西百色靖西；壮族织锦技艺。汉代纺织前身、唐宋形成、明清发展为不同时间层线索，不互作直接年代证据。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/jingxi-zhuang-brocade-beta/prompts/main.en.md",
+          "digest": "sha256:14d1e353ac49bc9abbd07a3c5c939cbac514e28f39d03c83f5b984b5ad7d3d95"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "jishou-miao-drum-dance-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:537c905173503f91505d45aef5605e54d3c45a22a033d3c56d9b7be4be1abc76",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Jishou Miao Drum Dance",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "吉首苗鼓·鼓场动势",
+          "summary": "湖南湘西吉首；苗族；湘西苗族鼓舞。表现当代社区节庆，不推演特定古代祭仪。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/jishou-miao-drum-dance-beta/prompts/main.en.md",
+          "digest": "sha256:f4970205f57db8b4f340ca4bd38f844d4c4e578a7e9bebb9db4a62ebded72ab1"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "kashgar-uyghur-muqam-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:e8c65d1c334504c386eefb29f3525a1d35fdc72a65842dd80da7811a67059ecd",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Kashgar Uyghur Muqam Courtyard",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "喀什木卡姆·庭院音乐",
+          "summary": "新疆喀什及叶尔羌文化圈；新疆维吾尔木卡姆艺术。具体体系、曲目与乐器需地方资料，不代表所有区域木卡姆。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/kashgar-uyghur-muqam-beta/prompts/main.en.md",
+          "digest": "sha256:f44ee7eeb0f589275843ef0e9575a44dc81d98ffd1263cfda404287c140bba04"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "laochehe-living-village-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:150a6263184de3bf35eab1aa7d3e5cf2bca7c48e41f20a348ac52374749e1736",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Laochehe Living Timber Village",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "捞车河·溪谷生活遗产",
+          "summary": "湖南湘西龙山；土家族传统村落建筑。呈现现存生活，不将明清建筑层累等同于所有居民的服饰年代。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/laochehe-living-village-beta/prompts/main.en.md",
+          "digest": "sha256:b2095f086407a424daf18b8e3e4fd0e2b4786b3e0ac2d8a29ad1a87f1405a2af"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "laosicheng-rainy-archaeology-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:d5c808ca81d6037e586f49207d5237f348bc4fa68ce6ce9c2957cb98f8506995",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Laosicheng Rainy Archaeological Landscape",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "老司城·雨后考古空间",
+          "summary": "湖南湘西永顺；老司城考古遗址与土司制度文化景观。表现现存遗迹；制度跨度不等于某座遗构的年代。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/laosicheng-rainy-archaeology-beta/prompts/main.en.md",
+          "digest": "sha256:6333d9685f9eeacbb0a7d3b1fc764d5641fe626af1a4e4486a1d02fe0dce25d1"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "lhasa-applique-thangka-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:509cab5626965d48fa9e1a4e4e309f29f2b18a7b52f829ece4fe3d0e6243a51f",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Lhasa Applique Thangka Craft",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "拉萨堆绣唐卡·丝层工艺",
+          "summary": "西藏拉萨；堆绣唐卡宗教工艺。十七世纪以来的线索待来源核验，默认当代工坊制作。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/lhasa-applique-thangka-beta/prompts/main.en.md",
+          "digest": "sha256:1c047e3a9604db184205072078e5c6d0588765e17694685856494bf3f3f0838f"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "liye-qin-administration-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:c9f89ba1d08613bdcb66ab835dcfde21bbfc0d948310f9b54f3f64c31e2b47a9",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Liye Qin Administrative Scene",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "里耶秦简·县政文书",
+          "summary": "湖南湘西龙山里耶；秦代简牍与郡县行政文书。古代人群不套现代民族；明确为历史再构而非考古照片。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/liye-qin-administration-beta/prompts/main.en.md",
+          "digest": "sha256:2924de68344703c5b0f948bc78650acfb98852a2616645102bb09670bcbc9416"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "longsheng-red-yao-portrait-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:d8a943af139b0a5ca6d3c562d97f5317cda4b9292e2bf8062499773fdd08c1e2",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Longsheng Red Yao Environmental Portrait",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "龙胜红瑶·红黑环境肖像",
+          "summary": "广西桂林龙胜；红瑶地方群体；瑶族服饰的特定地方语境，不代表全部瑶族。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/longsheng-red-yao-portrait-beta/prompts/main.en.md",
+          "digest": "sha256:0c667a88251c5de445ca459ec7d7fa110afceac7df130c03a5442cfd72940735"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "mongolian-long-song-steppe-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:133f1eee83089f62c8cd030c8e6c47e2bc41d1b8278ff25c0dc35a7da284d4e8",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Mongolian Long Song on the Steppe",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "蒙古长调·草原风与长线条",
+          "summary": "内蒙古；蒙古族长调民歌／乌日汀哆。旗县和地域流派暂未明确，需补地方资料；默认当代牧业语境。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/mongolian-long-song-steppe-beta/prompts/main.en.md",
+          "digest": "sha256:350a47fb6604d4830e9e57bec5f3416af6b9006c47b99965fa00c982b2e477c3"
         }
       ]
     },
@@ -2431,6 +3340,48 @@
     },
     {
       "package_id": "image",
+      "id": "shiyanping-stilt-houses-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:702fef706f18d865e739b4f217247847dec2eab7918ddbb6030d423cb0721c4a",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Shiyanping Timber Stilt Houses",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "石堰坪·层叠吊脚木楼",
+          "summary": "湖南张家界永定；石堰坪土家族传统木构民居。明清相关建筑分期为用户资料线索，具体构件待核验。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/shiyanping-stilt-houses-beta/prompts/main.en.md",
+          "digest": "sha256:f9ff47c18d495961af0e2024b6c8306b269e50f007dbf685af95fe8a4b90457a"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
       "id": "southern-gothic-documentary",
       "version": "1.0.0",
       "digest": "sha256:8617369bd711fe8a4f2d96b18e0aef9fe0056d16b40e2b8ff7730342042fd3df",
@@ -2474,6 +3425,94 @@
           "locale": "en",
           "path": "solutions/image/southern-gothic-documentary/prompts/main.en.md",
           "digest": "sha256:822c42e6bf98bc7831259785fc9af82360351b9ebc6a8c46a985ab0c335d2f9c"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "southern-gothic-style-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:f3d8efbf6f53c8e272d6be00343b0a500de8ec44e3602cdf6306ed9c97583365",
+      "category": "image",
+      "tags": [
+        "artifact:styled_image",
+        "category:image",
+        "constraint:muted_palette",
+        "constraint:style_lock",
+        "job:generate",
+        "modality:image",
+        "scenario:southern_gothic",
+        "stage:prompt_generation"
+      ],
+      "capabilities": [
+        "image",
+        "negative_prompt_governance",
+        "style_layer"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Southern Gothic Style Pack",
+          "summary": "Full Southern Gothic style layer: elegant decay, lush corrupting nature, grotesque dignified figures, muted earthy palette, oppressive chiaroscuro light, time-eroded textures; painting, photography and AI image generation; swap setting, subjects and theme clause only"
+        },
+        "zh-CN": {
+          "title": "南部哥特风格包",
+          "summary": "优雅与腐烂并存的美国南方风格层：繁茂腐败的自然、庄重怪诞的人物、低饱和土地色、强明暗反差的压抑光线、时间侵蚀质感；绘画/摄影/AI 生图通用",
+          "usage": "换场景、人物与主题句，风格段固定；安静纪实滤镜走 southern-gothic-documentary；出图执行交 Eikona"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/southern-gothic-style-beta/prompts/main.en.md",
+          "digest": "sha256:c6ec6bca634b75cfcc227c72c117cb5c4f8d85237b90122bd206265a3ed7f5b0"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "style-scene-pairing-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:f96773516a4f08ca4aecde706d8147eb783216f43ec9e0a2bf6874cabbca31a8",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "constraint:sensitivity_guarded",
+        "job:compile",
+        "modality:image",
+        "modality:text",
+        "scenario:style_pairing",
+        "stage:prompt_generation"
+      ],
+      "capabilities": [
+        "cultural_legitimacy_grading",
+        "provider_neutral",
+        "sensitivity_guard",
+        "style_pairing"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Style-Scene-Theme Pairing Compiler",
+          "summary": "Compile a creative geographic unit and verified scene facts into a graded style pairing: legitimacy level, sensitivity gate, primary prompt, mixed-style variant and confidence grade; 32-style controlled vocabulary with cultural-misreading hard gate"
+        },
+        "zh-CN": {
+          "title": "风格×场景×主题配对编译器",
+          "summary": "把创作地理单元与场景事实编译为带合理性分级、敏感性门槛、主提示词、混合变体与置信级的风格配对；32 风格受控词表，文化误读硬门槛",
+          "usage": "地区事实先进合理性判断再选风格；产出喂给各风格层模板或 video-prompt-optimization-beta 的 style_requirements"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/style-scene-pairing-beta/prompts/main.en.md",
+          "digest": "sha256:ae166ac641ffbcd81694f8333635c2d82172483fa61b1949a915e6d9d22b84b8"
         }
       ]
     },
@@ -2658,6 +3697,90 @@
           "locale": "en",
           "path": "solutions/image/xianxia-hazy-fantasy/prompts/main.en.md",
           "digest": "sha256:c03ef9bf2ee48ee973bdbfdf6ddc0f38ed083fec7563e4c3afba121ceabcd43e"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "xide-yi-lacquerware-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:8255f31f4694cac0f2bbe5c554f66289e54e600bd81b22c499da1cdea5e06605",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Xide Yi Lacquerware",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "喜德彝漆·红黄黑器物",
+          "summary": "四川凉山喜德；彝族漆器髹饰技艺；当代传习工坊，早期分期不作断言。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/xide-yi-lacquerware-beta/prompts/main.en.md",
+          "digest": "sha256:0c63ebe5f64040eb47933b1f144515cfe58260430d2f0dc63a48e806d9264c71"
+        }
+      ]
+    },
+    {
+      "package_id": "image",
+      "id": "yongshun-baishou-dance-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:676cbffcc97688b3113c98a5517013cd01d31f53177c6039913411fc60db14b6",
+      "category": "image",
+      "tags": [
+        "artifact:scene_prompt",
+        "category:image",
+        "constraint:cultural_grounding",
+        "job:compile",
+        "modality:image",
+        "scenario:china_cultural_visual"
+      ],
+      "capabilities": [
+        "image",
+        "prompt_compilation",
+        "provider_neutral"
+      ],
+      "rights": "internal",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Yongshun Tujia Baishou Dance",
+          "summary": "Detailed local cultural visual prompt; user-supplied research, not independently verified.",
+          "usage": "Provider-neutral creative draft with specific materials, composition, time scope and review boundaries."
+        },
+        "zh-CN": {
+          "title": "永顺摆手·群体节序",
+          "summary": "湖南湘西永顺；土家族摆手舞。默认当代公开展演，不将历史祭祖关系等同于本次表演程序。",
+          "usage": "详细地方风格提示词；英文编译、中文待审；依据用户研究整理，未独立核验来源或生成验收。"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/image/yongshun-baishou-dance-beta/prompts/main.en.md",
+          "digest": "sha256:fd8fd08d82c23998f5de0b628781c88a5b7d596f8969f1f9a809efc1cf18d5f4"
         }
       ]
     },
@@ -3980,6 +5103,52 @@
           "locale": "zh-CN",
           "path": "solutions/video/short-drama-character-consistency/prompts/main.zh-CN.md",
           "digest": "sha256:0fa5845dd1f85afcaad8c2f3d509af9374c89660a5b1cc8913241df881d84b27"
+        }
+      ]
+    },
+    {
+      "package_id": "video",
+      "id": "video-prompt-optimization-beta",
+      "version": "1.0.0-beta.1",
+      "digest": "sha256:1915656514ae3b4a0a4ab2b64af2477de4f716d3aa0471f5d1e37ec85c478907",
+      "category": "video",
+      "tags": [
+        "artifact:shot_prompt",
+        "category:video",
+        "constraint:positive_phrasing",
+        "constraint:provider_neutral",
+        "constraint:source_grounded",
+        "job:compile",
+        "modality:audio",
+        "modality:text",
+        "modality:video",
+        "stage:prompt_authoring"
+      ],
+      "capabilities": [
+        "audio_visual_joint_planning",
+        "prompt_compilation",
+        "provider_neutral",
+        "reference_mapping"
+      ],
+      "rights": "unknown",
+      "maturity": "exploratory",
+      "locales": {
+        "en": {
+          "title": "Video Prompt Optimization",
+          "summary": "Compile a rough brief or storyboard into one submission-ready prompt body for diffusion-based audio-video joint generation models, provider-neutral: positive-exclusion, sound, and object discipline plus duration and speech-rate calibration, with platform differences declared via inputs"
+        },
+        "zh-CN": {
+          "title": "视频提示词编译（模型无关）",
+          "summary": "把粗略分镜或故事概要编译成一条扩散类音视频联合生成模型可直接提交的提示词正文：正向排除、声音与器物纪律、时长与逐句语速核算，平台差异经输入变量声明",
+          "usage": "由 Scaena 等 Agent 消费方编译使用；提交参数、生成执行与验收归生成层与验证层"
+        }
+      },
+      "templates": [
+        {
+          "role": "main",
+          "locale": "en",
+          "path": "solutions/video/video-prompt-optimization-beta/prompts/main.en.md",
+          "digest": "sha256:9a2ca7a6a7a6361db5891b6eb6f99aa9430a0235a5566c05e02a1d9d0f3b0625"
         }
       ]
     },

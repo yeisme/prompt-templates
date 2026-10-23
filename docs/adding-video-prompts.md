@@ -25,6 +25,7 @@
 | 需求 | Solution | 结构特征 |
 | --- | --- | --- |
 | 特效/法阵/大招清屏镜头 | `ai-drama-shot-video-generation` | 蓄力-爆发两层约束、特效配比、安全协议 |
+| 粗略概要 → 可提交正文（编译型，模型无关） | `video-prompt-optimization-beta` | 正向排除三卡、平台指代语法变量化、设定档案、时长与逐句语速核算、六层镜头结构 |
 | 无台词纯环境音抓拍 vlog | `realistic-vlog-shot-generation` | 一致性锁定 + 节拍序列 + 不完美质感 |
 | 画外 VO 自述 + 音乐弧线 | `realistic-docu-vlog-generation` | VO 绑定键、音乐弧线、混合机位 |
 | 出镜口播 + 唇形同步 | `realistic-diary-vlog-generation` | 台词脚本、声学空间、服装逻辑链 |

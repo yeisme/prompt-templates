@@ -1,27 +1,24 @@
-# Initial project-owned scaffold from Yeisme modular CI rollout.
+# Change-aware CI maintained by scripts/maintain-workspace-ci.py.
 name: Full CI
-
-on:
-  workflow_dispatch:
-
 permissions:
   contents: read
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
-
 jobs:
   full:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-      - name: Run full gate
-        shell: bash
-        run: |
-          set -euo pipefail
-          jq empty catalog.json repository.json
-          find . -name solution.json -print0 | xargs -0 -r -n1 jq empty
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - name: Run full gate
+      shell: bash
+      run: |
+        set -euo pipefail
+        jq empty catalog.json repository.json
+        find . -name solution.json -print0 | xargs -0 -r -n1 jq empty
+'on':
+  workflow_dispatch: null
+  workflow_call: null
