@@ -1,6 +1,458 @@
 {
   "version": "1.0.0",
-  "gitCommitHash": "2783578f7bf7070c5a4c22a75b0f6550461c27ed",
-  "generatedAt": "2026-08-25T16:05:06.965Z",
-  "files": {}
+  "gitCommitHash": "e48b98fb6abd4771fe2b158151dd4f26ce4b9d31",
+  "generatedAt": "2026-09-26T08:18:36.754Z",
+  "files": {
+    "scripts/annotate-discovery.py": {
+      "filePath": "scripts/annotate-discovery.py",
+      "contentHash": "b15fa5aff0d2ec2a8b2f917b56c1f60beda21c471c1094c81425e77504ed0975",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "argparse",
+          "specifiers": [
+            "argparse"
+          ]
+        },
+        {
+          "source": "json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "pathlib",
+          "specifiers": [
+            "pathlib"
+          ]
+        },
+        {
+          "source": "subprocess",
+          "specifiers": [
+            "subprocess"
+          ]
+        },
+        {
+          "source": "sys",
+          "specifiers": [
+            "sys"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 79,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/author_3d_templates.py": {
+      "filePath": "scripts/author_3d_templates.py",
+      "contentHash": "4d363f6149ec5ccaca25b5cfe68675640ffa159cfb43671127e424d86b33dba3",
+      "functions": [
+        {
+          "name": "flag",
+          "params": [
+            "value"
+          ],
+          "exported": true,
+          "lineCount": 2
+        },
+        {
+          "name": "author",
+          "params": [
+            "binary",
+            "root"
+          ],
+          "exported": true,
+          "lineCount": 47
+        },
+        {
+          "name": "main",
+          "params": [],
+          "exported": true,
+          "lineCount": 6
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "argparse",
+          "specifiers": [
+            "argparse"
+          ]
+        },
+        {
+          "source": "json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "pathlib",
+          "specifiers": [
+            "Path"
+          ]
+        },
+        {
+          "source": "subprocess",
+          "specifiers": [
+            "subprocess"
+          ]
+        }
+      ],
+      "exports": [
+        "flag",
+        "author",
+        "main"
+      ],
+      "totalLines": 193,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/author_visual_exploration.py": {
+      "filePath": "scripts/author_visual_exploration.py",
+      "contentHash": "76f84d3c465df34c994ae17103a385f670bbee20e8271ac6db1894a916a62cce",
+      "functions": [
+        {
+          "name": "author",
+          "params": [
+            "binary",
+            "root"
+          ],
+          "exported": true,
+          "lineCount": 30
+        },
+        {
+          "name": "main",
+          "params": [],
+          "exported": true,
+          "lineCount": 31
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "argparse",
+          "specifiers": [
+            "argparse"
+          ]
+        },
+        {
+          "source": "json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "pathlib",
+          "specifiers": [
+            "Path"
+          ]
+        },
+        {
+          "source": "shutil",
+          "specifiers": [
+            "shutil"
+          ]
+        },
+        {
+          "source": "subprocess",
+          "specifiers": [
+            "subprocess"
+          ]
+        },
+        {
+          "source": "zipfile",
+          "specifiers": [
+            "zipfile"
+          ]
+        }
+      ],
+      "exports": [
+        "author",
+        "main"
+      ],
+      "totalLines": 83,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/check-discovery.py": {
+      "filePath": "scripts/check-discovery.py",
+      "contentHash": "72e805c6fbaad263b3f092bcbeabb88e1dd12d9ad939a3de943235a981a76fc7",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "argparse",
+          "specifiers": [
+            "argparse"
+          ]
+        },
+        {
+          "source": "datetime",
+          "specifiers": [
+            "datetime"
+          ]
+        },
+        {
+          "source": "json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "pathlib",
+          "specifiers": [
+            "pathlib"
+          ]
+        },
+        {
+          "source": "subprocess",
+          "specifiers": [
+            "subprocess"
+          ]
+        },
+        {
+          "source": "sys",
+          "specifiers": [
+            "sys"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/check_3d_templates.py": {
+      "filePath": "scripts/check_3d_templates.py",
+      "contentHash": "10b21fb4340f4c75fd88091d49e31244823b18d2c52405f6fbcbd523590117a6",
+      "functions": [
+        {
+          "name": "variables",
+          "params": [
+            "body"
+          ],
+          "exported": true,
+          "lineCount": 2
+        },
+        {
+          "name": "main",
+          "params": [],
+          "exported": true,
+          "lineCount": 167
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "argparse",
+          "specifiers": [
+            "argparse"
+          ]
+        },
+        {
+          "source": "datetime",
+          "specifiers": [
+            "datetime",
+            "timezone"
+          ]
+        },
+        {
+          "source": "json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "pathlib",
+          "specifiers": [
+            "Path"
+          ]
+        },
+        {
+          "source": "re",
+          "specifiers": [
+            "re"
+          ]
+        },
+        {
+          "source": "subprocess",
+          "specifiers": [
+            "subprocess"
+          ]
+        },
+        {
+          "source": "shlex",
+          "specifiers": [
+            "shlex"
+          ]
+        },
+        {
+          "source": "sys",
+          "specifiers": [
+            "sys"
+          ]
+        },
+        {
+          "source": "tempfile",
+          "specifiers": [
+            "tempfile"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "uuid",
+          "specifiers": [
+            "uuid"
+          ]
+        }
+      ],
+      "exports": [
+        "variables",
+        "main"
+      ],
+      "totalLines": 240,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/check_visual_exploration.py": {
+      "filePath": "scripts/check_visual_exploration.py",
+      "contentHash": "ca53a42678e76854b1a79f9456b98501df2320cf197b7eeb042c12004f9d6606",
+      "functions": [
+        {
+          "name": "main",
+          "params": [],
+          "exported": true,
+          "lineCount": 92
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "argparse",
+          "specifiers": [
+            "argparse"
+          ]
+        },
+        {
+          "source": "datetime",
+          "specifiers": [
+            "datetime",
+            "timezone"
+          ]
+        },
+        {
+          "source": "json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "os",
+          "specifiers": [
+            "os"
+          ]
+        },
+        {
+          "source": "pathlib",
+          "specifiers": [
+            "Path"
+          ]
+        },
+        {
+          "source": "re",
+          "specifiers": [
+            "re"
+          ]
+        },
+        {
+          "source": "subprocess",
+          "specifiers": [
+            "subprocess"
+          ]
+        },
+        {
+          "source": "shlex",
+          "specifiers": [
+            "shlex"
+          ]
+        },
+        {
+          "source": "sys",
+          "specifiers": [
+            "sys"
+          ]
+        },
+        {
+          "source": "tempfile",
+          "specifiers": [
+            "tempfile"
+          ]
+        },
+        {
+          "source": "time",
+          "specifiers": [
+            "time"
+          ]
+        },
+        {
+          "source": "uuid",
+          "specifiers": [
+            "uuid"
+          ]
+        }
+      ],
+      "exports": [
+        "main"
+      ],
+      "totalLines": 117,
+      "hasStructuralAnalysis": true
+    },
+    "scripts/cinematique_reindex.py": {
+      "filePath": "scripts/cinematique_reindex.py",
+      "contentHash": "6aedcb4bcea48eda8c0c1bed091ac7aa0fcccb4823b6d60bcfc49e2c5b591172",
+      "functions": [
+        {
+          "name": "main",
+          "params": [],
+          "returnType": "int",
+          "exported": true,
+          "lineCount": 62
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "json",
+          "specifiers": [
+            "json"
+          ]
+        },
+        {
+          "source": "sys",
+          "specifiers": [
+            "sys"
+          ]
+        },
+        {
+          "source": "pathlib",
+          "specifiers": [
+            "Path"
+          ]
+        }
+      ],
+      "exports": [
+        "main"
+      ],
+      "totalLines": 93,
+      "hasStructuralAnalysis": true
+    }
+  }
 }
