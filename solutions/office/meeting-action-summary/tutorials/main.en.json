@@ -1,0 +1,38 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/office/meeting-action-summary@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:b32cf7778d0c396029603ef4895e1051d58e8c0403905fc13ff513e289cc90a4",
+  "contract_digest": "sha256:b9decce7e7cde89ce15e49b6d029a02c8e4e26cecb50225fb2e93a1dcb86bfaf",
+  "source_text": "Fictional standup: Lin said the migration script passes on staging, so we freeze the event schema on Friday. Someone should publish the freeze announcement. The report redesign was postponed; the owner will be decided by email. Next review point was not stated.",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-schema-freeze",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "meeting_record": "meeting_record",
+        "team": "team"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Extract decisions, actions, owners, dates, and risks from meeting records",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "team": "platform reliability guild"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 meeting_record，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:a4d884f387155fc2ca3e3a5c62223849c0c4a7d23ac27e9a7b26582c40dadf82"
+}

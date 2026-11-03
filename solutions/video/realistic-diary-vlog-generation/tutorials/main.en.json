@@ -1,0 +1,82 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/realistic-diary-vlog-generation@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:88734793d67fff5d4379e14ff1f33fa300b51182382deeed325c5ed680087369",
+  "contract_digest": "sha256:98b35b5320cea981065d46901a4ae262dc1c4ffe2ba1bd31db83d1f6a0126de9",
+  "source_text": "30 秒短片：进入阅读角、翻开书、停在灯光下；不含真实人物、品牌或未授权音乐。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "ambience_design": "卧室近距安静、街道开阔混响、排练室反射声；room tone 全程存在",
+        "aspect_ratio": "16:9",
+        "audio_exclusions": "无配乐、无音效堆砌、无字幕配音",
+        "camera_exclusions": "无商业摆拍、glamour 广告打光、稳定器与不可能的机位",
+        "camera_formats": "手持自拍 + 亲密朋友手持跟拍 + 自然固定机位",
+        "camera_imperfections": "手持晃动、小幅失焦、普通室内光、自然停顿",
+        "character_ref": "@image1",
+        "consistency_lock": "全片保持完全一致的面部、发型、体型与性格气质",
+        "dialogue_language": "自然日语口语",
+        "dialogue_script": "林舟：“这封信还没有寄出去。”顾遥：“先看看地址是否仍然存在。”",
+        "duration_s": 60,
+        "ending_directive": "安静的夜间道别，录制自然结束",
+        "final_feel": "克制、平静，保留日常行为的节奏与细节",
+        "footage_style": "photorealistic personal vlog",
+        "negative_prompts": "不出现商标、额外人物或未提供的事实",
+        "provider_banner": "Made with Seedance 2.5",
+        "realism_rules": "自然遮挡、真实接触和连续光照；禁止瞬移、额外手指和无来源物件",
+        "resolution": "1080p",
+        "scenario_summary": "成年访客走进虚构阅读角，翻开书，停在窗边灯光下",
+        "story_beats": "入场观察，发现未寄出的信，核对旧地址，保留去向未知的结尾",
+        "subject_identity": "成年访客林舟，短黑发、深蓝外套、左腕布绳，所有镜头保持一致",
+        "wardrobe_and_accessories": "深蓝外套、米色内搭、左腕布绳；无商标，不在镜头间变化"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：镜头方案候选：0–8 秒进入阅读角，8–20 秒翻书并展示环境，20–30 秒停留灯下。声音和身份连续性需逐镜核对；没有实际视频产物。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compile subject, selfie/follow camera formats, on-camera dialogue with lip sync, acoustic-space continuity, and realism constraints into a diary vlog prompt for direct video-model delivery",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "aspect_ratio": "16:9",
+        "audio_exclusions": "无配乐、无音效堆砌、无字幕配音",
+        "camera_exclusions": "无商业摆拍、glamour 广告打光、稳定器与不可能的机位",
+        "camera_formats": "手持自拍 + 亲密朋友手持跟拍 + 自然固定机位",
+        "camera_imperfections": "手持晃动、小幅失焦、普通室内光、自然停顿",
+        "character_ref": "@image1",
+        "consistency_lock": "全片保持完全一致的面部、发型、体型与性格气质",
+        "dialogue_language": "自然日语口语",
+        "dialogue_script": "林舟：“这封信还没有寄出去。”顾遥：“先看看地址是否仍然存在。”",
+        "duration_s": 60,
+        "ending_directive": "安静的夜间道别，录制自然结束",
+        "final_feel": "克制、平静，保留日常行为的节奏与细节",
+        "footage_style": "photorealistic personal vlog",
+        "negative_prompts": "不出现商标、额外人物或未提供的事实",
+        "provider_banner": "Made with Seedance 2.5",
+        "realism_rules": "自然遮挡、真实接触和连续光照；禁止瞬移、额外手指和无来源物件",
+        "resolution": "1080p",
+        "scenario_summary": "成年访客走进虚构阅读角，翻开书，停在窗边灯光下",
+        "story_beats": "入场观察，发现未寄出的信，核对旧地址，保留去向未知的结尾",
+        "subject_identity": "成年访客林舟，短黑发、深蓝外套、左腕布绳，所有镜头保持一致",
+        "wardrobe_and_accessories": "深蓝外套、米色内搭、左腕布绳；无商标，不在镜头间变化"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 ambience_design，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:641f9de86a205b14bb43018c9907b5862bd8f716079947ed1dfd94ce7e2c0653"
+}

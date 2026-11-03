@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/image/xhs-product-cover-v2@2.0.0?locale=en",
+  "role": "delivery",
+  "template_digest": "sha256:42f25e270ecbd044b45f7979fe92826f35e9c7f0de4d824cad50323500b4a39e",
+  "contract_digest": "sha256:429a1356c6c458d0c0f00d66254c0af155fa9f73cbf14f195e233c07945598cd",
+  "source_text": "本次合成任务采用已验证案例 valid-tumbler-cover；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-tumbler-cover",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "aspect_ratio": "aspect_ratio",
+        "audience": "audience",
+        "product": "product",
+        "selling_point": "selling_point",
+        "visual_style": "visual_style"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Prepare a structured handoff to the consuming production tool.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "aspect_ratio": "3:4",
+        "product": "portable_coffee_tumbler",
+        "selling_point": "lightweight_and_leakproof",
+        "visual_style": "lifestyle"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 audience，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:af7001a1a53a3c195e372b847f034c5d7787bcbcce1892390e6ba558f4102b6c"
+}

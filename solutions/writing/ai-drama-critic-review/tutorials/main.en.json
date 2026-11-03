@@ -1,0 +1,76 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/writing/ai-drama-critic-review@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:2949519f18eec09d6a14844a8d30629f5bfe47b8650678205abc2e6523d7813e",
+  "contract_digest": "sha256:f222faa356eb66df776a97838ed303c35f2221f784889bca3140859992c01c32",
+  "source_text": "林舟在旧车站发现一封未寄出的信；他想联系写信人，但只知道信封上的旧地址。",
+  "input_notes": {
+    "assessment_goal_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "candidates_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "rubric_json": "本例只做定性比较，不计算加权分数；因此不声明尚未冻结的权重。"
+  },
+  "json_required_keys": {
+    "assessment_goal_json": [
+      "comparison_class",
+      "criteria",
+      "decision"
+    ],
+    "candidates_json": [
+      "candidates"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "assessment_goal_json": "{\"decision\":\"选择更清晰的开场\",\"comparison_class\":\"同一故事的开场段落\",\"criteria\":[\"因果清楚\",\"知识边界一致\"]}",
+        "candidates_json": "{\"candidates\":[{\"id\":\"A\",\"text\":\"林舟先查看地址，再向顾遥询问。\"},{\"id\":\"B\",\"text\":\"林舟先询问顾遥，再说明自己只知道地址。\"}]}",
+        "output_schema_version": "ai-drama-critic-review-semantic-output-v1",
+        "rubric_json": "{}"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：人物已知：林舟知道旧地址，不知道写信人的现状。候选行动：核对地址来源。此行动是创作建议，尚未进入正史。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compare two or more candidates within one comparison class with evidence-anchored findings and bounded single-variable repairs",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "candidates_json": "{\"candidates\":[{\"id\":\"A\",\"text\":\"林舟先查看地址，再向顾遥询问。\"},{\"id\":\"B\",\"text\":\"林舟先询问顾遥，再说明自己只知道地址。\"}]}",
+        "output_schema_version": "ai-drama-critic-review-semantic-output-v1",
+        "rubric_json": "{}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 assessment_goal_json，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "assessment_goal_json": "[]",
+        "candidates_json": "{\"candidates\":[{\"id\":\"A\",\"text\":\"林舟先查看地址，再向顾遥询问。\"},{\"id\":\"B\",\"text\":\"林舟先询问顾遥，再说明自己只知道地址。\"}]}",
+        "output_schema_version": "ai-drama-critic-review-semantic-output-v1",
+        "rubric_json": "{}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:1bf410cbe8a1b9e425d81fe5cae2bd3ae55922186f643b40486ee3000a0e72f9"
+}

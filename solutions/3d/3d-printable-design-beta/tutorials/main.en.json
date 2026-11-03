@@ -1,0 +1,48 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/3d/3d-printable-design-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:4c3da4b3c1e65a29e19341a5b07c441c5f44f6506542675735d1a3ca03973748",
+  "contract_digest": "sha256:45325a818eb25114b92053b21154620de52da5a3fd45e5898ea6a8cd8a6ef7e4",
+  "source_text": "一盏虚构的黄铜桌灯，圆底座、弯曲灯臂，供游戏背景评估，无品牌标记。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "material": "PLA，作为设计讨论材料，实际打印参数由切片验证决定",
+        "print_orientation": "底面朝下",
+        "support_strategy": "none",
+        "tolerance": "0.2 mm",
+        "wall_thickness": "2 mm"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：设计候选：圆形底座、弯曲灯臂、简化灯罩。材质为视觉上的哑光黄铜；尺寸、拓扑与可打印性需从实际模型检查，不能由文字确认。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compile confirmed manufacturability constraints into a decidable checklist-style 3D printing prompt package",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "material": "PLA，作为设计讨论材料，实际打印参数由切片验证决定",
+        "support_strategy": "none",
+        "tolerance": "0.2 mm",
+        "wall_thickness": "2 mm"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 print_orientation，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:538fcacd2ef7e7a0087c075b6c8fe646740c4cfc7ce2d3c855fc71cc374551b7"
+}

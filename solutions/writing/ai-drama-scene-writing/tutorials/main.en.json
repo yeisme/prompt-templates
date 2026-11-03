@@ -1,0 +1,86 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/writing/ai-drama-scene-writing@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:d2ab86426a01347a612118f2acd75f7cebfd5f3fee9a074b95efa5e5ee743c9a",
+  "contract_digest": "sha256:35c3db2079d2641f28e1ea3db15cf1a8c3de86cbade280c820594ddeaea19a52",
+  "source_text": "林舟在旧车站发现一封未寄出的信；他想联系写信人，但只知道信封上的旧地址。",
+  "input_notes": {
+    "canon_snapshot_json": "全新虚构项目尚无已接受正史；人物和故事候选由本轮 brief 提供，因此空初始正史合法。",
+    "scene_contract_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "style_constraints_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "scene_contract_json": [
+      "characters",
+      "exit_condition",
+      "goal",
+      "location",
+      "scene_id"
+    ],
+    "style_constraints_json": [
+      "dialogue",
+      "forbidden",
+      "pacing"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "candidate_strategy": "比较保持主体事实不变的两个表达方案，按清晰度和来源一致性选择",
+        "canon_snapshot_json": "{}",
+        "dialogue_language": "zh-CN",
+        "output_schema_version": "ai-drama-scene-writing-semantic-output-v1",
+        "scene_contract_json": "{\"scene_id\":\"station-01\",\"location\":\"旧车站候车室\",\"characters\":[\"lin-zhou\",\"gu-yao\"],\"goal\":\"决定如何核对地址\",\"exit_condition\":\"先调查地址，不贸然认定写信人身份\"}",
+        "style_constraints_json": "{\"dialogue\":\"短句，保留人物知识边界\",\"pacing\":\"先观察再决策\",\"forbidden\":[\"凭空揭露信件来源\",\"冗长独白\"]}"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：人物已知：林舟知道旧地址，不知道写信人的现状。候选行动：核对地址来源。此行动是创作建议，尚未进入正史。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compile one shootable scene draft with executable action, separated subtext, ordered information release, and exit state",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "canon_snapshot_json": "{}",
+        "dialogue_language": "zh-CN",
+        "output_schema_version": "ai-drama-scene-writing-semantic-output-v1",
+        "scene_contract_json": "{\"scene_id\":\"station-01\",\"location\":\"旧车站候车室\",\"characters\":[\"lin-zhou\",\"gu-yao\"],\"goal\":\"决定如何核对地址\",\"exit_condition\":\"先调查地址，不贸然认定写信人身份\"}",
+        "style_constraints_json": "{\"dialogue\":\"短句，保留人物知识边界\",\"pacing\":\"先观察再决策\",\"forbidden\":[\"凭空揭露信件来源\",\"冗长独白\"]}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 candidate_strategy，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "candidate_strategy": "比较保持主体事实不变的两个表达方案，按清晰度和来源一致性选择",
+        "canon_snapshot_json": "{}",
+        "dialogue_language": "zh-CN",
+        "output_schema_version": "ai-drama-scene-writing-semantic-output-v1",
+        "scene_contract_json": "[]",
+        "style_constraints_json": "{\"dialogue\":\"短句，保留人物知识边界\",\"pacing\":\"先观察再决策\",\"forbidden\":[\"凭空揭露信件来源\",\"冗长独白\"]}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:8c009815f4cc2148f7f6fc5b9756017f2f76a0b92ab4df62e1e54867929f9e01"
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/realistic-fight-scene-generation@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:be3474fc01eea432acca5620ee03960843985a771706ad68578ba81b03ebe392",
+  "contract_digest": "sha256:4683af325e6beea520be0210399b5eacd302dddec76d0e580a3ef8662660a699",
+  "source_text": "30 秒短片：进入阅读角、翻开书、停在灯光下；不含真实人物、品牌或未授权音乐。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "action_principles": "现代实战拳法、肘击、膝撞、低位踢击、近身控制、擒拿拆解和短距离摔法",
+        "antagonist_identity": "虚构成年对手，灰色训练服，使用软质练习刀，无真人对应",
+        "antagonist_ref": "@image2",
+        "aspect_ratio": "16:9",
+        "audio_design": "脚步、翻页和室内底噪；没有未经授权音乐或真实人物声音",
+        "camera_follow_spec": "肩后、腰后、侧后第三人称跟随；关键格挡和重击短暂切入侧面中景或近景",
+        "camera_motion_rules": "缓慢跟随主体，保持视线方向和接触点，不越过动作轴线",
+        "character_dynamics": "主角冷静精准动作幅度小、格挡后即反击；敌人力量更大、连续压迫与贴身撞击",
+        "cut_rules": "优先连续动作；切镜保持人物位置、运动方向和道具握持一致",
+        "dual_consistency_lock": "严格继承参考图两人的面部、体型、服装与气质，全程不得交换身份",
+        "duration_s": 30,
+        "ending_directive": "最后一帧保持双方继续互相锁定的危险状态，为下一段战斗留下衔接",
+        "environment_interaction": "立柱、闸机、玻璃护栏、积水参与战斗；闸机挡板可撞开弯曲但不脱离，玻璃震颤不碎，立柱不碎裂",
+        "fight_arc": "敌人抢攻→主角反击→绕柱追击→主角失势→危险拆解→夺回主动→环境摔投→最终反制；主角必须经历一次明显失势和一次危险化解",
+        "fight_beats": "0–3 秒站位试探；3–7 秒一次格挡；7–10 秒退步拉开距离；没有伤口特写",
+        "final_feel": "刺激而不混乱，凶狠但遵守人体力学，摄影机始终以主角为核心",
+        "footage_style": "写实电影级实拍质感",
+        "frame_rate": "24fps",
+        "lighting_palette": "冷白顶灯主光（两盏偶尔闪烁），红色警示灯局部轮廓光，冷蓝灰主色",
+        "negative_prompts": "不出现商标、额外人物或未提供的事实",
+        "protagonist_identity": "虚构成年训练者林舟，深蓝训练服，使用软质练习刀",
+        "protagonist_ref": "@image1",
+        "provider_banner": "Made with Seedance 2.5",
+        "realism_rules": "自然遮挡、真实接触和连续光照；禁止瞬移、额外手指和无来源物件",
+        "resolution": "1080p",
+        "scenario_summary": "成年访客走进虚构阅读角，翻开书，停在窗边灯光下",
+        "scene_desc": "虚构训练庭院，平整地面、石墙和一个木门，无围观人群",
+        "scene_layout": "两人相距两米沿东西轴站立，木门位于北侧，镜头留在南侧",
+        "style_reference": "现代硬派武术电影气质 + ACT 动作游戏第三人称战斗镜头"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：镜头方案候选：0–8 秒进入阅读角，8–20 秒翻书并展示环境，20–30 秒停留灯下。声音和身份连续性需逐镜核对；没有实际视频产物。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compile dual-character identity lock, fight physics, axis of action, ACT follow camera, and per-beat choreography into a fight-scene prompt for direct video-model delivery",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "antagonist_identity": "虚构成年对手，灰色训练服，使用软质练习刀，无真人对应",
+        "antagonist_ref": "@image2",
+        "aspect_ratio": "16:9",
+        "audio_design": "脚步、翻页和室内底噪；没有未经授权音乐或真实人物声音",
+        "camera_follow_spec": "肩后、腰后、侧后第三人称跟随；关键格挡和重击短暂切入侧面中景或近景",
+        "camera_motion_rules": "缓慢跟随主体，保持视线方向和接触点，不越过动作轴线",
+        "character_dynamics": "主角冷静精准动作幅度小、格挡后即反击；敌人力量更大、连续压迫与贴身撞击",
+        "cut_rules": "优先连续动作；切镜保持人物位置、运动方向和道具握持一致",
+        "dual_consistency_lock": "严格继承参考图两人的面部、体型、服装与气质，全程不得交换身份",
+        "duration_s": 30,
+        "ending_directive": "最后一帧保持双方继续互相锁定的危险状态，为下一段战斗留下衔接",
+        "environment_interaction": "立柱、闸机、玻璃护栏、积水参与战斗；闸机挡板可撞开弯曲但不脱离，玻璃震颤不碎，立柱不碎裂",
+        "fight_arc": "敌人抢攻→主角反击→绕柱追击→主角失势→危险拆解→夺回主动→环境摔投→最终反制；主角必须经历一次明显失势和一次危险化解",
+        "fight_beats": "0–3 秒站位试探；3–7 秒一次格挡；7–10 秒退步拉开距离；没有伤口特写",
+        "final_feel": "刺激而不混乱，凶狠但遵守人体力学，摄影机始终以主角为核心",
+        "footage_style": "写实电影级实拍质感",
+        "frame_rate": "24fps",
+        "lighting_palette": "冷白顶灯主光（两盏偶尔闪烁），红色警示灯局部轮廓光，冷蓝灰主色",
+        "negative_prompts": "不出现商标、额外人物或未提供的事实",
+        "protagonist_identity": "虚构成年训练者林舟，深蓝训练服，使用软质练习刀",
+        "protagonist_ref": "@image1",
+        "provider_banner": "Made with Seedance 2.5",
+        "realism_rules": "自然遮挡、真实接触和连续光照；禁止瞬移、额外手指和无来源物件",
+        "resolution": "1080p",
+        "scenario_summary": "成年访客走进虚构阅读角，翻开书，停在窗边灯光下",
+        "scene_desc": "虚构训练庭院，平整地面、石墙和一个木门，无围观人群",
+        "scene_layout": "两人相距两米沿东西轴站立，木门位于北侧，镜头留在南侧",
+        "style_reference": "现代硬派武术电影气质 + ACT 动作游戏第三人称战斗镜头"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 action_principles，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:865916f760ab86a3d4a022a63ca781ddb068ab900a17281086e577b95eb5c61e"
+}

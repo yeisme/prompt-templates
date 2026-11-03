@@ -1,0 +1,86 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/realistic-docu-vlog-generation@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:cf861d1747c61a5604efc645d7b3b440f0cc140859b7f3c92d012d6939e6f013",
+  "contract_digest": "sha256:d6d4510e6bf37e191ac4152d38ba9c67c3750d6d917359f2baf49ed7f51e0853",
+  "source_text": "30 秒短片：进入阅读角、翻开书、停在灯光下；不含真实人物、品牌或未授权音乐。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "ambience_design": "房间、公寓、车辆、后台与人群的自然声音",
+        "aspect_ratio": "16:9",
+        "audio_exclusions": "无音效堆砌、无罐头掌声、无字幕配音",
+        "camera_exclusions": "无稳定器、无人机、不可能的机位运动与精致商业广告质感",
+        "camera_formats": "手持 DV 跟拍 + 不完美自拍 + 自然固定机位",
+        "camera_imperfections": "真实手抖、自动对焦犹豫、轻微运动模糊、曝光漂移、构图不完美",
+        "character_ref": "@image1",
+        "consistency_lock": "全片保持完全一致的面部身份、发型与外观",
+        "duration_s": 30,
+        "ending_directive": "音乐达到高潮，强光充满画面，切黑",
+        "era_aesthetic": "千禧年初消费级 DV 质感",
+        "final_feel": "克制、平静，保留日常行为的节奏与细节",
+        "footage_style": "photorealistic live-action video",
+        "music_arc": "音乐逐渐推进为充满能量的现代流行曲，在结尾拍达到高潮",
+        "negative_prompts": "不出现商标、额外人物或未提供的事实",
+        "provider_banner": "Made with Seedance 2.5",
+        "realism_rules": "自然遮挡、真实接触和连续光照；禁止瞬移、额外手指和无来源物件",
+        "resolution": "1080p",
+        "scenario_summary": "成年访客走进虚构阅读角，翻开书，停在窗边灯光下",
+        "story_beats": "入场观察，发现未寄出的信，核对旧地址，保留去向未知的结尾",
+        "subject_identity": "成年访客林舟，短黑发、深蓝外套、左腕布绳，所有镜头保持一致",
+        "vo_tone": "平静、亲密、不完美，像私密的自我倾诉",
+        "voiceover_script": "有些信没有寄出。我们能做的，是先确认它曾经要去哪里。",
+        "wardrobe_and_accessories": "深蓝外套、米色内搭、左腕布绳；无商标，不在镜头间变化"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：镜头方案候选：0–8 秒进入阅读角，8–20 秒翻书并展示环境，20–30 秒停留灯下。声音和身份连续性需逐镜核对；没有实际视频产物。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compile subject, mixed camera formats, per-beat voiceover, music arc, and realism constraints into a documentary vlog prompt for direct video-model delivery",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "aspect_ratio": "16:9",
+        "audio_exclusions": "无音效堆砌、无罐头掌声、无字幕配音",
+        "camera_exclusions": "无稳定器、无人机、不可能的机位运动与精致商业广告质感",
+        "camera_formats": "手持 DV 跟拍 + 不完美自拍 + 自然固定机位",
+        "camera_imperfections": "真实手抖、自动对焦犹豫、轻微运动模糊、曝光漂移、构图不完美",
+        "character_ref": "@image1",
+        "consistency_lock": "全片保持完全一致的面部身份、发型与外观",
+        "duration_s": 30,
+        "ending_directive": "音乐达到高潮，强光充满画面，切黑",
+        "era_aesthetic": "千禧年初消费级 DV 质感",
+        "final_feel": "克制、平静，保留日常行为的节奏与细节",
+        "footage_style": "photorealistic live-action video",
+        "music_arc": "音乐逐渐推进为充满能量的现代流行曲，在结尾拍达到高潮",
+        "negative_prompts": "不出现商标、额外人物或未提供的事实",
+        "provider_banner": "Made with Seedance 2.5",
+        "realism_rules": "自然遮挡、真实接触和连续光照；禁止瞬移、额外手指和无来源物件",
+        "resolution": "1080p",
+        "scenario_summary": "成年访客走进虚构阅读角，翻开书，停在窗边灯光下",
+        "story_beats": "入场观察，发现未寄出的信，核对旧地址，保留去向未知的结尾",
+        "subject_identity": "成年访客林舟，短黑发、深蓝外套、左腕布绳，所有镜头保持一致",
+        "vo_tone": "平静、亲密、不完美，像私密的自我倾诉",
+        "voiceover_script": "有些信没有寄出。我们能做的，是先确认它曾经要去哪里。",
+        "wardrobe_and_accessories": "深蓝外套、米色内搭、左腕布绳；无商标，不在镜头间变化"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 ambience_design，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:f750c95d2292837aa19dbcb28058e673d9d30f5100d7e5519fc37948e2b5b821"
+}

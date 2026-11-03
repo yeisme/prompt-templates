@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/image/yongshun-baishou-dance-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:fd8fd08d82c23998f5de0b628781c88a5b7d596f8969f1f9a809efc1cf18d5f4",
+  "contract_digest": "sha256:42773bd15099eba7d7c53ea7debd026102c53c2b80404228b550abf3b536f738",
+  "source_text": "虚构活动“周末阅读角”：桌边一盏灯、一册书，安静、温暖，不使用真人或商标。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "composition_notes": "主体现于画面下三分之一，前景留少量遮挡，远景保留环境层次",
+        "medium_clause": "matte editorial illustration, subtle paper grain, restrained local colors",
+        "reference_notes": "仅使用本任务的合成场景描述；没有附图，不声称临摹特定作者"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：画面候选：以黄铜桌灯和打开的书为主体，保持无品牌；根据「永顺摆手·群体节序」的风格与构图字段调整表现。这里只描述待生成画面，不展示或声称已经出图。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 湖南湘西永顺；土家族摆手舞。默认当代公开展演，不将历史祭祖关系等同于本次表演程序。",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "composition_notes": "主体现于画面下三分之一，前景留少量遮挡，远景保留环境层次",
+        "reference_notes": "仅使用本任务的合成场景描述；没有附图，不声称临摹特定作者"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 medium_clause，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:8360350ef57aeb6135169e88cbcfe629cae9b734cffbfc6441f57dc8f94ef837"
+}

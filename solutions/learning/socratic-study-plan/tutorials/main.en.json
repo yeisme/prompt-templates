@@ -1,0 +1,40 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/learning/socratic-study-plan@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:19769c2d4a8c49b5c0f46191e192f5c1fc0cf3fd1550b3ddd9b3584c3283f8c0",
+  "contract_digest": "sha256:08f0398a5dd80cf473516d122676c7b3823cc8c5fa315ee93ae2cddc385a7d46",
+  "source_text": "本次合成任务采用已验证案例 valid-sql-foundations；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-sql-foundations",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "available_time": "available_time",
+        "current_level": "current_level",
+        "learning_goal": "learning_goal"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Design a verifiable and adaptive question-led learning path from the learner's current level",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "current_level": "can read simple SELECT statements; wrote no joins yet; unfamiliar with aggregation",
+        "learning_goal": "Pass a first-year SQL foundations course and query a research database independently"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 available_time，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:55ef5df6d3055b2cfa51b8056eab802c6f9ffd41e71c607410384693da493b2b"
+}

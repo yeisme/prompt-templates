@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/image/laochehe-living-village-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:b2095f086407a424daf18b8e3e4fd0e2b4786b3e0ac2d8a29ad1a87f1405a2af",
+  "contract_digest": "sha256:da2d33512eec1e8af42a3929c421c347e7802112c0f46f323ca2207ba0545b8f",
+  "source_text": "虚构活动“周末阅读角”：桌边一盏灯、一册书，安静、温暖，不使用真人或商标。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "composition_notes": "主体现于画面下三分之一，前景留少量遮挡，远景保留环境层次",
+        "medium_clause": "matte editorial illustration, subtle paper grain, restrained local colors",
+        "reference_notes": "仅使用本任务的合成场景描述；没有附图，不声称临摹特定作者"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：画面候选：以黄铜桌灯和打开的书为主体，保持无品牌；根据「捞车河·溪谷生活遗产」的风格与构图字段调整表现。这里只描述待生成画面，不展示或声称已经出图。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 湖南湘西龙山；土家族传统村落建筑。呈现现存生活，不将明清建筑层累等同于所有居民的服饰年代。",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "composition_notes": "主体现于画面下三分之一，前景留少量遮挡，远景保留环境层次",
+        "reference_notes": "仅使用本任务的合成场景描述；没有附图，不声称临摹特定作者"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 medium_clause，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:9dd6e7090cfd0459243e63216f3a73d05ec85183e038f80a184707c429abce92"
+}

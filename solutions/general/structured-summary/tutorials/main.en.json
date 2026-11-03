@@ -1,0 +1,38 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/general/structured-summary@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:6541343794131a020f8e9d0491cad5dd6cf3ef1e0ae5a42884197677744b2325",
+  "contract_digest": "sha256:90e9104232d46c7da088f47cb21ea064c4aaf21e705d95fb20df16e5d4e396b5",
+  "source_text": "Fictional product note: the team confirmed the Aurora widget ships on March 14. Dana owns the launch checklist. The pricing page copy is still unapproved; Mei asked for one more revision. The support runbook has not been updated yet.",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-aurora-launch",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "source_text": "source_text",
+        "target_audience": "target_audience"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Extract verifiable conclusions, facts, actions, and risks from long-form material",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "target_audience": "product team members who missed the review"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 source_text，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:ba470e6df2b8846b86cace5467f390f164b8ae278400568d814d46f0db83e2bf"
+}

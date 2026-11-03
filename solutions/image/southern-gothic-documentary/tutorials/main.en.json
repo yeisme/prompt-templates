@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/image/southern-gothic-documentary@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:822c42e6bf98bc7831259785fc9af82360351b9ebc6a8c46a985ab0c335d2f9c",
+  "contract_digest": "sha256:a29c9f097d144485066cbdcd6ebbedddaa95bad17fc09521d27f0d243845c898",
+  "source_text": "虚构活动“周末阅读角”：桌边一盏灯、一册书，安静、温暖，不使用真人或商标。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "format_clause": "Vertical 9:16 ",
+        "setting": "a neglected field behind a small Southern town, tall dry grass, an abandoned swing set, a distant church, humid cloudy afternoon",
+        "subjects": "a teenage girl in a faded pale dress and worn sneakers, solemn expression, awkward posture of adolescence"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：画面候选：以黄铜桌灯和打开的书为主体，保持无品牌；根据「南部哥特纪实摄影风格层」的风格与构图字段调整表现。这里只描述待生成画面，不展示或声称已经出图。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 面向美国南方场景的可复用安静纪实摄影风格层：湿热衰败与家族沉默；只替换人物与场景",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "format_clause": "Vertical 9:16 ",
+        "subjects": "a teenage girl in a faded pale dress and worn sneakers, solemn expression, awkward posture of adolescence"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 setting，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:5cc7d5637e383a87950b2f2bc7af24e9874d1a33994d52f767b060d5aa4df1d1"
+}

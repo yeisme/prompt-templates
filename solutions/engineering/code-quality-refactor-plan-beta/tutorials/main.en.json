@@ -1,0 +1,40 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/engineering/code-quality-refactor-plan-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:ad90fd827bf6852b20ab30f64b1f6f7439eee8afab3c2a5a27c1db4a08d645ef",
+  "contract_digest": "sha256:95831f0b6c80981097b611d0dab25aea9c0a70a2557130fa2d9925c9a245f0bd",
+  "source_text": "本次合成任务采用已验证案例 valid-basic；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-basic",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "project_constraints": "project_constraints",
+        "review_output": "review_output",
+        "test_gap_output": "test_gap_output"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Turn review findings and test gaps into a minimal confirmed refactor plan.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "review_output": "finding-unstable-error is medium",
+        "test_gap_output": "gap-error-context is medium"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 project_constraints，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:60617e35a2d90c28f6e4832c921eb8932a1771020d1172266b651d0a35228cde"
+}

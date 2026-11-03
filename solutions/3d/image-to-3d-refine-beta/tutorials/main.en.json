@@ -1,0 +1,46 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/3d/image-to-3d-refine-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:d3b347ed760e303705628fce0a016583fb597bb2e66d2ef57855e8a5b0891c0d",
+  "contract_digest": "sha256:4f312b183cf8fbf36c129e8cee5370568187e283b0f7804d88129482bb0a41b5",
+  "source_text": "一盏虚构的黄铜桌灯，圆底座、弯曲灯臂，供游戏背景评估，无品牌标记。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "consistency_targets": "底座轮廓、灯臂弧度、灯罩连接位置，不推断不可见内部结构",
+        "occlusion_policy": "inference_marked",
+        "reference_image_ref": "promptrepo://official/image/visual-exploration-starter-beta@1.0.0-beta.1?locale=en",
+        "view_strategy": "multi_view"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：设计候选：圆形底座、弯曲灯臂、简化灯罩。材质为视觉上的哑光黄铜；尺寸、拓扑与可打印性需从实际模型检查，不能由文字确认。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compile a reference-image exact ref with view, occlusion, and consistency decisions into an image-to-3D prompt package",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "occlusion_policy": "inference_marked",
+        "reference_image_ref": "promptrepo://official/image/visual-exploration-starter-beta@1.0.0-beta.1?locale=en",
+        "view_strategy": "multi_view"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 consistency_targets，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:9a34e68de660b738041e90eb96f0bfbe95848012e74c5c32f36c1fc1502d6429"
+}

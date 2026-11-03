@@ -1,0 +1,88 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/ai-drama-character-assets@1.0.0?locale=en",
+  "role": "character-layer-preview-v1",
+  "template_digest": "sha256:9869b4f784394e8b57e83f86e3440f56ad5c3d7e6bc84c5e4b87f03bea438fce",
+  "contract_digest": "sha256:60dc842594c598312ad176e384f8b17d72e0b69c19835e6a2747f73ff034ed3b",
+  "source_text": "本次合成任务采用已验证案例 lineage-exact-composite；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "input_notes": {
+    "reference_bindings_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "render_policy_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "source_refs_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "reference_bindings_json": [
+      "body_core",
+      "head_core",
+      "surface_coat",
+      "wearable"
+    ],
+    "render_policy_json": [
+      "aspect_ratio",
+      "canvas",
+      "composite",
+      "single_view"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "lineage-exact-composite",
+      "fixture_locale": "zh-CN",
+      "fixture_input_map": {
+        "output_schema_version": "output_schema_version",
+        "preview_kind": "preview_kind",
+        "reference_bindings_json": "reference_bindings_json",
+        "render_policy_json": "render_policy_json",
+        "schema_version": "schema_version",
+        "slot_id": "slot_id",
+        "source_refs_json": "source_refs_json",
+        "view_id": "view_id"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Preview the alignment of character layers before harmonization.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "preview_kind": "layer_alignment",
+        "reference_bindings_json": "{\"head_core\":[{\"ref\":\"slot:head-core-bald-v1@rev-0003\",\"inherit\":[\"read_only\"],\"forbid\":[\"rewrite\",\"extend_scope\"]}],\"body_core\":[{\"ref\":\"slot:body-core-neutral-v1@rev-0002\",\"inherit\":[\"read_only\"],\"forbid\":[\"rewrite\",\"extend_scope\"]}],\"surface_coat\":[{\"ref\":\"slot:surface-coat-hair-v1@rev-0004\",\"inherit\":[\"read_only\"],\"forbid\":[\"rewrite\",\"extend_scope\"]}],\"wearable\":[{\"ref\":\"slot:wearable-garment-v1@rev-0005\",\"inherit\":[\"read_only\"],\"forbid\":[\"rewrite\",\"extend_scope\"]}]}",
+        "render_policy_json": "{\"aspect_ratio\":\"3:2\",\"canvas\":\"transparent_rgba\",\"single_view\":true,\"composite\":\"layer_stack_echo\"}",
+        "schema_version": "eikona.character_asset_prompt_input.v2",
+        "slot_id": "preview",
+        "source_refs_json": "[{\"slot_id\":\"body_core\",\"source_version\":\"slot:body-core-neutral-v1@rev-0002\",\"artifact_digest\":\"sha256:995b22dc4023327e9188c914e6573a711e579b4871b011ed0beb4e5c5f720027\",\"view_id\":\"detail_front\"},{\"slot_id\":\"head_core\",\"source_version\":\"slot:head-core-bald-v1@rev-0003\",\"artifact_digest\":\"sha256:0f4d3d3b709b29b41183dc503062e42ab80ed2146ac034bbd0ee2870aca1d747\",\"view_id\":\"detail_front\"},{\"slot_id\":\"surface_coat\",\"source_version\":\"slot:surface-coat-hair-v1@rev-0004\",\"artifact_digest\":\"sha256:78e47cdcad87dfc087a617409a008d247f9e28d01eba2f9a894edae00b7b1d53\",\"view_id\":\"detail_front\"},{\"slot_id\":\"wearable\",\"source_version\":\"slot:wearable-garment-v1@rev-0005\",\"artifact_digest\":\"sha256:a007531ab58ee741a47988287737368e8e9f0c52e283f33de507696798fe54ff\",\"view_id\":\"detail_front\"}]",
+        "view_id": "detail_front"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 output_schema_version，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "output_schema_version": "character_asset.modular_slot_bundle.v1",
+        "preview_kind": "layer_alignment",
+        "reference_bindings_json": "[]",
+        "render_policy_json": "{\"aspect_ratio\":\"3:2\",\"canvas\":\"transparent_rgba\",\"single_view\":true,\"composite\":\"layer_stack_echo\"}",
+        "schema_version": "eikona.character_asset_prompt_input.v2",
+        "slot_id": "preview",
+        "source_refs_json": "[{\"slot_id\":\"body_core\",\"source_version\":\"slot:body-core-neutral-v1@rev-0002\",\"artifact_digest\":\"sha256:995b22dc4023327e9188c914e6573a711e579b4871b011ed0beb4e5c5f720027\",\"view_id\":\"detail_front\"},{\"slot_id\":\"head_core\",\"source_version\":\"slot:head-core-bald-v1@rev-0003\",\"artifact_digest\":\"sha256:0f4d3d3b709b29b41183dc503062e42ab80ed2146ac034bbd0ee2870aca1d747\",\"view_id\":\"detail_front\"},{\"slot_id\":\"surface_coat\",\"source_version\":\"slot:surface-coat-hair-v1@rev-0004\",\"artifact_digest\":\"sha256:78e47cdcad87dfc087a617409a008d247f9e28d01eba2f9a894edae00b7b1d53\",\"view_id\":\"detail_front\"},{\"slot_id\":\"wearable\",\"source_version\":\"slot:wearable-garment-v1@rev-0005\",\"artifact_digest\":\"sha256:a007531ab58ee741a47988287737368e8e9f0c52e283f33de507696798fe54ff\",\"view_id\":\"detail_front\"}]",
+        "view_id": "detail_front"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:ccec1fdd48a928237e1ef0040fe6edd605a23279f8ceb6df9e3b53b977f1a316"
+}

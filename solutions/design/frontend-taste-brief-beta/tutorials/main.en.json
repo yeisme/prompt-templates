@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/design/frontend-taste-brief-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:12f3c4e1bcfce2b671a86160fbaeb8aed6cd725a610b83aca91769bd5b3275df",
+  "contract_digest": "sha256:0f1d826d9e2c84dd27c577c98c9753816be8fc1630eacdfb1820958a702a8c3c",
+  "source_text": "本次合成任务采用已验证案例 valid-basic；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-basic",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "brief": "brief",
+        "constraints": "constraints",
+        "output_language": "output_language",
+        "preferences": "preferences",
+        "taste_context": "taste_context"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Frontend Taste brief",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "constraints": "Synthetic example",
+        "output_language": "Synthetic example",
+        "preferences": "Synthetic example",
+        "taste_context": "Synthetic example"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 brief，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:1bee68715c03a7a28ec1231578b5c49ad84da067ab3db8080d6b3f56a40e7212"
+}

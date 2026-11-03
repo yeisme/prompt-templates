@@ -1,0 +1,87 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/ai-drama-background-assets-v2@2.0.0?locale=en",
+  "role": "environment-harmonized-preview-v1",
+  "template_digest": "sha256:dbd83ca2dc736ee6312620e6ce8fcee0e6721f7bc9249957edf6e744d50bafd5",
+  "contract_digest": "sha256:53033d122e91250d6df9c38d66a77a9a3f63cffb15bef6cfcb1725728d66e71a",
+  "source_text": "本次合成任务采用已验证案例 env-harmonized-lineage；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "input_notes": {
+    "reference_bindings_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "render_policy_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "source_refs_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "reference_bindings_json": [
+      "environment_shell",
+      "semantic_object"
+    ],
+    "render_policy_json": [
+      "aspect_ratio",
+      "canvas",
+      "harmonize",
+      "preserve",
+      "single_view"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "env-harmonized-lineage",
+      "fixture_locale": "zh-CN",
+      "fixture_input_map": {
+        "output_schema_version": "output_schema_version",
+        "preview_kind": "preview_kind",
+        "reference_bindings_json": "reference_bindings_json",
+        "render_policy_json": "render_policy_json",
+        "schema_version": "schema_version",
+        "slot_id": "slot_id",
+        "source_refs_json": "source_refs_json",
+        "view_id": "view_id"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Review the assembled environment for visual consistency.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "preview_kind": "harmonized_read",
+        "reference_bindings_json": "{\"environment_shell\":[{\"ref\":\"slot:empty-scene-shell-v1@rev-0006\",\"inherit\":[\"read_only\"],\"forbid\":[\"rewrite\",\"extend_scope\"]}],\"semantic_object\":[{\"ref\":\"slot:semantic-object-v1@rev-0007\",\"inherit\":[\"read_only\"],\"forbid\":[\"rewrite\",\"extend_scope\"]}]}",
+        "render_policy_json": "{\"aspect_ratio\":\"16:9\",\"canvas\":\"opaque_full_canvas\",\"single_view\":true,\"harmonize\":[\"light\",\"color\"],\"preserve\":[\"anchors\",\"light_direction\",\"activity_zones\"]}",
+        "schema_version": "eikona.background_asset_prompt_input.v2",
+        "slot_id": "preview",
+        "source_refs_json": "[{\"slot_id\":\"environment_shell\",\"source_version\":\"slot:empty-scene-shell-v1@rev-0006\",\"artifact_digest\":\"sha256:c024e698d7cdd0f3ee897d7ea41d154131dead5f01667e2f2433cb969aaf4bb2\",\"view_id\":\"adaptive\"},{\"slot_id\":\"semantic_object\",\"source_version\":\"slot:semantic-object-v1@rev-0007\",\"artifact_digest\":\"sha256:c6dcc4a87e11542d39554977ee3369c08db78c2a7499cd40400a0a4ef69ddec0\",\"view_id\":\"adaptive\"}]",
+        "view_id": "adaptive"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 output_schema_version，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "output_schema_version": "character_asset.modular_slot_bundle.v1",
+        "preview_kind": "harmonized_read",
+        "reference_bindings_json": "[]",
+        "render_policy_json": "{\"aspect_ratio\":\"16:9\",\"canvas\":\"opaque_full_canvas\",\"single_view\":true,\"harmonize\":[\"light\",\"color\"],\"preserve\":[\"anchors\",\"light_direction\",\"activity_zones\"]}",
+        "schema_version": "eikona.background_asset_prompt_input.v2",
+        "slot_id": "preview",
+        "source_refs_json": "[{\"slot_id\":\"environment_shell\",\"source_version\":\"slot:empty-scene-shell-v1@rev-0006\",\"artifact_digest\":\"sha256:c024e698d7cdd0f3ee897d7ea41d154131dead5f01667e2f2433cb969aaf4bb2\",\"view_id\":\"adaptive\"},{\"slot_id\":\"semantic_object\",\"source_version\":\"slot:semantic-object-v1@rev-0007\",\"artifact_digest\":\"sha256:c6dcc4a87e11542d39554977ee3369c08db78c2a7499cd40400a0a4ef69ddec0\",\"view_id\":\"adaptive\"}]",
+        "view_id": "adaptive"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:6b00ff4d75b8f4def40634ca2d3f65a896ae54c3dac5badb94dd58205f298deb"
+}

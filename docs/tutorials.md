@@ -1,0 +1,91 @@
+# 按任务查找完整教程
+
+每个方案都有独立教程。英文角色用于 Agent 编译；历史专用角色按其领域合同交接。
+
+- **3d** · [3D 资产评审](../solutions/3d/3d-asset-review-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **3d** · [3D 打印约束](../solutions/3d/3d-printable-design-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **3d** · [3D 场景布局](../solutions/3d/3d-scene-layout-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **3d** · [图生 3D 精修](../solutions/3d/image-to-3d-refine-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **3d** · [文生 3D 单物体](../solutions/3d/text-to-3d-object-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **agent** · [数字人 Persona 系统提示词](../solutions/agent/digital-human-persona-system/docs/README.md) · `1.0.0` · `exploratory`
+- **agent** · [模板与 Skill 集成设计](../solutions/agent/template-skill-integration-design-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **agent** · [Agent 工具调用与交接](../solutions/agent/tool-use-handoff/docs/README.md) · `1.0.0` · `exploratory`
+- **audio** · [中文播客旁白](../solutions/audio/podcast-narration/docs/README.md) · `1.0.0` · `exploratory`
+- **design** · [Frontend Taste brief](../solutions/design/frontend-taste-brief-beta/docs/README.md) · `1.0.0-beta.1` · `beta`
+- **design** · [Frontend Taste review](../solutions/design/frontend-taste-review-beta/docs/README.md) · `1.0.0-beta.1` · `beta`
+- **design** · [Taste extraction](../solutions/design/taste-extract-beta/docs/README.md) · `1.0.0-beta.1` · `beta`
+- **engineering** · [Bug 根因分析](../solutions/engineering/bug-root-cause-analysis/docs/README.md) · `1.0.0` · `exploratory`
+- **engineering** · [Code quality refactor plan](../solutions/engineering/code-quality-refactor-plan-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **engineering** · [Code quality review](../solutions/engineering/code-quality-review-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **engineering** · [Code quality test-gap analysis](../solutions/engineering/code-quality-test-gap-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **general** · [结构化总结](../solutions/general/structured-summary/docs/README.md) · `1.0.0` · `exploratory`
+- **general** · [结构化总结（Agent 编译版）](../solutions/general/structured-summary-beta/docs/README.md) · `2.0.0-beta.1` · `exploratory`
+- **graph** · [Auctra 通用长篇知识图谱套件](../solutions/graph/longform.generic.v2/docs/README.md) · `1.0.0` · `first-support`
+- **image** · [ASCII 与有序抖动效果](../solutions/image/ascii-ordered-dither-effect/docs/README.md) · `1.0.0` · `exploratory`
+- **image** · [保靖西兰卡普·几何经纬](../solutions/image/baojing-xilankapu-weaving-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [真实生活摄影抓拍写真（随机矩阵）](../solutions/image/candid-portrait-matrix/docs/README.md) · `1.0.0` · `exploratory`
+- **image** · [丹寨蜡染·蓝白蜡裂](../solutions/image/danzhai-miao-batik-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [侗族大歌·鼓楼木寨夜色](../solutions/image/dong-grand-song-drum-tower-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [敦煌启发·矿物色现代画面](../solutions/image/dunhuang-tang-reinterpretation-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [杂志封面半脸肖像（高端宣传照）](../solutions/image/editorial-half-face-cover/docs/README.md) · `1.0.0` · `exploratory`
+- **image** · [凤凰苗绣·黑底彩线](../solutions/image/fenghuang-miao-embroidery-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [凤凰银匠·银白冷辉](../solutions/image/fenghuang-miao-silversmith-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [贴地姿势库（25 个参考姿势）](../solutions/image/grounded-pose-library/docs/README.md) · `1.0.0` · `exploratory`
+- **image** · [固原砖雕·黄土青砖](../solutions/image/guyuan-brick-carving-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [花垣苗绣·当代协作工坊](../solutions/image/huayuan-contemporary-embroidery-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [ICONIC LANDMARK SERIES 城市地标海报](../solutions/image/iconic-landmark-poster/docs/README.md) · `1.0.0` · `exploratory`
+- **image** · [靖西壮锦·彩纬几何节奏](../solutions/image/jingxi-zhuang-brocade-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [吉首苗鼓·鼓场动势](../solutions/image/jishou-miao-drum-dance-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [喀什木卡姆·庭院音乐](../solutions/image/kashgar-uyghur-muqam-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [捞车河·溪谷生活遗产](../solutions/image/laochehe-living-village-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [老司城·雨后考古空间](../solutions/image/laosicheng-rainy-archaeology-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [拉萨堆绣唐卡·丝层工艺](../solutions/image/lhasa-applique-thangka-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [里耶秦简·县政文书](../solutions/image/liye-qin-administration-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [龙胜红瑶·红黑环境肖像](../solutions/image/longsheng-red-yao-portrait-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [蒙古长调·草原风与长线条](../solutions/image/mongolian-long-song-steppe-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [新英格兰哥特纪实摄影风格层](../solutions/image/new-england-gothic-documentary/docs/README.md) · `1.0.0` · `exploratory`
+- **image** · [Pixel Battle Sprite Sheet (4x4)](../solutions/image/pixel-battle-sprite/docs/README.md) · `1.0.0` · `exploratory`
+- **image** · [Popular Science Encyclopedia Infographic](../solutions/image/pop-science-encyclopedia/docs/README.md) · `1.0.0` · `exploratory`
+- **image** · [精调参数化抓拍镜头](../solutions/image/precision-candid-shot/docs/README.md) · `1.0.0` · `exploratory`
+- **image** · [石堰坪·层叠吊脚木楼](../solutions/image/shiyanping-stilt-houses-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [南部哥特纪实摄影风格层](../solutions/image/southern-gothic-documentary/docs/README.md) · `1.0.0` · `exploratory`
+- **image** · [南部哥特风格包](../solutions/image/southern-gothic-style-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [风格×场景×主题配对编译器](../solutions/image/style-scene-pairing-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [三方向视觉探索入门包](../solutions/image/visual-exploration-starter-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [小红书产品封面](../solutions/image/xhs-product-cover/docs/README.md) · `1.0.0` · `exploratory`
+- **image** · [小红书产品封面 v2](../solutions/image/xhs-product-cover-v2/docs/README.md) · `2.0.0` · `exploratory`
+- **image** · [Xianxia Hazy Fantasy Style Layer](../solutions/image/xianxia-hazy-fantasy/docs/README.md) · `1.0.0` · `exploratory`
+- **image** · [喜德彝漆·红黄黑器物](../solutions/image/xide-yi-lacquerware-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **image** · [永顺摆手·群体节序](../solutions/image/yongshun-baishou-dance-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **learning** · [苏格拉底式学习计划](../solutions/learning/socratic-study-plan/docs/README.md) · `1.0.0` · `exploratory`
+- **marketing** · [小红书活动文案](../solutions/marketing/xhs-campaign-copy/docs/README.md) · `1.0.0` · `exploratory`
+- **office** · [会议行动纪要](../solutions/office/meeting-action-summary/docs/README.md) · `1.0.0` · `exploratory`
+- **office** · [会议行动纪要（Agent 编译版）](../solutions/office/meeting-action-summary-beta/docs/README.md) · `2.0.0-beta.1` · `exploratory`
+- **product** · [PRD 与验收标准](../solutions/product/prd-acceptance-criteria/docs/README.md) · `1.0.0` · `exploratory`
+- **research** · [证据型研究简报](../solutions/research/evidence-research-brief/docs/README.md) · `1.0.0` · `exploratory`
+- **research** · [证据研究简报（Agent 编译版）](../solutions/research/evidence-research-brief-beta/docs/README.md) · `2.0.0-beta.1` · `exploratory`
+- **video** · [AI 做剧空场景背景资产](../solutions/video/ai-drama-background-assets/docs/README.md) · `1.0.0` · `exploratory`
+- **video** · [AI 做剧模块化环境资产 v2](../solutions/video/ai-drama-background-assets-v2/docs/README.md) · `2.0.0` · `exploratory`
+- **video** · [AI 做剧模块化角色资产](../solutions/video/ai-drama-character-assets/docs/README.md) · `1.0.0` · `exploratory`
+- **video** · [AI Drama Shot Video Generation](../solutions/video/ai-drama-shot-video-generation/docs/README.md) · `1.0.0` · `exploratory`
+- **video** · [AI 短剧分镜拆解](../solutions/video/ai-drama-storyboard-breakdown/docs/README.md) · `1.0.0` · `exploratory`
+- **video** · [AI 电影多 Profile 生产编译](../solutions/video/ai-film-multi-profile-production/docs/README.md) · `1.0.0` · `exploratory`
+- **video** · [Auctra 创作分镜计划](../solutions/video/auctra-creative-storyboard-plan/docs/README.md) · `1.0.0` · `exploratory`
+- **video** · [Cinematique 镜头技术提示词库](../solutions/video/cinematique-shot-techniques-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **video** · [电影级穿越机刀战视频生成](../solutions/video/fpv-sword-duel-generation-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **video** · [穿搭拼贴首帧 + 卡点换装视频导演](../solutions/video/outfit-collage-transition-director/docs/README.md) · `1.0.0` · `exploratory`
+- **video** · [产品宣传片 Brief 与镜头设计](../solutions/video/product-promo-shot-design-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **video** · [Realistic Diary Vlog Generation](../solutions/video/realistic-diary-vlog-generation/docs/README.md) · `1.0.0` · `exploratory`
+- **video** · [Realistic Docu-Vlog Generation](../solutions/video/realistic-docu-vlog-generation/docs/README.md) · `1.0.0` · `exploratory`
+- **video** · [Realistic Fight Scene Generation](../solutions/video/realistic-fight-scene-generation/docs/README.md) · `1.0.0` · `exploratory`
+- **video** · [Realistic Vlog Shot Generation](../solutions/video/realistic-vlog-shot-generation/docs/README.md) · `1.0.0` · `exploratory`
+- **video** · [短剧人物一致性镜头](../solutions/video/short-drama-character-consistency/docs/README.md) · `1.0.0` · `exploratory`
+- **video** · [视频提示词编译（模型无关）](../solutions/video/video-prompt-optimization-beta/docs/README.md) · `1.0.0-beta.1` · `exploratory`
+- **writing** · [AI 做剧人物引擎](../solutions/writing/ai-drama-character-engine/docs/README.md) · `1.0.0` · `exploratory`
+- **writing** · [AI 做剧评审团](../solutions/writing/ai-drama-critic-review/docs/README.md) · `1.0.0` · `exploratory`
+- **writing** · [AI 做剧形态与类型策略](../solutions/writing/ai-drama-format-strategy/docs/README.md) · `1.0.0` · `exploratory`
+- **writing** · [AI 做剧场景写作](../solutions/writing/ai-drama-scene-writing/docs/README.md) · `1.0.0` · `exploratory`
+- **writing** · [AI 做剧分集规划](../solutions/writing/ai-drama-showrunner/docs/README.md) · `1.0.0` · `exploratory`
+- **writing** · [AI 做剧故事架构](../solutions/writing/ai-drama-story-architecture/docs/README.md) · `1.0.0` · `exploratory`
+- **writing** · [长文结构大纲](../solutions/writing/longform-outline/docs/README.md) · `1.0.0` · `exploratory`
+- **writing** · [文本修订助手](../solutions/writing/revision-assistant/docs/README.md) · `1.0.0` · `exploratory`

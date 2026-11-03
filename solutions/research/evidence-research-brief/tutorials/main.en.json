@@ -1,0 +1,40 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/research/evidence-research-brief@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:184b8eaed95e188c64eb3c0ce5f780052a6c16ea19009379682f565bae470152",
+  "contract_digest": "sha256:ef75358d2acfa5671da825208698d688ed50a36463f703362ef39dfb25044189",
+  "source_text": "Fictional sources. [1] Vendor benchmark report, 2026-08-12: database X handled the simulated telemetry load with lower tail latency (table 3). [2] Internal pilot log, 2026-08-30: no data loss observed over 400 hours.",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-telemetry-trial",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "decision_maker": "decision_maker",
+        "research_question": "research_question",
+        "sources": "sources"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Create a research brief that separates facts, inference, counterevidence, and limitations",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "research_question": "Should the fictional team adopt database X for the new telemetry service?",
+        "sources": "Fictional sources. [1] Vendor benchmark report, 2026-08-12: database X handled the simulated telemetry load with lower tail latency (table 3). [2] Internal pilot log, 2026-08-30: no data loss observed over 400 hours."
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 decision_maker，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:ab12e6e04e4394321d017b9dd93743761c31f7ff2b0ebedc1817e84e0ddbbcdd"
+}

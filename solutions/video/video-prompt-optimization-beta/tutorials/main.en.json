@@ -1,0 +1,56 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/video-prompt-optimization-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:9a2ca7a6a7a6361db5891b6eb6f99aa9430a0235a5566c05e02a1d9d0f3b0625",
+  "contract_digest": "sha256:3e01a7597d5ba22f6aba6bfd508e31f19ebe59f42b33abea2a67eef2f0779230",
+  "source_text": "30 秒短片：进入阅读角、翻开书、停在灯光下；不含真实人物、品牌或未授权音乐。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "dialogue_script": "林舟：“这封信还没有寄出去。”顾遥：“先看看地址是否仍然存在。”",
+        "duration_budget": "30 seconds",
+        "extra_constraints": "不使用真实品牌、未授权音乐或未经确认的资产；缺项标为待补",
+        "generation_mode": "t2v",
+        "media_reference_syntax": "@image1 指代用户提供且已核对的首帧；示例引用为合成标识",
+        "output_language": "zh",
+        "reference_manifest": "@image1: 合成首帧；@image2: 合成服装参考；真实使用必须先导入对应素材",
+        "source_brief": "30 秒短片：进入阅读角、翻开书、停在灯光下；不含真实人物、品牌或未授权音乐。",
+        "style_requirements": "自然光、克制色彩、清晰动作；同一人物和场景保持连续性"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：镜头方案候选：0–8 秒进入阅读角，8–20 秒翻书并展示环境，20–30 秒停留灯下。声音和身份连续性需逐镜核对；没有实际视频产物。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 把粗略分镜或故事概要编译成一条扩散类音视频联合生成模型可直接提交的提示词正文：正向排除、声音与器物纪律、时长与逐句语速核算，平台差异经输入变量声明",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "dialogue_script": "林舟：“这封信还没有寄出去。”顾遥：“先看看地址是否仍然存在。”",
+        "duration_budget": "30 seconds",
+        "extra_constraints": "不使用真实品牌、未授权音乐或未经确认的资产；缺项标为待补",
+        "generation_mode": "t2v",
+        "media_reference_syntax": "@image1 指代用户提供且已核对的首帧；示例引用为合成标识",
+        "output_language": "zh",
+        "reference_manifest": "@image1: 合成首帧；@image2: 合成服装参考；真实使用必须先导入对应素材",
+        "style_requirements": "自然光、克制色彩、清晰动作；同一人物和场景保持连续性"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 source_brief，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:8d47c40145217e17664af7e899d3825468c2bf7f59099777c51314a87ad8c83d"
+}

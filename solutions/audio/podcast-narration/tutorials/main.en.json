@@ -1,0 +1,48 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/audio/podcast-narration@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:4d742108009319a196d73cf23632a50029b28ea7fd8d19965876679a7251c212",
+  "contract_digest": "sha256:5b9bb4bf383396f377f21258566b96ce49605a23e183c34eac9b4a932d65d6e6",
+  "source_text": "欢迎来到周末阅读角。请放慢脚步，选一本书，为自己留十分钟。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "audience": "初次了解该项目的读者",
+        "duration": "30 seconds",
+        "script": "欢迎来到周末阅读角。请放慢脚步，选一本书，为自己留十分钟。",
+        "show_positioning": "面向首次到访读者的社区阅读短播客，每期只讨论一个阅读习惯",
+        "tone": "清楚、平静"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：旁白候选：“欢迎来到周末阅读角。”短暂停顿。“选一本书，为自己留十分钟。”语气平静，声音身份和使用权仍待确认。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Convert Chinese scripts into podcast narration with pacing, pauses, emphasis, and pronunciation guidance",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "duration": "30 seconds",
+        "script": "欢迎来到周末阅读角。请放慢脚步，选一本书，为自己留十分钟。",
+        "show_positioning": "面向首次到访读者的社区阅读短播客，每期只讨论一个阅读习惯",
+        "tone": "清楚、平静"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 audience，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:7932b0ea14fb68b62147e8af3006bdb6a3770bf8081c3efa09ec3543ceabd488"
+}

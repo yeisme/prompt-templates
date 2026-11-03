@@ -1,0 +1,46 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/image/xianxia-hazy-fantasy@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:c03ef9bf2ee48ee973bdbfdf6ddc0f38ed083fec7563e4c3afba121ceabcd43e",
+  "contract_digest": "sha256:70b55bf25b30c73487b57006f72509c555b8f815aedccdf6149c6905bf60385f",
+  "source_text": "虚构活动“周末阅读角”：桌边一盏灯、一册书，安静、温暖，不使用真人或商标。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "format_clause": "Vertical 9:16 ",
+        "persona": "A white-robed sword immortal",
+        "reference_mist_block": " A soft-mist filter with a faint old-film glow, as if viewed through a thin veil — contours never fully sharp, warm green and pale pink bleeding into each other, a watery vapor feel, pearl-soft highlights, a quiet, ambiguous, elusive maidenly emotion, the reserved grace of classical Eastern femininity.",
+        "scene": "above a cloud-sea immortal sect"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：画面候选：以黄铜桌灯和打开的书为主体，保持无品牌；根据「Xianxia Hazy Fantasy Style Layer」的风格与构图字段调整表现。这里只描述待生成画面，不展示或声称已经出图。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Reusable soft-mist low-saturation backlight style layer for cultivation/xianxia character images; swap only persona and scene",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "format_clause": "Vertical 9:16 ",
+        "reference_mist_block": " A soft-mist filter with a faint old-film glow, as if viewed through a thin veil — contours never fully sharp, warm green and pale pink bleeding into each other, a watery vapor feel, pearl-soft highlights, a quiet, ambiguous, elusive maidenly emotion, the reserved grace of classical Eastern femininity.",
+        "scene": "above a cloud-sea immortal sect"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 persona，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:b19de0ce2e556258c5016b5c0134f7e4ba099e92ff59855bfea998df313a1dee"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/ai-drama-background-assets@1.0.0?locale=en",
+  "role": "clean-background-plate-v1",
+  "template_digest": "sha256:8ebdd13d6c01b6d04d5be0ad671adf5e7682cc3eb01afbc34ed91e819d10d3b8",
+  "contract_digest": "sha256:d7014213a123e82a3925f47714b409a2a0ce9adbe2090f25054a267fb3d94cb8",
+  "source_text": "30 秒短片：进入阅读角、翻开书、停在灯光下；不含真实人物、品牌或未授权音乐。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "activity_zone": "画面中央留出宽两米的净空，不摆放家具或悬挂物",
+        "aspect_ratio": "16:9",
+        "camera": "eye-level medium shot, 50 mm equivalent, fixed position south of the action axis",
+        "lighting": "左前方柔和天光，右侧弱反射补光，阴影方向保持一致",
+        "location_anchor": "北侧木门、东侧石墙和中央地砖交点作为空间锚点",
+        "time_weather": "阴天傍晚；地面干燥，无雨雪特效"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：镜头方案候选：0–8 秒进入阅读角，8–20 秒翻书并展示环境，20–30 秒停留灯下。声音和身份连续性需逐镜核对；没有实际视频产物。",
+        "role": "clean-background-plate-v1"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Create a subject-free background plate for shot composition.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "aspect_ratio": "16:9",
+        "camera": "eye-level medium shot, 50 mm equivalent, fixed position south of the action axis",
+        "lighting": "左前方柔和天光，右侧弱反射补光，阴影方向保持一致",
+        "location_anchor": "北侧木门、东侧石墙和中央地砖交点作为空间锚点",
+        "time_weather": "阴天傍晚；地面干燥，无雨雪特效"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 activity_zone，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:60b983294aa2a8d6bc831ff795b911c254114ce866aa44ce809211e79651bbcc"
+}

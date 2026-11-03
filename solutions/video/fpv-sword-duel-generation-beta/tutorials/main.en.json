@@ -1,0 +1,102 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/fpv-sword-duel-generation-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:a955f44f2c0ba6c7b924862f356a00ee3e7ee42f898fc748590443b69a3b431c",
+  "contract_digest": "sha256:2f55a7e8141873c2213b6bc1951bbd5e3cf842631341c2f6548f27449db5960b",
+  "source_text": "30 秒短片：进入阅读角、翻开书、停在灯光下；不含真实人物、品牌或未授权音乐。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "action_principles": "draws, slashes, blocks, slips, counters, sheaths, pursuit; fast and stylish",
+        "aspect_ratio": "16:9",
+        "audio_design": "synced steel, cloth, footwork, stone, dust, banners, breath; no dialogue",
+        "camera_language": "FPV close orbit, low orbit, rear-side cut, ground skim, thread between fighters, spiral on clash",
+        "camera_motion_rules": "fast but readable; never chaotic flying; short impact shake aligned with force",
+        "character_dynamics": "A presses with continuous pursuit; B is precise, defensive, stylish, suppressed but unbeaten",
+        "clash_vfx": "sparks, transparent shock rings, black and cold-white tearing, stone burst, banner rip, dust wave",
+        "dual_consistency_lock": "strictly inherit first-frame faces, bodies, wardrobe; never swap identities",
+        "duration_s": 30,
+        "ending_directive": "B almost kneels then recovers; A stands with advantage; FPV pull-back to unresolved standoff",
+        "environment_destruction": "tiles crack, pillars split, beams burst, banners tear, stones fly, dust waves with mass",
+        "fight_arc": "A opens aggressive, B is forced onto defense, B's one stylish counter is broken, unresolved standoff",
+        "fight_beats": "0–3 秒站位试探；3–7 秒一次格挡；7–10 秒退步拉开距离；没有伤口特写",
+        "fighter_a_identity": "虚构成年训练者 A，深蓝训练服，左手持软质短刀",
+        "fighter_a_vfx": "black ink-wind afterimages, dark-grey torn air, thread-like blade qi, black-feather debris",
+        "fighter_b_identity": "虚构成年训练者 B，灰色训练服，右手持软质长刀",
+        "fighter_b_vfx": "cold-white vacuum cuts, silver transparent arcs, thin air-slash lines, faint white afterimages",
+        "final_feel": "high-end action demo: fast, stylish, VFX-heavy, readable, cinematic not cheap xianxia glow",
+        "first_frame_hold_s": "0.3",
+        "first_frame_ref": "@image1",
+        "footage_style": "16:9 cinematic photoreal live-action, strict 30s, 24fps",
+        "frame_rate": "24fps",
+        "lighting_palette": "hard-edge sunlight through broken roofs, volumetric dust, cold metal highlights",
+        "negative_prompts": "no sluggish motion, standing duels, front-face holds, magic orbs, laser cannons, knockout, gore, scene change",
+        "provider_banner": "Made with Seedance 2.5",
+        "quality_profile": "UE5-level lighting, PBR materials, fine cloth hair dust stone and metal sparks",
+        "resolution": "1080p",
+        "scenario_summary": "成年访客走进虚构阅读角，翻开书，停在窗边灯光下",
+        "scene_desc": "虚构训练庭院，平整地面、石墙和一个木门，无围观人群",
+        "scene_layout": "两人相距两米沿东西轴站立，木门位于北侧，镜头留在南侧",
+        "style_reference": "fast close-range high-pressure action-demo temperament; inherit lens language only",
+        "vfx_binding_rules": "every important cut binds aura to blade path, body rotation, footwork, clash, and debris"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：镜头方案候选：0–8 秒进入阅读角，8–20 秒翻书并展示环境，20–30 秒停留灯下。声音和身份连续性需逐镜核对；没有实际视频产物。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compile first-frame lock, dual blade-VFX palettes, FPV-orbit camera, readable sword choreography, and a suppression-without-defeat arc into a duel prompt for direct video-model delivery",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "aspect_ratio": "16:9",
+        "audio_design": "synced steel, cloth, footwork, stone, dust, banners, breath; no dialogue",
+        "camera_language": "FPV close orbit, low orbit, rear-side cut, ground skim, thread between fighters, spiral on clash",
+        "camera_motion_rules": "fast but readable; never chaotic flying; short impact shake aligned with force",
+        "character_dynamics": "A presses with continuous pursuit; B is precise, defensive, stylish, suppressed but unbeaten",
+        "clash_vfx": "sparks, transparent shock rings, black and cold-white tearing, stone burst, banner rip, dust wave",
+        "dual_consistency_lock": "strictly inherit first-frame faces, bodies, wardrobe; never swap identities",
+        "duration_s": 30,
+        "ending_directive": "B almost kneels then recovers; A stands with advantage; FPV pull-back to unresolved standoff",
+        "environment_destruction": "tiles crack, pillars split, beams burst, banners tear, stones fly, dust waves with mass",
+        "fight_arc": "A opens aggressive, B is forced onto defense, B's one stylish counter is broken, unresolved standoff",
+        "fight_beats": "0–3 秒站位试探；3–7 秒一次格挡；7–10 秒退步拉开距离；没有伤口特写",
+        "fighter_a_identity": "虚构成年训练者 A，深蓝训练服，左手持软质短刀",
+        "fighter_a_vfx": "black ink-wind afterimages, dark-grey torn air, thread-like blade qi, black-feather debris",
+        "fighter_b_identity": "虚构成年训练者 B，灰色训练服，右手持软质长刀",
+        "fighter_b_vfx": "cold-white vacuum cuts, silver transparent arcs, thin air-slash lines, faint white afterimages",
+        "final_feel": "high-end action demo: fast, stylish, VFX-heavy, readable, cinematic not cheap xianxia glow",
+        "first_frame_hold_s": "0.3",
+        "first_frame_ref": "@image1",
+        "footage_style": "16:9 cinematic photoreal live-action, strict 30s, 24fps",
+        "frame_rate": "24fps",
+        "lighting_palette": "hard-edge sunlight through broken roofs, volumetric dust, cold metal highlights",
+        "negative_prompts": "no sluggish motion, standing duels, front-face holds, magic orbs, laser cannons, knockout, gore, scene change",
+        "provider_banner": "Made with Seedance 2.5",
+        "quality_profile": "UE5-level lighting, PBR materials, fine cloth hair dust stone and metal sparks",
+        "resolution": "1080p",
+        "scenario_summary": "成年访客走进虚构阅读角，翻开书，停在窗边灯光下",
+        "scene_desc": "虚构训练庭院，平整地面、石墙和一个木门，无围观人群",
+        "scene_layout": "两人相距两米沿东西轴站立，木门位于北侧，镜头留在南侧",
+        "style_reference": "fast close-range high-pressure action-demo temperament; inherit lens language only",
+        "vfx_binding_rules": "every important cut binds aura to blade path, body rotation, footwork, clash, and debris"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 action_principles，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:82ba756d226f0e09eeb7a164aad24fb92cefad29a7c8918ca1899804e29f91f4"
+}

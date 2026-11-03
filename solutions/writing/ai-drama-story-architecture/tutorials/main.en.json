@@ -1,0 +1,91 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/writing/ai-drama-story-architecture@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:2177ab4f05c5edcf0a37aa288bb5ce485d1e48faa0dc4a0ebe0a0fd3f3a38b95",
+  "contract_digest": "sha256:e5297c7b6173825ab68ed018ad93bcc9108f315e77181e6e92226ddb024a769b",
+  "source_text": "林舟在旧车站发现一封未寄出的信；他想联系写信人，但只知道信封上的旧地址。",
+  "input_notes": {
+    "canon_snapshot_json": "全新虚构项目尚无已接受正史；人物和故事候选由本轮 brief 提供，因此空初始正史合法。",
+    "creative_brief_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "format_contract_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "task_delta_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "creative_brief_json": [
+      "audience",
+      "duration_seconds",
+      "genre",
+      "medium",
+      "target_emotion"
+    ],
+    "format_contract_json": [
+      "aspect_ratio",
+      "episode_duration_seconds",
+      "format",
+      "story_unit"
+    ],
+    "task_delta_json": [
+      "allowed_changes",
+      "decision",
+      "preserve",
+      "scope"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "canon_snapshot_json": "{}",
+        "creative_brief_json": "{\"genre\":\"生活悬疑\",\"audience\":\"成年观众\",\"medium\":\"短剧\",\"duration_seconds\":90,\"target_emotion\":\"克制的好奇\"}",
+        "format_contract_json": "{\"format\":\"vertical-short-drama\",\"aspect_ratio\":\"9:16\",\"episode_duration_seconds\":90,\"story_unit\":\"一场对话中的决定\"}",
+        "output_schema_version": "ai-drama-story-architecture-semantic-output-v1",
+        "task_delta_json": "{\"scope\":[\"station-01\"],\"allowed_changes\":[\"对话表达\",\"动作节奏\"],\"preserve\":[\"旧地址是唯一已知线索\"],\"decision\":\"是否先核对地址\"}"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：人物已知：林舟知道旧地址，不知道写信人的现状。候选行动：核对地址来源。此行动是创作建议，尚未进入正史。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Turn a story idea into a verifiable dramatic structure with a conflict chain and ten-field beat cards",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "creative_brief_json": "{\"genre\":\"生活悬疑\",\"audience\":\"成年观众\",\"medium\":\"短剧\",\"duration_seconds\":90,\"target_emotion\":\"克制的好奇\"}",
+        "format_contract_json": "{\"format\":\"vertical-short-drama\",\"aspect_ratio\":\"9:16\",\"episode_duration_seconds\":90,\"story_unit\":\"一场对话中的决定\"}",
+        "output_schema_version": "ai-drama-story-architecture-semantic-output-v1",
+        "task_delta_json": "{\"scope\":[\"station-01\"],\"allowed_changes\":[\"对话表达\",\"动作节奏\"],\"preserve\":[\"旧地址是唯一已知线索\"],\"decision\":\"是否先核对地址\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 canon_snapshot_json，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "canon_snapshot_json": "{}",
+        "creative_brief_json": "[]",
+        "format_contract_json": "{\"format\":\"vertical-short-drama\",\"aspect_ratio\":\"9:16\",\"episode_duration_seconds\":90,\"story_unit\":\"一场对话中的决定\"}",
+        "output_schema_version": "ai-drama-story-architecture-semantic-output-v1",
+        "task_delta_json": "{\"scope\":[\"station-01\"],\"allowed_changes\":[\"对话表达\",\"动作节奏\"],\"preserve\":[\"旧地址是唯一已知线索\"],\"decision\":\"是否先核对地址\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:d1741cf6f880b898b722c71d5053e9522dfff32d1ee1ec4768ee8406c71b89a3"
+}

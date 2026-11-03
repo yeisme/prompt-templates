@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/audio/podcast-narration@1.0.0?locale=en",
+  "role": "delivery",
+  "template_digest": "sha256:5cbd2160706f59e7f945fde3c02cf44ee71b43c5da3d0ac75785fb16648aae77",
+  "contract_digest": "sha256:154163b834cfc91b55bb4973b759b7355bbde131e62a54f8d195ba671b472a43",
+  "source_text": "大家好，这里是测试播客。本期我们聊聊一个虚构的小工具：晨间清单。它只做一件事：每天早上列出三件最重要的事。没有其他功能，也不承诺提高收入。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-morning-checklist",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "audience": "audience",
+        "duration": "duration",
+        "script": "script",
+        "show_positioning": "show_positioning",
+        "tone": "tone"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Prepare a structured handoff to the consuming production tool.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "duration": "8 minutes",
+        "script": "大家好，这里是测试播客。本期我们聊聊一个虚构的小工具：晨间清单。它只做一件事：每天早上列出三件最重要的事。没有其他功能，也不承诺提高收入。",
+        "show_positioning": "a calm weekly tech digest",
+        "tone": "warm and unhurried"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 audience，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:4957245db78da7a75b3fdd0a87fbc84d1884282e6fa26a5015c3fc4275640010"
+}

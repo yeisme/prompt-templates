@@ -1,0 +1,88 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/writing/ai-drama-format-strategy@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:28181a6362f459ce9145bbf674812e33581cbec058fea659b5382ecf0cdb9915",
+  "contract_digest": "sha256:49d2485e9015021ad4caad3f3a2c55632dd80e1a830fd5a6a2d6535c2bf01bc5",
+  "source_text": "林舟在旧车站发现一封未寄出的信；他想联系写信人，但只知道信封上的旧地址。",
+  "input_notes": {
+    "creative_brief_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "genre_preferences_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "production_capability_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "creative_brief_json": [
+      "audience",
+      "duration_seconds",
+      "genre",
+      "medium",
+      "target_emotion"
+    ],
+    "genre_preferences_json": [
+      "exclude",
+      "primary",
+      "secondary",
+      "subversion"
+    ],
+    "production_capability_json": [
+      "budget_tier",
+      "characters",
+      "delivery",
+      "information_density",
+      "locations"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "creative_brief_json": "{\"genre\":\"生活悬疑\",\"audience\":\"成年观众\",\"medium\":\"短剧\",\"duration_seconds\":90,\"target_emotion\":\"克制的好奇\"}",
+        "genre_preferences_json": "{\"primary\":\"生活悬疑\",\"secondary\":\"人物关系\",\"exclude\":[\"超自然解释\"],\"subversion\":\"答案来自可追溯的日常线索\"}",
+        "output_schema_version": "ai-drama-format-strategy-semantic-output-v1",
+        "production_capability_json": "{\"budget_tier\":\"small\",\"locations\":1,\"characters\":2,\"delivery\":\"90-second script\",\"information_density\":\"low\"}"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：人物已知：林舟知道旧地址，不知道写信人的现状。候选行动：核对地址来源。此行动是创作建议，尚未进入正史。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Select the carrying format profile, genre lens, audience promise, and structural cadence before story planning",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "genre_preferences_json": "{\"primary\":\"生活悬疑\",\"secondary\":\"人物关系\",\"exclude\":[\"超自然解释\"],\"subversion\":\"答案来自可追溯的日常线索\"}",
+        "output_schema_version": "ai-drama-format-strategy-semantic-output-v1",
+        "production_capability_json": "{\"budget_tier\":\"small\",\"locations\":1,\"characters\":2,\"delivery\":\"90-second script\",\"information_density\":\"low\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 creative_brief_json，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "creative_brief_json": "[]",
+        "genre_preferences_json": "{\"primary\":\"生活悬疑\",\"secondary\":\"人物关系\",\"exclude\":[\"超自然解释\"],\"subversion\":\"答案来自可追溯的日常线索\"}",
+        "output_schema_version": "ai-drama-format-strategy-semantic-output-v1",
+        "production_capability_json": "{\"budget_tier\":\"small\",\"locations\":1,\"characters\":2,\"delivery\":\"90-second script\",\"information_density\":\"low\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:59c2a44c955415106fb5949c2012f61bfae7622e5895024839eb7ff35d3f2c3e"
+}

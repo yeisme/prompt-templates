@@ -1,0 +1,110 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/ai-drama-background-assets-v2@2.0.0?locale=en",
+  "role": "semantic-object-v1",
+  "template_digest": "sha256:58ab7067e03c1ef08aa06281b96f7524abbedc0cee63031e8dd5f1ecce71f441",
+  "contract_digest": "sha256:a8f3b1c8035cf524a54e72191a79026d4d9f215ec62554e26cb726aec0b59d94",
+  "source_text": "本次合成任务采用已验证案例 adaptive-view-plan-reasoned；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "input_notes": {
+    "design_spec_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "reference_bindings_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "render_policy_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "style_profile_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "view_plan_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "design_spec_json": [
+      "forbid",
+      "geometry",
+      "grip",
+      "inherit",
+      "material",
+      "movable",
+      "object",
+      "required_evidence",
+      "scale_anchor",
+      "state",
+      "states",
+      "view_plan"
+    ],
+    "reference_bindings_json": [
+      "style_source"
+    ],
+    "render_policy_json": [
+      "aspect_ratio",
+      "canvas",
+      "edge",
+      "single_view"
+    ],
+    "style_profile_json": [
+      "forbidden",
+      "light",
+      "palette",
+      "stroke"
+    ],
+    "view_plan_json": [
+      "view"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "adaptive-view-plan-reasoned",
+      "fixture_locale": "zh-CN",
+      "fixture_input_map": {
+        "design_spec_json": "design_spec_json",
+        "output_schema_version": "output_schema_version",
+        "reference_bindings_json": "reference_bindings_json",
+        "render_policy_json": "render_policy_json",
+        "schema_version": "schema_version",
+        "slot_id": "slot_id",
+        "style_profile_json": "style_profile_json",
+        "view_plan_json": "view_plan_json"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Create a separately reusable environment object.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "output_schema_version": "character_asset.modular_slot_bundle.v1",
+        "reference_bindings_json": "{\"style_source\":[{\"ref\":\"reference:style-ink-wash-01@v1\",\"inherit\":[\"color_palette\",\"material_rendering\"],\"forbid\":[\"creator_identity\",\"protected_works\",\"human_figure\"]}]}",
+        "render_policy_json": "{\"aspect_ratio\":\"3:2\",\"canvas\":\"transparent_rgba\",\"single_view\":true,\"edge\":\"anti_aliased\"}",
+        "schema_version": "eikona.background_asset_prompt_input.v2",
+        "slot_id": "semantic_object",
+        "style_profile_json": "{\"palette\":\"低饱和墨青与月白\",\"stroke\":\"柔边写实\",\"light\":\"均匀柔光\",\"forbidden\":[\"在世创作者复刻\",\"受保护作品风格\"]}",
+        "view_plan_json": "{\"view\":{\"view_id\":\"side_full\",\"reason\":\"长条对称物件，侧视一图锁定全长与刃口，正反面差异可忽略\"}}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 design_spec_json，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "design_spec_json": "[]",
+        "output_schema_version": "character_asset.modular_slot_bundle.v1",
+        "reference_bindings_json": "{\"style_source\":[{\"ref\":\"reference:style-ink-wash-01@v1\",\"inherit\":[\"color_palette\",\"material_rendering\"],\"forbid\":[\"creator_identity\",\"protected_works\",\"human_figure\"]}]}",
+        "render_policy_json": "{\"aspect_ratio\":\"3:2\",\"canvas\":\"transparent_rgba\",\"single_view\":true,\"edge\":\"anti_aliased\"}",
+        "schema_version": "eikona.background_asset_prompt_input.v2",
+        "slot_id": "semantic_object",
+        "style_profile_json": "{\"palette\":\"低饱和墨青与月白\",\"stroke\":\"柔边写实\",\"light\":\"均匀柔光\",\"forbidden\":[\"在世创作者复刻\",\"受保护作品风格\"]}",
+        "view_plan_json": "{\"view\":{\"view_id\":\"side_full\",\"reason\":\"长条对称物件，侧视一图锁定全长与刃口，正反面差异可忽略\"}}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:0b4e5c7b069da8a0f633b4a2bedf7bf0940b694e20d0b42c8e99020ab9c88b88"
+}

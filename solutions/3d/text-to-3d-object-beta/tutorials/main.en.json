@@ -1,0 +1,50 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/3d/text-to-3d-object-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:16eb62304bc86f0b19fc53ce57d7cb9ab568d82ab81458e7be4055ca468ef337",
+  "contract_digest": "sha256:9aaf0009bd5959a28d580cc32e1658346065944d5e68392713aea732aa299412",
+  "source_text": "一盏虚构的黄铜桌灯，圆底座、弯曲灯臂，供游戏背景评估，无品牌标记。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "material_notes": "哑光黄铜外观，仅为视觉说明",
+        "poly_budget": "low",
+        "purpose": "game",
+        "style": "温暖、克制、清晰",
+        "subject": "虚构的黄铜桌灯与打开的书",
+        "symmetry": "none"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：设计候选：圆形底座、弯曲灯臂、简化灯罩。材质为视觉上的哑光黄铜；尺寸、拓扑与可打印性需从实际模型检查，不能由文字确认。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compile a confirmed subject, purpose, style, and constraints into a provider-neutral text-to-3D prompt package",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "material_notes": "哑光黄铜外观，仅为视觉说明",
+        "purpose": "game",
+        "style": "温暖、克制、清晰",
+        "subject": "虚构的黄铜桌灯与打开的书",
+        "symmetry": "none"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 poly_budget，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:be83a43cbe00b11b797bd9ccff2f27d561c760694057717e2d4fee307b2b743f"
+}

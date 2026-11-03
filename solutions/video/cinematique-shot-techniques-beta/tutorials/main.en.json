@@ -1,0 +1,52 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/cinematique-shot-techniques-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:efb203ef80aa727fc85fea0ae008f753d052b2025cc707f576c66364fb499035",
+  "contract_digest": "sha256:b76f2564174f6ea1ae45191d9d661b6b9b635b035a78f59894041c730ccff388",
+  "source_text": "30 秒短片：进入阅读角、翻开书、停在灯光下；不含真实人物、品牌或未授权音乐。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "extra_directives": "保留用户已给事实；新增构图建议标为候选，不引入额外角色",
+        "negative_prompts": "不出现商标、额外人物或未提供的事实",
+        "subject": "虚构的黄铜桌灯与打开的书",
+        "target": "video",
+        "technique_id": "360-degree-shot",
+        "technique_name": "Backlight silhouette reveal",
+        "technique_prompt_bound": "Place a soft backlight behind the adult subject, preserve the face outline, and reveal the room without an abrupt exposure jump."
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：镜头方案候选：0–8 秒进入阅读角，8–20 秒翻书并展示环境，20–30 秒停留灯下。声音和身份连续性需逐镜核对；没有实际视频产物。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Render one of 150 vendored cinematography techniques (camera, lighting, composition, editing, storytelling, FX, genre styles) into a bound shot prompt for AI image or video generation",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "extra_directives": "保留用户已给事实；新增构图建议标为候选，不引入额外角色",
+        "negative_prompts": "不出现商标、额外人物或未提供的事实",
+        "target": "video",
+        "technique_id": "360-degree-shot",
+        "technique_name": "Backlight silhouette reveal",
+        "technique_prompt_bound": "Place a soft backlight behind the adult subject, preserve the face outline, and reveal the room without an abrupt exposure jump."
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 subject，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:dca629872cf65b0473cbb955e796c233644dde7ac07049eb94c600efe4404164"
+}

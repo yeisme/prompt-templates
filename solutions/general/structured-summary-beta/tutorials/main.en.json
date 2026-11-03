@@ -1,0 +1,42 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/general/structured-summary-beta@2.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:1edbbde3305a62b864bf1f5d5e30bd582acf5ea4be292e26e7c5de624dbf95da",
+  "contract_digest": "sha256:9a9a5a4a8549911f46acfdbfe530ef1db3abd5a89929c2d28207831eb232947e",
+  "source_text": "周二评审决定先测试两个方案；负责人和截止日期尚未确认。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "source_text": "周二评审决定先测试两个方案；负责人和截止日期尚未确认。",
+        "target_audience": "项目团队"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：摘要：团队决定先测试两个方案。行动：准备两个版本。负责人和截止日期：待确认。风险：缺少验收标准。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 A successor with explicit source boundaries and confirmable inputs",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "target_audience": "项目团队"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 source_text，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:42e6eeb3c5306a9b68cc45ec72f45b32fcb77c7d4f40672e6061709e2122b1e4"
+}

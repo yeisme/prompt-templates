@@ -1,0 +1,46 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/writing/revision-assistant@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:3cb11c26fd335bbfca19a7f6b605ea9f7fdbae6be68df4ac82518b07fc531978",
+  "contract_digest": "sha256:deff9e0e919f5c2d3da742f20b77a717352af6340d5502cb6bf9a841f9a58880",
+  "source_text": "林舟在旧车站发现一封未寄出的信；他想联系写信人，但只知道信封上的旧地址。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "audience": "general reader",
+        "constraints": "preserve facts, names, numbers, quotations, and necessary qualifications",
+        "revision_goal": "保留情节事实，减少重复，明确人物动机",
+        "source_text": "林舟在旧车站发现一封未寄出的信；他想联系写信人，但只知道信封上的旧地址。"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：人物已知：林舟知道旧地址，不知道写信人的现状。候选行动：核对地址来源。此行动是创作建议，尚未进入正史。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Revise existing text against an explicit goal while preserving facts, responsibility, and uncertainty",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "audience": "general reader",
+        "constraints": "preserve facts, names, numbers, quotations, and necessary qualifications",
+        "source_text": "林舟在旧车站发现一封未寄出的信；他想联系写信人，但只知道信封上的旧地址。"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 revision_goal，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:123b4eb179cd70fb6ca52a6f1e8862fd05ebec7395dc7565100375daab42ff77"
+}

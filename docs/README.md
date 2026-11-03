@@ -32,3 +32,9 @@
 
 - [AI 做剧官方模板测试与今日状态（2026-08-31）](ai-drama-templates-test-guide-2026-08-31.md)：离线验收、实际 preview/inspect、今日证据与已知缺口。
 - [AI 做剧官方模板测试与今日状态（2026-09-02）](ai-drama-templates-test-guide-2026-09-02.md)：模块化视觉资产 v2 全量实现的 provider-free 证据与成熟度边界。
+
+- [全库逐角色完整教程](tutorials.md)：需求提示词、字段说明、CLI/MCP 实例与失败恢复。
+
+- [全库教程验证](tutorial-verification.md)
+
+- [第二轮有效案例与指南验证](scenario-verification.md)

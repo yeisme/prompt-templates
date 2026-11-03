@@ -76,3 +76,5 @@ sonora prompt-asset catalog search "podcast narration" --locale en --json
 - [模板语言说明](docs/locale-policy.md)
 - [内容编写指南](docs/authoring.md)
 - [完整文档索引](docs/README.md)
+
+- [全库逐角色完整教程](docs/tutorials.md)：需求提示词、字段说明、CLI/MCP 实例与失败恢复。

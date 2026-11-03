@@ -1,0 +1,46 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/3d/3d-scene-layout-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:285dde03fba3b39edcaea277c2f2b03491c3f9cdd9e457b4c414d0980986070a",
+  "contract_digest": "sha256:45f245c3fe3df441135ca078b795e9023815487ec0e75918f9e832dde437e866",
+  "source_text": "一盏虚构的黄铜桌灯，圆底座、弯曲灯臂，供游戏背景评估，无品牌标记。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "camera_seeds": "从入口朝窗拍摄全景；从椅子左前方拍摄中景",
+        "objects": "阅读椅、落地灯、边桌",
+        "relations": "椅子面向窗，灯在右侧，边桌在左侧",
+        "scale_anchor": "椅面高约 45 cm 作为合成尺度参考，真实资产须重新测量"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：设计候选：圆形底座、弯曲灯臂、简化灯罩。材质为视觉上的哑光黄铜；尺寸、拓扑与可打印性需从实际模型检查，不能由文字确认。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compose a provider-neutral multi-object spatial layout with relative placement, a scale statement, and optional camera placeholders",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "camera_seeds": "从入口朝窗拍摄全景；从椅子左前方拍摄中景",
+        "relations": "椅子面向窗，灯在右侧，边桌在左侧",
+        "scale_anchor": "椅面高约 45 cm 作为合成尺度参考，真实资产须重新测量"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 objects，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:6e3bfca57aee87c5566414812932779ac2e4392072d196afc41c7eb298eae30c"
+}

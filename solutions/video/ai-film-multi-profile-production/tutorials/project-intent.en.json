@@ -1,0 +1,96 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/ai-film-multi-profile-production@1.0.0?locale=en",
+  "role": "project-intent",
+  "template_digest": "sha256:4e733bf242a85abd0cba34bc5d4cb5256a49c41bd4db08ea2c65c5054557d527",
+  "contract_digest": "sha256:e43f0a723d7b5344af2ecc8db982873223c4f1492dd19ce8c816fb037f642afe",
+  "source_text": "本次合成任务采用已验证案例 valid-live-action-two-hander；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "input_notes": {
+    "accepted_source_projection_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "active_reference_bindings_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "continuity_constraints_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "retry_policy_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "task_delta_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "accepted_source_projection_json": [
+      "facts",
+      "readiness",
+      "rights"
+    ],
+    "active_reference_bindings_json": [
+      "identity_source"
+    ],
+    "continuity_constraints_json": [
+      "evidence_policy",
+      "screen_direction"
+    ],
+    "retry_policy_json": [
+      "escalate_to",
+      "single_variable_only",
+      "threshold"
+    ],
+    "task_delta_json": [
+      "change_scope",
+      "requested_output"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-live-action-two-hander",
+      "fixture_locale": "zh-CN",
+      "fixture_input_map": {
+        "accepted_source_projection_json": "accepted_source_projection_json",
+        "active_reference_bindings_json": "active_reference_bindings_json",
+        "continuity_constraints_json": "continuity_constraints_json",
+        "output_schema_version": "output_schema_version",
+        "profile_id": "profile_id",
+        "retry_policy_json": "retry_policy_json",
+        "task_delta_json": "task_delta_json"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Describe the production intent and required output profile.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "active_reference_bindings_json": "{\"identity_source\":{\"ref\":\"fixture://identity-source-001\",\"digest\":\"sha256:0000000000000000000000000000000000000000000000000000000000000000\",\"inherit\":[\"face_geometry\"],\"forbid\":[\"wardrobe\"]}}",
+        "continuity_constraints_json": "{\"screen_direction\":\"locked\",\"evidence_policy\":\"unknown_when_absent\"}",
+        "output_schema_version": "ai-film-project-intent-semantic-output-v1",
+        "profile_id": "cinematic_live_action",
+        "retry_policy_json": "{\"single_variable_only\":true,\"threshold\":10,\"escalate_to\":\"owner_review\"}",
+        "task_delta_json": "{\"change_scope\":[\"scene_coverage\"],\"requested_output\":\"semantic_proposal\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 accepted_source_projection_json，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "accepted_source_projection_json": "[]",
+        "active_reference_bindings_json": "{\"identity_source\":{\"ref\":\"fixture://identity-source-001\",\"digest\":\"sha256:0000000000000000000000000000000000000000000000000000000000000000\",\"inherit\":[\"face_geometry\"],\"forbid\":[\"wardrobe\"]}}",
+        "continuity_constraints_json": "{\"screen_direction\":\"locked\",\"evidence_policy\":\"unknown_when_absent\"}",
+        "output_schema_version": "ai-film-project-intent-semantic-output-v1",
+        "profile_id": "cinematic_live_action",
+        "retry_policy_json": "{\"single_variable_only\":true,\"threshold\":10,\"escalate_to\":\"owner_review\"}",
+        "task_delta_json": "{\"change_scope\":[\"scene_coverage\"],\"requested_output\":\"semantic_proposal\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:960e53c0af12420fa452ce240ebc8f940ef966bf94e78e4bd95b70570927ecb7"
+}

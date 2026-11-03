@@ -1,0 +1,111 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/ai-drama-storyboard-breakdown@1.0.0?locale=en",
+  "role": "repair",
+  "template_digest": "sha256:55b4abf62e956b13cfb87ce5ed8f8c695c1ba964db7d58eeb83a94f4295f1434",
+  "contract_digest": "sha256:e7189df29890b3098ac73029ba65dc66a6bab17f7794d86180afc22a481cef29",
+  "source_text": "本次合成任务采用已验证案例 bounded-duration-repair；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "input_notes": {
+    "accepted_story_context_refs_json": "首次从给定剧本创建分镜，没有已接受的长篇上下文引用；来源片段仍须提供。",
+    "continuity_facts_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "direction_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "known_entities_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "repair_findings_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "semantic_plan_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "source_segments_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "direction_json": [
+      "duration_ms_max",
+      "duration_ms_min",
+      "shot_count_max",
+      "shot_count_min"
+    ],
+    "semantic_plan_json": [
+      "findings",
+      "profile_id",
+      "review_summary",
+      "scenes",
+      "schema_version",
+      "unmapped_segment_refs"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "locale": "en",
+        "output_schema_version": "storyboard.semantic_plan.v1"
+      },
+      "fixture_case_id": "bounded-duration-repair",
+      "fixture_locale": "zh-CN",
+      "fixture_input_map": {
+        "accepted_story_context_refs_json": "accepted_story_context_refs",
+        "continuity_facts_json": "continuity_facts",
+        "direction_json": "direction",
+        "episode_ref": "episode_ref",
+        "known_entities_json": "known_entities",
+        "profile_id": "profile_id",
+        "repair_findings_json": "repair_findings",
+        "schema_version": "schema_version",
+        "semantic_plan_json": "semantic_plan",
+        "source_segments_json": "source_segments",
+        "style_lens_summary": "style_lens_summary"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Repair a reviewed storyboard while preserving source traceability.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "continuity_facts_json": "[{\"fact_ref\":\"fact:key-on-table\",\"text\":\"钥匙在第一镜被放到桌上，第二镜仍在原位。\"}]",
+        "direction_json": "{\"duration_ms_max\":8000,\"duration_ms_min\":5000,\"shot_count_max\":2,\"shot_count_min\":2}",
+        "episode_ref": "episode:repair-001",
+        "known_entities_json": "[{\"kind\":\"character\",\"name\":\"苏禾\",\"ref\":\"character:su-he\"},{\"kind\":\"prop\",\"name\":\"钥匙\",\"ref\":\"prop:key\"}]",
+        "locale": "en",
+        "output_schema_version": "storyboard.semantic_plan.v1",
+        "profile_id": "dialogue-dense-v1",
+        "repair_findings_json": "[{\"code\":\"DURATION_INVALID\",\"message\":\"duration_ms must be positive\",\"shot_key\":\"shot-01-02\"}]",
+        "schema_version": "scaena.storyboard_prompt_input.v1",
+        "semantic_plan_json": "{\"findings\":[],\"profile_id\":\"dialogue-dense-v1\",\"review_summary\":{\"dialogue_spine\":\"一句话确认交接。\",\"duration_contract\":\"第二镜时长无效。\",\"story_spine\":\"苏禾交出钥匙。\",\"visual_baseline\":\"钥匙保持在桌面。\"},\"scenes\":[{\"dramatic_purpose\":\"完成钥匙交接。\",\"entity_mentions\":[\"character:su-he\",\"prop:key\"],\"heading\":\"内景·客厅·日\",\"order\":1,\"scene_key\":\"scene-01\",\"shots\":[{\"action_summary\":\"苏禾把钥匙放到桌上。\",\"camera_angle\":\"top_down\",\"camera_movement\":\"locked\",\"continuity_notes\":[\"钥匙位于桌面中央\"],\"dialogue_segment_refs\":[],\"dramatic_purpose\":\"建立交接物。\",\"duration_ms\":3000,\"entity_mentions\":[\"character:su-he\",\"prop:key\"],\"fact_refs\":[\"fact:key-on-table\"],\"image_instruction\":\"9:16 钥匙落在桌面中央。\",\"negative_constraints\":[],\"order\":1,\"shot_key\":\"shot-01-01\",\"shot_size\":\"insert\",\"source_segment_refs\":[\"seg-rp001\"]},{\"action_summary\":\"苏禾看向对方。\",\"camera_angle\":\"eye_level\",\"camera_movement\":\"locked\",\"continuity_notes\":[\"钥匙仍在桌面中央\"],\"dialogue_segment_refs\":[\"seg-rp002\"],\"dialogue_summary\":\"苏禾说门从今天起归对方。\",\"dramatic_purpose\":\"确认交接决定。\",\"duration_ms\":0,\"entity_mentions\":[\"character:su-he\",\"prop:key\"],\"fact_refs\":[\"fact:key-on-table\"],\"image_instruction\":\"9:16 苏禾中近景，桌面钥匙作为前景。\",\"negative_constraints\":[\"不新增对白\"],\"order\":2,\"shot_key\":\"shot-01-02\",\"shot_size\":\"medium_close_up\",\"source_segment_refs\":[\"seg-rp002\"]}],\"source_segment_refs\":[\"seg-rp001\",\"seg-rp002\"]}],\"schema_version\":\"storyboard.semantic_plan.v1\",\"unmapped_segment_refs\":[]}",
+        "source_segments_json": "[{\"kind\":\"action\",\"order\":1,\"segment_ref\":\"seg-rp001\",\"text\":\"苏禾把钥匙放到桌上。\"},{\"kind\":\"dialogue\",\"order\":2,\"segment_ref\":\"seg-rp002\",\"speaker_ref\":\"character:su-he\",\"text\":\"门从今天起归你。\"}]",
+        "style_lens_summary": "保留第一镜，只修复第二镜时长。"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 accepted_story_context_refs_json，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "accepted_story_context_refs_json": "[]",
+        "continuity_facts_json": "[{\"fact_ref\":\"fact:key-on-table\",\"text\":\"钥匙在第一镜被放到桌上，第二镜仍在原位。\"}]",
+        "direction_json": "[]",
+        "episode_ref": "episode:repair-001",
+        "known_entities_json": "[{\"kind\":\"character\",\"name\":\"苏禾\",\"ref\":\"character:su-he\"},{\"kind\":\"prop\",\"name\":\"钥匙\",\"ref\":\"prop:key\"}]",
+        "locale": "en",
+        "output_schema_version": "storyboard.semantic_plan.v1",
+        "profile_id": "dialogue-dense-v1",
+        "repair_findings_json": "[{\"code\":\"DURATION_INVALID\",\"message\":\"duration_ms must be positive\",\"shot_key\":\"shot-01-02\"}]",
+        "schema_version": "scaena.storyboard_prompt_input.v1",
+        "semantic_plan_json": "{\"findings\":[],\"profile_id\":\"dialogue-dense-v1\",\"review_summary\":{\"dialogue_spine\":\"一句话确认交接。\",\"duration_contract\":\"第二镜时长无效。\",\"story_spine\":\"苏禾交出钥匙。\",\"visual_baseline\":\"钥匙保持在桌面。\"},\"scenes\":[{\"dramatic_purpose\":\"完成钥匙交接。\",\"entity_mentions\":[\"character:su-he\",\"prop:key\"],\"heading\":\"内景·客厅·日\",\"order\":1,\"scene_key\":\"scene-01\",\"shots\":[{\"action_summary\":\"苏禾把钥匙放到桌上。\",\"camera_angle\":\"top_down\",\"camera_movement\":\"locked\",\"continuity_notes\":[\"钥匙位于桌面中央\"],\"dialogue_segment_refs\":[],\"dramatic_purpose\":\"建立交接物。\",\"duration_ms\":3000,\"entity_mentions\":[\"character:su-he\",\"prop:key\"],\"fact_refs\":[\"fact:key-on-table\"],\"image_instruction\":\"9:16 钥匙落在桌面中央。\",\"negative_constraints\":[],\"order\":1,\"shot_key\":\"shot-01-01\",\"shot_size\":\"insert\",\"source_segment_refs\":[\"seg-rp001\"]},{\"action_summary\":\"苏禾看向对方。\",\"camera_angle\":\"eye_level\",\"camera_movement\":\"locked\",\"continuity_notes\":[\"钥匙仍在桌面中央\"],\"dialogue_segment_refs\":[\"seg-rp002\"],\"dialogue_summary\":\"苏禾说门从今天起归对方。\",\"dramatic_purpose\":\"确认交接决定。\",\"duration_ms\":0,\"entity_mentions\":[\"character:su-he\",\"prop:key\"],\"fact_refs\":[\"fact:key-on-table\"],\"image_instruction\":\"9:16 苏禾中近景，桌面钥匙作为前景。\",\"negative_constraints\":[\"不新增对白\"],\"order\":2,\"shot_key\":\"shot-01-02\",\"shot_size\":\"medium_close_up\",\"source_segment_refs\":[\"seg-rp002\"]}],\"source_segment_refs\":[\"seg-rp001\",\"seg-rp002\"]}],\"schema_version\":\"storyboard.semantic_plan.v1\",\"unmapped_segment_refs\":[]}",
+        "source_segments_json": "[{\"kind\":\"action\",\"order\":1,\"segment_ref\":\"seg-rp001\",\"text\":\"苏禾把钥匙放到桌上。\"},{\"kind\":\"dialogue\",\"order\":2,\"segment_ref\":\"seg-rp002\",\"speaker_ref\":\"character:su-he\",\"text\":\"门从今天起归你。\"}]",
+        "style_lens_summary": "保留第一镜，只修复第二镜时长。"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:07acc4de614f55ba1b34032757f8a769185c26ca2c7aafbc4f5c588b4d121815"
+}

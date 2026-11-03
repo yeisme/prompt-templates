@@ -1,0 +1,109 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/ai-drama-character-assets@1.0.0?locale=en",
+  "role": "body-core-neutral-v1",
+  "template_digest": "sha256:2b4fac6c5db5a33f795e290e9e6eda6ad386650dd494be3ba5c932b95157c2a5",
+  "contract_digest": "sha256:f85d5297e55e7f52037e722f3661b08fe2199420f7c8b7c44812bc93692298f2",
+  "source_text": "本次合成任务采用已验证案例 adult-humanoid-front；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "input_notes": {
+    "design_spec_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "reference_bindings_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "render_policy_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "style_profile_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "design_spec_json": [
+      "coverage",
+      "fit_interfaces",
+      "forbid",
+      "observable_features",
+      "posture_anchor",
+      "proportions",
+      "required_evidence",
+      "view_plan"
+    ],
+    "reference_bindings_json": [
+      "body_core",
+      "style_source"
+    ],
+    "render_policy_json": [
+      "aspect_ratio",
+      "canvas",
+      "edge",
+      "single_view"
+    ],
+    "style_profile_json": [
+      "forbidden",
+      "light",
+      "palette",
+      "stroke"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "adult-humanoid-front",
+      "fixture_locale": "zh-CN",
+      "fixture_input_map": {
+        "age_band": "age_band",
+        "design_spec_json": "design_spec_json",
+        "output_schema_version": "output_schema_version",
+        "reference_bindings_json": "reference_bindings_json",
+        "render_policy_json": "render_policy_json",
+        "schema_version": "schema_version",
+        "slot_id": "slot_id",
+        "style_profile_json": "style_profile_json",
+        "topology_family": "topology_family",
+        "view_id": "view_id"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Create a neutral body proportion reference for reusable character assembly.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "design_spec_json": "{\"proportions\":\"7.2 头身，肩胯平衡\",\"posture_anchor\":\"自然直立，双臂下垂\",\"fit_interfaces\":[\"颈肩衔接\",\"腰线\",\"腕踝边界\"],\"coverage\":\"neutral_full\",\"observable_features\":[\"惯用右手\",\"站姿重心居中\"],\"view_plan\":[\"detail_front\",\"front_left_three_quarter\",\"left_profile\",\"back\",\"right_profile\",\"front_right_three_quarter\"],\"required_evidence\":[\"比例锚点\",\"贴合接口\"],\"forbid\":[\"face\",\"hair\",\"wardrobe\",\"accessory\",\"environment\"]}",
+        "output_schema_version": "character_asset.modular_slot_bundle.v1",
+        "reference_bindings_json": "{\"body_core\":[{\"ref\":\"slot:body-core-neutral-v1@rev-0002\",\"inherit\":[\"body_proportion\",\"fit_landmarks\"],\"forbid\":[\"face\",\"hairline\",\"expression\",\"body_identity\",\"environment\"]}],\"style_source\":[{\"ref\":\"reference:style-ink-wash-01@v1\",\"inherit\":[\"color_palette\",\"fabric_rendering\"],\"forbid\":[\"creator_identity\",\"protected_works\"]}]}",
+        "render_policy_json": "{\"aspect_ratio\":\"3:2\",\"canvas\":\"transparent_rgba\",\"single_view\":true,\"edge\":\"anti_aliased\"}",
+        "schema_version": "eikona.character_asset_prompt_input.v2",
+        "slot_id": "body_core",
+        "style_profile_json": "{\"palette\":\"低饱和墨青与月白\",\"stroke\":\"柔边写实\",\"light\":\"均匀柔光\",\"forbidden\":[\"在世创作者复刻\",\"受保护作品风格\"]}",
+        "topology_family": "humanoid",
+        "view_id": "detail_front"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 age_band，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "age_band": "adult",
+        "design_spec_json": "[]",
+        "output_schema_version": "character_asset.modular_slot_bundle.v1",
+        "reference_bindings_json": "{\"body_core\":[{\"ref\":\"slot:body-core-neutral-v1@rev-0002\",\"inherit\":[\"body_proportion\",\"fit_landmarks\"],\"forbid\":[\"face\",\"hairline\",\"expression\",\"body_identity\",\"environment\"]}],\"style_source\":[{\"ref\":\"reference:style-ink-wash-01@v1\",\"inherit\":[\"color_palette\",\"fabric_rendering\"],\"forbid\":[\"creator_identity\",\"protected_works\"]}]}",
+        "render_policy_json": "{\"aspect_ratio\":\"3:2\",\"canvas\":\"transparent_rgba\",\"single_view\":true,\"edge\":\"anti_aliased\"}",
+        "schema_version": "eikona.character_asset_prompt_input.v2",
+        "slot_id": "body_core",
+        "style_profile_json": "{\"palette\":\"低饱和墨青与月白\",\"stroke\":\"柔边写实\",\"light\":\"均匀柔光\",\"forbidden\":[\"在世创作者复刻\",\"受保护作品风格\"]}",
+        "topology_family": "humanoid",
+        "view_id": "detail_front"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:0f30d947796b97fd8e8525a9b6b8edaca3241bed4a76d5316f5b823a02415f0e"
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/ai-drama-shot-video-generation@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:409707a917987bceb952de011a8d1b91c6acf7a99f65f55a7bfdb75e8250a04f",
+  "contract_digest": "sha256:7141ee2a5591de3fb49de687a863d927c19b79d3e081f1d7f99b69a34c3f1470",
+  "source_text": "30 秒短片：进入阅读角、翻开书、停在灯光下；不含真实人物、品牌或未授权音乐。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "aspect_ratio": "16:9",
+        "camera_spec": "中景固定机位起始，格挡时缓慢推进，结束退回双人全景",
+        "character_core": "先观察再防御，动作简洁；不会突然改变武器或服装",
+        "character_label": "角色A（女帝）",
+        "character_ref": "@ef946113-3379-4497-86e6-4dc529266c1d",
+        "charge_phase_rule": "蓄力期间全程悬空施法，绝不落地、零站桩、零停顿",
+        "color_grading": "色彩空间Rec.2020，暗部偏幽紫，高光偏黑金",
+        "duration_s": 30,
+        "effect_mix": "能量体60% + 水墨20% + 流体20%",
+        "enemy_counterattack": "格挡后退半步，随后一次低速横向试探，不连续追加动作",
+        "enemy_death_reaction": "被绞碎时喷发魂火痛苦抽搐，灰飞烟灭前发出凄厉惨叫，最后化为紫黑冥烬",
+        "enemy_desc": "两名虚构成年训练者按顺序进入画面，不同时围攻或出现复制人物",
+        "enemy_ref": "@image1",
+        "gore_protocol": "ZeroBlood协议：严禁任何血液、断肢，受击全由粒子特效替代",
+        "max_actions_per_second": 3,
+        "negative_prompts": "不出现商标、额外人物或未提供的事实",
+        "provider_banner": "Made with Seedance 2.5",
+        "quality_profile": "UE5.4 Path Tracing，Lumen全局光照，8K分辨率，60fps，12bit HDR1500，PBR物理材质渲染，35mm Kodak 5219胶片颗粒45%",
+        "release_phase_rule": "爆发后允许落地收剑、冷酷定格站立",
+        "scene_anchors": "残破战车、断裂战旗、古战场白骨",
+        "scene_desc": "虚构训练庭院，平整地面、石墙和一个木门，无围观人群",
+        "scene_ref": "@image1",
+        "shot_list": "镜头1：建立庭院和站位；镜头2：完整显示一次格挡；镜头3：退步并结束训练",
+        "style_keywords": "顶级院线级真人特效大电影风格，真人实拍电影质感，次世代超写实，废土修仙融合",
+        "ultimate_skill_name": "冥狱剑仙阵",
+        "ultimate_skill_visual": "一道蓝色弧光沿练习刀运动轨迹消散，不遮住肢体与接触点",
+        "wardrobe_anchors": "橘红围巾、土黄长裙",
+        "weapon_desc": "长剑（通体黑金色，刃口流淌紫黑色深渊剑气）",
+        "weapon_ref": "@image1"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：镜头方案候选：0–8 秒进入阅读角，8–20 秒翻书并展示环境，20–30 秒停留灯下。声音和身份连续性需逐镜核对；没有实际视频产物。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compile character, ultimate skill, enemies, scene, camera, and per-second storyboard into a shot-level prompt for direct video-model delivery",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "aspect_ratio": "16:9",
+        "character_core": "先观察再防御，动作简洁；不会突然改变武器或服装",
+        "character_label": "角色A（女帝）",
+        "character_ref": "@ef946113-3379-4497-86e6-4dc529266c1d",
+        "charge_phase_rule": "蓄力期间全程悬空施法，绝不落地、零站桩、零停顿",
+        "color_grading": "色彩空间Rec.2020，暗部偏幽紫，高光偏黑金",
+        "duration_s": 30,
+        "effect_mix": "能量体60% + 水墨20% + 流体20%",
+        "enemy_counterattack": "格挡后退半步，随后一次低速横向试探，不连续追加动作",
+        "enemy_death_reaction": "被绞碎时喷发魂火痛苦抽搐，灰飞烟灭前发出凄厉惨叫，最后化为紫黑冥烬",
+        "enemy_desc": "两名虚构成年训练者按顺序进入画面，不同时围攻或出现复制人物",
+        "enemy_ref": "@image1",
+        "gore_protocol": "ZeroBlood协议：严禁任何血液、断肢，受击全由粒子特效替代",
+        "max_actions_per_second": 3,
+        "negative_prompts": "不出现商标、额外人物或未提供的事实",
+        "provider_banner": "Made with Seedance 2.5",
+        "quality_profile": "UE5.4 Path Tracing，Lumen全局光照，8K分辨率，60fps，12bit HDR1500，PBR物理材质渲染，35mm Kodak 5219胶片颗粒45%",
+        "release_phase_rule": "爆发后允许落地收剑、冷酷定格站立",
+        "scene_anchors": "残破战车、断裂战旗、古战场白骨",
+        "scene_desc": "虚构训练庭院，平整地面、石墙和一个木门，无围观人群",
+        "scene_ref": "@image1",
+        "shot_list": "镜头1：建立庭院和站位；镜头2：完整显示一次格挡；镜头3：退步并结束训练",
+        "style_keywords": "顶级院线级真人特效大电影风格，真人实拍电影质感，次世代超写实，废土修仙融合",
+        "ultimate_skill_name": "冥狱剑仙阵",
+        "ultimate_skill_visual": "一道蓝色弧光沿练习刀运动轨迹消散，不遮住肢体与接触点",
+        "wardrobe_anchors": "橘红围巾、土黄长裙",
+        "weapon_desc": "长剑（通体黑金色，刃口流淌紫黑色深渊剑气）",
+        "weapon_ref": "@image1"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 camera_spec，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:6c3bf915d4c373e24565ec2003a223e24dd1b7741262be84c7d82eaa5549f80e"
+}

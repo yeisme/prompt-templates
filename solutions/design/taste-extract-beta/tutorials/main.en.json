@@ -1,0 +1,42 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/design/taste-extract-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:239eebe271d1bf3aa99840838938f62d1aec481fa42da2aa5969039c67597e74",
+  "contract_digest": "sha256:c894655aedf1ea0808bbc73455234a9600ccbd1f8103b8517d3d25ca990551b0",
+  "source_text": "Synthetic example",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-basic",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "output_language": "output_language",
+        "source_identity": "source_identity",
+        "source_text": "source_text",
+        "use_context": "use_context"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Taste extraction",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "source_identity": "Synthetic example",
+        "source_text": "Synthetic example",
+        "use_context": "Synthetic example"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 output_language，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:1f283f345a5485e2be35fe6e3c230e77eb2cc31a0c6fb52da45ead338c573b1c"
+}

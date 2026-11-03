@@ -1,0 +1,48 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/image/grounded-pose-library@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:df94584e7239c316a42eab5f9d0cba3c6bcbbc80eb3a1d56d0f0d8cdb2ed0a13",
+  "contract_digest": "sha256:cbad389da48bb6c64c504936f57d91692f3063b0759214cd13c88c7131ed1d23",
+  "source_text": "虚构活动“周末阅读角”：桌边一盏灯、一册书，安静、温暖，不使用真人或商标。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "lower_limbs": "Both legs bend and gather to one side of the body, one thigh angling forward while the other leg folds behind, the calves lying close together.",
+        "pose_lead": "Grounded pose, mermaid side-sit with rear support:",
+        "torso_head": "The chest lifts upward and the waist arches slightly back; the head rises and turns toward the upper side.",
+        "upper_limbs": "Both arms reach behind the body, palms pressing the ground, elbows almost straight.",
+        "weight_silhouette": "Weight rests mainly on the hips and both hands, the body tracing an S-line from lifted chest through arched waist to legs spreading sideways."
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：画面候选：以黄铜桌灯和打开的书为主体，保持无品牌；根据「贴地姿势库（25 个参考姿势）」的风格与构图字段调整表现。这里只描述待生成画面，不展示或声称已经出图。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 面向坐/跪/卧姿势的四段式 camera-relative 英文姿势句库；单句直接复制进任意图像提示词的 pose 槽",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "pose_lead": "Grounded pose, mermaid side-sit with rear support:",
+        "torso_head": "The chest lifts upward and the waist arches slightly back; the head rises and turns toward the upper side.",
+        "upper_limbs": "Both arms reach behind the body, palms pressing the ground, elbows almost straight.",
+        "weight_silhouette": "Weight rests mainly on the hips and both hands, the body tracing an S-line from lifted chest through arched waist to legs spreading sideways."
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 lower_limbs，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:9673db8afe734fd94cc7ff2af752332c94d8b26c7c6d83cc84aa26957ae38d65"
+}

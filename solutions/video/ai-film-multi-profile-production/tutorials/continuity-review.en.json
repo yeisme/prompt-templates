@@ -1,0 +1,102 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/ai-film-multi-profile-production@1.0.0?locale=en",
+  "role": "continuity-review",
+  "template_digest": "sha256:6c471df5d510851714de7c61eb3f4c08d48faffba2654abe918e756b8399f8c6",
+  "contract_digest": "sha256:d86a8a0346bbd516cf10eb9e745230bc1c053769b37097f2241ccfae1476f1dc",
+  "source_text": "30 秒短片：进入阅读角、翻开书、停在灯光下；不含真实人物、品牌或未授权音乐。",
+  "input_notes": {
+    "accepted_source_projection_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "active_reference_bindings_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "continuity_constraints_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "retry_policy_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "task_delta_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "accepted_source_projection_json": [
+      "facts",
+      "scene_id"
+    ],
+    "active_reference_bindings_json": [
+      "bindings"
+    ],
+    "continuity_constraints_json": [
+      "locked",
+      "space",
+      "time"
+    ],
+    "retry_policy_json": [
+      "automatic_provider_retry",
+      "escalate_on",
+      "max_revisions"
+    ],
+    "task_delta_json": [
+      "allowed_changes",
+      "decision",
+      "preserve",
+      "scope"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "accepted_source_projection_json": "{\"facts\":[{\"id\":\"f1\",\"text\":\"两位成年角色在旧车站核对信件地址\",\"source\":\"synthetic-script-01\"}],\"scene_id\":\"station-01\"}",
+        "active_reference_bindings_json": "{\"bindings\":[{\"id\":\"binding-01\",\"source\":\"synthetic-script-01\",\"inherit\":[\"人物身份\",\"地点\",\"道具\"],\"forbid\":[\"未给出的历史事实\"]}]}",
+        "continuity_constraints_json": "{\"locked\":[\"人物身份\",\"左腕布绳\",\"信件状态\"],\"time\":\"同一傍晚\",\"space\":\"同一候车室\"}",
+        "output_schema_version": "ai-film-continuity-review-semantic-output-v1",
+        "profile_id": "cinematic_live_action",
+        "retry_policy_json": "{\"max_revisions\":1,\"escalate_on\":[\"missing_source\",\"identity_conflict\"],\"automatic_provider_retry\":false}",
+        "task_delta_json": "{\"scope\":[\"station-01\"],\"allowed_changes\":[\"对话表达\",\"动作节奏\"],\"preserve\":[\"旧地址是唯一已知线索\"],\"decision\":\"是否先核对地址\"}"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：镜头方案候选：0–8 秒进入阅读角，8–20 秒翻书并展示环境，20–30 秒停留灯下。声音和身份连续性需逐镜核对；没有实际视频产物。",
+        "role": "continuity-review"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Review cross-shot character, environment and narrative continuity.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "active_reference_bindings_json": "{\"bindings\":[{\"id\":\"binding-01\",\"source\":\"synthetic-script-01\",\"inherit\":[\"人物身份\",\"地点\",\"道具\"],\"forbid\":[\"未给出的历史事实\"]}]}",
+        "continuity_constraints_json": "{\"locked\":[\"人物身份\",\"左腕布绳\",\"信件状态\"],\"time\":\"同一傍晚\",\"space\":\"同一候车室\"}",
+        "output_schema_version": "ai-film-continuity-review-semantic-output-v1",
+        "profile_id": "cinematic_live_action",
+        "retry_policy_json": "{\"max_revisions\":1,\"escalate_on\":[\"missing_source\",\"identity_conflict\"],\"automatic_provider_retry\":false}",
+        "task_delta_json": "{\"scope\":[\"station-01\"],\"allowed_changes\":[\"对话表达\",\"动作节奏\"],\"preserve\":[\"旧地址是唯一已知线索\"],\"decision\":\"是否先核对地址\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 accepted_source_projection_json，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "accepted_source_projection_json": "[]",
+        "active_reference_bindings_json": "{\"bindings\":[{\"id\":\"binding-01\",\"source\":\"synthetic-script-01\",\"inherit\":[\"人物身份\",\"地点\",\"道具\"],\"forbid\":[\"未给出的历史事实\"]}]}",
+        "continuity_constraints_json": "{\"locked\":[\"人物身份\",\"左腕布绳\",\"信件状态\"],\"time\":\"同一傍晚\",\"space\":\"同一候车室\"}",
+        "output_schema_version": "ai-film-continuity-review-semantic-output-v1",
+        "profile_id": "cinematic_live_action",
+        "retry_policy_json": "{\"max_revisions\":1,\"escalate_on\":[\"missing_source\",\"identity_conflict\"],\"automatic_provider_retry\":false}",
+        "task_delta_json": "{\"scope\":[\"station-01\"],\"allowed_changes\":[\"对话表达\",\"动作节奏\"],\"preserve\":[\"旧地址是唯一已知线索\"],\"decision\":\"是否先核对地址\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:0a25e2c7d30832a9ea791295f08e6c55e963d536d36d2d110360d0b44a89c014"
+}

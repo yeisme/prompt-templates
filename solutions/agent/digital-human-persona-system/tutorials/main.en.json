@@ -1,0 +1,48 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/agent/digital-human-persona-system@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:36f29a364af83567dc237e4133aac25db427783f5a3870118a6ba0874ecb40e1",
+  "contract_digest": "sha256:61a3e44605b40a6289171978ceca1e6ad04fca17eeff761621b494491f77a0ef",
+  "source_text": "用户提供公开会议记录，Agent 整理行动项并导出提示包；不发送消息或调用付费服务。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "audience": "初次了解该项目的读者",
+        "factual_boundaries": "只采用用户提供的事实；缺失信息保持未知",
+        "persona_identity": "虚构图书馆引导员林舟；没有真实人物身份或专业资格声明",
+        "safety_boundaries": "只回答阅读活动相关问题；未知信息说明待核对；不索取账号或付款",
+        "speaking_style": "短句、平静、具体；先回答问题，再提出一个必要的澄清问题"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：流程候选：读取用户提供的会议资料，整理候选行动项，确认后编译导出。无凭据配置、外部消息或付费调用授权。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compile confirmed identity, audience, speaking, factual, and safety boundaries into a real-time persona prompt",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "factual_boundaries": "只采用用户提供的事实；缺失信息保持未知",
+        "persona_identity": "虚构图书馆引导员林舟；没有真实人物身份或专业资格声明",
+        "safety_boundaries": "只回答阅读活动相关问题；未知信息说明待核对；不索取账号或付款",
+        "speaking_style": "短句、平静、具体；先回答问题，再提出一个必要的澄清问题"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 audience，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:a491e7656c4871806055e10e29737bbde5c80a03e1d235c8e1ae46f220f85f84"
+}

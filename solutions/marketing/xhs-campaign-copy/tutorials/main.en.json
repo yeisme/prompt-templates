@@ -1,0 +1,42 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/marketing/xhs-campaign-copy@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:3a737f1387532ef3d27423ed1fe51f4eaa8ac030b1e97c4910d9f46facbf49d4",
+  "contract_digest": "sha256:b334956c74fad067cdfd53ec521040358532d4197c43d1076d9b21ac874822aa",
+  "source_text": "本次合成任务采用已验证案例 valid-tumbler-launch；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-tumbler-launch",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "audience": "audience",
+        "brand_voice": "brand_voice",
+        "product_or_campaign": "product_or_campaign",
+        "verified_benefits": "verified_benefits"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Create natural, compliant Xiaohongshu campaign content from verified benefits",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "brand_voice": "warm, plain, practical; no exclamation stacking",
+        "product_or_campaign": "fictional ceramic pour-over dripper launch",
+        "verified_benefits": "Fictional brand-confirmed facts: dishwasher safe; fits standard 02 filters; one-piece ceramic body; launch price 129 CNY. No certification claims approved."
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 audience，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:5a130cccea8c467b64dd3610be9faa806bfa89e7249d376ffe2834cf0afc3ca7"
+}

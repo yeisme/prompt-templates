@@ -1,0 +1,88 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/writing/ai-drama-showrunner@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:60ba1d2aa9ea4cb461d9f6f97c3fa3fcfb4cccd42a5348323b67ad3546da94eb",
+  "contract_digest": "sha256:7608316b977cb6d5ac249e5f2165ea371b4ba5e6275461e16258a624beda4962",
+  "source_text": "林舟在旧车站发现一封未寄出的信；他想联系写信人，但只知道信封上的旧地址。",
+  "input_notes": {
+    "format_contract_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "series_context_json": "这是季初首次规划，没有已完成分集或未兑现历史伏笔。",
+    "story_proposal_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "task_delta_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "format_contract_json": [
+      "aspect_ratio",
+      "episode_duration_seconds",
+      "format",
+      "story_unit"
+    ],
+    "story_proposal_json": [
+      "beats",
+      "spine"
+    ],
+    "task_delta_json": [
+      "allowed_changes",
+      "decision",
+      "preserve",
+      "scope"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "format_contract_json": "{\"format\":\"vertical-short-drama\",\"aspect_ratio\":\"9:16\",\"episode_duration_seconds\":90,\"story_unit\":\"一场对话中的决定\"}",
+        "output_schema_version": "ai-drama-showrunner-semantic-output-v1",
+        "series_context_json": "{}",
+        "story_proposal_json": "{\"spine\":\"一封未寄出的信引出对承诺的追问\",\"beats\":[{\"id\":\"beat-01\",\"action\":\"发现信件\"},{\"id\":\"beat-02\",\"action\":\"核对地址\"},{\"id\":\"beat-03\",\"action\":\"决定先调查\"}]}",
+        "task_delta_json": "{\"scope\":[\"station-01\"],\"allowed_changes\":[\"对话表达\",\"动作节奏\"],\"preserve\":[\"旧地址是唯一已知线索\"],\"decision\":\"是否先核对地址\"}"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：人物已知：林舟知道旧地址，不知道写信人的现状。候选行动：核对地址来源。此行动是创作建议，尚未进入正史。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Plan seasons and episodes with proof-slice batching, expansion gates, payoff windows, and suspense debt",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "output_schema_version": "ai-drama-showrunner-semantic-output-v1",
+        "series_context_json": "{}",
+        "story_proposal_json": "{\"spine\":\"一封未寄出的信引出对承诺的追问\",\"beats\":[{\"id\":\"beat-01\",\"action\":\"发现信件\"},{\"id\":\"beat-02\",\"action\":\"核对地址\"},{\"id\":\"beat-03\",\"action\":\"决定先调查\"}]}",
+        "task_delta_json": "{\"scope\":[\"station-01\"],\"allowed_changes\":[\"对话表达\",\"动作节奏\"],\"preserve\":[\"旧地址是唯一已知线索\"],\"decision\":\"是否先核对地址\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 format_contract_json，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "format_contract_json": "[]",
+        "output_schema_version": "ai-drama-showrunner-semantic-output-v1",
+        "series_context_json": "{}",
+        "story_proposal_json": "{\"spine\":\"一封未寄出的信引出对承诺的追问\",\"beats\":[{\"id\":\"beat-01\",\"action\":\"发现信件\"},{\"id\":\"beat-02\",\"action\":\"核对地址\"},{\"id\":\"beat-03\",\"action\":\"决定先调查\"}]}",
+        "task_delta_json": "{\"scope\":[\"station-01\"],\"allowed_changes\":[\"对话表达\",\"动作节奏\"],\"preserve\":[\"旧地址是唯一已知线索\"],\"decision\":\"是否先核对地址\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:f08833588c1de67dbde3f9e350e39e86bffbc45bee3a2084685f9d28beeb1a44"
+}

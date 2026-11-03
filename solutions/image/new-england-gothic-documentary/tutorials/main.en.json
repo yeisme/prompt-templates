@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/image/new-england-gothic-documentary@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:624e04cd85d3a0519802d8658df95622544d14a9cb0ee2dc2d1ca656ffbb6e08",
+  "contract_digest": "sha256:ade56b7311d5c693749ad074576b1bac623f0f6f5c74416e3b5d8c019a81cd7e",
+  "source_text": "虚构活动“周末阅读角”：桌边一盏灯、一册书，安静、温暖，不使用真人或商标。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "format_clause": "Vertical 9:16 ",
+        "setting": "small industrial town in Vermont, pre-dawn October night, nearly deserted back street, old red-brick warehouses, wet cracked asphalt reflecting one sodium streetlight, dark wooded hills in the distance, faint church steeple",
+        "subjects": "two ordinary middle-aged graffiti writers quietly working on a weathered brick wall, one standing and one crouching, worn work clothes, subtle spray-paint stains"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：画面候选：以黄铜桌灯和打开的书为主体，保持无品牌；根据「新英格兰哥特纪实摄影风格层」的风格与构图字段调整表现。这里只描述待生成画面，不展示或声称已经出图。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 面向美国小镇夜间场景的可复用安静纪实摄影风格层；只替换人物与场景",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "format_clause": "Vertical 9:16 ",
+        "subjects": "two ordinary middle-aged graffiti writers quietly working on a weathered brick wall, one standing and one crouching, worn work clothes, subtle spray-paint stains"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 setting，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:b49138c5e5e8367e3c7582e6e5cb03daa86e32da9798cf98a622ed168442c6a0"
+}

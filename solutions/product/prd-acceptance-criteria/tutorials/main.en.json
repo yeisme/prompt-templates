@@ -1,0 +1,42 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/product/prd-acceptance-criteria@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:b787556a730654b5f755d5f15c768c5a10ca76ed0a59ab861b923a3eb9f55dfc",
+  "contract_digest": "sha256:a8e498f5f1f133617ad3fc4de3e437f6e53c8ea9f90d85059605807869729f1e",
+  "source_text": "本次合成任务采用已验证案例 valid-local-inbox；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-local-inbox",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "constraints": "constraints",
+        "current_workflow": "current_workflow",
+        "idea": "idea",
+        "target_user": "target_user"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Turn a product idea into a capability ledger, workflow, requirements, and testable acceptance criteria",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "current_workflow": "Fictional user diary: checks 6 apps every 20 minutes; fears missing urgent messages, so keeps all notifications on.",
+        "idea": "A local-first inbox that batches low-priority notifications into two daily digests",
+        "target_user": "knowledge workers who check notifications too often"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 constraints，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:dc53353894e952616e5c664bf52644a76271e36b7f5ac0ec8df861294ec4a9a2"
+}

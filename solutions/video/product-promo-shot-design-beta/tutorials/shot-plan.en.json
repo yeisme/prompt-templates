@@ -1,0 +1,118 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/product-promo-shot-design-beta@1.0.0-beta.1?locale=en",
+  "role": "shot-plan",
+  "template_digest": "sha256:679a452d341d60388a8a690fdd1405ce87afab6497288ede0b680b900a293a92",
+  "contract_digest": "sha256:e7580c883ae2875844429d7ce6af9edd9b3c03864109a3f9326236632dfc1f85",
+  "source_text": "本次合成任务采用已验证案例 video-shotcraft-guided；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "input_notes": {
+    "accepted_brief_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "execution_constraints_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "selected_shot_cards_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "shot_library_index_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "source_asset_map_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "timing_and_audio_constraints_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "accepted_brief_json": [
+      "audience",
+      "brand_motion_lens",
+      "confirmed_decisions",
+      "creative_mode",
+      "creative_proposals",
+      "data_and_rights",
+      "delivery",
+      "feature_priorities",
+      "intended_outcome",
+      "product_facts",
+      "schema_version",
+      "unknowns",
+      "unresolved_decisions"
+    ],
+    "execution_constraints_json": [
+      "deterministic",
+      "independent_subagent_authorized",
+      "renderer",
+      "review_gate",
+      "runtime"
+    ],
+    "shot_library_index_json": [
+      "cards",
+      "repository",
+      "revision"
+    ],
+    "source_asset_map_json": [
+      "assets"
+    ],
+    "timing_and_audio_constraints_json": [
+      "audio",
+      "brand_hold_frames",
+      "duration_seconds",
+      "frame_rate"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "video-shotcraft-guided",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "accepted_brief_json": "accepted_brief_json",
+        "downstream_owner": "downstream_owner",
+        "execution_constraints_json": "execution_constraints_json",
+        "output_language": "output_language",
+        "selected_shot_cards_json": "selected_shot_cards_json",
+        "shot_library_index_json": "shot_library_index_json",
+        "shot_library_revision": "shot_library_revision",
+        "source_asset_map_json": "source_asset_map_json",
+        "timing_and_audio_constraints_json": "timing_and_audio_constraints_json"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Create a source-grounded product promo brief and exact shot-library plan",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "downstream_owner": "external:video-shotcraft",
+        "execution_constraints_json": "{\"runtime\":\"Node 22\",\"renderer\":\"Remotion\",\"deterministic\":true,\"independent_subagent_authorized\":false,\"review_gate\":\"human_review_before_render\"}",
+        "output_language": "zh-CN",
+        "selected_shot_cards_json": "[{\"name\":\"spotlight-hero-card\",\"style_key\":\"spotlight-hero-card\"}]",
+        "shot_library_index_json": "{\"repository\":\"https://github.com/Vincentwei1021/video-shotcraft\",\"revision\":\"5f047c7cfe10d6616fe59160a750fcfaea510b2e\",\"cards\":[{\"name\":\"spotlight-hero-card\",\"styles\":[{\"key\":\"spotlight-hero-card\",\"preview_status\":\"available\"}],\"source\":\"references/shots/opening/spotlight-hero-card.md\",\"implementation_path\":\"demos/opening/spotlight-hero-card/SpotlightHeroCard.tsx\"}]}",
+        "shot_library_revision": "5f047c7cfe10d6616fe59160a750fcfaea510b2e",
+        "source_asset_map_json": "{\"assets\":[{\"asset_id\":\"board-view\",\"state\":\"synthetic project board\",\"portable\":true}]}",
+        "timing_and_audio_constraints_json": "{\"duration_seconds\":30,\"frame_rate\":30,\"brand_hold_frames\":30,\"audio\":\"licensed_sfx_only\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 accepted_brief_json，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "accepted_brief_json": "[]",
+        "downstream_owner": "external:video-shotcraft",
+        "execution_constraints_json": "{\"runtime\":\"Node 22\",\"renderer\":\"Remotion\",\"deterministic\":true,\"independent_subagent_authorized\":false,\"review_gate\":\"human_review_before_render\"}",
+        "output_language": "zh-CN",
+        "selected_shot_cards_json": "[{\"name\":\"spotlight-hero-card\",\"style_key\":\"spotlight-hero-card\"}]",
+        "shot_library_index_json": "{\"repository\":\"https://github.com/Vincentwei1021/video-shotcraft\",\"revision\":\"5f047c7cfe10d6616fe59160a750fcfaea510b2e\",\"cards\":[{\"name\":\"spotlight-hero-card\",\"styles\":[{\"key\":\"spotlight-hero-card\",\"preview_status\":\"available\"}],\"source\":\"references/shots/opening/spotlight-hero-card.md\",\"implementation_path\":\"demos/opening/spotlight-hero-card/SpotlightHeroCard.tsx\"}]}",
+        "shot_library_revision": "5f047c7cfe10d6616fe59160a750fcfaea510b2e",
+        "source_asset_map_json": "{\"assets\":[{\"asset_id\":\"board-view\",\"state\":\"synthetic project board\",\"portable\":true}]}",
+        "timing_and_audio_constraints_json": "{\"duration_seconds\":30,\"frame_rate\":30,\"brand_hold_frames\":30,\"audio\":\"licensed_sfx_only\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:2a275b76ccd7caf7862c378b114002e726ddf4c0d4810a94db0e1939dae5ad5b"
+}

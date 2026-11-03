@@ -1,0 +1,62 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/image/candid-portrait-matrix@1.0.0?locale=en",
+  "role": "delivery",
+  "template_digest": "sha256:0a3fe1afc9c88e97c801af10a0a42f394bc9415cf95a551d48f2be7447593aee",
+  "contract_digest": "sha256:ed5bba3d24f48c50548d80b09f23fbed679fd355fb72f112ea906064e412776c",
+  "source_text": "本次合成任务采用已验证案例 valid-lotus-pond；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-lotus-pond",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "aspect": "aspect",
+        "camera": "camera",
+        "composition": "composition",
+        "expression": "expression",
+        "foreground": "foreground",
+        "lens": "lens",
+        "light": "light",
+        "moment": "moment",
+        "palette": "palette",
+        "scene": "scene",
+        "shot": "shot",
+        "state": "state",
+        "subject": "subject",
+        "wardrobe": "wardrobe"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Prepare a structured handoff to the consuming production tool.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "aspect": "9:16",
+        "composition": "lotus leaves forming a natural circular frame",
+        "expression": "faint almost-smile",
+        "foreground": "giant lotus leaves",
+        "lens": "85mm compressed portrait",
+        "light": "dappled light through tree shade",
+        "moment": "shading herself with a giant lotus leaf",
+        "palette": "teal green + off-white + a few pink flowers",
+        "scene": "midsummer lotus pond",
+        "shot": "waist-up medium close-up",
+        "state": "natural candid capture",
+        "subject": "an adult East Asian woman with a quiet demeanor and natural camera awareness",
+        "wardrobe": "resort style"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 camera，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:994dbb488bb1dc769fde00ab0531dad41ee8235ba491090babbdf65a1598c202"
+}

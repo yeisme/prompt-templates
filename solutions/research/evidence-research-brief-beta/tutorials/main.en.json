@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/research/evidence-research-brief-beta@2.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:a55e4f485321d94d4b5d7d798fc32ec475b5455ee23fa4964d7dddb20df0f4fd",
+  "contract_digest": "sha256:06a8017fccf90b8e442ec6e0e017f62a2dc475e0b962f3ffb16531a489c3626f",
+  "source_text": "公开资料 A 说明本地保存，资料 B 说明团队共享；尚无成本和性能实测。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "decision_maker": "项目负责人",
+        "research_question": "现有资料支持哪些结论，哪些还需要验证？",
+        "sources": "公开资料 A 说明本地保存，资料 B 说明团队共享；尚无成本和性能实测。"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：证据 A 支持本地保存，证据 B 支持团队共享。成本与性能尚无证据；下一步需要可比较的测试，不能据此排序。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 A successor with explicit source boundaries and confirmable inputs",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "decision_maker": "项目负责人",
+        "sources": "公开资料 A 说明本地保存，资料 B 说明团队共享；尚无成本和性能实测。"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 research_question，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:2c883f76a4d0fb21a0982f9728986d24ce859c57440d9291a75a505bd109334c"
+}

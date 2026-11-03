@@ -30,6 +30,8 @@
 
 ## 连续处理研究资料
 
-`recipes/research-summary.json` 提供两步骤示例：先生成研究简报，再基于实际简报结果生成面向读者的总结提示。必须先导入第一步的真实结果；出现 `needs_step_output` 时，表示尚缺前一步输出。
+`recipes/research-summary-en.json` 提供两步骤示例：先生成研究简报，再基于实际简报结果生成面向读者的总结提示。必须先导入第一步的真实结果；出现 `needs_step_output` 时，表示尚缺前一步输出。
 
 如需查看完整的会话创建、确认、编译和导出命令，可参考[视觉探索入门指南](visual-exploration/quickstart.md)。不同模板的输入字段不同，应以目标模板返回的要求为准。
+
+旧 research-summary.json 保留历史中文引用；新任务使用英文后继 recipe。分段指南可按 overview、inputs、example、checks、recovery 读取，省略 section 仍取全文。

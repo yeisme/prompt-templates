@@ -1,0 +1,82 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/video/realistic-vlog-shot-generation@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:26a7d85091ef3b12a9224ae03d5cc27b678dc298cef9c8f5f6972985e53f9b90",
+  "contract_digest": "sha256:8f496a3d4d5a035b75b6686e22c5c4333fdd4016ae1c73658975932461b5fc2a",
+  "source_text": "30 秒短片：进入阅读角、翻开书、停在灯光下；不含真实人物、品牌或未授权音乐。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "aspect_ratio": "16:9",
+        "audio_design": "自然风声、海浪、鸟鸣、脚步、自行车、街区环境声、纸张摩擦与真实笑声",
+        "audio_exclusions": "无音乐、旁白、字幕、标题、Logo 或水印",
+        "camera_exclusions": "无稳定器、无人机、慢动作与精致商业广告质感",
+        "camera_imperfections": "构图不完美、自然晃动、自动对焦犹豫、曝光漂移、运动模糊、数码噪点与压缩痕迹",
+        "camera_style": "朋友手持老款消费级相机拍摄",
+        "character_ref": "@image1",
+        "consistency_lock": "全片保持完全一致的身份、服装、发型、比例与配饰",
+        "duration_s": 30,
+        "ending_directive": "29.5秒硬切黑场",
+        "final_feel": "朋友无意间捕捉到的美好但普通的瞬间——亲密、不完美、自然、真实",
+        "footage_style": "ultra-realistic home video",
+        "negative_prompts": "不出现商标、额外人物或未提供的事实",
+        "provider_banner": "Made with Seedance 2.5",
+        "realism_rules": "自然遮挡、真实接触和连续光照；禁止瞬移、额外手指和无来源物件",
+        "resolution": "1080p",
+        "scenario_summary": "成年访客走进虚构阅读角，翻开书，停在窗边灯光下",
+        "sequence_beats": "0–8 秒入场；8–20 秒坐下翻书；20–30 秒停在书页与灯光上",
+        "setting_desc": "安静的木质阅览室，桌面只有书和灯，窗外柔和天光",
+        "setting_exclusions": "无品牌、地标、广告与摆拍人群",
+        "subject_identity": "成年访客林舟，短黑发、深蓝外套、左腕布绳，所有镜头保持一致",
+        "wardrobe_and_accessories": "象牙白oversize亚麻衬衫、雾蓝吊带、沙色长裤、白色运动鞋、棕色斜挎包、银色耳环与手表"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：镜头方案候选：0–8 秒进入阅读角，8–20 秒翻书并展示环境，20–30 秒停留灯下。声音和身份连续性需逐镜核对；没有实际视频产物。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compile subject, setting, handheld camera texture, timeline beats, and realism/audio constraints into a realistic vlog prompt for direct video-model delivery",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "aspect_ratio": "16:9",
+        "audio_exclusions": "无音乐、旁白、字幕、标题、Logo 或水印",
+        "camera_exclusions": "无稳定器、无人机、慢动作与精致商业广告质感",
+        "camera_imperfections": "构图不完美、自然晃动、自动对焦犹豫、曝光漂移、运动模糊、数码噪点与压缩痕迹",
+        "camera_style": "朋友手持老款消费级相机拍摄",
+        "character_ref": "@image1",
+        "consistency_lock": "全片保持完全一致的身份、服装、发型、比例与配饰",
+        "duration_s": 30,
+        "ending_directive": "29.5秒硬切黑场",
+        "final_feel": "朋友无意间捕捉到的美好但普通的瞬间——亲密、不完美、自然、真实",
+        "footage_style": "ultra-realistic home video",
+        "negative_prompts": "不出现商标、额外人物或未提供的事实",
+        "provider_banner": "Made with Seedance 2.5",
+        "realism_rules": "自然遮挡、真实接触和连续光照；禁止瞬移、额外手指和无来源物件",
+        "resolution": "1080p",
+        "scenario_summary": "成年访客走进虚构阅读角，翻开书，停在窗边灯光下",
+        "sequence_beats": "0–8 秒入场；8–20 秒坐下翻书；20–30 秒停在书页与灯光上",
+        "setting_desc": "安静的木质阅览室，桌面只有书和灯，窗外柔和天光",
+        "setting_exclusions": "无品牌、地标、广告与摆拍人群",
+        "subject_identity": "成年访客林舟，短黑发、深蓝外套、左腕布绳，所有镜头保持一致",
+        "wardrobe_and_accessories": "象牙白oversize亚麻衬衫、雾蓝吊带、沙色长裤、白色运动鞋、棕色斜挎包、银色耳环与手表"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 audio_design，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:0c8437c989e06d35736a52ea15faa4c9ad178159cca47ce9367e7acc53c31687"
+}

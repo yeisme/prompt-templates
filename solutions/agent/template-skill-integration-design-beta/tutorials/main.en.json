@@ -1,0 +1,56 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/agent/template-skill-integration-design-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:8fdd462575ba79d8ae64e3391f04d74b28714284f33e0b24156378e5cab3b4c9",
+  "contract_digest": "sha256:15f5fe23743d3551e8f5a48811cdaeb0e900619280910e10c39df72041a51d50",
+  "source_text": "用户提供公开会议记录，Agent 整理行动项并导出提示包；不发送消息或调用付费服务。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "confirmed_decisions": "用户选择中文、文本资料、本地导出；不调用图像或视频生成服务",
+        "constraints": "只使用给定资料；未知内容明确标注",
+        "downstream_targets": "Template Registry 编译提示包，用户审阅后自行选择文本模型",
+        "installation_targets": "当前项目的 .agents/skills；已有受管 profile 时由原管理器处理",
+        "modalities": "文本输入、结构化文字输出，不需要音视频分析",
+        "objective": "用户提供公开会议记录，Agent 整理行动项并导出提示包；不发送消息或调用付费服务。",
+        "persistence_scope": "只在本项目保存会话和提示包，资料不上传外部服务",
+        "target_artifact": "可审阅的提示包",
+        "upstream_inputs": "一份公开会议记录和用户明确的目标读者"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：流程候选：读取用户提供的会议资料，整理候选行动项，确认后编译导出。无凭据配置、外部消息或付费调用授权。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Compile confirmed multimodal requirements into an owner-aware template, Skill, recipe, persistence, installation, and handoff brief",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "confirmed_decisions": "用户选择中文、文本资料、本地导出；不调用图像或视频生成服务",
+        "constraints": "只使用给定资料；未知内容明确标注",
+        "downstream_targets": "Template Registry 编译提示包，用户审阅后自行选择文本模型",
+        "installation_targets": "当前项目的 .agents/skills；已有受管 profile 时由原管理器处理",
+        "objective": "用户提供公开会议记录，Agent 整理行动项并导出提示包；不发送消息或调用付费服务。",
+        "persistence_scope": "只在本项目保存会话和提示包，资料不上传外部服务",
+        "target_artifact": "可审阅的提示包",
+        "upstream_inputs": "一份公开会议记录和用户明确的目标读者"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 modalities，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:637751630765bd979862f71c001d2cb4aa388d6aa73dd6ac9eed39293f4a1ae3"
+}

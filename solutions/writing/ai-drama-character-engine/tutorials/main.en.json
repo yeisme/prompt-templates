@@ -1,0 +1,86 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/writing/ai-drama-character-engine@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:3e40040b6dfcc0ab0de62078859bb33b23f120c875de4c06d66346511fa10f39",
+  "contract_digest": "sha256:0e21fd0442ec759930d2932478d72056c29a236a21ac700d0a8db505b6ec56ff",
+  "source_text": "林舟在旧车站发现一封未寄出的信；他想联系写信人，但只知道信封上的旧地址。",
+  "input_notes": {
+    "canon_snapshot_json": "全新虚构项目尚无已接受正史；人物和故事候选由本轮 brief 提供，因此空初始正史合法。",
+    "character_brief_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "story_context_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。",
+    "task_delta_json": "案例提供有来源的合成业务数据；真实使用由对应 owner 检查语义与引用，不将编译成功当成领域接受。"
+  },
+  "json_required_keys": {
+    "character_brief_json": [
+      "characters"
+    ],
+    "story_context_json": [
+      "causal_beats",
+      "conflict",
+      "premise"
+    ],
+    "task_delta_json": [
+      "allowed_changes",
+      "decision",
+      "preserve",
+      "scope"
+    ]
+  },
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "canon_snapshot_json": "{}",
+        "character_brief_json": "{\"characters\":[{\"id\":\"lin-zhou\",\"role\":\"protagonist\",\"traits\":[\"谨慎\",\"重视承诺\"],\"known_facts\":[\"只知道旧地址\"],\"goal\":\"找到写信人\"}]}",
+        "output_schema_version": "ai-drama-character-engine-semantic-output-v1",
+        "story_context_json": "{\"premise\":\"林舟在旧车站发现一封未寄出的信\",\"conflict\":\"想联系写信人却只有旧地址\",\"causal_beats\":[\"发现信件\",\"核对地址\",\"询问顾遥\"]}",
+        "task_delta_json": "{\"scope\":[\"station-01\"],\"allowed_changes\":[\"对话表达\",\"动作节奏\"],\"preserve\":[\"旧地址是唯一已知线索\"],\"decision\":\"是否先核对地址\"}"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：人物已知：林舟知道旧地址，不知道写信人的现状。候选行动：核对地址来源。此行动是创作建议，尚未进入正史。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Design characters as pressure-driven decision systems with motives, secrets, knowledge boundaries, and relationships",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "character_brief_json": "{\"characters\":[{\"id\":\"lin-zhou\",\"role\":\"protagonist\",\"traits\":[\"谨慎\",\"重视承诺\"],\"known_facts\":[\"只知道旧地址\"],\"goal\":\"找到写信人\"}]}",
+        "output_schema_version": "ai-drama-character-engine-semantic-output-v1",
+        "story_context_json": "{\"premise\":\"林舟在旧车站发现一封未寄出的信\",\"conflict\":\"想联系写信人却只有旧地址\",\"causal_beats\":[\"发现信件\",\"核对地址\",\"询问顾遥\"]}",
+        "task_delta_json": "{\"scope\":[\"station-01\"],\"allowed_changes\":[\"对话表达\",\"动作节奏\"],\"preserve\":[\"旧地址是唯一已知线索\"],\"decision\":\"是否先核对地址\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 canon_snapshot_json，必须补齐后再确认。"
+      ]
+    },
+    {
+      "id": "wrong-json-shape",
+      "kind": "invalid",
+      "inputs": {
+        "canon_snapshot_json": "{}",
+        "character_brief_json": "[]",
+        "output_schema_version": "ai-drama-character-engine-semantic-output-v1",
+        "story_context_json": "{\"premise\":\"林舟在旧车站发现一封未寄出的信\",\"conflict\":\"想联系写信人却只有旧地址\",\"causal_beats\":[\"发现信件\",\"核对地址\",\"询问顾遥\"]}",
+        "task_delta_json": "{\"scope\":[\"station-01\"],\"allowed_changes\":[\"对话表达\",\"动作节奏\"],\"preserve\":[\"旧地址是唯一已知线索\"],\"decision\":\"是否先核对地址\"}"
+      },
+      "fixture_input_map": null,
+      "expected_code": "TUTORIAL_JSON_KEY_REQUIRED",
+      "review_checks": [
+        "JSON 语法合法但缺少业务对象字段，不能标为场景通过。"
+      ]
+    }
+  ],
+  "digest": "sha256:6c870e7762df747e62a56f694236d17d7eeba6e14a89aac963be98067e75f750"
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/writing/longform-outline@1.0.0?locale=en",
+  "role": "main",
+  "template_digest": "sha256:bf602ddc9e3961e65880243e74f9c7b457e302f0edf2fa30f3e5c989612ff220",
+  "contract_digest": "sha256:074f9dd45eaf2bfd057ab2c76c371d76bf5b5c0241ae82f098405184ca25315c",
+  "source_text": "Fictional notes: user diary records 23 notification checks per day across 6 apps; internal timer study shows 11-minute median refocus delay after an interruption; no data on team-level effects.",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-focus-audit",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "audience": "audience",
+        "goal": "goal",
+        "source_material": "source_material",
+        "target_length": "target_length",
+        "tone": "tone",
+        "topic": "topic"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Turn a topic and source material into a writing-ready hierarchical outline",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "goal": "Convince the reader to audit notification habits before buying more tools",
+        "source_material": "Fictional notes: user diary records 23 notification checks per day across 6 apps; internal timer study shows 11-minute median refocus delay after an interruption; no data on team-level effects.",
+        "target_length": "2000-2500 words",
+        "tone": "calm, evidence-first, no hype",
+        "topic": "Why context switching destroys deep work, and a local-first batching approach"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 audience，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:bc888d38d0a89a197f094d47429aaaa7d81c22d661d72c03202c9ccefddd02f8"
+}

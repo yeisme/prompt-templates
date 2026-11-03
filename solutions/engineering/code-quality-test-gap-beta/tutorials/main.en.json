@@ -1,0 +1,42 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/engineering/code-quality-test-gap-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:d20603407840f8f7059b6d3e36022576fb341cb17c0bf1eb2f953aafa0d86164",
+  "contract_digest": "sha256:7f741dc3e13e46eaa75f7d650e07a8ae903844aff4930b88b7468032d0de9e8a",
+  "source_text": "本次合成任务采用已验证案例 valid-basic；各字段以该案例的公开输入为准，不追加资料外事实。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "fixture_case_id": "valid-basic",
+      "fixture_locale": "en",
+      "fixture_input_map": {
+        "review_output": "review_output",
+        "risk_focus": "risk_focus",
+        "test_inventory": "test_inventory",
+        "verification_evidence": "verification_evidence"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 Identify evidence-backed test gaps and verification priorities from a code review.",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "risk_focus": "error handling",
+        "test_inventory": "Only package smoke test is present.",
+        "verification_evidence": "gofmt passed; no unit test evidence"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 review_output，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:b2b016e67ae307feb6a0e55b1bb2649ca912e57c488078343a3ffbd76625887d"
+}

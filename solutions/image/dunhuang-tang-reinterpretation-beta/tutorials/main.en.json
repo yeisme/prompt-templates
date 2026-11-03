@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/image/dunhuang-tang-reinterpretation-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:7a089234b81a8bf26ad0476809d5ad538aec8008dfc9adc33087b96065b3e2a4",
+  "contract_digest": "sha256:95de4f2ab902c9ef13d407281d5cae038be991065d3a1b846b0abaaeb1d6e6c3",
+  "source_text": "虚构活动“周末阅读角”：桌边一盏灯、一册书，安静、温暖，不使用真人或商标。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "composition_notes": "主体现于画面下三分之一，前景留少量遮挡，远景保留环境层次",
+        "medium_clause": "matte editorial illustration, subtle paper grain, restrained local colors",
+        "reference_notes": "仅使用本任务的合成场景描述；没有附图，不声称临摹特定作者"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：画面候选：以黄铜桌灯和打开的书为主体，保持无品牌；根据「敦煌启发·矿物色现代画面」的风格与构图字段调整表现。这里只描述待生成画面，不展示或声称已经出图。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 甘肃敦煌艺术启发的当代创作；采用唐代相关视觉方向，具体洞窟、年代、图像不在未核验时断言。历史人群不套现代民族分类。",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "composition_notes": "主体现于画面下三分之一，前景留少量遮挡，远景保留环境层次",
+        "reference_notes": "仅使用本任务的合成场景描述；没有附图，不声称临摹特定作者"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 medium_clause，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:2136cd2f0e0cd1d0192e42bc114d4f371d1ea8a6d3aac5693418333717face38"
+}

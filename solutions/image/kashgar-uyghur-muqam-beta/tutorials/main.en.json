@@ -1,0 +1,44 @@
+{
+  "schema_version": "promptrepo.tutorial-cases.v1",
+  "ref": "promptrepo://official/image/kashgar-uyghur-muqam-beta@1.0.0-beta.1?locale=en",
+  "role": "main",
+  "template_digest": "sha256:f44ee7eeb0f589275843ef0e9575a44dc81d98ffd1263cfda404287c140bba04",
+  "contract_digest": "sha256:a92f69551441b942dd2c27bd09c65ccb1fa704d237c4a82e121afad99f52ca48",
+  "source_text": "虚构活动“周末阅读角”：桌边一盏灯、一册书，安静、温暖，不使用真人或商标。",
+  "cases": [
+    {
+      "id": "complete-scenario",
+      "kind": "valid",
+      "inputs": {
+        "composition_notes": "主体现于画面下三分之一，前景留少量遮挡，远景保留环境层次",
+        "medium_clause": "matte editorial illustration, subtle paper grain, restrained local colors",
+        "reference_notes": "仅使用本任务的合成场景描述；没有附图，不声称临摹特定作者"
+      },
+      "fixture_input_map": null,
+      "output": {
+        "acceptance": "synthetic-example-only",
+        "example": "合成内容示例（供理解输出方向，未运行模型）：画面候选：以黄铜桌灯和打开的书为主体，保持无品牌；根据「喀什木卡姆·庭院音乐」的风格与构图字段调整表现。这里只描述待生成画面，不展示或声称已经出图。",
+        "role": "main"
+      },
+      "review_checks": [
+        "核对所有事实能在输入资料或已接受引用中找到。",
+        "核对输出满足 新疆喀什及叶尔羌文化圈；新疆维吾尔木卡姆艺术。具体体系、曲目与乐器需地方资料，不代表所有区域木卡姆。",
+        "缺失或未确认信息必须明确标注；不得新增授权、执行或生产完成声明。"
+      ]
+    },
+    {
+      "id": "missing-required-input",
+      "kind": "invalid",
+      "inputs": {
+        "composition_notes": "主体现于画面下三分之一，前景留少量遮挡，远景保留环境层次",
+        "reference_notes": "仅使用本任务的合成场景描述；没有附图，不声称临摹特定作者"
+      },
+      "fixture_input_map": null,
+      "expected_code": "INPUT_REQUIRED",
+      "review_checks": [
+        "缺少必填字段 medium_clause，必须补齐后再确认。"
+      ]
+    }
+  ],
+  "digest": "sha256:7419768ab5b7b3ad385bdb31f9b22697c5b4eeab2918eb6b8f02ac055ed6007c"
+}
